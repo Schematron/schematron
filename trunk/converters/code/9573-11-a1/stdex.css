@@ -1,0 +1,83 @@
+h1  { 
+    font-size:24pt ;
+}
+h1.annex  { 
+    font-size:20pt ;
+    text-align:center
+}
+h2  { 
+    font-soze:24pt ;
+}
+h3  { 
+    font-size:12pt ;
+}
+h4  { 
+    font-size:10pt ;
+}
+h5  { 
+    font-size:10pt ;
+}
+h6  { 
+    font-size:10pt ;
+}
+strong.blue  { 
+    color:blue ;
+    font-weight:bold 
+}
+dt  { 
+    font-weight:bold 
+}
+ol  { 
+    list-style:none outside 
+}
+ul  { 
+    list-style:none outside 
+}
+a:link  { 
+    color:blue 
+} 
+
+a:active  { 
+    color:red 
+}
+a:hover  { 
+    color:green 
+}
+p  { 
+    margin-top:0.5em ;
+    margin-bottom:1.5em 
+}
+p.note > p:first-child { 
+    display:inline
+}
+p.note > p { 
+    display:block
+}
+li > p:first-child { 
+    display:inline
+}
+item  { 
+    color:blue ;
+    font-weight:bold 
+}
+fn  { 
+    color:blue ;
+    font-weight:bold 
+}
+div.title  {
+    font-size:x-large ;
+    font-weight:bold
+}
+div.date  {
+    font-size:x-small
+}
+div.subtitle  {
+    font-size:small ;
+    font-style:italic
+}
+div.refnum  {
+    font-size:x-small
+}
+span.italic  {
+    font-style:italic
+}

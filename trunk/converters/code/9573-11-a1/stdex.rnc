@@ -1,0 +1,335 @@
+namespace a = "http://relaxng.org/ns/compatibility/annotations/1.0"
+
+start = document
+document = element document { head, body }
+head =
+  element head {
+    element organization { "ISO" | "ISO/IEC" } 	# sourceod
+    & element document-type {			# type
+        "International Standard"
+        | "Technical Report"
+        | "Guide"
+        | "Publicly Available Specification"
+        | "Technical Specification"
+        | "International Standardized Profile"
+      }
+    & element stage {				# status
+        "committee" | "enquiry" | "approval" | "publication"
+      }
+    & element tc-number { positive-integer }
+    & element tc-name { text }
+    & (element sc-number { positive-integer }
+       & element sc-name { text })?
+    & element wg-number { positive-integer }?		# wdnumber
+    & element serial-number { positive-integer }?
+    & element draft-number { positive-integer }?
+    & element document-number { positive-integer }	# number
+    & element part-number { positive-integer }?		# part
+    & element document-language { "E" | "F" }		# language
+    & element secretariat { "ANSI" }
+    & element date { xsd:date }
+    & element title {
+	attribute langcode { "E" | "F" }?,		# for multilingual title
+        element introductory { text }?,
+        element main { text },
+        element complementary { text }?
+      }+
+  }
+
+body =
+  foreword,					# foreword
+  introduction?,				# intro
+  warning?,					# warning(!)
+  scope,					# scope
+  conf?,					# conf(!)
+  normative-references?,			# refs
+  terms-and-definitions?,			# defs
+  titled-clause+,				# h1
+  annex*,					# annexn or annexi
+  bibliography?,				# annexbl
+  index*					# index(!)
+
+foreword = element foreword { block*, part-list?, block* }
+
+part-list =
+  element part-list {
+    element part {
+      element number { positive-integer },
+      element title { text }
+    }+
+  }
+
+title = element title { title-content }
+
+title-content =
+  (text
+   | element code { title-content })*
+
+clause-content =
+  titled-clause+ | untitled-clause-content
+
+untitled-clause-content = untitled-clause+ | block+
+
+introduction = element introduction { block+ }
+
+warning = element warning { block+ }
+
+scope = element scope { block+ }
+
+conf =  element conf { titled-clause }
+
+normative-references =
+  element normative-references { block*, referenced-document*, block* }
+
+referenced-document =
+  element referenced-document {
+    id,
+    element abbrev { text },
+    element title { text },
+    element field { text }*,
+    element url { xsd:anyURI }
+  }
+# boilerplate generated automatically
+# need markup for supplementary sources of terms and definitions
+
+terms-and-definitions =
+  element terms-and-definitions { terms-and-definitions-content }
+
+terms-and-definitions-content =
+  (term-and-definition
+   | element clause { title, terms-and-definitions-content })+
+
+term-and-definition =
+  element term-and-definition {
+    element term { text },
+    element term {
+      attribute status { text }?,
+      text
+    }*,
+    element definition {
+      attribute subject-field { text }?,
+      inline
+    },
+    (example | note | warn )*
+  }+
+
+titled-clause = element clause { id, title, clause-content }
+
+untitled-clause = element clause { id, untitled-clause-content }
+
+annex =
+  element annex {
+    id,
+    attribute normative { "true" | "false" },
+    title,
+    clause-content
+  }
+
+bibliography = element bibliography { referenced-document+ }
+
+block = p | ol | ul | notation-list
+  | example | note | warn 
+  | pre | float
+
+p = element p { p.content+ }
+
+p.content =
+    inline
+  | ol | ul | example
+  | pre | float
+
+ol =
+  element ol {
+    element li { id, block+ }+
+  }
+
+ul =
+  element ul {
+    element li { block+ }+
+  }
+
+notation-list =
+  element notation-list {
+    element notation-item {
+      element notation { inline },
+      element notation-definition { p, (p | note)* }
+    }+
+  }
+
+example = element example { p+ }
+
+note = element note { p+ }
+
+warn =
+  element warn { attlist.warn, p* }
+
+attlist.warn &=
+  id,
+  attribute format { "genwarn" | "warning" | "caution" | "remark" }?
+
+pre = element pre { pre-content }
+
+pre-content =
+  (text
+   | element var { pre-content })*
+
+inline =
+  (text
+   | element code | b | i | u | var { inline }
+   | ref
+   | firstterm
+   | strong
+   | artwork
+   | sub | sup
+   | footnote
+   | tabular
+   )*
+
+ref = this | xref
+
+# "This part of ISO/IEC"
+# "This International Standard"
+this = element This | this { empty }
+
+xref =
+  element Xref {
+    attribute to { xsd:IDREF }
+  }
+  | element xref {
+      attribute to { xsd:IDREF }
+    }
+id = attribute id { xsd:ID }?
+
+firstterm = element firstterm { text }
+
+strong = element strong { text }
+
+index = element index { attlist.index, text }
+
+attlist.index &=
+  id,
+  attribute status { "informative" }?
+
+footnote = element footnote { id, (text | p)+ }
+
+sub  = element sub { text }
+
+sup  = element sub { text }
+
+float = table | figure
+  
+figure = element figure { id, attribute pgwide { yesorno }?, title?, block+ }
+
+table = element table { id, attribute pgwide { yesorno }?, title?, block+ }
+
+tabular = element tabular { attrlist.tabular, tgroup }
+
+attrlist.tabular &=
+  attribute frame {
+    "all" | "top" | "bottom" | "topbot" | "sides" | "none"
+  }?,
+  attribute colsep { yesorno }?,
+  attribute rowsep { yesorno }?
+
+tgroup =
+  element tgroup {
+    attlist.tgroup,
+    colspec*,
+    spanspec*,
+    thead?,
+    tfoot?,
+    tbody
+  }
+
+attlist.tgroup &=
+  attribute cols { xsd:NMTOKEN },
+  attribute tgroupstyle { xsd:NMTOKEN }?,
+  attribute colsep { yesorno }?,
+  attribute rowsep { yesorno }?,
+  [ a:defaultValue = "left" ]
+  attribute align { "left" | "right" | "center" | "justify" }?
+
+colspec = element colspec { attlist.colspec }
+
+attlist.colspec &=
+  attribute colnum { xsd:NMTOKEN }?,
+  attribute colname { xsd:NMTOKEN }?,
+  attribute align { "left" | "right" | "center" | "justify" }?,
+  attribute colsep { yesorno }?,
+  attribute rowsep { yesorno }?,
+  attribute colwidth { xsd:string }?
+  
+spanspec = element spanspec { attlist.spanspec }
+
+attlist.spanspec &=
+  attribute namest { xsd:NMTOKEN },
+  attribute nameend { xsd:NMTOKEN },
+  attribute spanname { xsd:NMTOKEN },
+  [ a:defaultValue = "center" ]
+  attribute align { "left" | "right" | "center" | "justify" }?,
+  attribute colsep { yesorno }?,
+  attribute rowsep { yesorno }?
+
+thead = element thead { attlist.thead, colspec*, row+ }
+
+tfoot = element tfoot { attlist.tfoot, colspec*, row+ }
+
+attlist.thead &=
+  [ a:defaultValue = "bottom" ]
+  attribute valign { "top" | "middle" | "bottom" }?
+
+attlist.tfoot &=
+  [ a:defaultValue = "top" ]
+  attribute valign { "top" | "middle" | "bottom" }?
+
+tbody = element tbody { attlist.tbody, row+ }
+
+attlist.tbody &=
+  [ a:defaultValue = "top" ]
+  attribute valign { "top" | "middle" | "bottom" }?
+
+row = element row { attlist.row, entry+ }
+
+attlist.row &=
+  attribute rowsep { yesorno }?,
+  attribute valign { "top" | "bottom" | "middle" }?
+entry = element entry { attlist.entry, inline* }
+
+attlist.entry &=
+  attribute colname { xsd:NMTOKEN }?,
+  attribute namest { xsd:NMTOKEN }?,
+  attribute nameend { xsd:NMTOKEN }?,
+  attribute spanname { xsd:NMTOKEN }?,
+  [ a:defaultValue = "0" ]
+  attribute morerows { xsd:NMTOKEN }?,
+  attribute colsep { yesorno }?,
+  attribute rowsep { yesorno }?,
+  attribute rotate { xsd:NMTOKEN }?,
+  attribute valign { "top" | "bottom" | "middle" }?,
+  attribute align { "left" | "right" | "center" | "justify" }?
+
+artwork = element artwork { attlist.artwork }
+
+attlist.artwork &=
+  id,
+  attribute entity { xsd:ENTITY },
+  attribute align { xsd:NMTOKEN }?,
+  attribute angle { text }?,
+  attribute bloffset { text }?,
+  attribute cropped { xsd:NMTOKEN }?,
+  attribute float { xsd:NMTOKEN }?,
+  attribute height { text }?,
+  attribute nsoffset { text }?,
+  attribute position { xsd:NMTOKEN }?,
+  attribute width { text }?,
+  attribute dpi { xsd:NMTOKEN }?,
+  attribute impang { text }?,
+  attribute impby { "ref" | "copy" }?,
+  attribute impsize { text }?,
+  attribute sideways { xsd:NMTOKEN }?,
+  attribute xoffset { text }?,
+  attribute yoffset { text }?
+
+yesorno = "yes" | "no"
+
+positive-integer = xsd:token { pattern = "[1-9][0-9]*|0" }

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+An Ant script to run the XSD to SCH
+
+Stages:
+
+1) Validate the input XSD schemas using independent validator. 
+	If there is an invalid file, proceed no further.
+
+2) Run XSD normalizer on each main schema files. 
+	The result is that we have 1 normalized XSD file per namespace.
+
+3) Run Checker program (XSD) on all normalized schema files. 
+	This program just reports whether the schema contains components that we do not handle. 
+	It should be kept in sync with the next part. This is just provided for information.
+
+4) Run XSD2SCH converter. This generates one Schematron schema per normalized XSD file. 
+	This may also generate a log file showing each component accepted and converted or skipped.
+
+5) Validate the generated Schematron schema. 
+	Use RELAX NG, XSD or DTD (and Schematron if desired) schemas for Schematron. 
+-->
+<!--
+	LINUX note: The use of 
+			<arg file="${xsd.dir}/*.xsd"/>
+	causes an error under LINUX. (File expects one file not multiple?)
+	So for building under LINX, omit or ignore the xsd-validate stage.
+-->
+
+<!--
+	The code was written under sponsorship of JSTOR The Scholarly Journal Archive
+	 
+	This code is also available under the GPL (v3. http://www.gnu.org/copyleft/gpl.html)	
+ -->
+ 
+ <!--
+Open Source Initiative OSI - The MIT License:Licensing
+[OSI Approved License]
+
+The MIT License
+
+	This code copyright 2007-2009 jointly and severally
+		Allette Systems Pty. Ltd. (www.allette.com.au), 
+		Topologi Pty. Ltd. (www.topologi.com), 
+		JSTOR (http://www.jstor.org/)
+		and Rick Jelliffe. 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+-->
+
+<project name="XSD2SCH" default="">
+	
+	<!-- The file to be used for testing -->
+	<property name="theFile" value="PersonalDetails" />
+	
+	<!-- directory name -->
+	<property name="lib.dir" value="lib"/>
+	<property name="sch.dir" value="sch"/>
+	<property name="sch-compress.dir" value="sch-compress"/>
+	<property name="xsd.dir" value="xsd"/>
+	<property name="report.dir" value="report"/>
+	<property name="report-temp.dir" value="report-temp"/>
+	<property name="xslt.dir" value="../code"/>
+	<property name="pretty-xslt.dir" value="../../converters/code"/>
+	<property name="xsd-incl.dir" value="xsd-incl"/>
+	<property name="xsd-flat.dir" value="xsd-flat"/>
+	<property name="xsd-expa.dir" value="xsd-expa"/>
+	<!-- class name -->
+	<property name="xsd-validate-class" value="xni.XMLGrammarBuilder"/>
+	
+	<taskdef name="schematron" classname="com.schematron.ant.SchematronTask" classpath="${lib.dir}/ant-schematron.jar; ${lib.dir}/saxon8.jar"/>
+		
+	<target name="clean">
+		<delete dir="${sch.dir}"/>
+		<delete dir="${xsd-incl.dir}"/>
+		<delete dir="${xsd-flat.dir}"/>
+		<delete dir="${xsd-expa.dir}"/>
+		<delete dir="${sch.dir}"/>
+		<delete dir="${sch-compress.dir}"/>
+		<delete dir="${report.dir}"/>
+		<delete dir="${report-temp.dir}"/>
+	</target>
+	
+	<!-- validate each single W3C XML Schema file -->
+	<target name="xsd-validate" depends="clean">
+		<java fork="true" classname="${xsd-validate-class}" failonerror="true">
+			<arg value="-f"/>
+			<arg value="-a"/>
+			<arg file="${xsd.dir}/${theFile}.xsd"/>
+			<classpath>
+				<pathelement location="${lib.dir}/xerces-2_9_0/xercesImpl.jar"/>
+				<pathelement
+					location="${lib.dir}/xerces-2_9_0/xercesSamples.jar"/>
+			</classpath>
+		</java>
+	</target>
+	
+	<!-- normalize W3C XML Schema files step 1 -->
+	<target name="xsd-include" depends="xsd-validate" >
+		<mkdir dir="${xsd-incl.dir}"/>
+		<xslt destdir="${xsd-incl.dir}" style="${xslt.dir}/include.xsl">
+			<classpath>
+				<pathelement location="${lib.dir}/saxon8.jar"/>
+			</classpath>
+			<mapper type="glob" from="${xsd.dir}${file.separator}${theFile}.xsd"
+				to="${theFile}-incl.xsd"/>
+			<outputproperty name="method" value="xml"/>
+			<outputproperty name="standalone" value="yes"/>
+			<outputproperty name="encoding" value="utf-8"/>
+			<outputproperty name="indent" value="yes"/>
+		</xslt>
+	</target>
+
+	<!-- normalize W3C XML Schema files step 2 (flatten schema to same lever) -->
+	<target name="xsd-flatten" depends="xsd-include">
+		<mkdir dir="${xsd-flat.dir}"/>
+		<xslt destdir="${xsd-flat.dir}" style="${xslt.dir}/flatten.xsl">
+			<classpath>
+				<pathelement location="${lib.dir}/saxon8.jar"/>
+			</classpath>
+			<mapper type="glob" from="${xsd-incl.dir}${file.separator}${theFile}-incl.xsd"
+				to="${theFile}-flat.xsd"/>
+			<outputproperty name="method" value="xml"/>
+			<outputproperty name="standalone" value="yes"/>
+			<outputproperty name="encoding" value="utf-8"/>
+			<outputproperty name="indent" value="yes"/>
+		</xslt>
+	</target>
+
+	<!-- normalize W3C XML Schema files step 3 (expand ref to real content) -->
+	<target name="xsd-expand-ref" depends="xsd-flatten">
+		<mkdir dir="${xsd-expa.dir}"/>
+		<xslt destdir="${xsd-expa.dir}" style="${xslt.dir}/expand.xsl">
+			<classpath location="${lib.dir}/saxon8.jar" />
+			<!--<classpath>
+				<pathelement location="${lib.dir}/saxon8.jar"/>
+			</classpath>-->
+			<mapper type="glob" from="${xsd-flat.dir}${file.separator}${theFile}-flat.xsd"
+				to="${theFile}-expa.xsd"/>
+			<outputproperty name="method" value="xml"/>
+			<outputproperty name="standalone" value="yes"/>
+			<outputproperty name="encoding" value="utf-8"/>
+			<outputproperty name="indent" value="yes"/>
+		</xslt>
+	</target>
+	
+	<!-- W3C XML Schema files to Schematron -->
+	<target name="xsd-to-sch" depends="xsd-expand-ref">
+		<mkdir dir="${sch.dir}"/>
+		<xslt destdir="${sch.dir}" style="${xslt.dir}/xsd2sch.xsl">
+			<classpath>
+				<pathelement location="${lib.dir}/saxon8.jar"/>
+			</classpath>
+			<mapper type="glob" from="${xsd-expa.dir}${file.separator}${theFile}-expa.xsd"
+				to="${theFile}.sch"/>
+			<outputproperty name="method" value="xml"/>
+			<outputproperty name="standalone" value="yes"/>
+			<outputproperty name="encoding" value="utf-8"/>
+			<outputproperty name="indent" value="yes"/>
+		</xslt>
+	</target>
+	
+	<!-- Compress Schematron Schema -->
+	<target name="compress" depends="xsd-to-sch">
+		<mkdir dir="${sch-compress.dir}"/>
+		<xslt destdir="${sch-compress.dir}" style="${xslt.dir}/compress.xsl">
+			<classpath>
+				<pathelement location="${lib.dir}/saxon8.jar"/>
+			</classpath>
+			<mapper type="glob" from="${sch.dir}${file.separator}${theFile}.sch"
+				to="${theFile}.sch"/>
+			<outputproperty name="method" value="xml"/>
+			<outputproperty name="standalone" value="yes"/>
+			<outputproperty name="encoding" value="utf-8"/>
+			<outputproperty name="indent" value="yes"/>
+		</xslt>
+	</target>
+	
+	<!-- validate Schematron against W3C XML Schema for Schematron -->
+	<target name="sch-validate" depends="compress">
+		<java fork="true" classname="${xsd-validate-class}" failonerror="true">
+			<arg value="-f"/>
+			<arg value="-a"/>
+			<arg file="${lib.dir}/iso_schematron.xsd"/>
+			<arg value="-i"/>
+			<arg value="${sch-compress.dir}/${theFile}.sch"/>
+			<classpath>
+				<pathelement location="${lib.dir}/xerces-2_9_0/xercesImpl.jar"/>
+				<pathelement
+					location="${lib.dir}/xerces-2_9_0/xercesSamples.jar"/>
+			</classpath>
+		</java>
+	</target>
+	
+	<!-- Schematron to Reports temp -->
+	<target name="sch-to-report-temp" depends="sch-validate">
+		<delete dir="${report-temp.dir}"/>
+		<mkdir dir="${report-temp.dir}"/>
+		<xslt destdir="${report-temp.dir}" style="${pretty-xslt.dir}/2007-08-29-schematron-to-standard.xslt">
+			<classpath>
+				<pathelement location="${lib.dir}/saxon8.jar"/>
+			</classpath>
+			<mapper type="glob" from="${sch-compress.dir}${file.separator}${theFile}.sch"
+				to="${theFile}.xml"/>
+			<outputproperty name="method" value="xml"/>
+			<outputproperty name="standalone" value="yes"/>
+			<outputproperty name="encoding" value="utf-8"/>
+			<outputproperty name="indent" value="yes"/>
+		</xslt>
+	</target>
+	
+	<!-- Schematron to Reports -->
+	<target name="sch-to-report" depends="sch-to-report-temp">
+		<delete dir="${report.dir}"/>
+		<mkdir dir="${report.dir}"/>
+		<xslt destdir="${report.dir}" style="${pretty-xslt.dir}/9573-11-a1/stdex.xsl">
+			<classpath>
+				<pathelement location="${lib.dir}/saxon8.jar"/>
+			</classpath>
+			<mapper type="glob" from="${report-temp.dir}${file.separator}${theFile}.xml"
+				to="${theFile}.html"/>
+		</xslt>
+	</target>
+	
+	<!-- validate xml instance files against Schematron -->
+	
+	<target name="finalvalidate" description="Generate a report for this file">
+
+		<schematron schema="${sch-compress.dir}/${theFile}.sch" failonerror="false" outputfilename="${theFile}output.xml" outputdir="outputxml">
+			<fileset file="inputxml/${theFile}.xml"/>
+		</schematron>
+	</target>
+	
+	<!-- SVRL to HTML -->
+	<target name="generate-svrl-report" description="render the report to HTML" depends="finalvalidate">
+		<xslt in="outputxml/${theFile}output.xml" out="outputxml/${theFile}output.html" style="${pretty-xslt.dir}/SVRLReportRender.xsl" force="true">
+			<classpath>
+				<pathelement location="${lib.dir}/saxon8.jar"/>
+			</classpath>
+		</xslt>
+	</target>
+	
+</project>
+
