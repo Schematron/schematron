@@ -1,0 +1,130 @@
+<body>
+<!--
+ 
+ Copyright 2008 Rick Jelliffe, Topologi Pty. Ltd, Allette Systems 
+ 
+ Licensed under the Apache License, Version 2.0 (the "License"); 
+ you may not use this file except in compliance with the License. 
+ You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 
+ Unless required by applicable law or agreed to in writing, software distributed 
+ under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
+ CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+ specific language governing permissions and limitations under the License.
+ 
+ -->
+  <h1>Schematron Ant Task</h1>
+
+  <h2>Installation and configuration</h2>
+  
+  <p>We should package it all in one jar file (schematron-ant.jar) so that it is just as simple as 
+    dropping the jar file in the Ant lib directory.</p>
+  <p>In other words, it should contain the Java classes and the required XSLT meta-template, so 
+    that there is no dependency on anything else.</p>
+  <p>It should not be trivial, it should be Monkey-proof!</p>
+
+  <p>The configuration of the XSLT transformer should be inherited from the JAXP properties.</p>
+
+  <h2>Possible future extensions</h2>
+  <p>They should allow the Ant task to:</p>
+  <ul>
+    <li>specify a more sophisticated messaging output at least an XML output!</li>
+    <li>specify the when it fails, to be tied in with messaging and phases</li>
+    <li>specify the XSLT transformer to use (thereby overriding the JAXP properties)</li>
+    <li>specify the schematron version to use</li>
+    <li>let the user add additional XSLT templates to use in conjunction with the skeleton</li>
+    <li>specify additional attribute to interact with ant (project name, fail on error)</li>
+  </ul>
+
+  <h2>References</h2>
+  <dl>
+    <dt>How to write an Ant Task</dt>
+    <dd><a href="http://ant.apache.org/manual/develop.html#writingowntask">http://ant.apache.org/manual/develop.html#writingowntask</a></dd>
+    <dd><a href="http://ant.apache.org/manual/tutorial-writing-tasks.html">http://ant.apache.org/manual/tutorial-writing-tasks.html</a></dd>
+  </dl>
+  
+  <h1>Schematron Ant Task</h1>
+
+  <h2>Description</h2>
+  <p>This task checks that the XML are valid against a set of ISO Schematron constraints.<br/>
+  The task uses the XSLT transformer implementation provided by JAXP by default.</p>
+  <p>To use the schematron task, you must include a taskdef in your project file.</p>
+  <pre>
+    &lt;taskdef name="schematron" classname="com.topologi.ant.Schematron"/&gt;
+  </pre>
+  <p>Alternatively, you can add the schematron task to your list of ant task definitions.</p>
+
+  <h2>Parameters</h2>
+  <table>
+    <tr>
+      <th>Attribute</th>
+      <th>Description</th>
+      <th>Required</th>
+    </tr>
+    <tr>
+      <td>schema</td>
+      <td>the path to the schematron schema file.</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>file</td>
+      <td>the file(s) you want to check. (optionally can use an embedded fileset)</td>
+      <td>Only if no fileset is defined</td>
+    </tr>
+    <tr>
+      <td>phase</td>
+      <td>the ISO Schematron phase to use (ignored if no phase was specified in the schema)</td>
+      <td>No</td>
+    </tr>
+    
+    <tr>
+      <td>queryLanguageBinding</td>
+      <td>the expresion language or schema language version to use.
+      values: "xslt" (default), "xslt2", "xpath" "xpath2", "1.5", "1.6", "old" </td>
+      <td>No</td>
+    </tr>
+  </table>
+  
+  <h2>Nested elements</h2>
+  <p>A fileset Ant concept can be used in order to process a list of files.</p>
+
+  <h2>Examples</h2>
+
+  <pre>
+    <schematron file="test.xml" schema="test.sch"/>    
+  </pre>
+  <p>Validates <code>test.xml</code> against the set of Schematron constraints in 
+    <code>test.sch</code>.</p>
+
+  <pre>
+    &lt;schematron schema="test.sch"&gt;
+      &lt;fileset dir="test" includes="**/*.xml"/&gt;
+    &lt;/schematron&gt;
+  </pre>
+  <p>Validates all the XML files in the 'test' directory using the ISO Schematron constraints 
+    defined in <code>test.sch</code>.</p>
+
+  <pre>
+    &lt;schematron schema="test.sch" phase="critical"&gt;
+      &lt;fileset dir="test" includes="**/*.xml"/&gt;
+    &lt;/schematron&gt;
+  </pre>
+  <p>Validates all the XML files in the 'test' directory using the ISO Schematron constraints 
+    defined in <code>test.sch</code> and specifying the phase <var>critical</var></p>
+
+  <pre>
+    &lt;?xml version="1.0"?&gt;
+    &lt;project name="SchematronExample" default="validate" basedir="."&gt;
+    
+      &lt;target name="validate"&gt;
+        &lt;taskdef name="schematron" classname="com.topologi.ant.SchematronTask"
+                                      classpath="../lib/ant-schematron.jar"/&gt;
+        &lt;schematron schema="test.sch"&gt;
+          &lt;fileset dir="xml" includes="**/*.xml"/&gt;
+        &lt;/schematron>
+      &lt;/target>
+
+   &lt;/project>
+  </pre>
+  <p>Complete example of a project validating files with Schematron.</p>
+
+</body>

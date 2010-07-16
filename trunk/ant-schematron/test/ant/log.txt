@@ -1,0 +1,29 @@
+[schematron] Source file: test1.xml
+[schematron] [assert] /Dog - 
+[schematron] 1 file(s) have been successfully validated.
+     [echo] vanilla location test works
+[schematron] Source file: william-sample.xml
+[schematron] [assert] /*:document[namespace-uri()='http://schemas.openxmlformats.org/wordprocessingml/2006/main'][1]/*:body[namespace-uri()='http://schemas.openxmlformats.org/wordprocessingml/2006/main'][1]/*:p[namespace-uri()='http://schemas.openxmlformats.org/wordprocessingml/2006/main'][1]/*:r[namespace-uri()='http://schemas.openxmlformats.org/wordprocessingml/2006/main'][1]/*:t[namespace-uri()='http://schemas.openxmlformats.org/wordprocessingml/2006/main'][1] - Non ASCII Character:      174 
+[schematron] [report] /*:document[namespace-uri()='http://schemas.openxmlformats.org/wordprocessingml/2006/main'][1]/*:body[namespace-uri()='http://schemas.openxmlformats.org/wordprocessingml/2006/main'][1]/*:p[namespace-uri()='http://schemas.openxmlformats.org/wordprocessingml/2006/main'][4] - Unexpected kind of paragraph found (no properties):
+[schematron] [report] /*:document[namespace-uri()='http://schemas.openxmlformats.org/wordprocessingml/2006/main'][1]/*:body[namespace-uri()='http://schemas.openxmlformats.org/wordprocessingml/2006/main'][1]/*:p[namespace-uri()='http://schemas.openxmlformats.org/wordprocessingml/2006/main'][5] - Unexpected kind of paragraph found (no properties):
+[schematron] [report] /*:document[namespace-uri()='http://schemas.openxmlformats.org/wordprocessingml/2006/main'][1]/*:body[namespace-uri()='http://schemas.openxmlformats.org/wordprocessingml/2006/main'][1]/*:p[namespace-uri()='http://schemas.openxmlformats.org/wordprocessingml/2006/main'][6] - Unexpected kind of paragraph found (no properties):
+[schematron] [report] /*:document[namespace-uri()='http://schemas.openxmlformats.org/wordprocessingml/2006/main'][1]/*:body[namespace-uri()='http://schemas.openxmlformats.org/wordprocessingml/2006/main'][1]/*:p[namespace-uri()='http://schemas.openxmlformats.org/wordprocessingml/2006/main'][7] - Unexpected kind of paragraph found (no properties):
+[schematron] [report] /*:document[namespace-uri()='http://schemas.openxmlformats.org/wordprocessingml/2006/main'][1]/*:body[namespace-uri()='http://schemas.openxmlformats.org/wordprocessingml/2006/main'][1]/*:p[namespace-uri()='http://schemas.openxmlformats.org/wordprocessingml/2006/main'][9] - Unexpected kind of paragraph found (no properties):
+[schematron] 1 file(s) have been successfully validated.
+     [echo]  test3 works
+[schematron] Source file: william-sample.xml
+[schematron] [assert] /*:document[namespace-uri()='http://schemas.openxmlformats.org/wordprocessingml/2006/main'][1]/*:body[namespace-uri()='http://schemas.openxmlformats.org/wordprocessingml/2006/main'][1]/*:p[namespace-uri()='http://schemas.openxmlformats.org/wordprocessingml/2006/main'][1]/*:r[namespace-uri()='http://schemas.openxmlformats.org/wordprocessingml/2006/main'][1]/*:t[namespace-uri()='http://schemas.openxmlformats.org/wordprocessingml/2006/main'][1] - Non ASCII Character:      174 
+[schematron] [report] /*:document[namespace-uri()='http://schemas.openxmlformats.org/wordprocessingml/2006/main'][1]/*:body[namespace-uri()='http://schemas.openxmlformats.org/wordprocessingml/2006/main'][1]/*:p[namespace-uri()='http://schemas.openxmlformats.org/wordprocessingml/2006/main'][4] - Unexpected kind of paragraph found (no properties):
+[schematron] [report] /*:document[namespace-uri()='http://schemas.openxmlformats.org/wordprocessingml/2006/main'][1]/*:body[namespace-uri()='http://schemas.openxmlformats.org/wordprocessingml/2006/main'][1]/*:p[namespace-uri()='http://schemas.openxmlformats.org/wordprocessingml/2006/main'][5] - Unexpected kind of paragraph found (no properties):
+[schematron] [report] /*:document[namespace-uri()='http://schemas.openxmlformats.org/wordprocessingml/2006/main'][1]/*:body[namespace-uri()='http://schemas.openxmlformats.org/wordprocessingml/2006/main'][1]/*:p[namespace-uri()='http://schemas.openxmlformats.org/wordprocessingml/2006/main'][6] - Unexpected kind of paragraph found (no properties):
+[schematron] [report] /*:document[namespace-uri()='http://schemas.openxmlformats.org/wordprocessingml/2006/main'][1]/*:body[namespace-uri()='http://schemas.openxmlformats.org/wordprocessingml/2006/main'][1]/*:p[namespace-uri()='http://schemas.openxmlformats.org/wordprocessingml/2006/main'][7] - Unexpected kind of paragraph found (no properties):
+[schematron] [report] /*:document[namespace-uri()='http://schemas.openxmlformats.org/wordprocessingml/2006/main'][1]/*:body[namespace-uri()='http://schemas.openxmlformats.org/wordprocessingml/2006/main'][1]/*:p[namespace-uri()='http://schemas.openxmlformats.org/wordprocessingml/2006/main'][9] - Unexpected kind of paragraph found (no properties):
+[schematron] 1 file(s) have been successfully validated.
+     [echo] test 2 works
+[schematron] Source file: william-sample.xml
+[schematron] [assert] /*:document[namespace-uri()='http://schemas.openxmlformats.org/wordprocessingml/2006/main'][1]/*:body[namespace-uri()='http://schemas.openxmlformats.org/wordprocessingml/2006/main'][1]/*:p[namespace-uri()='http://schemas.openxmlformats.org/wordprocessingml/2006/main'][1]/*:r[namespace-uri()='http://schemas.openxmlformats.org/wordprocessingml/2006/main'][1]/*:t[namespace-uri()='http://schemas.openxmlformats.org/wordprocessingml/2006/main'][1] - Non ASCII Character:      174 
+[schematron] 1 file(s) have been successfully validated.
+     [echo] simple funny char test works
+BUILD SUCCESSFUL
+
+BUILD SUCCESSFUL

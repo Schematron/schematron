@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<fileset date="2010/04/21">
+<file name="test1.xml">
+<svrl:schematron-output xmlns:iso="http://purl.oclc.org/dsdl/schematron"
+                        xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
+                        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+                        xmlns:schold="http://www.ascc.net/xml/schematron"
+                        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                        title="Dog Stuff"
+                        schemaVersion=""><!--   
+		   
+		 test1.xml  
+		 file:/C:/Users/ricko/workspace/Schematron-AntTask/test/xml--><svrl:text> hi </svrl:text>
+   <svrl:active-pattern document="file:/C:/Users/ricko/workspace/Schematron-AntTask/test/xml/test1.xml"/>
+   <svrl:fired-rule context="Dog" id="r1" xml:lang="xx"/>
+   <svrl:failed-assert test="count(leg) = 4" id="a1" location="/Dog">
+      <svrl:text>A dog should have four legs, because then they can have four paws.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:fired-rule context="Dog/leg" id="r2"/>
+   <svrl:fired-rule context="Dog/leg" id="r2"/>
+   <svrl:fired-rule context="Dog/leg" id="r2"/>
+</svrl:schematron-output>
+</file>
+</fileset>

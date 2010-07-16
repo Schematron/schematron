@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  An Ant script to test the Schematron Ant Task.
+
+  @author Christophe Lauret
+  @version 4 January 2006
+-->
+<!--
+ 
+ Copyright 2008 Rick Jelliffe, Topologi Pty. Ltd, Allette Systems 
+ 
+ Licensed under the Apache License, Version 2.0 (the "License"); 
+ you may not use this file except in compliance with the License. 
+ You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 
+ Unless required by applicable law or agreed to in writing, software distributed 
+ under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
+ CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+ specific language governing permissions and limitations under the License.
+ 
+ -->
+<project name="schematron-ant-test" default="test-fileset">
+  
+  <!-- ISO namespace -->
+  <target name="test-1" description="Simple test">
+  	<taskdef name="schematron" classname="com.schematron.ant.SchematronTask" classpath="../lib/*.jar"/>
+  	<schematron schema="../schemas/test.sch" file="../xml/test1.xml" failonerror="false"
+  	debugmode="true"/>
+  </target>
+	
+  <target name="test-2" description="Simple test">
+  	<taskdef name="schematron" classname="com.schematron.ant.SchematronTask" classpath="../lib/*.jar"/>
+  	<schematron schema="../schemas/test.sch" file="../xml/test2.xml" failonerror="false"/>
+  </target>
+	
+  <target name="test-3" description="Simple test">
+  	<taskdef name="schematron" classname="com.schematron.ant.SchematronTask" classpath="../lib/*.jar"/>
+  	<schematron schema="../schemas/test.sch" file="../xml/test3.xml" failonerror="false"/>
+  </target>
+	
+  <target name="test-fileset" description="Test with a Fileset">
+    <taskdef name="schematron" classname="com.schematron.ant.SchematronTask" classpath="../lib/*.jar"/>
+  	<schematron schema="../schemas/test.sch" failonerror="true" debugmode="true">
+  	  <fileset dir="../xml" includes="*.xml"/>
+  	</schematron>
+  </target>
+
+	  <!-- Old namespace -->
+	  <target name="test-1-old" description="Simple test">
+	  	<taskdef name="schematron" classname="com.schematron.ant.SchematronTask" classpath="../lib/*.jar"/>
+	  	<schematron schema="../schemas/test-old-namespace.sch" file="../xml/test1.xml" failonerror="false"
+	  	debugmode="true"  queryLanguageBinding="old"/>
+	  </target>
+		
+	  <target name="test-2-old" description="Simple test">
+	  	<taskdef name="schematron" classname="com.schematron.ant.SchematronTask" classpath="../lib/*.jar"/>
+	  	<schematron schema="../schemas/test-old-namespace.sch" file="../xml/test2.xml" failonerror="false"
+	  		queryLanguageBinding="old"/>
+	  </target>
+		
+	  <target name="test-3-old" description="Simple test">
+	  	<taskdef name="schematron" classname="com.schematron.ant.SchematronTask" classpath="../lib/*.jar"/>
+	  	<schematron schema="../schemas/test-old-namespace.sch" file="../xml/test3.xml" failonerror="false"
+	  		queryLanguageBinding="old"/>
+	  </target>
+		
+	  <target name="test-fileset-old" description="Test with a Fileset">
+	    <taskdef name="schematron" classname="com.schematron.ant.SchematronTask" classpath="../lib/*.jar"/>
+	  	<schematron schema="../schemas/test-old-namespace.sch" failonerror="true" debugmode="true"
+	  		queryLanguageBinding="old">
+	  	  <fileset dir="../xml" includes="*.xml"/>
+	  	</schematron>
+	  </target>
+		
+	
+      <!-- XSLT2 -->
+
+	  <!-- ISO namespace -->
+	  <target name="test-xslt2-1" description="Simple test">
+	  	<taskdef name="schematron" classname="com.schematron.ant.SchematronTask" classpath="../lib/*.jar"/>
+	  	<schematron schema="../schemas/test-xslt2.sch" file="../xml/test1.xml" failonerror="false"
+	  	
+	  	debugmode="true"   queryLanguageBinding="xslt2" />
+	  </target>
+		
+	  <target name="test-xslt2-2" description="Simple test">
+	  	<taskdef name="schematron" classname="com.schematron.ant.SchematronTask" classpath="../lib/*.jar"/>
+	  	<schematron schema="../schemas/test-xslt2.sch" file="../xml/test2.xml" failonerror="false"
+	queryLanguageBinding="xslt2"/>
+	  </target>
+		
+	  <target name="test-xslt2-3" description="Simple test">
+	  	<taskdef name="schematron" classname="com.schematron.ant.SchematronTask" classpath="../lib/*.jar"/>
+	  	<schematron schema="../schemas/test-xslt2.sch" file="../xml/test3.xml" failonerror="false"
+	queryLanguageBinding="xslt2"/>
+	  </target>
+		
+	  <target name="test-xslt2-fileset" description="Test with a Fileset">
+	    <taskdef name="schematron" classname="com.schematron.ant.SchematronTask" classpath="../lib/*.jar"/>
+	  	<schematron schema="../schemas/test-xslt2.sch" failonerror="true" debugmode="true"
+	  		queryLanguageBinding="xslt2" debugMode="true">
+	  	  <fileset dir="../xml" includes="*.xml" 
+	  	  />
+	  	</schematron>
+	  </target>
+
+	
+	  <!-- ISO namespace -->
+	  <target name="test-name-1" description="Simple test">
+	  	<taskdef name="schematron" classname="com.schematron.ant.SchematronTask" classpath="../lib/*.jar"/>
+	  	<schematron schema="../schemas/test-filenames.sch" file="../xml/test1.xml" failonerror="false"
+	   
+	  	debugmode="true"   queryLanguageBinding="xslt2" />
+	  </target> 
+	
+	<!-- Diagnostics  -->
+	  <target name="test-diagnose-1" description="Simple test">
+	  	<taskdef name="schematron" classname="com.schematron.ant.SchematronTask" classpath="../lib/*.jar"/>
+	  	<schematron schema="../schemas/test-filenames.sch" file="../xml/test1.xml" failonerror="false"
+	  	diagnose="yes"
+	  	debugmode="true"   queryLanguageBinding="xslt2" />
+	  </target>
+	
+
+	  <!-- Resolver -->
+	  <target name="test-resolver-1" description="Simple test">
+	  	<taskdef name="schematron" classname="com.schematron.ant.SchematronTask" classpath="../lib/*.jar"/>
+	  	<schematron schema="../schemas/test.sch" file="../xml/test1.xml" failonerror="false"
+	  	debugmode="true"  resolver="org.apache.xml.resolver.tools.CatalogResolver"
+	  		
+	  	classpath="../lib/resolver.jar" 
+	  	catalog="xxx.xml" 
+	  	
+	  	fileNameParameter="XXX"  fileDirParameter="ABC"/>
+	  </target>
+	
+
+	  <!-- message -->
+	  <target name="test-message" description="Simple test">
+	  	<taskdef name="schematron" classname="com.schematron.ant.SchematronTask" classpath="../lib/*.jar"/>
+	  	<schematron schema="../schemas/test.sch" file="../xml/test2.xml" failonerror="false"
+	  	 
+	    format="message" 		
+	 
+	  	/>
+	  </target>
+	
+	  <!-- encoding -->
+	  <target name="test-encoding-1" description="Simple test">
+	  	<taskdef name="schematron" classname="com.schematron.ant.SchematronTask" classpath="../lib/*.jar"/>
+	  	<schematron schema="../schemas/test.sch" file="../xml/test1.xml" failonerror="false"
+	  	debugmode="true"   outputEncoding="UTF-8"  queryLanguageBinding="xpath1"  />
+	  </target>
+	
+
+	  <!-- span -->
+	  <target name="test-span-1" description="Simple test">
+	  	<taskdef name="schematron" classname="com.schematron.ant.SchematronTask" classpath="../lib/*.jar"/>
+	  	<schematron schema="../schemas/test-f.sch" file="../xml/test1.xml" failonerror="false"
+	  		allow_foreign="true" diagnose="yes"
+	  	debugmode="true"   outputEncoding="UTF-8"  />
+	  </target>
+	
+
+
+	  <!-- span -->
+	  <target name="test-span-2" description="Simple test">
+	  	<taskdef name="schematron" classname="com.schematron.ant.SchematronTask" classpath="../lib/*.jar"/>
+	  	<schematron schema="../schemas/test-f.sch" file="../xml/test1.xml" failonerror="false"
+	  		allow_foreign="true" queryLanguageBinding="xslt2" diagnose="yes"
+	  	debugmode="true"   outputEncoding="UTF-8"  />
+	  </target>
+	
+
+	<!-- Foreign -->
+	  <target name="test-foreign-1" description="Simple test">
+	  	<!-- deliberately fails!  the interesting thing is whether an error message is generated -->
+	  	<taskdef name="schematron" classname="com.schematron.ant.SchematronTask" classpath="../lib/*.jar"/>
+	  	<schematron schema="../schemas/test-xslt2.sch" file="../xml/test1.xml" failonerror="false"
+	  	allow_foreign="true"
+	  	debugmode="true"   queryLanguageBinding="xslt2" />
+	  </target>
+ 
+	
+
+  <!--
+  <target name="test-simple" description="Simple test">
+  	<taskdef name="schematron" classname="com.schematron.ant.SchematronTask" classpath="../lib/ant-schematron.jar"/>
+  	<schematron schema="../schemas/test.sch" file="../xml/test.xml" failonerror="false"/>
+  </target>
+
+  <target name="test-classes" description="Test with classes">
+  	<taskdef name="schematron" classname="com.schematron.ant.SchematronTask" classpath="../../classes;../../resource/xslt"/>
+  	<schematron schema="../schemas/test.sch" file="../xml/test.xml" failonerror="false"/>
+  </target>
+
+  <target name="test-fileset" description="Test with a Fileset">
+    <taskdef name="schematron" classname="com.schematron.ant.SchematronTask" classpath="../lib/ant-schematron.jar"/>
+  	<schematron schema="../schemas/test.sch" failonerror="true">
+  	  <fileset dir="../xml" includes="*.xml"/>
+  	</schematron>
+  </target>
+
+  <target name="test-let" description="Test the let instruction">
+    <taskdef name="schematron" classname="com.schematron.ant.SchematronTask" classpath="../lib/ant-schematron.jar"/>
+    <schematron schema="../schemas/test.sch" phase="critical">
+  	  <let name="xx" value="yy"/>
+  	  <fileset dir="../xml" includes="**/test.xml"/>
+  	</schematron>
+  </target>
+
+  <target name="test-phase" description="Test the phase attribute">
+    <taskdef name="schematron" classname="com.schematron.ant.SchematronTask" classpath="../lib/ant-schematron.jar"/>
+    <schematron schema="../schemas/test.sch">
+      <fileset dir="../xml" includes="**/test.xml"/>
+    </schematron>
+  </target>
+-->
+	
+
+	  <!-- localization -->
+
+	  <target name="test-localization-2" description="Simple localization test">
+	  	<!-- FATAL ERROR -->
+	  	<taskdef name="schematron" classname="com.schematron.ant.SchematronTask" classpath="../lib/*.jar"/>
+	  	<schematron schema="../schemas/test-message.sch" file="../xml/test1.xml" failonerror="false"
+	  		allow_foreign="true"  diagnose="yes" queryLanguageBinding="xslt2"  langCode="en"
+	  	debugmode="true"   outputEncoding="UTF-8"  />
+	  	<echo>test-localization-2  done</echo>
+	  </target>
+
+
+	  <target name="test-localization-2de" description="Simple test in German">
+		<!-- FATAL ERROR -->
+	  	<taskdef name="schematron" classname="com.schematron.ant.SchematronTask" classpath="../lib/*.jar"/>
+	  	<schematron schema="../schemas/test-message.sch" file="../xml/test1.xml" failonerror="false"
+	  		allow_foreign="true"  diagnose="yes" queryLanguageBinding="xslt2"  langCode="de"
+	  	debugmode="true"   outputEncoding="UTF-8"  />
+	 	<echo>test-localization-2de  done</echo>
+	  </target> 
+	
+	  <target name="test-localization-1" description="Simple test">
+		<!-- FATAL ERROR -->
+	  	<!-- deliberately fails!  the interesting thing is whether an error message is generated -->
+	  	<taskdef name="schematron" classname="com.schematron.ant.SchematronTask" classpath="../lib/*.jar"/>
+	  	<schematron schema="../schemas/test-message.sch" file="../xml/test1.xml" failonerror="false"
+	  		allow_foreign="true"   diagnose="yes" 
+	  	debugmode="true"   outputEncoding="UTF-8"  />
+	  	
+	 	<echo>test-localization-1  done</echo>
+	  </target>
+	
+
+	  <target name="test-localization-1de" description="Simple test">
+		<!-- FATAL ERROR -->
+	  	<!-- deliberately fails!  the interesting thing is whether an error message is generated -->
+	  	<taskdef name="schematron" classname="com.schematron.ant.SchematronTask" classpath="../lib/*.jar"/>
+	  	<schematron schema="../schemas/test-message.sch" file="../xml/test1.xml" failonerror="false"
+	  		allow_foreign="true"   diagnose="yes"   langCode="de"
+	  	debugmode="true"   outputEncoding="UTF-8"  />
+
+	  	<echo>test-localization-1de  done</echo>
+	  </target>
+	
+	<!-- Location --> 
+
+	  <target name="test-location" description="Simple test">
+	  	<taskdef name="schematron" classname="com.schematron.ant.SchematronTask" classpath="../lib/*.jar"/>
+	  	<record name="log.txt" action="start"/>
+		 
+	  	
+	  	<schematron schema="../schemas/no-text-test.sch" file="../xml/test1.xml" 
+		  		failonerror="false"
+		  		format="svrl" 
+		  	debugmode="true"   queryLanguageBinding="xslt2"
+		  	outputDir="../tmp" />
+
+		<echo>vanilla location test works</echo>	
+
+
+		 	<schematron schema="../schemas/william/william-document.sch"   
+		 		    failonerror="false"
+				  	format="svrl" 
+				  	debugmode="true"   queryLanguageBinding="xslt2"
+				  	outputDir="../tmp"  
+			 		attributes="false">
+				  		 <fileset dir="../xml/william" includes="*.xml"/>
+				  		</schematron>
+
+		
+		  	<echo> test3 works</echo>
+
+	  	<schematron schema="../schemas/william/william-document.sch" 
+	  		 file="../xml/william/william-sample.xml" 
+	  		failonerror="false"
+	  		format="svrl" 
+	  	debugmode="true"   queryLanguageBinding="xslt2"
+	  	outputDir="../tmp" />
+
+		<echo>test 2 works</echo>	
+	  	<schematron schema="../schemas/william/william-document-short.sch" 
+	  		file="../xml/william/william-sample.xml" 
+	  		failonerror="false"
+	  		format="svrl" 
+	  	debugmode="true"   queryLanguageBinding="xslt2"
+	  	outputDir="../tmp" />
+ 
+	
+		<echo>simple funny char test works</echo>
+	  	
+	  	<record name="../tmp/log.txt" action="stop"/>
+		  </target>
+</project>
