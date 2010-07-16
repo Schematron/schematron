@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  An Ant script to test the Schematron  
+ -->
+<!--
+ 
+ Copyright 2000-2010 Rick Jelliffe, Topologi Pty. Ltd, Allette Systems 
+ 
+ Licensed under the Apache License, Version 2.0 (the "License"); 
+ you may not use this file except in compliance with the License. 
+ You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 
+ Unless required by applicable law or agreed to in writing, software distributed 
+ under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
+ CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+ specific language governing permissions and limitations under the License.
+ 
+ -->
+<project name="schematron-test"  basedir="."  default="include-test">
+
+	<property name="lib.dir" value="lib"/>
+    <property name="dist.dir" value="dist"/>
+    
+<!-- Test inclusions -->	
+	
+   <target  name="include-test" >
+   <xslt basedir="test/include"
+   		style="iso_dsdl_include.xsl" in="test/include/master.xml"  out="temp/includeOut.xml"> 
+   				<classpath>
+   					<pathelement location="${lib.dir}/saxon9.jar"/>
+   				</classpath>
+   </xslt>
+   	</target>
+	
+	   <target  name="include-test-xpath-wf" >
+	   <xslt basedir="test/include"
+	   		style="iso_dsdl_include.xsl" in="test/include/master-non-wf-xpath.xml"  out="temp/xpathOut.xml"> 
+	   				<classpath>
+	   					<pathelement location="${lib.dir}/saxon9.jar"/>
+	   				</classpath>
+	   </xslt>
+	   	</target>
+	
+      
+	   <target  name="schematron-saxon-abstract-test" >
+	   <xslt basedir="test/abstract"
+	   		style="iso_abstract_expand.xsl" in="test/abstract/abstract-test.sch"  out="temp/abstract-test-saxon.sch"> 
+	   				<classpath>
+	   					<pathelement location="${lib.dir}/saxon9.jar"/>
+	   				</classpath>
+	   </xslt>
+	   	</target>
+	 
+
+	   <!--  VANILLA SCHEMATRON TEST for SAXON XSLT1 -->
+	   <target  name="schematron-xslt1-compile-test" >
+	   <xslt basedir="test/schematron"
+	   		style="iso_schematron_skeleton_for_xslt1.xsl" in="test/schematron/universalTests.sch"  out="temp/universalTests-xslt1.xsl"> 
+	   				<classpath>
+	   					<pathelement location="${lib.dir}/saxon9.jar"/>
+	   				</classpath>
+	    <!--param name="terminate" expression="assert" /-->
+	   </xslt>
+	   	</target>
+	
+	   <target  name="schematron-xslt1-run-test" depends="schematron-xslt1-compile-test">
+		   <xslt basedir="test/schematron"
+		   		style="temp/universalTests-xslt1.xsl" in="test/include/master.xml"  out="temp/universalTests.txt"> 
+		   				<classpath>
+		   					<pathelement location="${lib.dir}/saxon9.jar"/>
+		   				</classpath>
+		   
+		   </xslt>
+		   	</target>
+
+	
+	   <!--  VANILLA SCHEMATRON TEST for SAXON XSLT2-->
+	   <target  name="schematron-compile-test" >
+	   <xslt basedir="test/schematron"
+	   		style="iso_schematron_skeleton_for_saxon.xsl" in="test/schematron/universalTests-xslt2.sch"  out="temp/universalTests-xslt2.xsl"> 
+	   				<classpath>
+	   					<pathelement location="${lib.dir}/saxon9.jar"/>
+	   				</classpath>
+
+	   </xslt>
+	   	</target>
+	   <target  name="schematron-run-test" depends="schematron-compile-test">
+		   <xslt basedir="test/schematron"
+		   		style="temp/universalTests-xslt2.xsl" in="test/include/master.xml"  out="temp/universalTests-xslt2.txt"> 
+		   				<classpath>
+		   					<pathelement location="${lib.dir}/saxon9.jar"/>
+		   				</classpath> 
+ 
+		   </xslt>
+		</target>
+	  
+	   <!--  SVRL SCHEMATRON TEST for SAXON XSLT1  -->
+	   <target  name="schematron-svrl-xslt1-compile-test" 
+	   		>
+	   <xslt basedir="test/schematron"
+	   		style="iso_svrl_for_xslt1.xsl" in="test/schematron/universalTests.sch"  out="temp/universalTests-xslt1-svrl.xsl"> 
+	   				<classpath>
+	   					<pathelement location="${lib.dir}/saxon9.jar"/>
+	   				</classpath>
+	   </xslt>
+	   	</target>
+	   <target  name="schematron-svrl-xslt1-run-test" depends="schematron-svrl-xslt1-compile-test">
+		   <xslt basedir="test/schematron"
+		   		style="temp/universalTests-xslt1-svrl.xsl" in="test/include/master.xml"  out="temp/universalTests_xslt1.svrl"> 
+		   				<classpath>
+		   					<pathelement location="${lib.dir}/saxon9.jar"/>
+		   				</classpath>
+		   </xslt>
+		</target>
+		
+	   <!-- TESTING VARIABLES -->
+	   <!-- By hand. Run stylesheet on test/schematron/VariableTests.sch
+	        Confirm by inspection that there are 6 variables, all with either
+	        @select attributes or contents. -->
+	
+	
+	   <!--  SVRL SCHEMATRON TEST -->
+	   <target  name="schematron-svrl-compile-test" 
+	   		depends="schematron-compile-test">
+	   <xslt basedir="test/schematron"
+	   		style="iso_svrl_for_xslt2.xsl" in="test/schematron/universalTests-xslt2.sch"  out="temp/universalTests-xslt2-svrl.xsl"> 
+	   				<classpath>
+	   					<pathelement location="${lib.dir}/saxon9.jar"/>
+	   				</classpath>
+	
+	   </xslt>
+	   	</target>
+	   <target  name="schematron-svrl-run-test" depends="schematron-svrl-compile-test">
+		   <xslt basedir="test/schematron"
+		   		style="temp/universalTests-xslt2-svrl.xsl" in="test/include/master.xml"  out="temp/universalTests.svrl"> 
+		   				<classpath>
+		   					<pathelement location="${lib.dir}/saxon9.jar"/>
+		   				</classpath>
+		   </xslt>
+		</target>
+		
+
+	   <!--  MULTIPLE DOCUMENT SCHEMATRON TEST -->
+
+	   <target  name="schematron-multi-compile-test" 
+   				depends="schematron-compile-test">
+	   <xslt basedir="test/include"
+	   		style="iso_svrl_for_xslt2.xsl" in="test/schematron/universalTests-xslt2-multidocument.sch"  out="temp/universalTests-xslt2-svrl-multidocument.xsl"> 
+	   				<classpath>
+	   					<pathelement location="${lib.dir}/saxon9.jar"/>
+	   				</classpath>
+	   	
+	   </xslt>
+	   	</target>
+	   <target  name="schematron-multi-run-test" depends="schematron-multi-compile-test">
+		   <xslt basedir="test/include"
+		   		style="temp/universalTests-xslt2-svrl-multidocument.xsl" in="test/include/master.xml"  out="temp/universalTests-multidocument.svrl"> 
+		   				<classpath>
+		   					<pathelement location="${lib.dir}/saxon9.jar"/>
+		   				</classpath>
+		   </xslt>
+		   	</target>
+		
+	  <!-- CRDL TEST -->
+	
+	   <!--  SVRL SCHEMATRON TEST -->
+	   <target  name="schematron-crdl-prepro-test"  >
+	   <xslt basedir="test/crdl"
+	   		style="iso_crdl_expand.xsl" in="test/crdl/test.sch"  
+	   	           out="test/crdl/crdl-test-expanded.sch"> 
+	   				<classpath>
+	   					<pathelement location="${lib.dir}/saxon9.jar"/>
+	   				</classpath>
+	
+	   </xslt>
+	   	</target>   <target  name="schematron-crdl-compile-test" 
+		depends="schematron-crdl-prepro-test">
+       <xslt basedir="test/crdl"
+		style="iso_svrl_for_xslt2.xsl" in="test/crdl/crdl-test-expanded.sch"  out="test/crdl/crdl-test-expanded.xsl"> 
+				<classpath>
+					<pathelement location="${lib.dir}/saxon9.jar"/>
+				</classpath>
+
+</xslt>
+	</target>
+<target  name="schematron-crdl-run-test" depends="schematron-crdl-compile-test">
+   <xslt basedir="test/crdl"
+   		style="test/crdl/crdl-test-expanded.xsl" in="test/crdl/xxx.xml"  out="test/crdl/xxx.svrl"> 
+   				<classpath>
+   					<pathelement location="${lib.dir}/saxon9.jar"/>
+   				</classpath>
+   </xslt>
+	   <xslt basedir="test/crdl"
+	   		style="test/crdl/crdl-test-expanded.xsl" in="test/crdl/xxx-bad.xml"  out="test/crdl/xxx-bad.svrl"> 
+	   				<classpath>
+	   					<pathelement location="${lib.dir}/saxon9.jar"/>
+	   				</classpath>
+	   </xslt>
+</target>
+   
+
+	   <!--  PROPERTIES TEST -->
+
+	   <target  name="schematron-property-compile-test" 
+				depends="schematron-compile-test">
+	   <xslt basedir="test/properties"
+	   		style="iso_svrl_for_xslt2.xsl" in="test/properties/test-properties.sch"  out="temp/props.xsl"> 
+	   				<classpath>
+	   					<pathelement location="${lib.dir}/saxon9.jar"/>
+	   				</classpath>
+	   </xslt>
+	   	</target>
+ 
+	
+	  
+	
+	   <target  name="schematron-property-run-test" depends="schematron-property-compile-test">
+		   <xslt basedir="test/properties"
+		   		style="temp/props.xsl" in="test/properties/test1.xml"  out="temp/props1.svrl"> 
+		   				<classpath>
+		   					<pathelement location="${lib.dir}/saxon9.jar"/>
+		   				</classpath>
+		   </xslt>
+		   <xslt basedir="test/properties"
+		   		style="temp/props.xsl" in="test/properties/test2.xml"  out="temp/props2.svrl"> 
+		   				<classpath>
+		   					<pathelement location="${lib.dir}/saxon9.jar"/>
+		   				</classpath>
+		   </xslt>
+		   <xslt basedir="test/properties"
+		   		style="temp/props.xsl" in="test/properties/test3.xml"  out="temp/props3.svrl"> 
+		   				<classpath>
+		   					<pathelement location="${lib.dir}/saxon9.jar"/>
+		   				</classpath>
+		   </xslt>
+		   	</target> 
+		
+	
+	   <!-- Do ZIP -->
+	<target name="make-zips" >
+	   <zip destfile="${dist.dir}/iso-schematron-xslt1.zip">
+	   		<fileset dir="." 
+	   		includes="iso_abstract_expand.xsl, iso_dsdl_include.xsl, iso_schematron_skeleton_for_xslt1.xsl, iso_svrl_for_xslt1.xsl,
+	   			iso_schematron_message.xsl, readme.txt, schematron-skeleton-api.htm,
+	   			ExtractSchFromRNG.xsl, ExtractSchFromXSD.xsl" />
+	   </zip>
+
+	   <zip destfile="${dist.dir}/iso-schematron-xslt2.zip">
+	   		<fileset dir="." 
+	   		includes="iso_abstract_expand.xsl, iso_dsdl_include.xsl, iso_schematron_skeleton_for_saxon.xsl, iso_svrl_for_xslt2.xsl,
+	   			iso_schematron_message_xslt2.xsl, readme.txt, schematron-skeleton-api.htm, 
+	   			sch-messages-en.xhtml, sch-messages-de.xhtml, sch-messages-fr.xhtml, sch-messages-nl.xhtml,
+	   			sch-messages-cs.xhtml,
+	   			ExtractSchFromRNG-2.xsl, ExtractSchFromXSD-2.xsl " />
+	   </zip>
+	</target>
+	
+</project>

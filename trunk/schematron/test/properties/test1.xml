@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<Dog>
+	<leg>
+		<paw></paw>
+	</leg>
+	<leg>
+		<paw></paw>
+	</leg>
+	<leg>
+		<paw></paw>
+	</leg>
+</Dog>

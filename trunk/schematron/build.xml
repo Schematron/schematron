@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  An Ant script to test the Schematron  
+ -->
+<!--
+ 
+ Copyright 2008 Rick Jelliffe, Topologi Pty. Ltd, Allette Systems 
+ 
+ Licensed under the Apache License, Version 2.0 (the "License"); 
+ you may not use this file except in compliance with the License. 
+ You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 
+ Unless required by applicable law or agreed to in writing, software distributed 
+ under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
+ CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+ specific language governing permissions and limitations under the License.
+ 
+ -->
+
+<!-- NOTE: I found a classpath problem running this under eclipse. I had to do
+     {ANT RUN BUTTON}>External Tools Configuration
+        then select a configuration, select Add JAR in the paths tab, then select
+        all the schematron/lib/xalan jar files AND SAVE. 
+ -->
+	
+<project name="schematron-test"  basedir="."  default="include-test-java">
+
+	<property name="lib.dir" value="lib"/>
+    <property name="dist.dir" value="dist"/>
+    
+<!-- Test inclusions -->	
+	 
+	
+    
+   <target  name="include-test-java" >
+   <xslt basedir="test/include" 
+   		style="iso_dsdl_include.xsl" in="test/include/master.xml"  out="temp/includeOut-java.xml">  
+
+	<classpath>
+			<pathelement location="${lib.dir}/xalan.jar"/>
+			<pathelement location="${lib.dir}/xercesImpl.jar"/>
+		<pathelement location="${lib.dir}/xml-apis.jar"/>
+		<pathelement location="${lib.dir}/serializer.jar"/>
+		</classpath>
+    <factory name="org.apache.xalan.processor.TransformerFactoryImpl">
+      <attribute name="http://xml.apache.org/xalan/features/optimize" value="true"/>
+    </factory>
+
+   </xslt>
+   	</target> 
+	
+	  <!-- Test abstract -->
+	   <target  name="schematron-xalan-abstract-test" >
+		   <xslt basedir="test/abstract"
+		   		style="iso_abstract_expand.xsl" in="test/abstract/abstract-test.sch"  out="temp/abstract-test-xalan.sch"> 
+			<classpath>
+					<pathelement location="${lib.dir}/xalan.jar"/>
+					<pathelement location="${lib.dir}/xercesImpl.jar"/>
+				<pathelement location="${lib.dir}/xml-apis.jar"/>
+				<pathelement location="${lib.dir}/serializer.jar"/>
+				</classpath>
+		    <factory name="org.apache.xalan.processor.TransformerFactoryImpl">
+		      <attribute name="http://xml.apache.org/xalan/features/optimize" value="true"/>
+		    </factory>
+
+		   </xslt>
+		   	</target>
+	 
+	
+	   <!--  VANILLA SCHEMATRON TEST for Java XSLT1 -->
+	   <target  name="schematron-xslt1-java-compile-test" >
+	   <xslt basedir="test/schematron"
+	   		style="iso_schematron_skeleton_for_xslt1.xsl" 
+            in="test/schematron/universalTests.sch"  
+            out="temp/universalTests-xslt1-java.xsl"> 
+
+		<classpath>
+				<pathelement location="${lib.dir}/xalan.jar"/>
+				<pathelement location="${lib.dir}/xercesImpl.jar"/>
+			<pathelement location="${lib.dir}/xml-apis.jar"/>
+			<pathelement location="${lib.dir}/serializer.jar"/>
+			</classpath>
+	    <!--param name="terminate" expression="true" /-->
+	    <factory name="org.apache.xalan.processor.TransformerFactoryImpl">
+	      <attribute name="http://xml.apache.org/xalan/features/optimize" value="true"/>
+	    </factory>
+
+	   </xslt>
+	   	</target>
+	   <target  name="schematron-xslt1-java-run-test" depends="schematron-xslt1-java-compile-test">
+		   <xslt basedir="test/schematron"
+		   		style="temp/universalTests-xslt1-java.xsl" in="test/include/master.xml"  out="temp/universalTests-java.txt"> 
+
+			<classpath>
+					<pathelement location="${lib.dir}/xalan.jar"/>
+					<pathelement location="${lib.dir}/xercesImpl.jar"/>
+				<pathelement location="${lib.dir}/xml-apis.jar"/>
+				<pathelement location="${lib.dir}/serializer.jar"/>
+				</classpath>
+		    <factory name="org.apache.xalan.processor.TransformerFactoryImpl">
+		      <attribute name="http://xml.apache.org/xalan/features/optimize" value="true"/>
+		    </factory>
+
+		   </xslt>
+		   	</target>
+
+	   <!-- TESTING VARIABLES -->
+	   <!-- By hand. Run stylesheet on test/schematron/VariableTests.sch
+	        Confirm by inspection that there are 6 variables, all with either
+	        @select attributes or contents. --> 
+	
+	
+	   <!--  SVRL SCHEMATRON TEST for XALAN XSLT1  -->
+		   <target  name="schematron-svrl-xalan-xslt1-compile-test" 
+		   		>
+		   <xslt basedir="test/schematron"
+		   		style="iso_svrl_for_xslt1.xsl" in="test/schematron/universalTests.sch"  out="temp/universalTests-xalan-xslt1-svrl.xsl"> 
+			<classpath>
+							<pathelement location="${lib.dir}/xalan.jar"/>
+							<pathelement location="${lib.dir}/xercesImpl.jar"/>
+				<pathelement location="${lib.dir}/xml-apis.jar"/>
+				<pathelement location="${lib.dir}/serializer.jar"/>
+						</classpath>
+				    <factory name="org.apache.xalan.processor.TransformerFactoryImpl">
+				      <attribute name="http://xml.apache.org/xalan/features/optimize" value="true"/>
+				    </factory>
+
+		   </xslt>
+		   	</target>
+		   <target  name="schematron-svrl-xalan-xslt1-run-test" depends="schematron-svrl-xalan-xslt1-compile-test">
+			   <xslt basedir="test/schematron"
+			   		style="temp/universalTests-xalan-xslt1-svrl.xsl" in="test/include/master.xml"  out="temp/universalTests_xalan_xslt1.svrl"> 
+				<classpath>
+								<pathelement location="${lib.dir}/xalan.jar"/>
+								<pathelement location="${lib.dir}/xercesImpl.jar"/>
+					<pathelement location="${lib.dir}/xml-apis.jar"/>
+					<pathelement location="${lib.dir}/serializer.jar"/>
+							</classpath>
+					    <factory name="org.apache.xalan.processor.TransformerFactoryImpl">
+					      <attribute name="http://xml.apache.org/xalan/features/optimize" value="true"/>
+					    </factory>
+
+			   </xslt>
+			</target>
+			
+		 
+	
+	   <!-- Do ZIP -->
+	<target name="make-zips" >
+	   <zip destfile="${dist.dir}/iso-schematron-xslt1.zip">
+	   		<fileset dir="." 
+	   		includes="iso_abstract_expand.xsl, iso_dsdl_include.xsl, iso_schematron_skeleton_for_xslt1.xsl, iso_svrl_for_xslt1.xsl,
+	   			iso_schematron_message.xsl, readme.txt, schematron-skeleton-api.htm,
+	   			ExtractSchFromRNG.xsl, ExtractSchFromXSD.xsl" />
+	   </zip>
+ 
+	</target>
+	
+</project>
