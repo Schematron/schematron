@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xsd:schema elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	
+	<xsd:element name="jsml" type="JsmlDocumentType">
+		
+	</xsd:element>
+	
+	<xsd:complexType name="JsmlDocumentType">
+		<xsd:sequence>
+			<xsd:element name="class" type="ClassType" minOccurs="1" maxOccurs="unbounded">
+				<xsd:key name="class-name-is-unique">
+					<xsd:selector xpath="class" />
+					<xsd:field xpath="@name" />
+				</xsd:key>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+		
+	<xsd:complexType name="ClassType" mixed="false">
+		<xsd:sequence>
+			<xsd:element name="events" type="EventsType" minOccurs="0" maxOccurs="1">
+				<xsd:key name="event-name-is-unique">
+					<xsd:selector xpath="event" />
+					<xsd:field xpath="@name" />
+				</xsd:key>
+			</xsd:element>
+			<xsd:element name="property" type="PropertyType" minOccurs="0" maxOccurs="unbounded" />
+		</xsd:sequence>
+		<xsd:attribute name="name" type="xsd:string" use="required" />
+		<xsd:attribute name="inherits" type="xsd:string" use="optional" />
+	</xsd:complexType>
+	
+	
+	<xsd:complexType name="EventsType" mixed="false">
+		<xsd:sequence>
+			<xsd:element name="event" type="EventType" minOccurs="1" maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:complexType name="EventType" mixed="false">
+		<xsd:sequence>
+			<xsd:element name="desc" type="DescriptionType" minOccurs="0" maxOccurs="1" />
+		</xsd:sequence>
+		<xsd:attribute name="name" type="xsd:string" use="required" />
+		<xsd:attribute name="scope" type="ScopeType" use="required" />
+	</xsd:complexType>
+	
+	<xsd:complexType name="PropertyType" mixed="false">
+		<xsd:sequence>
+			<xsd:element name="desc" type="xsd:string" minOccurs="0" maxOccurs="1" />
+		</xsd:sequence>
+		<xsd:attributeGroup ref="IdentifierAttributeGroup" />
+	</xsd:complexType>
+
+		
+	<xsd:attributeGroup name="IdentifierAttributeGroup">
+		<xsd:attribute name="name" type="xsd:string" use="required" />
+		<xsd:attribute name="scope" type="ScopeType" use="required" />
+		<xsd:attribute name="type" type="xsd:string" use="required" />
+	</xsd:attributeGroup>
+	
+	<xsd:simpleType name="DescriptionType">
+		<xsd:restriction base="xsd:string" />
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="ScopeType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="class" />
+			<xsd:enumeration value="instance" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="YesNoType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="yes" />
+			<xsd:enumeration value="no" />
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

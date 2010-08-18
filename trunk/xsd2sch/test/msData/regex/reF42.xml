@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='reF42.xsd' >
+
+<!-- 
+base='string', pattern='^\P{IsBasicLatin}', value='#x0100;', type='invalid', RULE='15,16'
+-->
+
+     <elem>&#x0100;</elem>
+
+ </doc>

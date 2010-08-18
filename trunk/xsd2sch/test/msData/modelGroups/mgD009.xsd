@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:other="http://foo">
+	<xs:element name="root" type="test"/>
+	<xs:complexType name="test">
+		<xs:choice other:att="me">
+			<xs:element name="a"/>
+			<xs:element name="b"/>
+		</xs:choice>
+	</xs:complexType>
+</xs:schema>

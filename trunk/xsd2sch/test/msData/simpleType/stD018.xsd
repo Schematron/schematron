@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:simpleType name="fooType">
+		<xsd:list itemType="xsd:integer">
+			<xsd:annotation>
+				<xsd:documentation>
+				Annotation information
+			</xsd:documentation>
+			</xsd:annotation>
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:integer"/>
+			</xsd:simpleType>
+		</xsd:list>
+	</xsd:simpleType>
+</xsd:schema>

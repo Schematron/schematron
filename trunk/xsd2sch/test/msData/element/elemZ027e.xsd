@@ -1,0 +1,26 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+         <xs:element name="a" substitutionGroup="b" type="xs:int"/>
+         <xs:element name="b" substitutionGroup="c" type="xs:int" />
+         <xs:element name="c" substitutionGroup="d" type="xs:anyType"/>
+         <xs:element name="d" type="xs:anyType" />
+
+
+<xs:complexType name="base">
+	<xs:sequence>
+		<xs:element ref="d"/>
+	</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="derived">
+	<xs:complexContent>
+		<xs:restriction base="base">
+			<xs:sequence>
+			      <xs:element ref="c"/>
+			</xs:sequence>
+		</xs:restriction>
+	</xs:complexContent>
+</xs:complexType>
+
+<xs:element name="doc" type="base"/>
+</xs:schema>

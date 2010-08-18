@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:complexType name="myType">
+		<xs:all>
+			<xs:element name="myElement1" type="xs:string" minOccurs="0"/>
+			<xs:element name="myElement2" type="xs:string" minOccurs="0"/>
+			<xs:element name="myElement3" type="xs:string" minOccurs="0"/>
+		</xs:all>
+		<xs:anyAttribute namespace="##any"/>
+	</xs:complexType>
+	<xs:complexType name="fooType">
+		<xs:complexContent>
+			<xs:restriction base="myType">
+				<xs:all>
+					<xs:element name="myElement1" type="xs:string"/>
+				</xs:all>
+				<xs:attribute name="localAttr"/>
+				<xs:attribute name="myAttr"/>
+			</xs:restriction>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="root" type="fooType"/>
+</xs:schema>

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:simpleType name="myType_1">
+		<xsd:restriction base="xsd:integer"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="myType_2">
+		<xsd:union memberTypes="myType_1 xsd:timeDuration"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="fooType">
+		<xsd:union memberTypes="myType_2"/>
+	</xsd:simpleType>
+</xsd:schema>

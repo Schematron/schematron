@@ -1,0 +1,5 @@
+<?xml version='1.0'?>
+<test  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation="ID_enumeration001.xsd" >
+<!-- facet=enumeration and value=foo and document value= -->
+  <foo attrTest="">special test for datatypes that are attribute only</foo>
+</test>

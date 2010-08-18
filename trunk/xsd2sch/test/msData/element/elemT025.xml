@@ -1,0 +1,5 @@
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="elemT025.xsd">
+	<test2 xsi:type="E-CA">
+		<x/><y/><z/>
+	</test2>
+</root>

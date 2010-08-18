@@ -1,0 +1,67 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    	<xsd:element name="root">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element maxOccurs="100" ref="bar"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+    	<xsd:element type="st" name="bar"></xsd:element>
+
+	<xsd:simpleType name="st">
+		<xsd:restriction base="xsd:anyURI">
+			<xsd:enumeration value="a"/>
+			<xsd:enumeration value="b"/>
+			<xsd:enumeration value="c"/>
+			<xsd:enumeration value="d"/>
+			<xsd:enumeration value="e"/>
+			<xsd:enumeration value="f"/>
+			<xsd:enumeration value="g"/>
+			<xsd:enumeration value="h"/>
+			<xsd:enumeration value="i"/>
+			<xsd:enumeration value="j"/>
+			<xsd:enumeration value="k"/>
+			<xsd:enumeration value="l"/>
+			<xsd:enumeration value="m"/>
+			<xsd:enumeration value="n"/>
+			<xsd:enumeration value="o"/>
+			<xsd:enumeration value="p"/>
+			<xsd:enumeration value="q"/>
+			<xsd:enumeration value="r"/>
+			<xsd:enumeration value="s"/>
+			<xsd:enumeration value="t"/>
+			<xsd:enumeration value="u"/>
+			<xsd:enumeration value="v"/>
+			<xsd:enumeration value="w"/>
+			<xsd:enumeration value="x"/>
+			<xsd:enumeration value="y"/>
+			<xsd:enumeration value="z"/>
+			<xsd:enumeration value="1"/>
+			<xsd:enumeration value="2"/>
+			<xsd:enumeration value="3"/>
+			<xsd:enumeration value="4"/>
+			<xsd:enumeration value="5"/>
+			<xsd:enumeration value="6"/>
+			<xsd:enumeration value="7"/>
+			<xsd:enumeration value="8"/>
+			<xsd:enumeration value="9"/>
+			<xsd:enumeration value="@"/>
+			<xsd:enumeration value="$"/>
+			<xsd:enumeration value="%"/>
+			<xsd:enumeration value="^"/>
+			<xsd:enumeration value="*"/>
+			<xsd:enumeration value="("/>
+			<xsd:enumeration value=")"/>
+			<xsd:enumeration value="_"/>
+			<xsd:enumeration value="-"/>
+			<xsd:enumeration value="+"/>
+			<xsd:enumeration value=".."/>
+			<xsd:enumeration value="."/>
+			<xsd:enumeration value="~"/>
+			<xsd:enumeration value="!"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+</xsd:schema>

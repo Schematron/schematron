@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?mso-infoPathSolution solutionVersion="1.0.0.1" productVersion="11.0.5106" PIVersion="1.0.0.0" href="file:///D:\bugs\xsdFixed\manifest.xsf" language="en-us" ?>
+<?mso-application progid="InfoPath.Document"?>
+<root1
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="test97822.xsd"
+>
+	<group1>
+		<el20>
+			<el10>aaafoo</el10>
+			<el10>aaaaa</el10>
+		</el20>
+	</group1>
+</root1>

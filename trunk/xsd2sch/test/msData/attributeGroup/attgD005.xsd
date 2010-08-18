@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:attribute name="att1" type="xsd:string"/>
+	<xsd:attribute name="att2" type="xsd:string"/>
+	<xsd:element name="doc">
+		<xsd:complexType mixed="true">
+			<xsd:attributeGroup ref="main"/>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:attributeGroup name="main">
+		<xsd:attribute ref="att1"/>
+		<xsd:attributeGroup ref="foo"/>
+		<xsd:attribute ref="att2"/>
+		<xsd:attributeGroup ref="bar"/>
+		<xsd:attribute name="att3" type="xsd:int"/>
+	</xsd:attributeGroup>
+	<xsd:attributeGroup name="foo">
+		<xsd:annotation/>
+		<xsd:attribute name="foo" type="xsd:int"/>
+	</xsd:attributeGroup>
+	<xsd:attributeGroup name="bar">
+		<xsd:annotation/>
+		<xsd:attribute name="bar" type="mySimpleType"/>
+	</xsd:attributeGroup>
+	<xsd:simpleType name="mySimpleType">
+		<xsd:restriction base="xsd:positiveInteger">
+			<xsd:maxExclusive value="100"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

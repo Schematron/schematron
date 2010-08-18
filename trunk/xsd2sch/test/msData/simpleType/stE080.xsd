@@ -1,0 +1,12 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+	<xsd:simpleType name="list">
+		<xsd:list itemType="xsd:int"/>
+	</xsd:simpleType>
+
+	<xsd:element name="root" fixed="1 2 3 4 20 100">
+		<xsd:simpleType>
+			<xsd:union memberTypes="xsd:gMonth xsd:gYear list"/>
+		</xsd:simpleType>
+	</xsd:element>
+</xsd:schema>

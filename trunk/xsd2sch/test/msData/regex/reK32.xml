@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='reK32.xsd' >
+
+<!-- 
+base='string', pattern='\P{Nd}*', value='#x1034A;', type='valid', RULE='26,31'
+-->
+
+      <elem att='&#x1034A;'/>
+
+ </doc>

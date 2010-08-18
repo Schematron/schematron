@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://foobar" xmlns="http://foobar">
+	<xs:import namespace="http://foo" schemaLocation="wildG002a.xsd"/>
+	<xs:element name="foo">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:any namespace="##any"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

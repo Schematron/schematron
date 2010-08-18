@@ -1,0 +1,26 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="ns-a"
+	xmlns="ns-a"
+	xmlns:a="ns-a"
+	elementFormDefault="unqualified"
+>
+
+	<xs:complexType name="foo">
+	  <xs:choice minOccurs="1">
+	    <xs:element name="a" type="xs:string"/>
+	    <xs:element ref="aft"/>
+	  </xs:choice>
+	</xs:complexType>
+
+	<xs:element name="aft" type="ns-a-aft" abstract="true"/>
+
+	<xs:complexType name="ns-a-aft">
+	  <xs:sequence minOccurs="1">
+	    <xs:element name="x" type="xs:string" maxOccurs="10"/>
+	    <xs:element name="y" minOccurs="0"/>
+	  </xs:sequence>
+	</xs:complexType>
+	
+	<xs:element name="root" type="a:foo"/>
+
+</xs:schema>

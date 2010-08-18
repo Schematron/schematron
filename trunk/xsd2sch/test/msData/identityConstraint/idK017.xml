@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="idK017.xsd">
+	<uid val="1"/>
+	<uid val="11"/>
+	<uid val="111"/>
+	<uid val="1.0"/>
+	<kid val="1"/>
+	<kid val="11"/>
+	<kid val="111"/>
+	<kid val="1.0"/>
+</root>

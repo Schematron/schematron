@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="myElem">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string"/>
+		</xsd:simpleType>
+		<xsd:annotation>
+			<xsd:documentation>
+			Annotation Information
+		</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

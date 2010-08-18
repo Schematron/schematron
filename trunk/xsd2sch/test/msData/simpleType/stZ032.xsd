@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema targetNamespace="foo" elementFormDefault="qualified" xmlns="foo" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:redefine schemaLocation="stZ032_2.xsd">
+	<xs:simpleType name="B">
+		<xs:restriction base="B">
+			<xs:enumeration value="1"/>
+		</xs:restriction>
+	</xs:simpleType>		
+	</xs:redefine>
+
+	<xs:element name="a" type="B"/>
+</xs:schema>

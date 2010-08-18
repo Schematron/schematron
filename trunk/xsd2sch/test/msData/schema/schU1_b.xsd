@@ -1,0 +1,25 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+elementFormDefault="qualified"
+xmlns="ns-a">
+
+
+
+	<xsd:redefine schemaLocation="schU1_a.xsd">
+		<xsd:attributeGroup name="a-g1">
+			<xsd:attribute name="a1" type="xsd:int"/>
+			<xsd:attribute name="a2" type="xsd:int"/>
+		</xsd:attributeGroup>
+  	</xsd:redefine> 
+
+	<xsd:attributeGroup name="b-g1">
+		<xsd:attribute name="b1" />
+		<xsd:attribute name="b2" />
+	</xsd:attributeGroup>
+
+	<xsd:complexType name="b-ct">
+		<xsd:attributeGroup ref="b-g1"/>
+	</xsd:complexType>
+
+	<xsd:element name="b-e1" type="b-ct" />
+	
+</xsd:schema>

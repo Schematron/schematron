@@ -1,0 +1,1 @@
+<foo:root foo:attr1="456" foo:attr2="abc" foo:attr3="true" xmlns:foo="foo"/>

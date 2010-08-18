@@ -1,0 +1,15 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+ 
+  <xs:simpleType name="type_a">   
+        <xs:restriction base="xs:string">
+          <xs:whiteSpace value="replace"/>
+        </xs:restriction>   
+  </xs:simpleType>
+
+    <xs:simpleType name="type_b">   
+        <xs:restriction base="type_a">
+          <xs:whiteSpace value="collapse"/>
+        </xs:restriction>   
+  </xs:simpleType>
+ 
+</xs:schema>

@@ -1,0 +1,5 @@
+<?xml version='1.0'?>
+<test  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation="anyURI_minLength002.xsd" >
+<!-- facet=minLength and value=5 and document value=foofo -->
+  <foo>foofo</foo>
+</test>

@@ -1,0 +1,8 @@
+<xsd:schema 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+>
+
+	<xsd:notation name="n1" system="foo'bar" public="foobar"/>
+
+
+</xsd:schema>

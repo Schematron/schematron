@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:group name="myGroup">
+		<xs:sequence>
+			<xs:element name="myElement" type="xs:string"/>
+		</xs:sequence>
+	</xs:group>
+	<xs:complexType name="fooType">
+		<xs:group ref="myGroup"/>
+		<xs:anyAttribute namespace="##any"/>
+	</xs:complexType>
+	<xs:element name="root" type="fooType"/>
+	<xs:attribute name="attrTest" type="xs:string"/>
+</xs:schema>

@@ -1,0 +1,39 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:simpleType name="tLNClassEnum">
+		<xs:union memberTypes="tExtensionLNClassEnum tPredefinedLNClassEnum " />
+	</xs:simpleType>
+
+	<xs:simpleType name="unionT">
+		<xs:union memberTypes="tPredefinedLNClassEnum">
+			<xs:simpleType>
+				<xs:restriction base="xs:int"/>
+			</xs:simpleType>
+			<xs:simpleType>
+				<xs:restriction base="tExtensionLNClassEnum"/>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+
+	<xs:simpleType name="tExtensionLNClassEnum">
+		<xs:restriction base="xs:Name">
+			<xs:minLength value="1" />
+			<xs:pattern value="\p{Lu}+" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="tPredefinedLNClassEnum">
+		<xs:restriction base="xs:Name">
+			<xs:enumeration value="LLNO" />
+			<xs:enumeration value="LPHD" />
+			<xs:enumeration value="PTRC" />
+			<xs:enumeration value="XCBR" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="st">
+		<xs:restriction base="xs:string"/>
+	</xs:simpleType>
+
+	
+</xs:schema>

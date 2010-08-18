@@ -1,0 +1,35 @@
+<root xsi:noNamespaceSchemaLocation="anyURI_b006.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<foo>/</foo>
+	<foo>//</foo>
+	<foo>///</foo>
+	<foo>////</foo>
+	<foo>/////////////////////////////////////</foo>
+	<foo>/a</foo>
+	<foo>//a</foo>
+	<foo>/a/</foo>
+	<foo>//a/</foo>
+	<foo>//a//a</foo>
+
+	<foo>\</foo>
+	<foo>\\</foo>
+	<foo>\\\</foo>
+	<foo>\\\\</foo>
+	<foo>\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\/////////////////////////////////////</foo>
+	<foo>\a</foo>
+	<foo>\\a</foo>
+	<foo>\a\</foo>
+	<foo>\\a</foo>
+	<foo>\\a\\a</foo>
+
+	<foo>\/</foo>
+	<foo>\\/\//a\a</foo>
+
+	<bar>\\</bar>
+	<bar>//</bar>
+	<bar>\a</bar>
+	<bar>..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\a</bar>
+
+
+
+</root>

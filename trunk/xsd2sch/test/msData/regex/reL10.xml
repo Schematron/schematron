@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='reL10.xsd' >
+
+<!-- 
+base='string', pattern='\p{IsArmenian}+', value='#x0530;#x058F;', type='valid', RULE='25,36'
+-->
+
+      <elem att='&#x0530;&#x058F;'/>
+
+ </doc>

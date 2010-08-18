@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:complexType name="complexType">
+		<xsd:sequence>
+			<xsd:group ref="g1"/>
+			<xsd:group ref="g2" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:element name="elem">
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:restriction base="complexType">
+					<xsd:sequence>
+						<xsd:group ref="g1"/>
+					</xsd:sequence>
+				</xsd:restriction>
+			</xsd:complexContent>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="doc">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="elem"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:group name="g1">
+		<xsd:sequence>
+			<xsd:element name="r1"/>
+			<xsd:element name="r2"/>
+		</xsd:sequence>
+	</xsd:group>
+	<xsd:group name="g2">
+		<xsd:sequence>
+			<xsd:element name="r3"/>
+			<xsd:element name="r4"/>
+		</xsd:sequence>
+	</xsd:group>
+</xsd:schema>

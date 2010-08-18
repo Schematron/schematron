@@ -1,0 +1,12 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:complexType name="Employees">
+ <xs:sequence>
+  <xs:element name="Employee" type="xs:int" default="1"/>
+ </xs:sequence> 
+ <xs:attribute name="Dept" type="xs:int" default="9"/>
+</xs:complexType>
+
+<xs:element name="Employees" type="Employees"/>
+
+</xs:schema>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<xsd:import namespace="http://importedXSD" schemaLocation="particlesIc003.imp"/>
+	<xsd:element name="doc" type="testing"/>
+	<xsd:complexType name="testing">
+		<xsd:complexContent>
+			<xsd:restriction base="imp:base">
+				<xsd:sequence>
+					<xsd:element name="imp:e1" maxOccurs="3"/>
+					<xsd:element name="imp:e2" maxOccurs="3"/>
+				</xsd:sequence>
+			</xsd:restriction>
+		</xsd:complexContent>
+	</xsd:complexType>
+</xsd:schema>

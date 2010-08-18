@@ -1,0 +1,26 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" >
+
+	<xsd:group name="c-g1">
+			<xsd:all>
+				<xsd:element name="c11" type="xsd:string" maxOccurs="1"/>
+				<xsd:element name="c12" type="xsd:string" minOccurs="1"/>
+				<xsd:element name="c13" type="xsd:string" minOccurs="1"/>
+			</xsd:all>
+	</xsd:group>
+	<xsd:group name="c-g2">
+			<xsd:choice>
+				<xsd:element name="c21" type="xsd:int" maxOccurs="3"/>
+				<xsd:element name="c22" type="xsd:int" maxOccurs="3"/>
+			</xsd:choice>
+	</xsd:group>
+	<xsd:group name="c-g3">
+			<xsd:sequence>
+				<xsd:element name="c31" type="xsd:int" maxOccurs="3"/>
+				<xsd:element name="c32" type="xsd:int" maxOccurs="3"/>
+			</xsd:sequence>
+	</xsd:group>
+
+	<xsd:element name="c-e1" />
+</xsd:schema>
+
+

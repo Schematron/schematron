@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:imp="http://importedXSD">
+	<xsd:import namespace="http://importedXSD" schemaLocation="attgC003.imp"/>
+	<xsd:attributeGroup name="foo">
+		<xsd:attributeGroup ref="imp:abc"/>
+		<xsd:attribute name="att2" type="xsd:int"/>
+	</xsd:attributeGroup>
+</xsd:schema>

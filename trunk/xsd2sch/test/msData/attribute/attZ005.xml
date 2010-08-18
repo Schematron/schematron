@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<x:doc xmlns:x="http://xsdtesting"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xsdtesting attZ005.xsd">
+	<x:elem ca1="123"/>
+</x:doc>

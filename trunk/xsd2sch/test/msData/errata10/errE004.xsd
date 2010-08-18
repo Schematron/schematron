@@ -1,0 +1,16 @@
+<xs:schema	targetNamespace="http://www.tempuri.org" 
+			xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+			xmlns:tns="http://www.tempuri.org">
+	<!-- test that absent 'T' is enforced when no time elements are present -->
+
+	<xs:element name="testElement" type="xs:duration" />
+
+	<xs:element name="root">
+		<xs:complexType>
+			<xs:all>
+				<xs:element ref="tns:testElement" />
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
+

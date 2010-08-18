@@ -1,0 +1,5 @@
+<x:root_elem xmlns:x="urn-klondike-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="urn-klondike-test elemZ014.xsd"
+>
+<myelem xsi:type="x:ctype_foo"><a>hello</a></myelem>
+</x:root_elem>

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='reJ37.xsd' >
+
+<!-- 
+base='string', pattern='\p{P}*', value='#x203F;#xFF65;#x301C;#x301C;#xFF0D;#x301D;#x301D;#xFF62;#x301E;#x301E;#xFF63;#xAB;#xAB;#x2039;#xBB;#xBB;#x203A;#xBF;#xBF;#xFF64;', type='valid', RULE='25,32'
+-->
+
+     <elem>&#x203F;&#xFF65;&#x301C;&#x301C;&#xFF0D;&#x301D;&#x301D;&#xFF62;&#x301E;&#x301E;&#xFF63;&#xAB;&#xAB;&#x2039;&#xBB;&#xBB;&#x203A;&#xBF;&#xBF;&#xFF64;</elem>
+
+ </doc>

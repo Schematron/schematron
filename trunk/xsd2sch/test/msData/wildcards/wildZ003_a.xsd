@@ -1,0 +1,28 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:foo" 
+xmlns="urn:foo" 
+xmlns:bar="urn:bar" 
+elementFormDefault="qualified" attributeFormDefault='qualified'
+>
+
+       <xsd:import namespace="urn:bar" schemaLocation="wildZ003_b.xsd"/>
+
+       <xsd:element name="elt1">
+
+              <xsd:complexType>
+
+                     <xsd:sequence>
+
+                            <xsd:element name="elt2" />
+
+                            <xsd:element ref="bar:elem" />
+
+                            <xsd:any namespace="##other" processContents="lax" maxOccurs="3" />
+
+                     </xsd:sequence>
+
+              </xsd:complexType>
+
+       </xsd:element>
+
+</xsd:schema>
+

@@ -1,0 +1,26 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   	
+	<xsd:element name="Root">
+	  <xsd:complexType>
+	    <xsd:sequence>
+		<xsd:element name="Total1" type="Base"/>
+		<xsd:element name="Total2" type="Derived"/>
+ 	    </xsd:sequence>
+	  </xsd:complexType>
+	</xsd:element>
+	
+
+	<xsd:simpleType name="Base">
+	  <xsd:restriction base="xsd:integer">
+		<xsd:totalDigits value="3"/>
+	  </xsd:restriction>
+	</xsd:simpleType>            
+ 	
+        <xsd:simpleType name="Derived">
+	  <xsd:restriction base="Base">
+	    <xsd:minExclusive value="100"/>
+	  </xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>
+
+

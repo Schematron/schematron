@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<schema targetNamespace="urn:test"
+xmlns="http://www.w3.org/2001/XMLSchema"
+xmlns:test="urn:test" elementFormDefault="qualified"
+attributeFormDefault="unqualified">
+
+ <element name="info2" type="test:myunion2"/>
+
+ <!-- Definition of myunion datatype  -->
+ <simpleType name="myunion">
+  <union>
+    <simpleType>
+      <restriction base="decimal"></restriction>
+   </simpleType>
+  </union>
+ </simpleType>
+
+ <!-- Definition of myunion2 datatype  -->
+ <simpleType name="myunion2">
+  <union>
+   <simpleType>
+    <restriction base="NMTOKEN">
+     <enumeration value="a"/>
+     <enumeration value="b"/>
+    </restriction>
+   </simpleType>
+   <simpleType>
+    <restriction base="test:myunion"/>
+   </simpleType>
+  </union>
+ </simpleType>
+
+</schema>

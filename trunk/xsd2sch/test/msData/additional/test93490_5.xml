@@ -1,0 +1,12 @@
+<foo:root 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="foo test93490_1.xsd" 	
+	xmlns:foo="foo"
+	xmlns:bar="bar"
+>
+
+<bar:elem1 xsi:schemaLocation="bar test93490_3.xsd" />
+<foo:elem2 xsi:schemaLocation="foo test93490_2.xsd" /> 
+<foo:elem3 />
+
+</foo:root>

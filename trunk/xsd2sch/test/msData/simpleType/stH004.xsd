@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="root">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="fooTest"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="fooTest" type="fooType"/>
+	<xsd:simpleType name="ListOfStates">
+		<xsd:list>
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string">
+					<xsd:enumeration value="WA"/>
+					<xsd:enumeration value="OR"/>
+					<xsd:enumeration value="CA"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:list>
+	</xsd:simpleType>
+	<xsd:simpleType name="ListOfZips">
+		<xsd:list>
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:positiveInteger">
+					<xsd:pattern value="[1-9]{5}"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:list>
+	</xsd:simpleType>
+	<xsd:simpleType name="fooType">
+		<xsd:union memberTypes="ListOfStates ListOfZips"/>
+	</xsd:simpleType>
+</xsd:schema>

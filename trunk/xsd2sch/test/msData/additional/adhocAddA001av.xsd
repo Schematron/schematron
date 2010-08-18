@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+<!-- include same schema twice with unique Ids   -->
+
+<xsd:complexType id="inc_addr" name="Address">
+	<xsd:sequence>
+		<xsd:element name="name"   type="xsd:string"/>
+		<xsd:element name="street" type="xsd:string"/>
+		<xsd:element name="city"   type="xsd:string"/>
+	</xsd:sequence>
+</xsd:complexType>
+
+</xsd:schema>

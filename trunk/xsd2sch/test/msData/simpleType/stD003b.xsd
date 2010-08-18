@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:simpleType name="dupList">
+		<xsd:list id="foo123" itemType="xsd:string"/>
+	</xsd:simpleType>
+</xsd:schema>

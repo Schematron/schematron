@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xsd:simpleType name="myST">
+    <xsd:union memberTypes="xsd:int xsd:string"></xsd:union>
+</xsd:simpleType>
+
+<xsd:simpleType name="mySTD">
+        <xsd:restriction base="myST">
+		<xsd:enumeration value="1" />
+		<xsd:enumeration value="2" />
+		<xsd:enumeration value="a" />
+		<xsd:enumeration value="b" />
+        </xsd:restriction>
+ </xsd:simpleType>
+
+<xsd:complexType name="cs">
+     <xsd:simpleContent>
+        <xsd:extension base="mySTD">
+            <xsd:attribute name="a" use="required" />
+            <xsd:attribute name="b" use="optional" />
+            <xsd:attribute name="c" use="optional" />
+        </xsd:extension>
+    </xsd:simpleContent>
+</xsd:complexType>
+
+<xsd:complexType name="csD">
+    <xsd:simpleContent>
+         <xsd:restriction base="cs">
+            <xsd:simpleType>
+                 <xsd:restriction base="mySTD">
+			<xsd:enumeration value="1" />
+			<xsd:enumeration value="2" />
+                 </xsd:restriction>
+            </xsd:simpleType>
+	    
+            <xsd:attribute name="a" use="optional" />
+        </xsd:restriction>
+   </xsd:simpleContent>
+</xsd:complexType>
+
+</xsd:schema>

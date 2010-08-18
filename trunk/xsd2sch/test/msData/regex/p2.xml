@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='p3.xsd' >
+
+<!-- 
+restriction of a type that defined as integer, maxExclusive=10, pattern="[0-9]*", XML has value=9 [ valid ]
+-->
+
+      <elem>abc</elem>
+
+ </doc>

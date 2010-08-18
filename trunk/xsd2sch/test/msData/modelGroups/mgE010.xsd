@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="doc" type="foo"/>
+	<xsd:complexType name="foo">
+		<xsd:complexContent>
+			<xsd:restriction base="bar">
+				<xsd:sequence id="foo">
+					<xsd:element name="e1" minOccurs="0" maxOccurs="0"/>
+				</xsd:sequence>
+			</xsd:restriction>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:group name="fooey">
+		<xsd:sequence id="foo">
+			<xsd:element name="e2"/>
+		</xsd:sequence>
+	</xsd:group>
+	<xsd:complexType name="bar">
+		<xsd:sequence>
+			<xsd:element name="e1"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

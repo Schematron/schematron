@@ -1,0 +1,885 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/XML/2004/xml-schema-test-suite/" xsi:schemaLocation="http://www.w3.org/XML/2004/xml-schema-test-suite/ AnnotatedTSSchema.xsd" name="MS-Annotations2006-07-15" contributor="Microsoft">
+<testGroup name="annotA001">
+<annotation>
+<documentation>TEST :Annotation Tests : Empty annotation in schema element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotA001">
+<schemaDocument xlink:href="../msData/annotations/annotA001.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotA002">
+<annotation>
+<documentation>TEST :Annotation Tests : Basic annotation in schema, all, complexType, element element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotA002">
+<schemaDocument xlink:href="../msData/annotations/annotA002.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotA003">
+<annotation>
+<documentation>TEST :Annotation Tests : Basic annotation in any, sequence Element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotA003">
+<schemaDocument xlink:href="../msData/annotations/annotA003.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotA004">
+<annotation>
+<documentation>TEST :Annotation Tests : Basic annotation in anyAttribute, simpleContent, extension element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotA004">
+<schemaDocument xlink:href="../msData/annotations/annotA004.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotA005">
+<annotation>
+<documentation>TEST :Annotation Tests : Basic annotation in appinfo element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotA005">
+<schemaDocument xlink:href="../msData/annotations/annotA005.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotA006">
+<annotation>
+<documentation>TEST :Annotation Tests : Basic annotation in attribute element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotA006">
+<schemaDocument xlink:href="../msData/annotations/annotA006.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotA007">
+<annotation>
+<documentation>TEST :Annotation Tests : Basic annotation in attributeGroup element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotA007">
+<schemaDocument xlink:href="../msData/annotations/annotA007.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotA008">
+<annotation>
+<documentation>TEST :Annotation Tests : Basic annotation in choice element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotA008">
+<schemaDocument xlink:href="../msData/annotations/annotA008.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotA009">
+<annotation>
+<documentation>TEST :Annotation Tests : Basic annotation in complexContent element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotA009">
+<schemaDocument xlink:href="../msData/annotations/annotA009.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotA010">
+<annotation>
+<documentation>TEST :Annotation Tests : Basic annotation in documentation element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotA010">
+<schemaDocument xlink:href="../msData/annotations/annotA010.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotA011">
+<annotation>
+<documentation>TEST :Annotation Tests : Basic annotation in field element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotA011">
+<schemaDocument xlink:href="../msData/annotations/annotA011.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotA012">
+<annotation>
+<documentation>TEST :Annotation Tests : Basic annotation in group element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotA012">
+<schemaDocument xlink:href="../msData/annotations/annotA012.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotA013">
+<annotation>
+<documentation>TEST :Annotation Tests : Basic annotation in import element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotA013">
+<schemaDocument xlink:href="../msData/annotations/annotA013.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotA014">
+<annotation>
+<documentation>TEST :Annotation Tests : Basic annotation in include element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotA014">
+<schemaDocument xlink:href="../msData/annotations/annotA014.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotA015">
+<annotation>
+<documentation>TEST :Annotation Tests : Basic annotation in key element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotA015">
+<schemaDocument xlink:href="../msData/annotations/annotA015.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotA016">
+<annotation>
+<documentation>TEST :Annotation Tests : Basic annotation in keyref element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotA016">
+<schemaDocument xlink:href="../msData/annotations/annotA016.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotA017">
+<annotation>
+<documentation>TEST :Annotation Tests : Basic annotation in list element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotA017">
+<schemaDocument xlink:href="../msData/annotations/annotA017.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotA018">
+<annotation>
+<documentation>TEST :Annotation Tests : Basic annotation in notation element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotA018">
+<schemaDocument xlink:href="../msData/annotations/annotA018.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotA019">
+<annotation>
+<documentation>TEST :Annotation Tests : Basic annotation in redefine element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotA019">
+<schemaDocument xlink:href="../msData/annotations/annotA019.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotA020">
+<annotation>
+<documentation>TEST :Annotation Tests : Basic annotation in restriction, simpleType element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotA020">
+<schemaDocument xlink:href="../msData/annotations/annotA020.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotA021">
+<annotation>
+<documentation>TEST :Annotation Tests : Basic annotation in selector element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotA021">
+<schemaDocument xlink:href="../msData/annotations/annotA021.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotA022">
+<annotation>
+<documentation>TEST :Annotation Tests : Basic annotation in union element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotA022">
+<schemaDocument xlink:href="../msData/annotations/annotA022.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotA023">
+<annotation>
+<documentation>TEST :Annotation Tests : Basic annotation in unique element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotA023">
+<schemaDocument xlink:href="../msData/annotations/annotA023.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotB001">
+<annotation>
+<documentation>TEST :Annotation Tests : Annotation within Annotation</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotB001">
+<schemaDocument xlink:href="../msData/annotations/annotB001.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotB002">
+<annotation>
+<documentation>TEST :Annotation Tests : Declare annotation with appinfo's source=""</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotB002">
+<schemaDocument xlink:href="../msData/annotations/annotB002.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotB003">
+<annotation>
+<documentation>TEST :Annotation Tests : Declare annotation with documentation's source=""</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotB003">
+<schemaDocument xlink:href="../msData/annotations/annotB003.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotB004">
+<annotation>
+<documentation>TEST :Annotation Tests : Declare annotation twice under the all Element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotB004">
+<schemaDocument xlink:href="../msData/annotations/annotB004.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotB005">
+<annotation>
+<documentation>TEST :Annotation Tests : Declare annotation twice under the annotation Element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotB005">
+<schemaDocument xlink:href="../msData/annotations/annotB005.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotB006">
+<annotation>
+<documentation>TEST :Annotation Tests : Declare annotation twice under the any Element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotB006">
+<schemaDocument xlink:href="../msData/annotations/annotB006.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotB007">
+<annotation>
+<documentation>TEST :Annotation Tests : Declare annotation twice under the anyAttribute Element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotB007">
+<schemaDocument xlink:href="../msData/annotations/annotB007.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotB008">
+<annotation>
+<documentation>TEST :Annotation Tests : Declare annotation twice under the appInfo Element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotB008">
+<schemaDocument xlink:href="../msData/annotations/annotB008.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotB009">
+<annotation>
+<documentation>TEST :Annotation Tests : Declare annotation twice under the attribute Element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotB009">
+<schemaDocument xlink:href="../msData/annotations/annotB009.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotB010">
+<annotation>
+<documentation>TEST :Annotation Tests : Declare annotation twice under the attributeGroup Element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotB010">
+<schemaDocument xlink:href="../msData/annotations/annotB010.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotB011">
+<annotation>
+<documentation>TEST :Annotation Tests : Declare annotation twice under the choice Element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotB011">
+<schemaDocument xlink:href="../msData/annotations/annotB011.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotB012">
+<annotation>
+<documentation>TEST :Annotation Tests : Declare annotation twice under the complexContent Element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotB012">
+<schemaDocument xlink:href="../msData/annotations/annotB012.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotB013">
+<annotation>
+<documentation>TEST :Annotation Tests : Declare annotation twice under the complexType Element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotB013">
+<schemaDocument xlink:href="../msData/annotations/annotB013.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotB014">
+<annotation>
+<documentation>TEST :Annotation Tests : Declare annotation twice under the documentation Element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotB014">
+<schemaDocument xlink:href="../msData/annotations/annotB014.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotB015">
+<annotation>
+<documentation>TEST :Annotation Tests : Declare annotation twice under the element Element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotB015">
+<schemaDocument xlink:href="../msData/annotations/annotB015.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotB016">
+<annotation>
+<documentation>TEST :Annotation Tests : Declare annotation twice under the extension Element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotB016">
+<schemaDocument xlink:href="../msData/annotations/annotB016.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotB017">
+<annotation>
+<documentation>TEST :Annotation Tests : Declare annotation twice under the field Element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotB017">
+<schemaDocument xlink:href="../msData/annotations/annotB017.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotB018">
+<annotation>
+<documentation>TEST :Annotation Tests : Declare annotation twice under the group Element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotB018">
+<schemaDocument xlink:href="../msData/annotations/annotB018.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotB019">
+<annotation>
+<documentation>TEST :Annotation Tests : Declare annotation twice under the import Element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotB019">
+<schemaDocument xlink:href="../msData/annotations/annotB019.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotB020">
+<annotation>
+<documentation>TEST :Annotation Tests : Declare annotation twice under the include Element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotB020">
+<schemaDocument xlink:href="../msData/annotations/annotB020.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotB021">
+<annotation>
+<documentation>TEST :Annotation Tests : Declare annotation twice under the key Element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotB021">
+<schemaDocument xlink:href="../msData/annotations/annotB021.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotB022">
+<annotation>
+<documentation>TEST :Annotation Tests : Declare annotation twice under the keyRef Element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotB022">
+<schemaDocument xlink:href="../msData/annotations/annotB022.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotB023">
+<annotation>
+<documentation>TEST :Annotation Tests : Declare annotation twice under the list Element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotB023">
+<schemaDocument xlink:href="../msData/annotations/annotB023.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotB024">
+<annotation>
+<documentation>TEST :Annotation Tests : Declare annotation twice under the Notation Element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotB024">
+<schemaDocument xlink:href="../msData/annotations/annotB024.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotB025">
+<annotation>
+<documentation>TEST :Annotation Tests : Declare annotation twice under the redefine Element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotB025">
+<schemaDocument xlink:href="../msData/annotations/annotB025.xsd"/>
+<expected validity="invalid"/>
+<current bugzilla="http://www.w3.org/Bugs/Public/show_bug.cgi?id=3991" status="queried" date="2006-12-22"/>
+<prior status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotB026">
+<annotation>
+<documentation>TEST :Annotation Tests : Declare annotation twice under the restriction Element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotB026">
+<schemaDocument xlink:href="../msData/annotations/annotB026.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotB027">
+<annotation>
+<documentation>TEST :Annotation Tests : Declare annotation twice under the schema Element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotB027">
+<schemaDocument xlink:href="../msData/annotations/annotB027.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotB028">
+<annotation>
+<documentation>TEST :Annotation Tests : Declare annotation twice under the selector Element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotB028">
+<schemaDocument xlink:href="../msData/annotations/annotB028.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotB029">
+<annotation>
+<documentation>TEST :Annotation Tests : Declare annotation twice under the sequence Element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotB029">
+<schemaDocument xlink:href="../msData/annotations/annotB029.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotB030">
+<annotation>
+<documentation>TEST :Annotation Tests : Declare annotation twice under the simpleContent Element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotB030">
+<schemaDocument xlink:href="../msData/annotations/annotB030.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotB031">
+<annotation>
+<documentation>TEST :Annotation Tests : Declare annotation twice under the simpleType Element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotB031">
+<schemaDocument xlink:href="../msData/annotations/annotB031.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotB032">
+<annotation>
+<documentation>TEST :Annotation Tests : Declare annotation twice under the union Element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotB032">
+<schemaDocument xlink:href="../msData/annotations/annotB032.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotB033">
+<annotation>
+<documentation>TEST :Annotation Tests : Declare annotation twice under the unique Element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotB033">
+<schemaDocument xlink:href="../msData/annotations/annotB033.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotC001">
+<annotation>
+<documentation>TEST :Annotation Tests : Declare Annotation with appinfo with well-formed XML Content &lt;b/&gt; tags</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotC001">
+<schemaDocument xlink:href="../msData/annotations/annotC001.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotC002">
+<annotation>
+<documentation>TEST :Annotation Tests : Declare Annotation with appinfo with well-formed XML content a:b tags</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotC002">
+<schemaDocument xlink:href="../msData/annotations/annotC002.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotC003">
+<annotation>
+<documentation>TEST :Annotation Tests : Declare Annotation with appinfo with source=http://www.w3.org/TR/Schema-0/</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotC003">
+<schemaDocument xlink:href="../msData/annotations/annotC003.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotC004">
+<annotation>
+<documentation>TEST :Annotation Tests : Declare Annotation with appinfo with source=http://www.w3.org/TR/Schema-0/ and text content</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotC004">
+<schemaDocument xlink:href="../msData/annotations/annotC004.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotC005">
+<annotation>
+<documentation>TEST :Annotation Tests : Declare Annotation with two appinfos with text</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotC005">
+<schemaDocument xlink:href="../msData/annotations/annotC005.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotD001">
+<annotation>
+<documentation>TEST :Annotation Tests : Declare Annotation with documentation with well-formed XML Content &lt;b/&gt; tags</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotD001">
+<schemaDocument xlink:href="../msData/annotations/annotD001.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotD002">
+<annotation>
+<documentation>TEST :Annotation Tests : Declare Annotation with documentation with well-formed XML content a:b tags</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotD002">
+<schemaDocument xlink:href="../msData/annotations/annotD002.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotD003">
+<annotation>
+<documentation>TEST :Annotation Tests : Declare Annotation with documentation with source=http://www.w3.org/TR/Schema-0/</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotD003">
+<schemaDocument xlink:href="../msData/annotations/annotD003.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotD004">
+<annotation>
+<documentation>TEST :Annotation Tests : Declare Annotation with documentation with source=http://www.w3.org/TR/Schema-0/ and text content</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotD004">
+<schemaDocument xlink:href="../msData/annotations/annotD004.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotD005">
+<annotation>
+<documentation>TEST :Annotation Tests : Declare Annotation with two documentations with text</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotD005">
+<schemaDocument xlink:href="../msData/annotations/annotD005.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotE001">
+<annotation>
+<documentation>TEST :Annotation Tests : Declare Annotation with two appinfos and two documentations with text</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotE001">
+<schemaDocument xlink:href="../msData/annotations/annotE001.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotE002">
+<annotation>
+<documentation>TEST :Annotation Tests : Declare Annotation with two appinfos and two documentations with well-formed XML</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotE002">
+<schemaDocument xlink:href="../msData/annotations/annotE002.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotF001">
+<annotation>
+<documentation>TEST :Annotation Tests : Annotation with documentation source="http://foo.com" xml:lang=""</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotF001">
+<schemaDocument xlink:href="../msData/annotations/annotF001.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotF002">
+<annotation>
+<documentation>TEST :Annotation Tests : Annotation with documentation source="http://foo.com" xml:lang="english"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotF002">
+<schemaDocument xlink:href="../msData/annotations/annotF002.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotF003">
+<annotation>
+<documentation>TEST :Annotation Tests : Annotation with documentation source="http://foo.com" xml:lang=" "</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotF003">
+<schemaDocument xlink:href="../msData/annotations/annotF003.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotF004">
+<annotation>
+<documentation>TEST :Annotation Tests : Annotation with documentation source="http://foo.com" xml:lang="en"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotF004">
+<schemaDocument xlink:href="../msData/annotations/annotF004.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotF005">
+<annotation>
+<documentation>TEST :Annotation Tests : Annotation with documentation source="http://foo.com" xml:lang="jp"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotF005">
+<schemaDocument xlink:href="../msData/annotations/annotF005.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotF006">
+<annotation>
+<documentation>TEST :Annotation Tests : Annotation with documentation source="http://foo.com" xml:lang="ar"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotF006">
+<schemaDocument xlink:href="../msData/annotations/annotF006.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotF007">
+<annotation>
+<documentation>TEST :Annotation Tests : Annotation with documentation source="http://foo.com" xml:lang="d"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotF007">
+<schemaDocument xlink:href="../msData/annotations/annotF007.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotF008">
+<annotation>
+<documentation>TEST :Annotation Tests : If required test documentation element with xml:lang= list of codes listed under HKEY_CLASSES_ROOT\MIME\Database\Rfc1766</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotF008">
+<schemaDocument xlink:href="../msData/annotations/annotF008.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotF009">
+<annotation>
+<documentation>TEST :Annotation Tests : Annotation with an arbit attribute foo="bar"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotF009">
+<schemaDocument xlink:href="../msData/annotations/annotF009.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotZ001">
+<annotation>
+<documentation>TEST :Annotation Tests : ID attribute in annotation</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotZ001">
+<schemaDocument xlink:href="../msData/annotations/annotZ001.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotZ002">
+<annotation>
+<documentation>TEST :Annotation Tests : large number of annotation elements</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotZ002">
+<schemaDocument xlink:href="../msData/annotations/annotZ002.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="annotZ004">
+<annotation>
+<documentation>TEST :Annotation Tests : test default namespace declared on xs:documentation should not overwrite the schema's default namespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAnnotations"/>
+<schemaTest name="annotZ004">
+<schemaDocument xlink:href="../msData/annotations/annotZ004.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+</testSet>
+

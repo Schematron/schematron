@@ -1,0 +1,26 @@
+<xsd:schema 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+targetNamespace="http://xsdtesting"
+xmlns="http://xsdtesting"
+>
+
+<xsd:element name="Root" type="Root-Type"/>
+
+<xsd:complexType name="Root-Type">
+   <xsd:sequence>
+	<xsd:element name="A" type="A-Type"/>
+	<xsd:element name="A" type="xsd:string"/>
+   </xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="A-Type">
+   <xsd:sequence>
+	<xsd:element name="foo" type="xsd:string"/>
+   </xsd:sequence>
+</xsd:complexType>
+
+</xsd:schema>
+
+
+

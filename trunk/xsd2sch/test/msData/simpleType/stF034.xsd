@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" finalDefault="list">
+	<xs:element name="root">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="testElement" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="testElement" type="parent"/>
+	<xs:simpleType name="parent">
+		<xs:restriction base="xs:string"/>
+	</xs:simpleType>
+</xs:schema>

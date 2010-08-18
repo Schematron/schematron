@@ -1,0 +1,10 @@
+<?xml version='1.0'?>
+<root xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+       xsi:noNamespaceSchemaLocation="unsignedLong007.xsd" >
+  <!-- test for simpleType list of unsignedLong -->
+  <complexTest>
+    <comp_foo>1844674407370955161</comp_foo>
+  </complexTest>
+ 
+  <simpleTest>1844674407370955161</simpleTest>
+</root>

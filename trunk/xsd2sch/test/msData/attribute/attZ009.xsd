@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema targetNamespace="http://schemas.microsoft.com/office/infopath/2003/myXSD/2004-09-04T02:27:29" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2004-09-04T02:27:29" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:attribute name="attg1" type="xsd:integer"/>
+	<xsd:attribute name="attg2" type="xsd:double"/>
+	<xsd:attribute name="attg3" type="xsd:string"/>
+	<xsd:element name="myFields">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="my:g1" minOccurs="1" maxOccurs="3"/>
+			</xsd:sequence>
+			<xsd:anyAttribute processContents="lax" namespace="http://www.w3.org/XML/1998/namespace"/>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="g1">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="my:g2" minOccurs="1" maxOccurs="3"/>
+			</xsd:sequence>
+			<xsd:attribute ref="my:attg1"/>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="g2">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="my:tbg2" minOccurs="0"/>
+				<xsd:element ref="my:g3" minOccurs="1" maxOccurs="3"/>
+			</xsd:sequence>
+			<xsd:attribute ref="my:attg2"/>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="tbg2" type="xsd:string"/>
+	<xsd:element name="g3">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="my:tbg3" minOccurs="0"/>
+			</xsd:sequence>
+			<xsd:attribute ref="my:attg3"/>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="tbg3" type="xsd:string"/>
+</xsd:schema>

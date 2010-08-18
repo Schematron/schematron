@@ -1,0 +1,11 @@
+<a:root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.tempuri.org errA002.xsd http://www.tempuri.org/other errA002a.xsd"
+	xsi:noNamespaceSchemaLocation="errA002b.xsd"
+	xmlns:a="http://www.tempuri.org"
+	xmlns:b="http://www.tempuri.org/other"
+>
+	<a:targetElement>123456</a:targetElement>
+	<b:otherElement>2002-12-31</b:otherElement>
+	<a:targetElement>-123456</a:targetElement>
+	<localElement>true</localElement>
+</a:root>

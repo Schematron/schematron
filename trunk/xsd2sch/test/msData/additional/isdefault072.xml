@@ -1,0 +1,13 @@
+<Array xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" ser:ItemType="d1p1:Callbacks.ColorClassHolder"  xmlns:d1p1="http://tempuri.org/Suites/Serialization" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+
+  <Item ser:Id="2" xmlns="">
+
+    <d1p1:color ser:Id="3">
+
+      <d1p1:colorId>1</d1p1:colorId>
+
+    </d1p1:color>
+
+  </Item>
+
+</Array>

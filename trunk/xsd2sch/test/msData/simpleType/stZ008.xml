@@ -1,0 +1,6 @@
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="stZ008.xsd"
+>
+  <e1>123</e1> 
+  <e2 att="123"/>
+</root>

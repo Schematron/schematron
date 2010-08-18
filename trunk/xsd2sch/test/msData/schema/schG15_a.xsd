@@ -1,0 +1,16 @@
+<xsd:schema 
+       targetNamespace="http://a" 
+       xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+       xmlns:a="http://a" 
+       xmlns:b="http://b">
+ 
+       <xsd:import namespace="http://b" schemaLocation="schG15_b.xsd"/>
+ 
+       <xsd:element name="A">
+              <xsd:complexType>
+                     <xsd:sequence>
+                           <xsd:element ref="b:B" minOccurs="0" />
+                     </xsd:sequence>
+              </xsd:complexType>
+       </xsd:element>
+</xsd:schema>

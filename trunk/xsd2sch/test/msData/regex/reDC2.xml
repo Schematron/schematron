@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='reDC2.xsd' >
+
+<!-- 
+base='float', pattern='\d*\.\d+', value='1.001', type='valid', RULE=''
+-->
+
+      <elem att='1.001'/>
+
+ </doc>

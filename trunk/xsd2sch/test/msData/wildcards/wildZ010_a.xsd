@@ -1,0 +1,12 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="ns-a" xmlns="ns-a" elementFormDefault="qualified">
+
+	<xsd:import namespace="blah" schemaLocation="wildZ010_b.xsd"/>
+
+	<xsd:element name="doc">
+	<xsd:complexType>
+		<xsd:sequence>
+			<xsd:any namespace="" processContents="strict"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

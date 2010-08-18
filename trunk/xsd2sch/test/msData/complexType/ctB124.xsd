@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:attributeGroup name="attrGroup">
+		<xsd:attribute name="attrTest1"/>
+		<xsd:attribute name="attrTest2"/>
+	</xsd:attributeGroup>
+	<xsd:attributeGroup name="attrGroup2">
+		<xsd:attribute name="attrTest3"/>
+		<xsd:attribute name="attrTest4"/>
+	</xsd:attributeGroup>
+	<xsd:complexType name="fooType">
+		<xsd:anyAttribute namespace="##any"/>
+		<xsd:attributeGroup ref="attrGroup"/>
+		<xsd:attributeGroup ref="attrGroup2"/>
+	</xsd:complexType>
+</xsd:schema>

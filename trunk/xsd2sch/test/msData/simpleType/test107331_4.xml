@@ -1,0 +1,10 @@
+<root>
+
+
+<a>123456</a>
+<a>abcdefgh</a>
+
+<b>1.2 3.4 0.9</b>
+
+<c name="name" type="1" state="1">this is a string</c>
+</root>

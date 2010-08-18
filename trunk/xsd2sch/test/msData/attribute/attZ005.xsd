@@ -1,0 +1,24 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+	targetNamespace="http://xsdtesting"
+	xmlns:x="http://xsdtesting">
+	<xs:attribute name="ga1" type="xs:string" default="abc"/>
+	<xs:attribute name="ga2" type="xs:integer"/>
+	<xs:attributeGroup name="attG">
+		<xs:attribute name="aga1"/>
+		<xs:attribute name="aga2"/>
+	</xs:attributeGroup>
+	<xs:complexType name="attRef">
+		<xs:attribute name="ca1"/>
+		<xs:attribute name="ca2"/>
+		<xs:attributeGroup ref="x:attG"/>
+		<xs:attribute ref="x:ga2"/>
+	</xs:complexType>
+	<xs:element name="doc">
+		<xs:complexType>
+			<xs:choice>
+				<xs:element name="elem" type="x:attRef" form="qualified"/>
+			</xs:choice>
+			<xs:attribute ref="x:ga1"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

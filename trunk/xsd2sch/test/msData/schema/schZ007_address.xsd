@@ -1,0 +1,10 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:complexType name="Address">
+  <xs:sequence>
+   <xs:element name="State" type="xs:string" minOccurs="0"/>
+   <xs:element name="City"  type="xs:string" minOccurs="0"/>
+  </xs:sequence>
+</xs:complexType>
+
+</xs:schema>

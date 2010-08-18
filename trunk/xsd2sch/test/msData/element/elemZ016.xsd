@@ -1,0 +1,29 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xsd:element name="Root"> 
+	<xsd:complexType>
+		<xsd:sequence minOccurs="1" maxOccurs="unbounded">
+			<xsd:choice minOccurs="0">
+				<xsd:element ref="DataTypes" />
+			</xsd:choice>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:element>
+  
+<xsd:element name="DataTypes">
+	<xsd:complexType>
+		<xsd:sequence>
+			<xsd:element ref="ID" />
+			<xsd:element ref="IDREF" />
+			<xsd:element ref="IDREFS" />
+			<xsd:element ref="ID" />
+			<xsd:element ref="IDREF" />
+			<xsd:element ref="IDREFS" />
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:element>
+
+<xsd:element name="ID" type="xsd:ID" />
+<xsd:element name="IDREF" type="xsd:IDREF" />
+<xsd:element name="IDREFS" type="xsd:IDREFS" />
+	
+</xsd:schema>

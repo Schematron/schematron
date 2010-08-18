@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="root">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="e" maxOccurs="2"/>
+			</xsd:sequence>
+		</xsd:complexType>
+		<xsd:unique id="foo123" name="idName">
+			<xsd:selector xpath=".//e"/>
+			<xsd:field xpath="@att"/>
+		</xsd:unique>
+	</xsd:element>
+
+	<xsd:element name="e">
+		<xsd:complexType>
+			<xsd:attribute name="att" type="xsd:string" default="a"/>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

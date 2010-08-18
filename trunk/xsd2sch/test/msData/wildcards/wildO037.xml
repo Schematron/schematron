@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<foo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://foobar wildO037.xsd http://www.w3.org/1999/xhtml wildO037a.xsd" xmlns="http://foobar" xmlns:att="http://www.w3.org/1999/xhtml" att:href="bar"/>

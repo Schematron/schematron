@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:foo="bar">
+	<xs:complexType name="xmlns" foo:attr="testAttr">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute ref="attrTest"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:element name="root" type="xmlns"/>
+	<xs:attribute name="attrTest"/>
+</xs:schema>

@@ -1,0 +1,6 @@
+<doc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="groupB002.xsd">
+	<elem att2="abc" att3="abc">
+		<x/>
+		<groupElem/>
+	</elem>
+</doc>

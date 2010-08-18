@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<x:doc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xsdtesting particlesC003.xsd" xmlns:x="http://xsdtesting">
+	<x:elem>
+		<b/>
+		<b xmlns="http://foo"/>
+		<b xmlns="xmlns"/>
+		<b xmlns:xyz="bar"/>
+		<b/>
+	</x:elem>
+</x:doc>

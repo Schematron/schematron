@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="doc" type="foo"/>
+	<xsd:group name="group">
+		<xsd:sequence>
+			<xsd:element name="e1" type="xsd:integer"/>
+		</xsd:sequence>
+	</xsd:group>
+	<xsd:complexType name="foo">
+		<xsd:choice>
+			<xsd:element name="e1" type="xsd:string"/>
+			<xsd:group ref="group"/>
+		</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

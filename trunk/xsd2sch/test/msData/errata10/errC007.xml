@@ -1,0 +1,13 @@
+<a:root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.tempuri.org errC007.xsd"
+	xmlns:a="http://www.tempuri.org">
+
+	<localElement1 attr="testValue">
+		<a:testContent>123</a:testContent>
+	</localElement1>
+
+	<localElement2 a:testAttribute="true">
+		<testContent>any text</testContent>
+		<a:testContent>456</a:testContent>
+	</localElement2>
+</a:root>

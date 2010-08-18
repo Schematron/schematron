@@ -1,0 +1,18 @@
+<?xml version='1.0'?>
+<xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema' >
+<!-- Schema to test gMonthDay datatype -->
+  <xsd:element name='test' type='fooType' />
+  <xsd:complexType name='fooType' > 
+    <xsd:sequence>
+      <xsd:element name='foo' >
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:gMonthDay">
+            <xsd:enumeration value="--03-15"/>
+            <xsd:enumeration value="--01-01"/>
+            <xsd:enumeration value="--10-01"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

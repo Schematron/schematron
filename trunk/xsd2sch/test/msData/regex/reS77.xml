@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='reS77.xsd' >
+
+<!-- 
+base='string', pattern='\d', value='#x0EDA;', type='invalid', RULE='37'
+-->
+
+      <elem att='&#x0EDA;'/>
+
+ </doc>

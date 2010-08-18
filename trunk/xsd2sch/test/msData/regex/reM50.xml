@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='reM50.xsd' >
+
+<!-- 
+base='string', pattern='\p{IsOpticalCharacterRecognition}?', value='#x2460;', type='invalid', RULE='25,36'
+-->
+
+     <elem>&#x2460;</elem>
+
+ </doc>

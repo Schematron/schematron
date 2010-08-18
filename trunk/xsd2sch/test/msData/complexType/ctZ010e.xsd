@@ -1,0 +1,21 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:complexType name="base" >
+<xs:sequence>
+<xs:element name="bar" type="xs:string" minOccurs="0" 
+maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+<xs:element name="foo">
+<xs:complexType mixed="true">
+<xs:complexContent mixed="true">
+<xs:restriction base="base">
+<xs:sequence>
+<xs:element name="bar" type="xs:string" minOccurs="0" 
+maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:restriction>
+</xs:complexContent>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+

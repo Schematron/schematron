@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<a:foo 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://foobar wildG031.xsd" 
+xsi:noNamespaceSchemaLocation="wildG031a.xsd" 
+xmlns:a="http://foobar">
+	<a:bar>foo bar</a:bar>
+	<bar>foo bar</bar>
+	<foo/>
+	<A:foo xmlns:A="A"/>
+	<A:foo xmlns:A="B"/>
+	<foo xmlns="C"/>
+	<D:foo xmlns:D="D"/>
+	<e:foo xmlns:e="E"/>
+
+</a:foo>

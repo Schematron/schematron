@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://xsdtesting" xmlns:x="http://xsdtesting" elementFormDefault="qualified">
+	<xsd:include schemaLocation="particlesIc007.imp"/>
+	<xsd:element name="doc" type="x:testing"/>
+	<xsd:complexType name="testing">
+		<xsd:complexContent>
+			<xsd:restriction base="x:base">
+				<xsd:sequence>
+					<xsd:element name="e1"/>
+					<xsd:element name="e2"/>
+				</xsd:sequence>
+			</xsd:restriction>
+		</xsd:complexContent>
+	</xsd:complexType>
+</xsd:schema>

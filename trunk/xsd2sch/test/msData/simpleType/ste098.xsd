@@ -1,0 +1,13 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+	<xsd:simpleType name="union">
+		<xsd:union memberTypes="xsd:gYear xsd:hexBinary xsd:gDay"/>
+	</xsd:simpleType>
+
+	<xsd:element name="root" fixed="ab cd ef">
+		<xsd:simpleType>
+			<xsd:list itemType="union"/>
+		</xsd:simpleType>
+	</xsd:element>
+
+</xsd:schema>

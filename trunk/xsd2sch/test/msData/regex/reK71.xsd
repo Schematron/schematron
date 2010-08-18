@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+>
+
+<!-- 
+base='string', pattern='\P{C}*', value='#x9;#x070F;#x70F;#xE0078;#xE000;#xE000;#x100000;#xF0000;#xFFFFD;#x10FFFD;', type='invalid', RULE='26,35'
+-->
+
+<xsd:element name="doc">
+    <xsd:complexType>
+            <xsd:choice>
+                <xsd:element name="elem" type="Regex" minOccurs="1" maxOccurs="unbounded"/>
+            </xsd:choice>
+    </xsd:complexType>
+</xsd:element>
+
+<xsd:simpleType name="Regex">
+       <xsd:restriction base="xsd:string">
+           <xsd:pattern value="\P{C}*"/>    
+       </xsd:restriction>
+</xsd:simpleType>
+
+
+
+</xsd:schema>

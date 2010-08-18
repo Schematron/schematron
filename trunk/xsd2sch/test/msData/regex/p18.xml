@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='p18.xsd' >
+
+<!-- 
+two patterns in a simple type (1) "[abc]+" (2) "[123]+", should be same as [abc]+|[123]+,  value="1a"  [invalid]
+-->
+
+      <elem att='1a'/>
+
+ </doc>

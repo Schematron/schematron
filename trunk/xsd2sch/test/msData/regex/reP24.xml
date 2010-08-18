@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='reP24.xsd' >
+
+<!-- 
+base='string', pattern='\S+', value='a#x20;b', type='invalid', RULE='37'
+-->
+
+     <elem>a&#x20;b</elem>
+
+ </doc>

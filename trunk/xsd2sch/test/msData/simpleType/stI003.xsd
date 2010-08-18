@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:simpleType name="myList">
+		<xsd:list>
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:positiveInteger">
+					<xsd:maxInclusive value="212"/>
+					<xsd:minInclusive value="32"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:list>
+	</xsd:simpleType>
+	<xsd:simpleType name="fooType">
+		<xsd:restriction base="myList"/>
+	</xsd:simpleType>
+</xsd:schema>

@@ -1,0 +1,10 @@
+<?xml version='1.0'?>
+<root xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+       xsi:noNamespaceSchemaLocation="anyURI.xsd" >
+  <complexTest>
+  <!-- value=C:/TestSuites/XSD%20Spec/CR-xmlschema-2-20001024.htm#dc-minInclusive -->
+    <comp_foo>C:/TestSuites/XSD%20Spec/CR-xmlschema-2-20001024.htm#dc-minInclusive</comp_foo>
+  </complexTest>
+ 
+  <simpleTest>C:/TestSuites/XSD%20Spec/CR-xmlschema-2-20001024.htm#dc-minInclusive</simpleTest>
+</root>

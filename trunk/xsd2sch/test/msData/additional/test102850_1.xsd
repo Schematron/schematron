@@ -1,0 +1,10 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="Root">
+		<xsd:complexType>
+			<xsd:sequence maxOccurs="2" minOccurs="2">
+     				<xsd:element maxOccurs="2" minOccurs="1" name="a"/>
+    				 <xsd:element minOccurs="0" name="b"/>
+   			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

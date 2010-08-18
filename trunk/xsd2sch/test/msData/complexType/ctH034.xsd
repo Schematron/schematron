@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:attributeGroup name="attrGroup1">
+		<xs:attribute name="attr1"/>
+		<xs:attribute name="attr2"/>
+	</xs:attributeGroup>
+	<xs:attributeGroup name="attrGroup2">
+		<xs:attribute name="attr3"/>
+		<xs:attribute name="attr4"/>
+	</xs:attributeGroup>
+	<xs:complexType name="myType">
+		<xs:choice>
+			<xs:element name="myElement1" type="xs:string"/>
+			<xs:element name="myElement2" type="xs:string"/>
+			<xs:element name="myElement3" type="xs:string"/>
+		</xs:choice>
+		<xs:anyAttribute namespace="##local"/>
+	</xs:complexType>
+	<xs:complexType name="fooType">
+		<xs:complexContent>
+			<xs:extension base="myType">
+				<xs:choice>
+					<xs:element name="myElement4" type="xs:string"/>
+				</xs:choice>
+				<xs:attributeGroup ref="attrGroup1"/>
+				<xs:attributeGroup ref="attrGroup2"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="root" type="fooType"/>
+	<xs:attribute name="local" type="xs:string"/>
+</xs:schema>

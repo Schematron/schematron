@@ -1,0 +1,21 @@
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:a="a"
+	xmlns:b="b"
+	xmlns:c="c"
+	xmlns:d="d"
+>
+
+	<xs:import namespace="a" />
+	<xs:import namespace="b" />
+	<xs:import namespace="c" />
+
+	<xs:group name="uType">
+		<xs:sequence>
+			<xs:element ref="a:a" />
+			<xs:element ref="b:b" />
+			<xs:element ref="c:c" />
+			<xs:element ref="d:d" />
+		</xs:sequence>
+	</xs:group>
+
+</xs:schema>

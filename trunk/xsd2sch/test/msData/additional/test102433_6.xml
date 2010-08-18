@@ -1,0 +1,10 @@
+<ns:foo xmlns:ns="ns">
+<q:bar xmlns:q="q">
+	<ns:baz/>
+	<q:foo/>
+	<ns:baz2/>
+</q:bar>
+</ns:foo>
+
+
+

@@ -1,0 +1,27 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="iType" mixed="true" >
+    <xs:attribute name="id" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:ID">
+          <xs:length value="17" fixed="true"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="d" use="optional">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:maxLength value="50" fixed="true"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+
+  <xs:element name="r">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="i" type="iType" minOccurs="0" maxOccurs="unbounded" nillable="true" fixed="abc"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

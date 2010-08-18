@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" finalDefault="restriction">
+	<xs:complexType name="foo">
+		<xs:sequence>
+			<xs:element name="myEle1" type="xs:string" minOccurs="0"/>
+			<xs:element name="myEle2" type="xs:integer" minOccurs="0"/>
+			<xs:element name="myEle3" type="xs:integer" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="fooType">
+		<xs:complexContent>
+			<xs:extension base="foo">
+				<xs:sequence>
+					<xs:element name="myEle4" type="xs:string"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="root" type="fooType"/>
+</xs:schema>

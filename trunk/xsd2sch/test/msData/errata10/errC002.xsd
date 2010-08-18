@@ -1,0 +1,9 @@
+<xs:schema	targetNamespace="http://www.tempuri.org" 
+			xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+			xmlns:tns="http://www.tempuri.org"
+			version="     This     is     not a     token      ">
+	<!-- test that a normalizedString instead of a token is supported for schema version -->
+
+	<xs:element name="root" />
+</xs:schema>
+

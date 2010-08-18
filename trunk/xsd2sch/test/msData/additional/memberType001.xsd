@@ -1,0 +1,15 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+<xsd:element name="root" >
+	<xsd:complexType>
+		<xsd:sequence>
+			<xsd:element name="e" type="myunion" maxOccurs="3"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:element>
+
+ <xsd:simpleType name="myunion">
+ 	<xsd:union memberTypes="xsd:boolean xsd:int xsd:string" />
+ </xsd:simpleType>
+ 
+</xsd:schema>

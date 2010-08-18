@@ -1,0 +1,37 @@
+<po:purchaseOrder orderDate="2001-02-10" xmlns:po="urn:purchaseOrder"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="test63389.xsd"
+>
+  <shipTo/>
+  <shipTo>
+    <name>
+      <lastName>Heinemann</lastName>
+      <firstName>Charlie</firstName>
+    </name>
+    <street>One Microsoft Way</street>
+    <zip>98052</zip>   
+    <phone>555-6622</phone>
+  </shipTo>
+  <billTo>
+    <name>
+      <lastName>Heinemann</lastName>
+      <firstName>Charlie</firstName>
+    </name>
+    <street>10035 163rd Ave NE</street>
+    <zip>99999</zip>
+  </billTo>
+  <items>
+    <item>
+      <productName>Boots</productName>
+      <quantity>1</quantity>
+      <price>34.99</price>
+      <shipDate>2001-02-11</shipDate>
+    </item>
+    <item>
+      <productName>Hat</productName>
+      <quantity>2</quantity>
+      <price>14.99</price>
+      <shipDate>2001-02-19</shipDate>
+    </item>
+  </items>
+</po:purchaseOrder>

@@ -1,0 +1,9 @@
+<foo 
+	xmlns="urn:test:foo"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="urn:test:foo elemZ033.xsd">
+	<bar>
+		<boo xsi:type="xsd:string" xsi:nil="true"></boo>
+	</bar>
+</foo>

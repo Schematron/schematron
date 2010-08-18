@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='reN63.xsd' >
+
+<!-- 
+base='string', pattern='\p{IsKatakana}', value='#x309F;', type='invalid', RULE='25,36'
+-->
+
+     <elem>&#x309F;</elem>
+
+ </doc>

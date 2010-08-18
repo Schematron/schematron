@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='reDA9.xsd' >
+
+<!-- 
+base='boolean', pattern='(1|true)', value='1', type='valid', RULE=''
+-->
+
+      <elem att='1'/>
+
+ </doc>

@@ -1,0 +1,27 @@
+<xs:schema  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+              <xs:complexType name="DeivedCT">
+					<xs:complexContent>
+						<xs:restriction base="baseCT">
+							<xs:sequence/>
+							<xs:attribute name="attr1">
+								<xs:simpleType>
+									<xs:restriction base="base">
+										<xs:maxExclusive value="9"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:attribute>
+						</xs:restriction>
+					</xs:complexContent>
+                  </xs:complexType>
+                  
+                  <xs:complexType name="baseCT">
+					<xs:attribute name="attr1" type="base"/>
+                  </xs:complexType>
+                  
+                  <xs:simpleType name="base">
+					<xs:restriction base="xs:int">
+						<xs:minInclusive value="10"/>
+					</xs:restriction>
+                  </xs:simpleType>
+</xs:schema>

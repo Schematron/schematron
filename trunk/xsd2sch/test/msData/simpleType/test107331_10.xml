@@ -1,0 +1,19 @@
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<item>abc</item>
+<item xsi:type="xs:int">123</item>
+<item xsi:type="xs:float">4.56</item>
+<item xsi:type="xs:string">this is a string</item>
+<item xsi:type="xs:boolean">false</item>
+<item xsi:type="xs:decimal">45</item>
+<item xsi:type="xs:duration">P1347Y</item>
+<item xsi:type="xs:dateTime">1999-05-31T13:20:00-05:00</item>
+<item xsi:type="xs:time">13:20:00-05:00</item>
+<item xsi:type="xs:date">1999-05-31</item>
+<item xsi:type="xs:gYear">1999</item>
+<item xsi:type="xs:gMonthDay">--02-13</item>
+<item xsi:type="xs:hexBinary">abcd</item>
+<item xsi:type="xs:anyURI">http://tempuri</item>
+<item xsi:type="xs:anySimpleType">123</item>
+<item xsi:type="xs:anyType">123</item>
+</root>

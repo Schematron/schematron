@@ -1,0 +1,32 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+targetNamespace="ns-a"
+xmlns="ns-a"
+elementFormDefault="qualified"
+>
+
+	<xsd:redefine schemaLocation="schL3_b.xsd">
+		<xsd:group name="b-g1">
+				<xsd:all>
+					<xsd:group ref="b-g1"/>
+					<xsd:element name="c14" type="xsd:string"/>
+				</xsd:all>
+		</xsd:group>
+  	</xsd:redefine>
+
+	<xsd:complexType name="a-ct">
+		<xsd:group ref="b-g1"/>
+	</xsd:complexType>
+
+	<xsd:element name="e1" type="a-ct" />
+	
+	<xsd:element name="root">
+		<xsd:complexType>
+			<xsd:choice maxOccurs="unbounded">
+				<xsd:any namespace="##any" processContents="strict"/>
+			</xsd:choice>
+		</xsd:complexType>
+	</xsd:element>
+
+</xsd:schema>
+
+

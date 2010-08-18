@@ -1,0 +1,17 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+targetNamespace="main"
+xmlns:a="main"
+xmlns:b="b"
+>
+
+    <xsd:include schemaLocation="schZ005a.xsd"/>
+
+    <xsd:complexType name="ct1">
+	<xsd:sequence>
+	    <xsd:element ref="a:a"/>
+	    <xsd:element ref="b:b"/>
+	</xsd:sequence>
+   </xsd:complexType>
+
+</xsd:schema>
+

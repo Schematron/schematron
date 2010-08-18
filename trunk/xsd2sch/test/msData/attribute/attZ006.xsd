@@ -1,0 +1,16 @@
+<xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema' >
+
+<xsd:complexType name="CT">
+  <xsd:attribute name="A" type="xsd:string" use="required"/>
+</xsd:complexType>
+
+<xsd:complexType name="DCT">
+ <xsd:complexContent>
+   <xsd:restriction base="CT">
+	  <xsd:attribute name="A" type="xsd:string" use="optional"/>
+   </xsd:restriction>
+ </xsd:complexContent>
+</xsd:complexType>
+
+
+</xsd:schema>

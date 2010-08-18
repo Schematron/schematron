@@ -1,0 +1,9 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="foo		">
+ <xsd:element name="doc">
+   <xsd:complexType>
+	<xsd:sequence>
+		<xsd:element name="e" type="xsd:decimal" />
+	</xsd:sequence>
+   </xsd:complexType>
+ </xsd:element>
+</xsd:schema>

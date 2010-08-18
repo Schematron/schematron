@@ -1,0 +1,12 @@
+<root	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="schC3_a.xsd"
+>
+	<e1>
+		<a1>123</a1>
+		<a2>true</a2>
+	</e1>
+	<e2>
+		<b1>true</b1>
+		<b2>123</b2>
+	</e2>
+</root>

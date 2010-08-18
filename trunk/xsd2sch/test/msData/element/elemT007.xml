@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="elemT007.xsd">
+	<fooTest xsi:type="myType">
+		<fooEle1>len4</fooEle1>
+		<fooEle2>26</fooEle2>
+	</fooTest>
+</root>

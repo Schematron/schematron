@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<doc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xsdtesting" xsi:schemaLocation="http://xsdtesting particlesC008.xsd">
+	<elem>
+		<a xmlns="bar"/>
+	</elem>
+</doc>

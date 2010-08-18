@@ -1,0 +1,34 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+ xmlns:foo="foo"
+ xmlns:x="http://www.nist.gov/xsdNS"
+>
+
+  <xs:element name="b" type="st4"/>
+
+  <xs:simpleType name="listOfQName">
+    <xs:list itemType="xs:QName"/>
+  </xs:simpleType>
+
+  <xs:simpleType name="st4">
+    <xs:restriction base="listOfQName">
+          <xs:enumeration value="foo:b a x:blah"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+
+  <!-- globals -->
+  <xs:element name="a" type="ct1"/>
+
+  <xs:complexType name="ct1">
+	<xs:choice>
+		<xs:element ref="b" maxOccurs="100"/>
+	</xs:choice>
+  </xs:complexType>
+
+
+  <xs:complexType name="ct">
+	<xs:attribute name="att" type="xs:string"/>
+  </xs:complexType>
+
+
+</xs:schema>

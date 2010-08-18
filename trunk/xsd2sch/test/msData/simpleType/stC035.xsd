@@ -1,0 +1,23 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+ 
+
+  <xs:element name="duration" type="xs:duration" />
+
+  <xs:simpleType name="dur">
+
+      <xs:restriction base="xs:duration">
+
+            <xs:minInclusive value="PT5.999999999S"/>
+
+            <xs:maxInclusive value="PT6S"/>
+
+            
+
+      </xs:restriction>
+
+  </xs:simpleType>
+
+ 
+
+</xs:schema>

@@ -1,0 +1,6 @@
+<xsd:schema 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+targetNamespace="foobar"
+>
+	<xsd:import namespace="abc" schemaLocation="foo'bar"/>
+</xsd:schema>

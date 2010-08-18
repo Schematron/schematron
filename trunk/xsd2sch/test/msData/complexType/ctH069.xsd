@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:attributeGroup name="attrGroup1">
+		<xs:attribute name="myAttr1"/>
+		<xs:attribute name="myAttr2"/>
+	</xs:attributeGroup>
+	<xs:complexType name="myType">
+		<xs:sequence>
+			<xs:element name="myElement1" type="xs:string" minOccurs="0"/>
+			<xs:element name="myElement2" type="xs:string" minOccurs="0"/>
+			<xs:element name="myElement3" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##local"/>
+	</xs:complexType>
+	<xs:complexType name="fooType">
+		<xs:complexContent>
+			<xs:extension base="myType">
+				<xs:attributeGroup ref="attrGroup1"/>
+				<xs:anyAttribute namespace="##any"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="root" type="fooType"/>
+	<xs:attribute name="local" type="xs:string"/>
+</xs:schema>

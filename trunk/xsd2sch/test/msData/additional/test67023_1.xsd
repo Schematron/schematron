@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:redefine schemaLocation="test67023_2.xsd">
+		<xsd:complexType name="ctFeed">
+			<xsd:complexContent>
+				<xsd:extension base="ctFeed">
+					<xsd:attribute ref="a2" />
+				</xsd:extension>
+			</xsd:complexContent>
+		</xsd:complexType>
+	</xsd:redefine>
+ 	<xsd:attribute name="a2"/>
+</xsd:schema>

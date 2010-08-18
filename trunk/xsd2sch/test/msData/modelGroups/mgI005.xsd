@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="doc" type="foo"/>
+	<xsd:complexType name="foo">
+		<xsd:choice>
+			<xsd:annotation>
+				<xsd:documentation>
+				Test Test
+			</xsd:documentation>
+			</xsd:annotation>
+			<xsd:group ref="group"/>
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:group name="group">
+		<xsd:choice>
+			<xsd:element name="a" type="xsd:integer"/>
+		</xsd:choice>
+	</xsd:group>
+</xsd:schema>

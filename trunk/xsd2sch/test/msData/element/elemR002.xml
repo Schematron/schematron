@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<po:purchaseOrder xmlns:po="testNS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="testNS elemR002.xsd">
+	<po:shipTo country="US">
+		<name>Alice Smith</name>
+		<street>123 Maple Street</street>
+	</po:shipTo>
+	<billTo country="US">
+		<name>Robert Smith</name>
+		<street>8 Oak Avenue</street>
+	</billTo>
+	<po:comment>Hurry, my lawn is going wild!</po:comment>
+</po:purchaseOrder>

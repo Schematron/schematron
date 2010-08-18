@@ -1,0 +1,6 @@
+<x:doc 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:x="ns" 
+	xsi:schemaLocation="ns addB105.xsd">
+  <x:elem>123</x:elem> 
+</x:doc>

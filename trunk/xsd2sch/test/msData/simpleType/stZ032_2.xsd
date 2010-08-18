@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema targetNamespace="foo" elementFormDefault="qualified" xmlns="foo" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:simpleType name="B">
+		<xs:restriction base="xs:int">
+			<xs:enumeration value="1"/>
+			<xs:enumeration value="2"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

@@ -1,0 +1,6 @@
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="hexBinary.xsd" >
+<complexTest>
+    <comp_foo>ab c</comp_foo>
+  </complexTest>
+  <simpleTest>ab c</simpleTest>
+</root>

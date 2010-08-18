@@ -1,0 +1,28 @@
+      <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+          xmlns:cust="urn:xmlns:25hoursaday-com:customer" 
+          targetNamespace="urn:xmlns:25hoursaday-com:customer" 
+	  elementFormDefault="qualified"> 
+
+       <xs:element name="Customers">
+        <xs:complexType>
+	 <xs:sequence>
+	  <xs:element ref="cust:Customer" maxOccurs="unbounded" />
+	 </xs:sequence>
+	</xs:complexType>
+       </xs:element>
+
+       <xs:element name="Customer" type="cust:CustomerType" abstract="true" /> 
+
+        <xs:complexType name="CustomerType" > 
+	 <xs:sequence>
+	   <xs:element ref="cust:FirstName" />
+	   <xs:element ref="cust:LastName" />	
+	 </xs:sequence>         
+	 <xs:attribute name="customerID" type="xs:integer" />
+	</xs:complexType>
+
+       <xs:element name="FirstName" type="xs:string" />
+       <xs:element name="LastName" type="xs:string"  />  
+       <xs:element name="PhoneNumber" type="xs:string" />
+
+      </xs:schema> 

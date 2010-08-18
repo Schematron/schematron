@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<x:doc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://xsdtesting" xsi:schemaLocation="http://xsdtesting particlesC015.xsd">
+	<x:elem>
+		<foo xmlns="foo">
+			<bar xmlns="just_testing_should_pass"/>
+		</foo>
+		<foo xmlns="foo"/>
+	</x:elem>
+</x:doc>

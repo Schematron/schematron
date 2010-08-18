@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='reF6.xsd' >
+
+<!-- 
+base='string', pattern='[^2-9a-x]{2}', value='1x', type='invalid', RULE='15'
+-->
+
+     <elem>1x</elem>
+
+ </doc>

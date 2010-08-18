@@ -1,0 +1,5 @@
+<xs:schema targetNamespace="p" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns="p" elementFormDefault="qualified" attributeFormDefault="unqualified">
+
+<xs:element name="foo" />
+
+</xs:schema>

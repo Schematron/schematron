@@ -1,0 +1,31 @@
+<root xmlns="foo"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="foo test72232_2.xsd"
+>
+  <A/>
+  <A>
+    <!-- if the ref-number is not equal to one of the key-number, the validation will give error -->
+    <part ref-number="1"/>
+    <part ref-number="2"/>
+  </A>
+  <A>
+    <!-- if the ref-number is not equal to one of the key-number, the validation will give error -->
+    <part ref-number="1"/>
+    <part ref-number="2"/>
+  </A>
+  <A>
+    <!-- if the ref-number is not equal to one of the key-number, the validation will give error -->
+    <part ref-number="1"/>
+    <part ref-number="2"/>
+    <part ref-number="3"/>
+    <part ref-number="4"/>
+  </A>
+
+  <B>
+    <part key-number="1"/>
+    <part key-number="2"/>
+    <part key-number="3"/>
+  </B>
+
+</root>
+	

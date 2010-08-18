@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:complexType name="fooType">
+		<xsd:simpleContent id="foo123">
+			<xsd:extension base="xsd:string"/>
+			<xsd:annotation>
+				<xsd:documentation>
+				Annotation Information
+			</xsd:documentation>
+			</xsd:annotation>
+		</xsd:simpleContent>
+	</xsd:complexType>
+</xsd:schema>

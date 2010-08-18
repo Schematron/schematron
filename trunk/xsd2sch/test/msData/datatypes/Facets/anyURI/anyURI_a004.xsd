@@ -1,0 +1,42 @@
+<xsd:schema elementFormDefault="qualified" xmlns="ftp://ftp.is.co.za/rfc/rfc1808.txt" targetNamespace="ftp://ftp.is.co.za/rfc/rfc1808.txt" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+
+	<!-- should give only 3 warning for the unresolved schemaLocations -->
+	<xsd:include schemaLocation="ftp://ftp.is.co.za/rfc/rfc1808.txt"/>
+	<xsd:import schemaLocation="gopher://spinaltap.micro.umn.edu/00/Weather/California/Los%20Angeles" namespace="gopher://spinaltap.micro.umn.edu/00/Weather/California/Los%20Angeles"/>
+	<xsd:redefine schemaLocation="mailto:mduerst@ifi.unizh.ch"/>
+
+	<xsd:notation public="news:comp.infosystems.www.servers.unix" system="http://www.math.uio.no/faq/compression-faq/part1.html" name="n1"/>
+
+    	<xsd:element name="foo">
+		<xsd:annotation>
+			<xsd:appinfo source="telnet://melvyl.ucop.edu/"/>
+			<xsd:documentation source="ftp://ftp.is.co.za/rfc/rfc1808.txt"/>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:anyAttribute namespace="ftp://ftp.is.co.za/rfc/rfc1808.txt"/>
+		</xsd:complexType>
+	</xsd:element>
+
+    	<xsd:element name="root">
+	   <xsd:complexType>
+		<xsd:sequence>
+		    	<xsd:element maxOccurs="1000" type="st" name="bar"></xsd:element>
+		</xsd:sequence>
+		<xsd:attribute type="st" name="att"/>
+	   </xsd:complexType>
+	</xsd:element>
+
+
+	<xsd:simpleType name="st">
+		<xsd:restriction base="xsd:anyURI">
+			<xsd:enumeration value="ftp://ftp.is.co.za/rfc/rfc1808.txt"/>
+			<xsd:enumeration value="gopher://spinaltap.micro.umn.edu/00/Weather/California/Los%20Angeles"/>
+			<xsd:enumeration value="http://www.math.uio.no/faq/compression-faq/part1.html"/>
+			<xsd:enumeration value="mailto:mduerst@ifi.unizh.ch"/>
+			<xsd:enumeration value="news:comp.infosystems.www.servers.unix"/>
+			<xsd:enumeration value="telnet://melvyl.ucop.edu/"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+</xsd:schema>

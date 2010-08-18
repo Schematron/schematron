@@ -1,0 +1,17 @@
+<jsml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="test76423.xsd">
+	
+	<class name="Singleton">
+		<events>
+			<event name="InstanceCreated" scope="class">
+				<desc>
+					Fired when the singleton instance is created.
+				</desc>
+			</event>
+		</events>
+		<property name="instance" scope="class" type="Singleton">
+			<desc>
+				Singleton instance, initialized on first access.
+			</desc>
+		</property>
+	</class>
+</jsml>

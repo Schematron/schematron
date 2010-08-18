@@ -1,0 +1,7 @@
+<?xml version="1.0" ?> 
+<a:root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="foo test72049_a.xsd bar test72049_b.xsd"
+xmlns:a="foo"
+>
+ <a:a/>
+</a:root>

@@ -1,0 +1,7 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:complexType name="derived">
+		<xs:complexContent>
+			<xs:extension base="xs:anyType"/>
+		</xs:complexContent>
+	</xs:complexType>
+</xs:schema>

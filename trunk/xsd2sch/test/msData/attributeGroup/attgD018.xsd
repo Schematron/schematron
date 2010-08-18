@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:attribute name="foo" type="xsd:string"/>
+	<xsd:attribute name="bar" type="xsd:string"/>
+	<xsd:attributeGroup name="attG" id="abc" xmlns:foo="foo" foo:anyattribute="foo">
+		<xsd:attribute name="att1" type="xsd:int"/>
+		<xsd:anyAttribute namespace="##any" id="anyAtt">
+		</xsd:anyAttribute>
+	</xsd:attributeGroup>
+	<xsd:complexType name="attgRef">
+		<xsd:attributeGroup ref="attG"/>
+	</xsd:complexType>
+	<xsd:element name="doc">
+		<xsd:complexType>
+			<xsd:choice>
+				<xsd:element name="elem" type="attgRef"/>
+			</xsd:choice>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

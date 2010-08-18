@@ -1,0 +1,7 @@
+<xs:schema	targetNamespace="http://www.tempuri.org/other" 
+			xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+			xmlns:tns="http://www.tempuri.org/other">
+	<!-- test that ##other namespace is any namespace other than the target namespace -->
+
+	<xs:element name="otherElement" type="xs:date" />
+</xs:schema>

@@ -1,0 +1,12 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://tempuri.org" xmlns:ns="http://tempuri.org">
+
+<xs:complexType name="myType">
+ <xs:all>
+  <xs:element name="elt" type="xs:string"/>
+  <xs:element name="noFinal" type="xs:string" final="restriction"/>
+ </xs:all>
+</xs:complexType>
+
+<xs:element name="root" type="ns:myType"/>
+
+</xs:schema>

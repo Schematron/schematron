@@ -1,0 +1,11 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" >
+
+	<xsd:attribute name="att" fixed="123" />
+	
+	<xsd:element name="doc">
+		<xsd:complexType>
+			<xsd:attribute ref="att" fixed="abc"/>
+		</xsd:complexType>		
+	</xsd:element>
+
+</xsd:schema>

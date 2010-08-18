@@ -1,0 +1,37 @@
+<a:root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="ns-b schA1_b.xsd"
+	xsi:noNamespaceSchemaLocation="schA1_c.xsd"
+	xmlns:a="ns-a"
+	xmlns:b="ns-b"
+>
+	<a:e1>
+		<a:a1>abc</a:a1>
+		<a:a2>abc</a:a2>
+	</a:e1>
+	
+	<b:e1>
+		<a1>0</a1>
+		<a2>true</a2>
+	</b:e1>
+
+	<e1>
+		<a1>123</a1>
+		<a2>123</a2>
+	</e1>	
+
+	<a:e1>
+		<a:a1>abc</a:a1>
+		<a:a2>abc</a:a2>
+	</a:e1>
+	
+	<b:e1>
+		<a1>0</a1>
+		<a2>true</a2>
+	</b:e1>
+
+	<e1>
+		<a1>123</a1>
+		<a2>123</a2>
+	</e1>	
+
+</a:root>

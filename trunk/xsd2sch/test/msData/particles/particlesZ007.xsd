@@ -1,0 +1,196 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <xsd:simpleType name="d">
+	<xsd:union memberTypes="xsd:date xsd:duration xsd:dateTime xsd:time"/>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="g">
+	<xsd:union memberTypes="xsd:gYear xsd:gYearMonth xsd:gMonthDay xsd:gYear xsd:gDay xsd:gMonth"/>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="s">
+	<xsd:union memberTypes="xsd:string xsd:normalizedString xsd:token"/>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="na">
+	<xsd:union memberTypes="xsd:language xsd:Name xsd:NCName xsd:NMTOKEN xsd:QName"/>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="i">
+	<xsd:union memberTypes="xsd:ID xsd:IDREF xsd:ENTITY"/>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="l">
+	<xsd:union memberTypes="xsd:NMTOKENS xsd:IDREFS xsd:ENTITIES"/>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="b">
+	<xsd:union memberTypes="xsd:boolean xsd:base64Binary xsd:hexBinary"/>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="f">
+	<xsd:union memberTypes="xsd:float xsd:double xsd:decimal xsd:integer  xsd:long xsd:int xsd:short xsd:unsignedLong xsd:unsignedInt xsd:unsignedShort"/>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="n">
+	<xsd:union memberTypes="xsd:nonPositiveInteger xsd:negativeInteger"/>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="p">
+	<xsd:union memberTypes="xsd:nonNegativeInteger xsd:positiveInteger" />
+  </xsd:simpleType>
+
+  <xsd:simpleType name="by">
+	<xsd:union memberTypes="xsd:byte xsd:unsignedByte"/>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="u">
+	<xsd:union memberTypes="xsd:anyURI"/>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="no">
+	<xsd:union memberTypes="xsd:NOTATION"/>
+  </xsd:simpleType>
+
+
+  <xsd:simpleType name="all">
+	<xsd:union memberTypes="d g s na i l b f n p by u no"/>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="date-byte">
+	<xsd:union memberTypes="d by g"/>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="month-name">
+	<xsd:union memberTypes="g na"/>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="date-month-no">
+	<xsd:union memberTypes="f">
+		<xsd:simpleType>
+			<xsd:union memberTypes="d g"/>
+		</xsd:simpleType>
+	</xsd:union>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="int-str">
+	<xsd:union memberTypes="xsd:int">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:enumeration value="123456789a"/>
+	<!-- WHICH ONE TAKE PRESIDENT ?? -->
+				<xsd:maxLength value="9"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+
+	</xsd:union>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="bool-str">
+	<xsd:union memberTypes="b">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:enumeration value="x"/>
+				<xsd:enumeration value="y"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:integer">
+				<xsd:enumeration value="1"/>
+				<xsd:enumeration value="0"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:union>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="list-str">
+	<xsd:union>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:NMTOKENS">
+				<xsd:enumeration value="x"/>
+				<xsd:enumeration value="y"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:integer">
+				<xsd:enumeration value="999"/>
+				<xsd:enumeration value="888"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+		<xsd:simpleType>
+			<xsd:list itemType="b"/>
+		</xsd:simpleType>
+	</xsd:union>
+  </xsd:simpleType>
+
+  <xsd:complexType name="all-ct">
+    <xsd:simpleContent>
+	<xsd:extension base="all">
+	  <xsd:anyAttribute processContents="lax"/>
+	</xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+  <xsd:complexType name="date-byte-ct">
+    <xsd:simpleContent>
+	<xsd:extension base="date-byte">
+	  <xsd:anyAttribute processContents="lax"/>
+	</xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+  <xsd:complexType name="month-name-ct">
+    <xsd:simpleContent>
+	<xsd:extension base="month-name">
+	  <xsd:anyAttribute processContents="lax"/>
+	</xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+  <xsd:complexType name="date-month-no-ct">
+    <xsd:simpleContent>
+	<xsd:extension base="date-month-no">
+	  <xsd:anyAttribute processContents="lax"/>
+	</xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+  <xsd:complexType name="int-str-ct">
+    <xsd:simpleContent>
+	<xsd:extension base="int-str">
+	  <xsd:anyAttribute processContents="lax"/>
+	</xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+  <xsd:complexType name="bool-str-ct">
+    <xsd:simpleContent>
+	<xsd:extension base="bool-str">
+	  <xsd:anyAttribute processContents="lax"/>
+	</xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+  <xsd:complexType name="list-str-ct">
+    <xsd:simpleContent>
+	<xsd:extension base="list-str">
+	  <xsd:anyAttribute processContents="lax"/>
+	</xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+
+
+
+  <xsd:element name="root"> 
+    <xsd:complexType>
+	<xsd:choice maxOccurs="unbounded">
+		<xsd:element name="all" type="all-ct" minOccurs="0" maxOccurs="100" block=""/>
+		<xsd:element name="date-byte" type="date-byte-ct" minOccurs="0" maxOccurs="100"/>
+		<xsd:element name="month-name" type="month-name-ct" minOccurs="0" maxOccurs="100"/>
+		<xsd:element name="date-month-no" type="date-month-no-ct" minOccurs="0" maxOccurs="100"/>
+		<xsd:element name="int-str" type="int-str-ct" minOccurs="0" maxOccurs="100"/>
+		<xsd:element name="bool-str" type="bool-str-ct" minOccurs="0" maxOccurs="100"/>
+		<xsd:element name="list-str" type="list-str-ct" minOccurs="0" maxOccurs="100"/>
+		<xsd:element name="foo" type="xsd:string"/>
+	</xsd:choice>
+    </xsd:complexType>
+  </xsd:element>
+
+
+
+</xsd:schema>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<xs:schema id="repro" 
+                  elementFormDefault="qualified"
+                  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+                  
+            <xs:element name="item" type="xs:anySimpleType" />
+
+            <xs:element name="string" type="xs:string" substitutionGroup="item"/>         
+            <xs:element name="int" type="xs:int" substitutionGroup="item"/>  
+            <xs:element name="bool" type="xs:boolean" substitutionGroup="item"/>  
+            <xs:element name="float" type="xs:float" substitutionGroup="item"/>  
+            <xs:element name="double" type="xs:double" substitutionGroup="item"/>  
+            <xs:element name="decimal" type="xs:decimal" substitutionGroup="item"/>  
+            <xs:element name="duration" type="xs:duration" substitutionGroup="item"/> 
+            <xs:element name="datetime" type="xs:dateTime" substitutionGroup="item"/>   
+            <xs:element name="time" type="xs:time" substitutionGroup="item"/>  
+            <xs:element name="date" type="xs:date" substitutionGroup="item"/>   
+            <xs:element name="year" type="xs:gYear" substitutionGroup="item"/>    
+            <xs:element name="monthday" type="xs:gMonthDay" substitutionGroup="item"/>
+            <xs:element name="day" type="xs:gDay" substitutionGroup="item"/> 
+            <xs:element name="month" type="xs:gMonth" substitutionGroup="item"/>      
+            <xs:element name="hexbinary" type="xs:hexBinary" substitutionGroup="item"/>    
+            <xs:element name="anyuri" type="xs:anyURI" substitutionGroup="item"/>   
+            <xs:element name="entity" type="xs:ENTITY" substitutionGroup="item"/> 
+
+	    <xs:element name="root">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="item" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+
+	    </xs:element>
+</xs:schema>

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='reM88.xsd' >
+
+<!-- 
+base='string', pattern='\p{IsSpecials}?', value='#x10300;', type='invalid', RULE='25,36'
+-->
+
+     <elem>&#x10300;</elem>
+
+ </doc>

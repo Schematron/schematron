@@ -1,0 +1,12 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+elementFormDefault="qualified">
+
+	<xsd:redefine schemaLocation="schM7_c.xsd">
+		<xsd:attributeGroup name="c-g2">
+				<xsd:attributeGroup ref="c-g2"/>
+				<xsd:attribute name="a1" type="xsd:int" />
+				<xsd:attribute name="a4" type="xsd:int" />
+		</xsd:attributeGroup>
+  	</xsd:redefine>
+	
+</xsd:schema>

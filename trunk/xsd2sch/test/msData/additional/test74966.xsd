@@ -1,0 +1,39 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:complexType name="restrictionType">
+		<xs:sequence>
+		    	<xs:element name="f"/>
+			
+			<xs:choice>
+
+  			  <xs:choice minOccurs="1">
+			    <xs:element name="a"/>
+			    <xs:element name="b"/>
+			  </xs:choice>
+
+			  <xs:sequence minOccurs="0">
+			    <xs:element name="a1"/>
+			    <xs:element name="b1"/>
+			  </xs:sequence>
+
+			</xs:choice>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="complexRestrictionType">
+		<xs:complexContent>
+			<xs:restriction base="restrictionType">
+			<xs:sequence>
+ 		           <xs:element name="f"/>
+
+  			   <xs:choice minOccurs="0">
+			    <xs:element name="a"/>
+			    <xs:element name="b"/>
+			   </xs:choice>
+
+			</xs:sequence>
+			</xs:restriction>
+		</xs:complexContent>
+	</xs:complexType>
+
+</xs:schema>

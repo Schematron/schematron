@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ctL021.xsd" xsi:schemaLocation="myNamespace ctL021b.xsd" xmlns:myNS="myNamespace">
+	<fooTest myNS:testAttr="Test Attribute">
+		<child_1>info</child_1>
+		<child_2>3</child_2>
+	</fooTest>
+</root>

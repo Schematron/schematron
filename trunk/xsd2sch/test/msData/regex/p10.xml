@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='p10.xsd' >
+
+<!-- 
+restriction of a type that defined as emum {1,2,3}, pattern="[13]", XML has value=2 [ invalid ]
+-->
+
+      <elem att='2'/>
+
+ </doc>

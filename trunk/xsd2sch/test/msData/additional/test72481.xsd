@@ -1,0 +1,12 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+   <xsd:element name="a">
+      <xsd:complexType>
+	    <xsd:sequence>
+	      <xsd:element name="b" minOccurs="1"/>
+          <xsd:choice/>
+	    </xsd:sequence>
+      </xsd:complexType>
+    </xsd:element>
+
+</xsd:schema>

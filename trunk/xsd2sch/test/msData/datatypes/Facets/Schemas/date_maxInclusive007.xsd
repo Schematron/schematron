@@ -1,0 +1,13 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+<xs:simpleType name="base">
+	<xs:restriction base="xs:date">
+		<xs:maxInclusive value="2002-10-10-02:00"/>
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="derived">
+	<xs:restriction base="base">
+		<xs:maxInclusive value="2002-10-10-03:00"/>
+	</xs:restriction>
+</xs:simpleType>
+</xs:schema>

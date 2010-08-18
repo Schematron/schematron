@@ -1,0 +1,16 @@
+<xs:schema	targetNamespace="http://www.tempuri.org" 
+			xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+			xmlns:tns="http://www.tempuri.org">
+	<!-- test support for the new language pattern ([a-zA-Z]{1,8})-([a-zA-Z0-9]{1,8})* -->
+
+	<xs:element name="testElement" type="xs:language" />
+
+	<xs:element name="root">
+		<xs:complexType>
+			<xs:all>
+				<xs:element ref="tns:testElement" />
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
+

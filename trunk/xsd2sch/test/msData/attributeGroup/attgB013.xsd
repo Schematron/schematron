@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://xsdtesting" xmlns:x="http://xsdtesting" xmlns:imp="http://importedXSD">
+	<xsd:import namespace="http://importedXSD" schemaLocation="attgB013.imp"/>
+	<xsd:import namespace="http://importedXSD" schemaLocation="attgB013v1.imp"/>
+	<xsd:attributeGroup name="car">
+		<xsd:attribute name="model"/>
+		<xsd:attribute name="age" type="int"/>
+		<xsd:attributeGroup ref="imp:car"/>
+	</xsd:attributeGroup>
+</xsd:schema>

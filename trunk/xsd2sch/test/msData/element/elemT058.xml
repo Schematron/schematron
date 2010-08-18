@@ -1,0 +1,11 @@
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="elemT058.xsd">
+	<test1 xsi:type="E-A" att="123">1</test1>
+	<test2 xsi:type="A">1</test2>
+	<test3 xsi:type="R-A">1</test3>
+	<test4 xsi:type="R-CA">
+		<x/>
+	</test4>
+	<test5 xsi:type="E-CA">
+		<x/><y/><z/>
+	</test5>
+</root>

@@ -1,0 +1,10 @@
+<?xml version='1.0'?>
+<root xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+       xsi:noNamespaceSchemaLocation="NCName.xsd" >
+  <complexTest>
+  <!-- value=fo_124-.sda3 -->
+    <comp_foo>fo_124-.sda3</comp_foo>
+  </complexTest>
+ 
+  <simpleTest>fo_124-.sda3</simpleTest>
+</root>

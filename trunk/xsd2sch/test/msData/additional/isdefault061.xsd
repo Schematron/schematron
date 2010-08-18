@@ -1,0 +1,9 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="foo" attributeFormDefault="qualified">
+<xsd:element name="root">
+	<xsd:complexType>
+		<xsd:attribute name="attr1" type="xsd:int" fixed="123"/>
+		<xsd:attribute name="attr2" type="xsd:string" fixed="abc"/>
+		<xsd:attribute name="attr3" type="xsd:boolean" fixed="true"/>
+	</xsd:complexType>
+</xsd:element>
+</xsd:schema>

@@ -1,0 +1,8 @@
+<root att="telnet://melvyl.ucop.edu/" xmlns="ftp://ftp.is.co.za/rfc/rfc1808.txt" xsi:schemaLocation="ftp://ftp.is.co.za/rfc/rfc1808.txt anyURI_a004.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<bar>ftp://ftp.is.co.za/rfc/rfc1808.txt</bar>
+<bar>gopher://spinaltap.micro.umn.edu/00/Weather/California/Los%20Angeles</bar>
+<bar>http://www.math.uio.no/faq/compression-faq/part1.html</bar>
+<bar>mailto:mduerst@ifi.unizh.ch</bar>
+<bar>news:comp.infosystems.www.servers.unix</bar>
+<bar>telnet://melvyl.ucop.edu/</bar>
+</root>

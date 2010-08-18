@@ -1,0 +1,5 @@
+<?xml version='1.0'?>
+<test  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation="gYearMonth_minInclusive002.xsd" >
+<!-- facet=minInclusive and value=2001-03 and document value=2000-12 -->
+  <foo>2000-12</foo>
+</test>

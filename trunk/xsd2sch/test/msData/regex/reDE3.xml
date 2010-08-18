@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='reDE3.xsd' >
+
+<!-- 
+base='dateTime', pattern='\p{Nd}{4}-\d\d-\d\dT\d\d:\d\d:\d\d', value='2001-06-06T12:12:61', type='invalid', RULE=''
+-->
+
+     <elem>2001-06-06T12:12:61</elem>
+
+ </doc>

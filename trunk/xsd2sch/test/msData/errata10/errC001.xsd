@@ -1,0 +1,13 @@
+<xs:schema	targetNamespace="http://www.tempuri.org" 
+			xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+			xmlns:tns="http://www.tempuri.org">
+	<!-- test that anySimpleType whitespace normalization is set to preserve -->
+
+	<xs:element name="root">
+		<xs:complexType>
+			<xs:attribute name="testAttr" type="xs:anySimpleType" fixed="This   is   a   
+fixed value"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
+

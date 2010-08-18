@@ -1,0 +1,29 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="root">
+<xs:complexType>
+ <xs:sequence>
+	<xs:element name="Element1">
+		<xs:complexType>
+			<xs:sequence minOccurs="0" maxOccurs="unbounded">
+				<xs:group ref="Group2" minOccurs="2" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>	
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+
+	<xs:group name="Group2">
+		<xs:choice>
+			<xs:sequence minOccurs="3" maxOccurs="unbounded">
+				<xs:element name="Group2_Element1" type="xs:string" default="a"/>
+			</xs:sequence>
+			<xs:sequence>
+				<xs:element name="Group2_Element2" type="xs:string" default="b"/>
+			</xs:sequence>
+		</xs:choice>
+	</xs:group>
+
+
+
+</xs:schema>

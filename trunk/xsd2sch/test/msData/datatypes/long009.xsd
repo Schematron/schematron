@@ -1,0 +1,29 @@
+<?xml version='1.0'?>
+<xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema' >
+<!-- test simpleType list of Long -->
+  <xsd:element name='complexTest' type='complexfooType' />
+  <xsd:element name='simpleTest' type='simplefooType' />
+
+  <xsd:simpleType name="myList">
+	<xsd:list itemType="xsd:long"/>
+  </xsd:simpleType>
+  
+  <xsd:complexType name='complexfooType' > 
+    <xsd:sequence>
+      <xsd:element name='comp_foo' type="myList"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:simpleType name='simplefooType' > 
+    <xsd:restriction base="myList"/>
+  </xsd:simpleType>
+
+  <xsd:element name='root'>
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref='complexTest' />
+        <xsd:element ref='simpleTest' />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

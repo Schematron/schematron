@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<xsd:schema 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+	targetNamespace="http://xsdtesting" 	
+	xmlns:x="http://xsdtesting"
+	xmlns:imp="http://importedXSD"
+>
+	<xsd:complexType name="B">
+		<xsd:sequence>
+			<xsd:element ref="x:SUB" maxOccurs="3"/>
+			<xsd:element name="e2"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="R">
+		<xsd:complexContent>
+			<xsd:restriction base="x:B">
+				<xsd:sequence>
+					<xsd:element ref="x:bar" maxOccurs="2"/>
+					<xsd:element name="e2"/>
+				</xsd:sequence>
+			</xsd:restriction>
+		</xsd:complexContent>
+	</xsd:complexType>
+
+	<xsd:element name="doc">
+		<xsd:complexType>
+			<xsd:choice>
+				<xsd:element name="elem" type="x:R"/>
+			</xsd:choice>
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:element name="SUB" abstract="true" type="x:c1"/>
+	<xsd:element name="bar" substitutionGroup="x:SUB" type="x:c2"/>
+
+	<xsd:complexType name="c1">
+		<xsd:sequence>
+			<xsd:element name="x" minOccurs="0" maxOccurs="5"/>
+			<xsd:element name="y"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="c2">
+		<xsd:complexContent>
+			<xsd:extension base="x:c1">
+				<xsd:sequence>
+					<xsd:element name="z" minOccurs="2" maxOccurs="2"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+
+</xsd:schema>

@@ -1,0 +1,17 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+
+    <xs:complexType name="t1">
+		<xs:simpleContent>
+         <xs:extension base="xs:anySimpleType" />
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="t2">
+		<xs:simpleContent>
+         <xs:restriction base="t1" >
+			<xs:minLength value="1"/>
+         </xs:restriction>
+        </xs:simpleContent>
+    </xs:complexType>
+
+ </xs:schema>

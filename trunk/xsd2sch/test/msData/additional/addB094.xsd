@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs='http://www.w3.org/2001/XMLSchema'
+>
+
+ <xs:redefine schemaLocation="addB094.red">
+  <xs:complexType name="personName">
+   <xs:complexContent>
+    <xs:extension base="personName">
+     <xs:sequence>
+      <xs:element name="generation" minOccurs="0"/>
+     </xs:sequence>
+    </xs:extension>
+   </xs:complexContent>
+  </xs:complexType>
+ </xs:redefine>
+
+ <xs:element name="elem" type="personName"/>
+
+
+</xs:schema>

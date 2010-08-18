@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" >
+<xsd:element name="root">
+	<xsd:complexType>
+		<xsd:choice maxOccurs="unbounded">
+			<xsd:element name="key" type="xsd:string" />
+            <xsd:element name="keyref" type="xsd:string" />
+        </xsd:choice>
+    </xsd:complexType>
+
+	<xsd:key name="key1">
+	    <xsd:selector xpath="key"/>
+	    <xsd:field xpath="."/>
+	</xsd:key>
+
+	<xsd:keyref name="key2" refer="key1">
+		<xsd:selector xpath="keyref"/>
+		<xsd:field xpath="."/>
+	</xsd:keyref>
+
+</xsd:element>
+</xsd:schema>

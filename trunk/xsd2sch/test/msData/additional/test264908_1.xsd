@@ -1,0 +1,9 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">			
+
+  <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="test264908_1a.xsd"/>
+
+  <xs:complexType name="t">
+	<xs:attribute ref="xml:blah"/>
+  </xs:complexType>
+
+</xs:schema>

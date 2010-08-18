@@ -1,0 +1,10 @@
+<?xml version='1.0'?>
+<root xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+       xsi:noNamespaceSchemaLocation="unsignedShort.xsd" >
+  <complexTest>
+  <!-- value=65535 -->
+    <comp_foo>65535</comp_foo>
+  </complexTest>
+ 
+  <simpleTest>65535</simpleTest>
+</root>

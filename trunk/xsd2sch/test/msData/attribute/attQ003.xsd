@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://xsdtesting" xmlns:x="http://xsdtesting" elementFormDefault="qualified" attributeFormDefault="qualified">
+	<xsd:element name="elem">
+		<xsd:complexType>
+			<xsd:attribute name="att1"/>
+			<xsd:attributeGroup ref="x:attG"/>
+			<xsd:attribute name="att3"/>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="doc">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="x:elem"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:attributeGroup name="attG">
+		<xsd:attribute name="att2"/>
+	</xsd:attributeGroup>
+</xsd:schema>

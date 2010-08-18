@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='reI48.xsd' >
+
+<!-- 
+base='string', pattern='\n\\\r\|\t\.\-\^\?\*\+\{\}\(\)\[\]', value='\&#xD;|&#x9;.-^?*+{}()[]', type='invalid', RULE='24'
+-->
+
+      <elem att='\&#xD;|&#x9;.-^?*+{}()[]'/>
+
+ </doc>

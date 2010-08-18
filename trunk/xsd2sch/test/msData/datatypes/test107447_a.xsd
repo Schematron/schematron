@@ -1,0 +1,19 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+<xs:element name="root">
+<xs:complexType>
+<xs:sequence>
+<xs:element fixed=" John    " type="xs:token" name="token"/>
+<xs:element fixed=" John    " type="xs:language" name="language"/>
+<xs:element fixed=" John    " type="xs:Name" name="name"/>
+<xs:element fixed=" John    " type="xs:NCName" name="ncname"/>
+<xs:element fixed=" John    " type="xs:ID" name="id"/>
+<xs:element fixed=" John    " type="xs:IDREF" name="idref"/>
+<xs:element fixed=" John    " type="xs:IDREFS" name="idrefs"/>
+<xs:element fixed=" John    " type="xs:NMTOKEN" name="nmtoken"/>
+<xs:element fixed=" John    " type="xs:NMTOKENS" name="nmtokens"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+</xs:schema>

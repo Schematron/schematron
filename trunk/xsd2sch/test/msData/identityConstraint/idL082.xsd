@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="myNS.tempuri.org" xmlns:myNS="myNS.tempuri.org" xmlns="myNS.tempuri.org">
+	<xs:element name="root">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="t" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+		<xs:key id="foo123" name="tableu">
+			<xs:selector xpath=".//myNS:t"/>
+			<xs:field xpath="myNS:*"/>
+			<xs:field xpath="myNS:col"/>
+		</xs:key>
+	</xs:element>
+	<xs:element name="t" type="ttype"/>
+	<xs:complexType name="ttype">
+		<xs:sequence>
+			<xs:element name="col" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

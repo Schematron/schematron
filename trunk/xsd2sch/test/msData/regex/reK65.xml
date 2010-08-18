@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='reK65.xsd' >
+
+<!-- 
+base='string', pattern='\P{Sc}*', value='#x20A0;#xFFE6;', type='invalid', RULE='26,34'
+-->
+
+     <elem>&#x20A0;&#xFFE6;</elem>
+
+ </doc>

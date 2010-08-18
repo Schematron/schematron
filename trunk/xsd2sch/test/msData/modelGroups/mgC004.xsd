@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="root" type="test"/>
+	<xs:complexType name="test">
+		<xs:all minOccurs="0">
+			<xs:element name="a"/>
+			<xs:element name="b"/>
+			<xs:element name="c"/>
+		</xs:all>
+	</xs:complexType>
+</xs:schema>

@@ -1,0 +1,24 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+targetNamespace="ns-a"
+xmlns="ns-a"
+elementFormDefault="qualified"
+>
+
+	<xsd:attributeGroup name="b-g2">
+		<xsd:attribute name="att1" />
+		<xsd:attribute name="att2" />
+	</xsd:attributeGroup>
+
+	<xsd:simpleType name="b-st">
+		<xsd:restriction base="xsd:int">
+			<xsd:totalDigits value="2"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:complexType name="b-ct">
+		<xsd:attributeGroup ref="b-g2"/>
+	</xsd:complexType>	
+			
+	<xsd:element name="b-e1" type="b-ct"/>
+
+</xsd:schema>

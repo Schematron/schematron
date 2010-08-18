@@ -1,0 +1,27 @@
+<root	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:noNamespaceSchemaLocation="mgZ001.xsd">
+
+	<!-- Valid: since the second element, b, is optional. ALL has default minOccurs -->
+	<test1>
+		<t1-a />
+	</test1>
+
+	<!-- Valid: since the second element, b, is optional. ALL has minOccurs="1" -->
+	<test2>
+		<t2-a />
+		<t2-c />
+	</test2>
+
+	<!-- Valid: since the ALL has minOccurs="0" -->
+	<test3 />
+
+	<!-- Invalid: even though ALL has minOccurs="0", the first element, a, is not optional if there are children. "A" has default minOccurs -->
+	<test3>
+		<t3-c />
+	</test3>
+
+	<!-- Invalid: even though ALL has minOccurs="0", the third element, c, is not optional if there are children. "C" has minOccurs="1" -->
+	<test3>
+		<t3-a />
+	</test3>
+</root>

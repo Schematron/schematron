@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<a:root
+xmlns:a="http://xsdtesting"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    
+xmlns:b="foo"
+xsi:schemaLocation="http://xsdtesting test73986.xsd">b:a</a:root>

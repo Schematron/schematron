@@ -1,0 +1,72 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+   <xsd:element name="root" type="ct1"/>
+   <xsd:element name="e1" type="strType"/>
+   <xsd:element name="e2" type="att1"/>
+   <xsd:element name="e3" type="m3"/>
+   <xsd:element name="e4" type="m4"/>
+   <xsd:element name="e5" type="m5" />
+   <xsd:element name="e6" type="m6"/>
+   <xsd:element name="e7" type="att1"/>
+   <xsd:element name="e8" type="att1"/>
+
+   <xsd:complexType name="ct1">
+	<xsd:sequence>
+		<xsd:element ref="e1" minOccurs="0"/>
+		<xsd:element ref="e2" minOccurs="0"/>
+		<xsd:element ref="e3" minOccurs="0" maxOccurs="unbounded"/>
+		<xsd:element ref="e4" minOccurs="0" maxOccurs="unbounded"/>
+		<xsd:element ref="e5" minOccurs="0" maxOccurs="unbounded"/>
+		<xsd:element ref="e6" minOccurs="0" maxOccurs="unbounded"/>
+		<xsd:element ref="e7" minOccurs="0" maxOccurs="unbounded"/>
+		<xsd:element ref="e8" minOccurs="0" maxOccurs="unbounded"/>
+	</xsd:sequence>
+   </xsd:complexType>
+
+   <xsd:simpleType name="strType">
+        <xsd:restriction base="xsd:string">
+		<xsd:length value="4"/>
+	</xsd:restriction>
+   </xsd:simpleType>
+
+   <xsd:complexType name="att1">
+		<xsd:attribute name="att" type="xsd:integer"/>	
+   </xsd:complexType>
+
+   <xsd:complexType name="att2">
+		<xsd:attribute name="att1" type="xsd:integer"/>	
+		<xsd:attribute name="att2" type="xsd:boolean"/>
+   </xsd:complexType>
+
+   <xsd:complexType name="m3">
+	<xsd:choice>
+		<xsd:element name="e31" maxOccurs="2"/>
+	</xsd:choice>
+	<xsd:attribute name="att" type="xsd:integer" use="required"/>	
+   </xsd:complexType>
+
+   <xsd:complexType name="m4">
+	<xsd:sequence maxOccurs="3">
+		<xsd:element name="e41" type="att2" minOccurs="0"/>
+		<xsd:element ref="e3"/>
+	</xsd:sequence>
+	<xsd:attribute name="att" type="xsd:integer"/>	
+   </xsd:complexType>
+
+   <xsd:complexType name="m5">
+	<xsd:choice maxOccurs="unbounded">
+		<xsd:element ref="e3"/>
+		<xsd:element ref="e4"/>
+		<xsd:element ref="e5" minOccurs="0"/>
+	</xsd:choice>
+	<xsd:attribute name="att" type="xsd:integer"/>	
+   </xsd:complexType>
+
+   <xsd:complexType name="m6">
+	<xsd:choice minOccurs="0" maxOccurs="unbounded">
+		<xsd:any namespace="##any" processContents="skip" />
+	</xsd:choice>
+	<xsd:attribute name="att" type="xsd:integer"/>	
+   </xsd:complexType>
+
+</xsd:schema>

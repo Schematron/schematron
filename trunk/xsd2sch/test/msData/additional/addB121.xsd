@@ -1,0 +1,8 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <xsd:complexType name="B">
+                        <xsd:sequence>
+                                    <xsd:any namespace="##any" minOccurs="1" maxOccurs="unbounded"/>
+                                    <xsd:element name="e2"/>
+                        </xsd:sequence>
+            </xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,43 @@
+<schema xmlns='http://www.w3.org/2001/XMLSchema' version='0.1'
+        targetNamespace='a'
+        xmlns:a='a'
+        elementFormDefault='qualified'>
+
+
+<element name="doc">
+<complexType>
+<choice>
+ <element ref="a:RootContainer" maxOccurs="100"/>
+</choice>
+</complexType>
+</element>
+
+<element name="RootContainer" type="a:RootContainerType"/>
+<complexType name="RootContainerType">
+	<sequence>
+	      <element ref='a:StrictContainer' minOccurs='0'/>
+	      <element ref='a:LaxContainer' minOccurs='0' />
+	      <element ref='a:SkipContainer' minOccurs='0'/>
+	</sequence>
+</complexType>
+<element name="StrictContainer" type="a:StrictContainerType"/>
+<complexType name="StrictContainerType">
+	<sequence>
+	      <any namespace="##other" processContents="strict"/> 
+	</sequence>
+</complexType>
+<element name="LaxContainer" type="a:LaxContainerType"/>
+<complexType name="LaxContainerType">
+	<sequence>
+	      <any namespace="##other" processContents="lax"/> 
+	</sequence>
+</complexType>
+
+<element name="SkipContainer" type="a:SkipContainerType"/>
+<complexType name="SkipContainerType">
+	<sequence>
+	      <any namespace="##other" processContents="skip"/> 
+	</sequence>
+</complexType>
+        
+</schema>         

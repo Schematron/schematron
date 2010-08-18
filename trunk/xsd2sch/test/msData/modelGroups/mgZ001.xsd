@@ -1,0 +1,42 @@
+<xs:schema  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:element name="root">
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="test1" />
+				<xs:element ref="test2" />
+				<xs:element ref="test3" />
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="test1">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="t1-a" />
+				<xs:element name="t1-b" minOccurs="0" />
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="test2">
+		<xs:complexType>
+			<xs:all minOccurs="1">
+				<xs:element name="t2-a" />
+				<xs:element name="t2-b" minOccurs="0" />
+				<xs:element name="t2-c" minOccurs="1" />
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="test3">
+		<xs:complexType>
+			<xs:all minOccurs="0">
+				<xs:element name="t3-a" />
+				<xs:element name="t3-b" minOccurs="0" />
+				<xs:element name="t3-c" minOccurs="1" />
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema> 

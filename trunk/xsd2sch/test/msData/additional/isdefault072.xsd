@@ -1,0 +1,38 @@
+<xsd:schema elementFormDefault="qualified" attributeFormDefault="qualified" xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <xsd:complexType name="Array">
+
+    <xsd:sequence minOccurs="0">
+
+      <xsd:element name="Item" type="xsd:anyType" minOccurs="0" maxOccurs="unbounded" nillable="true" form="unqualified"/>
+
+    </xsd:sequence>
+
+    <xsd:attribute name="ItemType" type="xsd:QName" default="xsd:anyType" />
+
+    <xsd:attribute name="Dimensions" default="1" form="unqualified">
+
+      <xsd:simpleType>
+
+        <xsd:list itemType="xsd:int" />
+
+      </xsd:simpleType>
+
+    </xsd:attribute>
+
+    <xsd:attribute default="0" name="LowerBounds" form="unqualified">
+
+      <xsd:simpleType>
+
+        <xsd:list itemType="xsd:int" />
+
+      </xsd:simpleType>
+
+    </xsd:attribute>
+
+  </xsd:complexType>
+
+  <xsd:element name="Array" type="tns:Array"/>
+
+</xsd:schema>
+

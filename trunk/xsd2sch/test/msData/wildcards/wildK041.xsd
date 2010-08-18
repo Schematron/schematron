@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="foo">
+		<xsd:complexType>
+			<xsd:simpleContent>
+				<xsd:extension base="xsd:string">
+					<xsd:anyAttribute namespace="##local ##targetNamespace http://www.w3.org/1999/xhtml http://www.w3.org/1999/XSL/Transform http://www.w3.org/1999/XML/xinclude  http://www.w3.org/1999/02/22-rdf-syntax-ns http://www.w3.org/2000/01/rdf-schema http://www.w3.org/Graphics/SVG/  http://www.w3.org/2000/02/xmldsig http://www.w3.org/TR/2000/WD-xml-c14n-20000119"/>
+				</xsd:extension>
+			</xsd:simpleContent>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

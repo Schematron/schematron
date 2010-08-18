@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<xsd:schema
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+	xmlns="foo" 
+	targetNamespace="foo" 	
+	xmlns:ts="foo" 
+	elementFormDefault="qualified"
+	
+>
+
+	<xsd:element name="root">
+	   <xsd:complexType>
+		<xsd:sequence>
+		<xsd:element name="A" minOccurs="0">
+			<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="A1" minOccurs="0">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="A2">
+							<xsd:complexType>
+								<xsd:sequence>
+									<xsd:element name="A3" />
+								</xsd:sequence>
+							</xsd:complexType>
+
+							<xsd:keyref name="QQQ" refer="ts:KeyAAA">
+								<xsd:selector xpath="."/>
+								<xsd:field xpath="./ts:A3"/>
+							</xsd:keyref>
+
+							</xsd:element>
+							<xsd:element name="A22"/>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+			</xsd:complexType>
+			  <xsd:key name="KeyAAA">
+				<xsd:selector xpath="ts:A1"/>
+				<xsd:field xpath="./ts:A22"/>	
+			  </xsd:key>
+		</xsd:element>
+		</xsd:sequence>
+	  </xsd:complexType>	
+	</xsd:element>
+
+</xsd:schema>

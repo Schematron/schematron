@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+	<xsd:element name="root">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="test" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:element name="test" type="A" block="restriction"/>
+	<xsd:element name="s-a" substitutionGroup="test" />
+
+	<xsd:simpleType name="base-A">
+		<xsd:restriction base="xsd:int">
+			<xsd:minExclusive value="0"/>
+			<xsd:maxInclusive value="10"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="base-B">
+		<xsd:restriction base="xsd:string">
+			<xsd:minLength value="0"/>
+			<xsd:maxLength value="10"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="A">
+		<xsd:restriction base="base-A">
+			<xsd:enumeration value="1"/>
+			<xsd:enumeration value="2"/>
+			<xsd:enumeration value="3"/>
+			<xsd:enumeration value="4"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="B">
+		<xsd:restriction base="base-B">
+			<xsd:enumeration value="a"/>
+			<xsd:enumeration value="b"/>
+			<xsd:enumeration value="c123456789"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="Union-A">
+		<xsd:union memberTypes="A"/>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="Union-AB">
+		<xsd:union memberTypes="A B"/>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="List-A">
+		<xsd:list itemType="A"/>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="List-AB">
+		<xsd:list itemType="Union-AB"/>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="R-A">
+		<xsd:restriction base="A">
+			<xsd:enumeration value="1"/>
+			<xsd:enumeration value="2"/>
+		</xsd:restriction>	
+	</xsd:simpleType>
+
+	<xsd:complexType name="CA">
+		<xsd:sequence>
+			<xsd:element name="x" minOccurs="0" maxOccurs="2"/>
+			<xsd:element name="y" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="R-CA">
+		<xsd:complexContent>
+			<xsd:restriction base="CA">
+				<xsd:sequence>
+					<xsd:element name="x" minOccurs="1" maxOccurs="1"/>
+				</xsd:sequence>
+			</xsd:restriction>	
+		</xsd:complexContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="E-CA">
+		<xsd:complexContent>
+			<xsd:extension base="CA">
+				<xsd:sequence>
+					<xsd:element name="z"/>
+				</xsd:sequence>
+			</xsd:extension>	
+		</xsd:complexContent>
+	</xsd:complexType>
+
+</xsd:schema>

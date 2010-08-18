@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="doc" type="foo"/>
+	<xsd:complexType name="foo">
+		<xsd:complexContent>
+			<xsd:extension base="bar">
+				<xsd:all maxOccurs="1" minOccurs="0">
+					<xsd:element name="e1"/>
+				</xsd:all>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="bar"/>
+</xsd:schema>

@@ -1,0 +1,12 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+elementFormDefault="qualified" targetNamespace="ns-a" xmlns="ns-a">
+
+	<xsd:include schemaLocation="schU5_h.xsd" />
+	<xsd:redefine schemaLocation="schU5_g.xsd">
+		<xsd:attributeGroup name="g-g1">
+			<xsd:attribute name="g1" type="xsd:string"/>
+			<xsd:attribute name="g2" type="xsd:string"/>
+		</xsd:attributeGroup>
+  	</xsd:redefine> 
+	
+</xsd:schema>

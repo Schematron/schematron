@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+<!-- 
+Element with block="list" and a list used in instant XML
+-->
+
+<xsd:element name='root'>
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref='footest' />
+		<xsd:element ref='bartest'/>
+      </xsd:sequence>
+    </xsd:complexType>
+</xsd:element>
+
+<xsd:element name='footest' type='base' />
+<xsd:element name='bartest' type='xsd:int' />
+
+<xsd:simpleType name="myInt">
+	<xsd:restriction base="xsd:int">
+		<xsd:minInclusive value="0"/>
+		<xsd:maxInclusive value="100"/>
+	</xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="myList">
+	<xsd:list itemType="myInt"/>
+</xsd:simpleType>
+
+<xsd:simpleType name="rList">
+	<xsd:restriction base="myList">
+		<xsd:enumeration value="2"/>
+		<xsd:enumeration value="3"/>
+	</xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="myList1">
+	<xsd:list itemType="myInt"/>
+</xsd:simpleType>
+
+ <xsd:complexType name="base">
+  <xsd:sequence>
+   <xsd:element name="a"   type="xsd:string"/>
+   <xsd:element name="b" type="xsd:string"/>
+   <xsd:element name="c" type="xsd:string" minOccurs="0"/>
+  </xsd:sequence>
+ </xsd:complexType>
+ 
+  <xsd:complexType name="ex">
+  <xsd:complexContent>
+   <xsd:extension base="base">
+    <xsd:sequence>
+     <xsd:element   name="d" />
+    </xsd:sequence>
+   </xsd:extension>
+  </xsd:complexContent>
+  </xsd:complexType>
+  
+  <xsd:complexType name="rs">
+  <xsd:complexContent>
+   <xsd:restriction base="base">
+    <xsd:sequence>
+   <xsd:element name="a"   type="xsd:string"/>
+   <xsd:element name="b" type="xsd:string"/>
+    </xsd:sequence>
+   </xsd:restriction>
+  </xsd:complexContent>
+  </xsd:complexType>
+
+</xsd:schema>

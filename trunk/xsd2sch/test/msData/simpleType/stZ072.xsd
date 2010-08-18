@@ -1,0 +1,20 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="root" default="1" type="mylist"/>
+
+  <xs:simpleType name="mylist">
+	<xs:restriction base="list">
+		<xs:enumeration value="1"/>
+		<xs:enumeration value="2"/>
+	</xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="list">
+	<xs:list itemType="union"/>
+  </xs:simpleType>
+
+  <xs:simpleType name="union">
+	<xs:union memberTypes="xs:int xs:string xs:boolean"/>
+  </xs:simpleType>
+
+</xs:schema>

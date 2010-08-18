@@ -1,0 +1,9 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+targetNamespace="ns-a"
+>
+	<xsd:import namespace="foo" />	
+
+    <xsd:element name="foo"/>
+</xsd:schema>
+
+

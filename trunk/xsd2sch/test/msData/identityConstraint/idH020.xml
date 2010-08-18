@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<myNS:root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="myNS.tempuri.org idH020.xsd" xmlns:myNS="myNS.tempuri.org">
+	<myNS:uid val="1"/>
+	<myNS:uid val="11"/>
+	<myNS:uid val="111"/>
+	<myNS:uid val="1.0"/>
+	<myNS:kid val="1"/>
+	<myNS:kid val="11"/>
+	<myNS:kid val="111"/>
+	<myNS:kid val="1.0"/>
+</myNS:root>

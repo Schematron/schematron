@@ -1,0 +1,8 @@
+<a:doc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xsdtesting particlesOb003.xsd http://other particlesOb003b.xsd" xmlns:a="http://xsdtesting" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:imp="http://importedXSD" xmlns:o="http://other">
+	<elem>
+		<o:other/>
+		<o:other/>
+		<o:other/>
+		<o:other/>
+	</elem>
+</a:doc>

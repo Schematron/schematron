@@ -1,0 +1,15 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xsd:element name="elt">
+<xsd:complexType>
+<!--xsd:attribute name="att" use="required" type="xsd:string"/ OK-->
+<xsd:attribute name="att" use="required"  fixed="a" type="xsd:string"/>
+</xsd:complexType>
+</xsd:element>
+
+<xsd:group name="aa" >
+  <xsd:choice maxOccurs="2">
+	<xsd:element name="a"/>
+  </xsd:choice>
+</xsd:group>
+
+</xsd:schema>

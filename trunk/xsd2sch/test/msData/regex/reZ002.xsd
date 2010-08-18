@@ -1,0 +1,14 @@
+<xs:schema targetNamespace="http://test/pattern" elementFormDefault="qualified" xmlns:tns="http://test/pattern" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="document">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="email" type="tns:Email" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:simpleType name="Email">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[\w\-\.]+@.*"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

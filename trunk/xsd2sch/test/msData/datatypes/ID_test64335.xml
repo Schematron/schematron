@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<x:products xmlns:x="urn:products">
+   <clothing id="cl101">
+      <price>32.11</price>
+      <description>Nice pink crew-neck t-shirt.</description>
+      <size>M</size>
+      <style>T</style>
+   </clothing>
+<cd id="cd101">
+      <price>44.95</price>
+      <description>An in-depth look at creating applications with
+      XML.</description>
+      <title>XML Developer's Guide</title>
+      <category>Computer</category>
+      <artist>Gambardella, Matthew</artist>
+      <release_date>2000-10-01</release_date>
+   </cd>
+   <book id="bk101">
+      <price>44.95</price>
+      <description>An in-depth look at creating applications with
+      XML.</description>
+      <title>XML Developer's Guide</title>
+      <category>Computer</category>
+      <author>Gambardella, Matthew</author>
+      <publish_date>2000-10-01</publish_date>
+   </book>
+   <dvd id="dvd102">
+      <price>23.95</price>
+      <description>Two fellow travellers hook up and engage in mad-cap tomfoolery while stowaways on a British Merchant ship filled with anxious limeys.</description>
+      <title>Adventures of John Dong and Don Gill</title>
+      <category>Foreign</category>      
+      <director>Hancock, Trevor</director>
+      <release_date>2000-10-01</release_date>
+      
+   </dvd>
+</x:products>

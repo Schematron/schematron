@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:group name="myGroup">
+		<xsd:sequence>
+			<xsd:element name="grpElement" type="xsd:integer"/>
+		</xsd:sequence>
+	</xsd:group>
+	<xsd:complexType name="myType">
+		<xsd:all>
+			<xsd:element name="myElement1" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="myElement2" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="myElement3" type="xsd:string" minOccurs="0"/>
+		</xsd:all>
+		<xsd:attribute name="myAttr"/>
+	</xsd:complexType>
+	<xsd:complexType name="fooType">
+		<xsd:complexContent>
+			<xsd:restriction base="myType">
+				<xsd:all>
+					<xsd:element name="myElement1" type="xsd:string"/>
+				</xsd:all>
+				<xsd:group ref="myGroup"/>
+			</xsd:restriction>
+		</xsd:complexContent>
+	</xsd:complexType>
+</xsd:schema>

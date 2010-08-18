@@ -1,0 +1,25 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+
+<xs:element name="head"/>
+<xs:element name="sub1" substitutionGroup="head"/>
+<xs:element name="sub2" substitutionGroup="sub1"/>
+<xs:element name="sub3" substitutionGroup="sub2"/>
+
+ <xs:complexType name="base">
+           <xs:sequence>
+               <xs:element ref="head" minOccurs="5" maxOccurs="5"/>
+           </xs:sequence>
+ </xs:complexType>
+
+ <xs:complexType name="derived">
+      <xs:complexContent>
+         <xs:restriction base="base">
+           <xs:sequence>
+               <xs:element ref="head" minOccurs="5" maxOccurs="5"/>
+           </xs:sequence>
+         </xs:restriction>
+      </xs:complexContent>
+ </xs:complexType>
+
+ </xs:schema>

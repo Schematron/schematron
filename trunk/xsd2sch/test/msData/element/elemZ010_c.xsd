@@ -1,0 +1,20 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+targetNamespace="c"
+elementFormDefault="qualified"
+xmlns:c="c"
+xmlns:d="d"
+>
+
+    <xsd:import namespace="d" schemaLocation="elemZ010_d.xsd"/>
+
+    <xsd:complexType name="c">
+	<xsd:complexContent>
+	<xsd:extension base="d:d">
+		<xsd:sequence>
+			<xsd:element name="c"/>
+		</xsd:sequence>
+	</xsd:extension>
+	</xsd:complexContent>
+   </xsd:complexType>
+
+</xsd:schema>

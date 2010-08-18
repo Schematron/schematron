@@ -1,0 +1,7 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="root" fixed="-6">
+		<xsd:simpleType>
+			<xsd:union memberTypes="xsd:gYearMonth xsd:byte xsd:unsignedByte xsd:NOTATION"/>
+		</xsd:simpleType>
+	</xsd:element>
+</xsd:schema>

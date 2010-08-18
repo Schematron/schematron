@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:redefine schemaLocation="attgC039.red">
+		<xsd:attributeGroup name="car">
+			<xsd:attributeGroup ref="car"/>
+			<xsd:attributeGroup ref="foo"/>
+		</xsd:attributeGroup>
+	</xsd:redefine>
+	<xsd:complexType name="foo">
+		<xsd:sequence>
+			<xsd:element name="e1"/>
+			<xsd:element name="e2"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:element name="doc" type="test"/>
+	<xsd:complexType name="test">
+		<xsd:attributeGroup ref="car"/>
+	</xsd:complexType>
+</xsd:schema>

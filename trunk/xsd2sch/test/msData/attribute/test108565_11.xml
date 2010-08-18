@@ -1,0 +1,4 @@
+<doc xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:Type="xs:int" xsi:TYPE="xs:string">
+	<e xsi:SchemaLocation="foo foo.xsd">
+	</e>
+</doc>

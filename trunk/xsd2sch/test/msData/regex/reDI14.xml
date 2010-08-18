@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='reDI14.xsd' >
+
+<!-- 
+base='positiveInteger', pattern='\\\d+\+', value='123', type='valid', RULE=''
+-->
+
+     <elem>+1</elem>
+     <elem>1</elem>
+     <elem>+9</elem>
+
+ </doc>

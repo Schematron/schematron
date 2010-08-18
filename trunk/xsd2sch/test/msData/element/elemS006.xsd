@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://xsdtesting" xmlns:tns="http://xsdtesting" elementFormDefault="qualified">
+	<xsd:simpleType name="sd">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="4"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="ss">
+		<xsd:restriction base="tns:sd">
+			<xsd:minLength value="1"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="cs">
+		<xsd:simpleContent>
+			<xsd:extension base="tns:ss">
+				<xsd:attribute name="a" use="optional"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="cc">
+		<xsd:simpleContent>
+			<xsd:extension base="tns:cs">
+				<xsd:attribute name="b" use="optional"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:simpleType name="s_invalid">
+		<xsd:list itemType="xsd:int"/>
+	</xsd:simpleType>
+	<xsd:complexType name="c_invalid">
+		<xsd:sequence>
+			<xsd:any/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:element name="fe_invalid" final="#all" type="tns:cs"/>
+	<xsd:element name="fe1_invalid" substitutionGroup="tns:fe_invalid" type="tns:cc"/>
+</xsd:schema>

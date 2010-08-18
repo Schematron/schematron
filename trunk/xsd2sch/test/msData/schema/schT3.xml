@@ -1,0 +1,36 @@
+<a:root	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="ns-a schT3_a.xsd"
+	xmlns:a="ns-a"
+>
+	
+	<a:e1 
+		att1="123" 
+		att3="123" 
+		att5="123" 
+		att6="true"
+		att7="123" 
+		att9="123" 
+		att11="1"
+		att12="true"
+		att13="fix"
+		att14="true"
+		att15="fix"
+		att16="fix"
+		></a:e1>
+
+	<a:b-e1 
+		att1="123" 
+		att3="123" 
+		att5="123" 
+		att6="true"
+		att7="123" 
+		att9="123" 
+		att11="1"
+		att12="true"
+		att13="fix"
+		att14="true"
+		att15="fix"
+		att16="fix"
+		/>
+		<a:e2>12</a:e2>
+</a:root>

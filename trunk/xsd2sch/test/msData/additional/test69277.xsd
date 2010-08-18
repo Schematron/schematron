@@ -1,0 +1,13 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+<xsd:element name="elt1">
+	<xsd:complexType>
+	<xsd:all minOccurs="0"> <!--<xsd:sequence minOccurs="0"> <xsd:choice minOccurs="0"> Pass -->
+	<xsd:element name="elt2"/>
+	<xsd:element name="elt3"/>
+	<xsd:element name="elt4"/>
+	</xsd:all>
+	</xsd:complexType>
+</xsd:element>
+
+</xsd:schema>

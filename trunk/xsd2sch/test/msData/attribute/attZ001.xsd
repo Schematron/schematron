@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:redefine schemaLocation="attZ001a.xsd">
+		<xs:complexType name="testType">
+			<xs:complexContent>
+				<xs:restriction base="testType">
+					<xs:attribute name="keyField" use="prohibited"/>
+				</xs:restriction>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:redefine>
+	<xs:element name="root">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element ref="myElement"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="myElement" type="testType"/>
+</xs:schema>

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='reE10.xsd' >
+
+<!--
+base='string', pattern='|', value='', type='error', RULE='10'. This is valid because branch allow zero or more pieces. A single '|' will be same ase EMPTY, it will not allow anything.
+-->
+
+     <elem></elem>
+
+ </doc>

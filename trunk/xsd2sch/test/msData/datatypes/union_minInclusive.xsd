@@ -1,0 +1,18 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="MaxProcesses">
+            <xs:restriction base="UnboundedDWORD">
+                  <xs:minInclusive value="1"/>
+            </xs:restriction>
+      </xs:simpleType>
+
+
+<xs:simpleType name="UnboundedDWORD">
+            <xs:union memberTypes="xs:unsignedInt">
+                  <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                              <xs:enumeration value="unbounded"/>
+                        </xs:restriction>
+                  </xs:simpleType>
+            </xs:union>
+      </xs:simpleType>
+</xs:schema>

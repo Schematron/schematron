@@ -1,0 +1,18 @@
+<?xml version='1.0'?>
+<root xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+       xsi:noNamespaceSchemaLocation="double030.xsd" >
+  <complexTest>
+  <!-- value=ABCDEF -->
+    <comp_foo>1</comp_foo>
+  </complexTest>
+ 
+  <simpleTest>-8.9884656743115785407263711865852e+307</simpleTest>
+  <simpleTest>-2.2250738585072011360574097967091e-308</simpleTest>
+  <simpleTest>2.2250738585072011360574097967091e-308</simpleTest>
+  <simpleTest>8.9884656743115785407263711865852e+307</simpleTest>
+  <simpleTest>NaN</simpleTest>
+  <simpleTest>-INF</simpleTest>
+  <simpleTest>INF</simpleTest>
+  <simpleTest>+0</simpleTest>
+  <simpleTest>-0</simpleTest>
+</root>

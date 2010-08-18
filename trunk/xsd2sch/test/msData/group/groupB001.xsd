@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:group name="foo">
+		<xsd:sequence>
+			<xsd:element name="a"/>
+		</xsd:sequence>
+	</xsd:group>
+	<xsd:group ref="foo"/>
+</xsd:schema>

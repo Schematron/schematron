@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<doc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="mgM010.xsd" xmlns:foo="http://bar">
+	<e2/>
+	<foo:foo/>
+	<e1/>
+</doc>

@@ -1,0 +1,19 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="root">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded" minOccurs="1">
+				<xs:element ref="element1"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="element1">
+		<xs:complexType>
+			<xs:attribute name="attribute1" type="newstr"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:simpleType name="newstr">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="(あ|ｱ)*"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

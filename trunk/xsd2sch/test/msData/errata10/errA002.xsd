@@ -1,0 +1,17 @@
+<xs:schema	targetNamespace="http://www.tempuri.org" 
+			xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+			xmlns:tns="http://www.tempuri.org">
+	<!-- test that ##other namespace is any namespace other than the target namespace -->
+
+	<xs:complexType name="rootType">
+		<xs:sequence maxOccurs = "2">
+			<xs:any namespace="##targetNamespace" processContents="strict" />
+			<xs:any namespace="##other" processContents="lax"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:element name="root" type="tns:rootType"/>
+
+	<xs:element name="targetElement" type="xs:integer" />
+</xs:schema>
+

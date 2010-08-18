@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='p12.xsd' >
+
+<!-- 
+pattern=123]+|[abc]+,  value=112233123 [valid]
+-->
+
+      <elem att='112233123'/>
+
+ </doc>

@@ -1,0 +1,9 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+elementFormDefault="qualified" targetNamespace="ns-a" xmlns="ns-a">
+
+	<xsd:attributeGroup name="g-g1">
+		<xsd:attribute name="g1" />
+		<xsd:attribute name="g2" />
+	</xsd:attributeGroup>
+
+</xsd:schema>

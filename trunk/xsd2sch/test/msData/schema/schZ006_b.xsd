@@ -1,0 +1,31 @@
+﻿<xs:schema
+	targetNamespace="urn:schemas-microsoft-com:xml-analysis:mddataset"
+	xmlns="urn:schemas-microsoft-com:xml-analysis:mddataset"
+	xmlns:sql="urn:schemas-microsoft-com:xml-sql"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="qualified"
+	attributeFormDefault="unqualified"
+>
+	<xs:redefine schemaLocation="schZ006.xsd">
+		<xs:group name="GCustomDimProps">
+			<xs:sequence>
+				<xs:element name="DisplayInfo"	type="xs:unsignedInt"/>
+			</xs:sequence>
+		</xs:group>
+	</xs:redefine>
+	
+	<xs:element name="DisplayInfo" substitutionGroup="ECustomDimPropType"/>
+	
+	<xs:element substitutionGroup="ECustomCellPropType" name="FontName"/>
+	<xs:element substitutionGroup="ECustomCellPropType" name="FontSize"/>
+	<xs:element substitutionGroup="ECustomCellPropType" name="FontFlags"/>
+	<xs:element substitutionGroup="ECustomCellPropType" name="FormatString"/>
+	<xs:element substitutionGroup="ECustomCellPropType" name="NonEmptyBehavior"/>
+	<xs:element substitutionGroup="ECustomCellPropType" name="SolveOrder"/>
+	<xs:element substitutionGroup="ECustomCellPropType" name="Updateable"/>
+	<xs:element substitutionGroup="ECustomCellPropType" name="Visible"/>
+	<xs:element substitutionGroup="ECustomCellPropType" name="Expression"/>
+	<xs:element substitutionGroup="ECustomCellPropType" name="Sqft"/>
+</xs:schema>
+

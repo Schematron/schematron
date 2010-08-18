@@ -1,0 +1,16 @@
+<xsd:schema elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xsd:complexType name="base">
+	 <xsd:attribute name="att1" type="xsd:string"/>
+	 <xsd:attribute name="att2" type="xsd:string"/>
+	 <xsd:anyAttribute />
+</xsd:complexType>
+
+<xsd:simpleType name="st">
+	<xsd:restriction base="xsd:ID"/>
+</xsd:simpleType>
+
+<xsd:element name="doc" type="base" />
+
+<xsd:attribute name="a" type="xsd:ID"/>
+<xsd:attribute name="b"  type="st"/>
+</xsd:schema>

@@ -1,0 +1,4 @@
+<xs:schema targetNamespace="urn:uuid:48D2A016-64FF-4e20-B7F0-FE15842C4D1B/"
+xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+<xs:element name="series" />
+</xs:schema>

@@ -1,0 +1,15 @@
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+ <xs:attributeGroup name="attG1-61">
+     <xs:anyAttribute namespace="##other" processContents="lax"/> <!-- not(absent) -->
+ </xs:attributeGroup>
+
+ <xs:attributeGroup name="attG2-61">
+     <xs:anyAttribute namespace="##local b c" processContents="lax"/> 
+ </xs:attributeGroup>
+
+ <xs:attributeGroup name="attG3-61">
+     <xs:anyAttribute namespace="b c" processContents="lax"/> 
+ </xs:attributeGroup>
+
+</xs:schema>

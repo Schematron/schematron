@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://xsdtesting" xmlns:x="http://xsdtesting" elementFormDefault="qualified">
+	<xsd:group name="P">
+		<xsd:sequence>
+			<xsd:choice minOccurs="0">
+				<xsd:element name="x"/>
+			</xsd:choice>
+			<xsd:element name="y"/>
+		</xsd:sequence>
+	</xsd:group>
+	<xsd:element name="doc">
+		<xsd:complexType>
+			<xsd:choice>
+				<xsd:group ref="x:P"/>
+			</xsd:choice>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

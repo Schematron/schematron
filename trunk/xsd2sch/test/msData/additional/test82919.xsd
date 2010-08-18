@@ -1,0 +1,25 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+
+	<xs:simpleType name="list">
+	  <xs:list itemType="xs:int"/>
+	</xs:simpleType>
+
+	<xs:simpleType name="union">
+	  <xs:union memberTypes="list xs:date"/>
+	</xs:simpleType>
+
+	<xs:element name="root">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="e1" />
+				<xs:element ref="e2" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+   
+    	<xs:attribute name="att1" type="union"/>
+
+    	<xs:element name="e1" type="list"/>
+    	<xs:element name="e2" type="union" substitutionGroup="e1"/>
+
+ </xs:schema>

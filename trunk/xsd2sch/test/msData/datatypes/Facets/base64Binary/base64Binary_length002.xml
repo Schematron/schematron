@@ -1,0 +1,11 @@
+<?xml version='1.0'?>
+<test xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation="base64Binary_length002.xsd" >
+<!-- facet=length and value=5 and document value=MS0yLTM= -->
+<!--For explanation refer to book "Professional XML Schemas" Binary Streams are grouped into
+24-values, which are then split into 6-bit values that are repesented by one of the above 
+64 ASCII Characters. The equals signs (=) is used as a padding character to encode data that is not
+an even integer multiple of 24-bit values. -->
+
+<foo>MS0yLTM=</foo>
+
+</test>

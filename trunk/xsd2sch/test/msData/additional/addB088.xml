@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<x:doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+	xmlns:x="http://xsdtesting"
+	xmlns:i="http://importedXSD"
+	xsi:schemaLocation="http://xsdtesting addB088.xsd"
+    >
+    <x:elem>
+	<i:doc1>
+		<i:elem1>
+			<i:bbb/>
+		</i:elem1>
+		<i:elem2>
+			<i:bbb/>
+		</i:elem2>
+	</i:doc1>
+    </x:elem>
+
+
+ </x:doc>

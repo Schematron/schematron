@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://TC/Import.One/" targetNamespace="http://TC/Import.One/" xmlns:impns="http://TC/Import.One/imp" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:import namespace="http://TC/Import.One/" />
+
+  <!-- element of a type in an imported namespace -->
+  <xs:element name="aString" type="tns:sequenceClassWithOneMember" />
+
+  <!-- sequence that refers to the element of a type in an imported namespace -->
+  <xs:complexType name="seqClsOneMemberAndSome" >
+    <xs:sequence>
+      <xs:element name="FirstChoiceMember" type="xs:float" />
+      <xs:element ref="tns:aString" />
+    </xs:sequence>
+    <xs:attribute name="theAttributeforAClass" type="xs:int" />
+  </xs:complexType>
+
+  <!-- type that refers to a top level attribute in the imported namespace -->
+  <xs:complexType name="seqClsOneMemberAndSomeAnyPlus" >
+    <xs:sequence>
+      <xs:element name="FirstChoiceMember" type="xs:base64Binary" />
+      <xs:element name="anOtherMember" type="xs:gYear" />
+    </xs:sequence>
+    <xs:attribute ref="tns:theTopLevelAttribute" />
+<!-- THIS NEEDS TO BE PUT BACK IN ONCE 3600 IS FIXED -->
+    <!--xs:anyAttribute namespace="##other" /-->
+  </xs:complexType>
+
+  <!-- choice with an element of a type in an imported namespace -->
+  <xs:complexType name="seqClsOneMemberRef" >
+    <xs:choice>
+      <xs:element name="FirstChoiceMember" type="xs:base64Binary" />
+      <xs:element name="importedType" type="tns:sequenceClassWithOneMember" />
+      <xs:element ref="tns:theRefEl" />
+    </xs:choice>
+  </xs:complexType>
+
+  <xs:element name="theRefEl" type="xs:date" />
+  <xs:attribute name="theTopLevelAttribute" type="xs:int" />
+
+  <xs:complexType name="sequenceClassWithOneMember" >
+    <xs:sequence>
+      <xs:element name="FirstChoiceMember" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>

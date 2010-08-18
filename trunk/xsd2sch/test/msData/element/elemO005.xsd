@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="root">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="fooTest"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="fooTest">
+		<xsd:complexType>
+			<xsd:all>
+				<xsd:element name="myElem_1" type="xsd:string"/>
+				<xsd:element name="myElem_2" type="xsd:integer"/>
+			</xsd:all>
+			<xsd:attribute name="myAttr" type="xsd:NMTOKEN"/>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

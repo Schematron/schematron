@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+ elementFormDefault="qualified" 
+>
+
+         <xs:element name="test">
+                 <xs:complexType>
+                         <xs:sequence>
+                                 <xs:element name="e1" type="ct1" maxOccurs="unbounded"/>
+                                 <xs:element name="e2" type="ct2" maxOccurs="unbounded"/>
+                                 <xs:element name="e3" type="ct3" maxOccurs="unbounded"/>
+                                 <xs:element name="e4" type="ct4" maxOccurs="unbounded"/>
+                                 <xs:element name="e5" type="ct5" maxOccurs="unbounded"/>
+                                 <xs:element name="e6" type="ct6" maxOccurs="unbounded"/>
+                         </xs:sequence>
+                 </xs:complexType>
+         </xs:element>
+
+         <xs:element name="element1"/>
+         <xs:element name="element2"/>
+         <xs:element name="element3"/>
+
+	 <xs:complexType name="ct1">
+		<xs:sequence>
+			<xs:any namespace="##any" processContents="strict"/>
+			<xs:element name="element1"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	 <xs:complexType name="ct2">
+		<xs:sequence>
+			<xs:element name="element1"/>
+			<xs:any namespace="##any" processContents="strict"/>
+		</xs:sequence>
+	</xs:complexType>
+	 <xs:complexType name="ct3">
+		<xs:sequence>
+			<xs:element name="element1"/>
+			<xs:any namespace="##any" processContents="strict"/>
+			<xs:element name="element1"/>
+		</xs:sequence>
+	</xs:complexType>
+	 <xs:complexType name="ct4">
+		<xs:sequence>
+			<xs:any namespace="##any" processContents="strict"/>
+			<xs:element name="element1"/>
+			<xs:any namespace="##any" processContents="strict"/>
+		</xs:sequence>
+	</xs:complexType>
+	 <xs:complexType name="ct5">
+		<xs:sequence>
+			<xs:element name="element1"/>
+			<xs:any namespace="##any" processContents="strict" maxOccurs="3"/>
+		</xs:sequence>
+	</xs:complexType>
+	 <xs:complexType name="ct6">
+		<xs:sequence>
+			<xs:element name="element1"/>
+			<xs:any namespace="##any" processContents="strict" maxOccurs="2"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

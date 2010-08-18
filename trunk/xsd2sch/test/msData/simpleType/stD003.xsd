@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:include schemaLocation="stD003b.xsd"/>
+	<xsd:simpleType name="fooType">
+		<xsd:list id="foo123" itemType="xsd:string"/>
+	</xsd:simpleType>
+</xsd:schema>

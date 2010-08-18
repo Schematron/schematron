@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='reDF2.xsd' >
+
+<!-- 
+base='time', pattern='\p{Nd}{2}:\d\d:\d\d(\-\d\d:\d\d)?', value='13:20:00-5:00', type='valid', RULE=''
+-->
+
+     <elem>13:20:00-05:00</elem>
+
+ </doc>

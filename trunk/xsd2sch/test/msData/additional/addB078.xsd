@@ -1,0 +1,43 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+<xsd:element name="root">
+<xsd:complexType>
+	<xsd:sequence>
+		<xsd:element ref="elt"/>
+		<xsd:element ref="elt1"/>
+	</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+
+
+<xsd:element name="elt">
+<xsd:complexType>
+<xsd:attribute name="att" use="required" fixed="val" type="xsd:string"/>
+<xsd:attribute name="att1" use="required" fixed="123" type="xsd:int"/>
+<xsd:attribute name="att2" use="required" fixed="A1" type="xsd:ID"/>
+<xsd:attribute name="att3" use="required" fixed="val" type="xsd:string"/>
+<xsd:attribute name="att4" use="required" fixed="val" type="xsd:string"/>
+<xsd:attribute name="att5" use="required" fixed="val" type="xsd:string"/>
+<xsd:attribute name="att6" use="required" fixed="val" type="xsd:string"/>
+<xsd:attribute name="att7" use="required" fixed="val" type="xsd:string"/>
+<xsd:attribute name="att8" use="required" fixed="val" type="xsd:string"/>
+<xsd:attribute name="att9" use="required" fixed="val" type="xsd:string"/>
+</xsd:complexType>
+</xsd:element>
+
+<xsd:element name="elt1">
+<xsd:complexType>
+<xsd:attribute name="att" use="required" fixed="val" type="xsd:string"/>
+<xsd:attribute name="att1" use="required" fixed="123" type="xsd:int"/>
+<xsd:attribute name="att2" use="required" fixed="A2" type="xsd:ID"/>
+<xsd:attribute name="att3" use="required" fixed="val" type="xsd:string"/>
+<xsd:attribute name="att4" use="required" fixed="val" type="xsd:string"/>
+<xsd:attribute name="att5" use="required" fixed="val" type="xsd:string"/>
+<xsd:attribute name="att6" use="required" fixed="val" type="xsd:string"/>
+<xsd:attribute name="att7" use="required" fixed="val" type="xsd:string"/>
+<xsd:attribute name="att8" use="required" fixed="val" type="xsd:string"/>
+<xsd:attribute name="att9" use="optional" default="val123" type="xsd:string"/>
+</xsd:complexType>
+</xsd:element>
+
+</xsd:schema>

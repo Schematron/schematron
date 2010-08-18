@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<xsd:schema  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:imp='http://importedXSD' 
+    targetNamespace='http://importedXSD' >
+
+<xsd:element name="impElem1" />
+
+<xsd:element name="impElem2" type="imp:extRefType"/>
+
+<xsd:complexType name="extRefType">
+  <xsd:sequence>
+        <xsd:element name="impE1"/>
+        <xsd:element name="impE2"/>
+    </xsd:sequence>
+    <xsd:attribute name="impA1"/>
+</xsd:complexType>
+
+</xsd:schema>

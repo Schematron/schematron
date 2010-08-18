@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?mso-infoPathSolution name="urn:schemas-microsoft-com:office:infopath:New-Folder--3-:-myXSD-2004-09-04T02-27-29" href="manifest.xsf" solutionVersion="1.0.0.1" productVersion="11.0.6255" PIVersion="1.0.0.0" ?>
+<?mso-application progid="InfoPath.Document"?>
+<my:myFields xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2004-09-04T02:27:29">
+	<my:g1 my:attg1="">
+		<my:g2 my:attg2="">
+			<my:tbg2></my:tbg2>
+			<my:g3 my:attg3="">
+				<my:tbg3></my:tbg3>
+			</my:g3>
+		</my:g2>
+	</my:g1>
+</my:myFields>

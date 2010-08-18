@@ -1,0 +1,16 @@
+<xs:schema	targetNamespace="http://www.tempuri.org" 
+			xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+			xmlns:tns="http://www.tempuri.org">
+	<!-- test that the value and lexical space of a token no longer supports carriage return. -->
+
+	<xs:element name="testToken" type="xs:token" />
+
+	<xs:element name="root">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="tns:testToken" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
+

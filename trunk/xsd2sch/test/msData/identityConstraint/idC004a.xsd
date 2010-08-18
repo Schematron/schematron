@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:import="importNS" targetNamespace="importNS">
+	<xsd:attribute id="foo123" name="importAttr" type="xsd:long"/>
+</xsd:schema>

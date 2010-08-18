@@ -1,0 +1,27 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+targetNamespace="ns-a"
+xmlns="ns-a"
+elementFormDefault="qualified"
+>
+
+	<xsd:redefine schemaLocation="schP2_b.xsd">
+		<xsd:simpleType name="b-st">
+			<xsd:restriction base="b-st">
+				<xsd:minLength value="4"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+  	</xsd:redefine>
+
+	<xsd:element name="e1" type="b-st" />
+	
+	<xsd:element name="root">
+		<xsd:complexType>
+			<xsd:choice maxOccurs="unbounded">
+				<xsd:any namespace="##any" processContents="strict"/>
+			</xsd:choice>
+		</xsd:complexType>
+	</xsd:element>
+
+</xsd:schema>
+
+

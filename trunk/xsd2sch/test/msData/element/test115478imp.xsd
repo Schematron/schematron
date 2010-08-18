@@ -1,0 +1,7 @@
+<schema targetNamespace="bar" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:foo="foo">
+
+  <import namespace="foo"/>
+  <element name="e" substitutionGroup="foo:e" type="string"/>
+
+</schema>
+

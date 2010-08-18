@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="foo">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:any namespace="foo" processContents="lax" maxOccurs="unbounded"/>
+				<xsd:any namespace="a" processContents="lax" maxOccurs="unbounded"/>
+				<xsd:any namespace="b" processContents="lax" maxOccurs="unbounded"/>
+				<xsd:any namespace="##targetNamespace"/>
+				<xsd:any namespace="##local"/>
+				<xsd:any namespace="##other"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<xsd:element name="bar"/>
+
+</xsd:schema>

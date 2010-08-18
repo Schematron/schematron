@@ -1,0 +1,14 @@
+<xsd:schema xmlns="foo1" xmlns:foo="foo" targetNamespace="foo1" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:import namespace="foo" schemaLocation="test66745_b.xsd"/>
+
+  	<xsd:element name="foo1" substitutionGroup="foo:foo">
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:extension base="foo:foo">
+					<xsd:attribute name="x" type="xsd:int"/>
+				</xsd:extension>
+			</xsd:complexContent>
+		</xsd:complexType>
+	</xsd:element>
+
+</xsd:schema>

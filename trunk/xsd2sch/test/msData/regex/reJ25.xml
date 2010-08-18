@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='reJ25.xsd' >
+
+<!-- 
+base='string', pattern='\p{Mc}*', value='#x903;#x1D172;', type='valid', RULE='25,30'
+-->
+
+     <elem>&#x903;&#x1D172;</elem>
+
+ </doc>

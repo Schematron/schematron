@@ -1,0 +1,9 @@
+<xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema' finalDefault="restriction">
+
+    <xsd:simpleType name='SKU' final="restriction">
+      <xsd:restriction base='xsd:string'>
+        <xsd:pattern value='\d{3}-[A-Z]{2}'/>
+      </xsd:restriction>
+    </xsd:simpleType>
+
+</xsd:schema>

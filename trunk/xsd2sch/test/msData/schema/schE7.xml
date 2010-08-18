@@ -1,0 +1,11 @@
+<a:root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="ns-a schE7.xsd"
+	xmlns:a="ns-a"
+>
+	<a:e1>
+		<e1/>
+	</a:e1>
+	
+	<e1/>
+
+</a:root>

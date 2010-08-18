@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="root" type="foo"/>
+	<xsd:complexType name="foo">
+		<xsd:all>
+			<xsd:element name="a"/>
+		</xsd:all>
+	</xsd:complexType>
+	<xsd:complexType name="bar">
+		<xsd:complexContent>
+			<xsd:extension base="foo">
+				<xsd:all>
+					<xsd:element name="b"/>
+				</xsd:all>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+</xsd:schema>

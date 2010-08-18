@@ -1,0 +1,14 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <xsd:element name="t1" type="t1"/>
+
+   <xsd:complexType name="t1">
+		<xsd:attribute name="att9" use="optional">
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:decimal">
+					<xsd:totalDigits value="5" />
+					<xsd:fractionDigits value="5" />
+				</xsd:restriction>
+			</xsd:simpleType>			
+		</xsd:attribute>
+   </xsd:complexType>
+</xsd:schema>

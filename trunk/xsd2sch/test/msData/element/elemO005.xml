@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="elemO005.xsd">
+	<fooTest myAttr="AA">
+		<myElem_1>string test</myElem_1>
+		<myElem_2>1234567890123456789</myElem_2>
+	</fooTest>
+</root>

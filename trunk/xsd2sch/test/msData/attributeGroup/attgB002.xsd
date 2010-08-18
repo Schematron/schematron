@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://xsdtesting" xmlns:x="http://xsdtesting" xmlns:imp="http://importedXSD">
+	<xsd:attribute name="att1" type="xsd:string"/>
+	<xsd:attribute name="att2" type="xsd:string"/>
+	<xsd:attributeGroup name="G">
+		<xsd:attributeGroup name="abc" id="abc">
+			<xsd:attribute name="att" type="xsd:int"/>
+		</xsd:attributeGroup>
+	</xsd:attributeGroup>
+</xsd:schema>

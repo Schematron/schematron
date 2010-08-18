@@ -1,0 +1,25 @@
+<?xml version='1.0'?>
+<xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema' >
+<!-- Schema to test double datatype -->
+  <xsd:element name='complexTest' type='complexfooType' />
+  <xsd:element name='simpleTest' type='simplefooType' />
+
+  <xsd:complexType name='complexfooType' > 
+    <xsd:sequence>
+      <xsd:element name='comp_foo' type="xsd:double" maxOccurs="unbounded"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:simpleType name='simplefooType' > 
+    <xsd:restriction base="xsd:double"/>
+  </xsd:simpleType>
+
+  <xsd:element name='root'>
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref='complexTest' maxOccurs="unbounded"/>
+        <xsd:element ref='simpleTest' maxOccurs="unbounded"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

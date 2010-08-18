@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+>
+
+<!-- 
+two patterns in a simple type (1) "[abc]+" (2) "[123]+", should be same as [abc]+|[123]+,  value="a1"  [invalid]
+-->
+
+<xsd:complexType name="Regex">
+   <xsd:attribute name="att">
+       <xsd:simpleType>
+           <xsd:restriction base="xsd:string">
+               <xsd:pattern value="[123]+"/>    
+               <xsd:pattern value="[abc]+"/>    
+           </xsd:restriction>
+       </xsd:simpleType>
+   </xsd:attribute>
+</xsd:complexType>
+
+<xsd:element name="doc">
+    <xsd:complexType>
+            <xsd:choice>
+                <xsd:element name="elem" type="Regex" minOccurs="1" maxOccurs="unbounded"/>
+            </xsd:choice>
+    </xsd:complexType>
+</xsd:element>
+
+</xsd:schema>

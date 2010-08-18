@@ -1,0 +1,14 @@
+<xsd:schema 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    	<xsd:element name="foo">
+		<xsd:annotation>
+			<xsd:appinfo source="foo>bar" />
+			<xsd:documentation source="foobar"/>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:anyAttribute namespace="foobar" />
+		</xsd:complexType>
+	</xsd:element>
+
+</xsd:schema>

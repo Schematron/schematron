@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<xsd:schema 
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="foo"
+	xmlns="foo"
+>
+
+<xsd:element name="root" type="myType"/>
+
+<xsd:complexType name="myType">
+<xsd:sequence>
+  <xsd:element ref="child"/>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:element name="child"/>
+
+</xsd:schema>
+

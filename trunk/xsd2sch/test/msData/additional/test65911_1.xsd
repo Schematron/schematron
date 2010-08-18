@@ -1,0 +1,26 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+
+	<xs:element name="root">
+		<xs:complexType>
+		<xs:sequence maxOccurs="unbounded">
+			<xs:any />
+		</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="e1" type="xs:anyType"/>
+	<xs:element name="e2" type="xs:anySimpleType"/>
+	<xs:element name="e3" type="ct1"/>
+	<xs:element name="e4" type="ct2"/>
+
+       <xs:complexType name="ct1">
+	  <xs:complexContent>
+             <xs:restriction base="xs:anyType" >
+  	     </xs:restriction>
+	  </xs:complexContent>
+       </xs:complexType>
+
+       <xs:simpleType name="ct2">
+             <xs:restriction base="xs:anySimpleType" />
+       </xs:simpleType>
+ </xs:schema>

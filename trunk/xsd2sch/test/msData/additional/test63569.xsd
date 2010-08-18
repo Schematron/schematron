@@ -1,0 +1,9 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+ <xsd:element name="zip">
+  <xsd:simpleType>
+   <xsd:restriction base="xsd:integer">
+    <xsd:maxInclusive value="99999"/>
+   </xsd:restriction>
+  </xsd:simpleType>
+ </xsd:element>
+</xsd:schema>

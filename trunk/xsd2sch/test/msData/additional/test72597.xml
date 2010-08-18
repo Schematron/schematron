@@ -1,0 +1,10 @@
+<a:root 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="foo test72597.xsd"
+xmlns:a="foo">
+
+	<a:A>
+		<a:part number="1" number2="2"/>
+		<a:part number="2" number2="1"/>
+	</a:A>
+</a:root>

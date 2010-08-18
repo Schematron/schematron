@@ -1,0 +1,32 @@
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.test.com/test" xmlns:test="http://www.test.com/test">
+  <complexType name="basicBitType" abstract="true">
+    <sequence>
+      <element name="testElement" type="token" maxOccurs="unbounded"/>
+    </sequence>
+  </complexType>
+  <complexType name="restrictedBasicBitType">
+    <complexContent>
+      <restriction base="test:basicBitType">
+        <sequence>
+          <element name="testElement" type="token" maxOccurs="1"/>
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <element name="basicBit" type="test:basicBitType" abstract="true"/>
+  <element name="restrictedBasicBit" type="test:restrictedBasicBitType" substitutionGroup="test:basicBit"/>
+  <complexType name="basicBitContainerType">
+    <sequence>
+      <element ref="test:basicBit" maxOccurs="unbounded"/>
+    </sequence>
+  </complexType>
+  <complexType name="restrictedBasicBitContainerType">
+    <complexContent>
+      <restriction base="test:basicBitContainerType">
+        <sequence>
+          <element ref="test:restrictedBasicBit" maxOccurs="unbounded"/>
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+</schema>

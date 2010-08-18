@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="root">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="uniqueElement"/>
+			</xsd:sequence>
+		</xsd:complexType>
+		<xsd:unique name="fooID">
+			<xsd:annotation>
+				<xsd:documentation>
+		    This is invalid content model
+		</xsd:documentation>
+			</xsd:annotation>
+			<xsd:field xpath=".//uniqueElement/@keyField"/>
+		</xsd:unique>
+	</xsd:element>
+	<xsd:element name="uniqueElement">
+		<xsd:complexType>
+			<xsd:attribute name="keyField" type="xsd:string"/>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

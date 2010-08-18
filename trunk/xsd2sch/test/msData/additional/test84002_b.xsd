@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:f=""
+>
+
+  <xsd:element name="a" >
+     <xsd:complexType>
+	<xsd:sequence>
+		<xsd:any namespace="##any" processContents="skip"/>
+	</xsd:sequence>
+     </xsd:complexType>
+  </xsd:element>
+
+</xsd:schema>

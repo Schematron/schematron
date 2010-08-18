@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<test xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="mgC003.xsd">
+	<a/>
+	<b/>
+	<c/>
+	<a/>
+</test>

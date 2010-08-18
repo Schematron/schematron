@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:group name="foo">
+		<xsd:sequence>
+			<xsd:any namespace="##any">
+				<xsd:group ref="bar"/>
+			</xsd:any>
+		</xsd:sequence>
+	</xsd:group>
+	<xsd:group name="bar">
+		<xsd:sequence>
+			<xsd:element name="elem"/>
+		</xsd:sequence>
+	</xsd:group>
+</xsd:schema>

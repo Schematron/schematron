@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="XMLSchema1" 
+                   elementFormDefault="qualified"
+                   xmlns="http://tempuri.org/XMLSchema1.xsd"
+                   xmlns:mstns="http://tempuri.org/XMLSchema1.xsd"
+                   xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="email">
+<xs:complexType>
+<xs:attribute name="value">
+ <xs:simpleType>
+  <xs:restriction base="xs:string">
+   <xs:pattern value="^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@(([0-9a-zA-Z])+([-\w]*[0-9a-zA-Z])*\.)+[a-zA-Z]{2,9})"/>
+  </xs:restriction>
+ </xs:simpleType>
+</xs:attribute>
+</xs:complexType>
+</xs:element>
+</xs:schema>

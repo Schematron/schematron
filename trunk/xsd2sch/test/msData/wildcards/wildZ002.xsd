@@ -1,0 +1,51 @@
+<xsd:schema id="webview" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+targetNamespace="main"
+elementFormDefault="qualified"
+xmlns="main"
+>
+
+	<xsd:element name="root">
+	    <xsd:complexType>
+		    <xsd:sequence minOccurs="0" maxOccurs="unbounded">
+				<xsd:element ref="a"/>
+				<xsd:element ref="b"/>
+				<xsd:element ref="c"/>
+				<xsd:element ref="d"/>
+		    </xsd:sequence>
+	    </xsd:complexType>
+	</xsd:element>
+
+	<xsd:element name="a">
+	    <xsd:complexType>
+		    <xsd:sequence minOccurs="0" maxOccurs="unbounded">
+			    <xsd:any namespace="##any" processContents="skip" />
+		    </xsd:sequence>
+	    </xsd:complexType>
+	</xsd:element>
+
+	<xsd:element name="b">
+	    <xsd:complexType>
+		    <xsd:sequence minOccurs="0" maxOccurs="unbounded">
+			    <xsd:any namespace="##targetNamespace" processContents="skip" />
+		    </xsd:sequence>
+	    </xsd:complexType>
+	</xsd:element>
+
+	<xsd:element name="c">
+	    <xsd:complexType>
+		    <xsd:sequence minOccurs="0" maxOccurs="unbounded">
+			    <xsd:any namespace="foo bar" processContents="skip" />
+		    </xsd:sequence>
+	    </xsd:complexType>
+	</xsd:element>
+
+	<xsd:element name="d">
+	    <xsd:complexType>
+		    <xsd:sequence minOccurs="0" maxOccurs="unbounded">
+			    <xsd:any namespace="##targetNamespace foo" processContents="skip" />
+		    </xsd:sequence>
+	    </xsd:complexType>
+	</xsd:element>
+
+
+</xsd:schema>

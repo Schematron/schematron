@@ -1,0 +1,17 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+elementFormDefault="qualified" targetNamespace="ns-b" xmlns="ns-b" xmlns:a="ns-a">
+
+	<xsd:import namespace="ns-a" schemaLocation="schU4_f.xsd"/>
+
+	<xsd:attributeGroup name="e-g1">
+		<xsd:attribute name="e1" />
+		<xsd:attribute name="e2" />
+	</xsd:attributeGroup>
+
+	<xsd:complexType name="e-ct">
+		<xsd:attributeGroup ref="a:g-g1"/>
+	</xsd:complexType>
+
+	<xsd:element name="e-e1" type="e-ct" />
+	
+</xsd:schema>

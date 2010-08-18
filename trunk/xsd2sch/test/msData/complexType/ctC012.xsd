@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:complexType name="fooType">
+		<xs:simpleContent id="foo123">
+			<xs:annotation>
+				<xs:documentation>
+				Annotation Information
+			</xs:documentation>
+			</xs:annotation>
+			<xs:extension base="xs:string"/>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:element name="root" type="fooType"/>
+</xs:schema>

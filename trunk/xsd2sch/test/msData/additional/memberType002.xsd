@@ -1,0 +1,23 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+<xsd:element name="root" >
+	<xsd:complexType>
+		<xsd:sequence>
+			<xsd:element name="e" type="ct" maxOccurs="3"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:element>
+
+ <xsd:simpleType name="myunion">
+	<xsd:union memberTypes="xsd:boolean xsd:int xsd:string" />
+ </xsd:simpleType>
+
+ <xsd:complexType name="ct">
+	<xsd:simpleContent>
+		<xsd:extension base="xsd:string">
+			<xsd:attribute name="att" type="myunion" />
+		</xsd:extension>
+	</xsd:simpleContent>
+ </xsd:complexType>
+ 
+</xsd:schema>

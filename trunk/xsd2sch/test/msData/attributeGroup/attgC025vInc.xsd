@@ -1,0 +1,28 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:attribute name="model" type="xsd:string"/>
+	<xsd:attributeGroup name="car">
+		<xsd:attribute name="model"/>
+		<xsd:attribute name="age" type="xsd:int"/>
+		<xsd:attribute name="attFix" type="xsd:int" fixed="37"/>
+	</xsd:attributeGroup>
+	<xsd:attributeGroup name="truck">
+		<xsd:attribute name="model"/>
+		<xsd:attribute name="age" type="xsd:int"/>
+	</xsd:attributeGroup>
+	<xsd:complexType name="Address1">
+		<xsd:complexContent>
+			<xsd:extension base="Address">
+				<xsd:sequence>
+					<xsd:element name="country" type="xsd:string"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="Address">
+		<xsd:sequence>
+			<xsd:element name="name" type="xsd:string"/>
+			<xsd:element name="street" type="xsd:string"/>
+			<xsd:element name="city" type="xsd:string"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

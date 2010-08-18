@@ -1,0 +1,10 @@
+<?xml version='1.0'?>
+<root xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+       xsi:noNamespaceSchemaLocation="anyURI.xsd" >
+  <complexTest>
+  <!-- value=gopher://spinaltap.micro.umn.edu/00/Weather/California/Los%20Angeles -->
+    <comp_foo>gopher://spinaltap.micro.umn.edu/00/Weather/California/Los%20Angeles</comp_foo>
+  </complexTest>
+ 
+  <simpleTest>gopher://spinaltap.micro.umn.edu/00/Weather/California/Los%20Angeles</simpleTest>
+</root>

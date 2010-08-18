@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="doc" type="foo"/>
+	<xsd:complexType name="foo">
+		<xsd:choice>
+			<xsd:element name="a" type="xsd:integer"/>
+			<xsd:any namespace="http://www.w3.org/1999/xhtml" minOccurs="1" maxOccurs="unbounded" processContents="skip"/>
+			<xsd:sequence>
+				<xsd:element name="d"/>
+			</xsd:sequence>
+			<xsd:choice>
+				<xsd:element name="c" type="xsd:boolean"/>
+			</xsd:choice>
+			<xsd:group ref="groupy"/>
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:group name="groupy">
+		<xsd:choice>
+			<xsd:element name="b" type="xsd:string"/>
+			<xsd:element name="b2" type="xsd:string"/>
+		</xsd:choice>
+	</xsd:group>
+</xsd:schema>

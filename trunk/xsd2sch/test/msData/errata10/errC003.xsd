@@ -1,0 +1,21 @@
+<xs:schema	targetNamespace="http://www.tempuri.org" 
+			xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+			xmlns:tns="http://www.tempuri.org">
+	<!-- test model group definition -->
+
+	<xs:group name="testGroup" id="id001" myNS:testAttr="testAttribute" xmlns:myNS="http://www.tempuri.org/Unique">
+		<xs:sequence>
+			<xs:element name="testElement1" type="xs:boolean" />
+			<xs:element ref="tns:root" />
+		</xs:sequence>
+	</xs:group>
+
+	<xs:element name="parentElement">
+		<xs:complexType>
+			<xs:group ref="tns:testGroup" maxOccurs="20" minOccurs="2" />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="root" type="xs:anyType" />
+</xs:schema>
+

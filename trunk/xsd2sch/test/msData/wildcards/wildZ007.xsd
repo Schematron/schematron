@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xsd:schema xmlns="http://www.w3.org/1999/XSL/Transform" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="1.0" xmlns:xpath="http://www.w3.org/1999/XPath" targetNamespace="http://www.w3.org/1999/XSL/Transform" elementFormDefault="qualified" attributeFormDefault="unqualified">
+
+		<xsd:element name="stylesheet">
+		    	<xsd:complexType>
+				<xsd:sequence>
+					<xsd:any namespace="##any" processContents="lax"/>
+				</xsd:sequence>
+			</xsd:complexType>
+		</xsd:element>
+
+</xsd:schema>

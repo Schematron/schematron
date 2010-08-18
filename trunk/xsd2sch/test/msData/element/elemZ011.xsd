@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+	<xs:element name="OL" type="OL"/>
+
+	<xs:complexType name="OL">
+		<xs:sequence>
+			<xs:element name="Note" maxOccurs="1"/>
+			<xs:element name="ShipNote" ></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:element name="ShipNote" substitutionGroup="Note"></xs:element>
+	<xs:element name="Note" type="Note"></xs:element>
+
+	<xs:complexType name="Note">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="lang" />
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+</xs:schema>

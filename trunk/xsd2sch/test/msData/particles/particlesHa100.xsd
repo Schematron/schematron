@@ -1,0 +1,22 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	
+ <xs:complexType name="base">  
+   <xs:sequence>
+    <xs:any namespace="##any" minOccurs="2" maxOccurs="3"/> 
+   </xs:sequence>
+ </xs:complexType>
+
+ <xs:complexType name="derived">  
+	<xs:complexContent>
+	<xs:restriction base="base">
+	<xs:sequence>
+	  <xs:choice>
+		 <xs:element name="e1" type="xs:string" minOccurs="2" maxOccurs="3"/>
+		 <xs:element name="e2" type="xs:string" minOccurs="2" maxOccurs="2"/>
+  	         <xs:any namespace="##other" minOccurs="2" maxOccurs="3"/> 
+	  </xs:choice>
+	</xs:sequence>
+	</xs:restriction>
+	</xs:complexContent>
+ </xs:complexType>
+</xs:schema>

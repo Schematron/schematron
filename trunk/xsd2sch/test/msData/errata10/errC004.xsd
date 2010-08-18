@@ -1,0 +1,11 @@
+<xs:schema	targetNamespace="http://www.tempuri.org" 
+			xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+			xmlns:tns="http://www.tempuri.org">
+	<!-- test notation definition -->
+
+	<xs:notation name="testNotation" id="id001" myNS:testAttr="testAttribute" xmlns:myNS="http://www.tempuri.org/Unique"  system="http://www.tempuri.org/system" />
+	<xs:notation name="testNotation2" public="This is a now a token instead of anURI" />
+
+	<xs:element name="root" type="xs:anyType" />
+</xs:schema>
+

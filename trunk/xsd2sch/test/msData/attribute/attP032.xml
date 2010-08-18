@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<x:doc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="http://xsdtesting" xsi:schemaLocation="http://xsdtesting attP032.xsd" xmlns:imp="http://importedXSD">
+	<x:elem x:att="37" x:incAtt="37" x:redAtt="37" imp:impAtt="37"/>
+</x:doc>

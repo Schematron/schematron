@@ -1,0 +1,19 @@
+<xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema' >
+  <xsd:element name='test' type="fooType" />
+  <xsd:complexType name="fooType">
+    <xsd:sequence>
+      <xsd:element name='foo1' type="B" />
+      <xsd:element name='foo2' type="R" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:simpleType name="B">
+    <xsd:restriction base="xsd:int">
+      <xsd:maxInclusive value="5"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+ <xsd:simpleType name="R">
+    <xsd:restriction base="B">
+      <xsd:maxExclusive value="5"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+</xsd:schema>

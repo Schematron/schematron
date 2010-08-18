@@ -1,0 +1,3 @@
+<target:foo xmlns:target="urn:target">
+	<bar/>
+</target:foo>

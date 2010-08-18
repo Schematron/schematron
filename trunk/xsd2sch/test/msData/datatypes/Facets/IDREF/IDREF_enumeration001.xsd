@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<xs:schema xmlns:xs='http://www.w3.org/2001/XMLSchema' >
+<!-- Schema to test IDREF datatype -->
+	<xs:element name='test' type='fooType' />
+
+	<xs:complexType name='fooType' > 
+		<xs:sequence>
+			<xs:element name='foo' >
+				<xs:complexType>
+					<xs:attribute name='idref_attr'>
+						<xs:simpleType> 
+							<xs:restriction base="xs:IDREF">
+								<xs:enumeration value="foo"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+					<xs:attribute name="id_attr" type="xs:ID" />
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	
+</xs:schema>

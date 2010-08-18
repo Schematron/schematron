@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='reDG1.xsd' >
+
+<!-- 
+base='date', pattern='\p{Nd}{4}/\[{Nd}{2}/\p{Nd}{2}', value='1999/12/12', type='valid', RULE=''
+-->
+
+      <elem att='1999-12-12'/>
+
+ </doc>

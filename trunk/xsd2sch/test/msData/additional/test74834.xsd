@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:myxsdschema" xmlns:my="urn:myxsdschema">
+
+<xsd:simpleType name="myTime" >
+	<xsd:restriction base="xsd:time">
+		<xsd:pattern value="[0-2][0-9]:[0-5][0-9]:[0-5][0-9].[0-9][0-9][0-9]"/>
+	</xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="mySmallTime" >
+	<xsd:restriction base="xsd:time">
+		<xsd:pattern value="[0-2][0-9]:[0-5][0-9]:[0-5][0-9]"/>
+	</xsd:restriction>
+</xsd:simpleType>
+
+<xsd:complexType name="myDateTime">
+	<xsd:sequence minOccurs="1" maxOccurs="1">
+		<xsd:element name="date" type="xsd:date"/>
+        <xsd:element name="time" type="my:myTime"/>
+        <xsd:element name="localized_dt" type="xsd:string"/>
+	</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="mySmallDateTime">
+	<xsd:sequence minOccurs="1" maxOccurs="1">
+		<xsd:element name="date" type="xsd:date"/>
+		<xsd:element name="time" type="my:mySmallTime"/>
+        <xsd:element name="localized_sdt" type="xsd:string"/>
+	</xsd:sequence>
+</xsd:complexType>
+
+<xsd:simpleType name="myDecimal" >
+	<xsd:restriction base="xsd:decimal">
+		<xsd:totalDigits value='38'/>
+		<xsd:fractionDigits value='10'/>
+	</xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="myMoney" >
+	<xsd:restriction base="xsd:decimal">
+		<xsd:totalDigits value='19'/>
+		<xsd:fractionDigits value='4'/>
+		<xsd:minInclusive value='-922337203685477.5808'/>
+		<xsd:maxInclusive value='922337203685477.5807'/>
+	</xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="mySmallMoney" >
+	<xsd:restriction base="xsd:decimal">
+		<xsd:totalDigits value='10'/>
+		<xsd:fractionDigits value='4'/>
+		<xsd:minInclusive value='-214748.3648'/>
+		<xsd:maxInclusive value='214748.3647'/>
+	</xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="myDouble" >
+	<xsd:restriction base="xsd:double">
+		<xsd:minInclusive value='-1.79E308'/>
+		<xsd:maxInclusive value='1.79E308'/>
+	</xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="myFloat" >
+	<xsd:restriction base="xsd:float">
+		<xsd:minInclusive value='-3.40E38'/>
+		<xsd:maxInclusive value='3.40E38'/>
+	</xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="myString" >
+	<xsd:restriction base="xsd:string">
+		<xsd:minLength value='1'/>
+		<xsd:maxLength value='4000'/>
+	</xsd:restriction>
+</xsd:simpleType>
+
+<xsd:element name="datafile">
+	<xsd:complexType>
+		<xsd:sequence minOccurs="1" maxOccurs="1">
+			<xsd:element name="nonstringsection">
+				<xsd:complexType>
+					<xsd:choice maxOccurs="unbounded">
+						<xsd:element name="bigint" type="xsd:long"/>
+						<xsd:element name="int" type="xsd:int"/>
+						<xsd:element name="smallint" type="xsd:short"/>
+						<xsd:element name="tinyint" type="xsd:unsignedByte"/>
+						<xsd:element name="decimal" type="my:myDecimal"/>
+						<xsd:element name="numeric" type="my:myDecimal"/>
+						<xsd:element name="money" type="my:myMoney"/>
+						<xsd:element name="smallmoney" type="my:mySmallMoney"/>
+						<xsd:element name="float" type="my:myDouble"/>
+						<xsd:element name="real" type="my:myFloat"/>
+						<xsd:element name="datetime" type="my:myDateTime"/>
+						<xsd:element name="smalldatetime" type="my:mySmallDateTime"/>
+					</xsd:choice>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="stringsection">
+				<xsd:complexType>
+					<xsd:choice maxOccurs="unbounded">
+						<xsd:element name="string" type="my:myString"/>
+					</xsd:choice>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:element>
+
+</xsd:schema>

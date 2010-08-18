@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://xsdtesting" xmlns:x="http://xsdtesting" elementFormDefault="qualified" attributeFormDefault="qualified">
+	<xsd:simpleType name="mySimpleType">
+		<xsd:restriction base="xsd:int">
+			<xsd:enumeration value="1"/>
+			<xsd:enumeration value="2"/>
+			<xsd:enumeration value="3"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:element name="doc">
+		<xsd:complexType>
+			<xsd:choice>
+				<xsd:element name="elem">
+					<xsd:complexType>
+						<xsd:attribute name="att" type="x:mySimpleType" fixed=""/>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:choice>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

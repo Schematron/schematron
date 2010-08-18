@@ -1,0 +1,9 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"  targetNamespace="ns2">
+
+<xs:group name="g1">
+	<xs:sequence>
+		<xs:any namespace="##other" minOccurs="0" processContents="strict"/>
+	</xs:sequence>
+</xs:group>
+
+</xs:schema>

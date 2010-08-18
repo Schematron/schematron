@@ -1,0 +1,15 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+ 
+ <xs:complexType name="myType">
+  <xs:sequence> 
+   <xs:element name="elem" default="10">
+    <xs:complexType>
+     <xs:simpleContent>
+      <xs:restriction base="xs:integer" />
+     </xs:simpleContent>
+    </xs:complexType>
+   </xs:element>
+  </xs:sequence> 
+ </xs:complexType>
+  
+</xs:schema> 

@@ -1,0 +1,29 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+ <!-- base type -->
+ <xs:complexType name="XML-Deviant">
+  <xs:sequence>
+   <xs:element name="e1" type="xs:integer" minOccurs="0" maxOccurs="1" /> 
+   <xs:element name="e2" type="xs:string" nillable="true" />
+  </xs:sequence>
+  <xs:attribute name="a1" type="xs:date" use="required" />
+  <xs:attribute name="a2" type="xs:string"/>  </xs:complexType>
+
+
+
+ <!-- derived type --> 
+  <xs:complexType name="DareObasanjo">
+   <xs:complexContent>
+   <xs:restriction base="XML-Deviant">
+   <xs:sequence>
+   <xs:element name="e1" type="xs:integer" minOccurs="1" maxOccurs="1" /> 
+   <xs:element name="e2" type="xs:string" nillable="false" />
+   </xs:sequence>
+   <xs:attribute name="a1" type="xs:date" use="optional" />
+   <xs:attribute name="a2" type="xs:string" fixed="Microsoft Outlook" />
+   </xs:restriction>
+   </xs:complexContent>
+  </xs:complexType> 
+
+
+</xs:schema>

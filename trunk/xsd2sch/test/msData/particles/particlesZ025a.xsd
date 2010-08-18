@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SchemaA" targetNamespace="urn:my.test:SchemaA" elementFormDefault="qualified" xmlns="urn:my.test:SchemaA" xmlns:mstns="urn:my.test:SchemaA" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:complexType name="BaseObject">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="baseObject" type="BaseObject">
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:otherNS="diffNS" targetNamespace="diffNS">
+	<xsd:element name="otherSubRoot">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="otherNS:otherElement"/>
+			</xsd:sequence>
+		</xsd:complexType>
+		<xsd:keyref name="keyrefName" refer="keyName">
+			<xsd:selector xpath=".//otherElement"/>
+			<xsd:field xpath="@keyData"/>
+		</xsd:keyref>
+	</xsd:element>
+	<xsd:element name="otherElement">
+		<xsd:complexType>
+			<xsd:attribute name="keyData" type="xsd:string"/>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:group name="localGroup">
+		<xs:choice>
+			<xs:element name="A" minOccurs="0" type="xs:string"/>
+			<xs:element name="B" minOccurs="0" type="xs:string"/>
+			<xs:element name="C" minOccurs="0" type="xs:string"/>
+		</xs:choice>
+	</xs:group>
+	<xs:element name="myRoot" block="restriction substitution extension ">
+		<xs:complexType>
+			<xs:group ref="localGroup" maxOccurs="unbounded"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:simpleType name="myST" final="list restriction union">
+		<xs:restriction base="xs:string"/>
+	</xs:simpleType>
+	<xs:simpleType name="dST1">
+		<xs:list itemType="myST"/>
+	</xs:simpleType>
+	<xs:simpleType name="dST2">
+		<xs:restriction base="myST"/>
+	</xs:simpleType>
+	<xs:simpleType name="dST3">
+		<xs:union memberTypes="myST"/>
+	</xs:simpleType>
+</xs:schema>

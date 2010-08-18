@@ -1,0 +1,50 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+
+    <xs:complexType name="ct1">
+		<xs:simpleContent>
+         <xs:extension base="xs:anySimpleType" />
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="ct2">
+		<xs:simpleContent>
+         <xs:restriction base="ct1" >
+         </xs:restriction>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:simpleType name="st1">
+        <xs:restriction base="xs:anySimpleType" />
+    </xs:simpleType>
+
+    <xs:simpleType name="st2">
+        <xs:restriction base="st1" >
+        </xs:restriction>
+    </xs:simpleType>
+
+	<xs:simpleType name="list">
+	  <xs:list itemType="st1"/>
+	</xs:simpleType>
+
+	<xs:simpleType name="union">
+	  <xs:union memberTypes="st1 st2 xs:int list xs:boolean"/>
+	</xs:simpleType>
+
+	<xs:element name="root">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="e1" type="list" maxOccurs="10"/>
+				<xs:element name="e2" type="union" maxOccurs="10"/>
+				<xs:element name="e3" maxOccurs="10">
+					<xs:complexType>
+						<xs:attribute ref="att1"/>
+						<xs:attribute name="att2" type="list"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+   
+    <xs:attribute name="att1" type="union"/>
+
+ </xs:schema>

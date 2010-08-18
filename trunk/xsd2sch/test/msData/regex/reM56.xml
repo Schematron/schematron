@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='reM56.xsd' >
+
+<!-- 
+base='string', pattern='\p{IsDingbats}?', value='#x2800;', type='invalid', RULE='25,36'
+-->
+
+     <elem>&#x2800;</elem>
+
+ </doc>

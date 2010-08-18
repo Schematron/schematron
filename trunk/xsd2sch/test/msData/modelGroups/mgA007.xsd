@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:complexType name="comp">
+		<xsd:all id="foo">
+			<xsd:element name="fud" type="xsd:string"/>
+		</xsd:all>
+	</xsd:complexType>
+	<xsd:complexType name="extension">
+		<xsd:complexContent>
+			<xsd:extension base="comp">
+				<xsd:all id="foo">
+					<xsd:element name="bar" type="xsd:integer"/>
+				</xsd:all>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+</xsd:schema>

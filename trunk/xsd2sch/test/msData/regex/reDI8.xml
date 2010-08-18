@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='reDI8.xsd' >
+
+<!-- 
+base='byte', pattern='(\- | \+)?((1[0-2]?[0-7]?)|([1-9]?[0-9]?))|(\+?128)', value='128', type='valid', RULE=''
+-->
+
+     <elem>-128</elem>
+
+ </doc>

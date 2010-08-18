@@ -1,0 +1,8 @@
+<a:root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="ns-a addB076.xsd"
+xmlns:a="ns-a"
+xmlns:b="ns-b"
+>
+	<b:abc/>
+
+</a:root>

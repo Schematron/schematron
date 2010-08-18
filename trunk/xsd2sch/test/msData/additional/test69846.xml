@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<root xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+      xsi:noNamespaceSchemaLocation='test69846.xsd'>
+
+<!--- unique category, instance member (a)=1, boolean; instance member (b)=1, number -->
+<uid xsi:type="xsd:boolean">1</uid>
+<uid xsi:type="xsd:decimal">1</uid>
+
+</root>

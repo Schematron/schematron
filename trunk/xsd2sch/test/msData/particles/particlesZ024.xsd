@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<xsd:schema targetNamespace="http://myuri" xmlns="http://myuri" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xsd:complexType name="elems">
+	<xsd:sequence>
+		<xsd:element name="ele" type="eleType"/>
+	</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="A" type="xsd:string"/>
+<xsd:element name="B" type="xsd:string"/>
+
+<xsd:group name="G1">
+<xsd:sequence>
+			<xsd:element name="AA" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="BB" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="CC" minOccurs="0" maxOccurs="unbounded"/>
+</xsd:sequence>
+</xsd:group>
+
+<xsd:group name="G2">
+<xsd:sequence>
+			<xsd:element name="AAA" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="BBB" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="CCC" minOccurs="0" maxOccurs="unbounded"/>
+</xsd:sequence>
+</xsd:group>
+<xsd:group name="G3">
+<xsd:sequence>
+			<xsd:element name="AAAA" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="BBBB" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="CCCC" minOccurs="0" maxOccurs="unbounded"/>
+</xsd:sequence>
+</xsd:group>
+<xsd:complexType name="eleType">
+	<xsd:sequence>
+		<xsd:element ref="A"/>
+		<xsd:element ref="B"/>
+		<xsd:choice>
+			<xsd:group ref="G1" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:group ref="G2" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:group ref="G3" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:choice>
+	</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="eleType2">
+<xsd:complexContent>
+<xsd:restriction base="eleType">
+	<xsd:sequence>
+		<xsd:element ref="A"/>
+		<xsd:element ref="B"/>
+		<xsd:choice>
+			<xsd:group ref="G1" minOccurs="0" />
+
+		</xsd:choice>
+	</xsd:sequence>
+</xsd:restriction>
+</xsd:complexContent>
+</xsd:complexType>
+
+
+</xsd:schema>

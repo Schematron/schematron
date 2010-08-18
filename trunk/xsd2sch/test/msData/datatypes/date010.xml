@@ -1,0 +1,10 @@
+<?xml version='1.0'?>
+<root xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+       xsi:noNamespaceSchemaLocation="date.xsd" >
+  <complexTest>
+  <!-- value=2000-10-05-05:00 -->
+    <comp_foo>2000-10-05-05:00</comp_foo>
+  </complexTest>
+ 
+  <simpleTest>2000-10-05-05:00</simpleTest>
+</root>

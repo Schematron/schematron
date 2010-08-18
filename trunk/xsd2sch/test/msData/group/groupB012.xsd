@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://xsdtesting" xmlns:x="http://xsdtesting">
+	<xsd:complexType name="complexType">
+		<xsd:sequence>
+			<xsd:element name="r1"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:element name="elem">
+	</xsd:element>
+	<xsd:element name="doc">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="x:elem"/>
+				<xsd:group ref="x:foo"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:attributeGroup name="attG">
+		<xsd:attribute name="att1"/>
+	</xsd:attributeGroup>
+	<xsd:group name="foo">
+		<xsd:sequence>
+			<xsd:element name="foo1"/>
+			<xsd:element name="foo2"/>
+			<xsd:group ref="x:foo"/>
+		</xsd:sequence>
+	</xsd:group>
+</xsd:schema>

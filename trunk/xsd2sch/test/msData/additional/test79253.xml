@@ -1,0 +1,15 @@
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="test79253.xsd">
+   <t1 	att1="1234"
+	att2="12"
+	att3=" 14  "
+	att4="3"
+	att5="2"
+	att6="11111"
+	att7="9991"
+	att8="1.
+
+234"
+	att9="str"
+   />
+
+</root>

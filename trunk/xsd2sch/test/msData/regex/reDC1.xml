@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='reDC1.xsd' >
+
+<!-- 
+base='hexBinary', pattern='AF01D1', value='AF01D1', type='valid', RULE=''
+-->
+
+     <elem>AF01D1</elem>
+
+ </doc>

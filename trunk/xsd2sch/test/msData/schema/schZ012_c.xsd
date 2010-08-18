@@ -1,0 +1,4 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="a" xmlns="a">
+<xs:import schemaLocation="schZ012_c2.xsd"/>
+<xs:element name="root"/>
+</xs:schema>

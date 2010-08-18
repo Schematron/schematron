@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="doc" type="foo"/>
+	<xsd:complexType name="foo">
+		<xsd:choice>
+			<xsd:group ref="g1"/>
+			<xsd:group ref="g2"/>
+			<xsd:group ref="g3"/>
+			<xsd:group ref="g4"/>
+			<xsd:choice>
+				<xsd:element name="c1"/>
+			</xsd:choice>
+			<xsd:choice>
+				<xsd:element name="c2"/>
+			</xsd:choice>
+			<xsd:choice>
+				<xsd:element name="c3"/>
+			</xsd:choice>
+			<xsd:choice>
+				<xsd:element name="c4"/>
+			</xsd:choice>
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:group name="g1">
+		<xsd:choice>
+			<xsd:element name="g1"/>
+			<xsd:element name="g12"/>
+		</xsd:choice>
+	</xsd:group>
+	<xsd:group name="g2">
+		<xsd:choice>
+			<xsd:element name="g2"/>
+			<xsd:element name="g22"/>
+		</xsd:choice>
+	</xsd:group>
+	<xsd:group name="g3">
+		<xsd:choice>
+			<xsd:element name="g3"/>
+			<xsd:element name="g32"/>
+		</xsd:choice>
+	</xsd:group>
+	<xsd:group name="g4">
+		<xsd:choice>
+			<xsd:element name="g4"/>
+			<xsd:element name="g42"/>
+		</xsd:choice>
+	</xsd:group>
+</xsd:schema>

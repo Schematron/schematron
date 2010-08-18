@@ -1,0 +1,10 @@
+<?xml version='1.0'?>
+<root xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+       xsi:noNamespaceSchemaLocation="negativeInteger.xsd" >
+  <complexTest>
+  <!-- value=-12345678901234567890123456789 -->
+    <comp_foo>-12345678901234567890123456789</comp_foo>
+  </complexTest>
+ 
+  <simpleTest>-12345678901234567890123456789</simpleTest>
+</root>

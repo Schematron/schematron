@@ -1,0 +1,79 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+targetNamespace="urn:products" xmlns="urn:products">
+
+  <xsd:element name="products" type="ProductList"/>
+
+  <xsd:complexType name="ProductList">
+    <xsd:choice maxOccurs="unbounded">
+      <xsd:element name="book" type="Book"/>
+      <xsd:element name="dvd" type="DVD"/>
+      <xsd:element name="clothing" type="Apparel"/>
+      <xsd:element name="cd" type="CD"/>
+    </xsd:choice>
+  </xsd:complexType>
+
+  <xsd:complexType name="Product" abstract="true">
+    <xsd:sequence>
+      <xsd:element name="price" type="xsd:decimal"/>
+      <xsd:element name="description" type="xsd:string"/>
+    </xsd:sequence>
+    <xsd:attribute name="id" type="xsd:ID"/>
+  </xsd:complexType>
+  
+  <xsd:complexType name="MediaItem" abstract="true">
+    <xsd:complexContent>
+      <xsd:extension base="Product">
+        <xsd:sequence>
+          <xsd:element name="title" type="xsd:string"/>
+          <xsd:element name="category" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:complexType name="DVD">
+    <xsd:complexContent>
+      <xsd:extension base="MediaItem">
+        <xsd:sequence>
+          <xsd:element name="director" type="xsd:string"/>
+          <xsd:element name="release_date" type="xsd:date"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <xsd:complexType name="Book">
+    <xsd:complexContent>
+    <xsd:extension base="MediaItem">
+      <xsd:sequence>
+          <xsd:element name="author" type="xsd:string"/>
+          <xsd:element name="publish_date" type="xsd:date"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:complexType name="CD">
+   <xsd:complexContent>
+    <xsd:extension base="MediaItem">
+      <xsd:sequence>
+          <xsd:element name="artist" type="xsd:string"/>
+          <xsd:element name="release_date" type="xsd:date"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+ 
+  <xsd:complexType name="Apparel">
+    <xsd:complexContent>
+      <xsd:extension base="Product">
+        <xsd:sequence>
+          <xsd:element name="size" type="xsd:string"/>
+          <xsd:element name="style" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+
+</xsd:schema>

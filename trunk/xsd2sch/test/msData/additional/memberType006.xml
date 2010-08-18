@@ -1,0 +1,5 @@
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <e xsi:type="myunion">true</e>
+        <e xsi:type="myunion">5</e>
+        <e xsi:type="myunion">abc</e>
+</root>

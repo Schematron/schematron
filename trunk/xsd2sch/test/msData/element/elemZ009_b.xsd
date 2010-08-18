@@ -1,0 +1,14 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+targetNamespace="b"
+elementFormDefault="qualified"
+
+>
+
+    <xsd:complexType name="b">
+	<xsd:sequence>
+		<xsd:element name="b"/>
+	</xsd:sequence>
+   </xsd:complexType>
+
+</xsd:schema>
+

@@ -1,0 +1,3771 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/XML/2004/xml-schema-test-suite/" xsi:schemaLocation="http://www.w3.org/XML/2004/xml-schema-test-suite/ AnnotatedTSSchema.xsd" name="MS-Attribute2006-07-15" contributor="Microsoft">
+<testGroup name="attA001">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Test attribute declaration with optional attribute form = 'qualified' at top level</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attA001">
+<schemaDocument xlink:href="../msData/attribute/attA001.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attA002">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Test attribute declaration with optional attribute form = 'unqualified' at top level</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attA002">
+<schemaDocument xlink:href="../msData/attribute/attA002.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attA003">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Test attribute declaration with optional attribute form = 'foo'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attA003">
+<schemaDocument xlink:href="../msData/attribute/attA003.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attA004">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Test attribute declaration with optional attribute form = ''</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attA004">
+<schemaDocument xlink:href="../msData/attribute/attA004.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attA005">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Test attribute declaration with optional attribute form = 'Qualified'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attA005">
+<schemaDocument xlink:href="../msData/attribute/attA005.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attA006">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Test attribute declaration with optional attribute form = 'Unqualified'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attA006">
+<schemaDocument xlink:href="../msData/attribute/attA006.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attA007">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Test attribute declaration with optional attribute form = 'qualified'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attA007">
+<schemaDocument xlink:href="../msData/attribute/attA007.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attA008">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Test attribute declaration with optional attribute form = 'unqualified'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attA008">
+<schemaDocument xlink:href="../msData/attribute/attA008.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attB001">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Test attribute declaration with optional attribute id = 'a'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attB001">
+<schemaDocument xlink:href="../msData/attribute/attB001.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attB002">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Test attribute declaration with optional attribute id = 'very long id &gt; 1000 chars'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attB002">
+<schemaDocument xlink:href="../msData/attribute/attB002.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attB003">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Test attribute declaration with optional attribute id = 'all valid chars'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attB003">
+<schemaDocument xlink:href="../msData/attribute/attB003.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attB004">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Test attribute declaration with optional attribute id = '_1'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attB004">
+<schemaDocument xlink:href="../msData/attribute/attB004.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attB005">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Test attribute declaration with optional attribute id = ''</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attB005">
+<schemaDocument xlink:href="../msData/attribute/attB005.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attB006">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Test attribute declaration with optional attribute id = '0'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attB006">
+<schemaDocument xlink:href="../msData/attribute/attB006.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attC001">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Test attribute declaration with attribute name = 'a'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attC001">
+<schemaDocument xlink:href="../msData/attribute/attC001.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attC002">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Test attribute declaration with attribute name = 'very long name &gt; 1000 chars'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attC002">
+<schemaDocument xlink:href="../msData/attribute/attC002.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attC003">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Test attribute declaration with attribute name = '_1'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attC003">
+<schemaDocument xlink:href="../msData/attribute/attC003.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attC004">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Test attribute declaration with attribute name = ''</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attC004">
+<schemaDocument xlink:href="../msData/attribute/attC004.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attC005">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Test attribute declaration with attribute name = '0'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attC005">
+<schemaDocument xlink:href="../msData/attribute/attC005.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attC006">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Test attribute declaration with attribute name = '''</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attC006">
+<schemaDocument xlink:href="../msData/attribute/attC006.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attC007">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Test attribute declaration with attribute name = 'a:b' namespace for prefix 'a' is declared</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attC007">
+<schemaDocument xlink:href="../msData/attribute/attC007.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attC008">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Test attribute declaration with attribute name = 'a:b' namespace for prefix 'a' is NOT declared</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attC008">
+<schemaDocument xlink:href="../msData/attribute/attC008.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attC009">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Test attribute declaration with attribute name = 'a:b:b'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attC009">
+<schemaDocument xlink:href="../msData/attribute/attC009.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attC010">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Test attribute declaration with attribute name = ':_'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attC010">
+<schemaDocument xlink:href="../msData/attribute/attC010.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attD001">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Global attribute declaration type='global simple type'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attD001">
+<schemaDocument xlink:href="../msData/attribute/attD001.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attD002">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Global attribute declaration type='global complex type'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attD002">
+<schemaDocument xlink:href="../msData/attribute/attD002.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attD003">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Global attribute declaration type='simpleType derived by restrictrion from another simpleType'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attD003">
+<schemaDocument xlink:href="../msData/attribute/attD003.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attD003.v">
+<instanceDocument xlink:href="../msData/attribute/attD003.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attD004">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Global attribute declaration type='simpleType with a list of number'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attD004">
+<schemaDocument xlink:href="../msData/attribute/attD004.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attD004.v">
+<instanceDocument xlink:href="../msData/attribute/attD004.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attD005">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Global attribute declaration type=':_'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attD005">
+<schemaDocument xlink:href="../msData/attribute/attD005.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attD006">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Global attribute declaration type='123'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attD006">
+<schemaDocument xlink:href="../msData/attribute/attD006.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attD007">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Global attribute declaration type='simpleType with a union of two list and a atomic simpleType'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attD007">
+<schemaDocument xlink:href="../msData/attribute/attD007.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attD007.v">
+<instanceDocument xlink:href="../msData/attribute/attD007.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attE001">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Local attribute declaration ref='global attribute name'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attE001">
+<schemaDocument xlink:href="../msData/attribute/attE001.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attE001.v">
+<instanceDocument xlink:href="../msData/attribute/attE001.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attE002">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Test attribute declaration with optional attribute ref = 'local attribute name'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attE002">
+<schemaDocument xlink:href="../msData/attribute/attE002.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attE003">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Test attribute declaration with optional attribute ref = 'global attributeGroup name'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attE003">
+<schemaDocument xlink:href="../msData/attribute/attE003.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attE004">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : reference to a global complex Type with simpleContentref='foo'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attE004">
+<schemaDocument xlink:href="../msData/attribute/attE004.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attE005">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Local attribute declaration ref=':_'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attE005">
+<schemaDocument xlink:href="../msData/attribute/attE005.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attE006">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Local attribute declaration ref='123'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attE006">
+<schemaDocument xlink:href="../msData/attribute/attE006.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attE007">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Local attribute declaration ref=''</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attE007">
+<schemaDocument xlink:href="../msData/attribute/attE007.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attE008">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : reference an attribute that is from imported xsdref='global attribute which is declared in an imported XSD'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attE008">
+<schemaDocument xlink:href="../msData/attribute/attE008.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attF001">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Test attribute declaration with optional attribute use = 'prohibited'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attF001">
+<schemaDocument xlink:href="../msData/attribute/attF001.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attF001.i">
+<instanceDocument xlink:href="../msData/attribute/attF001.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attF002">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Test attribute declaration with optional attribute use = 'optional'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attF002">
+<schemaDocument xlink:href="../msData/attribute/attF002.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attF002.v">
+<instanceDocument xlink:href="../msData/attribute/attF002.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attF003">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Test attribute declaration with optional attribute use = 'required'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attF003">
+<schemaDocument xlink:href="../msData/attribute/attF003.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attF003.v">
+<instanceDocument xlink:href="../msData/attribute/attF003.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attF004">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Test local attribute declaration with optional attribute use = 'default'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attF004">
+<schemaDocument xlink:href="../msData/attribute/attF004.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attF005">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Test local attribute declaration with optional attribute use = 'fixed'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attF005">
+<schemaDocument xlink:href="../msData/attribute/attF005.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attF006">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Test local attribute declaration with optional attribute use = ''</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attF006">
+<schemaDocument xlink:href="../msData/attribute/attF006.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attF007">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Test local attribute declaration with optional attribute use = 'foo'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attF007">
+<schemaDocument xlink:href="../msData/attribute/attF007.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attF008">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Test global attribute declaration with optional attribute use = 'default'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attF008">
+<schemaDocument xlink:href="../msData/attribute/attF008.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attF009">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Test global attribute declaration with optional attribute use = 'fixed'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attF009">
+<schemaDocument xlink:href="../msData/attribute/attF009.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attF010">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Test global attribute declaration with optional attribute use = ''</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attF010">
+<schemaDocument xlink:href="../msData/attribute/attF010.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attF011">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Test global attribute declaration with optional attribute use = 'foo'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attF011">
+<schemaDocument xlink:href="../msData/attribute/attF011.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attJ001">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : xml doc do not specify the attribute, for att declared under schema, complexType and attributeGroup, use = 'prohibited'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attJ001">
+<schemaDocument xlink:href="../msData/attribute/attJ001.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attJ001.v">
+<instanceDocument xlink:href="../msData/attribute/attJ001.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attJ002">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : xml doc specify the attribute, attribute decl under schema, use = 'prohibited'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attJ002">
+<schemaDocument xlink:href="../msData/attribute/attJ002.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attJ002.i">
+<instanceDocument xlink:href="../msData/attribute/attJ002.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attJ003">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : xml doc specify the attribute, attribute decl under complex type, use = 'prohibited'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attJ003">
+<schemaDocument xlink:href="../msData/attribute/attJ003.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attJ003.i">
+<instanceDocument xlink:href="../msData/attribute/attJ003.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attJ004">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : xml doc does not specify the attribute, attribute decl under attribute group, use = 'prohibited'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attJ004">
+<schemaDocument xlink:href="../msData/attribute/attJ004.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attJ004.v">
+<instanceDocument xlink:href="../msData/attribute/attJ004.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attJ005">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : xml doc do not specify the attribute, use = 'optional'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attJ005">
+<schemaDocument xlink:href="../msData/attribute/attJ005.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attJ005.v">
+<instanceDocument xlink:href="../msData/attribute/attJ005.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attJ006">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : xml doc specify the attribute, use = 'optional'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attJ006">
+<schemaDocument xlink:href="../msData/attribute/attJ006.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attJ006.v">
+<instanceDocument xlink:href="../msData/attribute/attJ006.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attJ007">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : xml doc specify the attribute, for att declared under complexType and attributeGroup, use = 'required'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attJ007">
+<schemaDocument xlink:href="../msData/attribute/attJ007.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attJ007.v">
+<instanceDocument xlink:href="../msData/attribute/attJ007.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attJ008">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : xml doc do not specify the attribute, attribute decl under schema use = 'required'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attJ008">
+<schemaDocument xlink:href="../msData/attribute/attJ008.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attJ008.i">
+<instanceDocument xlink:href="../msData/attribute/attJ008.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attJ009">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : xml doc do not specify the attribute, attribute decl under complexType, use = 'required'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attJ009">
+<schemaDocument xlink:href="../msData/attribute/attJ009.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attJ009.i">
+<instanceDocument xlink:href="../msData/attribute/attJ009.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attJ010">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : xml doc do not specify the attribute, attribute decl under attribute group use = 'required'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attJ010">
+<schemaDocument xlink:href="../msData/attribute/attJ010.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attJ010.i">
+<instanceDocument xlink:href="../msData/attribute/attJ010.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attJ011">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : parent is schema, use = 'default'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attJ011">
+<schemaDocument xlink:href="../msData/attribute/attJ011.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attJ012">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : parent is schema, use = 'fixed'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attJ012">
+<schemaDocument xlink:href="../msData/attribute/attJ012.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attJ013">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : parent is complexType, use = 'default'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attJ013">
+<schemaDocument xlink:href="../msData/attribute/attJ013.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attJ014">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : parent is complexType, use = 'fixed'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attJ014">
+<schemaDocument xlink:href="../msData/attribute/attJ014.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attJ015">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : parent is attributeGroup, use = 'default'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attJ015">
+<schemaDocument xlink:href="../msData/attribute/attJ015.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attJ016">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : parent is attributeGroup, use = 'fixed'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attJ016">
+<schemaDocument xlink:href="../msData/attribute/attJ016.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attJ017">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : xml doc do not specify the attribute, use = 'fixed, value="123"'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attJ017">
+<schemaDocument xlink:href="../msData/attribute/attJ017.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attJ018">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Basic attribute with parent schema, parent attributeGroup, parent complexType (test most of the common type and ref)</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attJ018">
+<schemaDocument xlink:href="../msData/attribute/attJ018.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attJ018.v">
+<instanceDocument xlink:href="../msData/attribute/attJ018.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attG001">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Attribute\attribute with non schema namespacetargetNamespace='foo:bar'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attG001">
+<schemaDocument xlink:href="../msData/attribute/attG001.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attG002">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Attribute\attribute with non schema namespacetargetNamespace=''</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attG002">
+<schemaDocument xlink:href="../msData/attribute/attG002.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attG003">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Attribute\attribute with non schema namespacetargetNamespace='http://foo'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attG003">
+<schemaDocument xlink:href="../msData/attribute/attG003.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attH001">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Test attribute declaration with optional attribute value = 'string'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attH001">
+<schemaDocument xlink:href="../msData/attribute/attH001.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attI001">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Basic attribute with just annotation content</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attI001">
+<schemaDocument xlink:href="../msData/attribute/attI001.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attI002">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Basic attribute with just simpleType content</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attI002">
+<schemaDocument xlink:href="../msData/attribute/attI002.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attI003">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Basic attribute with annotation followed by simpleType content</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attI003">
+<schemaDocument xlink:href="../msData/attribute/attI003.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attI003.v">
+<instanceDocument xlink:href="../msData/attribute/attI003.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attI004">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Basic attribute with two annotation content</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attI004">
+<schemaDocument xlink:href="../msData/attribute/attI004.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attI005">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Basic attribute with simpleType follow by annotation content</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attI005">
+<schemaDocument xlink:href="../msData/attribute/attI005.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attI006">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Basic attribute with two simpleType content</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attI006">
+<schemaDocument xlink:href="../msData/attribute/attI006.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attKa001">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Schema Rep Constraint: 1. Parent is schema, default and fixed both present, ,</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attKa001">
+<schemaDocument xlink:href="../msData/attribute/attKa001.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attKa002">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Schema Rep Constraint: 1. Parent is schema, use=absent, default=abc',</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attKa002">
+<schemaDocument xlink:href="../msData/attribute/attKa002.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attKa003">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Schema Rep Constraint: 1. Parent is schema, use=optional, default=abc',</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attKa003">
+<schemaDocument xlink:href="../msData/attribute/attKa003.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attKa004">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Schema Rep Constraint: 1. Parent is schema, use=required, default=abc',</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attKa004">
+<schemaDocument xlink:href="../msData/attribute/attKa004.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attKa005">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Schema Rep Constraint: 1. Parent is schema, use=prohibited, default=abc',</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attKa005">
+<schemaDocument xlink:href="../msData/attribute/attKa005.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attKa006">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Schema Rep Constraint: 1. Parent is schema, use=absent, fixed=abc',</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attKa006">
+<schemaDocument xlink:href="../msData/attribute/attKa006.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attKa007">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Schema Rep Constraint: 1. Parent is schema, use=optional, fixed=abc',</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attKa007">
+<schemaDocument xlink:href="../msData/attribute/attKa007.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attKa008">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Schema Rep Constraint: 1. Parent is schema, use=required, fixed=abc',</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attKa008">
+<schemaDocument xlink:href="../msData/attribute/attKa008.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attKa009">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Schema Rep Constraint: 1. Parent is schema, use=prohibited, fixed=abc',</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attKa009">
+<schemaDocument xlink:href="../msData/attribute/attKa009.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attKa010">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Schema Rep Constraint: 1. Parent is schema, ref present, ,</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attKa010">
+<schemaDocument xlink:href="../msData/attribute/attKa010.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attKa011">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Schema Rep Constraint: 1. Parent is schema, type present, simpleType childNode present,</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attKa011">
+<schemaDocument xlink:href="../msData/attribute/attKa011.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attKa012">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Schema Rep Constraint: 1. Parent is schema, name= xmlns, ,</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attKa012">
+<schemaDocument xlink:href="../msData/attribute/attKa012.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attKa013">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Schema Rep Constraint: 1. Parent is schema, name=xmlns:, ,</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attKa013">
+<schemaDocument xlink:href="../msData/attribute/attKa013.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attKa014">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Schema Rep Constraint: 1. Parent is schema, name=xmlns:a, ,</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attKa014">
+<schemaDocument xlink:href="../msData/attribute/attKa014.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attKa015">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Schema Rep Constraint: 1. Parent is schema, targetNamespace of the attribute decl is http://www.w3.org/2001/XMLSchema-instance, ,</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attKa015">
+<schemaDocument xlink:href="../msData/attribute/attKa015.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attKb001">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Schema Rep Constraint: 1. Parent is attributeGroup, default and fixed both present, ,</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attKb001">
+<schemaDocument xlink:href="../msData/attribute/attKb001.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attKb002">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Schema Rep Constraint: 1. Parent is attributeGroup, use=absent, default=abc',</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attKb002">
+<schemaDocument xlink:href="../msData/attribute/attKb002.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attKb003">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Schema Rep Constraint: 1. Parent is attributeGroup, use=optional, default=abc',</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attKb003">
+<schemaDocument xlink:href="../msData/attribute/attKb003.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attKb004">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Schema Rep Constraint: 1. Parent is attributeGroup, use=required, default=abc',</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attKb004">
+<schemaDocument xlink:href="../msData/attribute/attKb004.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attKb005">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Schema Rep Constraint: 1. Parent is attributeGroup, use=prohibited, default=abc',</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attKb005">
+<schemaDocument xlink:href="../msData/attribute/attKb005.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attKb006">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Schema Rep Constraint: 1. Parent is attributeGroup, use=absent, fixed=abc',</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attKb006">
+<schemaDocument xlink:href="../msData/attribute/attKb006.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attKb007">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Schema Rep Constraint: 1. Parent is attributeGroup, use=optional, fixed=abc',</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attKb007">
+<schemaDocument xlink:href="../msData/attribute/attKb007.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attKb008">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Schema Rep Constraint: 1. Parent is attributeGroup, use=required, fixed=abc',</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attKb008">
+<schemaDocument xlink:href="../msData/attribute/attKb008.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attKb009">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Schema Rep Constraint: 1. Parent is attributeGroup, use=prohibited, fixed=abc',</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attKb009">
+<schemaDocument xlink:href="../msData/attribute/attKb009.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attKb010">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Schema Rep Constraint: 1. Parent is attributeGroup, ref present, name present,</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attKb010">
+<schemaDocument xlink:href="../msData/attribute/attKb010.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attKb011">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Schema Rep Constraint: 1. Parent is attributeGroup, ref present, simpleType childNode present,</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attKb011">
+<schemaDocument xlink:href="../msData/attribute/attKb011.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attKb012">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Schema Rep Constraint: 1. Parent is attributeGroup, ref present, form attribute present,</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attKb012">
+<schemaDocument xlink:href="../msData/attribute/attKb012.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attKb013">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Schema Rep Constraint: 1. Parent is attributeGroup, ref present, type attribute present,</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attKb013">
+<schemaDocument xlink:href="../msData/attribute/attKb013.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attKb014">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Schema Rep Constraint: 1. Parent is attributeGroup, type present, simpleType childNode present,</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attKb014">
+<schemaDocument xlink:href="../msData/attribute/attKb014.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attKb015">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Schema Rep Constraint: 1. Parent is attributeGroup, name= xmlns, ,</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attKb015">
+<schemaDocument xlink:href="../msData/attribute/attKb015.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attKb016">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Schema Rep Constraint: 1. Parent is attributeGroup, name=xmlns:, ,</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attKb016">
+<schemaDocument xlink:href="../msData/attribute/attKb016.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attKb017">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Schema Rep Constraint: 1. Parent is attributeGroup, name=xmlns:a, ,</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attKb017">
+<schemaDocument xlink:href="../msData/attribute/attKb017.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attKb018">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Schema
+Rep Constraint: 1. Parent is attributeGroup, targetNamespace of the schema is
+http://www.w3.org/2001/XMLSchema-instance, but form is not qualified.</documentation>
+  <documentation>expected changed to valid by HST 2006-11-09</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attKb018">
+<schemaDocument xlink:href="../msData/attribute/attKb018.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attKb018a">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Schema
+Rep Constraint: 1. Parent is attributeGroup, targetNamespace of the schema is
+http://www.w3.org/2001/XMLSchema-instance, form is qualified.</documentation>
+ <documentation>Added by HST 2006-11-09</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attKb018a">
+<schemaDocument xlink:href="../msData/attribute/attKb018a.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attKc001">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Schema Rep Constraint: 1. Parent is complexType, default and fixed both present, ,</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attKc001">
+<schemaDocument xlink:href="../msData/attribute/attKc001.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attKc002">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Schema Rep Constraint: 1. Parent is complexType, use=absent, default=abc',</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attKc002">
+<schemaDocument xlink:href="../msData/attribute/attKc002.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attKc003">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Schema Rep Constraint: 1. Parent is complexType, use=optional, default=abc',</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attKc003">
+<schemaDocument xlink:href="../msData/attribute/attKc003.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attKc004">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Schema Rep Constraint: 1. Parent is complexType, use=required, default=abc',</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attKc004">
+<schemaDocument xlink:href="../msData/attribute/attKc004.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attKc005">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Schema Rep Constraint: 1. Parent is complexType, use=prohibited, default=abc',</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attKc005">
+<schemaDocument xlink:href="../msData/attribute/attKc005.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attKc006">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Schema Rep Constraint: 1. Parent is complexType, use=absent, fixed=abc',</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attKc006">
+<schemaDocument xlink:href="../msData/attribute/attKc006.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attKc007">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Schema Rep Constraint: 1. Parent is complexType, use=optional, fixed=abc',</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attKc007">
+<schemaDocument xlink:href="../msData/attribute/attKc007.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attKc008">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Schema Rep Constraint: 1. Parent is complexType, use=required, fixed=abc',</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attKc008">
+<schemaDocument xlink:href="../msData/attribute/attKc008.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attKc009">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Schema Rep Constraint: 1. Parent is complexType, use=prohibited, fixed=abc',</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attKc009">
+<schemaDocument xlink:href="../msData/attribute/attKc009.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attKc010">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Schema Rep Constraint: 1. Parent is complexType, ref present, name present,</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attKc010">
+<schemaDocument xlink:href="../msData/attribute/attKc010.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attKc011">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Schema Rep Constraint: 1. Parent is complexType, ref present, simpleType childNode present,</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attKc011">
+<schemaDocument xlink:href="../msData/attribute/attKc011.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attKc012">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Schema Rep Constraint: 1. Parent is complexType, ref present, form attribute present,</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attKc012">
+<schemaDocument xlink:href="../msData/attribute/attKc012.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attKc013">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Schema Rep Constraint: 1. Parent is complexType, ref present, type attribute present,</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attKc013">
+<schemaDocument xlink:href="../msData/attribute/attKc013.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attKc014">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Schema Rep Constraint: 1. Parent is complexType, type present, simpleType childNode present,</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attKc014">
+<schemaDocument xlink:href="../msData/attribute/attKc014.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attKc015">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Schema Rep Constraint: 1. Parent is complexType, name= xmlns, ,</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attKc015">
+<schemaDocument xlink:href="../msData/attribute/attKc015.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attKc016">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Schema Rep Constraint: 1. Parent is complexType, name=xmlns:, ,</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attKc016">
+<schemaDocument xlink:href="../msData/attribute/attKc016.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attKc017">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Schema Rep Constraint: 1. Parent is complexType, name=xmlns:a, ,</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attKc017">
+<schemaDocument xlink:href="../msData/attribute/attKc017.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attKc018">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Schema
+Rep Constraint: 1. Parent is complexType, targetNamespace of the schema is
+http://www.w3.org/2001/XMLSchema-instance, but form is not qualified.</documentation>
+  <documentation>expected changed to valid by HST 2006-11-09</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attKc018">
+<schemaDocument xlink:href="../msData/attribute/attKc018.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+ <testGroup name="attKc018a">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Schema
+Rep Constraint: 1. Parent is complexType, targetNamespace of the schema is
+http://www.w3.org/2001/XMLSchema-instance, and form is qualified.</documentation>
+  <documentation>Added by HST 2006-11-09</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attKc018a">
+<schemaDocument xlink:href="../msData/attribute/attKc018a.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attLa001">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Validation Rule: Attribute Locally Valid: Parent is schema , default='abc' , xml instant has the attribute with value='abc',</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attLa001">
+<schemaDocument xlink:href="../msData/attribute/attLa001.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attLa001.v">
+<instanceDocument xlink:href="../msData/attribute/attLa001.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attLa002">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Validation Rule: Attribute Locally Valid: Parent is schema , default='abc' , xml instant NOT has the attribute with value='abc',</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attLa002">
+<schemaDocument xlink:href="../msData/attribute/attLa002.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attLa002.v">
+<instanceDocument xlink:href="../msData/attribute/attLa002.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attLa003">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Validation Rule: Attribute Locally Valid: Parent is schema , default='abc' , xml instant NOT has the attribute at all,</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attLa003">
+<schemaDocument xlink:href="../msData/attribute/attLa003.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attLa003.v">
+<instanceDocument xlink:href="../msData/attribute/attLa003.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attLa004">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Validation Rule: Attribute Locally Valid: Parent is schema , fixed='abc' , xml instant has the attribute with value='abc',</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attLa004">
+<schemaDocument xlink:href="../msData/attribute/attLa004.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attLa004.v">
+<instanceDocument xlink:href="../msData/attribute/attLa004.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attLa005">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Validation Rule: Attribute Locally Valid: Parent is schema , fixed='abc' , xml instant NOT has the attribute with value='abc',</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attLa005">
+<schemaDocument xlink:href="../msData/attribute/attLa005.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attLa005.i">
+<instanceDocument xlink:href="../msData/attribute/attLa005.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attLa006">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Validation Rule: Attribute Locally Valid: Parent is schema , fixed='abc' , xml instant NOT has the attribute at all,</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attLa006">
+<schemaDocument xlink:href="../msData/attribute/attLa006.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attLa006.v">
+<instanceDocument xlink:href="../msData/attribute/attLa006.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attLb001">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Validation Rule: Attribute Locally Valid: Parent is attributeGroup, default='abc' , xml instant has the attribute with value='abc',</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attLb001">
+<schemaDocument xlink:href="../msData/attribute/attLb001.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attLb001.v">
+<instanceDocument xlink:href="../msData/attribute/attLb001.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attLb002">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Validation Rule: Attribute Locally Valid: Parent is attributeGroup, default='abc' , xml instant NOT has the attribute with value='abc',</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attLb002">
+<schemaDocument xlink:href="../msData/attribute/attLb002.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attLb002.v">
+<instanceDocument xlink:href="../msData/attribute/attLb002.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attLb003">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Validation Rule: Attribute Locally Valid: Parent is attributeGroup, default='abc' , xml instant NOT has the attribute at all,</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attLb003">
+<schemaDocument xlink:href="../msData/attribute/attLb003.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attLb003.v">
+<instanceDocument xlink:href="../msData/attribute/attLb003.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attLb004">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Validation Rule: Attribute Locally Valid: Parent is attributeGroup, fixed='abc' , xml instant has the attribute with value='abc',</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attLb004">
+<schemaDocument xlink:href="../msData/attribute/attLb004.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attLb004.v">
+<instanceDocument xlink:href="../msData/attribute/attLb004.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attLb005">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Validation Rule: Attribute Locally Valid: Parent is attributeGroup, fixed='abc' , xml instant NOT has the attribute with value='abc',</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attLb005">
+<schemaDocument xlink:href="../msData/attribute/attLb005.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attLb005.i">
+<instanceDocument xlink:href="../msData/attribute/attLb005.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attLb006">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Validation Rule: Attribute Locally Valid: Parent is attributeGroup, fixed='abc' , xml instant NOT has the attribute at all,</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attLb006">
+<schemaDocument xlink:href="../msData/attribute/attLb006.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attLb006.v">
+<instanceDocument xlink:href="../msData/attribute/attLb006.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attLc001">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Validation Rule: Attribute Locally Valid: Parent is complexType, default='abc' , xml instant has the attribute with value='abc',</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attLc001">
+<schemaDocument xlink:href="../msData/attribute/attLc001.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attLc001.v">
+<instanceDocument xlink:href="../msData/attribute/attLc001.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attLc002">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Validation Rule: Attribute Locally Valid: Parent is complexType, default='abc' , xml instant NOT has the attribute with value='abc',</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attLc002">
+<schemaDocument xlink:href="../msData/attribute/attLc002.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attLc002.v">
+<instanceDocument xlink:href="../msData/attribute/attLc002.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attLc003">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Validation Rule: Attribute Locally Valid: Parent is complexType, default='abc' , xml instant NOT has the attribute at all,</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attLc003">
+<schemaDocument xlink:href="../msData/attribute/attLc003.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attLc003.v">
+<instanceDocument xlink:href="../msData/attribute/attLc003.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attLc004">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Validation Rule: Attribute Locally Valid: Parent is complexType, fixed='abc' , xml instant has the attribute with value='abc',</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attLc004">
+<schemaDocument xlink:href="../msData/attribute/attLc004.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attLc004.v">
+<instanceDocument xlink:href="../msData/attribute/attLc004.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attLc005">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Validation Rule: Attribute Locally Valid: Parent is complexType, fixed='abc' , xml instant NOT has the attribute with value='abc',</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attLc005">
+<schemaDocument xlink:href="../msData/attribute/attLc005.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attLc005.i">
+<instanceDocument xlink:href="../msData/attribute/attLc005.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attLc006">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Validation Rule: Attribute Locally Valid: Parent is complexType, fixed='abc' , xml instant NOT has the attribute at all,</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attLc006">
+<schemaDocument xlink:href="../msData/attribute/attLc006.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attLc006.v">
+<instanceDocument xlink:href="../msData/attribute/attLc006.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attO001">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Validation Rule: Attribute Locally Valid: type=int, instant xml value ='abc'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attO001">
+<schemaDocument xlink:href="../msData/attribute/attO001.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attO001.i">
+<instanceDocument xlink:href="../msData/attribute/attO001.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attO002">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Validation Rule: Attribute Locally Valid: type=int, fixed='abc'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attO002">
+<schemaDocument xlink:href="../msData/attribute/attO002.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attO003">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Validation Rule: Attribute Locally Valid: type=int, default='abc'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attO003">
+<schemaDocument xlink:href="../msData/attribute/attO003.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attO004">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Validation Rule: Attribute Locally Valid: type=enumeration, instant xml value ='not a enumeration type'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attO004">
+<schemaDocument xlink:href="../msData/attribute/attO004.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attO004.i">
+<instanceDocument xlink:href="../msData/attribute/attO004.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attO005">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Validation Rule: Attribute Locally Valid (check normalization): type=int, default=" 1 2"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attO005">
+<schemaDocument xlink:href="../msData/attribute/attO005.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attO006">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Validation Rule: Attribute Locally Valid (check normalization): type=int, fixed=' 123', instant xml value=' 123 '</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attO006">
+<schemaDocument xlink:href="../msData/attribute/attO006.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attO006.v">
+<instanceDocument xlink:href="../msData/attribute/attO006.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attO007">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Validation Rule: Attribute Locally Valid (check normalization): type=string, fixed=' 1 2 3', instant xml value=' 1 2 3'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attO007">
+<schemaDocument xlink:href="../msData/attribute/attO007.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attO007.v">
+<instanceDocument xlink:href="../msData/attribute/attO007.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attO008">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Validation Rule: Attribute Locally Valid (check normalization): type=string, fixed=' 1 2 3', instant xml value=' 1 2 3'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attO008">
+<schemaDocument xlink:href="../msData/attribute/attO008.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attO008.i">
+<instanceDocument xlink:href="../msData/attribute/attO008.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attO009">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Validation Rule: Attribute Locally Valid (check normalization): type=NMTOKENS, fixed=" -linebreak -tab X -tab -linebreak Y -linebreak Z -linebreak", instant xml value='X Y Z'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attO009">
+<schemaDocument xlink:href="../msData/attribute/attO009.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attO009.v">
+<instanceDocument xlink:href="../msData/attribute/attO009.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attO010">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Validation Rule: Attribute Locally Valid (check normalization): type=NMTOKENS, fixed="#xd; #xd;A #xa; #xa;B #xd; #xa;" instant xml value='#xD #xD A #xA #xA B #xD #xA'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attO010">
+<schemaDocument xlink:href="../msData/attribute/attO010.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attO010.v">
+<instanceDocument xlink:href="../msData/attribute/attO010.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attO011">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Validation Rule: Attribute Locally Valid (check normalization): type=string, fixed=" -linebreak -tab X -tab -linebreak Y -linebreak Z -linebreak", instant xml value=' X Y Z '</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attO011">
+<schemaDocument xlink:href="../msData/attribute/attO011.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attO011.v">
+<instanceDocument xlink:href="../msData/attribute/attO011.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attO012">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Validation Rule: Attribute Locally Valid (check normalization): type=string, fixed="#xd; #xd;A #xa; #xa;B #xd; #xa;" instant xml value='A B'</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attO012">
+<schemaDocument xlink:href="../msData/attribute/attO012.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attO012.i">
+<instanceDocument xlink:href="../msData/attribute/attO012.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attO013">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Validation Rule: Attribute Locally Valid: global attribute 'foo' with use=required, referenced in complexType with use=absent</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attO013">
+<schemaDocument xlink:href="../msData/attribute/attO013.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attO014">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Validation Rule: Attribute Locally Valid: global attribute 'foo' with use=required, referenced in complexType with use=optional</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attO014">
+<schemaDocument xlink:href="../msData/attribute/attO014.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attO015">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Validation Rule: Attribute Locally Valid: global attribute 'foo' with use=required, referenced in complexType with use=required</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attO015">
+<schemaDocument xlink:href="../msData/attribute/attO015.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attO016">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Validation Rule: Attribute Locally Valid: global attribute 'foo' with use=required, referenced in complexType with use=prohibited</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attO016">
+<schemaDocument xlink:href="../msData/attribute/attO016.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attO017">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Validation Rule: Attribute Locally Valid: global attribute 'foo' with use=optional, referenced in complexType with use=absent</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attO017">
+<schemaDocument xlink:href="../msData/attribute/attO017.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attO018">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Validation Rule: Attribute Locally Valid: global attribute 'foo' with use=optional, referenced in complexType with use=optional</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attO018">
+<schemaDocument xlink:href="../msData/attribute/attO018.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attO019">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Validation Rule: Attribute Locally Valid: global attribute 'foo' with use=optional, referenced in complexType with use=required</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attO019">
+<schemaDocument xlink:href="../msData/attribute/attO019.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attO020">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Validation Rule: Attribute Locally Valid: global attribute 'foo' with use=optional, referenced in complexType with use=prohibited</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attO020">
+<schemaDocument xlink:href="../msData/attribute/attO020.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attO021">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Validation Rule: Attribute Locally Valid: global attribute 'foo' with use=prohibited, referenced in complexType with use=absent</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attO021">
+<schemaDocument xlink:href="../msData/attribute/attO021.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attO022">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Validation Rule: Attribute Locally Valid: global attribute 'foo' with use=prohibited, referenced in complexType with use=optional</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attO022">
+<schemaDocument xlink:href="../msData/attribute/attO022.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attO023">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Validation Rule: Attribute Locally Valid: global attribute 'foo' with use=prohibited, referenced in complexType with use=required</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attO023">
+<schemaDocument xlink:href="../msData/attribute/attO023.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attO024">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Validation Rule: Attribute Locally Valid: global attribute 'foo' with use=prohibited, referenced in complexType with use=prohibited</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attO024">
+<schemaDocument xlink:href="../msData/attribute/attO024.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attO025">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Validation Rule: Attribute Locally Valid: global attribute 'foo' with, fixed="123", referenced in complexType fixed="345"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attO025">
+<schemaDocument xlink:href="../msData/attribute/attO025.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attMa001">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : parent is schema (ref in complexType and attributeGroup), form=qualified, attributeFormDefault=absentattribute in xml doc has no prefix, but the containing element has a default namespace declared</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attMa001">
+<schemaDocument xlink:href="../msData/attribute/attMa001.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attMa001.i">
+<instanceDocument xlink:href="../msData/attribute/attMa001.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attMa002">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : parent is schema (ref in complexType and attributeGroup), form=unqualified, attributeFormDefault=qualified,attribute in xml doc has no prefix, but the containing element has a default namespace declared</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attMa002">
+<schemaDocument xlink:href="../msData/attribute/attMa002.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attMa002.i">
+<instanceDocument xlink:href="../msData/attribute/attMa002.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attMa003">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : parent is schema (ref in complexType and attributeGroup), form=qualified, attributeFormDefault=absentattribute in xml doc is qualified with prefix</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attMa003">
+<schemaDocument xlink:href="../msData/attribute/attMa003.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attMa003.v">
+<instanceDocument xlink:href="../msData/attribute/attMa003.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attMa004">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : parent is schema (ref in complexType and attributeGroup), form=unqualified, attributeFormDefault=qualified,attribute in xml doc is qualified with prefix</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attMa004">
+<schemaDocument xlink:href="../msData/attribute/attMa004.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attMa004.v">
+<instanceDocument xlink:href="../msData/attribute/attMa004.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attMb001">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : parent is complexType, form=qualified, attributeFormDefault=absent, attribute in xml doc has no prefix, but the containing element has a default namespace declared</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attMb001">
+<schemaDocument xlink:href="../msData/attribute/attMb001.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attMb001.i">
+<instanceDocument xlink:href="../msData/attribute/attMb001.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attMb002">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : parent is complexType, form=qualified, attributeFormDefault=unqualified, attribute in xml doc has no prefix, but the containing element has a default namespace declared</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attMb002">
+<schemaDocument xlink:href="../msData/attribute/attMb002.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attMb002.i">
+<instanceDocument xlink:href="../msData/attribute/attMb002.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attMb003">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : parent is complexType, form=qualified, attributeFormDefault=qualified, attribute in xml doc has no prefix, but the containing element has a default namespace declared</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attMb003">
+<schemaDocument xlink:href="../msData/attribute/attMb003.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attMb003.i">
+<instanceDocument xlink:href="../msData/attribute/attMb003.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attMb004">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : parent is complexType, form=qualified, attributeFormDefault=absent, attribute in xml doc is qualified with prefix</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attMb004">
+<schemaDocument xlink:href="../msData/attribute/attMb004.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attMb004.v">
+<instanceDocument xlink:href="../msData/attribute/attMb004.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attMb005">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : parent is complexType, form=qualified, attributeFormDefault=unqualified, attribute in xml doc is qualified with prefix</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attMb005">
+<schemaDocument xlink:href="../msData/attribute/attMb005.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attMb005.v">
+<instanceDocument xlink:href="../msData/attribute/attMb005.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attMb006">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : parent is complexType, form=qualified, attributeFormDefault=qualified, attribute in xml doc is qualified with prefix</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attMb006">
+<schemaDocument xlink:href="../msData/attribute/attMb006.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attMb006.v">
+<instanceDocument xlink:href="../msData/attribute/attMb006.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attMb007">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : parent is complexType, form=unqualified, attributeFormDefault=absent, attribute in xml doc has no prefix, but the containing element has a default namespace declared</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attMb007">
+<schemaDocument xlink:href="../msData/attribute/attMb007.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attMb007.v">
+<instanceDocument xlink:href="../msData/attribute/attMb007.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attMb008">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : parent is complexType, form=unqualified, attributeFormDefault=unqualified, attribute in xml doc has no prefix, but the containing element has a default namespace declared</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attMb008">
+<schemaDocument xlink:href="../msData/attribute/attMb008.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attMb008.v">
+<instanceDocument xlink:href="../msData/attribute/attMb008.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attMb009">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : parent is complexType, form=unqualified, attributeFormDefault=qualified, attribute in xml doc has no prefix</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attMb009">
+<schemaDocument xlink:href="../msData/attribute/attMb009.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attMb009.v">
+<instanceDocument xlink:href="../msData/attribute/attMb009.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attMb010">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : parent is complexType, form=unqualified, attributeFormDefault=absent, attribute in xml doc is qualified with prefix</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attMb010">
+<schemaDocument xlink:href="../msData/attribute/attMb010.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attMb010.i">
+<instanceDocument xlink:href="../msData/attribute/attMb010.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attMb011">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : parent is complexType, form=unqualified, attributeFormDefault=unqualified, attribute in xml doc is qualified with prefix</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attMb011">
+<schemaDocument xlink:href="../msData/attribute/attMb011.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attMb011.i">
+<instanceDocument xlink:href="../msData/attribute/attMb011.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attMb012">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : parent is complexType, form=unqualified, attributeFormDefault=qualified, attribute in xml doc is qualified with prefix</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attMb012">
+<schemaDocument xlink:href="../msData/attribute/attMb012.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attMb012.i">
+<instanceDocument xlink:href="../msData/attribute/attMb012.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attMc001">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : parent is attributeGroup,form=qualified, attributeFormDefault=absent, attribute in xml doc has no prefix, but the containing element has a default namespace declared</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attMc001">
+<schemaDocument xlink:href="../msData/attribute/attMc001.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attMc001.i">
+<instanceDocument xlink:href="../msData/attribute/attMc001.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attMc002">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : parent is attributeGroup,form=qualified, attributeFormDefault=unqualified, attribute in xml doc has no prefix, but the containing element has a default namespace declared</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attMc002">
+<schemaDocument xlink:href="../msData/attribute/attMc002.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attMc002.i">
+<instanceDocument xlink:href="../msData/attribute/attMc002.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attMc003">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : parent is attributeGroup,form=qualified, attributeFormDefault=qualified, attribute in xml doc has no prefix, but the containing element has a default namespace declared</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attMc003">
+<schemaDocument xlink:href="../msData/attribute/attMc003.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attMc003.i">
+<instanceDocument xlink:href="../msData/attribute/attMc003.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attMc004">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : parent is attributeGroup,form=qualified, attributeFormDefault=absent, attribute in xml doc is qualified with prefix</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attMc004">
+<schemaDocument xlink:href="../msData/attribute/attMc004.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attMc004.v">
+<instanceDocument xlink:href="../msData/attribute/attMc004.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attMc005">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : parent is attributeGroup,form=qualified, attributeFormDefault=unqualified, attribute in xml doc is qualified with prefix</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attMc005">
+<schemaDocument xlink:href="../msData/attribute/attMc005.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attMc005.v">
+<instanceDocument xlink:href="../msData/attribute/attMc005.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attMc006">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : parent is attributeGroup,form=qualified, attributeFormDefault=qualified, attribute in xml doc is qualified with prefix</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attMc006">
+<schemaDocument xlink:href="../msData/attribute/attMc006.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attMc006.v">
+<instanceDocument xlink:href="../msData/attribute/attMc006.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attMc007">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : parent is attributeGroup,form=unqualified, attributeFormDefault=absent, attribute in xml doc has no prefix, but the containing element has a default namespace declared</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attMc007">
+<schemaDocument xlink:href="../msData/attribute/attMc007.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attMc007.v">
+<instanceDocument xlink:href="../msData/attribute/attMc007.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attMc008">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : parent is attributeGroup,form=unqualified, attributeFormDefault=unqualified, attribute in xml doc has no prefix, but the containing element has a default namespace declared</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attMc008">
+<schemaDocument xlink:href="../msData/attribute/attMc008.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attMc008.v">
+<instanceDocument xlink:href="../msData/attribute/attMc008.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attMc009">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : parent is attributeGroup,form=unqualified, attributeFormDefault=qualified, attribute in xml doc has no prefix, but the containing element has a default namespace declared</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attMc009">
+<schemaDocument xlink:href="../msData/attribute/attMc009.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attMc009.v">
+<instanceDocument xlink:href="../msData/attribute/attMc009.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attMc010">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : parent is attributeGroup,form=unqualified, attributeFormDefault=absent, attribute in xml doc is qualified with prefix</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attMc010">
+<schemaDocument xlink:href="../msData/attribute/attMc010.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attMc010.i">
+<instanceDocument xlink:href="../msData/attribute/attMc010.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attMc011">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : parent is attributeGroup,form=unqualified, attributeFormDefault=unqualified, attribute in xml doc is qualified with prefix</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attMc011">
+<schemaDocument xlink:href="../msData/attribute/attMc011.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attMc011.i">
+<instanceDocument xlink:href="../msData/attribute/attMc011.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attMc012">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : parent is attributeGroup,form=unqualified, attributeFormDefault=qualified, attribute in xml doc is qualified with prefix</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attMc012">
+<schemaDocument xlink:href="../msData/attribute/attMc012.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attMc012.i">
+<instanceDocument xlink:href="../msData/attribute/attMc012.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attMd001">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Attributes from xsi ( xml schema instance ) namespace should be validated</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<instanceTest name="attMd001.i">
+<instanceDocument xlink:href="../msData/attribute/test108565_1.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attMd002">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Attributes from xsi ( xml schema instance ) namespace should be validated</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<instanceTest name="attMd002.i">
+<instanceDocument xlink:href="../msData/attribute/test108565_2.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attMd003">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Attributes from xsi ( xml schema instance ) namespace should be validated</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<instanceTest name="attMd003.i">
+<instanceDocument xlink:href="../msData/attribute/test108565_3.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attMd004">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Attributes from xsi ( xml schema instance ) namespace should be validated</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<instanceTest name="attMd004.i">
+<instanceDocument xlink:href="../msData/attribute/test108565_4.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attMd005">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Attributes from xsi ( xml schema instance ) namespace should be validated</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<instanceTest name="attMd005.i">
+<instanceDocument xlink:href="../msData/attribute/test108565_5.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attMd006">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Attributes from xsi ( xml schema instance ) namespace should be validated</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<instanceTest name="attMd006.i">
+<instanceDocument xlink:href="../msData/attribute/test108565_6.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attMd007">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Attributes from xsi ( xml schema instance ) namespace should be validated</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<instanceTest name="attMd007.i">
+<instanceDocument xlink:href="../msData/attribute/test108565_7.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attMd008">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Attributes from xsi ( xml schema instance ) namespace should be validated</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<instanceTest name="attMd008.i">
+<instanceDocument xlink:href="../msData/attribute/test108565_8.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attMd009">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Attributes from xsi ( xml schema instance ) namespace should be validated</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<instanceTest name="attMd009.i">
+<instanceDocument xlink:href="../msData/attribute/test108565_9.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attMd010">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Attributes from xsi ( xml schema instance ) namespace should be validated</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<instanceTest name="attMd010.i">
+<instanceDocument xlink:href="../msData/attribute/test108565_10.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attMd011">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Attributes from xsi ( xml schema instance ) namespace should be validated</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<instanceTest name="attMd011.i">
+<instanceDocument xlink:href="../msData/attribute/test108565_11.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attP001">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Attribute\attribute decl within attribute decl</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attP001">
+<schemaDocument xlink:href="../msData/attribute/attP001.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attP002">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : element decl within attribute decl</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attP002">
+<schemaDocument xlink:href="../msData/attribute/attP002.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attP003">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : global decl can't contain ref</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attP003">
+<schemaDocument xlink:href="../msData/attribute/attP003.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attP004">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : type="my simple type", fixed=conform to the type, and xml instant has the attribute with valid value</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attP004">
+<schemaDocument xlink:href="../msData/attribute/attP004.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attP004.v">
+<instanceDocument xlink:href="../msData/attribute/attP004.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attP005">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : type="my simple type", fixed=conform to the type, and xml instant has the attribute with invalid value</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attP005">
+<schemaDocument xlink:href="../msData/attribute/attP005.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attP005.i">
+<instanceDocument xlink:href="../msData/attribute/attP005.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attP006">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : type="my simple type", fixed=NOT conform to the type</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attP006">
+<schemaDocument xlink:href="../msData/attribute/attP006.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attP007">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : use=required, fixed and default are absent (must appear, value can be anything), instant xml value=36</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attP007">
+<schemaDocument xlink:href="../msData/attribute/attP007.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attP007.v">
+<instanceDocument xlink:href="../msData/attribute/attP007.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attP008">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : use=required, fixed and default are absent (must appear, value can be anything), instant xml attribute absent</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attP008">
+<schemaDocument xlink:href="../msData/attribute/attP008.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attP008.i">
+<instanceDocument xlink:href="../msData/attribute/attP008.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attP009">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : use=required, fixed="37" (must appear once, value must be "37"), instant xml value does not appear</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attP009">
+<schemaDocument xlink:href="../msData/attribute/attP009.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attP009.i">
+<instanceDocument xlink:href="../msData/attribute/attP009.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attP010">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : use=required, fixed="37" (must appear once, value must be "37"), instant xml value =36</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attP010">
+<schemaDocument xlink:href="../msData/attribute/attP010.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attP010.i">
+<instanceDocument xlink:href="../msData/attribute/attP010.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attP011">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : use=required, fixed="37" (must appear once, value must be "37"), instant xml value =37</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attP011">
+<schemaDocument xlink:href="../msData/attribute/attP011.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attP011.v">
+<instanceDocument xlink:href="../msData/attribute/attP011.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attP012">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : use=required, fixed="37" (must appear once, value must be "37"), instant xml value =38</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attP012">
+<schemaDocument xlink:href="../msData/attribute/attP012.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attP012.i">
+<instanceDocument xlink:href="../msData/attribute/attP012.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attP013">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : use=absent, fixed="37" (may appear once, if appear, value must be "37"), instant xml value does not appear (attribute not exist in instant doc)</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attP013">
+<schemaDocument xlink:href="../msData/attribute/attP013.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attP013.v">
+<instanceDocument xlink:href="../msData/attribute/attP013.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attP014">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : use=absent, fixed="37" (may appear once, if appear, value must be "37"), instant xml value =36</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attP014">
+<schemaDocument xlink:href="../msData/attribute/attP014.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attP014.i">
+<instanceDocument xlink:href="../msData/attribute/attP014.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attP015">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : use=absent, fixed="37" (may appear once, if appear, value must be "37"), instant xml value =37</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attP015">
+<schemaDocument xlink:href="../msData/attribute/attP015.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attP015.v">
+<instanceDocument xlink:href="../msData/attribute/attP015.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attP016">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : use=absent, fixed="37" (may appear once, if appear, value must be "37"), instant xml value =38</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attP016">
+<schemaDocument xlink:href="../msData/attribute/attP016.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attP016.i">
+<instanceDocument xlink:href="../msData/attribute/attP016.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attP017">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : use=optional, fixed="37" (may appear once, if appear, value must be "37"), instant xml value does not appear (attribute not exist in instant doc)</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attP017">
+<schemaDocument xlink:href="../msData/attribute/attP017.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attP017.v">
+<instanceDocument xlink:href="../msData/attribute/attP017.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attP018">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : use=optional, fixed="37" (may appear once, if appear, value must be "37"), instant xml value =36</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attP018">
+<schemaDocument xlink:href="../msData/attribute/attP018.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attP018.i">
+<instanceDocument xlink:href="../msData/attribute/attP018.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attP019">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : use=optional, fixed="37" (may appear once, if appear, value must be "37"), instant xml value =37</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attP019">
+<schemaDocument xlink:href="../msData/attribute/attP019.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attP019.v">
+<instanceDocument xlink:href="../msData/attribute/attP019.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attP020">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : use=optional, fixed="37" (may appear once, if appear, value must be "37"), instant xml value =38</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attP020">
+<schemaDocument xlink:href="../msData/attribute/attP020.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attP020.i">
+<instanceDocument xlink:href="../msData/attribute/attP020.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attP021">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : use=absent, default="37" (may appear once, may have any value), instant xml value does not appear (this will have the default attribute and value)</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attP021">
+<schemaDocument xlink:href="../msData/attribute/attP021.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attP021.v">
+<instanceDocument xlink:href="../msData/attribute/attP021.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attP022">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : use=absent, default="37" (may appear once, may have any value), instant xml value=37</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attP022">
+<schemaDocument xlink:href="../msData/attribute/attP022.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attP022.v">
+<instanceDocument xlink:href="../msData/attribute/attP022.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attP023">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : use=absent, default="37" (may appear once, may have any value), instant xml value=38</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attP023">
+<schemaDocument xlink:href="../msData/attribute/attP023.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attP023.v">
+<instanceDocument xlink:href="../msData/attribute/attP023.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attP024">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : use=optional, default="37" (may appear once, may have any value), instant xml value does not appear (this will have the default attribute and value)</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attP024">
+<schemaDocument xlink:href="../msData/attribute/attP024.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attP024.v">
+<instanceDocument xlink:href="../msData/attribute/attP024.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attP025">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : use=optional, default="37" (may appear once, may have any value), instant xml value=37</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attP025">
+<schemaDocument xlink:href="../msData/attribute/attP025.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attP025.v">
+<instanceDocument xlink:href="../msData/attribute/attP025.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attP026">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : use=optional, default="37" (may appear once, may have any value), instant xml value=38</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attP026">
+<schemaDocument xlink:href="../msData/attribute/attP026.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attP026.v">
+<instanceDocument xlink:href="../msData/attribute/attP026.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attP027">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : name='foo' use=optional, default="37" (may appear once, may have any value) name='foo1', instant xml value=38</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attP027">
+<schemaDocument xlink:href="../msData/attribute/attP027.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attP027.i">
+<instanceDocument xlink:href="../msData/attribute/attP027.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attP028">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : use=prohibited, default="37" (must not appear in xml instant, attribute does not appear in the instant XML (attribute not exist in instant doc)</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attP028">
+<schemaDocument xlink:href="../msData/attribute/attP028.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attP028.v">
+<instanceDocument xlink:href="../msData/attribute/attP028.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attP029">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : use=prohibited, fixed="37" (must not appear in xml instant, attribute does not appear in the instant XML (attribute not exist in instant doc)</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attP029">
+<schemaDocument xlink:href="../msData/attribute/attP029.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attP029.v">
+<instanceDocument xlink:href="../msData/attribute/attP029.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attP030">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : use=prohibited, default="37" (must not appear in xml instant, attribute does appear in the instant XML (attribute not exist in instant doc)</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attP030">
+<schemaDocument xlink:href="../msData/attribute/attP030.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attP031">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : use=prohibited, fixed="37" (must not appear in xml instant, attribute does appear in the instant XML (attribute not exist in instant doc)</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attP031">
+<schemaDocument xlink:href="../msData/attribute/attP031.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attP031.i">
+<instanceDocument xlink:href="../msData/attribute/attP031.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attP032">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Test that attributes from imported schema (global, attribute Group, complexTyped and simpleTyped) are recognized</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attP032">
+<schemaDocument xlink:href="../msData/attribute/attP032.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attP032.v">
+<instanceDocument xlink:href="../msData/attribute/attP032.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attQ001">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : parent is complexType, Attr Decl before simpleContent</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attQ001">
+<schemaDocument xlink:href="../msData/attribute/attQ001.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attQ002">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : parent is complexType, Attr Decl before complexContent</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attQ002">
+<schemaDocument xlink:href="../msData/attribute/attQ002.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attQ003">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : parent is complexType, Attr Decl, followed by Attr Group, follow by Attr</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attQ003">
+<schemaDocument xlink:href="../msData/attribute/attQ003.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attQ003.v">
+<instanceDocument xlink:href="../msData/attribute/attQ003.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attQ004">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Attr Decl before annotation</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attQ004">
+<schemaDocument xlink:href="../msData/attribute/attQ004.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attQ005">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Parent is schema, and name is absent</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attQ005">
+<schemaDocument xlink:href="../msData/attribute/attQ005.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attQ006">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Attribute\attribute decl with child of node other than notation and simpleType, child=complexType</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attQ006">
+<schemaDocument xlink:href="../msData/attribute/attQ006.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attQ007">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : two attribute decl with the same name, one follow the other in global</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attQ007">
+<schemaDocument xlink:href="../msData/attribute/attQ007.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attQ008">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : two attribute decl with the same name, one inside attribute Group and other is a reference to global attribute</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attQ008">
+<schemaDocument xlink:href="../msData/attribute/attQ008.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attQ009">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : two attribute decl with the same name, one from local one from referenced attribute Group</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attQ009">
+<schemaDocument xlink:href="../msData/attribute/attQ009.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attQ010">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : two attribute decl with the same name, one from global, one from from imported XSD with different namespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attQ010">
+<schemaDocument xlink:href="../msData/attribute/attQ010.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attQ011">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : two attribute decl with the same name, one from global, one from from redefine XSD with same namespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attQ011">
+<schemaDocument xlink:href="../msData/attribute/attQ011.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attQ012">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : two attribute decl with the same name, one from global, one from included XSD</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attQ012">
+<schemaDocument xlink:href="../msData/attribute/attQ012.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attQ013">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : two attribute decl with the same name, reference from different attributeGroup</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attQ013">
+<schemaDocument xlink:href="../msData/attribute/attQ013.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attQ014">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Attribute\attribute decl under extension element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attQ014">
+<schemaDocument xlink:href="../msData/attribute/attQ014.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attQ014.v">
+<instanceDocument xlink:href="../msData/attribute/attQ014.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attQ015">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : two attribute decl with same id, one under attribute group and, one in element.</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attQ015">
+<schemaDocument xlink:href="../msData/attribute/attQ015.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attQ016">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : two attribute decl with same id, one under attribute group and, one from imported xsd</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attQ016">
+<schemaDocument xlink:href="../msData/attribute/attQ016.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attQ017">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : two attribute decl with same id, one in complex type and, one redefine</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attQ017">
+<schemaDocument xlink:href="../msData/attribute/attQ017.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attQ018">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : two attribute decl with same id, one in element and one from included</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attQ018">
+<schemaDocument xlink:href="../msData/attribute/attQ018.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attQ019">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : two attribute, same loca name, from different namespace on same element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attQ019">
+<schemaDocument xlink:href="../msData/attribute/attQ019.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attQ019.v">
+<instanceDocument xlink:href="../msData/attribute/attQ019.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attZ001">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : Redefine and restriction of attribute</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attZ001">
+<schemaDocument xlink:href="../msData/attribute/attZ001.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attZ001.i">
+<instanceDocument xlink:href="../msData/attribute/attZ001.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attZ002">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : prohibited attribute</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attZ002">
+<schemaDocument xlink:href="../msData/attribute/attZ002.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attZ002.v">
+<instanceDocument xlink:href="../msData/attribute/attZ002.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attZ004">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : XSD: attribute with default value, that references a global attribute with invalid default value</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attZ004">
+<schemaDocument xlink:href="../msData/attribute/attZ004.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attZ005">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : XSD: default value of attribute</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attZ005">
+<schemaDocument xlink:href="../msData/attribute/attZ005.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attZ005.v">
+<instanceDocument xlink:href="../msData/attribute/attZ005.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attZ006">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : XSD:Base complex type with attribute use=required should not have derived type with attribute use=optional</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attZ006">
+<schemaDocument xlink:href="../msData/attribute/attZ006.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attZ007v">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : XSD: insertion of prohibited attribute in a derived type</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attZ007v">
+<schemaDocument xlink:href="../msData/attribute/attZ007.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attZ007v.v">
+<instanceDocument xlink:href="../msData/attribute/attZ007v.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attZ007i">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : XSD: insertion of prohibited attribute in a derived type</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attZ007i">
+<schemaDocument xlink:href="../msData/attribute/attZ007.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attZ007i.i">
+<instanceDocument xlink:href="../msData/attribute/attZ007i.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attZ008_a">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : XSD: fixed attribute value in derived type should be same as base type</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attZ008_a">
+<schemaDocument xlink:href="../msData/attribute/attZ008_a.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attZ008_b">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : XSD: fixed attribute value in derived type should be same as base type(2)</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attZ008_b">
+<schemaDocument xlink:href="../msData/attribute/attZ008_b.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attZ008_c">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : XSD: fixed attribute value in derived type should be same as base type(3)</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attZ008_c">
+<schemaDocument xlink:href="../msData/attribute/attZ008_c.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attZ008_d">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : XSD: fixed attribute value in derived type should be same as base type(4)</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attZ008_d">
+<schemaDocument xlink:href="../msData/attribute/attZ008_d.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attZ008_e">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : XSD: fixed attribute value in derived type should be same as base type(5)</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attZ008_e">
+<schemaDocument xlink:href="../msData/attribute/attZ008_e.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attZ008_f">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : XSD: fixed attribute value in derived type should be same as base type(6)</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attZ008_f">
+<schemaDocument xlink:href="../msData/attribute/attZ008_f.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attZ008_g">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : XSD: fixed attribute value in derived type should be same as base type(7)</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attZ008_g">
+<schemaDocument xlink:href="../msData/attribute/attZ008_g.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attZ008_h">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : XSD: fixed attribute value in derived type should be same as base type(8)</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attZ008_h">
+<schemaDocument xlink:href="../msData/attribute/attZ008_h.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attZ009">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : when more than one xsi attribute encountered in an invalid file</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attZ009">
+<schemaDocument xlink:href="../msData/attribute/attZ009.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attZ009.i">
+<instanceDocument xlink:href="../msData/attribute/attZ009.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attZ010a">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : XSD targetNamespace attribute's type should be anyURI</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attZ010a">
+<schemaDocument xlink:href="../msData/attribute/attZ010a.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attZ010b">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : XSD targetNamespace attribute's type should be anyURI</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attZ010b">
+<schemaDocument xlink:href="../msData/attribute/attZ010b.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attZ010c">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : XSD targetNamespace attribute's type should be anyURI</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attZ010c">
+<schemaDocument xlink:href="../msData/attribute/attZ010c.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attZ011">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : XSD: if a base attribute is required, then the derived attribute, if present, must have use required as well</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attZ011">
+<schemaDocument xlink:href="../msData/attribute/attZ011.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attZ012">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : XSD: a required base attributer can not be prohibited in the derived type</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attZ012">
+<schemaDocument xlink:href="../msData/attribute/attZ012.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attZ013a">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : XSD: attribute and element declarations can not have a value constraint if it type is ID</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attZ013a">
+<schemaDocument xlink:href="../msData/attribute/attZ013a.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attZ013b">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : XSD: attribute and element declarations can not have a value constraint if it type is derived from ID</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attZ013b">
+<schemaDocument xlink:href="../msData/attribute/attZ013b.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="attZ014a">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : XSD: No more than one attribute of type ID should be validated per Element(1)</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attZ014a">
+<schemaDocument xlink:href="../msData/attribute/attZ014a.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attZ014a.i">
+<instanceDocument xlink:href="../msData/attribute/attZ014a.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attZ014b">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : XSD: No more than one attribute of type ID should be validated per Element(2)</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attZ014b">
+<schemaDocument xlink:href="../msData/attribute/attZ014b.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attZ014b.i">
+<instanceDocument xlink:href="../msData/attribute/attZ014b.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="attZ015">
+<annotation>
+<documentation>TEST :Syntax Checking for Attribute Declaration (form) : XSD: a prohibited attribute should not be in the attribute uses of an attributeGroup</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#cAttribute_Declarations"/>
+<schemaTest name="attZ015">
+<schemaDocument xlink:href="../msData/attribute/attZ015.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="attZ015.v">
+<instanceDocument xlink:href="../msData/attribute/attZ015.xml"/>
+<expected validity="valid"/>
+<current bugzilla="http://www.w3.org/Bugs/Public/show_bug.cgi?id=4043" status="queried" date="2006-12-22"/>
+<prior status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+</testSet>

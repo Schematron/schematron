@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:complexType name="myCT" mixed="true">
+		<xsd:all>
+			<xsd:element name="myElement" minOccurs="0" maxOccurs="0"/>
+		</xsd:all>
+	</xsd:complexType>
+	<xsd:complexType name="myType">
+		<xsd:simpleContent>
+			<xsd:extension base="myCT"/>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="fooType">
+		<xsd:simpleContent>
+			<xsd:restriction base="myType">
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+</xsd:schema>

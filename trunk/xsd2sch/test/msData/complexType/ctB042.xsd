@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:group name="myGroup">
+		<xs:sequence>
+			<xs:element name="myElement" type="xs:string"/>
+		</xs:sequence>
+	</xs:group>
+	<xs:attributeGroup name="myAttrGroup">
+		<xs:attribute name="attrTest"/>
+	</xs:attributeGroup>
+	<xs:attributeGroup name="myAttrGroup2">
+		<xs:attribute name="attrTest2"/>
+	</xs:attributeGroup>
+	<xs:complexType name="fooType">
+		<xs:group ref="myGroup"/>
+		<xs:attributeGroup ref="myAttrGroup"/>
+		<xs:attributeGroup ref="myAttrGroup2"/>
+	</xs:complexType>
+	<xs:element name="root" type="fooType"/>
+</xs:schema>

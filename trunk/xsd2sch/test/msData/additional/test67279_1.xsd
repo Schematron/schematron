@@ -1,0 +1,11 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="unqualified"
+    attributeFormDefault="unqualified"
+    targetNamespace="aa"
+>
+
+<xsd:import namespace="common" schemaLocation="test67279_3.xsd"/>
+
+<xsd:element name="t1" />
+
+</xsd:schema>

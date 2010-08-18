@@ -1,0 +1,15 @@
+<root
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="addB078.xsd"
+>
+<elt 
+	att="val" att1="123" att2="A1"
+	att3="val" att4="val" att5="val" 
+	att6="val" att7="val" att8="val" 
+/>
+<elt1
+	att="val" att1="123" att2="A2"
+	att3="val" att4="val" att5="val" 
+	att6="val" att7="val" att8="val" att9="val" 
+/>
+</root>

@@ -1,0 +1,8 @@
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="idZ005.xsd">
+	<a att_a="a">
+		<bs>
+		<b att_b="a"/>
+		</bs>
+		<c/>
+	</a>
+</root>

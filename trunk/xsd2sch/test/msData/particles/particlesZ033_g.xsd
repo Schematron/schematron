@@ -1,0 +1,62 @@
+<xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema' >
+
+  <xsd:complexType name='fooType' > 
+    <xsd:sequence minOccurs="557" maxOccurs="6000">
+
+      <xsd:sequence minOccurs="56" maxOccurs="100">
+	     <xsd:element name='e1' minOccurs="7922" maxOccurs="10000"/>
+	     <xsd:element name='e2' />
+      </xsd:sequence>
+
+      <xsd:element name='e2' />
+
+      <xsd:choice minOccurs="1" maxOccurs="1">
+	     <xsd:element name='e3' minOccurs="5" maxOccurs="5"/>
+	     <xsd:element name='e4' maxOccurs="6000">  	
+		<xsd:complexType>
+			<xsd:choice>
+			<xsd:sequence>
+				     <xsd:element name='e3' type="xsd:token" minOccurs="2" maxOccurs="5"/>
+				     <xsd:element ref='m1' minOccurs="3" maxOccurs="6"/>
+				     <xsd:any/>
+			</xsd:sequence>
+			<xsd:choice>
+				     <xsd:element ref='m1' minOccurs="36524" maxOccurs="6545657"/>
+				     <xsd:element minOccurs="3" maxOccurs="6" name="m2">
+					<xsd:complexType>
+						<xsd:choice>
+						<xsd:sequence>
+						     <xsd:element name='e3' type="xsd:token" minOccurs="2" maxOccurs="5"/>
+						     <xsd:element ref='m1' minOccurs="1" maxOccurs="6"/>
+						     <xsd:any/>
+						</xsd:sequence>
+						<xsd:choice>
+						     <xsd:element minOccurs="36524" maxOccurs="6545657" name="m3">
+							<xsd:complexType>
+							<xsd:choice>
+							<xsd:element name="m1" minOccurs="0" maxOccurs="45678363" />
+							<xsd:element name="e2" maxOccurs="45678363" />
+							<xsd:element name="e3" maxOccurs="45678363" />
+							<xsd:element name="e4" maxOccurs="45678363" />
+							<xsd:element name="e5" maxOccurs="45678363" />
+							<xsd:element name="e6" maxOccurs="45678363" />
+							</xsd:choice>
+							</xsd:complexType>
+						     </xsd:element>
+						     <xsd:element ref='head' minOccurs="3" maxOccurs="6"/>
+						</xsd:choice>
+						</xsd:choice>
+					</xsd:complexType>
+				     </xsd:element>
+			</xsd:choice>
+			</xsd:choice>
+		</xsd:complexType>
+	     </xsd:element>    
+      </xsd:choice>
+      </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:element name="head" />
+  <xsd:element name="m1" substitutionGroup="head"/>
+
+</xsd:schema>

@@ -1,0 +1,10 @@
+<?xml version='1.0'?>
+<root xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+       xsi:noNamespaceSchemaLocation="anyURI.xsd" >
+  <complexTest>
+  <!-- value=telnet://melvyl.ucop.edu/ -->
+    <comp_foo>telnet://melvyl.ucop.edu/</comp_foo>
+  </complexTest>
+ 
+  <simpleTest>telnet://melvyl.ucop.edu/</simpleTest>
+</root>

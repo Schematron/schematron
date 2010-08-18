@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:group name="A">
+		<xsd:sequence>
+			<xsd:element name="d1"/>
+			<xsd:element name="d2"/>
+		</xsd:sequence>
+		<xsd:sequence>
+			<xsd:element name="c1"/>
+			<xsd:element name="c2"/>
+		</xsd:sequence>
+	</xsd:group>
+	<xsd:element name="elem">
+		<xsd:complexType>
+			<xsd:group ref="A"/>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="doc">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="elem"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

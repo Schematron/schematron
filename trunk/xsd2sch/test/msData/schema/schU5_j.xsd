@@ -1,0 +1,11 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+elementFormDefault="qualified" targetNamespace="ns-b" xmlns="ns-b">
+
+	<xsd:redefine schemaLocation="schU5_k.xsd">
+		<xsd:attributeGroup name="k-g1">
+			<xsd:attribute name="k1" type="xsd:decimal"/>
+			<xsd:attribute name="k2" type="xsd:decimal"/>
+		</xsd:attributeGroup>
+  	</xsd:redefine> 
+	
+</xsd:schema>

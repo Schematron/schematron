@@ -1,0 +1,10 @@
+<?xml version='1.0'?>
+<root xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+       xsi:noNamespaceSchemaLocation="duration027.xsd" >
+  <!-- Test for simpleType of duration-->
+  <complexTest>
+    <comp_foo>P2000Y2M29DT10H30M</comp_foo>
+  </complexTest>
+ 
+  <simpleTest>P2000Y2M29DT10H30M</simpleTest>
+</root>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<xs:schema
+			targetNamespace="urn:schemas-microsoft-com:xml-analysis:mddataset"
+			elementFormDefault="qualified"
+			xmlns="urn:schemas-microsoft-com:xml-analysis:mddataset"
+			xmlns:xads="urn:schemas-microsoft-com:xml-analysis:mddataset"
+			xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:include schemaLocation="schZ006_b.xsd"/>
+
+	<xs:import namespace="http://www.w3.org/2001/XMLSchema"/>
+
+	<xs:group name="GCustomDimProps">
+		<xs:sequence/>
+	</xs:group>
+	
+	<xs:group name="GCustomCellProps">
+		<xs:sequence/>
+	</xs:group>
+	
+	<xs:complexType name="MemberType">
+		<xs:sequence>
+			<xs:element name="UName"	type="xs:string"/>
+			<xs:element name="Caption"	type="xs:string"/>
+			<xs:element name="LName"	type="xs:string"/>
+			<xs:element name="LNum"		type="xs:unsignedInt"/>
+			<xs:group ref="GCustomDimProps"/>
+		</xs:sequence>
+		<xs:attribute name="Hierarchy" type="xs:string"/>
+	</xs:complexType>
+	
+	<xs:complexType name="PropType">
+		<xs:attribute name="name" type="xs:string"/>
+	</xs:complexType>
+	<xs:element abstract="true" name="ECustomDimPropType"	/>
+	<xs:element abstract="true" name="ECustomCellPropType"	type="PropType"/>
+	
+	<xs:complexType name="TupleType">
+		<xs:sequence>
+			<xs:element name="Member" type="MemberType" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="MembersType">
+		<xs:sequence>
+			<xs:element name="Member" type="MemberType" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="Hierarchy" type="xs:string"/>
+	</xs:complexType>
+	
+	<xs:complexType name="TuplesType">
+		<xs:sequence>
+			<xs:element name="Tuple" type="TupleType" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="CrossProductType">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="Members" type="MembersType"/>
+			<xs:element name="Tuples" type="TuplesType"/>
+		</xs:choice>
+	</xs:complexType>
+	
+	<xs:complexType name="OlapInfo">
+		<xs:sequence>
+			<xs:element name="AxesInfo">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="AxisInfo" maxOccurs="unbounded">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="HierarchyInfo" minOccurs="0" maxOccurs="unbounded">
+										<xs:complexType>
+											<xs:sequence>
+												<xs:element name="UName"	type="PropType"/>
+												<xs:element name="Caption"	type="PropType"/>
+												<xs:element name="LName"	type="PropType"/>
+												<xs:element name="LNum"		type="PropType"/>
+												<xs:element ref="ECustomDimPropType" minOccurs="0" maxOccurs="unbounded"/>
+											</xs:sequence>
+											<xs:attribute name="name" type="xs:string"/>
+										</xs:complexType>
+									</xs:element>
+								</xs:sequence>
+								<xs:attribute name="name" type="xs:string"/>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="CellInfo">
+				<xs:complexType>
+					<xs:choice minOccurs="0" maxOccurs="unbounded">
+						<xs:element name="Value"		type="PropType"/>
+						<xs:element name="FmtValue"		type="PropType"/>
+						<xs:element name="BackColor"	type="PropType"/>
+						<xs:element name="ForeColor"	type="PropType"/>
+						<xs:element ref="ECustomCellPropType"/>
+					</xs:choice>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="Axes">
+		<xs:sequence>
+			<xs:element name="Axis" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:choice>
+						<xs:element name="CrossProduct" type="CrossProductType" minOccurs="0" maxOccurs="unbounded"/>
+						<xs:element name="Tuples" type="TuplesType"/>
+						<xs:element name="Members" type="MembersType"/>
+					</xs:choice>
+					<xs:attribute name="name" type="xs:string"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="CellData">
+		<xs:sequence>
+			<xs:element name="Cell" minOccurs="0" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element minOccurs="0" nillable="true" name="Value"/>
+						<xs:element minOccurs="0" nillable="true" name="FmtValue"	type="xs:string" />
+						<xs:element minOccurs="0" nillable="true" name="BackColor"	type="xs:unsignedInt" />
+						<xs:element minOccurs="0" nillable="true" name="ForeColor"	type="xs:unsignedInt" />
+						<xs:group ref="GCustomCellProps"/>
+					</xs:sequence>
+					<xs:attribute name="CellOrdinal" type="xs:unsignedInt"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:element name="root">
+		<xs:complexType>
+			<xs:sequence>
+				<!--xs:element ref="xs:schema" minOccurs="0"/-->
+				<xs:any namespace="http://www.w3.org/2001/XMLSchema" processContents="strict" minOccurs="0"/>
+				<xs:sequence minOccurs="0">
+					<xs:element name="OlapInfo" type="OlapInfo"/>
+					<xs:element name="Axes" type="Axes"/>
+					<xs:element name="CellData" type="CellData"/>
+				</xs:sequence>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>

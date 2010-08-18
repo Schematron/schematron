@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="doc" type="foo"/>
+	<xsd:complexType name="foo">
+		<xsd:choice>
+			<xsd:choice>
+				<xsd:element name="c1"/>
+			</xsd:choice>
+			<xsd:annotation>
+				<xsd:documentation>This should fail</xsd:documentation>
+			</xsd:annotation>
+		</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

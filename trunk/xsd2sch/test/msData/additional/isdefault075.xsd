@@ -1,0 +1,10 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+ <xsd:element name="root" default="abc">
+ <xsd:complexType mixed="true">
+  <xsd:sequence minOccurs="0">
+   <xsd:element name="e1" />
+   <xsd:element name="e2" />
+  </xsd:sequence>
+ </xsd:complexType>
+ </xsd:element>
+</xsd:schema>

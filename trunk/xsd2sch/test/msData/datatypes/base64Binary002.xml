@@ -1,0 +1,10 @@
+<?xml version='1.0'?>
+<root xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+       xsi:noNamespaceSchemaLocation="base64Binary002.xsd" >
+  <!-- test for simpleType list of base64Binary -->
+  <complexTest>
+    <comp_foo>AQID</comp_foo>
+  </complexTest>
+ 
+  <simpleTest>AQID</simpleTest>
+</root>

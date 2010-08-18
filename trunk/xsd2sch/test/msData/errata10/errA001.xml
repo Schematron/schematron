@@ -1,0 +1,19 @@
+<a:root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.tempuri.org errA001.xsd"
+	xmlns:a="http://www.tempuri.org"
+>
+	<testByte>-100</testByte>
+	<testUnsignedByte>100</testUnsignedByte>
+	<testInteger>-32000</testInteger>
+	<testPositiveInteger>50000</testPositiveInteger>
+	<testNegativeInteger>-50000</testNegativeInteger>
+	<testNonNegativeInteger>50000</testNonNegativeInteger>
+	<testNonPositiveInteger>-50000</testNonPositiveInteger>
+	<testInt>-32000</testInt>
+	<testUnsignedInt>50000</testUnsignedInt>
+	<testLong>-123456789012345</testLong>
+	<testUnsignedLong>12345789012345</testUnsignedLong>
+	<testShort>-12345</testShort>
+	<testUnsignedShort>12345</testUnsignedShort>
+	<testDecimal>123456789.12345</testDecimal>
+</a:root>

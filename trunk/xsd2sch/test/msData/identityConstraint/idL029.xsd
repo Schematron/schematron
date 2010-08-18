@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="myNS.tempuri.org" xmlns:myNS="myNS.tempuri.org" xmlns="myNS.tempuri.org">
+	<xsd:element name="root">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="t" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+		<xsd:key id="foo123" name="tableu">
+			<xsd:selector xpath=".//myNS:t"/>
+			<xsd:field xpath="child::myNS:row"/>
+		</xsd:key>
+	</xsd:element>
+	<xsd:element name="t" type="ttype"/>
+	<xsd:complexType name="ttype">
+		<xsd:sequence>
+			<xsd:element name="row" type="xsd:string" maxOccurs="unbounded"/>
+		</xsd:sequence>
+		<xsd:attribute name="col" type="xsd:string"/>
+	</xsd:complexType>
+</xsd:schema>

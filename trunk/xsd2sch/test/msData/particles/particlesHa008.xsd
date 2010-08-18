@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://xsdtesting" xmlns:x="http://xsdtesting" elementFormDefault="qualified">
+	<xsd:group name="P">
+		<xsd:sequence>
+			<xsd:group ref="x:Q" minOccurs="0">
+			</xsd:group>
+		</xsd:sequence>
+	</xsd:group>
+	<xsd:group name="Q">
+		<xsd:choice minOccurs="0"/>
+	</xsd:group>
+</xsd:schema>

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:attributeGroup name="myAttrGrp">
+		<xsd:attribute name="myAttr1"/>
+		<xsd:attribute name="myAttr2"/>
+	</xsd:attributeGroup>
+	<xsd:complexType name="fooType">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string"/>
+		</xsd:simpleContent>
+		<xsd:attributeGroup ref="myAttrGrp"/>
+	</xsd:complexType>
+</xsd:schema>

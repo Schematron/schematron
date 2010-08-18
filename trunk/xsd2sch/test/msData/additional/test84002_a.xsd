@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	targetNamespace=""
+	xmlns:f=""
+
+	elementFormDefault="unqualified"
+>
+
+  <xsd:element name="a" >
+     <xsd:complexType>
+	<xsd:sequence>
+		<xsd:any namespace=""/>
+	</xsd:sequence>
+     </xsd:complexType>
+  </xsd:element>
+
+</xsd:schema>

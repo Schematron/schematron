@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:attributeGroup name="testAttrGroup">
+		<xsd:attribute value="attrTest"/>
+	</xsd:attributeGroup>
+	<xsd:simpleType name="fooType">
+		<xsd:restriction base="xsd:integer">
+			<xsd:attributeGroup ref="testAttrGroup"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

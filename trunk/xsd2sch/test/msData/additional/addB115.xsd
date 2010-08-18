@@ -1,0 +1,18 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+	attributeFormDefault="qualified"
+>
+
+	<xs:element name="root" type="r" />
+
+	<xs:complexType name="r">
+		<xs:choice>
+			<xs:element name="foo" type="t1" />
+		</xs:choice>
+	</xs:complexType>
+
+
+	<xs:complexType name="t1">
+		<xs:attribute name="a" fixed="foo" />
+	</xs:complexType>
+
+</xs:schema>

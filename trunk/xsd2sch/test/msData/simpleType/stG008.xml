@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="stG008.xsd">
+	<fooTest>
+	10	20	55
+  </fooTest>
+</root>

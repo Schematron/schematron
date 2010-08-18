@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SchemaC" targetNamespace="urn:my.test:SchemaC" elementFormDefault="qualified" xmlns="urn:my.test:SchemaC" xmlns:mstns="urn:my.test:SchemaC" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:A="urn:my.test:SchemaA">
+    <xs:import namespace="urn:my.test:SchemaA" schemaLocation="particlesZ025a.xsd">
+    </xs:import>
+    <xs:element name="root">
+        <xs:complexType>
+            <xs:sequence minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="child" type="A:BaseObject">
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="urn:y" xmlns="urn:y">
+
+<xs:import namespace="urn:u"/>
+ 
+  <xs:complexType name="yType">
+	<xs:sequence>
+		<xs:element name="yId" type="xs:string"/>
+		<xs:element name="yName" type="xs:string"/>
+	</xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="yElem" type="yType"/>
+
+</xs:schema>

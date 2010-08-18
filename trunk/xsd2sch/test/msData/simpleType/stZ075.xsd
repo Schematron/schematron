@@ -1,0 +1,13 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="a" xmlns="a">
+
+	<xs:notation name="x" public="a"/>
+
+	<xs:simpleType name="type">
+		<xs:restriction base="xs:NOTATION">
+			<xs:enumeration value="x" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:element name="doc" type="type"/>
+
+</xs:schema>

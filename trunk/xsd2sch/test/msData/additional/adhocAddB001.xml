@@ -1,0 +1,10 @@
+<a:root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="ns-a adhocAddB001.xsd"
+	xmlns:a="ns-a"
+>
+	<a:abc>
+		<x/>
+		<x/>
+	</a:abc>
+
+</a:root>

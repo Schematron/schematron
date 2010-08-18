@@ -1,0 +1,3 @@
+<foo:root xmlns:foo="foo">
+	<foo:elem/>
+</foo:root>

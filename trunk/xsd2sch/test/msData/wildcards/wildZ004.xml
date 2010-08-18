@@ -1,0 +1,8 @@
+<x:root_elem 
+	xmlns:x="http://xsdtesting" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xsdtesting wildZ004.xsd" 
+    >
+
+	<x:myelem xsi:type="x:ctype_foo"><a>hello</a></x:myelem>
+</x:root_elem>

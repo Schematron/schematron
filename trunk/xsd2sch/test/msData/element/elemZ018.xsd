@@ -1,0 +1,195 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+	<xsd:element name="root">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="aaa" minOccurs="1"/>
+			</xsd:sequence>
+			<xsd:anyAttribute processContents="lax" namespace="http://www.w3.org/XML/1998/namespace"/>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="aaa">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="bbb" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="bbb">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="ccc" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ccc">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="ddd" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ddd">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="eee" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="eee">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="fff" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="fff">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="ggg" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ggg">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="hhh" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="hhh">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="iii" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="iii">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="jjj" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="jjj">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="kkk" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="kkk">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="lll" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="lll">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="mmm" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="mmm">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="nnn" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="nnn">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="ooo" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ooo">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="ppp" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ppp">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="qqq" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="qqq">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="rrr" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="rrr">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="sss" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="sss">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="ttt" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ttt">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="uuu" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="uuu">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="www" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="www">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="xxx" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="xxx">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="yyy" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="yyy">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="zzz" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="zzz">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="signatures" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:element name="signatures">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2000/09/xmldsig#" processContents="lax"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

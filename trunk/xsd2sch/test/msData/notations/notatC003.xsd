@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:notation name="jpeg" public="image/jpeg" system="http://www.w3.org/TR/Schema-0/"/>
+</xsd:schema>

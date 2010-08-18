@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:foo="foo">
+	<xsd:attribute name="gTest">
+		<xsd:annotation/>
+	</xsd:attribute>
+	<xsd:element name="test">
+		<xsd:complexType>
+			<xsd:attribute name="test">
+				<xsd:annotation/>
+			</xsd:attribute>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

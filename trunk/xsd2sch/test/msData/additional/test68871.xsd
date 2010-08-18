@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema targetNamespace = "sample"
+            xmlns           = "sample"
+            xmlns:xsd       = "http://www.w3.org/2001/XMLSchema"
+            xmlns:a           = "sample"
+
+>
+
+  <!-- a simple type restricting the value to a positive integer less than 72 -->
+  <xsd:simpleType name="fontbynumber">
+    <xsd:restriction base="xsd:positiveInteger">
+      <xsd:maxInclusive value="72"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <!-- a simple type restricting the value to a string with one of two values -->
+  <xsd:simpleType name="fontbystringname">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="small"/>
+      <xsd:enumeration value="big"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <!-- a simple type which combines and allows the use of either of the above types -->
+  <xsd:attribute name="fontsize">
+    <xsd:simpleType>
+      <xsd:union memberTypes="fontbynumber fontbystringname" />
+    </xsd:simpleType>
+  </xsd:attribute>
+
+</xsd:schema>

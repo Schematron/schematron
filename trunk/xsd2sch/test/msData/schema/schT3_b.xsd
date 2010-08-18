@@ -1,0 +1,43 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+targetNamespace="ns-a"
+xmlns="ns-a"
+elementFormDefault="qualified"
+>
+
+	<xsd:attributeGroup name="b-g2">
+			<xsd:attribute name="att1" />
+			<xsd:attribute name="att2" />
+			<xsd:attribute name="att3" />
+			<xsd:attribute name="att4" />
+
+			<xsd:attribute name="att5" use="optional"/>
+			<xsd:attribute name="att6" use="optional"/>
+			<xsd:attribute name="att7" use="optional"/>
+			<xsd:attribute name="att8" use="optional"/>
+
+			<xsd:attribute name="att9" use="required"/>
+			<xsd:attribute name="att10" use="prohibited"/>
+
+			<xsd:attribute name="att11" type="b-st"/>
+			
+			<xsd:attribute name="att12" />
+			<xsd:attribute name="att13" />
+			<xsd:attribute name="att14" default="abc"/>
+			<xsd:attribute name="att15" default="a"/>
+			<xsd:attribute name="att16" fixed="fix"/>
+		
+	</xsd:attributeGroup>
+
+	<xsd:simpleType name="b-st">
+		<xsd:restriction base="xsd:int">
+			<xsd:totalDigits value="2"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:complexType name="b-ct">
+		<xsd:attributeGroup ref="b-g2"/>
+	</xsd:complexType>	
+			
+	<xsd:element name="b-e1" type="b-ct"/>
+
+</xsd:schema>

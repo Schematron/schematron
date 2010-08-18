@@ -1,0 +1,5 @@
+<a:doc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xsdtesting particlesOb015.xsd foo particlesOb015b.xsd" xmlns:a="http://xsdtesting" xmlns:foo="foo">
+	<elem>
+		<foo:foo><foo:e1/></foo:foo>
+	</elem>
+</a:doc>

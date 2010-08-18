@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="idF024.xsd" xmlns:import2="importNS">
+	<t val="1">
+		<import2:r> 1 </import2:r>
+	</t>
+	<t val="2">
+		<import2:r> 2 </import2:r>
+	</t>
+	<t val="3">
+		<import2:r> 3 </import2:r>
+	</t>
+</root>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:simpleType name="myType">
+		<xsd:restriction base="xsd:string"/>
+	</xsd:simpleType>
+
+	<xsd:complexType name="mytype1">
+		<xsd:simpleContent>
+			<xsd:extension base="myType">
+				<xsd:attribute ref="attrTest1"/>
+				<xsd:attribute ref="attrTest2"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="fooType">
+		<xsd:simpleContent>
+			<xsd:restriction base="mytype1">
+				<xsd:attribute ref="attrTest1"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:attribute name="attrTest1"  type ="xsd:int" />
+	<xsd:attribute name="attrTest2"  type="xsd:ID" />
+
+</xsd:schema>

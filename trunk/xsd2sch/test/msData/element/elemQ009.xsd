@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="root">
+		<xsd:complexType>
+			<xsd:all>
+				<xsd:element ref="fooTest"/>
+			</xsd:all>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="fooTest" type="fooType"/>
+	<xsd:simpleType name="fooType">
+		<xsd:restriction base="xsd:NMTOKEN"/>
+	</xsd:simpleType>
+</xsd:schema>

@@ -1,0 +1,16 @@
+<tns:foo 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://xsdtesting wildI007.xsd"
+xmlns:tns="http://xsdtesting"
+>
+
+	<a:b xmlns:a="a">test</a:b>
+	<a:b xmlns:a="b">test</a:b>
+	<a:bar xmlns:a="http://xsdtesting">test</a:bar>
+	<local xmlns="other"/>
+	<a:b xmlns:a="a">test</a:b>
+	<a:b xmlns:a="b">test</a:b>
+	<a:bar xmlns:a="http://xsdtesting">test</a:bar>
+	<local xmlns="other"/>
+
+</tns:foo>

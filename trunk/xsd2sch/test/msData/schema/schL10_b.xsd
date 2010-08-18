@@ -1,0 +1,38 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+elementFormDefault="qualified"
+>
+       <xsd:redefine schemaLocation="schL10_c.xsd">
+		<xsd:group name="b-g3">
+			<xsd:sequence>
+				<xsd:element name="c31" type="xsd:int" maxOccurs="7"/>
+				<xsd:element name="c32" type="xsd:int" maxOccurs="3"/>
+				<xsd:element name="c33" type="xsd:int" maxOccurs="3"/>
+			</xsd:sequence>
+		</xsd:group>
+  	</xsd:redefine>
+
+
+	<xsd:group name="b-g1">
+			<xsd:all>
+				<xsd:element name="c11" type="xsd:string" maxOccurs="1"/>
+				<xsd:element name="c12" type="xsd:string" minOccurs="1"/>
+				<xsd:element name="c13" type="xsd:string" minOccurs="1"/>
+			</xsd:all>
+	</xsd:group>
+	<xsd:group name="b-g2">
+			<xsd:choice>
+				<xsd:element name="c21" type="xsd:int" maxOccurs="3"/>
+				<xsd:element name="c22" type="xsd:int" maxOccurs="3"/>
+			</xsd:choice>
+	</xsd:group>
+
+	<xsd:complexType name="b-ct">
+		<xsd:sequence>
+			<xsd:group ref="b-g2"/>
+			<xsd:group ref="b-g3"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:element name="b-e1" type="b-ct" />
+	
+</xsd:schema>

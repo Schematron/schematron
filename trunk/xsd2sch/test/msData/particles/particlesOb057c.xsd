@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="bar" xmlns:x="bar" elementFormDefault="qualified">
+	<xsd:complexType name="B">
+		<xsd:choice>
+			<xsd:any namespace="##any" minOccurs="1" maxOccurs="1"/>
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:element name="bar" type="x:B"></xsd:element>
+	<xsd:element name="e1"/>
+</xsd:schema>

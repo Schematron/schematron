@@ -1,0 +1,27 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<!-- restriction xs:any to a sequence -->
+ <xs:complexType name="base">  
+	   <xs:group ref="grp" />
+ </xs:complexType>
+
+ <xs:complexType name="derived">  
+	<xs:complexContent>
+	<xs:restriction base="base">
+	     <xs:all>
+		<xs:element name="a" type="xs:string" minOccurs="0"/> 
+		<xs:element name="b" type="xs:string"/> 
+	   </xs:all>
+	</xs:restriction>
+	</xs:complexContent>
+ </xs:complexType>
+
+<xs:group name="grp">
+   <xs:all>
+	<xs:element name="a" type="xs:string" minOccurs="0"/> 
+   	<xs:element name="b" type="xs:string"/> 
+   </xs:all>
+</xs:group>
+
+
+</xs:schema>
+

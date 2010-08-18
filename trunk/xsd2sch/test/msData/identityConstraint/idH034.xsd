@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="root">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="t" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+		<xsd:key name="tablek">
+			<xsd:selector xpath=".//t"/>
+			<xsd:field xpath="r"/>
+		</xsd:key>
+		<xsd:keyref name="tablekr" refer="tablek">
+			<xsd:selector xpath=".//t/c"/>
+			<xsd:field xpath="@val2"/>
+		</xsd:keyref>
+	</xsd:element>
+	<xsd:element name="t" type="tabletype"/>
+	<xsd:complexType name="tabletype">
+		<xsd:sequence>
+			<xsd:element name="c" type="ctype"/>
+			<xsd:element name="r" type="xsd:string"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="ctype" mixed="true">
+		<xsd:attribute name="val" type="xsd:string"/>
+	</xsd:complexType>
+	<xsd:complexType name="ctype2" mixed="true">
+		<xsd:complexContent>
+			<xsd:extension base="ctype">
+				<xsd:attribute name="val2" type="xsd:string"/>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+</xsd:schema>

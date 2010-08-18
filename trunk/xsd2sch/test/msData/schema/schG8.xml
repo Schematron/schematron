@@ -1,0 +1,15 @@
+<a:root	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="ns-a schG8_a.xsd"
+	xmlns:a="ns-a"
+	xmlns:c="ns-c"
+>
+	<a:e1>
+		<a1>123</a1>
+		<a2>true</a2>
+	</a:e1>
+	<c:e1>
+		<a1>123	</a1>
+		<a2>123</a2>
+	</c:e1>
+	<c:foo/>
+</a:root>

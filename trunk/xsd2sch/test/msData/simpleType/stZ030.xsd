@@ -1,0 +1,31 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="Root" type="ct"/>
+
+  <xs:complexType name="ct">
+	<xs:sequence>
+	  <xs:element name="e1" type="s1"/>
+	  <xs:element name="e2" type="s2"/>
+	</xs:sequence>
+  </xs:complexType>
+
+
+  <xs:simpleType name="s" >
+	<xs:restriction base="xs:int">
+		<xs:minInclusive value="2"/>
+	</xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="s1" >
+	<xs:restriction base="s">
+		<xs:minExclusive value="2"/>
+	</xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="s2" >
+	<xs:restriction base="s1">
+		<xs:minInclusive value="3"/>
+	</xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>

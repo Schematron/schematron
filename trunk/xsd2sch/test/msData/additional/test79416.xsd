@@ -1,0 +1,30 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" >
+
+   <xsd:element name="foo" type="m9"/>
+
+   <xsd:complexType name="m9">
+	<xsd:choice>
+   	<xsd:element name="products">
+		<xsd:complexType>
+			<xsd:choice maxOccurs="100">
+			<xsd:element name="product" maxOccurs="unbounded">
+	 			<xsd:complexType>
+		  			<xsd:attribute name="almostID" type="xsd:string" use="required"/>
+		 		</xsd:complexType>
+			</xsd:element>
+
+
+			</xsd:choice>
+		</xsd:complexType>
+
+		<xsd:unique name="unique_part"> 
+			<xsd:selector xpath="./product" />
+			<xsd:field xpath="@almostID"/>
+		</xsd:unique>
+
+
+	</xsd:element>	
+	</xsd:choice>
+   </xsd:complexType>
+
+</xsd:schema>

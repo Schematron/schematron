@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns="http://www.w3.org/2001/XMLSchema">
+  <simpleType name="ColorAAA">
+    <union memberTypes="int" />
+  </simpleType>
+  <complexType name="Array">
+    <sequence minOccurs="0">
+      <element minOccurs="0" maxOccurs="unbounded" form="unqualified" name="Item" type="anyType" />
+    </sequence>
+  </complexType>
+  <complexType name="ArrayOfColorAAA">
+    <complexContent mixed="false">
+      <restriction base="tns:Array">
+        <sequence minOccurs="0">
+          <element minOccurs="0" maxOccurs="unbounded" form="unqualified" name="Item" type="tns:ColorAAA" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+</schema>

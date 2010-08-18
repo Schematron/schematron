@@ -1,0 +1,21 @@
+<xsd:schema 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+elementFormDefault="qualified"
+>
+
+<xsd:import namespace="aa" schemaLocation="test67279_1.xsd"/>
+<xsd:import namespace="bb" schemaLocation="test67279_2.xsd"/>
+
+<xsd:element name="t1"/>
+<xsd:element name="t2"/>
+<xsd:element name="t3"/>
+
+<xsd:element name="root">
+  <xsd:complexType>
+  <xsd:choice>
+	<xsd:any namespace="##any" maxOccurs="unbounded"/>
+  </xsd:choice>
+  </xsd:complexType>
+</xsd:element>
+
+</xsd:schema>

@@ -1,0 +1,5 @@
+<?xml version='1.0'?>
+<test  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation="dateTime_maxExclusive002.xsd" >
+<!-- facet=maxExclusive and value=1981-03-12T10:30:00 and document value=1985-04-12T10:30:00 -->
+  <foo>1985-04-12T10:30:00</foo>
+</test>

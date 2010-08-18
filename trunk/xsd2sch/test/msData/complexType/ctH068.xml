@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ctH068.xsd" myAttr1="extension group1 attribute" myAttr2="extension group1 second attribute" myAttr3="extension group2 attribute" myAttr4="extension group2 second attribute">
+	<myElement2>test data</myElement2>
+</root>

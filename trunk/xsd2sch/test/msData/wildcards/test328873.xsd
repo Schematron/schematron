@@ -1,0 +1,122 @@
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="a" xmlns:a="a" xmlns:b="b">
+ <xs:import schemaLocation="test328873_imp.xsd"/>
+
+ <xs:element name="doc" type="a:derived"/>
+ <xs:element name="sub" type="a:derived2" />
+ <xs:element name="sub2" type="a:derived3" />
+ <xs:element name="sub3" type="a:derived4" />
+ <xs:element name="sub4" type="a:derived5" />
+ <xs:element name="sub5" type="a:intersection1" />
+ <xs:element name="sub6" type="a:intersection2" />
+ <xs:complexType name="base">
+     <xs:sequence>
+	<xs:element name="sub" type="a:derived2" minOccurs="0"/>
+	<xs:element name="sub2" type="a:derived3" minOccurs="0"/>
+	<xs:element name="sub3" type="a:derived4" minOccurs="0"/>
+	<xs:element name="sub4" type="a:derived5" minOccurs="0"/>
+	<xs:element name="sub5" type="a:intersection1" minOccurs="0"/>
+	<xs:element name="sub6" type="a:intersection2" minOccurs="0"/>
+     </xs:sequence>
+     <xs:attributeGroup ref="a:attG-a1"/>
+ </xs:complexType>
+
+ <xs:complexType name="derived">
+    <xs:complexContent>
+	<xs:extension base="a:base">
+     <xs:sequence />
+     <xs:attributeGroup ref="a:attG-a2"/>
+	</xs:extension>
+    </xs:complexContent>
+ </xs:complexType>
+
+<xs:complexType name="base2">
+     <xs:sequence />
+     <xs:attributeGroup ref="a:attG1-54"/>
+ </xs:complexType>
+
+ <xs:complexType name="derived2">
+    <xs:complexContent>
+	<xs:extension base="a:base2">
+     <xs:sequence />
+     <xs:attributeGroup ref="a:attG2-54"/>
+	</xs:extension>
+    </xs:complexContent>
+ </xs:complexType>
+
+<xs:complexType name="base3">
+     <xs:sequence />
+     <xs:attributeGroup ref="a:attG1-51"/>
+ </xs:complexType>
+
+ <xs:complexType name="derived3">
+    <xs:complexContent>
+	<xs:extension base="a:base3">
+     <xs:sequence />
+     <xs:attributeGroup ref="a:attG2-51"/>
+	</xs:extension>
+    </xs:complexContent>
+ </xs:complexType>
+
+<xs:complexType name="base4">
+     <xs:sequence />
+     <xs:attributeGroup ref="attG1-61"/>
+ </xs:complexType>
+
+ <xs:complexType name="derived4">
+    <xs:complexContent>
+	<xs:extension base="a:base4">
+     <xs:sequence />
+     <xs:attributeGroup ref="attG2-61"/> <!-- resultant wildcard is any -->
+	</xs:extension>
+    </xs:complexContent>
+ </xs:complexType>
+
+ <xs:complexType name="derived5">
+    <xs:complexContent>
+	<xs:extension base="a:base4">
+     <xs:sequence />
+     <xs:attributeGroup ref="attG3-61"/> <!-- resultant wildcard is not(absent) -->
+	</xs:extension>
+    </xs:complexContent>
+ </xs:complexType>
+
+ <xs:complexType name="intersection1">
+     <xs:attributeGroup ref="a:attG-a1"/> 
+     <xs:attributeGroup ref="a:attG2-3"/> <!-- resultant wildcard is set(b, c) -->
+ </xs:complexType>
+
+ <xs:complexType name="intersection2">
+     <xs:attributeGroup ref="a:attG-a1"/> 
+     <xs:attributeGroup ref="attG1-61"/> <!-- resultant wildcard is not(a) -->
+ </xs:complexType>
+
+ <xs:attribute name="attA"/>
+ <xs:attributeGroup name="attG-a1">
+     <xs:anyAttribute namespace="##other" processContents="lax"/>
+ </xs:attributeGroup>
+
+ <xs:attributeGroup name="attG2-3">
+     <xs:anyAttribute namespace="##local b c" processContents="lax"/>
+ </xs:attributeGroup>
+
+ <xs:attributeGroup name="attG-a2">
+     <xs:anyAttribute namespace="##targetNamespace b c" processContents="lax"/>
+ </xs:attributeGroup>
+
+<xs:attributeGroup name="attG1-54">
+     <xs:anyAttribute namespace="##other" processContents="lax"/>
+ </xs:attributeGroup>
+
+ <xs:attributeGroup name="attG2-54">
+     <xs:anyAttribute namespace="b c" processContents="lax"/>
+ </xs:attributeGroup>
+
+<xs:attributeGroup name="attG1-51">
+     <xs:anyAttribute namespace="##other" processContents="lax"/>
+ </xs:attributeGroup>
+
+ <xs:attributeGroup name="attG2-51">
+     <xs:anyAttribute namespace="##targetNamespace ##local b c" processContents="lax"/>
+ </xs:attributeGroup>
+
+</xs:schema>

@@ -1,0 +1,21 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+elementFormDefault="qualified"
+>
+
+	<xsd:complexType name="b-ct">
+		<xsd:sequence>
+			<xsd:element name="c1" maxOccurs="4"/>
+			<xsd:element name="c2" minOccurs="0" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="b-ct-2">
+		<xsd:sequence>
+			<xsd:element name="c1" maxOccurs="4"/>
+			<xsd:element name="c2" minOccurs="0" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:element name="e2" type="b-ct" />
+	
+</xsd:schema>

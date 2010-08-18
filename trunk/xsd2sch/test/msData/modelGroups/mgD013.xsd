@@ -1,0 +1,18 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="root">
+		<xs:complexType>
+			<xs:choice minOccurs="1" maxOccurs="unbounded">
+				<xs:element ref="elt1"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="elt1">
+		<xs:complexType>
+			<xs:all minOccurs="0">
+				<xs:element name="elt2"/>
+				<xs:element name="elt3"/>
+				<xs:element name="elt4"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

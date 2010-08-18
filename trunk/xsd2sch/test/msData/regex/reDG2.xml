@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='reDG2.xsd' >
+
+<!-- 
+base='gYearMonth', pattern='\p{Nd}{4}-\[{Nd}{2}', value='12000-11', type='invalid', RULE=''
+-->
+
+     <elem>12000-11</elem>
+
+ </doc>

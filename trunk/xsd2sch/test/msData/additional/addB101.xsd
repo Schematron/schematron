@@ -1,0 +1,13 @@
+<xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema' >
+
+  <xsd:complexType name="sAddress">
+   <xsd:complexContent>
+     <xsd:extension base="sAddress">
+      <xsd:sequence>
+       <xsd:element name="country" type="xsd:string"/>
+      </xsd:sequence>
+     </xsd:extension>
+   </xsd:complexContent>
+  </xsd:complexType>
+	
+</xsd:schema>

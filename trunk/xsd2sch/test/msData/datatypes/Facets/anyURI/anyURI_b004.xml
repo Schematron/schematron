@@ -1,0 +1,11 @@
+<root xsi:noNamespaceSchemaLocation="anyURI_b004.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<bar>+</bar>
+	<bar>..</bar>
+	<bar>-</bar>
+	<bar>*</bar>
+	<bar>(</bar>
+	<bar>_</bar>
+	<bar>.</bar>
+
+</root>

@@ -1,0 +1,19 @@
+<xs:schema	targetNamespace="http://www.tempuri.org" 
+			xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+			xmlns:tns="http://www.tempuri.org">
+	<!-- test anyType uses processContents=lax instead of strict -->
+
+	<xs:element name="root">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="localElement1"/>
+				<xs:element name="localElement2" type="xs:anyType" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="testContent" type="xs:short" />
+
+	<xs:attribute name="testAttribute" type="xs:boolean" />
+</xs:schema>
+

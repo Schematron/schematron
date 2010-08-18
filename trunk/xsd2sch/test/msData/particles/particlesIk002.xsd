@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://xsdtesting" xmlns:x="http://xsdtesting" elementFormDefault="qualified">
+	<xsd:complexType name="B">
+		<xsd:choice>
+			<xsd:element name="c1" type="xsd:string"/>
+			<xsd:element name="c2"/>
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="R">
+		<xsd:complexContent>
+			<xsd:restriction base="x:B">
+				<xsd:choice>
+					<xsd:element name="c1" type="xsd:int"/>
+					<xsd:element name="c2"/>
+				</xsd:choice>
+			</xsd:restriction>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:element name="elem" type="x:R"/>
+	<xsd:element name="doc">
+		<xsd:complexType>
+			<xsd:choice>
+				<xsd:element ref="x:elem"/>
+			</xsd:choice>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

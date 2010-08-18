@@ -1,0 +1,19 @@
+<Envelope xmlns:x="abc">
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="abc"
+elementFormDefault="qualified"
+>
+        <xsd:element name="root">
+           <xsd:complexType>
+           <xsd:choice maxOccurs="unbounded">
+                <xsd:element name="f" type="xsd:float" />
+           </xsd:choice>
+           </xsd:complexType>
+        </xsd:element>
+</xsd:schema>
+
+<x:root  >
+	<x:f>a2</x:f>
+</x:root>
+
+</Envelope>

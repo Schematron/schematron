@@ -1,0 +1,11 @@
+<xs:schema xmlns:xs='http://www.w3.org/2001/XMLSchema'>
+	<xs:simpleType name="intlist">
+		<xs:list itemType="xs:int"/>
+	</xs:simpleType>
+
+	<xs:simpleType name="myST">
+		<xs:restriction base="intlist">
+			<xs:minInclusive value="1"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

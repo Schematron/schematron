@@ -1,0 +1,8 @@
+<xs:schema  xmlns:xs='http://www.w3.org/2001/XMLSchema'>
+								<xs:element name='doc'><xs:complexType><xs:attribute name='value'>
+									<xs:simpleType>
+										<xs:restriction base='xs:string'>
+											<xs:pattern value='a*abc?xyz+pqr{3}ab{2,}xy{4,5}pq{0,6}AB{0,}zz'/>
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:attribute></xs:complexType></xs:element></xs:schema>

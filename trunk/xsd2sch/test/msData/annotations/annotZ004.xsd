@@ -1,0 +1,23 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="foo"
+	xmlns="foo"
+> 
+
+
+	<xs:attributeGroup name="foo">
+	   <xs:annotation>
+		<xs:documentation xmlns="bar">
+			<foo>
+				foo
+			</foo>
+		</xs:documentation>
+	   </xs:annotation>
+		<xs:attribute name="a" type="s"/>
+	</xs:attributeGroup>
+
+	
+	<xs:simpleType name="s">
+		<xs:restriction base="xs:string"/>
+	</xs:simpleType>
+	
+</xs:schema>

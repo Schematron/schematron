@@ -1,0 +1,11 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+targetNamespace="http://xsdtesting" xmlns:x="http://xsdtesting">
+   <xsd:element name="root_elem" type="xsd:anyType"/>
+
+   <xsd:complexType name="ctype_foo">
+      <xsd:sequence>
+          <xsd:element name="a" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+
+</xsd:schema>

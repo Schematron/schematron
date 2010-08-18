@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:complexType name="foo">
+		<xsd:complexContent>
+			<xsd:restriction base="bar">
+				<xsd:group ref="group"/>
+			</xsd:restriction>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:group name="group">
+		<xsd:choice maxOccurs="1" minOccurs="1">
+			<xsd:all maxOccurs="0" minOccurs="0">
+				<xsd:element name="e1"/>
+			</xsd:all>
+		</xsd:choice>
+	</xsd:group>
+</xsd:schema>

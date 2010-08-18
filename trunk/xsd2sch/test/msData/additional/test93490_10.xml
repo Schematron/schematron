@@ -1,0 +1,18 @@
+<root 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="test93490_5.xsd" 	
+	xmlns:foo="foo"
+	xmlns:bar="bar"
+>
+
+<foo:elem1 xsi:schemaLocation="foo test93490_1.xsd" />
+<bar:elem2 xsi:schemaLocation="bar test93490_3.xsd" />
+<elem2>
+	<a>
+		<b>
+			<c xsi:noNamespaceSchemaLocation="test93490_6.xsd" />
+		</b>
+	</a>
+</elem2>
+
+</root>

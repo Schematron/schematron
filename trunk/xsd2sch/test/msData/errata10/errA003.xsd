@@ -1,0 +1,16 @@
+<xs:schema	targetNamespace="http://www.tempuri.org" 
+			xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+			xmlns:tns="http://www.tempuri.org">
+	<!-- test that ##other namespace is any namespace other than the target namespace -->
+
+	<xs:complexType name="rootType">
+		<xs:all>
+			<xs:element ref="tns:testElement" />
+		</xs:all>
+	</xs:complexType>
+	
+	<xs:element name="root" type="tns:rootType"/>
+
+	<xs:element name="testElement" type="xs:gMonth" />
+</xs:schema>
+

@@ -1,0 +1,15 @@
+<xsd:schema 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+>
+
+    	<xsd:element name="bar" type="st"></xsd:element>
+
+	<xsd:simpleType name="st">
+		<xsd:restriction base="xsd:anyURI">
+			<xsd:enumeration value="foo&lt;bar"/>
+			<xsd:enumeration value='foo>bar'/>
+			<xsd:enumeration value='foo"bar'/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+</xsd:schema>

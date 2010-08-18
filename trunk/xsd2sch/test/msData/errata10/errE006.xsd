@@ -1,0 +1,26 @@
+<xs:schema	targetNamespace="http://www.tempuri.org" 
+			xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+			xmlns:tns="http://www.tempuri.org">
+	<!-- test date, gYearMonth, gMonthDay, gDay, gMonth and gYear permit an optional, trailing time zone specification. -->
+
+	<xs:element name="testDate" type="xs:date" />
+	<xs:element name="testGYearMonth" type="xs:gYearMonth" />
+	<xs:element name="testGMonthDay" type="xs:gMonthDay" />
+	<xs:element name="testGDay" type="xs:gDay" />
+	<xs:element name="testGMonth" type="xs:gMonth" />
+	<xs:element name="testGYear" type="xs:gYear" />
+
+	<xs:element name="root">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="tns:testDate" minOccurs="2" maxOccurs="2" />
+				<xs:element ref="tns:testGYearMonth" minOccurs="2" maxOccurs="2" />
+				<xs:element ref="tns:testGMonthDay" minOccurs="2" maxOccurs="2" />
+				<xs:element ref="tns:testGDay" minOccurs="2" maxOccurs="2" />
+				<xs:element ref="tns:testGMonth" minOccurs="2" maxOccurs="2" />
+				<xs:element ref="tns:testGYear" minOccurs="2" maxOccurs="2" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
+

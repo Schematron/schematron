@@ -1,0 +1,7 @@
+<a:doc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xsdtesting particlesOb009.xsd&#xA;						foo particlesOb009b.xsd&#xA;						bar particlesOb009c.xsd			" xmlns:a="http://xsdtesting" xmlns:foo="foo" xmlns:bar="bar">
+	<elem>
+		<foo:foo><foo:e1/></foo:foo>
+		<bar:bar><bar:e1/></bar:bar>
+		<welform/>
+	</elem>
+</a:doc>

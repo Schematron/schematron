@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<doc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="particlesA015.xsd" xmlns:foo="foo">
+	<elem>
+		<foo:any>
+			testing
+		</foo:any>
+		<foo:foo xmlns:foo="foo">
+			really testing
+		</foo:foo>
+		<foo:foo>
+			really testing
+		</foo:foo>
+	</elem>
+</doc>

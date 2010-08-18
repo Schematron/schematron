@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:include schemaLocation="ctC003b.xsd"/>
+	<xsd:complexType name="fooType">
+		<xsd:simpleContent id="foo123">
+			<xsd:extension base="xsd:string"/>
+		</xsd:simpleContent>
+	</xsd:complexType>
+</xsd:schema>

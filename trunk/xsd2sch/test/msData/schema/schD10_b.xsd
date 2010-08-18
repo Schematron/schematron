@@ -1,0 +1,18 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+elementFormDefault="unqualified"
+>
+	<xsd:include schemaLocation="schD10_c.xsd"/>
+		<xsd:group name="grp">
+			<xsd:choice>
+				<xsd:group ref="c-g2"/>
+				<xsd:element name="foo"/>
+			</xsd:choice>
+		</xsd:group>
+
+	<xsd:complexType name="b-ct">
+		<xsd:group ref="c-g2"/>
+	</xsd:complexType>
+
+	<xsd:element name="b-e1" type="b-ct" />
+	
+</xsd:schema>

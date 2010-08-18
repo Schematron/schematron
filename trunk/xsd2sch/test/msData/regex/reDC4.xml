@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='reDC4.xsd' >
+
+<!-- 
+base='anyURI', pattern='http://\c*', value='http://www.foo.com', type='valid', RULE=''
+-->
+
+      <elem att='http://www.foo.com'/>
+
+ </doc>

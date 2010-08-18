@@ -1,0 +1,11 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+       <xsd:element name="e1" substitutionGroup="e2"/>
+       <xsd:element name="e2" substitutionGroup="e1"/>
+
+            <xsd:complexType name="CT">
+                        <xsd:choice>
+	                          <xsd:element ref="e1"/>
+             			<xsd:element name="e3"/>
+                        </xsd:choice>
+            </xsd:complexType>
+</xsd:schema>

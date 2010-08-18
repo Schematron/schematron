@@ -1,0 +1,18 @@
+<?xml version='1.0'?>
+<xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema' >
+<!-- Schema to test date datatype -->
+  <xsd:element name='test' type='fooType' />
+  <xsd:complexType name='fooType' > 
+    <xsd:sequence>
+      <xsd:element name='foo' >
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:date">
+            <xsd:enumeration value="1999-05-31"/>
+            <xsd:enumeration value="1999-07-31"/>
+            <xsd:enumeration value="2000-03-10"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

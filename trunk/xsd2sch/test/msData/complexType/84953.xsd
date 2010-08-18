@@ -1,0 +1,16 @@
+<xs:schema id="_0553815986454335029" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   
+  <xs:attribute type="_935160892158863155" default="04" name="attr1" />
+  <xs:attribute id="_100807" default="9668.521054" name="attr2" type="xs:strong"/>
+
+   <xs:complexType id="_06334419" name="myType" >
+    <xs:simpleContent>
+      <xs:extension id="_896194725" base="xs:string">        
+       <xs:attribute ref="attr1" />        
+       <xs:attribute ref="attr2" />            
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType> 
+
+
+</xs:schema>

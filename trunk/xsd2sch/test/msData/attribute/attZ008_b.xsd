@@ -1,0 +1,16 @@
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:complexType name="Person">
+            <xs:sequence/>
+	    <xs:attribute name="att" type="xs:string" default="fixed"/>
+  </xs:complexType>
+
+  <xs:complexType name="Someone">
+	<xs:complexContent>
+	   <xs:restriction base="Person">
+            <xs:sequence/>
+	    <xs:attribute name="att" type="xs:string" fixed="fixed" />
+	   </xs:restriction>
+	</xs:complexContent>
+  </xs:complexType>
+</xs:schema>

@@ -1,0 +1,26 @@
+<xs:schema xmlns:xs='http://www.w3.org/2001/XMLSchema' 
+           targetNamespace='urn:foo:bar' 
+		   xmlns:tns='urn:foo:bar' 
+		   elementFormDefault='qualified' >
+
+
+  <xs:element name='foo' type='tns:T2' />
+  
+  <xs:complexType name='T1' >
+    <xs:sequence>
+	  <xs:any namespace='urn:someother:ns' processContents='lax' minOccurs='0' maxOccurs='unbounded' />
+	</xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name='T2' >
+    <xs:complexContent >
+	  <xs:extension base='tns:T1' >
+        <xs:choice minOccurs='0' maxOccurs='unbounded' >
+	      <xs:element name='bar' type='xs:string' />
+	      <xs:any namespace='urn:someother:ns' processContents='lax' />
+		</xs:choice>
+      </xs:extension>
+	</xs:complexContent>
+  </xs:complexType>
+
+</xs:schema>

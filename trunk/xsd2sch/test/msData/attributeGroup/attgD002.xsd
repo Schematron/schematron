@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:attributeGroup name="bar">
+		<xsd:annotation/>
+		<xsd:annotation/>
+	</xsd:attributeGroup>
+</xsd:schema>

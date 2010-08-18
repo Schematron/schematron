@@ -1,0 +1,12 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+<xsd:element name="root">
+	<xsd:complexType>
+		<xsd:sequence>
+			<xsd:element name="str" type="xsd:string" default="abc"/>
+			<xsd:element name="number" type="xsd:integer" default="123"/>
+			<xsd:element name="bool" type="xsd:boolean" default="true"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:element>
+</xsd:schema>

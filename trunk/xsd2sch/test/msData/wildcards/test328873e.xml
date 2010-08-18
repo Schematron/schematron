@@ -1,0 +1,3 @@
+<a:sub5 b:att1="abc" att2="bc"  att="a" xmlns:a="a" xmlns:b="b" xmlns:x="x"/> <!-- resultant wildcard is set(b, c) -->
+
+

@@ -1,0 +1,11 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:attribute name="model" type="xsd:string"/>
+	<xsd:attributeGroup name="car">
+		<xsd:attribute name="model"/>
+		<xsd:attribute name="age" type="xsd:int"/>
+	</xsd:attributeGroup>
+	<xsd:attributeGroup name="truck">
+		<xsd:attribute name="model"/>
+		<xsd:attribute name="age" type="xsd:int"/>
+	</xsd:attributeGroup>
+</xsd:schema>

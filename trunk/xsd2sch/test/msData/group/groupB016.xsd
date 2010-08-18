@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="elem">
+		<xsd:complexType>
+			<xsd:group ref="foo"/>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="doc">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="elem"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:attributeGroup name="attG">
+		<xsd:attribute name="att1"/>
+	</xsd:attributeGroup>
+	<xsd:group name="foo">
+		<xsd:sequence>
+			<xsd:element name="foo1"/>
+			<xsd:element name="foo2"/>
+			<xsd:element name="x">
+				<xsd:complexType>
+					<xsd:complexContent>
+						<xsd:restriction base="complexType">
+							<xsd:group ref="A"/>
+						</xsd:restriction>
+					</xsd:complexContent>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:group>
+	<xsd:group name="A">
+		<xsd:choice>
+			<xsd:group ref="B"/>
+		</xsd:choice>
+	</xsd:group>
+	<xsd:group name="B">
+		<xsd:sequence>
+			<xsd:group ref="A"/>
+		</xsd:sequence>
+	</xsd:group>
+</xsd:schema>

@@ -1,0 +1,17 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:simpleType name="myType" final="extension">
+		<xs:restriction base="xs:string" />
+	</xs:simpleType>
+
+	<xs:complexType name="ct">
+		<xs:simpleContent>
+			<xs:extension base="myType">
+				<xs:anyAttribute />
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+	<xs:element name="myElement" type="ct" />
+	
+</xs:schema>

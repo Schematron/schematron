@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:simpleType name="fooType">
+		<xsd:union memberTypes="xsd:NMTOKEN xsd:integer"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="myType">
+		<xsd:restriction base="fooType">
+			<xsd:minExclusive value="5"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

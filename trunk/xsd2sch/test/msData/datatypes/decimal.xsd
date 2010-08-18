@@ -1,0 +1,25 @@
+<?xml version='1.0'?>
+<xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema' >
+<!-- Schema to test decimal datatype -->
+  <xsd:element name='complexTest' type='complexfooType' />
+  <xsd:element name='simpleTest' type='simplefooType' />
+
+  <xsd:complexType name='complexfooType' > 
+    <xsd:sequence>
+      <xsd:element name='comp_foo' type="xsd:decimal"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:simpleType name='simplefooType' > 
+    <xsd:restriction base="xsd:decimal"/>
+  </xsd:simpleType>
+
+  <xsd:element name='root'>
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref='complexTest' />
+        <xsd:element ref='simpleTest' />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

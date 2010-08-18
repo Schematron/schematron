@@ -1,0 +1,12 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:simpleType id="foo123" name="fooString">
+		<xsd:restriction base="xsd:string">
+			<xsd:length value="4"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType id="foo123" name="dup_id">
+		<xsd:restriction base="xsd:string">
+			<xsd:length value="4"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

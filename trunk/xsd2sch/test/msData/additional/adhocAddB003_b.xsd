@@ -1,0 +1,23 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="ns-b"
+xmlns="ns-b"
+xmlns:a="ns-a"
+elementFormDefault="unqualified"
+>
+
+	<xs:import namespace="ns-a" schemaLocation="adhocAddB003_a.xsd"/>
+
+	<xs:element name="abc" type="myType" substitutionGroup="a:aft"/>
+
+	<xs:complexType name="myType">
+	   <xs:complexContent>
+	    <xs:restriction base="a:ns-a-aft">
+		  <xs:sequence minOccurs="1">
+		    <xs:element name="x" type="xs:string" maxOccurs="2"/>
+		  </xs:sequence>
+	    </xs:restriction>
+	   </xs:complexContent>
+
+	</xs:complexType>
+
+</xs:schema>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<C:root xmlns:C="urn:my.test:SchemaC" xmlns:B="urn:my.test:SchemaB" xmlns:A="urn:my.test:SchemaA" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="urn:my.test:SchemaA particlesZ025a.xsd urn:my.test:SchemaB particlesZ025b.xsd urn:my.test:SchemaC particlesZ025c.xsd">
+    <C:child>
+        <A:name>Bazoo</A:name>
+    </C:child>
+    <C:child xsi:type="B:DerivedObject">
+        <A:name>Bazoo</A:name>
+        <B:id>1</B:id>
+    </C:child>
+</C:root>

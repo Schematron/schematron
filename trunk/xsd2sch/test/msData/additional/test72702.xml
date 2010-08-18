@@ -1,0 +1,4 @@
+<?xml version='1.0'?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://importedXSD test72702.imp" xmlns:foo="http://importedXSD">
+      <e2/>
+</root>

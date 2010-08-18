@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='reK9.xsd' >
+
+<!-- 
+base='string', pattern='\P{L}*', value='#x41;#x1D7A8;#x61;#x61;#x1D7C9;#x1C5;#x1C5;#x1FFC;#x2B0;#x2B0;#xFF9F;#x5D0;#x5D0;#x2FA1D;', type='invalid', RULE='26,29'
+-->
+
+     <elem>&#x41;&#x1D7A8;&#x61;&#x61;&#x1D7C9;&#x1C5;&#x1C5;&#x1FFC;&#x2B0;&#x2B0;&#xFF9F;&#x5D0;&#x5D0;&#x2FA1D;</elem>
+
+ </doc>

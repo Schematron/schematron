@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='reF13.xsd' >
+
+<!-- 
+base='string', pattern='[^@]{0,2}', value='@', type='invalid', RULE='15'
+-->
+
+      <elem att='@'/>
+
+ </doc>

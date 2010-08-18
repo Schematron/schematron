@@ -1,0 +1,28 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://xsdtesting" xmlns:a="http://xsdtesting">
+	<xs:complexType name="Base">
+		<xs:sequence>
+			<xs:element name="annotation" minOccurs="0"/>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element name="element" minOccurs="1" maxOccurs="1"/>
+				<xs:element name="any"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Derived">
+		<xs:complexContent>
+			<xs:restriction base="a:Base">
+				<xs:sequence>
+					<xs:element name="annotation" minOccurs="0"/>
+					<xs:element name="element" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:restriction>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="doc">
+		<xs:complexType>
+			<xs:choice>
+				<xs:element name="elem" type="a:Derived"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

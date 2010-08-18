@@ -1,0 +1,37 @@
+  <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+          xmlns:cust="urn:xmlns:25hoursaday-com:customer" 
+          xmlns:addr="urn:xmlns:25hoursaday-com:address" 
+          targetNamespace="urn:xmlns:25hoursaday-com:address" 
+	  elementFormDefault="qualified"> 
+
+    <xs:import namespace="urn:xmlns:25hoursaday-com:customer" schemaLocation="ctZ007_b.xsd"/> 
+
+       <xs:element name="MyCustomer" substitutionGroup="cust:Customer" type="addr:MyCustomerType"  /> 
+
+        <xs:complexType name="MyCustomerType" > 
+	 <xs:complexContent>
+          <xs:extension base="cust:CustomerType">
+	   <xs:sequence>
+	    <xs:element ref="cust:PhoneNumber" /> 
+	    <xs:element ref="addr:Address" />	 
+   	    <xs:element ref="addr:City" />	 
+   	    <xs:element ref="addr:State" />	 
+   	    <xs:element ref="addr:Zip" />	 
+ 	   </xs:sequence>     
+          </xs:extension>
+         </xs:complexContent>
+	</xs:complexType> 
+
+	<xs:element name="Address" type="xs:string" />
+	<xs:element name="City" type="xs:string" />
+	<xs:element name="State" type="xs:string" fixed="WA" />	
+
+	<xs:element name="Zip">
+	 <xs:simpleType>
+	  <xs:restriction base="xs:string" >
+	   <xs:pattern value="\d{5}(-\d{4})?"/>
+	  </xs:restriction>
+	 </xs:simpleType>
+	</xs:element>
+
+     </xs:schema> 

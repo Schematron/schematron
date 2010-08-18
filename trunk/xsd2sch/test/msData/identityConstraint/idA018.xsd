@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="root">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="uniqueElement"/>
+			</xsd:sequence>
+		</xsd:complexType>
+		<xsd:unique name="fooID">
+			<xsd:selector xpath=".//uniqueElement"/>
+			<xsd:field xpath="@keyField"/>
+		</xsd:unique>
+		<xsd:key name="fooID">
+			<xsd:selector xpath=".//anotherUniqueElement"/>
+			<xsd:field xpath="someField"/>
+		</xsd:key>
+	</xsd:element>
+	<xsd:element name="uniqueElement">
+		<xsd:complexType>
+			<xsd:attribute name="keyField" type="xsd:string"/>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="anotherUniqueElement">
+		<xsd:complexType>
+			<xsd:attribute name="someField" type="xsd:string"/>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

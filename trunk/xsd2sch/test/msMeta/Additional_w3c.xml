@@ -1,0 +1,3987 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/XML/2004/xml-schema-test-suite/" xsi:schemaLocation="http://www.w3.org/XML/2004/xml-schema-test-suite/ AnnotatedTSSchema.xsd" name="MS-Additional2006-07-15" contributor="Microsoft">
+<testGroup name="addA001">
+<annotation>
+<documentation>TEST :Adhoc XSD: : include same schema twice with unique Ids</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addA001">
+<schemaDocument xlink:href="../msData/additional/adhocAddA001v.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addA002">
+<annotation>
+<documentation>TEST :Adhoc XSD: : include two schemas with same Ids</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addA002">
+<schemaDocument xlink:href="../msData/additional/adhocAddA002e.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addA003">
+<annotation>
+<documentation>TEST :Adhoc XSD: : XSD has element pointing to nonexistant type, XML uses xsi:type to access the same nonexistant type</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addA003">
+<schemaDocument xlink:href="../msData/additional/adhocAddA003e.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addA005">
+<annotation>
+<documentation>TEST :Adhoc XSD: : substitution group usage in the same XSD file with instance XML</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addA005">
+<schemaDocument xlink:href="../msData/additional/adhocAddB001.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addA005.v">
+<instanceDocument xlink:href="../msData/additional/adhocAddB001.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addA006">
+<annotation>
+<documentation>TEST :Adhoc XSD: : xsd: when both the imported and importing XSDs are added to schema collection, the instance XML uses substitution Element from the importing XSD to a root element declared in imported XSD.</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<instanceTest name="addA006.v">
+<instanceDocument xlink:href="../msData/additional/adhocAddB002.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="adda007">
+<annotation>
+<documentation>TEST :Adhoc XSD: : uses substitution Element from the importing XSD</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<instanceTest name="adda007.v">
+<instanceDocument xlink:href="../msData/additional/adhocAddB003.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addA008">
+<annotation>
+<documentation>TEST :Adhoc XSD: : uses substitution Element from the importing XSD(2)</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<instanceTest name="addA008.v">
+<instanceDocument xlink:href="../msData/additional/adhocAddB004.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addC001">
+<annotation>
+<documentation>TEST :Adhoc XSD: : use of xml:base</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addC001">
+<schemaDocument xlink:href="../msData/additional/adhocAddC001.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addC001.v">
+<instanceDocument xlink:href="../msData/additional/adhocAddC001.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addC002">
+<annotation>
+<documentation>TEST :Adhoc XSD: : xml prefix in path</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addC002">
+<schemaDocument xlink:href="../msData/additional/adhocAddC002.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB001">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="63972" title="XSD: element decls of simple types"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB001">
+<schemaDocument xlink:href="../msData/additional/test63972.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB002">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="63569" title="test restrictions of simple types"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB002">
+<schemaDocument xlink:href="../msData/additional/test63569.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB002.i">
+<instanceDocument xlink:href="../msData/additional/test63569.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB003">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="63389" title="loading invalid XML with empty content"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB003">
+<schemaDocument xlink:href="../msData/additional/test63389.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB003.i">
+<instanceDocument xlink:href="../msData/additional/test63389.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB004">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="64817" title="xsd: notation with no attribute should give error."</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB004">
+<schemaDocument xlink:href="../msData/additional/test64817a.xsd"/>
+<schemaDocument xlink:href="../msData/additional/test64817b.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB005">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="60998" title="xsd: E is drived by extention from B, and E should not allow 'all' as part of the extension"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB005">
+<schemaDocument xlink:href="../msData/additional/test60998.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB006">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="65809" title="xsd: simpleType should also be allowed for xsi:type"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB006">
+<schemaDocument xlink:href="../msData/additional/test65809.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB007">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="67023" title="xsd: Should allow to redefine a redefined complexType"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB007">
+<schemaDocument xlink:href="../msData/additional/test67023.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB008">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="65472" title="xsd: when namespace is absent on an import, the enclosing xsd document must have a targetNamespace"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB008">
+<schemaDocument xlink:href="../msData/additional/test65472.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB009">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="66059" title="xsd: test when referencing without namespace to a global type declaration with targeNamespace"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB009">
+<schemaDocument xlink:href="../msData/additional/test66059.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB010">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="66531" title="xsd: notation without a name attribute should give error"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB010">
+<schemaDocument xlink:href="../msData/additional/test66531.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB011">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="66541" title="xsd: Regular Expression"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB011">
+<schemaDocument xlink:href="../msData/additional/test66541.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB011.i">
+<instanceDocument xlink:href="../msData/additional/test66541.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB012">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="67500" title="xsd: checking QName datatype correctly for the namespace declared on the same element"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB012">
+<schemaDocument xlink:href="../msData/additional/test67500.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB012.v">
+<instanceDocument xlink:href="../msData/additional/test67500.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB013">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="67514" title="xsd: when processContents is strict, test for element that are not defined in a specified schema."</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB013">
+<schemaDocument xlink:href="../msData/additional/test67514.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB013.i">
+<instanceDocument xlink:href="../msData/additional/test67514.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB014">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="65699" description="xsd: test not having blockDefault attribute set in the included xsd, with invalid partical derivation by restriction."</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB014">
+<schemaDocument xlink:href="../msData/additional/test65699.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB016">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="67279" description="xsd: Cannot import the same xsd file from different imported XSDs. Test for importing an element twice from different imported xsd."</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB016">
+<schemaDocument xlink:href="../msData/additional/test67279.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB017">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="67339" description="xsd:xsd:can not specify abstract complexType to type attribute of element declaration."</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB017">
+<schemaDocument xlink:href="../msData/additional/test67339.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB018">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="68871" description="xsd: test xsd type references with default namespace"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB018">
+<schemaDocument xlink:href="../msData/additional/test68871.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB019">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="68938" description="xsd: fractional digit and total digit are not checking correcting in XSD datatypes"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB019">
+<schemaDocument xlink:href="../msData/additional/test68938.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB019.v">
+<instanceDocument xlink:href="../msData/additional/test68938.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB020">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="68014" description="XSD: final attribute not supported on simpleType"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB020">
+<schemaDocument xlink:href="../msData/additional/test68014.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB021">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="68502" description="XSD: on the most basic complexType"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB021">
+<schemaDocument xlink:href="../msData/additional/test68502.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB021a">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="68019" description="XSD: Test if minInclusive &gt;= maxExclusive"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB021a">
+<schemaDocument xlink:href="../msData/additional/test68019_1.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB022">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="68019" description="XSD: Test if minInclusive &gt;= maxExclusive"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB022">
+<schemaDocument xlink:href="../msData/additional/test68019_2.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB023">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="69283" description="XSD: Test using xsd:element including default attribute."</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB023">
+<schemaDocument xlink:href="../msData/additional/test69283.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB024">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="69275" Test when pattern facet has value='\p{IsCJKRadicalsSupplement}' or '\p{IsCJKUnifiedIdeographsExtensionA}'.</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB024">
+<schemaDocument xlink:href="../msData/additional/test69275.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB025">
+<annotation>
+<documentation>TEST :Adhoc XSD: : XSD: NMTOKENS and restriction by pattern</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB025">
+<schemaDocument xlink:href="../msData/additional/test69961_1.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB026">
+<annotation>
+<documentation>TEST :Adhoc XSD: : XSD: IDREFS and restriction by pattern</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB026">
+<schemaDocument xlink:href="../msData/additional/test69961_2.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB027">
+<annotation>
+<documentation>TEST :Adhoc XSD: : XSD: ENTITIES and restriction by pattern</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB027">
+<schemaDocument xlink:href="../msData/additional/test69961_3.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB028">
+<annotation>
+<documentation>TEST :Adhoc XSD: : XSD: xsi:type when derived from xsi:type</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB028">
+<schemaDocument xlink:href="../msData/additional/test69846.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB028.v">
+<instanceDocument xlink:href="../msData/additional/test69846.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB029">
+<annotation>
+<documentation>TEST :Adhoc XSD: : XSD: element block support</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB029">
+<schemaDocument xlink:href="../msData/additional/test69527.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB030">
+<annotation>
+<documentation>TEST :Adhoc XSD: : XSD: order of redefine in schema</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB030">
+<schemaDocument xlink:href="../msData/additional/test69855.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB31">
+<annotation>
+<documentation>TEST :Adhoc XSD: : another test</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB31">
+<schemaDocument xlink:href="../msData/additional/test69277.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB31.v">
+<instanceDocument xlink:href="../msData/additional/test69277.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB32">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="67764" description="xsd: we do not check for welformness of imported schema from schemaLocation"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB32">
+<schemaDocument xlink:href="../msData/additional/test67764.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB033">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="71774" description="xsd: a complexType should not be able to drive by extension from a complexType with simpleContent or simpleType"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB033">
+<schemaDocument xlink:href="../msData/additional/test71774.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB034">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="71818" description="xsd: when an attribute is prohibited, it should not be allowed in instant XML even if there is anyAttriubte declaration."</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB034">
+<schemaDocument xlink:href="../msData/additional/test71818.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB034.v">
+<instanceDocument xlink:href="../msData/additional/test71818.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB035">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="71395" description="Test import with empty namespace."</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB035">
+<schemaDocument xlink:href="../msData/additional/test71395.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB036">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="71847" description="xsd: a complexType should not be able to drive by extension from a complexType with simpleContent or simpleType"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB036">
+<schemaDocument xlink:href="../msData/additional/test71847.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB037">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="70130" description="XSD:text is not allowed when using xsd:any elements."</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB037">
+<schemaDocument xlink:href="../msData/additional/test70130.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB037.i">
+<instanceDocument xlink:href="../msData/additional/test70130.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB040">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="72049" description="xsd: schemaLocation with more than one pair of namespace+schemalocation "</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB040">
+<schemaDocument xlink:href="../msData/additional/test72049_a.xsd"/>
+<schemaDocument xlink:href="../msData/additional/test72049_b.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB040.v">
+<instanceDocument xlink:href="../msData/additional/test72049.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB041">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="72405" description="Test invalid default value against a pattern"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB041">
+<schemaDocument xlink:href="../msData/additional/test72405.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB042">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="72481" description="'choice/' is unsatisfiable"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB042">
+<schemaDocument xlink:href="../msData/additional/test72481.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB043">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="72530" description="'XSD - Duplicate IDs with one of them is in simpleContent extension"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB043">
+<schemaDocument xlink:href="../msData/additional/test72530.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB044">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="72793" description="xsd: top level attribute should prohibig 'form' attribute"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB044">
+<schemaDocument xlink:href="../msData/additional/test72793.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB045">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="72794" description="XSD - ref and form attributes appear in xs:element"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB045">
+<schemaDocument xlink:href="../msData/additional/test72794.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB046">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="72097" description="xsd: when there is no targetNamespace, the XSD file should be allowed to add to any namespace"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB046">
+<schemaDocument xlink:href="../msData/additional/test72097.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB046.v">
+<instanceDocument xlink:href="../msData/additional/test72097.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB047">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="72597" description="xsd: valid xml and xsd"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB047">
+<schemaDocument xlink:href="../msData/additional/test72597.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB047.v">
+<instanceDocument xlink:href="../msData/additional/test72597.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB049">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="72232" description="xsd: keyref should be able to refer to a key defined on the parent element."</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB049">
+<schemaDocument xlink:href="../msData/additional/test72232_1.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB049.v">
+<instanceDocument xlink:href="../msData/additional/test72232_1.xml"/>
+<expected validity="valid"/>
+<current bugzilla="http://www.w3.org/Bugs/Public/show_bug.cgi?id=4076" status="queried" date="2006-12-22"/>
+<prior status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB050">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="72232" description="xsd: keyref should be able to refer to a key defined on the parent element."</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB050">
+<schemaDocument xlink:href="../msData/additional/test72232_2.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB050.i">
+<instanceDocument xlink:href="../msData/additional/test72232_2.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB051">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="72070" description="xsd: test setting finalDefault to 'list'"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB051">
+<schemaDocument xlink:href="../msData/additional/test72070.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB051b">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="72070" description="test setting finalDefault to 'list'"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB051b">
+<schemaDocument xlink:href="../msData/additional/test72070_b.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB052">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="72233" description="test invalid idendity constraint?"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB052">
+<schemaDocument xlink:href="../msData/additional/test72233.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB053">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="73457" description="xsd: should not allow minOccurs and maxOccurs in particle under top level group"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB053">
+<schemaDocument xlink:href="../msData/additional/test73457.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB054">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="70948" description="xsd:invalid facets on simpleContent restriction with simpleType child should work"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB054">
+<schemaDocument xlink:href="../msData/additional/test70948.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB054.v">
+<instanceDocument xlink:href="../msData/additional/test70948.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB055">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="734028" description="xsd: test empty choice "</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB055">
+<schemaDocument xlink:href="../msData/additional/test73402.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB056">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="73715" description="xsd: Regular Expression: preprocess pattern '\\c' should match '\c'"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB056">
+<schemaDocument xlink:href="../msData/additional/test73715.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB056.v">
+<instanceDocument xlink:href="../msData/additional/test73715v.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB057">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="73715" description="xsd: Regular Expression: preprocess pattern '\\c' should match '\c'"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB057">
+<schemaDocument xlink:href="../msData/additional/test73715.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB057.i">
+<instanceDocument xlink:href="../msData/additional/test73715i.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB058">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="73665" description="xsd: Regular Expression: test checking for '\C' non-character correctly, test with value='?'"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB058">
+<schemaDocument xlink:href="../msData/additional/test73665.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB058.v">
+<instanceDocument xlink:href="../msData/additional/test73665.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB059">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="73666" description="xsd: Regular Expression: test pattern '(\n|\s)+b' and value ' b'"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB059">
+<schemaDocument xlink:href="../msData/additional/test73666.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB059.v">
+<instanceDocument xlink:href="../msData/additional/test73666.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB060">
+<annotation>
+<documentation>TEST :Adhoc XSD: : 72685 - XmlSchema: IDREFS are not allowed to have pattern facet</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB060">
+<schemaDocument xlink:href="../msData/additional/test72685a.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB061">
+<annotation>
+<documentation>TEST :Adhoc XSD: : 72685 - XmlSchema: NMTOKENS are not allowed to have pattern facet</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB061">
+<schemaDocument xlink:href="../msData/additional/test72685b.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB062">
+<annotation>
+<documentation>TEST :Adhoc XSD: : 72685 - XmlSchema: ENTITIES are not allowed to have pattern facet</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB062">
+<schemaDocument xlink:href="../msData/additional/test72685c.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB063">
+<annotation>
+<documentation>TEST :Adhoc XSD: : 72702 - test using or validating a not-wellformed XSD</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<instanceTest name="addB063.i">
+<instanceDocument xlink:href="../msData/additional/test72702.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB064">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="73722" description="xsd: cannot fild attribute from attribute group in particle derivation. (xsd.xsd)"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB064">
+<schemaDocument xlink:href="../msData/additional/test73722.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB065">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="73826" description="xsd: element, when nillable is true, there must be no fixed value"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB065">
+<schemaDocument xlink:href="../msData/additional/test73826.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB065.i">
+<instanceDocument xlink:href="../msData/additional/test73826.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB066">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="73850" description="xsd: test duplicated ID (one is attribute one is element) in instance xml"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB066">
+<schemaDocument xlink:href="../msData/additional/test73850.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB066.i">
+<instanceDocument xlink:href="../msData/additional/test73850.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB067">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="73986" description="xsd: length of QName"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB067">
+<schemaDocument xlink:href="../msData/additional/test73986.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB067.v">
+<instanceDocument xlink:href="../msData/additional/test73986.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB068">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="73986" description="xsd: length of QName"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB068">
+<schemaDocument xlink:href="../msData/additional/test73986.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB068.i">
+<instanceDocument xlink:href="../msData/additional/test73986_2.xml"/>
+<expected validity="invalid"/>
+<current bugzilla="http://www.w3.org/Bugs/Public/show_bug.cgi?id=4122" status="queried" date="2007-02-02"/>
+<prior status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB069">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="63950" description="Validating instance document against schema with an integer restriction"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB069">
+<schemaDocument xlink:href="../msData/additional/test63950.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB069.i">
+<instanceDocument xlink:href="../msData/additional/test63950.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB070">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="64982" description="xsd: when there is invalid fomr=qualified declared on a top level element."</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB070">
+<schemaDocument xlink:href="../msData/additional/test64982.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB070a">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="64756" description="xsd: attribute from Schema (xsd:) namespace on schema"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB070a">
+<schemaDocument xlink:href="../msData/additional/test64756.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB071">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="65026" description="xsd: test to import the xml namespace from http://www.w3.org/2001/xml.xsd (xsd for xsd)"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB071">
+<schemaDocument xlink:href="../msData/additional/test65026.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB072">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="74789" description="xsd: type referenced from included xsd file that use namespace from targetNamespace."</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB072">
+<schemaDocument xlink:href="../msData/additional/test74789_a.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB073">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="74789" description="xsd: type referenced from included xsd file that use namespace from targetNamespace."</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB073">
+<schemaDocument xlink:href="../msData/additional/test74789_a1.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB075">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="75564" description="xsd: we do not check for absolute string in fixed attribute value, when there are invalid char follow the valud value."</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB075">
+<schemaDocument xlink:href="../msData/additional/test75564.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB075.i">
+<instanceDocument xlink:href="../msData/additional/test75564.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB076">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="75028"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB076">
+<schemaDocument xlink:href="../msData/additional/addB076.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB076.v">
+<instanceDocument xlink:href="../msData/additional/addB076.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB077">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="75028"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB077">
+<schemaDocument xlink:href="../msData/additional/addB077.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB078">
+<annotation>
+<documentation>TEST :Adhoc XSD: : when attribute has use='required' fixed='123', the attribute must be specified with the fixed valued in the document. Instance has the attribute with correct fixed value.</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB078">
+<schemaDocument xlink:href="../msData/additional/addB078.xsd"/>
+<expected validity="valid"/>
+<current date="2006-12-22" status="queried" bugzilla="http://www.w3.org/Bugs/Public/show_bug.cgi?id=4077"/>
+<prior status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB078.i">
+<instanceDocument xlink:href="../msData/additional/addB078.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB078A">
+<annotation>
+<documentation>TEST :Adhoc XSD: : when attribute has use='required' fixed='123', the attribute must be specified with the fixed valued in the document. Instance has the attribute with incorrect fixed value.</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB078A">
+<schemaDocument xlink:href="../msData/additional/addB078.xsd"/>
+<expected validity="valid"/>
+<current bugzilla="http://www.w3.org/Bugs/Public/show_bug.cgi?id=4077" status="queried" date="2006-12-22"/>
+<prior status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB078A.i">
+<instanceDocument xlink:href="../msData/additional/addB078a.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB078B">
+<annotation>
+<documentation>TEST :Adhoc XSD: : when attribute has use='required' fixed='123', the attribute must be specified with the fixed valued in the document. Instance has the attribute with missing fixed value.</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB078B">
+<schemaDocument xlink:href="../msData/additional/addB078.xsd"/>
+<expected validity="valid"/>
+<current date="2006-12-22" status="queried" bugzilla="http://www.w3.org/Bugs/Public/show_bug.cgi?id=4077"/>
+<prior status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB078B.i">
+<instanceDocument xlink:href="../msData/additional/addB078b.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB079">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="71892" description="XSD: on derived complexType with empty particle"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB079">
+<schemaDocument xlink:href="../msData/additional/addB079.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB080">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="72554" description="XSD: should disallow duplicate ID attributes like DTD and XDR"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB080">
+<schemaDocument xlink:href="../msData/additional/addB080.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB080.i">
+<instanceDocument xlink:href="../msData/additional/addB080.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB081">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="59812" description="xsd: both type and simpleType are present in an attribute decl."</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB081">
+<schemaDocument xlink:href="../msData/additional/addB081.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB082">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="62925" description="xsd: xsd:type attribute on a complexType element should give error"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB082">
+<schemaDocument xlink:href="../msData/additional/addB082.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB083">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="61316" description="test 'group' with more than one particle (choice | sequence| all) as child"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB083">
+<schemaDocument xlink:href="../msData/additional/addB083.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB084">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="61599" description="xsd:particle: all, test only one element declaration, and that element is used in xml instant."</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB084">
+<schemaDocument xlink:href="../msData/additional/addB084.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB084.v">
+<instanceDocument xlink:href="../msData/additional/addB084.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB085">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="61608" description="xsd: sequence: when minOccurs=0, maxOccurs=1, test particles with min=max=0 as children"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB085">
+<schemaDocument xlink:href="../msData/additional/addB085.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB087">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="61692" description="xsd: elementFormDefault=qualified, test elements from imported xsd that are not qualified in the instant XML."</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB087">
+<schemaDocument xlink:href="../msData/additional/addB087.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB087.i">
+<instanceDocument xlink:href="../msData/additional/addB087.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB088">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="61692" description="xsd: elementFormDefault=qualified, test elements from imported xsd that are not qualified in the instant XML."</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB088">
+<schemaDocument xlink:href="../msData/additional/addB088.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB088.v">
+<instanceDocument xlink:href="../msData/additional/addB088.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB089">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="61896" description="xsd: extension with 'all' as a base type"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB089">
+<schemaDocument xlink:href="../msData/additional/addB089.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB090">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="61911" description="xsd: extension: when 'choice' is extented from 'any', the one of the item in 'choice' should satisfy the content model."</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB090">
+<schemaDocument xlink:href="../msData/additional/addB090.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB090.v">
+<instanceDocument xlink:href="../msData/additional/addB090.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB091">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="61964" description="xsd: point less occurance should be ignored, the particle containing sequence is min=max=1, and 'sequence' has only one child"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB091">
+<schemaDocument xlink:href="../msData/additional/addB091.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB092">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="62136" description="xsd: in an 'all' group, when element is declared as minOccurs=0, maxOccurs=0, it should not be able to appear in instant XML."</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB092">
+<schemaDocument xlink:href="../msData/additional/addB092.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB092.i">
+<instanceDocument xlink:href="../msData/additional/addB092.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB093">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="62160" description="xsd: derived by restriction: (Choice:Choice -- RecurseLax) all particles in Base choice need not be appeared in the drived choice."</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB093">
+<schemaDocument xlink:href="../msData/additional/addB093.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB094">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="62483" description="xsd: test redefine, a simply redefined of a complex type with no targetNamespace"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB094">
+<schemaDocument xlink:href="../msData/additional/addB094.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB095">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="60947" description="xsd: particle(s) under model group 'all' cannot have maxOccurs &gt; 1, this is not enforced when there are other sibling in the same group"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB095">
+<schemaDocument xlink:href="../msData/additional/addB095.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB096">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="61053" description="xsd: test 'group' reference is used, and content model is explicitly declared using 'sequence'."</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB096">
+<schemaDocument xlink:href="../msData/additional/addB096.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB096.v">
+<instanceDocument xlink:href="../msData/additional/addB096.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB097">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="61104" description="test minOccur=absent, maxOccur='0' on a 'group' decl is incorrect"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB097">
+<schemaDocument xlink:href="../msData/additional/addB097.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB098">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="61115" description="test when the content is incomplete."</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB098">
+<schemaDocument xlink:href="../msData/additional/addB098.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB098.i">
+<instanceDocument xlink:href="../msData/additional/addB098.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB099">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="61126" description="xsd: value range of minOccurs and maxOccurs should allow big NonNegativeInteger, such as 12678967543233"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB099">
+<schemaDocument xlink:href="../msData/additional/addB099.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB100">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="61604" description="xsd: test there are 2 elements with same name but different type."</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB100">
+<schemaDocument xlink:href="../msData/additional/addB100.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB101">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="60467" description="XSD: extension whose base is the same ncName as its parent's ncName when outside of redefine"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB101">
+<schemaDocument xlink:href="../msData/additional/addB101.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB102">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="60941" description="xsd: particle validation rules: test when group's minOccurs=2 and the instant XML has only one sequence of group"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB102">
+<schemaDocument xlink:href="../msData/additional/addB102.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB102.i">
+<instanceDocument xlink:href="../msData/additional/addB102.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB103">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="60941" description="xsd: global attribute"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB103">
+<schemaDocument xlink:href="../msData/additional/addB103.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB104">
+<annotation>
+<documentation>TEST :Adhoc XSD: : test attribute normalization of fixed value of an attribute value</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB104">
+<schemaDocument xlink:href="../msData/additional/addB104.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB104.v">
+<instanceDocument xlink:href="../msData/additional/addB104.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB105">
+<annotation>
+<documentation>TEST :Adhoc XSD: : test element's fixed value is not normalized</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB105">
+<schemaDocument xlink:href="../msData/additional/addB105.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB105.i">
+<instanceDocument xlink:href="../msData/additional/addB105.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB106">
+<annotation>
+<documentation>TEST :Adhoc XSD: : xsd: QName of types should be pass to appliaction after normalization, we should discard leading and trailing spaces.</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB106">
+<schemaDocument xlink:href="../msData/additional/addB106.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB107">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="76303" description="xsd: fixed value of an element should take default type as build-in string, if type is not specified."</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB107">
+<schemaDocument xlink:href="../msData/additional/addB107.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB108">
+<annotation>
+<documentation>TEST :Adhoc XSD: : check that the local fixed value must be the same as the global fixed value</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB108">
+<schemaDocument xlink:href="../msData/additional/addB108.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB109">
+<annotation>
+<documentation>TEST :Adhoc XSD: : check that the local fixed value must be the same as the global fixed value</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB109">
+<schemaDocument xlink:href="../msData/additional/addB109.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB109.i">
+<instanceDocument xlink:href="../msData/additional/addB109.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB110">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="65911" description="xsd: anySimpleType as a build in base type"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB110">
+<schemaDocument xlink:href="../msData/additional/test65911_1.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB111">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="65911" description="xsd: anySimpleType as a build in base type (2)"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB111">
+<schemaDocument xlink:href="../msData/additional/test65911_2.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB112">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="65911" description="xsd: anySimpleType as a build in base type (3)"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB112">
+<schemaDocument xlink:href="../msData/additional/test65911_3.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB113">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="76251" description="xsd: test non-deterministic content of a sequence with same elements (a{2}, a)"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB113">
+<schemaDocument xlink:href="../msData/additional/addB113.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB114">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="75808" description="xsd testing"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB114">
+<schemaDocument xlink:href="../msData/additional/addB114.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB114.i">
+<instanceDocument xlink:href="../msData/additional/addB114.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB115">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="75564" description="xsd: absolute string in fixed attribute value, when there are invalid char follow the valud value."</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB115">
+<schemaDocument xlink:href="../msData/additional/addB115.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB115.i">
+<instanceDocument xlink:href="../msData/additional/addB115.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB116">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="75092" description="xsd: 'any' with processContents=strict: should allow valid content item which has xsi:type."</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB116">
+<schemaDocument xlink:href="../msData/additional/test75092.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB116.v">
+<instanceDocument xlink:href="../msData/additional/test75092.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB117">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="75083" description="xsd: self referencing of model group should be allowed in redefine"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB117">
+<schemaDocument xlink:href="../msData/additional/test75083.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB118">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="74966" description="xsd: particle derivation by restrrction of 'choice' {1,1} to {0,1} should be invalid"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB118">
+<schemaDocument xlink:href="../msData/additional/test74966.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB120">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="73456" description="xsd: test validating an XML with invalid XSD."</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<instanceTest name="addB120.i">
+<instanceDocument xlink:href="../msData/additional/test73456.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB121">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="76070" description="xsd: test non-deterministic xsd with sequence (A, ##other{2}, A)"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB121">
+<schemaDocument xlink:href="../msData/additional/addB121.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB122">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="78910" description="xsd: wildcard: content type with namespace=##any and processContent=skip"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB122">
+<schemaDocument xlink:href="../msData/additional/addB122.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB122.v">
+<instanceDocument xlink:href="../msData/additional/addB122.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB123">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="79416" description="xsd: test violation of uniqueness in xsd"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB123">
+<schemaDocument xlink:href="../msData/additional/test79416.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB123.i">
+<instanceDocument xlink:href="../msData/additional/test79416.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB124">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="79253" description="XSD: validating an XML with a not welform XSD?"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<instanceTest name="addB124.i">
+<instanceDocument xlink:href="../msData/additional/test79253.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB125">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="78898" description="xsd: wildcard: content type with namespace=##any and processContent=skip"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB125">
+<schemaDocument xlink:href="../msData/additional/test78898.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB125.v">
+<instanceDocument xlink:href="../msData/additional/test78898.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB126">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="78456" description="XSD with pattern value=\p{IsLatin-1Supplement}, \p{IsLatinExtended-A}, or \p{IsLatinExtended-B}"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB126">
+<schemaDocument xlink:href="../msData/additional/regexp_IsLatin-1S_44242.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB127">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="78456" description="XSD with pattern value=\p{IsLatin-1Supplement}, \p{IsLatinExtended-A}, or \p{IsLatinExtended-B}"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB127">
+<schemaDocument xlink:href="../msData/additional/regexp_IsLatinExd-A_44243.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB128">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="78456" description="XSD with pattern value=\p{IsLatin-1Supplement}, \p{IsLatinExtended-A}, or \p{IsLatinExtended-B}"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB128">
+<schemaDocument xlink:href="../msData/additional/regexp_IsLatinExd-B_44244.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB129">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="74834" description="validate xml data when it has a decimal digit of .0"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB129">
+<schemaDocument xlink:href="../msData/additional/test74834.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB129.v">
+<instanceDocument xlink:href="../msData/additional/test74834.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB130">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="78162" description="attribute on xsd:any processContents=skip"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB130">
+<schemaDocument xlink:href="../msData/additional/test78126.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB130.v">
+<instanceDocument xlink:href="../msData/additional/test78126.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB131">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="76423" description="test validation of keys when default namespace is '' and more than one key is defined"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB131">
+<schemaDocument xlink:href="../msData/additional/test76423.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB131.v">
+<instanceDocument xlink:href="../msData/additional/test76423.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB132">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="66745" description="xsd validation:xsd substitutionGroup "</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB132">
+<schemaDocument xlink:href="../msData/additional/test66745_a.xsd"/>
+<schemaDocument xlink:href="../msData/additional/test66745_b.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB132.v">
+<instanceDocument xlink:href="../msData/additional/test66745.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB134">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="72131" description="XSD: test xml includes xsd in the attribute xsi:noNamespaceSchemaLocation"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<instanceTest name="addB134.v">
+<instanceDocument xlink:href="../msData/additional/test72131.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB135">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="81662" description="xsd: test element matching global declaration via xsd:any."</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB135">
+<schemaDocument xlink:href="../msData/additional/test81662.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB135.v">
+<instanceDocument xlink:href="../msData/additional/test81662.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB136">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="84188" description="XSD: Attribute with use=prohibited and wildcard"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB136">
+<schemaDocument xlink:href="../msData/additional/test84188.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB136.v">
+<instanceDocument xlink:href="../msData/additional/test84188.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB137">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="84517" description="xsd: simpleType should not be able to restrict anyType *(or) attribute should not allow type='xsd:anyType'"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB137">
+<schemaDocument xlink:href="../msData/additional/test84517.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB138">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="84002" description="validating an XSD with empty value in a nsmespace declaration, xmlns=''"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<instanceTest name="addB138.i">
+<instanceDocument xlink:href="../msData/additional/test84002_a.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB139">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="84002" description="validating an XSD with empty value in a nsmespace declaration, xmlns=''"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<instanceTest name="addB139.i">
+<instanceDocument xlink:href="../msData/additional/test84002_b.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB140">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="78000" description="any and processContents='skip'"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB140">
+<schemaDocument xlink:href="../msData/additional/test78000a.xsd"/>
+<schemaDocument xlink:href="../msData/additional/test78000b.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB140.v">
+<instanceDocument xlink:href="../msData/additional/test78000.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB141">
+<annotation>
+<documentation>TEST :Adhoc XSD: : Base types of list and union types should be anySimpleType</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB141">
+<schemaDocument xlink:href="../msData/additional/test82919.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB142">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="84613" description="validation xml with inline schema"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<instanceTest name="addB142.i">
+<instanceDocument xlink:href="../msData/additional/test84613.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB143">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="83452" description="Invalid lexical hexBinary value of 'abcde' should be rejected, hexBinary should be even in length."</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB143">
+<schemaDocument xlink:href="../msData/additional/test83452.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB143.i">
+<instanceDocument xlink:href="../msData/additional/test83452.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB144">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="82731" description="Repeated valid values in block or final attribute in element declarations cause error."</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB144">
+<schemaDocument xlink:href="../msData/additional/test82731.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB145">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="87395" description="validateElement on XSD with ID enumeration .."</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB145">
+<schemaDocument xlink:href="../msData/additional/test87395.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB145.v">
+<instanceDocument xlink:href="../msData/additional/test87395.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="test93160">
+<annotation>
+<documentation>TEST :Adhoc XSD: : Whitespace is collapsed for element with type xs:anySimpleType</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="test93160">
+<schemaDocument xlink:href="../msData/additional/test93160.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="test93160.i">
+<instanceDocument xlink:href="../msData/additional/test93160.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB147">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="94188" description="test the w3c xml.xsd schema url"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB147">
+<schemaDocument xlink:href="../msData/additional/test94188.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB148">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="93276" description="XSD: should not overwrite the default namespace with the included targetNamespace for xsd:include"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB148">
+<schemaDocument xlink:href="../msData/additional/test93276.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB148.v">
+<instanceDocument xlink:href="../msData/additional/test93276.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB149">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="97822" description="complexContent element with fixed value that has the same name as base element does not validate against invalid data"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB149">
+<schemaDocument xlink:href="../msData/additional/test97822.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB149.i">
+<instanceDocument xlink:href="../msData/additional/test97822.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB150">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="93568" description="XSD: Restriction should allow member types of a union as valid restrictions of a union type"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB150">
+<schemaDocument xlink:href="../msData/additional/test93568.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB151">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="99762" description="totalDigit calculation in restriction of decimal is wrong. Should ignore non-significant zeros."</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB151">
+<schemaDocument xlink:href="../msData/additional/test99762.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB153">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="86490" description="test non-deterministic content of a sequence with same element included via wildcard"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB153">
+<schemaDocument xlink:href="../msData/additional/test86490_a.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB155">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="93490" description="test schema location or inline schema seen after item from schema target namespace seen"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<instanceTest name="addB155.v">
+<instanceDocument xlink:href="../msData/additional/test93490_1.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB156">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="93490" description="test schema location or inline schema seen after item from schema target namespace seen"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<instanceTest name="addB156.i">
+<instanceDocument xlink:href="../msData/additional/test93490_2.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB157">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="93490" description="test schema location or inline schema seen after item from schema target namespace seen"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<instanceTest name="addB157.v">
+<instanceDocument xlink:href="../msData/additional/test93490_3.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB158">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="93490" description="test schema location or inline schema seen after item from schema target namespace seen"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<instanceTest name="addB158.i">
+<instanceDocument xlink:href="../msData/additional/test93490_4.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB159">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="93490" description="test schema location or inline schema seen after item from schema target namespace seen"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<instanceTest name="addB159.i">
+<instanceDocument xlink:href="../msData/additional/test93490_5.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB160">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="93490" description="test schema location or inline schema seen after item from schema target namespace seen"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<instanceTest name="addB160.v">
+<instanceDocument xlink:href="../msData/additional/test93490_6.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB161">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="93490" description="test schema location or inline schema seen after item from schema target namespace seen"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<instanceTest name="addB161.i">
+<instanceDocument xlink:href="../msData/additional/test93490_7.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB162">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="93490" description="test schema location or inline schema seen after item from schema target namespace seen"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<instanceTest name="addB162.i">
+<instanceDocument xlink:href="../msData/additional/test93490_8.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB163">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="93490" description="test schema location or inline schema seen after item from schema target namespace seen"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<instanceTest name="addB163.v">
+<instanceDocument xlink:href="../msData/additional/test93490_9.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB164">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="93490" description="test schema location or inline schema seen after item from schema target namespace seen"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<instanceTest name="addB164.i">
+<instanceDocument xlink:href="../msData/additional/test93490_10.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB165">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="93490" description="test schema location or inline schema seen after item from schema target namespace seen"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<instanceTest name="addB165.v">
+<instanceDocument xlink:href="../msData/additional/test93490_11.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB166">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="93490" description="test schema location or inline schema seen after item from schema target namespace seen"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<instanceTest name="addB166.i">
+<instanceDocument xlink:href="../msData/additional/test93490_12.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB167">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="93490" description="test schema location or inline schema seen after item from schema target namespace seen"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<instanceTest name="addB167.i">
+<instanceDocument xlink:href="../msData/additional/test93490_13.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB168">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="93490" description="test schema location or inline schema seen after item from schema target namespace seen"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<instanceTest name="addB168.v">
+<instanceDocument xlink:href="../msData/additional/test93490_14.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB169">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="93490" description="test schema location or inline schema seen after item from schema target namespace seen"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<instanceTest name="addB169.v">
+<instanceDocument xlink:href="../msData/additional/test93490_15.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB169.1">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="243307" description="test valid document with inline schema"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB169.1">
+<schemaDocument xlink:href="../msData/additional/test93490_16.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB169.1.v">
+<instanceDocument xlink:href="../msData/additional/test93490_16.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB170">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="102433" description="Validation of xml instances should be namespace strict"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB170">
+<schemaDocument xlink:href="../msData/additional/test102433.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB170.i">
+<instanceDocument xlink:href="../msData/additional/test102433_1.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB171">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="102433" description="Validation of xml instances should be namespace strict"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB171">
+<schemaDocument xlink:href="../msData/additional/test102433.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB171.i">
+<instanceDocument xlink:href="../msData/additional/test102433_2.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB172">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="102433" description="Validation of xml instances should be namespace strict"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB172">
+<schemaDocument xlink:href="../msData/additional/test102433.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB172.i">
+<instanceDocument xlink:href="../msData/additional/test102433_3.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB173">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="102433" description="Validation of xml instances should be namespace strict"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB173">
+<schemaDocument xlink:href="../msData/additional/test102433.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB173.i">
+<instanceDocument xlink:href="../msData/additional/test102433_4.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB174">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="102433" description="Validation of xml instances should be namespace strict"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB174">
+<schemaDocument xlink:href="../msData/additional/test102433.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB174.v">
+<instanceDocument xlink:href="../msData/additional/test102433_5.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB175">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="102433" description="Validation of xml instances should be namespace strict"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB175">
+<schemaDocument xlink:href="../msData/additional/test102433.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB175.i">
+<instanceDocument xlink:href="../msData/additional/test102433_6.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB176">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="102850" description="valid but ambigous schema"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB176">
+<schemaDocument xlink:href="../msData/additional/test102850_1.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB176.v">
+<instanceDocument xlink:href="../msData/additional/test102850_1.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB177">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="102850" description="non deterministic complex schema declaration."</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB177">
+<schemaDocument xlink:href="../msData/additional/test102850_2.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB178">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="102850" description="test non deterministic complex schema declaration(2)"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB178">
+<schemaDocument xlink:href="../msData/additional/test102850_3.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB180">
+<annotation>
+<documentation>TEST :Adhoc XSD: : Circualr substitutionGroup declarations</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB180">
+<schemaDocument xlink:href="../msData/additional/test111869.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB181">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="validating an invalid xsd type"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<instanceTest name="addB181.i">
+<instanceDocument xlink:href="../msData/additional/test109017.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB182">
+<annotation>
+<documentation>TEST :Adhoc XSD: : id="schemaLocation for schema whose targetNamespace is the XSD namespace"</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB182">
+<schemaDocument xlink:href="../msData/additional/test111871.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB182.v">
+<instanceDocument xlink:href="../msData/additional/test111871.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB183">
+<annotation>
+<documentation>TEST :Adhoc XSD: : XSD: fixed/default values should not be compared as strings to determine valid derivations</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB183">
+<schemaDocument xlink:href="../msData/additional/test113911.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB184">
+<annotation>
+<documentation>TEST :Adhoc XSD: : mixed addition of schemas into SchemaCache.</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB184">
+<schemaDocument xlink:href="../msData/additional/test113285.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB187">
+<annotation>
+<documentation>TEST :Adhoc XSD: : XSD: Support user specified schema for http://www.w3.org/XML/1998/namespace namespace</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB187">
+<schemaDocument xlink:href="../msData/additional/test264908_1.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB187.v">
+<instanceDocument xlink:href="../msData/additional/test264908_1.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB188">
+<annotation>
+<documentation>TEST :Adhoc XSD: : XSD: Support user specified schema for http://www.w3.org/XML/1998/namespace namespace</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB188">
+<schemaDocument xlink:href="../msData/additional/test264908_1.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB188.i">
+<instanceDocument xlink:href="../msData/additional/test264908_1i.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB191">
+<annotation>
+<documentation>TEST :Adhoc XSD: : XSD: During validation of an element schemas in schemaLocation and noNamespaceSchemaLocation hints should be compiled together</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<instanceTest name="addB191.v">
+<instanceDocument xlink:href="../msData/additional/addB191.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB193">
+<annotation>
+<documentation>TEST :Adhoc XSD: : XSD: whitespace facet should be applied while parsing the name attribute in the schema</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB193">
+<schemaDocument xlink:href="../msData/additional/addB193.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB194">
+<annotation>
+<documentation>TEST :Adhoc XSD: : XSD: test unique id in the document</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB194">
+<schemaDocument xlink:href="../msData/additional/addB194.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addB196a">
+<annotation>
+<documentation>TEST :Adhoc XSD: : zero width unicode characeter test with fixed value(1)</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB196a">
+<schemaDocument xlink:href="../msData/additional/fixed1.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB196a.v">
+<instanceDocument xlink:href="../msData/additional/fixed1a.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB196b">
+<annotation>
+<documentation>TEST :Adhoc XSD: : zero width unicode characeter test with fixed value(2)</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB196b">
+<schemaDocument xlink:href="../msData/additional/fixed1.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB196b.i">
+<instanceDocument xlink:href="../msData/additional/fixed1b.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB196c">
+<annotation>
+<documentation>TEST :Adhoc XSD: : zero width unicode characeter test with fixed value(3)</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB196c">
+<schemaDocument xlink:href="../msData/additional/fixed1.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB196c.v">
+<instanceDocument xlink:href="../msData/additional/fixed1c.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB196d">
+<annotation>
+<documentation>TEST :Adhoc XSD: : zero width unicode characeter test with fixed value(4)</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB196d">
+<schemaDocument xlink:href="../msData/additional/fixed1.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB196d.i">
+<instanceDocument xlink:href="../msData/additional/fixed1d.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB196e">
+<annotation>
+<documentation>TEST :Adhoc XSD: : zero width unicode characeter test with fixed value(5)</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB196e">
+<schemaDocument xlink:href="../msData/additional/fixed2.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB196e.i">
+<instanceDocument xlink:href="../msData/additional/fixed1a.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB196f">
+<annotation>
+<documentation>TEST :Adhoc XSD: : zero width unicode characeter test with fixed value(6)</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB196f">
+<schemaDocument xlink:href="../msData/additional/fixed2.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB196f.v">
+<instanceDocument xlink:href="../msData/additional/fixed1b.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB196g">
+<annotation>
+<documentation>TEST :Adhoc XSD: : zero width unicode characeter test with fixed value(7)</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB196g">
+<schemaDocument xlink:href="../msData/additional/fixed2.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB196g.i">
+<instanceDocument xlink:href="../msData/additional/fixed1c.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB196h">
+<annotation>
+<documentation>TEST :Adhoc XSD: : zero width unicode characeter test with fixed value(8)</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB196h">
+<schemaDocument xlink:href="../msData/additional/fixed2.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB196h.v">
+<instanceDocument xlink:href="../msData/additional/fixed1d.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB196i">
+<annotation>
+<documentation>TEST :Adhoc XSD: : zero width unicode characeter test with fixed value(9)</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB196i">
+<schemaDocument xlink:href="../msData/additional/fixed2.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB196i.i">
+<instanceDocument xlink:href="../msData/additional/fixed2a.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB196j">
+<annotation>
+<documentation>TEST :Adhoc XSD: : zero width unicode characeter test with fixed value(10)</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB196j">
+<schemaDocument xlink:href="../msData/additional/fixed2.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB196j.i">
+<instanceDocument xlink:href="../msData/additional/fixed2b.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB196k">
+<annotation>
+<documentation>TEST :Adhoc XSD: : zero width unicode characeter test with fixed value(11)</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB196k">
+<schemaDocument xlink:href="../msData/additional/fixed2.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB196k.i">
+<instanceDocument xlink:href="../msData/additional/fixed3a.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB196l">
+<annotation>
+<documentation>TEST :Adhoc XSD: : zero width unicode characeter test with fixed value(12)</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB196l">
+<schemaDocument xlink:href="../msData/additional/fixed2.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB196l.i">
+<instanceDocument xlink:href="../msData/additional/fixed3b.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB197a">
+<annotation>
+<documentation>TEST :Adhoc XSD: : zero width unicode characeter test with enumeration value(1)</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB197a">
+<schemaDocument xlink:href="../msData/additional/enum1.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB197a.v">
+<instanceDocument xlink:href="../msData/additional/enum1a.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB197b">
+<annotation>
+<documentation>TEST :Adhoc XSD: : zero width unicode characeter test with enumeration value(2)</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB197b">
+<schemaDocument xlink:href="../msData/additional/enum1.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB197b.i">
+<instanceDocument xlink:href="../msData/additional/enum1b.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB197c">
+<annotation>
+<documentation>TEST :Adhoc XSD: : zero width unicode characeter test with enumeration value(3)</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB197c">
+<schemaDocument xlink:href="../msData/additional/enum1.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB197c.v">
+<instanceDocument xlink:href="../msData/additional/enum1c.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB197d">
+<annotation>
+<documentation>TEST :Adhoc XSD: : zero width unicode characeter test with enumeration value(4)</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB197d">
+<schemaDocument xlink:href="../msData/additional/enum1.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB197d.i">
+<instanceDocument xlink:href="../msData/additional/enum1d.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB197e">
+<annotation>
+<documentation>TEST :Adhoc XSD: : zero width unicode characeter test with enumeration value(5)</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB197e">
+<schemaDocument xlink:href="../msData/additional/enum2.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB197e.i">
+<instanceDocument xlink:href="../msData/additional/enum1a.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB197f">
+<annotation>
+<documentation>TEST :Adhoc XSD: : zero width unicode characeter test with enumeration value(6)</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB197f">
+<schemaDocument xlink:href="../msData/additional/enum2.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB197f.i">
+<instanceDocument xlink:href="../msData/additional/enum1c.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB198a">
+<annotation>
+<documentation>TEST :Adhoc XSD: : zero width unicode characeter test with maxLength facet(1)</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB198a">
+<schemaDocument xlink:href="../msData/additional/maxLength.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB198a.i">
+<instanceDocument xlink:href="../msData/additional/maxLength1.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB198b">
+<annotation>
+<documentation>TEST :Adhoc XSD: : zero width unicode characeter test with maxLength facet(2)</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB198b">
+<schemaDocument xlink:href="../msData/additional/maxLength.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB198b.i">
+<instanceDocument xlink:href="../msData/additional/maxLength2.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB198c">
+<annotation>
+<documentation>TEST :Adhoc XSD: : zero width unicode characeter test with minLength facet(1)</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB198c">
+<schemaDocument xlink:href="../msData/additional/minLength.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB198c.v">
+<instanceDocument xlink:href="../msData/additional/minLength1.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB198d">
+<annotation>
+<documentation>TEST :Adhoc XSD: : zero width unicode characeter test with minLength facet(2)</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB198d">
+<schemaDocument xlink:href="../msData/additional/minLength.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB198d.v">
+<instanceDocument xlink:href="../msData/additional/minLength2.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB199">
+<annotation>
+<documentation>TEST :Adhoc XSD: : zero width unicode characeter test with xsi type</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<instanceTest name="addB199.i">
+<instanceDocument xlink:href="../msData/additional/xsiType.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB200a">
+<annotation>
+<documentation>TEST :Adhoc XSD: : zero width unicode characeter test identity constraints(1)</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB200a">
+<schemaDocument xlink:href="../msData/additional/idc.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB200a.i">
+<instanceDocument xlink:href="../msData/additional/idc1.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB200b">
+<annotation>
+<documentation>TEST :Adhoc XSD: : zero width unicode characeter test identity constraints(2)</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB200b">
+<schemaDocument xlink:href="../msData/additional/idc.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB200b.i">
+<instanceDocument xlink:href="../msData/additional/idc2.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB200c">
+<annotation>
+<documentation>TEST :Adhoc XSD: : zero width unicode characeter test identity constraints(3)</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB200c">
+<schemaDocument xlink:href="../msData/additional/idc.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB200c.i">
+<instanceDocument xlink:href="../msData/additional/idc3.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB201">
+<annotation>
+<documentation>TEST :Adhoc XSD: : zero width unicode characeter test namespace decl</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addB201">
+<schemaDocument xlink:href="../msData/additional/ns.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addB201.i">
+<instanceDocument xlink:href="../msData/additional/ns.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB202a">
+<annotation>
+<documentation>TEST :Adhoc XSD: : zero width unicode characeter test datatype parsing - hexbin</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<instanceTest name="addB202a.i">
+<instanceDocument xlink:href="../msData/additional/hexbin.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addB202b">
+<annotation>
+<documentation>TEST :Adhoc XSD: : zero width unicode characeter test datatype parsing -datetime</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<instanceTest name="addB202b.i">
+<instanceDocument xlink:href="../msData/additional/datetime.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addD001">
+<annotation>
+<documentation>TEST :Adhoc XSD: : xsd 1.0 Prima: the po.xml and po.xsd without targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addD001">
+<schemaDocument xlink:href="../msData/additional/po1.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addD001.v">
+<instanceDocument xlink:href="../msData/additional/po1.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addD002">
+<annotation>
+<documentation>TEST :Adhoc XSD: : xsd 1.0 Prima: the po.xml and po.xsd declared as targetNamespace 'foo'</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addD002">
+<schemaDocument xlink:href="../msData/additional/po.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addD002.v">
+<instanceDocument xlink:href="../msData/additional/po.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addD003">
+<annotation>
+<documentation>TEST :Adhoc XSD: : xsd 1.0 Structure: the XSD for XSD at the end of the spec, modify to load - striped the DTD, change any Entity Reference to 'foo' - added some simpleType for missing types - removed some invalid partical derication of 'group', 'any' and 'anyAttribute'</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addD003">
+<schemaDocument xlink:href="../msData/additional/xsd.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="addD004">
+<annotation>
+<documentation>TEST :Adhoc XSD: : SAMPLE: xsd 1.0 Sturcture spec : the ipo.xsd with a simplify version of ipo.xml without the xsi:type</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addD004">
+<schemaDocument xlink:href="../msData/additional/ipo_s1.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addD004.v">
+<instanceDocument xlink:href="../msData/additional/ipo_s1.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="addD004a">
+<annotation>
+<documentation>TEST :Adhoc XSD: : SAMPLE: xsd 1.0 Sturcture spec : the ipo.xsd with a simplify version of ipo.xml with the xsi:type</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="addD004a">
+<schemaDocument xlink:href="../msData/additional/ipo.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="addD004a.v">
+<instanceDocument xlink:href="../msData/additional/ipo.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="isDefault001">
+<annotation>
+<documentation>TEST :Adhoc XSD: : Check IsDefault(fixed) for Empty Element with no end tag</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="isDefault001">
+<schemaDocument xlink:href="../msData/additional/isdefault001.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="isDefault001.v">
+<instanceDocument xlink:href="../msData/additional/isdefault001.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="isDefault002">
+<annotation>
+<documentation>TEST :Adhoc XSD: : Check IsDefault(fixed) for Empty Element with start and end tag</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="isDefault002">
+<schemaDocument xlink:href="../msData/additional/isdefault001.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="isDefault002.v">
+<instanceDocument xlink:href="../msData/additional/isdefault002.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="isDefault003">
+<annotation>
+<documentation>TEST :Adhoc XSD: : Check IsDefault(fixed) for Empty Element with fixed value already present</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="isDefault003">
+<schemaDocument xlink:href="../msData/additional/isdefault001.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="isDefault003.v">
+<instanceDocument xlink:href="../msData/additional/isdefault003.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="isDefault004">
+<annotation>
+<documentation>TEST :Adhoc XSD: : Check IsDefault(fixed) for Element with invalid value</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="isDefault004">
+<schemaDocument xlink:href="../msData/additional/isdefault001.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="isDefault004.i">
+<instanceDocument xlink:href="../msData/additional/isdefault004.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="isDefault005">
+<annotation>
+<documentation>TEST :Adhoc XSD: : Check IsDefault(fixed) a sequence with elements with no end tags</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="isDefault005">
+<schemaDocument xlink:href="../msData/additional/isdefault002.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="isDefault005.v">
+<instanceDocument xlink:href="../msData/additional/isdefault005.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="isDefault006">
+<annotation>
+<documentation>TEST :Adhoc XSD: : Check IsDefault(fixed) a sequence with elements with start and end tags</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="isDefault006">
+<schemaDocument xlink:href="../msData/additional/isdefault002.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="isDefault006.v">
+<instanceDocument xlink:href="../msData/additional/isdefault006.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="isDefault007">
+<annotation>
+<documentation>TEST :Adhoc XSD: : Check IsDefault(fixed) a sequence with elements with fixed values present</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="isDefault007">
+<schemaDocument xlink:href="../msData/additional/isdefault002.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="isDefault007.v">
+<instanceDocument xlink:href="../msData/additional/isdefault007.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="isDefault008">
+<annotation>
+<documentation>TEST :Adhoc XSD: : Check IsDefault(fixed) a sequence with elements with invalid values</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="isDefault008">
+<schemaDocument xlink:href="../msData/additional/isdefault002.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="isDefault008.i">
+<instanceDocument xlink:href="../msData/additional/isdefault008.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="isDefault009">
+<annotation>
+<documentation>TEST :Adhoc XSD: : Check IsDefault(fixed) a sequence with elements with one invalid value(1)</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="isDefault009">
+<schemaDocument xlink:href="../msData/additional/isdefault002.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="isDefault009.i">
+<instanceDocument xlink:href="../msData/additional/isdefault009.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="isDefault010">
+<annotation>
+<documentation>TEST :Adhoc XSD: : Check IsDefault(fixed) a sequence with elements with one invalid value (2)</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="isDefault010">
+<schemaDocument xlink:href="../msData/additional/isdefault002.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="isDefault010.i">
+<instanceDocument xlink:href="../msData/additional/isdefault010.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="isDefault011">
+<annotation>
+<documentation>TEST :Adhoc XSD: : Check IsDefault(fixed) a sequence with elements with one invalid value(3)</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="isDefault011">
+<schemaDocument xlink:href="../msData/additional/isdefault002.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="isDefault011.i">
+<instanceDocument xlink:href="../msData/additional/isdefault011.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="isDefault021">
+<annotation>
+<documentation>TEST :Adhoc XSD: : Check IsDefault(default) for Empty Element with no end tag</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="isDefault021">
+<schemaDocument xlink:href="../msData/additional/isdefault003.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="isDefault021.v">
+<instanceDocument xlink:href="../msData/additional/isdefault021.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="isDefault022">
+<annotation>
+<documentation>TEST :Adhoc XSD: : Check IsDefault(default) for Empty Element with start and end tag</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="isDefault022">
+<schemaDocument xlink:href="../msData/additional/isdefault003.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="isDefault022.v">
+<instanceDocument xlink:href="../msData/additional/isdefault022.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="isDefault023">
+<annotation>
+<documentation>TEST :Adhoc XSD: : Check IsDefault(default) for Empty Element with fixed value already present</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="isDefault023">
+<schemaDocument xlink:href="../msData/additional/isdefault003.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="isDefault023.v">
+<instanceDocument xlink:href="../msData/additional/isdefault023.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="isDefault024">
+<annotation>
+<documentation>TEST :Adhoc XSD: : Check IsDefault(default) for Element with invalid value</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="isDefault024">
+<schemaDocument xlink:href="../msData/additional/isdefault003.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="isDefault024.v">
+<instanceDocument xlink:href="../msData/additional/isdefault024.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="isDefault025">
+<annotation>
+<documentation>TEST :Adhoc XSD: : Check IsDefault(default) a sequence with elements with no end tags</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="isDefault025">
+<schemaDocument xlink:href="../msData/additional/isdefault004.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="isDefault025.v">
+<instanceDocument xlink:href="../msData/additional/isdefault025.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="isDefault026">
+<annotation>
+<documentation>TEST :Adhoc XSD: : Check IsDefault(default) a sequence with elements with start and end tags</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="isDefault026">
+<schemaDocument xlink:href="../msData/additional/isdefault004.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="isDefault026.v">
+<instanceDocument xlink:href="../msData/additional/isdefault026.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="isDefault027">
+<annotation>
+<documentation>TEST :Adhoc XSD: : Check IsDefault(default) a sequence with elements with fixed values present</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="isDefault027">
+<schemaDocument xlink:href="../msData/additional/isdefault004.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="isDefault027.v">
+<instanceDocument xlink:href="../msData/additional/isdefault027.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="isDefault028">
+<annotation>
+<documentation>TEST :Adhoc XSD: : Check IsDefault(default) a sequence with elements with invalid values</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="isDefault028">
+<schemaDocument xlink:href="../msData/additional/isdefault004.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="isDefault028.v">
+<instanceDocument xlink:href="../msData/additional/isdefault028.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="isDefault051">
+<annotation>
+<documentation>TEST :Adhoc XSD: : Attributes: IsDefault(fixed) attributes on root element, schema has no targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="isDefault051">
+<schemaDocument xlink:href="../msData/additional/isdefault051.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="isDefault051.v">
+<instanceDocument xlink:href="../msData/additional/isdefault051.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="isDefault052">
+<annotation>
+<documentation>TEST :Adhoc XSD: : Attributes: IsDefault(fixed) attributes on root element, schema has no targetNamespace, one invalid(1)</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="isDefault052">
+<schemaDocument xlink:href="../msData/additional/isdefault051.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="isDefault052.i">
+<instanceDocument xlink:href="../msData/additional/isdefault052.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="isDefault053">
+<annotation>
+<documentation>TEST :Adhoc XSD: : Attributes: IsDefault(fixed) attributes on root element, schema has no targetNamespace, one invalid(2)</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="isDefault053">
+<schemaDocument xlink:href="../msData/additional/isdefault051.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="isDefault053.i">
+<instanceDocument xlink:href="../msData/additional/isdefault053.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="isDefault054">
+<annotation>
+<documentation>TEST :Adhoc XSD: : Attributes: IsDefault(fixed) attributes on root element, schema has no targetNamespace, one invalid(3)</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="isDefault054">
+<schemaDocument xlink:href="../msData/additional/isdefault051.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="isDefault054.i">
+<instanceDocument xlink:href="../msData/additional/isdefault054.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="isDefault055">
+<annotation>
+<documentation>TEST :Adhoc XSD: : Attributes: IsDefault(fixed) No attributes on root element(empty element no end tag), schema has no targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="isDefault055">
+<schemaDocument xlink:href="../msData/additional/isdefault051.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="isDefault055.v">
+<instanceDocument xlink:href="../msData/additional/isdefault055.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="isDefault056">
+<annotation>
+<documentation>TEST :Adhoc XSD: : Attributes: IsDefault(fixed) no attributes on root element (empty element WITH end tag), schema has no targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="isDefault056">
+<schemaDocument xlink:href="../msData/additional/isdefault051.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="isDefault056.v">
+<instanceDocument xlink:href="../msData/additional/isdefault056.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="isDefault057">
+<annotation>
+<documentation>TEST :Adhoc XSD: : Attributes: IsDefault(fixed) Local Element with all attributes, schema has no targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="isDefault057">
+<schemaDocument xlink:href="../msData/additional/isdefault052.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="isDefault057.v">
+<instanceDocument xlink:href="../msData/additional/isdefault057.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="isDefault058">
+<annotation>
+<documentation>TEST :Adhoc XSD: : Attributes: IsDefault(fixed) Local Element with no attributes, schema has no targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="isDefault058">
+<schemaDocument xlink:href="../msData/additional/isdefault052.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="isDefault058.v">
+<instanceDocument xlink:href="../msData/additional/isdefault058.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="isDefault061">
+<annotation>
+<documentation>TEST :Adhoc XSD: : Attributes: IsDefault(fixed) attributes on root element, schema HAS targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="isDefault061">
+<schemaDocument xlink:href="../msData/additional/isdefault061.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="isDefault061.v">
+<instanceDocument xlink:href="../msData/additional/isdefault061.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="isDefault062">
+<annotation>
+<documentation>TEST :Adhoc XSD: : Attributes: IsDefault(fixed) attributes on root element, schema HAS targetNamespace, one invalid(1)</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="isDefault062">
+<schemaDocument xlink:href="../msData/additional/isdefault061.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="isDefault062.i">
+<instanceDocument xlink:href="../msData/additional/isdefault062.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="isDefault063">
+<annotation>
+<documentation>TEST :Adhoc XSD: : Attributes: IsDefault(fixed) attributes on root element, schema HAS targetNamespace, one invalid(2)</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="isDefault063">
+<schemaDocument xlink:href="../msData/additional/isdefault061.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="isDefault063.i">
+<instanceDocument xlink:href="../msData/additional/isdefault063.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="isDefault064">
+<annotation>
+<documentation>TEST :Adhoc XSD: : Attributes: IsDefault(fixed) attributes on root element, schema HAS targetNamespace, one invalid(3)</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="isDefault064">
+<schemaDocument xlink:href="../msData/additional/isdefault061.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="isDefault064.i">
+<instanceDocument xlink:href="../msData/additional/isdefault064.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="isDefault065">
+<annotation>
+<documentation>TEST :Adhoc XSD: : Attributes: IsDefault(fixed) No attributes on root element(empty element no end tag), schema HAS targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="isDefault065">
+<schemaDocument xlink:href="../msData/additional/isdefault061.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="isDefault065.v">
+<instanceDocument xlink:href="../msData/additional/isdefault065.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="isDefault066">
+<annotation>
+<documentation>TEST :Adhoc XSD: : Attributes: IsDefault(fixed) no attributes on root element (empty element WITH end tag), schema HAS targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="isDefault066">
+<schemaDocument xlink:href="../msData/additional/isdefault061.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="isDefault066.v">
+<instanceDocument xlink:href="../msData/additional/isdefault066.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="isDefault067">
+<annotation>
+<documentation>TEST :Adhoc XSD: : Attributes: IsDefault(fixed) Local Element with all attributes, schema HAS targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="isDefault067">
+<schemaDocument xlink:href="../msData/additional/isdefault062.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="isDefault067.v">
+<instanceDocument xlink:href="../msData/additional/isdefault067.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="isDefault068">
+<annotation>
+<documentation>TEST :Adhoc XSD: : Attributes: IsDefault(fixed) Local Element with no attributes, schema HAS targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="isDefault068">
+<schemaDocument xlink:href="../msData/additional/isdefault062.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="isDefault068.v">
+<instanceDocument xlink:href="../msData/additional/isdefault068.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="isDefault060_1">
+<annotation>
+<documentation>TEST :Adhoc XSD: : test empty element typed as xsd:int with default value set in schema.</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="isDefault060_1">
+<schemaDocument xlink:href="../msData/additional/test95960_1.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="isDefault060_1.v">
+<instanceDocument xlink:href="../msData/additional/test95960_1.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="isDefault060_2">
+<annotation>
+<documentation>TEST :Adhoc XSD: : test empty element typed as xsd:int with default value set in schema(2).</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="isDefault060_2">
+<schemaDocument xlink:href="../msData/additional/test95960_2.xsd"/>
+<expected validity="valid"/>
+<current bugzilla="http://www.w3.org/Bugs/Public/show_bug.cgi?id=4077" status="queried" date="2006-12-22"/>
+<prior status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="isDefault060_2.i">
+<instanceDocument xlink:href="../msData/additional/test95960_2.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="isDefault069">
+<annotation>
+<documentation>TEST :Adhoc XSD: : test empty element typed as xsd:int with default value set in schema(3).</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="isDefault069">
+<schemaDocument xlink:href="../msData/additional/test95960_2.xsd"/>
+<expected validity="valid"/>
+<current date="2006-12-22" status="queried" bugzilla="http://www.w3.org/Bugs/Public/show_bug.cgi?id=4077"/>
+<prior status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="isDefault069.i">
+<instanceDocument xlink:href="../msData/additional/test95960_3.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="isDefault070">
+<annotation>
+<documentation>TEST :Adhoc XSD: : element of type xs:anyType with value not matching the fixed value in the schema should error(invalid)</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="isDefault070">
+<schemaDocument xlink:href="../msData/additional/isdefault070.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="isDefault070.i">
+<instanceDocument xlink:href="../msData/additional/isdefault070.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="isDefault071">
+<annotation>
+<documentation>TEST :Adhoc XSD: : element of type xs:anyType with value not matching the fixed value in the schema should error(valid)</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="isDefault071">
+<schemaDocument xlink:href="../msData/additional/isdefault070.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="isDefault071.v">
+<instanceDocument xlink:href="../msData/additional/isdefault071.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="isDefault072">
+<annotation>
+<documentation>TEST :Adhoc XSD: : While adding default attributes with form="qualified", should lookup all prefixes for its namespace</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="isDefault072">
+<schemaDocument xlink:href="../msData/additional/isdefault072.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="isDefault072.v">
+<instanceDocument xlink:href="../msData/additional/isdefault072.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="isDefault073">
+<annotation>
+<documentation>TEST :Adhoc XSD: : element of type xs:anyType with a default and fixed value</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="isDefault073">
+<schemaDocument xlink:href="../msData/additional/isdefault073.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="isDefault073.v">
+<instanceDocument xlink:href="../msData/additional/isdefault073.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="isDefault074">
+<annotation>
+<documentation>TEST :Adhoc XSD: : attribute of type xs:anySimpleType with a default and fixed value</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="isDefault074">
+<schemaDocument xlink:href="../msData/additional/isdefault074.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="isDefault074.v">
+<instanceDocument xlink:href="../msData/additional/isdefault074.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="isDefault075">
+<annotation>
+<documentation>TEST :Adhoc XSD: : default value on mixed content</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="isDefault075">
+<schemaDocument xlink:href="../msData/additional/isdefault075.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="isDefault075.v">
+<instanceDocument xlink:href="../msData/additional/isdefault075.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="isDefault076">
+<annotation>
+<documentation>TEST :Adhoc XSD: : fixed value on mixed content</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="isDefault076">
+<schemaDocument xlink:href="../msData/additional/isdefault076.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="isDefault076.v">
+<instanceDocument xlink:href="../msData/additional/isdefault075.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="isDefault077">
+<annotation>
+<documentation>TEST :Adhoc XSD: : fixed value on mixed content with invalid value in XML</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="isDefault077">
+<schemaDocument xlink:href="../msData/additional/isdefault076.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="isDefault077.i">
+<instanceDocument xlink:href="../msData/additional/isdefault076.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="isDefault078">
+<annotation>
+<documentation>TEST :Adhoc XSD: : map xml namespace in the instance to be able to insert default attributes from xml namespace</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="isDefault078">
+<schemaDocument xlink:href="../msData/additional/isdefault078.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="isDefault078.v">
+<instanceDocument xlink:href="../msData/additional/isdefault078.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="isDefault079">
+<annotation>
+<documentation>TEST :Adhoc XSD: : multiple 'fixed' constraints</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="isDefault079">
+<schemaDocument xlink:href="../msData/additional/isdefault079.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="isDefault079.v">
+<instanceDocument xlink:href="../msData/additional/isdefault079.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="memberType001">
+<annotation>
+<documentation>TEST :Adhoc XSD: : Element : membertype of union(bool,int,string)</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="memberType001">
+<schemaDocument xlink:href="../msData/additional/memberType001.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="memberType001.v">
+<instanceDocument xlink:href="../msData/additional/memberType001.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="memberType002">
+<annotation>
+<documentation>TEST :Adhoc XSD: : Element: membertype of union(bool,int,string)</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="memberType002">
+<schemaDocument xlink:href="../msData/additional/memberType001.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="memberType002.v">
+<instanceDocument xlink:href="../msData/additional/memberType002.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="memberType003">
+<annotation>
+<documentation>TEST :Adhoc XSD: : Attribute: membertype of union(bool,int,string)</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="memberType003">
+<schemaDocument xlink:href="../msData/additional/memberType002.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="memberType003.v">
+<instanceDocument xlink:href="../msData/additional/memberType003.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="memberType004">
+<annotation>
+<documentation>TEST :Adhoc XSD: : Element with default value: membertype of union(bool,int,string)</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="memberType004">
+<schemaDocument xlink:href="../msData/additional/memberType003.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="memberType004.v">
+<instanceDocument xlink:href="../msData/additional/memberType004.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="memberType005">
+<annotation>
+<documentation>TEST :Adhoc XSD: : Attribute with default value: membertype of union(bool,int,string)</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="memberType005">
+<schemaDocument xlink:href="../msData/additional/memberType004.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="memberType005.v">
+<instanceDocument xlink:href="../msData/additional/memberType005.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="memberType006">
+<annotation>
+<documentation>TEST :Adhoc XSD: : Element with xsi:type: membertype of union(bool,int,string)</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="memberType006">
+<schemaDocument xlink:href="../msData/additional/memberType001.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="memberType006.v">
+<instanceDocument xlink:href="../msData/additional/memberType006.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="memberType007">
+<annotation>
+<documentation>TEST :Adhoc XSD: : Element with xsi:type: membertype of union(bool,int,string)</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="memberType007">
+<schemaDocument xlink:href="../msData/additional/memberType001.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="memberType007.v">
+<instanceDocument xlink:href="../msData/additional/memberType007.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="memberType008">
+<annotation>
+<documentation>TEST :Adhoc XSD: : Element with default value and xsi:type: membertype of union(bool,int,string)</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="memberType008">
+<schemaDocument xlink:href="../msData/additional/memberType003.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="memberType008.v">
+<instanceDocument xlink:href="../msData/additional/memberType008.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="memberType021">
+<annotation>
+<documentation>TEST :Adhoc XSD: : Element of union of user defined typees(mybool,myint,mystring)</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="memberType021">
+<schemaDocument xlink:href="../msData/additional/memberType021.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="memberType021.v">
+<instanceDocument xlink:href="../msData/additional/memberType021.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="memberType022">
+<annotation>
+<documentation>TEST :Adhoc XSD: : Element of union of user defined typees(mybool,myint,mystring) with default value</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="memberType022">
+<schemaDocument xlink:href="../msData/additional/memberType022.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="memberType022.v">
+<instanceDocument xlink:href="../msData/additional/memberType022.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="memberType023">
+<annotation>
+<documentation>TEST :Adhoc XSD: : Attribute of union of user defined typees(mybool,myint,mystring)</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="memberType023">
+<schemaDocument xlink:href="../msData/additional/memberType023.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="memberType023.v">
+<instanceDocument xlink:href="../msData/additional/memberType023.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="memberType024">
+<annotation>
+<documentation>TEST :Adhoc XSD: : Attribute of union of user defined typees(mybool,myint,mystring) with default value</documentation>
+</annotation>
+<documentationReference xlink:href=""/>
+<schemaTest name="memberType024">
+<schemaDocument xlink:href="../msData/additional/memberType024.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="memberType024.v">
+<instanceDocument xlink:href="../msData/additional/memberType024.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+</testSet>
+

@@ -1,0 +1,10 @@
+<?xml version='1.0'?>
+<root xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+       xsi:noNamespaceSchemaLocation="short009.xsd" >
+  <!-- test for simpleType list of Short -->
+  <complexTest>
+    <comp_foo>-32765</comp_foo>
+  </complexTest>
+ 
+  <simpleTest>-32765</simpleTest>
+</root>

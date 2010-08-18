@@ -1,0 +1,273 @@
+<testSet contributor="Microsoft" name="MS-Errata102006-07-15" xmlns="http://www.w3.org/XML/2004/xml-schema-test-suite/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/XML/2004/xml-schema-test-suite/ AnnotatedTSSchema.xsd">
+<testGroup name="errA001">
+<annotation>
+<documentation>TEST :Primer Errata : E0-23 Clarification: test that facet fractionDigits can be added to all numeric datatypes as long as value is 0 (except for decimal which takes any value)</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/2004/03/xmlschema-errata"/>
+<schemaTest name="errA001">
+<schemaDocument xlink:href="../msData/errata10/errA001.xsd"/>
+<expected validity="valid"/>
+<current date="2006-07-16" status="accepted"/>
+</schemaTest>
+<instanceTest name="errA001.v">
+<instanceDocument xlink:href="../msData/errata10/errA001.xml"/>
+<expected validity="valid"/>
+<current date="2006-07-16" status="accepted"/>
+</instanceTest>
+</testGroup>
+<testGroup name="errA002">
+<annotation>
+<documentation>TEST :Primer Errata : E0-10 Error, E1-11 Error: test that ##other namespace is any namespace other than the target namespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/2004/03/xmlschema-errata"/>
+<schemaTest name="errA002">
+<schemaDocument xlink:href="../msData/errata10/errA002.xsd"/>
+<schemaDocument xlink:href="../msData/errata10/errA002a.xsd"/>
+<schemaDocument xlink:href="../msData/errata10/errA002b.xsd"/>
+<expected validity="valid"/>
+<current date="2006-07-16" status="accepted"/>
+</schemaTest>
+<instanceTest name="errA002.i">
+<instanceDocument xlink:href="../msData/errata10/errA002.xml"/>
+<expected validity="invalid"/>
+<current date="2006-07-16" status="accepted"/>
+</instanceTest>
+</testGroup>
+<testGroup name="errA003">
+<annotation>
+<documentation>TEST :Primer Errata : E0-15 Error, E2-12 Error: test lexical representation of gMonth</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/2004/03/xmlschema-errata"/>
+<schemaTest name="errA003">
+<schemaDocument xlink:href="../msData/errata10/errA003.xsd"/>
+<expected validity="valid"/>
+<current date="2006-07-16" status="accepted"/>
+</schemaTest>
+<instanceTest name="errA003.v">
+<instanceDocument xlink:href="../msData/errata10/errA003.xml"/>
+<expected validity="valid"/>
+<current date="2006-07-16" status="accepted"/>
+</instanceTest>
+</testGroup>
+<testGroup name="errC001">
+<annotation>
+<documentation>TEST :Primer Errata : E1-40 Clarification: test that anySimpleType whitespace normalization is set to preserve</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/2004/03/xmlschema-errata"/>
+<schemaTest name="errC001">
+<schemaDocument xlink:href="../msData/errata10/errC001.xsd"/>
+<expected validity="valid"/>
+<current date="2006-07-16" status="accepted"/>
+</schemaTest>
+<instanceTest name="errC001.v">
+<instanceDocument xlink:href="../msData/errata10/errC001.xml"/>
+<expected validity="valid"/>
+<current date="2006-07-16" status="accepted"/>
+</instanceTest>
+</testGroup>
+<testGroup name="errC002">
+<annotation>
+<documentation>TEST :Primer Errata : E1-9 Error: version definition of 'schema' is now a normalizedString instead of token</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/2004/03/xmlschema-errata"/>
+<schemaTest name="errC002">
+<schemaDocument xlink:href="../msData/errata10/errC002.xsd"/>
+<expected validity="valid"/>
+<current date="2006-07-16" status="accepted"/>
+</schemaTest>
+</testGroup>
+<testGroup name="errC003">
+<annotation>
+<documentation>TEST :Primer Errata : E1-3 Error: change representation of Model Group Definition</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/2004/03/xmlschema-errata"/>
+<schemaTest name="errC003">
+<schemaDocument xlink:href="../msData/errata10/errC003.xsd"/>
+<expected validity="valid"/>
+<current date="2006-07-16" status="accepted"/>
+</schemaTest>
+</testGroup>
+<testGroup name="errC004">
+<annotation>
+<documentation>TEST :Primer Errata : E1-16 Error: public attribute is now optional and has a value space of token</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/2004/03/xmlschema-errata"/>
+<schemaTest name="errC004">
+<schemaDocument xlink:href="../msData/errata10/errC004.xsd"/>
+<expected validity="valid"/>
+<current date="2006-07-16" status="accepted"/>
+</schemaTest>
+</testGroup>
+<testGroup name="errC005">
+<annotation>
+<documentation>TEST :Primer Errata : E1-13 Error: local element must not have abstract attribute with value true</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/2004/03/xmlschema-errata"/>
+<schemaTest name="errC005">
+<schemaDocument xlink:href="../msData/errata10/errC005.xsd"/>
+<expected validity="invalid"/>
+<current date="2006-07-16" status="accepted"/>
+</schemaTest>
+</testGroup>
+<testGroup name="errC006">
+<annotation>
+<documentation>TEST :Primer Errata : E1-13 Error: local element must not have abstract attribute with value true</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/2004/03/xmlschema-errata"/>
+<schemaTest name="errC006">
+<schemaDocument xlink:href="../msData/errata10/errC006.xsd"/>
+<expected validity="invalid"/>
+<current date="2006-07-16" status="accepted"/>
+</schemaTest>
+</testGroup>
+<testGroup name="errC007">
+<annotation>
+<documentation>TEST :Primer Errata : E1-22 Error: R-117 Process contents for ur-type need to be lax</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/2004/03/xmlschema-errata"/>
+<schemaTest name="errC007">
+<schemaDocument xlink:href="../msData/errata10/errC007.xsd"/>
+<expected validity="valid"/>
+<current date="2006-07-16" status="accepted"/>
+</schemaTest>
+<instanceTest name="errC007.v">
+<instanceDocument xlink:href="../msData/errata10/errC007.xml"/>
+<expected validity="valid"/>
+<current date="2006-07-16" status="accepted"/>
+</instanceTest>
+</testGroup>
+<testGroup name="errC008">
+<annotation>
+<documentation>TEST :Primer Errata : Errata E1-21 - processContents of restriction must be identical or stronger than that of base,xs:any</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/2004/03/xmlschema-errata"/>
+<schemaTest name="errC008">
+<schemaDocument xlink:href="../msData/errata10/errC008.xsd"/>
+<expected validity="invalid"/>
+<current date="2006-07-16" status="accepted"/>
+</schemaTest>
+</testGroup>
+<testGroup name="errC009">
+<annotation>
+<documentation>TEST :Primer Errata : Errata E1-21 - processContents of restriction must be identical or stronger than that of base,xs:anyAttribute</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/2004/03/xmlschema-errata"/>
+<schemaTest name="errC009">
+<schemaDocument xlink:href="../msData/errata10/errC009.xsd"/>
+<expected validity="invalid"/>
+<current date="2006-07-16" status="accepted"/>
+</schemaTest>
+</testGroup>
+<testGroup name="errE001">
+<annotation>
+<documentation>TEST :Primer Errata : E2-27 Error: test that nonPositiveIntegers support a '+' on zero</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/2004/03/xmlschema-errata"/>
+<schemaTest name="errE001">
+<schemaDocument xlink:href="../msData/errata10/errE001.xsd"/>
+<expected validity="valid"/>
+<current date="2006-07-16" status="accepted"/>
+</schemaTest>
+<instanceTest name="errE001.v">
+<instanceDocument xlink:href="../msData/errata10/errE001.xml"/>
+<expected validity="valid"/>
+<current date="2006-07-16" status="accepted"/>
+</instanceTest>
+</testGroup>
+<testGroup name="errE002">
+<annotation>
+<documentation>TEST :Primer Errata : E2-27 Error: test that nonNegativeIntegers support a '-' on zero</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/2004/03/xmlschema-errata"/>
+<schemaTest name="errE002">
+<schemaDocument xlink:href="../msData/errata10/errE002.xsd"/>
+<expected validity="valid"/>
+<current date="2006-07-16" status="accepted"/>
+</schemaTest>
+<instanceTest name="errE002.v">
+<instanceDocument xlink:href="../msData/errata10/errE002.xml"/>
+<expected validity="valid"/>
+<current date="2006-07-16" status="accepted"/>
+</instanceTest>
+</testGroup>
+<testGroup name="errE003">
+<annotation>
+<documentation>TEST :Primer Errata : E2-25 Error: test support for the new language pattern ([a-zA-Z]{1,8})-([a-zA-Z0-9]{1,8})*</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/2004/03/xmlschema-errata"/>
+<schemaTest name="errE003">
+<schemaDocument xlink:href="../msData/errata10/errE003.xsd"/>
+<expected validity="valid"/>
+<current date="2006-07-16" status="accepted"/>
+</schemaTest>
+<instanceTest name="errE003.v">
+<instanceDocument xlink:href="../msData/errata10/errE003.xml"/>
+<expected validity="valid"/>
+<current date="2006-07-16" status="accepted"/>
+</instanceTest>
+</testGroup>
+<testGroup name="errE004">
+<annotation>
+<documentation>TEST :Primer Errata : E2-24 Error: test that absent 'T' is enforced when no time elements are present</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/2004/03/xmlschema-errata"/>
+<schemaTest name="errE004">
+<schemaDocument xlink:href="../msData/errata10/errE004.xsd"/>
+<expected validity="valid"/>
+<current date="2006-07-16" status="accepted"/>
+</schemaTest>
+<instanceTest name="errE004.i">
+<instanceDocument xlink:href="../msData/errata10/errE004.xml"/>
+<expected validity="invalid"/>
+<current date="2006-07-16" status="accepted"/>
+</instanceTest>
+</testGroup>
+<testGroup name="errE006">
+<annotation>
+<documentation>TEST :Primer Errata : E2-22 Clarification: test date, gYearMonth, gMonthDay, gDay, gMonth and gYear permit an optional, trailing time zone specification.</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/2004/03/xmlschema-errata"/>
+<schemaTest name="errE006">
+<schemaDocument xlink:href="../msData/errata10/errE006.xsd"/>
+<expected validity="valid"/>
+<current date="2006-07-16" status="accepted"/>
+</schemaTest>
+<instanceTest name="errE006.v">
+<instanceDocument xlink:href="../msData/errata10/errE006.xml"/>
+<expected validity="valid"/>
+<current date="2006-07-16" status="accepted"/>
+</instanceTest>
+</testGroup>
+<testGroup name="errE008">
+<annotation>
+<documentation>TEST :Primer Errata : E2-17 Error: Do not allow carriage return in token values</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/2004/03/xmlschema-errata"/>
+<schemaTest name="errE008">
+<schemaDocument xlink:href="../msData/errata10/errE008.xsd"/>
+<expected validity="valid"/>
+<current date="2006-07-16" status="accepted"/>
+</schemaTest>
+<instanceTest name="errE008.v">
+<instanceDocument xlink:href="../msData/errata10/errE008.xml"/>
+<expected validity="valid"/>
+<current date="2006-07-16" status="accepted"/>
+</instanceTest>
+</testGroup>
+<testGroup name="errF001">
+<annotation>
+<documentation>TEST :Primer Errata : Errata E2-35: length facet is now allowed with either minLength or maxLength if they are specified in different derivation steps</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/2004/03/xmlschema-errata"/>
+<schemaTest name="errF001">
+<schemaDocument xlink:href="../msData/errata10/errF001.xsd"/>
+<expected validity="valid"/>
+<current date="2006-07-16" status="accepted"/>
+</schemaTest>
+<instanceTest name="errF001.i">
+<instanceDocument xlink:href="../msData/errata10/errF001.xml"/>
+<expected validity="invalid"/>
+<current date="2006-07-16" status="accepted"/>
+</instanceTest>
+</testGroup>
+</testSet>

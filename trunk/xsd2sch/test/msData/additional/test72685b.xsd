@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+	<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+	<xsd:simpleType name="fooType">
+	        <xsd:restriction base="xsd:NMTOKENS">
+	                <xsd:pattern value="[A-C]{0,2}" />
+	        </xsd:restriction>
+	</xsd:simpleType>
+
+</xsd:schema>
+

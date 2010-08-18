@@ -1,0 +1,17 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+ <xs:complexType name="A">
+  <xs:sequence>
+   <xs:any processContents="lax" namespace="##any" />
+  </xs:sequence>
+ </xs:complexType>
+
+ <xs:complexType name="B">
+  <xs:complexContent>
+  <xs:restriction base="A">
+   <xs:sequence>
+    <xs:any processContents="skip" namespace="http://www.example.com" />
+   </xs:sequence>
+  </xs:restriction>
+  </xs:complexContent>
+ </xs:complexType>
+</xs:schema> 

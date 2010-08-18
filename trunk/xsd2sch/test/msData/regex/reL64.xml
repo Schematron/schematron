@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='reL64.xsd' >
+
+<!-- 
+base='string', pattern='\p{IsBopomofo}+', value='#x3100;#x312F;', type='valid', RULE='25,36'
+-->
+
+      <elem att='&#x3100;&#x312F;'/>
+
+ </doc>

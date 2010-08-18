@@ -1,0 +1,29 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    	<xsd:element name="root">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element maxOccurs="100" ref="bar"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+    	<xsd:element type="ct" name="bar"></xsd:element>
+
+	<xsd:simpleType name="st">
+		<xsd:restriction base="xsd:anyURI">
+			<xsd:enumeration value="xあy"/>
+			<xsd:enumeration value="a名前空間名前空間名前空間名前空間名前空間名前空間名前空間名前空間名前空間名前空間名前空間名前空間名前空間b"/>
+			<xsd:enumeration value="anyURI:c"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:complexType name="ct">
+	    <xsd:simpleContent>
+		<xsd:extension base="st">
+			<xsd:attribute type="st" name="att"/>
+		</xsd:extension>
+	    </xsd:simpleContent>
+	</xsd:complexType>
+
+</xsd:schema>

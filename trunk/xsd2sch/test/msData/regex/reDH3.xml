@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='reDH3.xsd' >
+
+<!-- 
+base='language', pattern='\c{2,4}', value='ch-a', type='valid', RULE=''
+-->
+
+     <elem>ch-a</elem>
+
+ </doc>

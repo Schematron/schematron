@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<xs:schema  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:imp='http://importedXSD' 
+    targetNamespace='http://importedXSD' >
+
+<xs:complexType name="B">
+    <xs:sequence>
+        <xs:any namespace="##any" minOccurs="1" maxOccurs="1"/>
+        <xs:element name="e2" maxOccurs="5"/>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:element name="root" type="imp:B" />
+
+</xs:schema>
+
+not well-formed

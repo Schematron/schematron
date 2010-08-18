@@ -1,0 +1,3 @@
+<a:root xmlns:a="ns-a" xmlns:b="ns-b">
+<b:b-e1 c1="a" c2="b"/>
+</a:root>

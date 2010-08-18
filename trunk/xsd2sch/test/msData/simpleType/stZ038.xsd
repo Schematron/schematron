@@ -1,0 +1,9 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:simpleType>
+   <xs:restriction>
+    <xs:pattern value="\d{5}(-\d{4})?"/>
+   </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>

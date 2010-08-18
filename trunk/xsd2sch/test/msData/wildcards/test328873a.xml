@@ -1,0 +1,1 @@
+<a:sub a:att1="abc" att2="bc" b:att3="foo" att="a" xmlns:a="a" xmlns:b="b" xmlns:x="x"></a:sub> <!-- resultant wildcard is not(a) -->

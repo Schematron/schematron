@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema targetNamespace="http://schema2" elementFormDefault="qualified" xmlns="http://schema2" xmlns:mstns="http://schema1" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:schema1="http://schema1">
+    <xs:import namespace="http://schema1" schemaLocation="particlesZ026a.xsd" />
+    
+    <xs:complexType name="SampleType">
+        <xs:complexContent>
+            <xs:extension base="schema1:NestedStatementType">
+                <xs:attribute name="attr1" type="xs:string" use="required" />
+                <xs:attribute name="attr2" type="xs:int" use="required" />
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element name="Sample" type="SampleType" substitutionGroup="schema1:AbstractStatement"/>
+</xs:schema>

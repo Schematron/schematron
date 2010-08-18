@@ -1,0 +1,18 @@
+<a:root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.tempuri.org errE006.xsd"
+	xmlns:a="http://www.tempuri.org">
+
+	<a:testDate>2002-12-31-05:00</a:testDate>
+	<a:testDate>2002-12-31Z</a:testDate>
+	<a:testGYearMonth>2002-12-05:00</a:testGYearMonth>
+	<a:testGYearMonth>2002-12Z</a:testGYearMonth>
+	<a:testGMonthDay>--12-31-05:00</a:testGMonthDay>
+	<a:testGMonthDay>--12-31Z</a:testGMonthDay>
+	<a:testGDay>---31-05:00</a:testGDay>
+	<a:testGDay>---31Z</a:testGDay>
+	<a:testGMonth>--12---05:00</a:testGMonth>
+	<a:testGMonth>--12--Z</a:testGMonth>
+	<a:testGYear>2002-05:00</a:testGYear>
+	<a:testGYear>2002Z</a:testGYear>
+	
+</a:root>

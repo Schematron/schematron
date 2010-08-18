@@ -1,0 +1,29 @@
+<xsd:schema id="webview" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="root">
+	    <xsd:complexType>
+		    <xsd:choice minOccurs="0" maxOccurs="unbounded">
+				<xsd:element ref="any"/>
+				<xsd:element ref="a"/>
+		    </xsd:choice>
+	    </xsd:complexType>
+	</xsd:element>
+
+	<xsd:element name="any">
+	    <xsd:complexType>
+		    <xsd:sequence minOccurs="0" maxOccurs="unbounded">
+			    <xsd:any namespace="##any" processContents="skip" />
+		    </xsd:sequence>
+	    </xsd:complexType>
+	</xsd:element>
+
+	<xsd:element name="a">
+		<xsd:complexType>
+			<xsd:simpleContent>
+				<xsd:extension base="xsd:ID">
+					<xsd:attribute name="att1" type="xsd:int"/>
+					<xsd:attribute name="att2" type="xsd:boolean"/>
+				</xsd:extension>
+			</xsd:simpleContent>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

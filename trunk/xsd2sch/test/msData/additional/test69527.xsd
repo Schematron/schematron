@@ -1,0 +1,15 @@
+<xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema'>
+
+<xsd:simpleType name='foo' id="foo123" final="list">
+	<xsd:restriction base="xsd:string"/>
+</xsd:simpleType>
+
+<xsd:simpleType name='foo2' id="foo1232" final="restriction">
+	<xsd:list itemType="xsd:string"/>
+</xsd:simpleType>
+
+<xsd:simpleType name='foo3' id="foo1233" final="union">
+	<xsd:restriction base="xsd:string"/>
+</xsd:simpleType>
+
+</xsd:schema>

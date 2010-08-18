@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:simpleType name="fooType">
+		<xsd:list itemType=""/>
+	</xsd:simpleType>
+</xsd:schema>

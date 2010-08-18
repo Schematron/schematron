@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ctH008.xsd" myAttr="test attribute" myAttr1="another attribute" myAttr2="last attribute">
+	<myElement1>test data</myElement1>
+	<myElement2>test data</myElement2>
+	<myElement3>test data</myElement3>
+	<myElement>test data</myElement>
+</root>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:attribute name="att1" type="xsd:string"/>
+	<xsd:attribute name="att2" type="xsd:string"/>
+	<xsd:attributeGroup name="abc" id="a">
+		<xsd:attribute ref="att1"/>
+	</xsd:attributeGroup>
+	<xsd:attributeGroup name="xyx">
+		<xsd:attributeGroup ref="foo" id="a"/>
+	</xsd:attributeGroup>
+	<xsd:attributeGroup name="foo">
+		<xsd:attribute ref="att2"/>
+	</xsd:attributeGroup>
+</xsd:schema>

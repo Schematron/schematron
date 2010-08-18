@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='reJ20.xsd' >
+
+<!-- 
+base='string', pattern='\p{Lo}*', value='#x64B;', type='invalid', RULE='25,29'
+-->
+
+      <elem att='&#x64B;'/>
+
+ </doc>

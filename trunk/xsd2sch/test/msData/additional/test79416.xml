@@ -1,0 +1,6 @@
+<foo>
+    <products>
+	<product almostID="a1"/>
+	<product almostID="a1"/>
+    </products>
+</foo>

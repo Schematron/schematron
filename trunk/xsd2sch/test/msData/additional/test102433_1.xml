@@ -1,0 +1,9 @@
+<root xmlns:ns="ns">
+<ns:foo>
+	<q:bar xmlns:q="q">
+	</q:bar>
+</ns:foo> 
+<elem>
+	<ns:baz/>
+</elem>
+</root>

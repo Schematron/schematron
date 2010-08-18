@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://www.microsoft.com/schema/1" xmlns:tns="http://www.microsoft.com/schema/1" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:complexType name="A_TYPE"/>
+	<xs:complexType name="B_TYPE"><xs:complexContent><xs:extension base="tns:A_TYPE"/></xs:complexContent></xs:complexType>
+	<xs:complexType name="C_TYPE"><xs:complexContent><xs:extension base="tns:B_TYPE"/></xs:complexContent></xs:complexType>
+	<xs:complexType name="D_TYPE"><xs:complexContent><xs:extension base="tns:C_TYPE"/></xs:complexContent></xs:complexType>
+	<xs:complexType name="E_TYPE"><xs:complexContent><xs:extension base="tns:D_TYPE"/></xs:complexContent></xs:complexType>
+	<xs:complexType name="F_TYPE"><xs:complexContent><xs:extension base="tns:E_TYPE"/></xs:complexContent></xs:complexType>
+	<xs:complexType name="G_TYPE"><xs:complexContent><xs:extension base="tns:F_TYPE"/></xs:complexContent></xs:complexType>
+	<xs:element name="a" type="tns:A_TYPE"/>
+	<xs:element name="b" type="tns:B_TYPE" substitutionGroup="tns:a"/>
+	<xs:element name="c" type="tns:C_TYPE" substitutionGroup="tns:b"/>
+	<xs:element name="d" type="tns:D_TYPE" substitutionGroup="tns:c"/>
+	<xs:element name="e" type="tns:E_TYPE" substitutionGroup="tns:d"/>
+	<xs:element name="f" type="tns:F_TYPE" substitutionGroup="tns:e"/>
+	<xs:element name="g" type="tns:F_TYPE" substitutionGroup="tns:f"/>
+	<xs:complexType name="CONTAINER">
+		<xs:sequence>
+			<xs:element ref="tns:a" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="container" type="tns:CONTAINER"/>
+</xs:schema>

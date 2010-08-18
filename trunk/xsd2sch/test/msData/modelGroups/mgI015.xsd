@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="doc" type="foo"/>
+	<xsd:complexType name="foo">
+		<xsd:choice>
+			<xsd:element name="one"/>
+			<xsd:element name="two"/>
+			<xsd:element name="three"/>
+			<xsd:element name="four"/>
+			<xsd:group ref="g1"/>
+			<xsd:group ref="g2"/>
+			<xsd:group ref="g3"/>
+			<xsd:group ref="g4"/>
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:group name="g1">
+		<xsd:choice>
+			<xsd:element name="five"/>
+			<xsd:element name="five2"/>
+		</xsd:choice>	
+	</xsd:group>
+	<xsd:group name="g2">
+		<xsd:choice>
+			<xsd:element name="six"/>
+			<xsd:element name="six2"/>
+		</xsd:choice>	
+	</xsd:group>
+	<xsd:group name="g3">
+		<xsd:choice>
+			<xsd:element name="seven"/>
+			<xsd:element name="seven2"/>
+		</xsd:choice>	
+	</xsd:group>
+	<xsd:group name="g4">
+		<xsd:choice>
+			<xsd:element name="eight"/>
+			<xsd:element name="eight2"/>
+		</xsd:choice>	
+	</xsd:group>
+</xsd:schema>

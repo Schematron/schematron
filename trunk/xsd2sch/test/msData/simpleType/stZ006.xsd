@@ -1,0 +1,33 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+targetNamespace="http://xsdtesting"
+xmlns="http://xsdtesting"
+elementFormDefault="qualified"
+>
+
+	<xs:element name="root">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="e1" maxOccurs="10"/>
+				<xs:element name="e2" type="t1" maxOccurs="10"/>
+				<xs:element name="e3" maxOccurs="10">
+					<xs:complexType>
+						<xs:attribute ref="att1"/>
+						<xs:attribute name="att2" type="xs:anySimpleType"/>
+					</xs:complexType>
+				</xs:element>
+
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="e1" type="xs:anySimpleType"/>
+
+    <xs:simpleType name="t1">
+        <xs:restriction base="xs:anySimpleType" />
+    </xs:simpleType>
+
+	<xs:attribute name="att1" type="xs:anySimpleType"/>
+
+	<xs:element name="foo"/>
+	
+ </xs:schema>

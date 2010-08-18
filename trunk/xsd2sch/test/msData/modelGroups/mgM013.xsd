@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="doc"/>
+	<xsd:element name="foo" type="foo"/>
+	<xsd:element name="global"/>
+	<xsd:complexType name="foo">
+		<xsd:all>
+			<xsd:element name="e1"/>
+			<xsd:element name="e2"/>
+		</xsd:all>
+	</xsd:complexType>
+</xsd:schema>

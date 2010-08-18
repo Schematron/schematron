@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:redefine schemaLocation="mgO013B.xsd">
+		<xsd:group name="group">
+			<xsd:all>
+				<xsd:element name="e1"/>
+			</xsd:all>
+		</xsd:group>
+	</xsd:redefine>
+	<xsd:element name="doc" type="foo"/>
+	<xsd:complexType name="foo">
+		<xsd:group ref="group"/>
+	</xsd:complexType>
+</xsd:schema>

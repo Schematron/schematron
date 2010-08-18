@@ -1,0 +1,15 @@
+<xsd:schema xmlns="urn:target" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="1.0" 
+	    targetNamespace="urn:target" elementFormDefault="qualified"
+>
+
+
+	<xsd:element name="foo">
+	    <xsd:complexType>
+		<xsd:sequence>
+			<xsd:any namespace="##other" processContents="lax" maxOccurs="100"/>
+		</xsd:sequence>
+	    </xsd:complexType>
+	</xsd:element>
+	
+
+</xsd:schema>

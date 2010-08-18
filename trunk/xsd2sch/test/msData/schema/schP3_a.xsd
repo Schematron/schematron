@@ -1,0 +1,30 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+targetNamespace="ns-a"
+xmlns="ns-a"
+elementFormDefault="qualified"
+xmlns:foo="foo"
+>
+
+	<xsd:import namespace="foo" schemaLocation="schP3_c.xsd" />
+	
+	<xsd:redefine schemaLocation="schP3_b.xsd">
+		<xsd:simpleType name="b-st">
+			<xsd:restriction base="foo:b-st">
+				<xsd:minLength value="4"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+  	</xsd:redefine>
+
+	<xsd:element name="e1" type="b-st" />
+	
+	<xsd:element name="root">
+		<xsd:complexType>
+			<xsd:choice maxOccurs="unbounded">
+				<xsd:any namespace="##any" processContents="strict"/>
+			</xsd:choice>
+		</xsd:complexType>
+	</xsd:element>
+
+</xsd:schema>
+
+

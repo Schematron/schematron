@@ -1,0 +1,21 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+
+<xs:complexType name="base">
+        <xs:sequence>
+                <xs:any processContents="strict"/>
+        </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="derived">
+        <xs:complexContent>
+                <xs:restriction base="base">
+                <xs:sequence>
+        	        <xs:any processContents="lax"/>
+	        </xs:sequence>
+                </xs:restriction>
+        </xs:complexContent>
+</xs:complexType>
+
+<xs:element name="doc" type="derived" />
+
+</xs:schema>

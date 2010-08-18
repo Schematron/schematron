@@ -1,0 +1,14 @@
+<m:root 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="main elemZ009.xsd"
+	xmlns:m="main"
+	xmlns:a="a"
+	xmlns:b="b"
+>
+
+	<m:a>
+		<b:b/>	
+		<a:a/>
+	</m:a>
+
+</m:root>

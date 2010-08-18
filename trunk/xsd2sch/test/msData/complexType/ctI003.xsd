@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:attribute name="fooType"/>
+	<xs:complexType name="fooType">
+		<xs:sequence>
+			<xs:element name="myEle3" type="xs:NMTOKEN"/>
+			<xs:element name="myEle4" type="xs:long"/>
+		</xs:sequence>
+		<xs:attribute ref="fooType"/>
+	</xs:complexType>
+	<xs:element name="root" type="fooType"/>
+</xs:schema>

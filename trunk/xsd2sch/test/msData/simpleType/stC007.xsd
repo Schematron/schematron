@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:include schemaLocation="stC007b.xsd"/>
+	<xsd:simpleType name="fooType">
+		<xsd:restriction id="foo123" base="xsd:string">
+			<xsd:length value="4"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

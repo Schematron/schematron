@@ -1,0 +1,18 @@
+<xs:schema xmlns="http://cscB2BCIDXSchemas.Schema1" xmlns:b="http://schemas.microsoft.com/BizTalk/2003" targetNamespace="http://cscB2BCIDXSchemas.Schema1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Root" type="Type1" />
+  <xs:element name="Record" type="Type2" />
+  <xs:complexType name="Type1">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="Field1" type="xs:string" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="Type2">
+    <xs:complexContent>
+      <xs:extension base="Type1">
+        <xs:attribute name="Field2" type="xs:string" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+</xs:schema>

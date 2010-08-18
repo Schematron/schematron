@@ -1,0 +1,6 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="b" xmlns="b">
+
+	<xs:element name="b1" default="b1" type="xs:string"/>
+	<xs:element name="b2" fixed="b2" type="xs:string"/>
+
+</xs:schema>

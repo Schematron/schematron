@@ -1,0 +1,30 @@
+<xsd:schema xmlns="あ" targetNamespace="あ" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+	<!-- should give only 3 warning for the unresolved schemaLocations -->
+	<xsd:include schemaLocation="名前空間URI"/>
+	<xsd:import schemaLocation="名前空間URI" namespace="名前空間URI1"/>
+	<xsd:redefine schemaLocation="名前空間URI"/>
+
+	<xsd:notation public="名前空間URI2" system="名前空間URI2" name="n1"/>
+
+    	<xsd:element name="foo">
+		<xsd:annotation>
+			<xsd:appinfo source="名前空間URI"/>
+			<xsd:documentation source="名前空間URI"/>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:anyAttribute namespace="あ"/>
+		</xsd:complexType>
+	</xsd:element>
+
+    	<xsd:element type="st" name="bar"></xsd:element>
+
+	<xsd:simpleType name="st">
+		<xsd:restriction base="xsd:anyURI">
+			<xsd:enumeration value="あ1"/>
+			<xsd:enumeration value="ぃ2"/>
+			<xsd:enumeration value="い3"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+</xsd:schema>

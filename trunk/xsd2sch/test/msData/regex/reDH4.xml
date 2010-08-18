@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='reDH4.xsd' >
+
+<!-- 
+base='Name', pattern='\c+', value='abcdef', type='valid', RULE=''
+-->
+
+      <elem att='abcdef'/>
+
+ </doc>

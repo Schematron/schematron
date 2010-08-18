@@ -1,0 +1,21 @@
+<xs:schema targetNamespace="urn:test" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="urn:test" elementFormDefault="qualified">
+	<xs:element name="Root">
+		<xs:complexType mixed="true">
+			<xs:sequence>
+				<xs:element name="A" type="xs:string"/>
+				<xs:group ref="B" maxOccurs="5"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:group name="B">
+		<xs:choice>
+			<xs:element name="B1" type="xs:string" minOccurs="0"/>
+			<xs:element name="B2" type="xs:string" minOccurs="0"/>
+			<xs:element name="B3" type="xs:string" minOccurs="0"/>
+			<xs:element name="B4" type="xs:string" minOccurs="0"/>
+			<xs:element name="B5" type="xs:string" minOccurs="0"/>
+		</xs:choice>
+	</xs:group>
+
+</xs:schema>

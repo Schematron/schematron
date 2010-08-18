@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<apo:purchaseOrder xmlns:apo="testNS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="testNS elemR001.xsd">
+	<apo:shipTo country="US">
+		<apo:name>Alice Smith</apo:name>
+		<apo:street>123 Maple Street</apo:street>
+	</apo:shipTo>
+	<apo:billTo country="US">
+		<apo:name>Robert Smith</apo:name>
+		<apo:street>8 Oak Avenue</apo:street>
+	</apo:billTo>
+	<apo:comment>Hurry, my lawn is going wild!</apo:comment>
+</apo:purchaseOrder>

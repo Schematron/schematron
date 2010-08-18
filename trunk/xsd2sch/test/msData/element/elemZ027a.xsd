@@ -1,0 +1,26 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="head"/>
+<xs:element name="m1" substitutionGroup="head"/>
+<xs:element name="m2" substitutionGroup="head"/>
+
+<xs:complexType name="base">
+	<xs:sequence>
+		<xs:element ref="head"/>
+	</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="derived">
+	<xs:complexContent>
+		<xs:restriction base="base">
+			<xs:sequence>
+			       <xs:choice>
+				         <xs:element ref="m1"/>
+				         <xs:element ref="m2"/>
+			       </xs:choice>
+			</xs:sequence>
+		</xs:restriction>
+	</xs:complexContent>
+</xs:complexType>
+
+</xs:schema>

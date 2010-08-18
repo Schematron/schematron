@@ -1,0 +1,8 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+targetNamespace="ns-b"
+xmlns="ns-b"
+>
+	
+	<xsd:element name="foo_b" />
+
+</xsd:schema>

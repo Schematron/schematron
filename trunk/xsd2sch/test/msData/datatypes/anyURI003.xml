@@ -1,0 +1,10 @@
+<?xml version='1.0'?>
+<root xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+       xsi:noNamespaceSchemaLocation="anyURI.xsd" >
+  <complexTest>
+  <!-- value=http://www.w3.org/1999/XMLSchema -->
+    <comp_foo>http://www.w3.org/1999/XMLSchema</comp_foo>
+  </complexTest>
+ 
+  <simpleTest>http://www.w3.org/1999/XMLSchema</simpleTest>
+</root>

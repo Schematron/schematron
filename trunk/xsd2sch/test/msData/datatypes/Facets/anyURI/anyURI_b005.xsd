@@ -1,0 +1,19 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    	<xsd:element name="root">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element maxOccurs="100" ref="bar"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+    	<xsd:element type="st" name="bar"></xsd:element>
+
+	<xsd:simpleType name="st">
+		<xsd:restriction base="xsd:anyURI">
+			<xsd:enumeration value="http://a/x%20y"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+</xsd:schema>

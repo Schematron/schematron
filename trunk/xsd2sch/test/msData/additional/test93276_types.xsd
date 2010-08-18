@@ -1,0 +1,77 @@
+<?xml version="1.0" ?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" version="1.0" elementFormDefault="qualified" xml:lang="EN">
+	<simpleType name="globalAddressTypeValues">
+		<restriction base="string">
+			<enumeration value="MA" />
+			<enumeration value="PH" />
+		</restriction>
+	</simpleType>
+	<simpleType name="globalNameTypeValues">
+		<restriction base="string">
+			<enumeration value="LG" />
+			<enumeration value="DB" />
+		</restriction>
+	</simpleType>
+	<simpleType name="globalSimpleStatusType">
+		<restriction base="string">
+			<enumeration value="0" /> <!-- OK -->
+			<enumeration value="1" /> <!-- not OK -->
+		</restriction>
+	</simpleType>
+	<simpleType name="globalYesNoType">
+		<restriction base="string">
+			<enumeration value="Y" /> <!-- Yes -->
+			<enumeration value="N" /> <!-- No  -->
+		</restriction>
+	</simpleType>
+	<simpleType name="globalCarrierIdNumberType">
+		<restriction base="string">
+			<maxLength value="12" />
+		</restriction>
+	</simpleType>
+	<simpleType name="globalString90Type">
+		<restriction base="string">
+			<maxLength value="90" />
+		</restriction>
+	</simpleType>
+	<simpleType name="globalJurisdictionType">
+		<restriction base="string">
+			<maxLength value="2" />
+		</restriction>
+	</simpleType>
+	<simpleType name="globalCountryType">
+		<restriction base="string">
+			<maxLength value="2" />
+		</restriction>
+	</simpleType>
+	<simpleType name="globalZipType">
+		<restriction base="string">
+			<maxLength value="10" />
+		</restriction>
+	</simpleType>
+	<simpleType name="globalDate8Type">
+		<restriction base="positiveInteger">
+			<totalDigits value="8" />
+		</restriction>
+	</simpleType>
+	<simpleType name="globalDateTime12Type">
+		<restriction base="positiveInteger">
+			<totalDigits value="12" />
+		</restriction>
+	</simpleType>
+	<simpleType name="globalNumber6Type">
+		<restriction base="integer">
+			<totalDigits value="6" />
+		</restriction>
+	</simpleType>
+	<simpleType name="globalString6Type">
+		<restriction base="string">
+			<maxLength value="6" />
+		</restriction>
+	</simpleType>
+	<simpleType name="globalCharType">
+		<restriction base="string">
+			<maxLength value="1" />
+		</restriction>
+	</simpleType>
+</schema>

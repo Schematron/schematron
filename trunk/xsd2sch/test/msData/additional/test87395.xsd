@@ -1,0 +1,17 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        xmlns="foo"
+        targetNamespace="foo">
+
+  <xs:element name="a" type="st"/>
+
+  <xs:simpleType name="listOfID">
+    <xs:list itemType="xs:ID"/>
+  </xs:simpleType>
+
+  <xs:simpleType name="st">
+    <xs:restriction base="listOfID">
+          <xs:enumeration value="a"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>

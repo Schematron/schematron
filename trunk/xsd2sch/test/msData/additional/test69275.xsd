@@ -1,0 +1,30 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" >
+  <xsd:element name="element1">
+    <xsd:complexType>
+      <xsd:attribute name="attribute1" type="CJKType"/>
+      <xsd:attribute name="attribute2" type="CJKType2"/>
+      <xsd:attribute name="attribute3" type="CJKType3"/>
+    </xsd:complexType>
+  </xsd:element>
+			
+  <xsd:simpleType name="CJKType">
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="\p{IsCJKRadicalsSupplement}*"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+
+  <xsd:simpleType name="CJKType2">
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="\p{IsCJKUnifiedIdeographsExtensionA}*"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="CJKType3">
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="\p{IsCJKSymbolsandPunctuation}*"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+</xsd:schema>
+

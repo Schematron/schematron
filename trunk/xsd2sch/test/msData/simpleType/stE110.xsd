@@ -1,0 +1,14 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+	<xsd:simpleType name="st">
+		<xsd:union memberTypes="xsd:int xsd:string st2">
+		</xsd:union>
+	</xsd:simpleType>
+
+
+	<xsd:simpleType name="st2">
+		<xsd:union memberTypes="st"/>
+	</xsd:simpleType>
+
+          
+</xsd:schema>

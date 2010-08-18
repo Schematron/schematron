@@ -1,0 +1,8 @@
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="urn:my-namespace particlesZ008.xsd"
+xmlns="urn:my-namespace"
+>
+
+ <Member2>string</Member2>
+
+</root>

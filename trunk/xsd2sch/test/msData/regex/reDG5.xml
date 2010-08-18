@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='reDG5.xsd' >
+
+<!-- 
+base='gMonthDay', pattern='0[123]\-(12|14)', value='03-14', type='valid', RULE=''
+-->
+
+      <elem att='--03-14'/>
+
+ </doc>

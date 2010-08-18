@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='reDC5.xsd'
+
+xmlns:a="foo"
+ >
+
+<!-- 
+base='Qname', pattern='[\i-[:]][\c-[:]]+:[\i-[:]][\c-[:]]+', value='a:b', type='valid', RULE=''
+-->
+
+     <elem>a:b</elem>
+
+ </doc>

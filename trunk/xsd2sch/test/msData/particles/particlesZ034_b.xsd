@@ -1,0 +1,15 @@
+<xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema' >
+ <xsd:complexType name='fooType' > 
+		<xsd:sequence>
+   			<xsd:sequence maxOccurs="100">
+				     <xsd:element name='a' maxOccurs="unbounded"/>
+			</xsd:sequence>
+			<xsd:element name="b"/>
+   			<xsd:sequence maxOccurs="100">
+				     <xsd:element name='a' maxOccurs="unbounded"/>
+			</xsd:sequence>
+			<xsd:any namespace="##other" processContents="lax"/>
+		</xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="doc" type="fooType"/>
+</xsd:schema>

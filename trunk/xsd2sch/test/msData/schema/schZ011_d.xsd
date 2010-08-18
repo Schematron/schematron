@@ -1,0 +1,16 @@
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:a="a"
+	xmlns:b="b"
+	xmlns:c="c"
+	xmlns:d="d"
+>
+
+	<xs:import namespace="a" />
+	<xs:import namespace="b" />
+	<xs:import namespace="c" />
+
+	<xs:simpleType name="st">
+		<xs:restriction base="d:d"/>
+	</xs:simpleType>
+
+</xs:schema>

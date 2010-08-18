@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:foo="foo">
+	<xsd:simpleType name="myInteger">
+		<xsd:restriction base="xsd:integer"/>
+	</xsd:simpleType>
+	<xsd:attribute name="globalAtt1" type="xsd:integer"/>
+	<xsd:attribute name="globalAtt2" type="myInteger"/>
+	<xsd:attribute name="globalAtt3">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:integer"/>
+		</xsd:simpleType>
+	</xsd:attribute>
+	<xsd:element name="doc">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="test"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="test">
+		<xsd:complexType>
+			<xsd:attribute name="complexAtt1" type="xsd:integer"/>
+			<xsd:attribute name="complexAtt2" type="myInteger"/>
+			<xsd:attribute ref="globalAtt1"/>
+			<xsd:attributeGroup ref="attg1"/>
+			<xsd:attribute name="complexAtt3">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:integer"/>
+				</xsd:simpleType>
+			</xsd:attribute>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:attributeGroup name="attg1">
+		<xsd:attribute name="item1" type="xsd:integer"/>
+		<xsd:attribute name="item2" type="myInteger"/>
+		<xsd:attribute ref="globalAtt2"/>
+		<xsd:attributeGroup ref="attg2"/>
+		<xsd:attribute name="item3">
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:integer"/>
+			</xsd:simpleType>
+		</xsd:attribute>
+	</xsd:attributeGroup>
+	<xsd:attributeGroup name="attg2">
+		<xsd:attribute name="foo1" type="xsd:integer"/>
+		<xsd:attribute name="foo2" type="myInteger"/>
+		<xsd:attribute ref="globalAtt3"/>
+		<xsd:attribute name="foo3">
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:integer"/>
+			</xsd:simpleType>
+		</xsd:attribute>
+	</xsd:attributeGroup>
+</xsd:schema>

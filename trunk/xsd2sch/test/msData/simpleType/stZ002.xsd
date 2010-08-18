@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:simpleType name="myType">
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="10"/>
+			<xs:enumeration value="CA"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="root" type="myType"/>
+</xs:schema>

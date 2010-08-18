@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='reK77.xsd' >
+
+<!-- 
+base='string', pattern='\P{Co}*', value='#xE000;#x100000;#xF0000;#xFFFFD;#x10FFFD;', type='invalid', RULE='26,35'
+-->
+
+     <elem>&#xE000;&#x100000;&#xF0000;&#xFFFFD;&#x10FFFD;</elem>
+
+ </doc>

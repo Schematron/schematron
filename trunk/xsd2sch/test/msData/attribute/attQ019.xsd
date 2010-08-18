@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://xsdtesting" xmlns:x="http://xsdtesting" elementFormDefault="qualified" attributeFormDefault="qualified" xmlns:imp="http://importedXSD">
+	<xsd:import namespace="http://importedXSD" schemaLocation="attQ019.imp"/>
+	<xsd:attributeGroup name="attG">
+		<xsd:attribute name="aga1"/>
+		<xsd:attribute name="aga2"/>
+		<xsd:attribute ref="imp:aga1"/>
+		<xsd:attribute ref="imp:aga2"/>
+	</xsd:attributeGroup>
+	<xsd:complexType name="attRef">
+		<xsd:attributeGroup ref="x:attG"/>
+	</xsd:complexType>
+	<xsd:element name="doc">
+		<xsd:complexType>
+			<xsd:choice>
+				<xsd:element name="elem" type="x:attRef">
+				</xsd:element>
+			</xsd:choice>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

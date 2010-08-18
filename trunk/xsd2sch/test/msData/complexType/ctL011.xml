@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ctL011.xsd">
+	<fooTest>
+	mixed content
+	<child_1>info</child_1>
+        for fooTest
+	<child_2>3</child_2>
+	</fooTest>
+</root>

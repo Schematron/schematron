@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:redefine schemaLocation="attgC028.imp">
+		<xsd:attributeGroup name="foo">
+			<xsd:attributeGroup ref="car"/>
+		</xsd:attributeGroup>
+	</xsd:redefine>
+	<xsd:element name="doc" type="testElem"/>
+	<xsd:complexType name="testElem">
+		<xsd:complexContent>
+			<xsd:extension base="foo">
+				<xsd:choice>
+					<xsd:element name="cc" minOccurs="0" type="mytest"/>
+				</xsd:choice>
+				<xsd:attributeGroup ref="car"/>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="foo">
+		<xsd:attribute name="foo" type="xsd:string"/>
+	</xsd:complexType>
+	<xsd:attributeGroup name="car">
+		<xsd:attribute name="foo1" type="xsd:int"/>
+		<xsd:attribute name="foo2" type="xsd:string"/>
+	</xsd:attributeGroup>
+	<xsd:complexType name="mytest">
+		<xsd:attributeGroup ref="foo"/>
+	</xsd:complexType>
+</xsd:schema>

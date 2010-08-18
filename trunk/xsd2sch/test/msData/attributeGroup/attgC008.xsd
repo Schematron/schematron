@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:complexType name="test">
+		<xsd:attributeGroup ref="abc"/>
+	</xsd:complexType>
+	<xsd:attributeGroup name="abc" id="abc">
+		<xsd:attributeGroup ref="foo"/>
+		<xsd:attribute name="att" type="xsd:int"/>
+	</xsd:attributeGroup>
+	<xsd:complexType name="foo">
+		<xsd:sequence>
+			<xsd:element name="ee"/>
+		</xsd:sequence>
+		<xsd:attributeGroup ref="g"/>
+	</xsd:complexType>
+	<xsd:attributeGroup name="g">
+		<xsd:attribute name="foo" type="xsd:int"/>
+		<xsd:attribute name="bar"/>
+	</xsd:attributeGroup>
+</xsd:schema>

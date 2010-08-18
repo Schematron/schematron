@@ -1,0 +1,48 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+         <xs:element type="xs:short" substitutionGroup="b" name="a"/>
+         <xs:element type="xs:decimal" substitutionGroup="c" name="b"/>
+         <xs:element type="xs:decimal" substitutionGroup="d" name="c"/>
+         <xs:element block="substitution" name="d"/>
+
+	 <xs:element name="foo"/>
+
+
+<xs:complexType name="base">
+	<xs:choice>
+		<xs:element ref="a"/>
+		<xs:element ref="b"/>
+		<xs:element ref="c"/>
+		<xs:element ref="d"/>
+		<xs:element ref="foo"/>
+	</xs:choice>
+</xs:complexType>
+
+<xs:complexType name="derived">
+	<xs:complexContent>
+		<xs:restriction base="base">
+			       <xs:choice>
+					 <xs:element ref="a"/>
+					 <xs:element ref="c"/>
+					 <xs:element ref="d"/>
+					 <xs:element ref="foo"/>
+			       </xs:choice>
+		</xs:restriction>
+	</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="derived2">
+	<xs:complexContent>
+		<xs:restriction base="derived">
+			       <xs:choice>
+					 <xs:element ref="a"/>
+					 <xs:element name="c"/>
+			       </xs:choice>
+		</xs:restriction>
+	</xs:complexContent>
+</xs:complexType>
+
+
+<xs:element type="base" name="doc"/>
+
+</xs:schema>

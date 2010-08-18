@@ -1,0 +1,17 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="root">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element ref="elt1"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="elt1">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:any namespace="##any" maxOccurs="unbounded" processContents="lax"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="elt2" type="xs:Name"/>
+</xs:schema>

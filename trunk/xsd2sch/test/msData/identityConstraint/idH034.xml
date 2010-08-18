@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="idH034.xsd">
+	<t>
+		<c val2="1" xsi:type="ctype2"> 1 </c>
+		<r>1</r>
+	</t>
+	<t>
+		<c val2="2" xsi:type="ctype2"> 2 </c>
+		<r>2</r>
+	</t>
+	<t>
+		<c val2="3" xsi:type="ctype2"> 3 </c>
+		<r>3</r>
+	</t>
+</root>

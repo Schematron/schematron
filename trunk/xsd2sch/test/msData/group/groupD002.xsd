@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:redefine schemaLocation="groupD002.red">
+		<xsd:group name="X" minOccurs="1">
+			<xsd:sequence>
+				<xsd:group ref="X"/>
+				<xsd:sequence>
+					<xsd:element ref="elem" id="bar1"/>
+				</xsd:sequence>
+			</xsd:sequence>
+		</xsd:group>
+	</xsd:redefine>
+	<xsd:group name="A">
+		<xsd:sequence>
+			<xsd:element name="A"/>
+			<xsd:element name="B"/>
+		</xsd:sequence>
+	</xsd:group>
+	<xsd:element name="elem">
+		<xsd:complexType>
+			<xsd:group ref="A"/>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="doc">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="elem"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

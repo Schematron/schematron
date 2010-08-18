@@ -1,0 +1,4 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="ns-a">
+        <xsd:import namespace="ns-b" schemaLocation="schF6_b.xsd" />
+        <xsd:import namespace="ns-c" schemaLocation="schF6_c.xsd" />
+</xsd:schema>

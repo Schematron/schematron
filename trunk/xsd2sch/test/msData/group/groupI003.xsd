@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:complexType name="A">
+		<xsd:choice>
+			<xsd:group ref="x" minOccurs="0" maxOccurs="3"/>
+			<xsd:group ref="y"/>
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:group name="x">
+		<xsd:sequence>
+			<xsd:element name="x1"/>
+			<xsd:element name="x2"/>
+		</xsd:sequence>
+	</xsd:group>
+	<xsd:group name="y">
+		<xsd:choice>
+			<xsd:element name="y1"/>
+			<xsd:element name="y2"/>
+		</xsd:choice>
+	</xsd:group>
+	<xsd:group name="G">
+		<xsd:choice>
+			<xsd:group ref="x" minOccurs="1" maxOccurs="2"/>
+			<xsd:group ref="y"/>
+		</xsd:choice>
+	</xsd:group>
+	<xsd:element name="elem">
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:restriction base="A">
+					<xsd:group ref="G"/>
+				</xsd:restriction>
+			</xsd:complexContent>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="doc">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="elem"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

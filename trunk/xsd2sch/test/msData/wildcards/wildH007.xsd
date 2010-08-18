@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:import namespace="http://www.w3.org/1999/xhtml" schemaLocation="wildH007a.xsd"/>
+	<xs:element name="foo">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:any namespace="http://www.w3.org/1999/xhtml" processContents="strict"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

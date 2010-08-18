@@ -1,0 +1,42 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+
+	<xs:element name="root">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="e1" maxOccurs="10"/>
+				<xs:element name="e2" type="t1" maxOccurs="10"/>
+				<xs:element name="e3" maxOccurs="10">
+					<xs:complexType>
+						<xs:attribute ref="att1"/>
+						<xs:attribute name="att2" type="xs:anySimpleType"/>
+					</xs:complexType>
+				</xs:element>
+
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="e1" type="xs:anySimpleType"/>
+
+    <xs:simpleType name="t1">
+        <xs:restriction base="xs:anySimpleType" />
+    </xs:simpleType>
+
+	<xs:attribute name="att1" type="xs:anySimpleType"/>
+
+
+	<!-- use under simpleContent extension and restriction -->
+    <xs:complexType name="ct1">
+		<xs:simpleContent>
+         <xs:extension base="xs:anySimpleType" />
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="ct2">
+		<xs:simpleContent>
+         <xs:restriction base="ct1" >
+         </xs:restriction>
+        </xs:simpleContent>
+    </xs:complexType>
+    
+ </xs:schema>

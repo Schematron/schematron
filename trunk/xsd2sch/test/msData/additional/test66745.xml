@@ -1,0 +1,8 @@
+<foo:foo xmlns:foo="foo" xmlns:foo1="foo1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="foo1 test66745_a.xsd foo  test66745_b.xsd">
+	<foo:bar>
+		<foo1:foo1 x="1">
+			<foo:bar/>
+		</foo1:foo1>
+	</foo:bar>
+	
+</foo:foo>

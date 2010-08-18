@@ -1,0 +1,3 @@
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="elemT029.xsd">
+	<test2 xsi:type="List-AB">1 b 2 a 4</test2>
+</root>

@@ -1,0 +1,5 @@
+<xs:schema	xmlns:xs="http://www.w3.org/2001/XMLSchema"  >
+	<!-- test that ##other namespace is any namespace other than the target namespace -->
+
+	<xs:element name="localElement" type="xs:boolean" />
+</xs:schema>

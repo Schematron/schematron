@@ -1,0 +1,68 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+<xsd:simpleType name="intList">
+    <xsd:list itemType="xsd:int"/>
+</xsd:simpleType>
+
+<xsd:complexType name="base1">
+	<xsd:sequence>
+		<xsd:element name="e" type="intList" fixed="1 2 3" />
+	</xsd:sequence>
+	<xsd:attribute name="Att" type="intList" fixed="1   2        3"/>
+</xsd:complexType>
+
+<xsd:complexType name="derived1">
+<xsd:complexContent>
+<xsd:restriction base="base1">
+	<xsd:sequence>
+		<xsd:element name="e" type="intList" fixed="1  2   3" />
+	</xsd:sequence>
+<xsd:attribute name="Att" type="intList" fixed="1  2   3"/>
+</xsd:restriction>
+
+</xsd:complexContent>
+
+</xsd:complexType>
+
+
+<xsd:complexType name="base2">
+	<xsd:sequence>
+		<xsd:element name="e" type="xsd:token" fixed=" akfhaf afkhaf  " />
+	</xsd:sequence>
+	<xsd:attribute name="Att" type="xsd:token" fixed=" akfhaf afkhaf  "/>
+</xsd:complexType>
+
+<xsd:complexType name="derived2">
+<xsd:complexContent>
+<xsd:restriction base="base2">
+	<xsd:sequence>
+		<xsd:element name="e" type="xsd:token" fixed="akfhaf afkhaf" />
+	</xsd:sequence>
+<xsd:attribute name="Att" type="xsd:token" fixed="akfhaf afkhaf"/>
+</xsd:restriction>
+
+</xsd:complexContent>
+
+</xsd:complexType>
+
+<xsd:complexType name="base3">
+	<xsd:sequence>
+		<xsd:element name="e" type="xsd:int" fixed="       -1	" />
+	</xsd:sequence>
+	<xsd:attribute name="Att" type="xsd:int" fixed="		-1"/>
+</xsd:complexType>
+
+<xsd:complexType name="derived3">
+<xsd:complexContent>
+<xsd:restriction base="base3">
+	<xsd:sequence>
+		<xsd:element name="e" type="xsd:int" fixed="-1" />
+	</xsd:sequence>
+<xsd:attribute name="Att" type="xsd:int" fixed="-1"/>
+</xsd:restriction>
+
+</xsd:complexContent>
+
+</xsd:complexType>
+	
+</xsd:schema>

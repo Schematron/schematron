@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:import="importNS">
+	<xsd:import namespace="importNS" schemaLocation="idF029a.xsd"/>
+	<xsd:element name="root">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="t" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+		<xsd:unique name="tableu">
+			<xsd:selector xpath=".//t"/>
+			<xsd:field xpath="import:r"/>
+		</xsd:unique>
+	</xsd:element>
+	<xsd:element name="t">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="import:r"/>
+			</xsd:sequence>
+			<xsd:attribute name="val" type="xsd:string"/>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

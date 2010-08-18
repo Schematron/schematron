@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='reDB4.xsd' >
+
+<!-- 
+base='base64Binary', pattern='([0-1]{4} | (0 | 1){8})', value='11111', type='invalid', RULE=''
+-->
+
+     <elem>11111</elem>
+
+ </doc>

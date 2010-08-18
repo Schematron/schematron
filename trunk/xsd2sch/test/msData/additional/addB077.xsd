@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema'
+ >
+
+<!--  
+Test ref: circular ref is not allowed out side of redefine, parent is extension, ref='the root parent group's name' 
+
+it is no error for circular ref of group to be in itself
+-->
+
+<xsd:complexType name="complexType" >
+	<xsd:sequence>
+		<xsd:element name="r1"/>
+	</xsd:sequence>
+</xsd:complexType>
+
+<xsd:element name="elem">
+	<xsd:complexType>
+	<xsd:sequence>
+		<xsd:group ref="foo"/>
+	</xsd:sequence>
+	</xsd:complexType>
+</xsd:element>
+
+<xsd:element name="doc">
+	<xsd:complexType>
+		<xsd:sequence>
+			<xsd:element ref="elem"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:element>
+
+<xsd:attributeGroup name="attG">
+	<xsd:attribute name="att1"/>
+</xsd:attributeGroup>
+
+<xsd:group name="foo">
+	<xsd:sequence>
+		<xsd:element name="foo1"/>
+		<xsd:element name="foo2"/>
+
+		<xsd:element name="x">
+			<xsd:complexType>
+				<xsd:complexContent>		
+					<xsd:extension base="complexType">
+						<xsd:group ref="foo"/>
+					</xsd:extension>
+				</xsd:complexContent>
+			</xsd:complexType>
+		</xsd:element>
+	
+	</xsd:sequence>
+</xsd:group>
+
+<xsd:group name="bar">
+	<xsd:sequence>
+		<xsd:element name="school"/>	
+	</xsd:sequence>
+</xsd:group> 
+
+</xsd:schema>

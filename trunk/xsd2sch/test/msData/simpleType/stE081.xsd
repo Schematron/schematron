@@ -1,0 +1,13 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+	<xsd:simpleType name="list">
+		<xsd:list itemType="xsd:string"/>
+	</xsd:simpleType>
+
+	<xsd:element name="root" fixed="a b c d e f">
+		<xsd:simpleType>
+			<xsd:union memberTypes="xsd:gMonth xsd:gYear xsd:boolean list"/>
+		</xsd:simpleType>
+	</xsd:element>
+
+</xsd:schema>

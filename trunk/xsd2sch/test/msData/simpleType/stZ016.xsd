@@ -1,0 +1,34 @@
+<xs:schema xmlns:xs='http://www.w3.org/2001/XMLSchema'
+           xmlns:tns='urn:example-org:temperatures'
+		   targetNamespace='urn:example-org:temperatures' >
+
+  <xs:simpleType name='Celcius' >
+    <xs:restriction base='xs:decimal' >
+	  <xs:minExclusive value='-273' />
+	</xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name='WaterTemps' >
+    <xs:restriction base='tns:Celcius' >
+	  <xs:minInclusive value='0' />
+	  <xs:maxInclusive value='100' />
+	</xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name='IceTemps' >
+    <xs:restriction base='tns:Celcius' >
+	  <xs:maxInclusive value='0' />
+	</xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name='SteamTemps' >
+    <xs:restriction base='tns:Celcius' >
+	  <xs:minInclusive value='100' />
+	</xs:restriction>
+  </xs:simpleType>
+
+  <xs:element name='Water' type='tns:WaterTemps' />
+  <xs:element name='Ice' type='tns:IceTemps' />
+  <xs:element name='Steam' type='tns:SteamTemps' />
+
+</xs:schema>

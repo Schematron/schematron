@@ -1,0 +1,15 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" >
+<!-- Schema to test hexBinary datatype -->
+  <xsd:element name="test" type="fooType" />
+  <xsd:complexType name="fooType" > 
+    <xsd:sequence>
+      <xsd:element name="foo" >
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:hexBinary">
+            <xsd:maxLength value="100"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

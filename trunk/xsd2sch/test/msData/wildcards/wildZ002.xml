@@ -1,0 +1,34 @@
+<main:root 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="main wildZ002.xsd foo wildZ002_a.xsd bar wildZ002_b.xsd"
+
+	xmlns:foo="foo"
+	xmlns:bar="bar"
+	xmlns:main="main">
+
+	<main:a>
+		<a att="123" att1="123" att2="123"/>
+		<foo:foo foo:att="123"><bar:bar /></foo:foo>
+	</main:a>
+	<main:b>
+		<main:notDeclared notexist="foo" >
+			<foo:foo/>
+		</main:notDeclared>
+
+	</main:b>
+	<main:c xmlns:xx="foo">
+		<foo:x foo:foo="asd" />
+		<bar:x/>
+		<xx:x/>
+	</main:c>
+	<main:d xmlns:xx="foo">
+		<foo:x/>
+		<xx:x/>
+		<a a="a" xmlns="main">
+			<b b="b">
+				<c b="b" c="b"/>
+			</b>
+		</a>
+	</main:d>
+
+</main:root>

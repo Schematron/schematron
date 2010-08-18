@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<xsd:schema 
+	targetNamespace="http://schemas.microsoft.com/office/excel/2003/xml"
+	xmlns="http://schemas.microsoft.com/office/excel/2003/xml" 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+	elementFormDefault="qualified" attributeFormDefault="qualified">
+
+	<xsd:element name="MapInfo" type="MapInfoType"/>
+
+	<xsd:complexType name="MapInfoType">
+		<xsd:sequence>
+			<xsd:element name="Schema" type="SchemaType" minOccurs="1" maxOccurs="unbounded"/>	
+		</xsd:sequence>
+		<xsd:attribute name="HideInactiveListBorder" use="optional" default="false">
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string">
+					<xsd:enumeration value="true"/>
+					<xsd:enumeration value="false"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+		<xsd:attribute name="SelectionNamespaces" use="optional" type="xsd:string"/>
+		<xsd:attribute name="HideSingleMappedCellBorder" use="optional" type="truefalseType" default="true"/>
+	</xsd:complexType>
+	<xsd:complexType name="SchemaType">
+		<xsd:sequence minOccurs="0">
+			<xsd:any namespace="##any" processContents="skip" maxOccurs="unbounded"/>
+		</xsd:sequence>
+		<xsd:attribute name="ID" type="xsd:string" use="required"/>
+		<xsd:attribute name="Namespace" type="xsd:string" use="required"/>
+		<xsd:attribute name="SchemaRef" type="xsd:string" use="optional"/>
+	</xsd:complexType>
+
+	<xsd:simpleType name="truefalseType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="true"/>
+			<xsd:enumeration value="false"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

@@ -1,0 +1,95 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+         <xs:element type="xs:short" substitutionGroup="b" name="a"/>
+         <xs:element type="xs:decimal" substitutionGroup="c" name="b"/>
+         <xs:element abstract="true" type="xs:decimal" substitutionGroup="d" name="c"/>
+         <xs:element name="d"/>
+
+	 <xs:element name="foo"/>
+
+
+<xs:complexType name="base">
+	<xs:choice maxOccurs="unbounded">
+		<xs:element ref="d"/>
+		<xs:element ref="b"/>
+		<xs:element ref="c"/>
+		<xs:element ref="a"/>
+	</xs:choice>
+</xs:complexType>
+
+<xs:complexType name="derived">
+	<xs:complexContent>
+		<xs:restriction base="base">
+			       <xs:choice maxOccurs="unbounded">
+					 <xs:element ref="d"/>
+					 <xs:element ref="b"/>
+					 <xs:element ref="c"/>
+ 			 		 <xs:element ref="a"/>
+			       </xs:choice>
+		</xs:restriction>
+	</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="derived2">
+	<xs:complexContent>
+		<xs:restriction base="derived">
+			       <xs:choice maxOccurs="unbounded">
+					 <xs:element ref="c"/>
+ 			 		 <xs:element ref="a"/>
+			       </xs:choice>
+		</xs:restriction>
+	</xs:complexContent>
+</xs:complexType>
+<xs:complexType name="derived3">
+	<xs:complexContent>
+		<xs:restriction base="derived">
+			       <xs:choice maxOccurs="unbounded">
+					 <xs:element ref="d"/>
+ 			 		 <xs:element ref="b"/>
+			       </xs:choice>
+		</xs:restriction>
+	</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="derived4">
+	<xs:complexContent>
+		<xs:restriction base="derived">
+			       <xs:choice maxOccurs="unbounded">
+					 <xs:element ref="d"/>
+ 			 		 <xs:element ref="a"/>
+			       </xs:choice>
+		</xs:restriction>
+	</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="derived5">
+	<xs:complexContent>
+		<xs:restriction base="derived">
+			       <xs:choice maxOccurs="unbounded">
+					 <xs:element ref="b"/>
+ 			 		 <xs:element ref="c"/>
+			       </xs:choice>
+		</xs:restriction>
+	</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="derived6">
+	<xs:complexContent>
+		<xs:restriction base="derived">
+			       <xs:choice maxOccurs="unbounded">
+					 <xs:element ref="b"/>
+ 			 		 <xs:element ref="a"/>
+			       </xs:choice>
+		</xs:restriction>
+	</xs:complexContent>
+</xs:complexType>
+
+<xs:element type="base" name="doc"/>
+<xs:element type="derived" name="doc1"/>
+<xs:element type="derived2" name="doc2"/>
+<xs:element type="derived3" name="doc3"/>
+<xs:element type="derived4" name="doc4"/>
+<xs:element type="derived5" name="doc5"/>
+<xs:element type="derived6" name="doc6"/>
+
+</xs:schema>

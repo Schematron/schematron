@@ -1,0 +1,17 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" >
+<xsd:simpleType name="durationType">
+
+    <xsd:restriction base="xsd:duration">
+
+      <xsd:pattern value="\-?P(\d*D)?(T(\d*H)?(\d*M)?(\d*(\.\d*)?S)?)?" />
+
+      <xsd:minInclusive value="-P10675199DT2H48M5.4775808S" />
+
+      <xsd:maxInclusive value="P10675199DT2H48M5.4775807S" />
+
+    </xsd:restriction>
+
+  </xsd:simpleType>
+
+
+</xsd:schema>

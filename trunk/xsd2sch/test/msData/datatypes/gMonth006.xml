@@ -1,0 +1,10 @@
+<?xml version='1.0'?>
+<root xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+       xsi:noNamespaceSchemaLocation="gMonth.xsd" >
+  <complexTest>
+  <!-- value=- -3- - -->
+    <comp_foo>--3--</comp_foo>
+  </complexTest>
+ 
+  <simpleTest>--3--</simpleTest>
+</root>

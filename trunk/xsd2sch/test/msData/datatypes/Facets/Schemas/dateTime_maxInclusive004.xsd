@@ -1,0 +1,7 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+<xs:simpleType name="base">
+	<xs:restriction base="xs:dateTime">
+		<xs:maxInclusive value="2002-10-10T12:00:00-05:00 "/>
+	</xs:restriction>
+</xs:simpleType>
+</xs:schema >

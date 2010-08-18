@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:import="importNS">
+	<xsd:import namespace="importNS" schemaLocation="idA004a.xsd"/>
+	<xsd:element name="root">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="uniqueElement"/>
+			</xsd:sequence>
+		</xsd:complexType>
+		<xsd:unique id="foo123" name="idName">
+			<xsd:selector xpath=".//uniqueElement"/>
+			<xsd:field xpath="@keyField"/>
+		</xsd:unique>
+	</xsd:element>
+	<xsd:element name="uniqueElement">
+		<xsd:complexType>
+			<xsd:attribute name="keyField" type="xsd:string"/>
+			<xsd:attribute ref="import:importAttr"/>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

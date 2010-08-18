@@ -1,0 +1,31 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+targetNamespace="ns-a"
+xmlns="ns-a"
+elementFormDefault="qualified"
+>
+
+	<xsd:redefine schemaLocation="schK2_b.xsd">
+		<xsd:complexType name="b-ct">
+			<xsd:complexContent>
+			<xsd:restriction base="b-ct-2">
+				<xsd:sequence>
+					<xsd:element name="c1" maxOccurs="2"/>
+				</xsd:sequence>
+			</xsd:restriction>
+			</xsd:complexContent>
+		</xsd:complexType>
+  	</xsd:redefine>
+
+	<xsd:element name="e1" type="b-ct" />
+	
+	<xsd:element name="root">
+		<xsd:complexType>
+			<xsd:choice maxOccurs="unbounded">
+				<xsd:any namespace="##any" processContents="strict"/>
+			</xsd:choice>
+		</xsd:complexType>
+	</xsd:element>
+
+</xsd:schema>
+
+

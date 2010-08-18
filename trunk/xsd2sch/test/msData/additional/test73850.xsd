@@ -1,0 +1,15 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="a" type="CatalogData"/>
+
+  <xs:complexType name="CatalogData">
+    <xs:sequence>
+      <xs:element name="b" type="b" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="c" type="xs:ID" maxOccurs="10"/>
+      </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="b">
+    <xs:attribute name="id" type="xs:ID"/>
+  </xs:complexType>
+</xs:schema>
+ 

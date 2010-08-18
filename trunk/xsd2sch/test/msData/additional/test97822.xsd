@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="root1">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="group1" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="group1">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="el20" type="ct1" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="ct2">
+		<xs:sequence>
+			<xs:element name="el10" type="xs:string" default="foo" minOccurs="1" maxOccurs="1" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ct1">
+		<xs:complexContent>
+			<xs:extension base="ct2">
+				<xs:sequence>
+					<xs:element name="el10" type="xs:string" fixed="goo" minOccurs="1" maxOccurs="1" />
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+</xs:schema>

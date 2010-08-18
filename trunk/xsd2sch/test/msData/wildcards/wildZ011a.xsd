@@ -1,0 +1,22 @@
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="a" xmlns:a="a" xmlns:b="b">
+
+ <xs:import namespace="b" schemaLocation="wildZ011b.xsd" />
+ <xs:import schemaLocation="wildZ011c.xsd" />
+
+ <xs:element name="doc" type="a:metadata"/>
+
+ <xs:complexType name="metadata">
+     <xs:sequence />
+     <xs:attributeGroup ref="a:attG-a"/>
+     <xs:attributeGroup ref="b:attG-b"/>
+     <xs:anyAttribute namespace="##any" processContents="lax"/>
+ </xs:complexType>
+
+
+ <xs:attribute name="attA"/>
+
+ <xs:attributeGroup name="attG-a">
+     <xs:anyAttribute namespace="##targetNamespace" processContents="lax"/>
+ </xs:attributeGroup>
+
+</xs:schema>

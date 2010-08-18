@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<myNS:root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="myNS.tempuri.org idG016.xsd" xmlns:myNS="myNS.tempuri.org">
+	<myNS:t>
+		<row> 1 </row>
+	</myNS:t>
+	<myNS:t>
+		<row> 2 </row>
+	</myNS:t>
+	<myNS:t>
+		<row> 11 </row>
+	</myNS:t>
+</myNS:root>

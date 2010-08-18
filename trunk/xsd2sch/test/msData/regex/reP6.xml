@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='reP6.xsd' >
+
+<!-- 
+base='string', pattern='\s*\c\s?\c\s+\c\s*', value=' #x20;#x9;#xa;#xD;a c#xA;#x9;#xD;#x20;a#x20;#xA;#xD;#x9; #x20;#x20;#xD;#xa;', type='valid', RULE='37'
+-->
+
+     <elem> &#x20;&#x9;&#xa;&#xD;a c&#xA;&#x9;&#xD;&#x20;a&#x20;&#xA;&#xD;&#x9; &#x20;&#x20;&#xD;&#xa;</elem>
+
+ </doc>

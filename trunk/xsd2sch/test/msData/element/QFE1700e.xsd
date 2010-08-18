@@ -1,0 +1,12 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="e1" nillable="true" type="xs:int" />
+
+  <xs:element name="root">
+    <xs:complexType >
+      <xs:sequence>
+        <xs:element ref="e1" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

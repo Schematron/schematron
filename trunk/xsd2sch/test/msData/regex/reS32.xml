@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='reS32.xsd' >
+
+<!-- 
+base='string', pattern='\d', value='#x0CEF;', type='valid', RULE='37'
+-->
+
+     <elem>&#x0CEF;</elem>
+
+ </doc>

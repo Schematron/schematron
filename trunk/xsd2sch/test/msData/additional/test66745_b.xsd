@@ -1,0 +1,19 @@
+<xsd:schema xmlns="foo" targetNamespace="foo" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  	<xsd:element name="foo" type="foo">
+	</xsd:element>
+
+	<xsd:complexType name="foo">
+		<xsd:sequence>
+			<xsd:any/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:element name="bar">
+		<xsd:complexType>
+			<xsd:choice maxOccurs="unbounded" minOccurs="0">
+				<xsd:element ref="foo"/>
+				<xsd:element ref="bar"/>
+			</xsd:choice>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

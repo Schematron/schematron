@@ -1,0 +1,9 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="correct.sequence.2">
+                        <xs:sequence>
+                                    <xs:element name="a" minOccurs="0" />
+                                    <xs:element name="b" minOccurs="2" maxOccurs="2" />
+                                    <xs:element name="b" />
+                        </xs:sequence>
+            </xs:complexType>
+</xs:schema>

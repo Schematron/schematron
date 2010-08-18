@@ -1,0 +1,13 @@
+  <root xmlns="foo"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="foo idZ008.xsd"
+ >
+	<A>
+		<A1>
+			<A2>
+				<A3>XXX</A3>
+			</A2>
+			<A22>YYY</A22>
+		</A1>
+	</A>
+   </root>

@@ -1,0 +1,15 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="foo" xmlns="foo" elementFormDefault="qualified">
+
+    <xsd:include schemaLocation="test115044_inc.xsd"/>
+
+    <xsd:element name="root">
+	<xsd:complexType>
+	<xsd:sequence>
+		<xsd:element name="e" type="xsd:string"/>
+	</xsd:sequence>
+	</xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="e" />
+
+</xsd:schema>

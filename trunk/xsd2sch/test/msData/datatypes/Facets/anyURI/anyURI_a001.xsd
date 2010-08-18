@@ -1,0 +1,30 @@
+<xsd:schema xmlns="1" targetNamespace="1" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+	<!-- should give only 3 warning for the unresolved schemaLocations -->
+	<xsd:include schemaLocation="0"/>
+	<xsd:import schemaLocation="123" namespace="2"/>
+	<xsd:redefine schemaLocation="123"/>
+
+	<xsd:notation public="2" system="1" name="n1"/>
+
+    	<xsd:element name="foo">
+		<xsd:annotation>
+			<xsd:appinfo source="9999999999999999999999999999999999999999999999999999999999999anyURI:"/>
+			<xsd:documentation source="1111111111111111111http://foo/bar"/>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:anyAttribute namespace="2"/>
+		</xsd:complexType>
+	</xsd:element>
+
+    	<xsd:element type="st" name="bar"></xsd:element>
+
+	<xsd:simpleType name="st">
+		<xsd:restriction base="xsd:anyURI">
+			<xsd:enumeration value="2"/>
+			<xsd:enumeration value="4"/>
+			<xsd:enumeration value="5"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+</xsd:schema>

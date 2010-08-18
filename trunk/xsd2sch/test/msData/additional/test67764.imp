@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<xsd:schema  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:imp='http://importedXSD' 
+    targetNamespace='http://importedXSD' >
+
+<xsd:complexType name="B">
+    <xsd:sequence>
+        <xsd:any namespace="##any" minOccurs="1" maxOccurs="1"/>
+        <xsd:element name="e2" maxOccurs="5"/>
+    </xsd:sequence>
+</xsd:complexType>
+
+</xsd:schema>
+
+THIS IS NOT WELFORM

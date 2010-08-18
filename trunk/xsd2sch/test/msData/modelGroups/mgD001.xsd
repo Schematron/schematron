@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:other="http://foo">
+	<xsd:element name="test" type="test"/>
+	<xsd:complexType name="test">
+		<xsd:all other:foo="bar">
+			<xsd:element name="a"/>
+			<xsd:element name="b"/>
+		</xsd:all>
+	</xsd:complexType>
+</xsd:schema>

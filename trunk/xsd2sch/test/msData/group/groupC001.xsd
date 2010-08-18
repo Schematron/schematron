@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:group name="A">
+		<xsd:choice>
+			<xsd:element name="A"/>
+		</xsd:choice>
+	</xsd:group>
+	<xsd:group name="A">
+		<xsd:sequence>
+			<xsd:element name="A"/>
+		</xsd:sequence>
+	</xsd:group>
+</xsd:schema>

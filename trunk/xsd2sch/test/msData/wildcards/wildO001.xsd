@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://foobar" xmlns="http://foobar"
+attributeFormDefault="qualified"
+>
+	<xs:element name="foo">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:anyAttribute namespace="##any"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:attribute name="name" type="xs:string"/>
+</xs:schema>

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fooSpace="bar">
+	<xs:complexType name="fooType">
+		<xs:simpleContent id="foo123" fooSpace:mine="specialAttr">
+			<xs:extension base="xs:string"/>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:element name="root" type="fooType"/>
+</xs:schema>

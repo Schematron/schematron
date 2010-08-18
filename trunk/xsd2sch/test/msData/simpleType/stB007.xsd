@@ -1,0 +1,7 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:simpleType name="fooType">
+		<xsd:restriction base="xsd:string">
+		</xsd:restriction>
+		<xsd:attribute type="xsd:string" value="testAttr"/>
+	</xsd:simpleType>
+</xsd:schema>

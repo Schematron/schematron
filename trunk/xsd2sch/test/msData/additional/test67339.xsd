@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<xsd:schema 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+targetNamespace="pets" 
+xmlns:p="pets" 
+elementFormDefault="qualified">
+
+     <xsd:element name="pet">
+          <xsd:complexType>
+               <xsd:sequence maxOccurs="unbounded">
+                    <xsd:element name="animal" type="p:animalType"/>
+               </xsd:sequence>
+          </xsd:complexType>
+     </xsd:element>
+
+     <xsd:complexType name="animalType" abstract="true"/>
+
+     <xsd:complexType name="dog">
+          <xsd:complexContent>
+               <xsd:extension base="p:animalType">
+                    <xsd:attribute name="dogFood" type="xsd:string"/>
+               </xsd:extension>
+          </xsd:complexContent>
+     </xsd:complexType>
+
+</xsd:schema>
+

@@ -1,0 +1,57 @@
+<a:root	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="ns-a schD5_a.xsd"
+	xmlns:a="ns-a"
+>
+	<a:e1>
+		<a:a1>123</a:a1>
+		<a:a2>true</a:a2>
+	</a:e1>
+	<a:e2>
+		<a:b1>true</a:b1>
+		<a:b2>123</a:b2>
+	</a:e2>
+	<a:e3>
+		<c1>123</c1>
+		<c2>123</c2>
+	</a:e3>
+
+	<a:e1>
+		<a:a1>123</a:a1>
+		<a:a2>true</a:a2>
+	</a:e1>
+	<a:a-e2>
+		<a:b1>true</a:b1>
+		<a:b2>123</a:b2>
+	</a:a-e2>
+	<a:a-e3>
+		<c1>123</c1>
+		<c2>123</c2>
+	</a:a-e3>	
+
+	<a:b-e1>
+		<a:a1>123</a:a1>
+		<a:a2>true</a:a2>
+	</a:b-e1>
+	<a:a-e2>
+		<a:b1>true</a:b1>
+		<a:b2>123</a:b2>
+	</a:a-e2>
+	<a:b-e3>
+		<c1>123</c1>
+		<c2>123</c2>
+	</a:b-e3>	
+
+	<a:c-e1>
+		<a:a1>123</a:a1>
+		<a:a2>true</a:a2>
+	</a:c-e1>
+	<a:c-e2>
+		<a:b1>true</a:b1>
+		<a:b2>123</a:b2>
+	</a:c-e2>
+	<a:e3>
+		<c1>123</c1>
+		<c2>123</c2>
+	</a:e3>	
+
+</a:root>

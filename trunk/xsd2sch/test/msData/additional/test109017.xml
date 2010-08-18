@@ -1,0 +1,30 @@
+<assembly>
+      <assemblyIdentity name="TC522322" version="1.0.0.0" culture="EN-USA" />
+      <configuration xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" >
+      <configurationSchema>
+            <xsd:schema xmlns="Lists" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="Lists">
+                <!--use these types to build setting structure -->
+		<xsd:element name="foo" type="xsd:foo" wcm:roam="True" wcm:migration="True" wcm:default="5" wcm:description="description" wcm:handler="handler" wcm:legacyName="legacyname" wcm:context="context" wcm:legacyType="legacytype" wcm:backup="True" wcm:readOnly="True" wcm:objectType="foo" wcm:accessControl="accesscontrol" wcm:displayName="displayname" wcm:legacyFormat="legacyformat" wcm:privacy="True"/>
+	    </xsd:schema>
+      </configurationSchema>
+      <!--not required use to define instances of setting structure. -->
+      <metadata>
+          <elements>
+          </elements>
+          <complexTypes>
+          </complexTypes>
+          <simpleTypes>
+          </simpleTypes>
+          <assertions>
+          </assertions>
+          <expressions>
+          </expressions>
+          <customHandlers>
+          </customHandlers>
+          <substitutions>
+          </substitutions>
+          <refactoredSettings>
+          </refactoredSettings>
+      </metadata>
+      </configuration>
+</assembly>

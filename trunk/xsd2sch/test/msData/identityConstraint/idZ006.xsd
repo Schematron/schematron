@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xsd:schema elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	
+	<xsd:element name="root" type="rType" />
+	
+	<xsd:complexType name="rType">
+		<xsd:sequence>
+			<xsd:element name="a" type="aType" minOccurs="1" maxOccurs="unbounded">
+				<xsd:key name="a">
+					<xsd:selector xpath="a" />
+					<xsd:field xpath="@att_a" />
+				</xsd:key>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+		
+	<xsd:complexType name="aType" mixed="false">
+		<xsd:sequence>
+			<xsd:element name="bs" type="bsType" minOccurs="0" maxOccurs="11">
+				<xsd:key name="bb">
+					<xsd:selector xpath="b" />
+					<xsd:field xpath="@att_b" />
+				</xsd:key>
+			</xsd:element>
+			<xsd:element name="cs" type="csType" minOccurs="0" maxOccurs="1">
+				<xsd:key name="cc">
+					<xsd:selector xpath="c" />
+					<xsd:field xpath="@att_c" />
+				</xsd:key>
+			</xsd:element>
+		</xsd:sequence>
+		<xsd:attribute name="att_a" type="xsd:string" use="required" />
+	</xsd:complexType>
+	
+	
+	<xsd:complexType name="bsType" mixed="false">
+	<xsd:sequence>
+		<xsd:element name="b" type="bType" minOccurs="0" maxOccurs="11"/>
+	</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="bType" mixed="false">
+		<xsd:sequence>
+			<xsd:element name="cs" type="csType" minOccurs="0" maxOccurs="11">
+				<xsd:key name="bc">
+					<xsd:selector xpath="c" />
+					<xsd:field xpath="@att_c" />
+				</xsd:key>
+			</xsd:element>
+		</xsd:sequence>
+		<xsd:attribute name="att_b" type="xsd:string" use="required" />
+	</xsd:complexType>
+
+	<xsd:complexType name="csType" mixed="false">
+	<xsd:sequence>
+		<xsd:element name="c" type="cType" minOccurs="0" maxOccurs="1"/>
+	</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="cType" mixed="false">
+		<xsd:attribute name="att_c" type="xsd:string" use="required" />
+	</xsd:complexType>
+
+
+</xsd:schema>

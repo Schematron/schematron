@@ -1,0 +1,57 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" finalDefault="restriction">
+
+<xsd:attribute name="SOMITEM_DATATYPE_ANYTYPE" id="ID8449" />
+<xsd:attribute name="SOMITEM_DATATYPE_ANYURI" id="ID8450" type="xsd:anyURI"/>
+<xsd:attribute name="SOMITEM_DATATYPE_BASE64BINARY" id="ID8451" type="xsd:base64Binary" />
+<xsd:attribute name="SOMITEM_DATATYPE_BOOLEAN" id="ID8452" type="xsd:boolean" />
+<xsd:attribute name="SOMITEM_DATATYPE_BYTE" id="ID8453" type="xsd:byte" />
+<xsd:attribute name="SOMITEM_DATATYPE_DAY" id="ID8454" type="xsd:gDay" />
+<xsd:attribute name="SOMITEM_DATATYPE_DATE" id="ID8455" type="xsd:date" />
+<xsd:attribute name="SOMITEM_DATATYPE_DATETIME" id="ID8456" type="xsd:dateTime" />
+<xsd:attribute name="SOMITEM_DATATYPE_DECIMAL" id="ID8457" type="xsd:decimal" />
+<xsd:attribute name="SOMITEM_DATATYPE_DOUBLE" id="ID8458" type="xsd:double" />
+<xsd:attribute name="SOMITEM_DATATYPE_DURATION" id="ID8459" type="xsd:duration" />
+<xsd:attribute name="SOMITEM_DATATYPE_ENTITY" id="ID8460" type="xsd:ENTITY" />
+<xsd:attribute name="SOMITEM_DATATYPE_ENTITIES" id="ID8461" type="xsd:ENTITIES" />
+<xsd:attribute name="SOMITEM_DATATYPE_FLOAT" id="ID8462" type="xsd:float" />
+<xsd:attribute name="SOMITEM_DATATYPE_HEXBINARY" id="ID8463" type="xsd:hexBinary" />
+<xsd:attribute name="SOMITEM_DATATYPE_ID" id="ID8464" type="xsd:ID" />
+<xsd:attribute name="SOMITEM_DATATYPE_IDREF" id="ID8465" type="xsd:IDREF" />
+<xsd:attribute name="SOMITEM_DATATYPE_IDREFS" id="ID8466" type="xsd:IDREFS" />
+<xsd:attribute name="SOMITEM_DATATYPE_INTEGER" id="ID8467" type="xsd:integer" />
+<xsd:attribute name="SOMITEM_DATATYPE_INT" id="ID8468" type="xsd:int" />
+<xsd:attribute name="SOMITEM_DATATYPE_LANGUAGE" id="ID8469" type="xsd:language" />
+<xsd:attribute name="SOMITEM_DATATYPE_LONG" id="ID8470" type="xsd:long" />
+<xsd:attribute name="SOMITEM_DATATYPE_MONTH" id="ID8471" type="xsd:gMonth" />
+<xsd:attribute name="SOMITEM_DATATYPE_MONTHDAY" id="ID8472" type="xsd:gMonthDay" />
+<xsd:attribute name="SOMITEM_DATATYPE_NAME" id="ID8473" type="xsd:Name" />
+<xsd:attribute name="SOMITEM_DATATYPE_NCNAME" id="ID8474" type="xsd:NCName" />
+<xsd:attribute name="SOMITEM_DATATYPE_NEGATIVEINTEGER" id="ID8475" type="xsd:negativeInteger" />
+<xsd:attribute name="SOMITEM_DATATYPE_NONNEGATIVEINTEGER" id="ID8476" type="xsd:nonNegativeInteger" />
+<xsd:attribute name="SOMITEM_DATATYPE_NONPOSITIVEINTEGER" id="ID8477" type="xsd:nonPositiveInteger" />
+<xsd:attribute name="SOMITEM_DATATYPE_NORMALIZEDSTRING" id="ID8478" type="xsd:normalizedString" />
+<xsd:attribute name="SOMITEM_DATATYPE_NMTOKEN" id="ID8479" type="xsd:NMTOKEN" />
+<xsd:attribute name="SOMITEM_DATATYPE_NMTOKENS" id="ID8480" type="xsd:NMTOKENS" />
+<!--xsd:attribute name="SOMITEM_DATATYPE_NOTATION" id="ID8481" type="xsd:NOTATION" /-->
+<xsd:attribute name="SOMITEM_DATATYPE_POSITIVEINTEGER" id="ID8482" type="xsd:positiveInteger" />
+<xsd:attribute name="SOMITEM_DATATYPE_QNAME" id="ID8483" type="xsd:QName" />
+<xsd:attribute name="SOMITEM_DATATYPE_SHORT" id="ID8484" type="xsd:short" />
+<xsd:attribute name="SOMITEM_DATATYPE_STRING" id="ID8485" type="xsd:string" />
+<xsd:attribute name="SOMITEM_DATATYPE_TIME" id="ID8486" type="xsd:time" />
+<xsd:attribute name="SOMITEM_DATATYPE_TOKEN" id="ID8487" type="xsd:token" />
+<xsd:attribute name="SOMITEM_DATATYPE_UNSIGNEDBYTE" id="ID8488" type="xsd:unsignedByte" />
+<xsd:attribute name="SOMITEM_DATATYPE_UNSIGNEDINT" id="ID8489" type="xsd:unsignedInt" />
+<xsd:attribute name="SOMITEM_DATATYPE_UNSIGNEDLONG" id="ID8490" type="xsd:unsignedLong" />
+<xsd:attribute name="SOMITEM_DATATYPE_UNSIGNEDSHORT" id="ID8491" type="xsd:unsignedShort" />
+<xsd:attribute name="SOMITEM_DATATYPE_YEAR" id="ID8492" type="xsd:gYear" />
+<xsd:attribute name="SOMITEM_DATATYPE_YEARMONTH" id="ID8493" type="xsd:gYearMonth" />
+
+<xsd:element name="data" id="data"/>
+<xsd:element name="item">
+	<xsd:complexType>
+		<xsd:anyAttribute/>
+	</xsd:complexType>
+</xsd:element>
+
+</xsd:schema>
+

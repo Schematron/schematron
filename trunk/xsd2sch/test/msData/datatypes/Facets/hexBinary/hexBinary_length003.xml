@@ -1,0 +1,7 @@
+<?xml version='1.0'?>
+<test  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation="hexBinary_length003.xsd" >
+<!-- facet=length and value=5 and document value=abcdeabcde -->
+<!-- length=5 means 5 Octets, each Octet (8 bits) has 2 hex digits [0-9a-fA-F], so [ab cd ea bg de] equals 5 Octets -->
+
+  <foo>abcdeabcde</foo>
+</test>

@@ -1,0 +1,16 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+targetNamespace="ns-a"
+xmlns="ns-a"
+elementFormDefault="qualified"
+>
+
+	<xsd:complexType name="b-ct">
+		<xsd:choice>
+			<xsd:element name="b1"/>
+			<xsd:element name="b2"/>
+		</xsd:choice>
+	</xsd:complexType>
+
+	<xsd:element name="b-e1" type="b-ct" />
+
+</xsd:schema>

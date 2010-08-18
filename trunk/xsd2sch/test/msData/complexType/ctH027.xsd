@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:group name="myGroup">
+		<xsd:all>
+			<xsd:element name="grpElement1" type="xsd:integer"/>
+			<xsd:element name="grpElement2" type="xsd:decimal"/>
+		</xsd:all>
+	</xsd:group>
+	<xsd:complexType name="myType">
+		<xsd:choice>
+			<xsd:element name="myElement1" type="xsd:string"/>
+			<xsd:element name="myElement2" type="xsd:string"/>
+			<xsd:element name="myElement3" type="xsd:string"/>
+		</xsd:choice>
+		<xsd:anyAttribute namespace="##local"/>
+	</xsd:complexType>
+	<xsd:complexType name="fooType">
+		<xsd:complexContent>
+			<xsd:extension base="myType">
+				<xsd:choice>
+					<xsd:element name="myElement4" type="xsd:string"/>
+				</xsd:choice>
+				<xsd:group ref="myGroup"/>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+</xsd:schema>

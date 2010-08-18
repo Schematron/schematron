@@ -1,0 +1,60 @@
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="idZ006.xsd">
+	<a att_a="a">
+		<bs>
+			<b att_b="a">
+			<cs>
+				<c att_c="c"/>
+			</cs>
+			</b>
+			<b att_b="aa">
+			<cs>
+				<c att_c="cc"/>
+			</cs>
+			</b>
+		</bs>
+		<bs>
+			<b att_b="a">
+			<cs>
+				<c att_c="c"/>
+			</cs>
+			</b>
+			<b att_b="aa">
+			<cs>
+				<c att_c="cc"/>
+			</cs>
+			</b>
+		</bs>
+		<cs>
+		<c att_c="c"/>
+		</cs>
+	</a>
+	<a att_a="a">
+		<bs>
+			<b att_b="a">
+			<cs>
+				<c att_c="c"/>
+			</cs>
+			</b>
+			<b att_b="aa">
+			<cs>
+				<c att_c="cc"/>
+			</cs>
+			</b>
+		</bs>
+		<bs>
+			<b att_b="a">
+			<cs>
+				<c att_c="c"/>
+			</cs>
+			</b>
+			<b att_b="aa">
+			<cs>
+				<c att_c="cc"/>
+			</cs>
+			</b>
+		</bs>
+		<cs>
+		<c att_c="c"/>
+		</cs>
+	</a>
+</root>

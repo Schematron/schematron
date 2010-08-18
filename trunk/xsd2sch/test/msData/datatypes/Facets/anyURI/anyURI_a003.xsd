@@ -1,0 +1,19 @@
+<xsd:schema xmlns="b" targetNamespace="b" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    	<xsd:element type="st1" name="bar"></xsd:element>
+
+	<xsd:simpleType name="st1">
+		<xsd:restriction base="xsd:anyURI">
+			<xsd:enumeration value="a"/>
+			<xsd:enumeration value=":a"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="st2">
+		<xsd:restriction base="xsd:anyURI">
+			<xsd:enumeration value="a"/>
+			<xsd:enumeration value="b:"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+</xsd:schema>

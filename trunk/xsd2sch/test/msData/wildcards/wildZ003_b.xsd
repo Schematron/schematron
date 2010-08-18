@@ -1,0 +1,14 @@
+<xsd:schema  xmlns:xsd="http://www.w3.org/2001/XMLSchema"  
+	targetNamespace="urn:bar"
+	xmlns="urn:bar"
+>
+  <xsd:element name="elem" />
+
+  <xsd:complexType name="ct">
+	<xsd:sequence>
+		<xsd:element name="a"/>
+	</xsd:sequence>
+ </xsd:complexType>
+
+
+</xsd:schema>

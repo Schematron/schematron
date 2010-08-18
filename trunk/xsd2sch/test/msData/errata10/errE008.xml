@@ -1,0 +1,7 @@
+<a:root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.tempuri.org errE008.xsd"
+	xmlns:a="http://www.tempuri.org">
+
+	<a:testToken>test&#x0D;data</a:testToken>
+	
+</a:root>

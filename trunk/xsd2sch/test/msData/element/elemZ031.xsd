@@ -1,0 +1,8 @@
+<xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema' >
+  <xsd:complexType name='fooType' > 
+    <xsd:sequence minOccurs="56" maxOccurs="100">
+	     <xsd:element name='e1' minOccurs="79228162514264337593543950335" maxOccurs="79228162514264337593543950335"/>
+	     <xsd:element name='e1' />
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

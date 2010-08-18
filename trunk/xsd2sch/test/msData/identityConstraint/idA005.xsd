@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:redefine schemaLocation="idA005a.xsd">
+		<xsd:complexType name="keyInfo">
+			<xsd:complexContent>
+				<xsd:extension base="keyInfo">
+					<xsd:attribute name="key2" type="xsd:boolean"/>
+				</xsd:extension>
+			</xsd:complexContent>
+		</xsd:complexType>
+	</xsd:redefine>
+	<xsd:element name="root">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="uniqueElement"/>
+			</xsd:sequence>
+		</xsd:complexType>
+		<xsd:unique id="foo123" name="idName">
+			<xsd:selector xpath=".//uniqueElement"/>
+			<xsd:field xpath="@keyField"/>
+		</xsd:unique>
+	</xsd:element>
+	<xsd:element name="uniqueElement" type="keyInfo"/>
+</xsd:schema>

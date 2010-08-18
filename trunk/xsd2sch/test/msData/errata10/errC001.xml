@@ -1,0 +1,6 @@
+<a:root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.tempuri.org errC001.xsd"
+	xmlns:a="http://www.tempuri.org"
+	testAttr="This   is   a   
+fixed value"
+></a:root>

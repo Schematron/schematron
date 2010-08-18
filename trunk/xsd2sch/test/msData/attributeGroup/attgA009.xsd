@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://xsdtesting" xmlns:x="http://xsdtesting">
+	<xsd:redefine schemaLocation="attgA009.imp">
+		<xsd:attributeGroup name="xyz" id="abc">
+			<xsd:attributeGroup ref="x:xyz"/>
+			<xsd:attribute name="a" type="xsd:string"/>
+		</xsd:attributeGroup>
+	</xsd:redefine>
+	<xsd:attribute name="att1" type="xsd:string"/>
+	<xsd:attribute name="att2" type="xsd:string" fixed="abc"/>
+	<xsd:attributeGroup name="abc" id="abc"/>
+</xsd:schema>

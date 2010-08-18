@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<target:foo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/1999/xhtml wildG035.xsd" xsi:noNamespaceSchemaLocation="wildG035a.xsd" xmlns:target="http://www.w3.org/1999/xhtml">
+	<bar>foo bar</bar>
+</target:foo>

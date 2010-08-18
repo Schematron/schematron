@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<a:doc
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="a test78000a.xsd b test78000b.xsd"
+	xmlns:a="a"
+	xmlns:b="b"
+>
+<!-- IDEAL SAMPLE: WORKS (SkipContainerContains some unknown garbage),
+	- both shemas loaded
+	- this is expected behavior
+-->	
+<a:RootContainer xmlns:a="a" xmlns:b="b">
+	<a:StrictContainer>
+		<b:test b1="a"/>
+	</a:StrictContainer>
+	<a:LaxContainer>
+		<b:test  b1="a"/>
+	</a:LaxContainer>
+	<a:SkipContainer>
+		<anyOtherGarbage xmlns="other"/>
+	</a:SkipContainer>
+</a:RootContainer> 
+<!-- ALSO WORKS, since LAX cannot get schema for empty-namespace, so it does not validate content
+	- this is expected behavior
+-->
+<a:RootContainer xmlns:a="a" xmlns:b="b">
+	<a:StrictContainer>
+		<b:test b1="a"/>
+	</a:StrictContainer>
+	<a:LaxContainer>
+		<anyOtherGarbage xmlns="other"/>
+	</a:LaxContainer>
+	<a:SkipContainer>
+		<anyOtherGarbage xmlns="other"/>
+	</a:SkipContainer>
+</a:RootContainer> 
+<!-- AND THIS IS THEtest !!!!
+	- Strict and LAX are ok, valid by the schema
+	- SkipContainer contains invalid b:test without b1 parameter
+		but since it is skip, the validation should NEVER HAPPEN
+	- It raises the error: "Required attribute 'b1' is missing."	
+-->		
+<a:RootContainer xmlns:a="a" xmlns:b="b">
+	<a:StrictContainer>
+		<b:test b1="a"/>
+	</a:StrictContainer>
+	<a:LaxContainer>
+		<b:test b1="a"/>
+	</a:LaxContainer>
+	<a:SkipContainer>
+		<b:test/>
+	</a:SkipContainer>
+</a:RootContainer> 	
+
+</a:doc>

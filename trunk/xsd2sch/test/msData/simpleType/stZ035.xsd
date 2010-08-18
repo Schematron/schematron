@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema targetNamespace="foo" elementFormDefault="qualified" xmlns="foo" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:simpleType name="B">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[a|b]"/>
+		</xs:restriction>
+	</xs:simpleType>	
+
+	<xs:simpleType name="C">
+		<xs:restriction base="B">
+			<xs:pattern value="[b|c]+"/>
+		</xs:restriction>
+	</xs:simpleType>		
+
+	<xs:element name="a" type="C"/>
+
+</xs:schema>

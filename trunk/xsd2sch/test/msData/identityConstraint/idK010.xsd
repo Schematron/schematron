@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="root">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="uid" maxOccurs="unbounded"/>
+				<xsd:element ref="kid" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+		<xsd:unique id="foo1233" name="kuuid">
+			<xsd:selector xpath=".//kid"/>
+			<xsd:field xpath="elem"/>
+		</xsd:unique>
+		<xsd:keyref id="foo123" name="kruuid" refer="kuuid">
+			<xsd:selector xpath=".//uid"/>
+			<xsd:field xpath="elem"/>
+		</xsd:keyref>
+	</xsd:element>
+	<xsd:element name="uid">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="elem" type="xsd:string"/>
+			</xsd:sequence>
+			<xsd:attribute name="val" type="xsd:string"/>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="kid">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="elem" type="xsd:string"/>
+			</xsd:sequence>
+			<xsd:attribute name="val" type="xsd:string"/>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

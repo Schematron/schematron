@@ -1,0 +1,16 @@
+<foo 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="wildI005.xsd" 
+xsi:schemaLocation="http://foo wildI005a.xsd"
+>
+
+	<a:b xmlns:a="foo">test</a:b>
+	<a:b xmlns:a="foo">test</a:b>
+	<a:b xmlns:a="a">test</a:b>
+	<a:b xmlns:a="a">test</a:b>
+	<a:b xmlns:a="b">test</a:b>
+	<a:b xmlns:a="b">test</a:b>
+	<bar/>
+	<bar/>
+	<a:foo xmlns:a="http://foo"> test</a:foo>
+</foo>

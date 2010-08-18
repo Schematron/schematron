@@ -1,0 +1,7 @@
+<root xsi:noNamespaceSchemaLocation="anyURI_b002.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<bar att="a名前空間名前空間名前空間名前空間名前空間名前空間名前空間名前空間名前空間名前空間名前空間名前空間名前空間b">xあy</bar>
+	<bar>a名前空間名前空間名前空間名前空間名前空間名前空間名前空間名前空間名前空間名前空間名前空間名前空間名前空間b</bar>
+	<bar att="xあy">anyURI:c</bar>
+
+</root>

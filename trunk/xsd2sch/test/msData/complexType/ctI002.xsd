@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:simpleType name="fooType">
+		<xsd:restriction base="xsd:string"/>
+	</xsd:simpleType>
+	<xsd:complexType name="fooType">
+		<xsd:sequence>
+			<xsd:element name="myEle3" type="xsd:NMTOKEN"/>
+			<xsd:element name="myEle4" type="xsd:long"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

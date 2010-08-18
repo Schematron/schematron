@@ -1,0 +1,14 @@
+<root	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="schF2_a.xsd"
+	xmlns:b="ns-b"
+>
+	<e1>
+		<a1>123</a1>
+		<a2>true</a2>
+	</e1>
+	<b:e1>
+		<b:a1>true</b:a1>
+		<b:a2>123</b:a2>
+	</b:e1>
+
+</root>

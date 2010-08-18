@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://bar">
+	<xsd:element name="bar" type="xsd:string"/>
+</xsd:schema>

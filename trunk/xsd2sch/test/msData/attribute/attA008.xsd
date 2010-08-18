@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:complexType name="myType">
+		<xs:attribute name="test" form="unqualified"/>
+	</xs:complexType>
+</xs:schema>

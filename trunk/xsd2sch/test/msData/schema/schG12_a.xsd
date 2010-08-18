@@ -1,0 +1,22 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+targetNamespace="ns-a"
+xmlns="ns-a"
+>
+
+	<xsd:import namespace="ns-b" schemaLocation="schG12_b.xsd"/>
+	<xsd:import namespace="ns-b" schemaLocation="schG12_c.xsd"/>
+
+	<xsd:element name="foo_a" />
+
+	
+	<xsd:element name="root">
+		<xsd:complexType>
+			<xsd:choice maxOccurs="unbounded">
+				<xsd:any namespace="##any" processContents="strict"/>
+			</xsd:choice>
+		</xsd:complexType>
+	</xsd:element>
+
+</xsd:schema>
+
+

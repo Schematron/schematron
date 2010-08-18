@@ -1,0 +1,29 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="urn:books"
+        xmlns:x="urn:books"
+	elementFormDefault="unqualified"
+	attributeFormDefault="unqualified"
+>
+	<xsd:complexType name="CatalogData">
+		<xsd:sequence>
+			<xsd:element name="book" type="x:bookdata" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="bookdata">
+		<xsd:sequence>
+			<xsd:element name="author" type="xsd:string"/>
+			<xsd:element name="title" type="xsd:string"/>
+			<xsd:element name="genre" type="xsd:string"/>
+			<xsd:element name="price" type="xsd:float"/>
+			<xsd:element name="publish_date" type="xsd:date"/>
+			<xsd:element name="description" type="xsd:string"/>
+		</xsd:sequence>
+		<xsd:attribute name="id" type="xsd:string"/>
+	</xsd:complexType>
+	<xsd:element name="catalog" type="CatalogData">
+		<xsd:unique name="pkBook">
+			<xsd:selector xpath="book"/>
+			<xsd:field xpath="@id"/>
+		</xsd:unique>
+	</xsd:element>
+</xsd:schema>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:attributeGroup name="attrGroup">
+		<xsd:attribute name="localAttr"/>
+		<xsd:attribute name="myAttr"/>
+	</xsd:attributeGroup>
+	<xsd:complexType name="myType">
+		<xsd:all>
+			<xsd:element name="myElement1" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="myElement2" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="myElement3" type="xsd:string" minOccurs="0"/>
+		</xsd:all>
+		<xsd:anyAttribute namespace="##any"/>
+	</xsd:complexType>
+	<xsd:complexType name="fooType">
+		<xsd:complexContent>
+			<xsd:restriction base="myType">
+				<xsd:attributeGroup ref="attrGroup"/>
+				<xsd:all>
+					<xsd:element name="myElement1" type="xsd:string"/>
+				</xsd:all>
+			</xsd:restriction>
+		</xsd:complexContent>
+	</xsd:complexType>
+</xsd:schema>

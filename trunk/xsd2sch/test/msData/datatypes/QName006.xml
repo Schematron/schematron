@@ -1,0 +1,11 @@
+<?xml version='1.0'?>
+<root xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+       xsi:noNamespaceSchemaLocation="QName.xsd" 
+      xmlns:fo="myNamespace" >
+  <complexTest>
+  <!-- value=fo:foo -->
+    <comp_foo>fo:foo</comp_foo>
+  </complexTest>
+ 
+  <simpleTest>fo:foo</simpleTest>
+</root>

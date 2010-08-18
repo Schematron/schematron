@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:attributeGroup name="abc" id="abc">
+		<xsd:attributeGroup ref=""/>
+		<xsd:attribute name="att" type="xsd:int"/>
+	</xsd:attributeGroup>
+	<xsd:attributeGroup name="g">
+		<xsd:attribute name="foo" type="xsd:int"/>
+		<xsd:attribute name="bar"/>
+	</xsd:attributeGroup>
+</xsd:schema>

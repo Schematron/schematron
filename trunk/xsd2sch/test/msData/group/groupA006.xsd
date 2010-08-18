@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:redefine schemaLocation="groupA006.red">
+		<xsd:group name="xxx">
+			<xsd:sequence>
+				<xsd:group ref="xxx"/>
+			</xsd:sequence>
+		</xsd:group>
+	</xsd:redefine>
+	<xsd:group name="foo" id="foo">
+		<xsd:sequence>
+			<xsd:element name="a"/>
+		</xsd:sequence>
+	</xsd:group>
+</xsd:schema>

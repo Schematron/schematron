@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:complexType name="myType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:anyAttribute namespace="##any" processContents="lax"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:complexType name="fooType">
+		<xs:simpleContent>
+			<xs:restriction base="myType">
+				<xs:anyAttribute namespace="##local"/>
+			</xs:restriction>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:element name="root" type="fooType"/>
+	<xs:attribute name="myAttr" type="xs:string"/>
+</xs:schema>

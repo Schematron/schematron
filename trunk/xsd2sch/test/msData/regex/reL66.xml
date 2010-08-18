@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='reL66.xsd' >
+
+<!-- 
+base='string', pattern='\p{IsKanbun}+', value='#x3190;#x319F;', type='valid', RULE='25,36'
+-->
+
+      <elem att='&#x3190;&#x319F;'/>
+
+ </doc>

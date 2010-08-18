@@ -1,0 +1,10 @@
+<?xml version='1.0'?>
+<root xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+       xsi:noNamespaceSchemaLocation="duration.xsd" >
+  <complexTest>
+  <!-- value=T312H -->
+    <comp_foo>T312H</comp_foo>
+  </complexTest>
+ 
+  <simpleTest>T312H</simpleTest>
+</root>

@@ -1,0 +1,23 @@
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+
+targetNamespace="ns" xmlns:ns="ns">
+
+ 
+
+        <complexType name="CT" mixed="true">
+
+                <sequence>
+
+                        <element name="a" minOccurs="0" type="byte"/>
+
+                </sequence>
+
+        </complexType>
+
+ 
+
+        <element name="e" type="ns:CT" fixed="abc" />
+
+ 
+
+</schema>

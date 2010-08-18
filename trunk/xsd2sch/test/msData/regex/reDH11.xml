@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='reDH11.xsd' >
+
+<!-- 
+base='NMTOKEN', pattern='\c[\c\d]*', value='name1', type='valid', RULE=''
+-->
+
+     <elem>name1</elem>
+
+ </doc>

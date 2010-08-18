@@ -1,0 +1,9 @@
+<xs:schema id="_67913603045605385" attributeFormDefault="qualified" finalDefault="extension" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:attribute type="xs:decimal" default="MWNBMEMKJPPBHHQMVUMLDAWLFJTGBKTBWYRCNVMI" name="_7544623984" />
+
+  <xs:complexType name="_8771484">
+    <xs:attribute ref="_7544623984"  default="UARHYHF" />
+  </xs:complexType>
+
+</xs:schema>

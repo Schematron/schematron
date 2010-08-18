@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<doc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:h="http://www.w3.org/1999/xhtml" xsi:noNamespaceSchemaLocation="mgF012.xsd">
+	<c>true</c>
+	<h:html>
+		<h:body>
+Hey this is html
+</h:body>
+	</h:html>
+	<b>I am a stringy string</b>
+	<d/>
+	<a>1</a>
+</doc>

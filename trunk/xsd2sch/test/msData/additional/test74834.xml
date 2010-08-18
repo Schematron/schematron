@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<my:datafile xmlns:my="urn:myxsdschema">
+
+   <nonstringsection>
+ 
+	<!-- Bigint represents an integer with a minimum value of -9223372036854775808 and maximum of 9223372036854775807. -->
+	<bigint>-92232036854775808</bigint>			
+	<bigint>-1</bigint>			
+	<bigint>0</bigint>			
+	<bigint>1</bigint>			
+	<bigint>92232036854775807</bigint>			
+
+	<!-- Int represents an integer with a minimum value of -2147483648 and maximum of 2147483647. -->
+	<int>-2147483648</int>
+	<int>-1</int>
+	<int>0</int>
+	<int>1</int>
+	<int>2147483647</int>
+
+	<!-- Smallint represents an integer with a minimum value of -32768 and maximum of 32767. -->
+	<smallint>-32768</smallint>
+	<smallint>-1</smallint>
+	<smallint>0</smallint>
+	<smallint>1</smallint>
+	<smallint>32767</smallint>
+
+	<!-- Tinyint represents an integer with a minimum of zero and maximum of 255. -->
+	<tinyint>0</tinyint>
+	<tinyint>1</tinyint>
+	<tinyint>33</tinyint>
+	<tinyint>254</tinyint>
+	<tinyint>255</tinyint>
+
+	<!-- Decimal represents arbitrary precision numbers with max. precision of 38 and max. scale of 10 -->
+	<decimal>-9954645.9999</decimal>
+	<decimal>-99232423454645.999900</decimal>
+	<decimal>0.9999</decimal>
+	<decimal>995464234235.999900</decimal>
+	<decimal>9954645.9999</decimal>
+
+	<!-- Numeric type is equivalent to decimal type -->
+	<decimal>-9954645.9999</decimal>
+	<decimal>-99232423454645.999900</decimal>
+	<decimal>0.9999</decimal>
+	<decimal>995464234235.999900</decimal>
+	<decimal>9954645.9999</decimal>
+
+	<!-- Money represents decimal numbers with max. precision of 19 and a max. scale of 4 -->
+	<money>-18888888888.5808</money>
+	<money>-188.5808</money>
+	<money>0</money>
+	<money>188.5808</money>
+	<money>18888888888.5808</money>
+
+	<!-- Smallmoney represents decimal numbers with max. precision of 10 and a max. scale of 4 -->
+	<smallmoney>-121212.1112</smallmoney>
+	<smallmoney>-1.11</smallmoney>
+	<smallmoney>0.0</smallmoney>
+	<smallmoney>1.11</smallmoney>
+	<smallmoney>121212.1112</smallmoney>
+
+	<!-- Flaot represents a floating point number with a min value of -1.79E308 and max value of 1.79E308 -->
+	<float>-1.79e308</float>
+	<float>-1.79</float>
+	<float>0</float>
+	<float>1.79</float>
+	<float>1.79e308</float>
+
+	<!-- Real represents a floating point number with a min value of -3.40E38 and max value of 3.40E38 -->
+	<real>-3.40e38</real>
+	<real>2.79e38</real>
+	<real>0.0</real>
+	<real>2.79e38</real>
+	<real>3.40e38</real>
+
+	<!-- Datetime consists of 3 fields. Date is in YYYY-MM-DD format. -->
+	<!-- Time is in hh:mm:ss.ddd format, where .ddd is for the miliseconds-->
+	<!-- localized_dt is a string that represents the localized version of the given datetime value -->
+	<datetime>
+		<date>2000-10-10</date>
+		<time>12:54:00.000</time>
+		<localized_dt>12-May-2000 12:54:00.345 AM</localized_dt>
+        </datetime>
+
+	<!-- Smalldatetime consists of 3 fields. Date is in YYYY-MM-DD format. -->
+	<!-- Time is in hh:mm:ss format. This does not store the miliseconds. -->
+	<!-- localized_sdt is a string that represents the localized version of the given smalldatetime value -->
+	<smalldatetime>
+		<date>2000-10-10</date>
+		<time>12:54:00</time>
+		<localized_sdt>10-15-2001 12:03:00 PM</localized_sdt>
+        </smalldatetime>
+   </nonstringsection>
+
+   <stringsection>
+	<string>aqopkde#^90d</string>
+	<string>qpweipqweiaqopkde#^90d</string>
+	<string>aqopkde#^90asdaskdl;asd</string>
+	<string>aqopkdejgdlepsdf#^90d</string>
+	<string>aqopkde#^90kl;345l3;lkldf345d</string>
+	<string>alg;ldfqopkde34059-fld;#^90d</string>
+	<string>aqodfflkgd;flpkd%$e(*34534)$#%#^90d</string>
+	<string>aqopfskdjflknmvkde#^90d</string>
+	<string>sdfsdfsdaqopkde#^90d430985dflskjsdf</string>
+	<string>aqopdsflsd;lf0495-304kde#^90d</string>
+   </stringsection>
+
+
+</my:datafile>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://importedXSD" xmlns:main="http://xsdtesting">
+
+	<xsd:import namespace="http://xsdtesting" schemaLocation="particlesDb001.xsd"/>
+
+	<xsd:element name="a" type="main:A"/>
+	<xsd:element name="elem1"/>
+	<xsd:element name="imp">
+		<xsd:complexType>
+			<xsd:attribute name="att1" type="xsd:string"/>
+			<xsd:attribute name="att2" type="xsd:int"/>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

@@ -1,0 +1,9 @@
+<alpha xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:noNamespaceSchemaLocation="wildI004i.xsd">
+    <beta><c/><d/></beta> <!-- matches beta content model -->
+    <e/>
+    <f>
+      <beta><x/></beta> <!-- doesn't, but grandchild of alpha -->
+    </f>
+    <beta><y/></beta>       <!-- doesn't -->
+  </alpha>

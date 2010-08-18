@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='reD4.xsd' >
+
+<!-- 
+base='string', pattern='(((((boy)|(girl))[0-1][x-z]{2})?)|(man|woman)[0-1]?[y|n])*', value='girl1xymany', type='valid', RULE='2,3,4,5,6,7,8,9'
+-->
+
+     <elem>girl1xymany</elem>
+
+ </doc>

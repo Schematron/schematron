@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='reDG4.xsd' >
+
+<!-- 
+base='gYear', pattern='\p{Nd}{2}', value='1999', type='invalid', RULE=''
+-->
+
+     <elem>1999</elem>
+
+ </doc>

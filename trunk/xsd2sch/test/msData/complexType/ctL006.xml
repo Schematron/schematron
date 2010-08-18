@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ctL006.xsd">
+	<fooTest>
+		<child_1></child_1>
+		<child_2></child_2>
+	test information
+  </fooTest>
+</root>

@@ -1,0 +1,7 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="root" fixed="1">
+		<xsd:simpleType>
+			<xsd:union memberTypes="xsd:boolean xsd:int xsd:string"/>
+		</xsd:simpleType>
+	</xsd:element>
+</xsd:schema>

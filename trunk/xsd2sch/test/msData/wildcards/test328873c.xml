@@ -1,0 +1,3 @@
+<a:sub3 a:att1="abc" att2="bc" b:att3="foo" x:att4="val" att="a" xmlns:a="a" xmlns:b="b" xmlns:x="x"/> <!-- resultant wildcard is ##any -->
+
+

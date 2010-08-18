@@ -1,0 +1,11 @@
+<xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema' >
+	<xsd:element name="test">
+       <xsd:complexType>
+            <xsd:attribute name="foo" type="xsd:integer">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:integer"/>
+                </xsd:simpleType>
+            </xsd:attribute> 
+       </xsd:complexType>
+	</xsd:element>
+</xsd:schema>

@@ -1,0 +1,18 @@
+<?xml version='1.0'?>
+<root xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+       xsi:noNamespaceSchemaLocation="float039.xsd" >
+  <!-- Test for simpleType of Float -->
+  <complexTest>
+    <comp_foo>1.2345</comp_foo>
+  </complexTest>
+ 
+  <simpleTest>-3.4028234663852885981170418348452e+38</simpleTest>
+  <simpleTest>-2.3509885615147285834557659820715e-38</simpleTest>
+  <simpleTest>2.3509885615147285834557659820715e-38</simpleTest>
+  <simpleTest>3.4028234663852885981170418348452e+38</simpleTest>
+  <simpleTest>NaN</simpleTest>
+  <simpleTest>-INF</simpleTest>
+  <simpleTest>INF</simpleTest>
+  <simpleTest>+0</simpleTest>
+  <simpleTest>-0</simpleTest>
+</root>

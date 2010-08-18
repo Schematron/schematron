@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='reI76.xsd' >
+
+<!-- 
+base='string', pattern='(\t|\s)a(\r\n|\r|\n|\s)+(\s|\t)b(\s|\r\n|\r|\n)*', value=' a b ', type='invalid', RULE='24'
+-->
+
+      <elem att=' a b '/>
+
+ </doc>

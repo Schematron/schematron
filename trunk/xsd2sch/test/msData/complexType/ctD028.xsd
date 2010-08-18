@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:complexType name="myType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string"/>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:complexType name="fooType">
+		<xs:simpleContent>
+			<xs:restriction base="myType">
+				<xs:length value="5"/>
+				<xs:whiteSpace value="preserve"/>
+			</xs:restriction>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:element name="root" type="fooType"/>
+</xs:schema>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:foo="importedXSD">
+	<xsd:import namespace="importedXSD" schemaLocation="groupB009.imp"/>
+	<xsd:complexType name="complexType">
+		<xsd:sequence>
+			<xsd:element name="r1"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:element name="elem">
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:extension base="complexType">
+					<xsd:group ref="foo:a"/>
+				</xsd:extension>
+			</xsd:complexContent>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="doc">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="elem"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:attributeGroup name="attG">
+		<xsd:attribute name="att1"/>
+	</xsd:attributeGroup>
+	<xsd:group name="foo">
+		<xsd:sequence>
+			<xsd:element name="foo"/>
+		</xsd:sequence>
+	</xsd:group>
+</xsd:schema>

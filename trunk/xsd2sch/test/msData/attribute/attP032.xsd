@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://xsdtesting" xmlns:x="http://xsdtesting" xmlns:imp="http://importedXSD" elementFormDefault="qualified" attributeFormDefault="qualified">
+	<xsd:import namespace="http://importedXSD" schemaLocation="attP032.imp"/>
+	<xsd:redefine schemaLocation="attP032.red">
+		<xsd:complexType name="red">
+			<xsd:complexContent>
+				<xsd:extension base="x:red">
+					<xsd:attribute name="xx"/>
+				</xsd:extension>
+			</xsd:complexContent>
+		</xsd:complexType>
+	</xsd:redefine>
+	<xsd:include schemaLocation="attP032.inc"/>
+	<xsd:complexType name="attRef">
+		<xsd:attribute name="att"/>
+		<xsd:attribute ref="x:redAtt"/>
+		<xsd:attribute ref="x:incAtt"/>
+		<xsd:attribute ref="imp:impAtt"/>
+	</xsd:complexType>
+	<xsd:element name="doc">
+		<xsd:complexType>
+			<xsd:choice>
+				<xsd:element name="elem" type="x:attRef">
+				</xsd:element>
+			</xsd:choice>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

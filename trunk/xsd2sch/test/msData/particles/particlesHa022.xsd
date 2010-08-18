@@ -1,0 +1,23 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<!-- restriction xs:any to a sequence -->
+ <xs:complexType name="base">  
+   <xs:sequence>
+         <xs:any namespace="##any"/> 
+	 <xs:sequence>
+		<xs:element name="a" minOccurs="0" />
+	 </xs:sequence>
+   </xs:sequence>
+ </xs:complexType>
+
+ <xs:complexType name="derived">  
+	<xs:complexContent>
+	<xs:restriction base="base">
+	  <xs:sequence>
+		 <xs:element name="a" type="xs:string" />
+		 <xs:element name="a" type="xs:string" minOccurs="0"/>
+	  </xs:sequence>
+	</xs:restriction>
+	</xs:complexContent>
+ </xs:complexType>
+
+</xs:schema>

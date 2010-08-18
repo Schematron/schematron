@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="idF012.xsd">
+	<uid xsi:type="xsd:boolean">1</uid>
+	<uid xsi:type="xsd:decimal">1</uid>
+</root>

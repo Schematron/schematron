@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='reDI7.xsd' >
+
+<!-- 
+base='short', pattern='\-?[0-3]{3}', value='-300', type='valid', RULE=''
+-->
+
+      <elem att='-300'/>
+
+ </doc>

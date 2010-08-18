@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='reDF5.xsd' >
+
+<!-- 
+base='time', pattern='\p{Nd}+:\d\d:\d\d(\-\d\d:\d\d)?', value='12345:12:12-12:12', type='invalid', RULE=''
+-->
+
+      <elem att='12345:12:12-12:12'/>
+
+ </doc>

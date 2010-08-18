@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<r xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="test73826.xsd" >
+  <i id="a1234567891234567" d="A Test Node" xsi:nil="true" />
+</r>
+

@@ -1,0 +1,9 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+		<xsd:attributeGroup name="c-g2">
+				<xsd:attribute name="a1" />
+				<xsd:attribute name="a2" type="xsd:string" fixed="abc"/>
+		</xsd:attributeGroup>
+</xsd:schema>
+
+

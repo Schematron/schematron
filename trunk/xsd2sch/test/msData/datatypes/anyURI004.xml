@@ -1,0 +1,10 @@
+<?xml version='1.0'?>
+<root xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+       xsi:noNamespaceSchemaLocation="anyURI.xsd" >
+  <complexTest>
+  <!-- value=http://www.w3.org/XML/Group/xmlschema-current/datatypes/datatypes.html#uriReference -->
+    <comp_foo>http://www.w3.org/XML/Group/xmlschema-current/datatypes/datatypes.html#uriReference</comp_foo>
+  </complexTest>
+ 
+  <simpleTest>http://www.w3.org/XML/Group/xmlschema-current/datatypes/datatypes.html#uriReference</simpleTest>
+</root>

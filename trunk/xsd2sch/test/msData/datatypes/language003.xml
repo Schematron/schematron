@@ -1,0 +1,10 @@
+<?xml version='1.0'?>
+<root xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+       xsi:noNamespaceSchemaLocation="language.xsd" >
+  <complexTest>
+  <!-- value=EN-US -->
+    <comp_foo>EN-US</comp_foo>
+  </complexTest>
+ 
+  <simpleTest>EN-US</simpleTest>
+</root>

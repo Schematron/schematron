@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="foo">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:any namespace="http://www.w3.org/1999/XMLSchema http://www.w3.org/1999/XMLSchema-instance http://www.w3.org/1999/XMLSchema-datatypes"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='reV12.xsd' >
+
+<!-- 
+base='string', pattern='\W', value='#xFF9F;', type='invalid', RULE='37'
+-->
+
+     <elem>&#xFF9F;</elem>
+
+ </doc>

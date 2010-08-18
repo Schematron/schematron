@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<doc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="particlesB013.xsd" xsi:schemaLocation="foo particlesB013_1.xsd">
+	<elem>
+		<b xmlns="foo"/>
+	</elem>
+</doc>

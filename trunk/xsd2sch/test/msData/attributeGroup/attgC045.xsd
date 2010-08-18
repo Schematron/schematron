@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:redefine schemaLocation="attgC044.red">
+		<xsd:attributeGroup name="car">
+			<xsd:attributeGroup ref="car"/>
+		</xsd:attributeGroup>
+	</xsd:redefine>
+	<xsd:element name="doc" type="car"/>
+	<xsd:complexType name="car">
+		<xsd:attributeGroup ref="car"/>
+	</xsd:complexType>
+</xsd:schema>

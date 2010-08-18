@@ -1,0 +1,29 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:redefine schemaLocation="schZ007_personName.xsd">
+  <xs:complexType name="personName">
+   <xs:complexContent>
+    <xs:extension base="personName">
+     <xs:sequence>
+      <xs:element name="generation" type="xs:string"  minOccurs="0"/>
+     </xs:sequence>
+    </xs:extension>
+   </xs:complexContent>
+  </xs:complexType>
+</xs:redefine>
+
+<xs:redefine schemaLocation="schZ007_address.xsd">
+  <xs:complexType name="Address">
+   <xs:complexContent>
+    <xs:extension base="Address">
+     <xs:sequence>
+      <xs:element name="Zip" type="xs:string" minOccurs="0"/>
+     </xs:sequence>
+    </xs:extension>
+   </xs:complexContent>
+  </xs:complexType>
+</xs:redefine> 
+
+<xs:element name="author" type="personName"/>
+
+</xs:schema>

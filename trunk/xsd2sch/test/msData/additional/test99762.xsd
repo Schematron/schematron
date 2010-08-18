@@ -1,0 +1,18 @@
+<xs:schema 
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:ns="ns1"
+>
+
+	<xs:simpleType name="st1">
+		<xs:restriction base="xs:decimal">	
+			<xs:totalDigits value="2"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="st2">
+		<xs:restriction base="st1">	
+			<xs:enumeration value="00.2"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+</xs:schema>

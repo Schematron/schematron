@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:redefine schemaLocation="idF034.red">
+		<xsd:complexType name="tabletype">
+			<xsd:complexContent>
+				<xsd:extension base="tabletype">
+					<xsd:sequence>
+						<xsd:element name="c">
+							<xsd:complexType mixed="true">
+								<xsd:attribute name="val" type="xsd:string"/>
+							</xsd:complexType>
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:extension>
+			</xsd:complexContent>
+		</xsd:complexType>
+	</xsd:redefine>
+	<xsd:element name="root">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="t" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+		<xsd:unique name="tableu">
+			<xsd:selector xpath=".//t/c"/>
+			<xsd:field xpath="@val"/>
+		</xsd:unique>
+	</xsd:element>
+	<xsd:element name="t" type="tabletype"/>
+</xsd:schema>

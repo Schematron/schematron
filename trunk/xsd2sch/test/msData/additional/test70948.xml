@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<myNS:root xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+      xsi:schemaLocation='http://xsdtesting test70948.xsd'
+      xmlns:myNS="http://xsdtesting">16</myNS:root>
+
+

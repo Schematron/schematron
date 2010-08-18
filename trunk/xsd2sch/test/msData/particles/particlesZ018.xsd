@@ -1,0 +1,19 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+<xs:complexType name="B1">
+        <xs:simpleContent>
+            <xs:extension base="xs:decimal">
+                <xs:attribute name="foo"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+<xs:complexType name="C2">
+        <xs:simpleContent>
+            <xs:restriction base="B1">
+                <xs:simpleType>
+                    <xs:list itemType="xs:int"/>
+                </xs:simpleType>
+            </xs:restriction>
+        </xs:simpleContent>
+    </xs:complexType>
+</xs:schema>

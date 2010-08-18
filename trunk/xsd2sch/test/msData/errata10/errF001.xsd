@@ -1,0 +1,26 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+
+
+<xs:simpleType name="st">
+	<xs:restriction base="xs:string">
+		<xs:length value="5"/>
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="st2">
+	<xs:restriction base="st">
+		<xs:maxLength value="5"/>
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:element name="doc">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="foo1" type="st" />
+			<xs:element name="foo2" type="st2" />
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+
+
+</xs:schema>

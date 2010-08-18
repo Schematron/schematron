@@ -1,0 +1,16 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:import namespace="a" schemaLocation="particlesZ040a.xsd" />
+	<xs:import namespace="b" schemaLocation="particlesZ040b.xsd" />
+	<xs:element name="doc">
+		<xs:complexType>
+			<xs:sequence maxOccurs="3">
+				<xs:element ref="a" minOccurs="0" maxOccurs="1"/>
+				<xs:any namespace="##other" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element name="b" type="xs:string" default="e2" minOccurs="0" maxOccurs="2"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="e" type="xs:string" fixed="e1"/>
+	<xs:element name="a" type="xs:string" fixed="e1"/>
+	<xs:element name="b" type="xs:string" fixed="e1"/>
+</xs:schema>

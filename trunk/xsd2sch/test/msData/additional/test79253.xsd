@@ -1,0 +1,248 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+   <xsd:element name="root" type="ct1"/>
+   <xsd:element name="e1" type="strType"/>
+   <xsd:element name="e2" type="att1"/>
+   <xsd:element name="e3" type="m3"/>
+   <xsd:element name="e4" type="m4"/>
+   <xsd:element name="e5" type="m5" />
+   <xsd:element name="e6" type="m6"/>
+   <xsd:element name="e7" type="m7"/>
+   <xsd:element name="e8" type="m8"/>
+   <xsd:element name="e9" type="m9"/>
+   <xsd:element name="t1" type="t1"/>
+
+   <xsd:complexType name="ct1">
+	<xsd:sequence>
+		<xsd:element ref="e1" minOccurs="0"/>
+		<xsd:element ref="e2" minOccurs="0"/>
+		<xsd:element ref="e3" minOccurs="0" maxOccurs="unbounded"/>
+		<xsd:element ref="e4" minOccurs="0" maxOccurs="unbounded"/>
+		<xsd:element ref="e5" minOccurs="0" maxOccurs="unbounded"/>
+		<xsd:element ref="e6" minOccurs="0" maxOccurs="unbounded"/>
+		<xsd:element ref="e7" minOccurs="0" maxOccurs="unbounded"/>
+		<xsd:element ref="e8" minOccurs="0" maxOccurs="unbounded"/>
+		<xsd:element ref="e9" minOccurs="0" maxOccurs="unbounded"/>
+		<xsd:element ref="t1" minOccurs="0" maxOccurs="unbounded"/>
+	</xsd:sequence>
+   </xsd:complexType>
+
+   <xsd:simpleType name="strType">
+        <xsd:restriction base="xsd:string">
+		<xsd:length value="4"/>
+	</xsd:restriction>
+   </xsd:simpleType>
+
+   <xsd:complexType name="att1">
+		<xsd:attribute name="att" type="xsd:integer"/>	
+   </xsd:complexType>
+
+   <xsd:complexType name="att2">
+		<xsd:attribute name="att1" type="xsd:integer"/>	
+		<xsd:attribute name="att2" type="xsd:boolean"/>
+   </xsd:complexType>
+
+   <xsd:complexType name="m3">
+	<xsd:choice>
+		<xsd:element name="e31" maxOccurs="2"/>
+	</xsd:choice>
+	<xsd:attribute name="att" type="xsd:integer" use="required"/>	
+   </xsd:complexType>
+
+   <xsd:complexType name="m4">
+	<xsd:sequence maxOccurs="3">
+		<xsd:element name="e41" type="att2" minOccurs="0"/>
+		<xsd:element ref="e3"/>
+	</xsd:sequence>
+	<xsd:attribute name="att" type="xsd:integer"/>	
+   </xsd:complexType>
+
+   <xsd:complexType name="m5">
+	<xsd:choice maxOccurs="unbounded">
+		<xsd:element ref="e3"/>
+		<xsd:element ref="e4"/>
+		<xsd:element ref="e5" minOccurs="0"/>
+	</xsd:choice>
+	<xsd:attribute name="att" type="xsd:integer"/>	
+   </xsd:complexType>
+
+   <xsd:complexType name="m6">
+	<xsd:choice minOccurs="0" maxOccurs="unbounded">
+		<xsd:any namespace="##any" processContents="skip" />
+	</xsd:choice>
+   </xsd:complexType>
+
+
+   <!-- [ m7 for e7, use to test key/keyref in elements ] -->
+   <xsd:complexType name="m7">
+	<xsd:choice>
+   	<xsd:element name="products">
+		<xsd:complexType>
+			<xsd:sequence>
+
+			<xsd:element name="parts" >
+		 		<xsd:complexType>
+		  			<xsd:sequence>
+		   				<xsd:element name="part" maxOccurs="unbounded" nillable="true">
+					 		<xsd:complexType>
+		   						<xsd:simpleContent>
+		    							<xsd:extension base="xsd:string">
+						  				<xsd:attribute name="pkid" type="xsd:integer" use="required"/>
+		    							</xsd:extension>
+		   						</xsd:simpleContent>
+					 		</xsd:complexType>
+						</xsd:element>
+		  			</xsd:sequence>
+		 		</xsd:complexType>
+			</xsd:element>
+
+			<xsd:element name="product" maxOccurs="unbounded">
+		 		<xsd:complexType>
+		  			<xsd:sequence>
+		   				<xsd:element name="part" maxOccurs="unbounded" nillable="true">
+					 		<xsd:complexType>
+		   						<xsd:simpleContent>
+		    							<xsd:extension base="xsd:string">
+						  				<xsd:attribute name="id" type="xsd:integer" use="required"/>
+		    							</xsd:extension>
+		   						</xsd:simpleContent>
+					 		</xsd:complexType>
+						</xsd:element>
+		  			</xsd:sequence>
+			  		<xsd:attribute name="pid" type="xsd:ID" use="required"/>
+		 		</xsd:complexType>
+			</xsd:element>
+
+			</xsd:sequence>
+		</xsd:complexType>
+
+		<xsd:key name="keyA"> <!-- product itemss are keyed by pid -->
+			<xsd:selector xpath="parts/part"/>
+			<xsd:field xpath="@pkid"/>
+		</xsd:key>
+
+		<xsd:keyref name="keyRefA" refer="keyA">  
+			<xsd:selector xpath="product/part" />
+			<xsd:field xpath="@id"/>
+		</xsd:keyref>
+
+	</xsd:element>	
+	</xsd:choice>
+   </xsd:complexType>
+
+
+   <xsd:complexType name="m8">
+	<xsd:choice minOccurs="0" maxOccurs="unbounded">
+		<xsd:any namespace="##any" processContents="lax" />
+	</xsd:choice>
+   </xsd:complexType>
+
+   <xsd:complexType name="m9">
+	<xsd:choice maxOccurs="100">
+   	<xsd:element name="products">
+		<xsd:complexType>
+			<xsd:choice maxOccurs="100">
+			<xsd:element name="part" maxOccurs="unbounded">
+	 			<xsd:complexType>
+		  			<xsd:attribute name="almostID" type="xsd:string" use="required"/>
+		 		</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="product" maxOccurs="unbounded">
+	 			<xsd:complexType>
+		  			<xsd:attribute name="almostID" type="xsd:string" use="required"/>
+		 		</xsd:complexType>
+			</xsd:element>
+			</xsd:choice>
+		</xsd:complexType>
+
+		<xsd:unique name="unique_part"> 
+			<xsd:selector xpath="./part" />
+			<xsd:field xpath="@almostID"/>
+		</xsd:unique>
+
+		<xsd:unique name="unique_product"> 
+			<xsd:selector xpath="./product" />
+			<xsd:field xpath="@almostID"/>
+		</xsd:unique>
+	</xsd:element>	
+
+	<xsd:element name="IID" type="xsd:ID" fixed="iid1" minOccurs="0"/>
+	</xsd:choice>
+   </xsd:complexType>
+
+   <xsd:complexType name="t1">
+		<xsd:attribute name="att1" >
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:integer">
+					<xsd:totalDigits value="4" />
+				</xsd:restriction>
+			</xsd:simpleType>			
+		</xsd:attribute>
+		<xsd:attribute name="att2" >
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:integer">
+					<xsd:fractionDigits value="0" />
+					<xsd:pattern value="\d{2}" />
+				</xsd:restriction>
+			</xsd:simpleType>			
+		</xsd:attribute>
+		<xsd:attribute name="att3" >
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:integer">
+					<xsd:whiteSpace value="collapse" />
+				</xsd:restriction>
+			</xsd:simpleType>			
+		</xsd:attribute>
+		<xsd:attribute name="att4" >
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:integer">
+					<xsd:enumeration value="1" />
+					<xsd:enumeration value="2" />
+					<xsd:enumeration value="3" />					
+					<xsd:maxInclusive value="3" />
+					<xsd:minInclusive value="1" />
+ 				</xsd:restriction>
+			</xsd:simpleType>			
+		</xsd:attribute>
+		<xsd:attribute name="att5" >
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:integer">
+					<xsd:maxInclusive value="4" />
+					<xsd:minExclusive value="1" />
+				</xsd:restriction>
+			</xsd:simpleType>			
+		</xsd:attribute>
+		<xsd:attribute name="att6" >
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:integer">
+					<xsd:minInclusive value="1" />
+				</xsd:restriction>
+			</xsd:simpleType>			
+		</xsd:attribute>
+		<xsd:attribute name="att7" >
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:integer">
+					<xsd:totalDigits value="4" />
+					<xsd:minExclusive value="1" />
+				</xsd:restriction>
+			</xsd:simpleType>			
+		</xsd:attribute>
+		<xsd:attribute name="att8" >
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:decimal">
+					<xsd:totalDigits value="4" />
+					<xsd:fractionDigits value="4" />
+					<xsd:whitespace value="collapse">
+				</xsd:restriction>
+			</xsd:simpleType>			
+		</xsd:attribute>
+		<xsd:attribute name="att9" >
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string">
+				</xsd:restriction>
+			</xsd:simpleType>			
+		</xsd:attribute>		
+   </xsd:complexType>
+
+
+</xsd:schema>

@@ -1,0 +1,4 @@
+<test xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:integer">
+   11
+</test>

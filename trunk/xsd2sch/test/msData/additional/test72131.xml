@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ordersByCustomer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="test72131.xsd">
+ <customerOrders CustomerID="jheri">
+  <item itemID="1"/>
+  <item itemID="2"/>
+ </customerOrders>
+ <customerOrders CustomerID="kins">
+  <item itemID="1"/>
+  <item itemID="2"/>
+ </customerOrders>
+</ordersByCustomer>

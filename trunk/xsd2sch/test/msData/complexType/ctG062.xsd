@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:group name="myGroup">
+		<xsd:sequence>
+			<xsd:element name="myElement" type="xsd:string"/>
+		</xsd:sequence>
+	</xsd:group>
+	<xsd:complexType name="myType">
+		<xsd:sequence>
+			<xsd:any/>
+		</xsd:sequence>
+		<xsd:anyAttribute namespace="##any"/>
+	</xsd:complexType>
+	<xsd:attributeGroup name="myAttrGroup">
+		<xsd:attribute name="myAttr"/>
+	</xsd:attributeGroup>
+	<xsd:complexType name="fooType">
+		<xsd:complexContent>
+			<xsd:restriction base="myType">
+				<xsd:attributeGroup ref="myAttrGroup"/>
+				<xsd:group ref="myGroup"/>
+			</xsd:restriction>
+		</xsd:complexContent>
+	</xsd:complexType>
+</xsd:schema>

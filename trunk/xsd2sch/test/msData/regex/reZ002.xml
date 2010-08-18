@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<document xmlns="http://test/pattern">
+	<email>first.last@seznam.cz</email>
+	<email>first_last@seznam.cz</email>
+	<email>first-last@seznam.cz</email>
+</document>

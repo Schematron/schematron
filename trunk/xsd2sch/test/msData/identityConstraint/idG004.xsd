@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="root">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="uid" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+		<xsd:key id="foo123" name="uuid">
+			<xsd:selector xpath=".//uid"/>
+			<xsd:field xpath="@val2"/>
+		</xsd:key>
+	</xsd:element>
+	<xsd:element name="uid">
+		<xsd:complexType>
+			<xsd:attribute name="val" type="xsd:string"/>
+			<xsd:attribute name="val2" type="xsd:string"/>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

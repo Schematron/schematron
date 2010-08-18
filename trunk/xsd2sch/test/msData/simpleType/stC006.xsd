@@ -1,0 +1,6 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:simpleType name="fooType">
+		<xsd:restriction id="foo123" base="xsd:string"/>
+	</xsd:simpleType>
+	<xsd:attribute id="foo123" name="globalAttr"/>
+</xsd:schema>

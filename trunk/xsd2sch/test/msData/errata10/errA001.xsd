@@ -1,0 +1,111 @@
+<xs:schema	targetNamespace="http://www.tempuri.org" 
+			xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+			xmlns:tns="http://www.tempuri.org">
+	<!-- Test the use of fractionDigits with datatypes.  Except for decimal, all should be accepted and support only 0 for a value.  Decimal can take any appropriate value -->
+
+	<xs:simpleType name="myByte">
+		<xs:restriction base="xs:byte">
+			<xs:fractionDigits value="0" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="myUnsignedByte">
+		<xs:restriction base="xs:unsignedByte">
+			<xs:fractionDigits value="0" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="myInteger">
+		<xs:restriction base="xs:integer">
+			<xs:fractionDigits value="0" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="myPositiveInteger">
+		<xs:restriction base="xs:positiveInteger">
+			<xs:fractionDigits value="0" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="myNegativeInteger">
+		<xs:restriction base="xs:negativeInteger">
+			<xs:fractionDigits value="0" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="myNonNegativeInteger">
+		<xs:restriction base="xs:nonNegativeInteger">
+			<xs:fractionDigits value="0" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="myNonPositiveInteger">
+		<xs:restriction base="xs:nonPositiveInteger">
+			<xs:fractionDigits value="0" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="myInt">
+		<xs:restriction base="xs:int">
+			<xs:fractionDigits value="0" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="myUnsignedInt">
+		<xs:restriction base="xs:unsignedInt">
+			<xs:fractionDigits value="0" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="myLong">
+		<xs:restriction base="xs:long">
+			<xs:fractionDigits value="0" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="myUnsignedLong">
+		<xs:restriction base="xs:unsignedLong">
+			<xs:fractionDigits value="0" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="myShort">
+		<xs:restriction base="xs:short">
+			<xs:fractionDigits value="0" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="myUnsignedShort">
+		<xs:restriction base="xs:unsignedShort">
+			<xs:fractionDigits value="0" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="myDecimal">
+		<xs:restriction base="xs:decimal">
+			<xs:fractionDigits value="5" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:element name="root">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="testByte" type="tns:myByte"/>
+				<xs:element name="testUnsignedByte" type="tns:myUnsignedByte"/>
+				<xs:element name="testInteger" type="tns:myInteger"/>
+				<xs:element name="testPositiveInteger" type="tns:myPositiveInteger"/>
+				<xs:element name="testNegativeInteger" type="tns:myNegativeInteger"/>
+				<xs:element name="testNonNegativeInteger" type="tns:myNonNegativeInteger"/>
+				<xs:element name="testNonPositiveInteger" type="tns:myNonPositiveInteger"/>
+				<xs:element name="testInt" type="tns:myInt"/>
+				<xs:element name="testUnsignedInt" type="tns:myUnsignedInt"/>
+				<xs:element name="testLong" type="tns:myLong"/>
+				<xs:element name="testUnsignedLong" type="tns:myUnsignedLong"/>
+				<xs:element name="testShort" type="tns:myShort"/>
+				<xs:element name="testUnsignedShort" type="tns:myUnsignedShort"/>
+				<xs:element name="testDecimal" type="tns:myDecimal"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
+

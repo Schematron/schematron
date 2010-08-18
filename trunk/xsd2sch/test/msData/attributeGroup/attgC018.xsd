@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:complexType name="abc">
+		<xsd:attributeGroup ref="ct"/>
+	</xsd:complexType>
+	<xsd:complexType name="ct">
+		<xsd:sequence>
+			<xsd:element name="e"/>
+		</xsd:sequence>
+		<xsd:attributeGroup ref="g"/>
+	</xsd:complexType>
+	<xsd:attributeGroup name="g">
+		<xsd:attribute name="att"/>
+	</xsd:attributeGroup>
+</xsd:schema>

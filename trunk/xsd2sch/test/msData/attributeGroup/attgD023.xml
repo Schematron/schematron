@@ -1,0 +1,4 @@
+<x:doc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xsdtesting attgD023.xsd" xmlns:x="http://xsdtesting" x:foo="123">
+	testing
+	
+</x:doc>

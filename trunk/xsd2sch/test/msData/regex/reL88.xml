@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='reL88.xsd' >
+
+<!-- 
+base='string', pattern='\p{IsSpecials}+', value='#xFFF0;#xFFFD;', type='valid', RULE='25,36'
+-->
+
+      <elem att='&#xFFF0;&#xFFFD;'/>
+
+ </doc>

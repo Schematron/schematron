@@ -1,0 +1,18 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!-- Schema to test time datatype -->
+  <xsd:element name="test" type="fooType" />
+
+  <xsd:complexType name="fooType"> 
+    <xsd:sequence>
+      <xsd:element name="foo" maxOccurs="unbounded">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:time">
+            <xsd:minInclusive value="10:21:00-07:00" />
+            <xsd:maxInclusive value="13:20:00-07:00" />
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+
+</xsd:schema>

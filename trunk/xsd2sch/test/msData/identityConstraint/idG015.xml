@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="idG015.xsd">
+	<t col="1">
+		<row> 1 </row>
+	</t>
+	<t col="1">
+		<row> 2 </row>
+	</t>
+	<t col="2">
+		<row> 1 </row>
+	</t>
+	<t col="2">
+		<row> 2 </row>
+	</t>
+</root>

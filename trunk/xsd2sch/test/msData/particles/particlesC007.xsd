@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://xsdtesting" xmlns:x="http://xsdtesting" elementFormDefault="qualified">
+	<xsd:element name="doc">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="elem" type="x:any" minOccurs="0" maxOccurs="100"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:complexType name="any">
+		<xsd:choice>
+			<xsd:any processContents="lax" namespace="##other" maxOccurs="100"/>
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:element name="foo"/>
+</xsd:schema>

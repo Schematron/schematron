@@ -1,0 +1,4108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/XML/2004/xml-schema-test-suite/" xsi:schemaLocation="http://www.w3.org/XML/2004/xml-schema-test-suite/ AnnotatedTSSchema.xsd" name="MS-Wildcards2006-07-15" contributor="Microsoft">
+<testGroup name="wildA001">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with ID="foo25"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildA001">
+<schemaDocument xlink:href="../msData/wildcards/wildA001.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildA002">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with ID="_foo-2.5"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildA002">
+<schemaDocument xlink:href="../msData/wildcards/wildA002.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildA003">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with ID="25"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildA003">
+<schemaDocument xlink:href="../msData/wildcards/wildA003.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildA004">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with ID="0"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildA004">
+<schemaDocument xlink:href="../msData/wildcards/wildA004.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildA005">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with ID="1"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildA005">
+<schemaDocument xlink:href="../msData/wildcards/wildA005.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildA006">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with ID="foo:bar"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildA006">
+<schemaDocument xlink:href="../msData/wildcards/wildA006.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildA007">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with ID=":bar"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildA007">
+<schemaDocument xlink:href="../msData/wildcards/wildA007.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildA008">
+<annotation>
+<documentation>TEST :Syntax Validation - any : Duplicate ID="foo25" where foo25 is already exists</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildA008">
+<schemaDocument xlink:href="../msData/wildcards/wildA008.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildB010">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with maxOccurs="10"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildB010">
+<schemaDocument xlink:href="../msData/wildcards/wildB010.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildB011">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with maxOccurs="32767"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildB011">
+<schemaDocument xlink:href="../msData/wildcards/wildB011.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildB012">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with maxOccurs="unbounded"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildB012">
+<schemaDocument xlink:href="../msData/wildcards/wildB012.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildB013">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with maxOccurs="010"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildB013">
+<schemaDocument xlink:href="../msData/wildcards/wildB013.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildB014">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with maxOccurs=""</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildB014">
+<schemaDocument xlink:href="../msData/wildcards/wildB014.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildB015">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with maxOccurs="-1"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildB015">
+<schemaDocument xlink:href="../msData/wildcards/wildB015.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildB016">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with maxOccurs="Unbounded"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildB016">
+<schemaDocument xlink:href="../msData/wildcards/wildB016.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildB017">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with minOccurs="0"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildB017">
+<schemaDocument xlink:href="../msData/wildcards/wildB017.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildB018">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with minOccurs="10"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildB018">
+<schemaDocument xlink:href="../msData/wildcards/wildB018.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildB019">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with minOccurs="32767"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildB019">
+<schemaDocument xlink:href="../msData/wildcards/wildB019.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildB020">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with minOccurs="unbounded"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildB020">
+<schemaDocument xlink:href="../msData/wildcards/wildB020.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildB021">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with minOccurs="010"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildB021">
+<schemaDocument xlink:href="../msData/wildcards/wildB021.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildB022">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with minOccurs=""</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildB022">
+<schemaDocument xlink:href="../msData/wildcards/wildB022.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildB023">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with minOccurs="-1"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildB023">
+<schemaDocument xlink:href="../msData/wildcards/wildB023.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildB024">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with minOccurs="Unbounded"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildB024">
+<schemaDocument xlink:href="../msData/wildcards/wildB024.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildB025">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with minOccurs="0" maxOccurs="0"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildB025">
+<schemaDocument xlink:href="../msData/wildcards/wildB025.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildB026">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with minOccurs="1" maxOccurs="2"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildB026">
+<schemaDocument xlink:href="../msData/wildcards/wildB026.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildB027">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with minOccurs="2" maxOccurs="1"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildB027">
+<schemaDocument xlink:href="../msData/wildcards/wildB027.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildB028">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with minOccurs="unbounded" maxOccurs="unbounded"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildB028">
+<schemaDocument xlink:href="../msData/wildcards/wildB028.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildB029">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with minOccurs="0" maxOccurs="9"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildB029">
+<schemaDocument xlink:href="../msData/wildcards/wildB029.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildC030">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace =</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildC030">
+<schemaDocument xlink:href="../msData/wildcards/wildC030.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildC031">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = ##any</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildC031">
+<schemaDocument xlink:href="../msData/wildcards/wildC031.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildC032">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = ##local</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildC032">
+<schemaDocument xlink:href="../msData/wildcards/wildC032.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildC033">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = ##other</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildC033">
+<schemaDocument xlink:href="../msData/wildcards/wildC033.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildC034">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = ##targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildC034">
+<schemaDocument xlink:href="../msData/wildcards/wildC034.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildC035">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = ##target</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildC035">
+<schemaDocument xlink:href="../msData/wildcards/wildC035.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildC036">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = ##all</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildC036">
+<schemaDocument xlink:href="../msData/wildcards/wildC036.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildC037">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = #any</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildC037">
+<schemaDocument xlink:href="../msData/wildcards/wildC037.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildC038">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = #local</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildC038">
+<schemaDocument xlink:href="../msData/wildcards/wildC038.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildC039">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = #other</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildC039">
+<schemaDocument xlink:href="../msData/wildcards/wildC039.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildC040">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = #targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildC040">
+<schemaDocument xlink:href="../msData/wildcards/wildC040.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildC041">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = #target</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildC041">
+<schemaDocument xlink:href="../msData/wildcards/wildC041.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildC042">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = #all</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildC042">
+<schemaDocument xlink:href="../msData/wildcards/wildC042.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildC043">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = any</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildC043">
+<schemaDocument xlink:href="../msData/wildcards/wildC043.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildC044">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = local</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildC044">
+<schemaDocument xlink:href="../msData/wildcards/wildC044.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildC045">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = other</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildC045">
+<schemaDocument xlink:href="../msData/wildcards/wildC045.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildC046">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildC046">
+<schemaDocument xlink:href="../msData/wildcards/wildC046.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildC047">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = target</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildC047">
+<schemaDocument xlink:href="../msData/wildcards/wildC047.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildC048">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = all</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildC048">
+<schemaDocument xlink:href="../msData/wildcards/wildC048.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildC049">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = ##any ##other</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildC049">
+<schemaDocument xlink:href="../msData/wildcards/wildC049.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildC050">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = ##any ##local</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildC050">
+<schemaDocument xlink:href="../msData/wildcards/wildC050.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildC051">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = ##any ##targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildC051">
+<schemaDocument xlink:href="../msData/wildcards/wildC051.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildC052">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = ##other ##local</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildC052">
+<schemaDocument xlink:href="../msData/wildcards/wildC052.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildC053">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = ##other ##targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildC053">
+<schemaDocument xlink:href="../msData/wildcards/wildC053.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildC054">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = ##local ##targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildC054">
+<schemaDocument xlink:href="../msData/wildcards/wildC054.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildC055">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = ##any ##other ##local</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildC055">
+<schemaDocument xlink:href="../msData/wildcards/wildC055.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildC056">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = ##any ##other ##targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildC056">
+<schemaDocument xlink:href="../msData/wildcards/wildC056.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildC057">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = ##any ##local ##targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildC057">
+<schemaDocument xlink:href="../msData/wildcards/wildC057.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildC058">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = ##any ##other ##local ##targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildC058">
+<schemaDocument xlink:href="../msData/wildcards/wildC058.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildC059">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = http://www.w3.org/1999/xhtml</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildC059">
+<schemaDocument xlink:href="../msData/wildcards/wildC059.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildC060">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = http://www.w3.org/1999/XSL/Transform http://www.w3.org/1999/XML/xinclude</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildC060">
+<schemaDocument xlink:href="../msData/wildcards/wildC060.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildC061">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = http://www.w3.org/1999/02/22-rdf-syntax-ns http://www.w3.org/2000/01/rdf-schema</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildC061">
+<schemaDocument xlink:href="../msData/wildcards/wildC061.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildC062">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = http://www.w3.org/Graphics/SVG/</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildC062">
+<schemaDocument xlink:href="../msData/wildcards/wildC062.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildC063">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = http://www.w3.org/2000/02/xmldsig http://www.w3.org/TR/2000/WD-xml-c14n-20000119</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildC063">
+<schemaDocument xlink:href="../msData/wildcards/wildC063.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildC064">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = http://www.w3.org/1999/XMLSchema</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildC064">
+<schemaDocument xlink:href="../msData/wildcards/wildC064.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildC065">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = http://www.w3.org/1999/XMLSchema http://www.w3.org/1999/XMLSchema-instance http://www.w3.org/1999/XMLSchema-datatypes</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildC065">
+<schemaDocument xlink:href="../msData/wildcards/wildC065.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildC066">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = ##any http://www.w3.org/1999/xhtml http://www.w3.org/1999/XSL/Transform http://www.w3.org/1999/XML/xinclude http://www.w3.org/1999/02/22-rdf-syntax-ns http://www.w3.org/2000/01/rdf-schema http://www.w3.org/Graphics/SVG/ http://www.w3.org/2000/02/xmldsig http://www.w3.org/TR/2000/WD-xml-c14n-20000119</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildC066">
+<schemaDocument xlink:href="../msData/wildcards/wildC066.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildC067">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = ##other http://www.w3.org/1999/xhtml http://www.w3.org/1999/XSL/Transform http://www.w3.org/1999/XML/xinclude http://www.w3.org/1999/02/22-rdf-syntax-ns http://www.w3.org/2000/01/rdf-schema http://www.w3.org/Graphics/SVG/ http://www.w3.org/2000/02/xmldsig http://www.w3.org/TR/2000/WD-xml-c14n-20000119</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildC067">
+<schemaDocument xlink:href="../msData/wildcards/wildC067.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildC068">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = ##local http://www.w3.org/1999/xhtml http://www.w3.org/1999/XSL/Transform http://www.w3.org/1999/XML/xinclude http://www.w3.org/1999/02/22-rdf-syntax-ns http://www.w3.org/2000/01/rdf-schema http://www.w3.org/Graphics/SVG/ http://www.w3.org/2000/02/xmldsig http://www.w3.org/TR/2000/WD-xml-c14n-20000119</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildC068">
+<schemaDocument xlink:href="../msData/wildcards/wildC068.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildC069">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = ##targetNamespace http://www.w3.org/1999/xhtml http://www.w3.org/1999/XSL/Transform http://www.w3.org/1999/XML/xinclude http://www.w3.org/1999/02/22-rdf-syntax-ns http://www.w3.org/2000/01/rdf-schema http://www.w3.org/Graphics/SVG/ http://www.w3.org/2000/02/xmldsig http://www.w3.org/TR/2000/WD-xml-c14n-20000119</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildC069">
+<schemaDocument xlink:href="../msData/wildcards/wildC069.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildC070">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = ##local ##targetNamespace http://www.w3.org/1999/xhtml http://www.w3.org/1999/XSL/Transform http://www.w3.org/1999/XML/xinclude http://www.w3.org/1999/02/22-rdf-syntax-ns http://www.w3.org/2000/01/rdf-schema http://www.w3.org/Graphics/SVG/ http://www.w3.org/2000/02/xmldsig http://www.w3.org/TR/2000/WD-xml-c14n-20000119</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildC070">
+<schemaDocument xlink:href="../msData/wildcards/wildC070.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildD071">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with processContents =</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildD071">
+<schemaDocument xlink:href="../msData/wildcards/wildD071.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildD072">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with processContents = lax</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildD072">
+<schemaDocument xlink:href="../msData/wildcards/wildD072.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildD073">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with processContents = skip</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildD073">
+<schemaDocument xlink:href="../msData/wildcards/wildD073.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildD074">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with processContents = strict</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildD074">
+<schemaDocument xlink:href="../msData/wildcards/wildD074.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildD075">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with processContents = lax skip</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildD075">
+<schemaDocument xlink:href="../msData/wildcards/wildD075.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildD076">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with processContents = lax strict</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildD076">
+<schemaDocument xlink:href="../msData/wildcards/wildD076.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildD077">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with processContents = skip strict</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildD077">
+<schemaDocument xlink:href="../msData/wildcards/wildD077.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildD078">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with processContents = lax skip strict</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildD078">
+<schemaDocument xlink:href="../msData/wildcards/wildD078.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildD079">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with processContents = all</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildD079">
+<schemaDocument xlink:href="../msData/wildcards/wildD079.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildE001">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with an annotation</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildE001">
+<schemaDocument xlink:href="../msData/wildcards/wildE001.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildE002">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with two annotations</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildE002">
+<schemaDocument xlink:href="../msData/wildcards/wildE002.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildF001">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = ##any and schema targetNamespace="http://foobar"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildF001">
+<schemaDocument xlink:href="../msData/wildcards/wildF001.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildF002">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = ##local and schema targetNamespace="http://foobar"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildF002">
+<schemaDocument xlink:href="../msData/wildcards/wildF002.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildF003">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = ##other and schema targetNamespace="http://foobar"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildF003">
+<schemaDocument xlink:href="../msData/wildcards/wildF003.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildF004">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = ##targetNamespace and schema targetNamespace="http://foobar"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildF004">
+<schemaDocument xlink:href="../msData/wildcards/wildF004.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildF005">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = http://foobar and schema targetNamespace="http://foobar"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildF005">
+<schemaDocument xlink:href="../msData/wildcards/wildF005.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildF006">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = ##any ##other and schema targetNamespace="http://foobar"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildF006">
+<schemaDocument xlink:href="../msData/wildcards/wildF006.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildF007">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = ##any ##local and schema targetNamespace="http://foobar"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildF007">
+<schemaDocument xlink:href="../msData/wildcards/wildF007.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildF008">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = ##any ##targetNamespace and schema targetNamespace="http://foobar"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildF008">
+<schemaDocument xlink:href="../msData/wildcards/wildF008.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildF009">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = ##other ##local and schema targetNamespace="http://foobar"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildF009">
+<schemaDocument xlink:href="../msData/wildcards/wildF009.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildF010">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = ##other ##targetNamespace and schema targetNamespace="http://foobar"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildF010">
+<schemaDocument xlink:href="../msData/wildcards/wildF010.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildF011">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = ##local ##targetNamespace and schema targetNamespace="http://foobar"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildF011">
+<schemaDocument xlink:href="../msData/wildcards/wildF011.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildF012">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = ##any ##other ##local and schema targetNamespace="http://foobar"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildF012">
+<schemaDocument xlink:href="../msData/wildcards/wildF012.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildF013">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = ##any ##other ##targetNamespace and schema targetNamespace="http://foobar"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildF013">
+<schemaDocument xlink:href="../msData/wildcards/wildF013.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildF014">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = ##any ##local ##targetNamespace and schema targetNamespace="http://foobar"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildF014">
+<schemaDocument xlink:href="../msData/wildcards/wildF014.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildF015">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = ##any ##other ##local ##targetNamespace and schema targetNamespace="http://foobar"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildF015">
+<schemaDocument xlink:href="../msData/wildcards/wildF015.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildF016">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = ##any http://foobar and schema targetNamespace="http://foobar"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildF016">
+<schemaDocument xlink:href="../msData/wildcards/wildF016.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildF017">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = ##local http://foobar and schema targetNamespace="http://foobar"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildF017">
+<schemaDocument xlink:href="../msData/wildcards/wildF017.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildF018">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = ##other http://foobar and schema targetNamespace="http://foobar"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildF018">
+<schemaDocument xlink:href="../msData/wildcards/wildF018.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildF019">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = ##targetNamespace http://foobar and schema targetNamespace="http://foobar"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildF019">
+<schemaDocument xlink:href="../msData/wildcards/wildF019.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildF020">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with namespace = ##local ##targetNamespace http://foobar and schema targetNamespace="http://foobar"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildF020">
+<schemaDocument xlink:href="../msData/wildcards/wildF020.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildG001">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ namespace=##any) and instance document has elements from targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildG001">
+<schemaDocument xlink:href="../msData/wildcards/wildG001.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildG001.v">
+<instanceDocument xlink:href="../msData/wildcards/wildG001.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildG002">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ namespace=##any) and instance document has elements from other namespaces besides target</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildG002">
+<schemaDocument xlink:href="../msData/wildcards/wildG002.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildG002.v">
+<instanceDocument xlink:href="../msData/wildcards/wildG002.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildG003">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ namespace=##other) and instance document has elements from targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildG003">
+<schemaDocument xlink:href="../msData/wildcards/wildG003.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildG003.i">
+<instanceDocument xlink:href="../msData/wildcards/wildG003.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildG004">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ namespace=##other) and instance document has elements from other namespaces besides target</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildG004">
+<schemaDocument xlink:href="../msData/wildcards/wildG004.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildG004.v">
+<instanceDocument xlink:href="../msData/wildcards/wildG004.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildG005">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ namespace=##local) and instance document has elements from targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildG005">
+<schemaDocument xlink:href="../msData/wildcards/wildG005.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildG005.i">
+<instanceDocument xlink:href="../msData/wildcards/wildG005.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildG006">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ namespace=##local) and instance document has elements from no namespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildG006">
+<schemaDocument xlink:href="../msData/wildcards/wildG006.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildG006.v">
+<instanceDocument xlink:href="../msData/wildcards/wildG006.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildG007">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ namespace=##targetNamespace) and instance document has elements from targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildG007">
+<schemaDocument xlink:href="../msData/wildcards/wildG007.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildG007.v">
+<instanceDocument xlink:href="../msData/wildcards/wildG007.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildG008">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ namespace=##targetNamespace) and instance document has elements from other namespaces besides target</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildG008">
+<schemaDocument xlink:href="../msData/wildcards/wildG008.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildG008.i">
+<instanceDocument xlink:href="../msData/wildcards/wildG008.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildG009">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ namespace=##local http://www.w3.org/1999/xhtml) and instance document has elements from targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildG009">
+<schemaDocument xlink:href="../msData/wildcards/wildG009.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildG009.i">
+<instanceDocument xlink:href="../msData/wildcards/wildG009.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildG010">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ namespace=##local http://www.w3.org/1999/xhtml) and instance document has elements from both namespaces</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildG010">
+<schemaDocument xlink:href="../msData/wildcards/wildG010.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildG010.v">
+<instanceDocument xlink:href="../msData/wildcards/wildG010.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildG011">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ namespace=##local http://www.w3.org/1999/xhtml) and instance document has elements from other namespaces besides target</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildG011">
+<schemaDocument xlink:href="../msData/wildcards/wildG011.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildG011.i">
+<instanceDocument xlink:href="../msData/wildcards/wildG011.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildG012">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ namespace=##targetNamespace http://www.w3.org/1999/xhtml) and instance document has elements from targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildG012">
+<schemaDocument xlink:href="../msData/wildcards/wildG012.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildG012.v">
+<instanceDocument xlink:href="../msData/wildcards/wildG012.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildG013">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ namespace=##targetNamespace http://www.w3.org/1999/xhtml) and instance document has elements from the xhtml namespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildG013">
+<schemaDocument xlink:href="../msData/wildcards/wildG013.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildG013.v">
+<instanceDocument xlink:href="../msData/wildcards/wildG013.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildG014">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ namespace=##targetNamespace http://www.w3.org/1999/xhtml) and instance document has elements from other namespaces besides target</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildG014">
+<schemaDocument xlink:href="../msData/wildcards/wildG014.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildG014.i">
+<instanceDocument xlink:href="../msData/wildcards/wildG014.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildG015">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ namespace=##any) with schema targetNamespace=http://foobar and instance document has elements from targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildG015">
+<schemaDocument xlink:href="../msData/wildcards/wildG015.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildG015.v">
+<instanceDocument xlink:href="../msData/wildcards/wildG015.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildG016">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ namespace=##any) with schema targetNamespace=http://foobar and instance document has elements from other namespaces besides target</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildG016">
+<schemaDocument xlink:href="../msData/wildcards/wildG016.xsd"/>
+<schemaDocument xlink:href="../msData/wildcards/wildG016a.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildG016.v">
+<instanceDocument xlink:href="../msData/wildcards/wildG016.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildG017">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ namespace=##other) with schema targetNamespace=http://foobar and instance document has elements from targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildG017">
+<schemaDocument xlink:href="../msData/wildcards/wildG017.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildG017.i">
+<instanceDocument xlink:href="../msData/wildcards/wildG017.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildG018">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ namespace=##other) with schema targetNamespace=http://foobar and instance document has elements from other namespaces besides target</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildG018">
+<schemaDocument xlink:href="../msData/wildcards/wildG018.xsd"/>
+<schemaDocument xlink:href="../msData/wildcards/wildG018a.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildG018.v">
+<instanceDocument xlink:href="../msData/wildcards/wildG018.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildG019">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ namespace=##local) with schema targetNamespace=http://foobar and instance document has elements from targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildG019">
+<schemaDocument xlink:href="../msData/wildcards/wildG019.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildG019.i">
+<instanceDocument xlink:href="../msData/wildcards/wildG019.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildG020">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ namespace=##local) with schema targetNamespace=http://foobar and instance document has elements from other namespaces besides target</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildG020">
+<schemaDocument xlink:href="../msData/wildcards/wildG020.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildG020.i">
+<instanceDocument xlink:href="../msData/wildcards/wildG020.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildG021">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ namespace=##targetNamespace) with schema targetNamespace=http://foobar and instance document has elements from targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildG021">
+<schemaDocument xlink:href="../msData/wildcards/wildG021.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildG021.v">
+<instanceDocument xlink:href="../msData/wildcards/wildG021.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildG022">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ namespace=##targetNamespace) with schema targetNamespace=http://foobar and instance document has elements from other namespaces besides target</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildG022">
+<schemaDocument xlink:href="../msData/wildcards/wildG022.xsd"/>
+<schemaDocument xlink:href="../msData/wildcards/wildG022a.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildG022.i">
+<instanceDocument xlink:href="../msData/wildcards/wildG022.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildG023">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ namespace=http://foobar) with schema targetNamespace=http://foobar and instance document has elements from targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildG023">
+<schemaDocument xlink:href="../msData/wildcards/wildG023.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildG023.v">
+<instanceDocument xlink:href="../msData/wildcards/wildG023.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildG024">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ namespace=http://foobar) with schema targetNamespace=http://foobar and instance document has elements from other namespaces besides target</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildG024">
+<schemaDocument xlink:href="../msData/wildcards/wildG024.xsd"/>
+<schemaDocument xlink:href="../msData/wildcards/wildG024a.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildG024.i">
+<instanceDocument xlink:href="../msData/wildcards/wildG024.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildG025">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ namespace=##other) with schema targetNamespace=http://foobar and instance document has elements from targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildG025">
+<schemaDocument xlink:href="../msData/wildcards/wildG025.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildG025.i">
+<instanceDocument xlink:href="../msData/wildcards/wildG025.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildG026">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ namespace=##other) with schema targetNamespace=http://foobar and instance document has elements from other namespaces besides target</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildG026">
+<schemaDocument xlink:href="../msData/wildcards/wildG026.xsd"/>
+<schemaDocument xlink:href="../msData/wildcards/wildG026a.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildG026.v">
+<instanceDocument xlink:href="../msData/wildcards/wildG026.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildG027">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ namespace=##targetNamespace) with schema targetNamespace=http://foobar and instance document has elements from targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildG027">
+<schemaDocument xlink:href="../msData/wildcards/wildG027.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildG027.v">
+<instanceDocument xlink:href="../msData/wildcards/wildG027.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildG028">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ namespace=##targetNamespace) with schema targetNamespace=http://foobar and instance document has elements from other namespaces besides target</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildG028">
+<schemaDocument xlink:href="../msData/wildcards/wildG028.xsd"/>
+<schemaDocument xlink:href="../msData/wildcards/wildG028a.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildG028.i">
+<instanceDocument xlink:href="../msData/wildcards/wildG028.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildG029">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ namespace=##local) with schema targetNamespace=http://foobar and instance document has elements from targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildG029">
+<schemaDocument xlink:href="../msData/wildcards/wildG029.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildG029.i">
+<instanceDocument xlink:href="../msData/wildcards/wildG029.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildG030">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ namespace=##local) with schema targetNamespace=http://foobar and instance document has elements from other namespaces besides target</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildG030">
+<schemaDocument xlink:href="../msData/wildcards/wildG030.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildG030.i">
+<instanceDocument xlink:href="../msData/wildcards/wildG030.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildG031">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ namespace=A B C D E ##local ##targetNamespace) with schema targetNamespace=http://foobar and instance document has elements from all of them</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildG031">
+<schemaDocument xlink:href="../msData/wildcards/wildG031.xsd"/>
+<schemaDocument xlink:href="../msData/wildcards/wildG031a.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildG031.v">
+<instanceDocument xlink:href="../msData/wildcards/wildG031.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildG032">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ namespace=A B C D E ##local ##targetNamespace) with schema targetNamespace=http://foobar and instance document has elements from all of them + bar</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildG032">
+<schemaDocument xlink:href="../msData/wildcards/wildG032.xsd"/>
+<schemaDocument xlink:href="../msData/wildcards/wildG032a.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildG032.i">
+<instanceDocument xlink:href="../msData/wildcards/wildG032.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildG033">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ namespace=##local http://foobar) with schema targetNamespace=http://foobar and instance document has elements from targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildG033">
+<schemaDocument xlink:href="../msData/wildcards/wildG033.xsd"/>
+<schemaDocument xlink:href="../msData/wildcards/wildG033a.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildG033.v">
+<instanceDocument xlink:href="../msData/wildcards/wildG033.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildG034">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ namespace=##local http://foobar) with schema targetNamespace=http://foobar and instance document has elements from other namespaces besides target</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildG034">
+<schemaDocument xlink:href="../msData/wildcards/wildG034.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildG034.i">
+<instanceDocument xlink:href="../msData/wildcards/wildG034.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildG035">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ namespace=##local http://www.w3.org/1999/xhtml) with schema targetNamespace=http://www.w3.org/1999/xhtml and instance document has elements from local</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildG035">
+<schemaDocument xlink:href="../msData/wildcards/wildG035.xsd"/>
+<schemaDocument xlink:href="../msData/wildcards/wildG035a.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildG035.v">
+<instanceDocument xlink:href="../msData/wildcards/wildG035.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildG036">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ namespace=##local http://www.w3.org/1999/xhtml) with schema targetNamespace=http://foobar and instance document has elements from other namespaces besides target</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildG036">
+<schemaDocument xlink:href="../msData/wildcards/wildG036.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildG036.i">
+<instanceDocument xlink:href="../msData/wildcards/wildG036.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildG037">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ namespace=##local http://www.w3.org/1999/xhtml) with schema targetNamespace=http://foobar and instance document has elements from the xhtml namespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildG037">
+<schemaDocument xlink:href="../msData/wildcards/wildG037.xsd"/>
+<schemaDocument xlink:href="../msData/wildcards/wildG037a.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildG037.v">
+<instanceDocument xlink:href="../msData/wildcards/wildG037.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildG038">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ namespace=##targetNamespace http://www.w3.org/1999/xhtml) with schema targetNamespace=http://foobar and instance document has elements from targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildG038">
+<schemaDocument xlink:href="../msData/wildcards/wildG038.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildG038.v">
+<instanceDocument xlink:href="../msData/wildcards/wildG038.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildG039">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ namespace=##targetNamespace http://www.w3.org/1999/xhtml) with schema targetNamespace=http://foobar and instance document has elements from other namespaces besides target</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildG039">
+<schemaDocument xlink:href="../msData/wildcards/wildG039.xsd"/>
+<schemaDocument xlink:href="../msData/wildcards/wildG039a.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildG039.i">
+<instanceDocument xlink:href="../msData/wildcards/wildG039.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildG040">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ namespace=##targetNamespace http://www.w3.org/1999/xhtml) with schema targetNamespace=http://foobar and instance document has elements from the xhtml namespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildG040">
+<schemaDocument xlink:href="../msData/wildcards/wildG040.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildG040.v">
+<instanceDocument xlink:href="../msData/wildcards/wildG040.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildH001">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ processContents=strict and namespace=##targetNamespace) with schema targetNamespace=http://www.w3.org/1999/xhtml and instance document has undeclared elements from targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildH001">
+<schemaDocument xlink:href="../msData/wildcards/wildH001.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildH001.i">
+<instanceDocument xlink:href="../msData/wildcards/wildH001.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildH002">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ processContents=strict and namespace=##targetNamespace) with schema targetNamespace=http://www.w3.org/1999/xhtml and instance document has elements from other namespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildH002">
+<schemaDocument xlink:href="../msData/wildcards/wildH002.xsd"/>
+<schemaDocument xlink:href="../msData/wildcards/wildH002a.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildH002.i">
+<instanceDocument xlink:href="../msData/wildcards/wildH002.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildH003">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ processContents=lax and namespace=##targetNamespace) with schema targetNamespace=http://foobar and instance document has elements from targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildH003">
+<schemaDocument xlink:href="../msData/wildcards/wildH003.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildH003.v">
+<instanceDocument xlink:href="../msData/wildcards/wildH003.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildH004">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ processContents=lax and namespace=##targetNamespace) with schema targetNamespace=http://foobar and instance document has undeclared elements from targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildH004">
+<schemaDocument xlink:href="../msData/wildcards/wildH004.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildH004.v">
+<instanceDocument xlink:href="../msData/wildcards/wildH004.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildH005">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ processContents=skip and namespace=##targetNamespace) with schema targetNamespace=http://foobar and instance document has undeclared elements from targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildH005">
+<schemaDocument xlink:href="../msData/wildcards/wildH005.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildH005.v">
+<instanceDocument xlink:href="../msData/wildcards/wildH005.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildH006">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ processContents=skip and namespace=##targetNamespace) with schema targetNamespace=http://foobar and instance document has elements from other namespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildH006">
+<schemaDocument xlink:href="../msData/wildcards/wildH006.xsd"/>
+<schemaDocument xlink:href="../msData/wildcards/wildH006a.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildH006.i">
+<instanceDocument xlink:href="../msData/wildcards/wildH006.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildH007">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ namespace=http://www.w3.org/1999/xhtml and declared element, processContents=strict)</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildH007">
+<schemaDocument xlink:href="../msData/wildcards/wildH007.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildH007.v">
+<instanceDocument xlink:href="../msData/wildcards/wildH007.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildH008">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ namespace=http://www.w3.org/1999/xhtml and undeclared element, processContents=strict)</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildH008">
+<schemaDocument xlink:href="../msData/wildcards/wildH008.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildH008.i">
+<instanceDocument xlink:href="../msData/wildcards/wildH008.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildH009">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ namespace=http://www.w3.org/1999/xhtml and declared element, processContents=lax)</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildH009">
+<schemaDocument xlink:href="../msData/wildcards/wildH009.xsd"/>
+<schemaDocument xlink:href="../msData/wildcards/wildH009a.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildH009.v">
+<instanceDocument xlink:href="../msData/wildcards/wildH009.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildH010">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ namespace=http://www.w3.org/1999/xhtml and undeclared element, processContents=lax)</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildH010">
+<schemaDocument xlink:href="../msData/wildcards/wildH010.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildH010.v">
+<instanceDocument xlink:href="../msData/wildcards/wildH010.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildH011">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ namespace=http://www.w3.org/1999/xhtml and declared element, processContents=skip)</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildH011">
+<schemaDocument xlink:href="../msData/wildcards/wildH011.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildH011.v">
+<instanceDocument xlink:href="../msData/wildcards/wildH011.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildH012">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ namespace=http://www.w3.org/1999/xhtml and undeclared element, processContents=skip)</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildH012">
+<schemaDocument xlink:href="../msData/wildcards/wildH012.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildH012.v">
+<instanceDocument xlink:href="../msData/wildcards/wildH012.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildI001">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with an attribute that has a non-schema namespace, a:b="c" where xmlns:a="foo" in xsd:schema</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildI001">
+<schemaDocument xlink:href="../msData/wildcards/wildI001.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildI002">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with an attribute a:b="c" where a doesn't have a non-schema namespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildI002">
+<schemaDocument xlink:href="../msData/wildcards/wildI002.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildI003">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY with an attribute foo="bar" where foo is a random attribute</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildI003">
+<schemaDocument xlink:href="../msData/wildcards/wildI003.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildI004">
+<annotation>
+<documentation>TEST :Syntax Validation - any : 67191 - ensuring that processContents of lax will validate</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildI004">
+<schemaDocument xlink:href="../msData/wildcards/wildI004.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildI004.v">
+<instanceDocument xlink:href="../msData/wildcards/wildI004.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildI004i">
+<annotation>
+<documentation>TEST :Syntax Validation - any : 67191 - ensuring that processContents of lax will validate</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildI004i">
+<schemaDocument xlink:href="../msData/wildcards/wildI004i.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildI004i.i">
+<instanceDocument xlink:href="../msData/wildcards/wildI004i.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildI005">
+<annotation>
+<documentation>TEST :Syntax Validation - any : multiple any in sequence with different namespaces and valid instance xml</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildI005">
+<schemaDocument xlink:href="../msData/wildcards/wildI005.xsd"/>
+<schemaDocument xlink:href="../msData/wildcards/wildI005a.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildI005.v">
+<instanceDocument xlink:href="../msData/wildcards/wildI005.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildI006">
+<annotation>
+<documentation>TEST :Syntax Validation - any : multiple any in choice with different namespaces (a, b, ##targetNamespace, ##local), and valid instance xml</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildI006">
+<schemaDocument xlink:href="../msData/wildcards/wildI006.xsd"/>
+<schemaDocument xlink:href="../msData/wildcards/wildI006a.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildI006.v">
+<instanceDocument xlink:href="../msData/wildcards/wildI006.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildI007">
+<annotation>
+<documentation>TEST :Syntax Validation - any : multiple any in choice with namespaces (##other, ##targetNamespace), and valid instance xml</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildI007">
+<schemaDocument xlink:href="../msData/wildcards/wildI007.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildI007.v">
+<instanceDocument xlink:href="../msData/wildcards/wildI007.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildI008">
+<annotation>
+<documentation>TEST :Syntax Validation - any : multiple any in choice with namespaces (##other, ##local), this test is valid, because ##other means NOT ##local or ##targetNamespace. Therefore, it is NOT non-deterministic</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildI008">
+<schemaDocument xlink:href="../msData/wildcards/wildI008.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildI009">
+<annotation>
+<documentation>TEST :Syntax Validation - any : multiple any in choice with namespaces (##other, A), non-deterministic declaration</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildI009">
+<schemaDocument xlink:href="../msData/wildcards/wildI009.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildI010">
+<annotation>
+<documentation>TEST :Syntax Validation - any : multiple any in choice with namespaces (A, A), non-deterministic declaration</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildI010">
+<schemaDocument xlink:href="../msData/wildcards/wildI010.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildI011">
+<annotation>
+<documentation>TEST :Syntax Validation - any : multiple any in sequence with namespaces (##other{1}, A{1}), non-deterministic declaration</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildI011">
+<schemaDocument xlink:href="../msData/wildcards/wildI011.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildI011.v">
+<instanceDocument xlink:href="../msData/wildcards/wildI011.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildI012">
+<annotation>
+<documentation>TEST :Syntax Validation - any : multiple any in sequence with namespaces (##other{1}, A{2}), non-deterministic declaration</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildI012">
+<schemaDocument xlink:href="../msData/wildcards/wildI012.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildI012.v">
+<instanceDocument xlink:href="../msData/wildcards/wildI012.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildI013">
+<annotation>
+<documentation>TEST :Syntax Validation - any : multiple any in sequence with namespaces (##other{2}, A{1}), non-deterministic declaration</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildI013">
+<schemaDocument xlink:href="../msData/wildcards/wildI013.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildI014">
+<annotation>
+<documentation>TEST :Syntax Validation - any : multiple any in sequence with namespaces (A{1},##other{2}, A{1}), non-deterministic declaration</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildI014">
+<schemaDocument xlink:href="../msData/wildcards/wildI014.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildJ001">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with ID="foo25"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildJ001">
+<schemaDocument xlink:href="../msData/wildcards/wildJ001.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildJ002">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with ID="_foo-2.5"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildJ002">
+<schemaDocument xlink:href="../msData/wildcards/wildJ002.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildJ003">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with ID="25"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildJ003">
+<schemaDocument xlink:href="../msData/wildcards/wildJ003.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildJ004">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with ID="0"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildJ004">
+<schemaDocument xlink:href="../msData/wildcards/wildJ004.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildJ005">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with ID="1"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildJ005">
+<schemaDocument xlink:href="../msData/wildcards/wildJ005.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildJ006">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with ID="foo:bar"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildJ006">
+<schemaDocument xlink:href="../msData/wildcards/wildJ006.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildJ007">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with ID=":bar"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildJ007">
+<schemaDocument xlink:href="../msData/wildcards/wildJ007.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildJ008">
+<annotation>
+<documentation>TEST :Syntax Validation - any : Duplicate ID="foo25" where foo25 is already exists</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildJ008">
+<schemaDocument xlink:href="../msData/wildcards/wildJ008.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildK001">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace =</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildK001">
+<schemaDocument xlink:href="../msData/wildcards/wildK001.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildK002">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = ##anyAttribute</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildK002">
+<schemaDocument xlink:href="../msData/wildcards/wildK002.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildK003">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = ##local</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildK003">
+<schemaDocument xlink:href="../msData/wildcards/wildK003.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildK004">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = ##other</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildK004">
+<schemaDocument xlink:href="../msData/wildcards/wildK004.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildK005">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = ##targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildK005">
+<schemaDocument xlink:href="../msData/wildcards/wildK005.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildK006">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = ##target</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildK006">
+<schemaDocument xlink:href="../msData/wildcards/wildK006.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildK007">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = ##all</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildK007">
+<schemaDocument xlink:href="../msData/wildcards/wildK007.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildK008">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = #anyAttribute</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildK008">
+<schemaDocument xlink:href="../msData/wildcards/wildK008.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildK009">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = #local</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildK009">
+<schemaDocument xlink:href="../msData/wildcards/wildK009.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildK010">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = #other</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildK010">
+<schemaDocument xlink:href="../msData/wildcards/wildK010.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildK011">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = #targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildK011">
+<schemaDocument xlink:href="../msData/wildcards/wildK011.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildK012">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = #target</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildK012">
+<schemaDocument xlink:href="../msData/wildcards/wildK012.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildK013">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = #all</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildK013">
+<schemaDocument xlink:href="../msData/wildcards/wildK013.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildK014">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = anyAttribute</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildK014">
+<schemaDocument xlink:href="../msData/wildcards/wildK014.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildK015">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = local</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildK015">
+<schemaDocument xlink:href="../msData/wildcards/wildK015.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildK016">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = other</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildK016">
+<schemaDocument xlink:href="../msData/wildcards/wildK016.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildK017">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildK017">
+<schemaDocument xlink:href="../msData/wildcards/wildK017.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildK018">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = target</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildK018">
+<schemaDocument xlink:href="../msData/wildcards/wildK018.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildK019">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = all</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildK019">
+<schemaDocument xlink:href="../msData/wildcards/wildK019.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildK020">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = ##anyAttribute ##other</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildK020">
+<schemaDocument xlink:href="../msData/wildcards/wildK020.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildK021">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = ##anyAttribute ##local</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildK021">
+<schemaDocument xlink:href="../msData/wildcards/wildK021.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildK022">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = ##anyAttribute ##targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildK022">
+<schemaDocument xlink:href="../msData/wildcards/wildK022.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildK023">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = ##other ##local</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildK023">
+<schemaDocument xlink:href="../msData/wildcards/wildK023.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildK024">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = ##other ##targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildK024">
+<schemaDocument xlink:href="../msData/wildcards/wildK024.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildK025">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = ##local ##targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildK025">
+<schemaDocument xlink:href="../msData/wildcards/wildK025.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildK026">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = ##anyAttribute ##other ##local</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildK026">
+<schemaDocument xlink:href="../msData/wildcards/wildK026.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildK027">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = ##anyAttribute ##other ##targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildK027">
+<schemaDocument xlink:href="../msData/wildcards/wildK027.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildK028">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = ##anyAttribute ##local ##targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildK028">
+<schemaDocument xlink:href="../msData/wildcards/wildK028.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildK029">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = ##anyAttribute ##other ##local ##targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildK029">
+<schemaDocument xlink:href="../msData/wildcards/wildK029.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildK030">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = http://www.w3.org/1999/xhtml</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildK030">
+<schemaDocument xlink:href="../msData/wildcards/wildK030.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildK031">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = http://www.w3.org/1999/XSL/Transform http://www.w3.org/1999/XML/xinclude</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildK031">
+<schemaDocument xlink:href="../msData/wildcards/wildK031.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildK032">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = http://www.w3.org/1999/02/22-rdf-syntax-ns http://www.w3.org/2000/01/rdf-schema</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildK032">
+<schemaDocument xlink:href="../msData/wildcards/wildK032.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildK033">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = http://www.w3.org/Graphics/SVG/</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildK033">
+<schemaDocument xlink:href="../msData/wildcards/wildK033.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildK034">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = http://www.w3.org/2000/02/xmldsig http://www.w3.org/TR/2000/WD-xml-c14n-20000119</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildK034">
+<schemaDocument xlink:href="../msData/wildcards/wildK034.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildK035">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = http://www.w3.org/1999/XMLSchema</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildK035">
+<schemaDocument xlink:href="../msData/wildcards/wildK035.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildK036">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = http://www.w3.org/1999/XMLSchema http://www.w3.org/1999/XMLSchema-instance http://www.w3.org/1999/XMLSchema-datatypes</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildK036">
+<schemaDocument xlink:href="../msData/wildcards/wildK036.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildK037">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = http://www.w3.org/1999/xhtml http://www.w3.org/1999/XSL/Transform http://www.w3.org/1999/XML/xinclude http://www.w3.org/1999/02/22-rdf-syntax-ns http://www.w3.org/2000/01/rdf-schema http://www.w3.org/Graphics/SVG/ http://www.w3.org/2000/02/xmldsig http://www.w3.org/TR/2000/WD-xml-c14n-20000119</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildK037">
+<schemaDocument xlink:href="../msData/wildcards/wildK037.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildK038">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = ##other http://www.w3.org/1999/xhtml http://www.w3.org/1999/XSL/Transform http://www.w3.org/1999/XML/xinclude http://www.w3.org/1999/02/22-rdf-syntax-ns http://www.w3.org/2000/01/rdf-schema http://www.w3.org/Graphics/SVG/ http://www.w3.org/2000/02/xmldsig http://www.w3.org/TR/2000/WD-xml-c14n-20000119</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildK038">
+<schemaDocument xlink:href="../msData/wildcards/wildK038.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildK039">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = ##local http://www.w3.org/1999/xhtml http://www.w3.org/1999/XSL/Transform http://www.w3.org/1999/XML/xinclude http://www.w3.org/1999/02/22-rdf-syntax-ns http://www.w3.org/2000/01/rdf-schema http://www.w3.org/Graphics/SVG/ http://www.w3.org/2000/02/xmldsig http://www.w3.org/TR/2000/WD-xml-c14n-20000119</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildK039">
+<schemaDocument xlink:href="../msData/wildcards/wildK039.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildK040">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = ##targetNamespace http://www.w3.org/1999/xhtml http://www.w3.org/1999/XSL/Transform http://www.w3.org/1999/XML/xinclude http://www.w3.org/1999/02/22-rdf-syntax-ns http://www.w3.org/2000/01/rdf-schema http://www.w3.org/Graphics/SVG/ http://www.w3.org/2000/02/xmldsig http://www.w3.org/TR/2000/WD-xml-c14n-20000119</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildK040">
+<schemaDocument xlink:href="../msData/wildcards/wildK040.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildK041">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = ##local ##targetNamespace http://www.w3.org/1999/xhtml http://www.w3.org/1999/XSL/Transform http://www.w3.org/1999/XML/xinclude http://www.w3.org/1999/02/22-rdf-syntax-ns http://www.w3.org/2000/01/rdf-schema http://www.w3.org/Graphics/SVG/ http://www.w3.org/2000/02/xmldsig http://www.w3.org/TR/2000/WD-xml-c14n-20000119</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildK041">
+<schemaDocument xlink:href="../msData/wildcards/wildK041.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildL001">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with processContents =</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildL001">
+<schemaDocument xlink:href="../msData/wildcards/wildL001.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildL002">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with processContents = lax</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildL002">
+<schemaDocument xlink:href="../msData/wildcards/wildL002.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildL003">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with processContents = skip</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildL003">
+<schemaDocument xlink:href="../msData/wildcards/wildL003.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildL004">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with processContents = strict</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildL004">
+<schemaDocument xlink:href="../msData/wildcards/wildL004.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildL005">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with processContents = lax skip</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildL005">
+<schemaDocument xlink:href="../msData/wildcards/wildL005.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildL006">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with processContents = lax strict</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildL006">
+<schemaDocument xlink:href="../msData/wildcards/wildL006.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildL007">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with processContents = skip strict</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildL007">
+<schemaDocument xlink:href="../msData/wildcards/wildL007.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildL008">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with processContents = lax skip strict</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildL008">
+<schemaDocument xlink:href="../msData/wildcards/wildL008.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildL009">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with processContents = all</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildL009">
+<schemaDocument xlink:href="../msData/wildcards/wildL009.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildM001">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with an annotation</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildM001">
+<schemaDocument xlink:href="../msData/wildcards/wildM001.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildM002">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with two annotations</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildM002">
+<schemaDocument xlink:href="../msData/wildcards/wildM002.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildN001">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = ##anyAttribute and schema targetNamespace="http://foobar"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildN001">
+<schemaDocument xlink:href="../msData/wildcards/wildN001.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildN002">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = ##local and schema targetNamespace="http://foobar"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildN002">
+<schemaDocument xlink:href="../msData/wildcards/wildN002.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildN003">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = ##other and schema targetNamespace="http://foobar"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildN003">
+<schemaDocument xlink:href="../msData/wildcards/wildN003.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildN004">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = ##targetNamespace and schema targetNamespace="http://foobar"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildN004">
+<schemaDocument xlink:href="../msData/wildcards/wildN004.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildN005">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = http://foobar and schema targetNamespace="http://foobar"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildN005">
+<schemaDocument xlink:href="../msData/wildcards/wildN005.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildN006">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = ##anyAttribute ##other and schema targetNamespace="http://foobar"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildN006">
+<schemaDocument xlink:href="../msData/wildcards/wildN006.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildN007">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = ##anyAttribute ##local and schema targetNamespace="http://foobar"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildN007">
+<schemaDocument xlink:href="../msData/wildcards/wildN007.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildN008">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = ##anyAttribute ##targetNamespace and schema targetNamespace="http://foobar"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildN008">
+<schemaDocument xlink:href="../msData/wildcards/wildN008.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildN009">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = ##other ##local and schema targetNamespace="http://foobar"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildN009">
+<schemaDocument xlink:href="../msData/wildcards/wildN009.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildN010">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = ##other ##targetNamespace and schema targetNamespace="http://foobar"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildN010">
+<schemaDocument xlink:href="../msData/wildcards/wildN010.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildN011">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = ##local ##targetNamespace and schema targetNamespace="http://foobar"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildN011">
+<schemaDocument xlink:href="../msData/wildcards/wildN011.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildN012">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = ##anyAttribute ##other ##local and schema targetNamespace="http://foobar"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildN012">
+<schemaDocument xlink:href="../msData/wildcards/wildN012.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildN013">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = ##anyAttribute ##other ##targetNamespace and schema targetNamespace="http://foobar"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildN013">
+<schemaDocument xlink:href="../msData/wildcards/wildN013.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildN014">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = ##anyAttribute ##local ##targetNamespace and schema targetNamespace="http://foobar"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildN014">
+<schemaDocument xlink:href="../msData/wildcards/wildN014.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildN015">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = ##anyAttribute ##other ##local ##targetNamespace and schema targetNamespace="http://foobar"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildN015">
+<schemaDocument xlink:href="../msData/wildcards/wildN015.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildN016">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = ##anyAttribute http://foobar and schema targetNamespace="http://foobar"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildN016">
+<schemaDocument xlink:href="../msData/wildcards/wildN016.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildN017">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = ##local http://foobar and schema targetNamespace="http://foobar"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildN017">
+<schemaDocument xlink:href="../msData/wildcards/wildN017.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildN018">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = ##other http://foobar and schema targetNamespace="http://foobar"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildN018">
+<schemaDocument xlink:href="../msData/wildcards/wildN018.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildN019">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = ##targetNamespace http://foobar and schema targetNamespace="http://foobar"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildN019">
+<schemaDocument xlink:href="../msData/wildcards/wildN019.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildN020">
+<annotation>
+<documentation>TEST :Syntax Validation - any : anyAttribute with namespace = ##local ##targetNamespace http://foobar and schema targetNamespace="http://foobar"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildN020">
+<schemaDocument xlink:href="../msData/wildcards/wildN020.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildQ001">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANYAttribute declared twice</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildQ001">
+<schemaDocument xlink:href="../msData/wildcards/wildQ001.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildQ002">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANYAttribute (minoccurs=2)</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildQ002">
+<schemaDocument xlink:href="../msData/wildcards/wildQ002.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildQ003">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANYAttribute (maxoccurs=2)</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildQ003">
+<schemaDocument xlink:href="../msData/wildcards/wildQ003.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildQ004">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANYAttribute (minoccurs=2, maxoccurs=unbounded)</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildQ004">
+<schemaDocument xlink:href="../msData/wildcards/wildQ004.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildO001">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANYAttribute (w/ namespace=##any) and instance document has attributes from targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildO001">
+<schemaDocument xlink:href="../msData/wildcards/wildO001.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildO001.v">
+<instanceDocument xlink:href="../msData/wildcards/wildO001.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildO002">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANYAttribute (w/ namespace=##any) and instance document has attributes from other namespaces besides target</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildO002">
+<schemaDocument xlink:href="../msData/wildcards/wildO002.xsd"/>
+<schemaDocument xlink:href="../msData/wildcards/wildO002a.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildO002.v">
+<instanceDocument xlink:href="../msData/wildcards/wildO002.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildO003">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANYAttribute (w/ namespace=##other) and instance document has attributes from targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildO003">
+<schemaDocument xlink:href="../msData/wildcards/wildO003.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildO003.i">
+<instanceDocument xlink:href="../msData/wildcards/wildO003.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildO004">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANYAttribute (w/ namespace=##other) and instance document has attributes from other namespaces besides target</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildO004">
+<schemaDocument xlink:href="../msData/wildcards/wildO004.xsd"/>
+<schemaDocument xlink:href="../msData/wildcards/wildO004a.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildO004.v">
+<instanceDocument xlink:href="../msData/wildcards/wildO004.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildO005">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANYAttribute (w/ namespace=##local) and instance document has attributes from local Namespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildO005">
+<schemaDocument xlink:href="../msData/wildcards/wildO005.xsd"/>
+<schemaDocument xlink:href="../msData/wildcards/wildO005a.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildO005.v">
+<instanceDocument xlink:href="../msData/wildcards/wildO005.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildO006">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANYAttribute (w/ namespace=##local) and instance document has attributes from other namespaces besides local</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildO006">
+<schemaDocument xlink:href="../msData/wildcards/wildO006.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildO006.i">
+<instanceDocument xlink:href="../msData/wildcards/wildO006.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildO007">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANYAttribute (w/ namespace=##targetNamespace) and instance document has attributes from targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildO007">
+<schemaDocument xlink:href="../msData/wildcards/wildO007.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildO007.v">
+<instanceDocument xlink:href="../msData/wildcards/wildO007.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildO008">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANYAttribute (w/ namespace=##targetNamespace) and instance document has attributes from other namespaces besides target</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildO008">
+<schemaDocument xlink:href="../msData/wildcards/wildO008.xsd"/>
+<schemaDocument xlink:href="../msData/wildcards/wildO008a.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildO008.i">
+<instanceDocument xlink:href="../msData/wildcards/wildO008.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildO009">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANYAttribute (w/ namespace=##local http://www.w3.org/1999/xhtml) and instance document has attributes from targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildO009">
+<schemaDocument xlink:href="../msData/wildcards/wildO009.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildO009.i">
+<instanceDocument xlink:href="../msData/wildcards/wildO009.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildO010">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANYAttribute (w/ namespace=##local http://www.w3.org/1999/xhtml) and instance document has attributes from the xhtml namespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildO010">
+<schemaDocument xlink:href="../msData/wildcards/wildO010.xsd"/>
+<schemaDocument xlink:href="../msData/wildcards/wildO010a.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildO010.v">
+<instanceDocument xlink:href="../msData/wildcards/wildO010.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildO011">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANYAttribute (w/ namespace=##local http://www.w3.org/1999/xhtml) and instance document has attributes from other namespaces besides target</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildO011">
+<schemaDocument xlink:href="../msData/wildcards/wildO011.xsd"/>
+<schemaDocument xlink:href="../msData/wildcards/wildO011a.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildO011.i">
+<instanceDocument xlink:href="../msData/wildcards/wildO011.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildO012">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANYAttribute (w/ namespace=##targetNamespace http://www.w3.org/1999/xhtml) and instance document has attributes from targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildO012">
+<schemaDocument xlink:href="../msData/wildcards/wildO012.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildO012.v">
+<instanceDocument xlink:href="../msData/wildcards/wildO012.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildO013">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANYAttribute (w/ namespace=##targetNamespace http://www.w3.org/1999/xhtml) and instance document has attributes from the xhtml namespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildO013">
+<schemaDocument xlink:href="../msData/wildcards/wildO013.xsd"/>
+<schemaDocument xlink:href="../msData/wildcards/wildO013a.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildO013.v">
+<instanceDocument xlink:href="../msData/wildcards/wildO013.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildO014">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANYAttribute (w/ namespace=##targetNamespace http://www.w3.org/1999/xhtml) and instance document has attributes from other namespaces besides target</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildO014">
+<schemaDocument xlink:href="../msData/wildcards/wildO014.xsd"/>
+<schemaDocument xlink:href="../msData/wildcards/wildO014a.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildO014.i">
+<instanceDocument xlink:href="../msData/wildcards/wildO014.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildO015">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANYAttribute (w/ namespace=##any) with schema targetNamespace=http://foobar and instance document has attributes from targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildO015">
+<schemaDocument xlink:href="../msData/wildcards/wildO015.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildO015.v">
+<instanceDocument xlink:href="../msData/wildcards/wildO015.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildO016">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANYAttribute (w/ namespace=##any) with schema targetNamespace=http://foobar and instance document has attributes from other namespaces besides target</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildO016">
+<schemaDocument xlink:href="../msData/wildcards/wildO016.xsd"/>
+<schemaDocument xlink:href="../msData/wildcards/wildO016a.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildO016.v">
+<instanceDocument xlink:href="../msData/wildcards/wildO016.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildO017">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANYAttribute (w/ namespace=##other) with schema targetNamespace=http://foobar and instance document has attributes from targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildO017">
+<schemaDocument xlink:href="../msData/wildcards/wildO017.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildO017.i">
+<instanceDocument xlink:href="../msData/wildcards/wildO017.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildO018">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANYAttribute (w/ namespace=##other) with schema targetNamespace=http://foobar and instance document has attributes from other namespaces besides target</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildO018">
+<schemaDocument xlink:href="../msData/wildcards/wildO018.xsd"/>
+<schemaDocument xlink:href="../msData/wildcards/wildO018a.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildO018.v">
+<instanceDocument xlink:href="../msData/wildcards/wildO018.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildO019">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANYAttribute (w/ namespace=##local) with schema targetNamespace=http://foobar and instance document has attributes from local</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildO019">
+<schemaDocument xlink:href="../msData/wildcards/wildO019.xsd"/>
+<schemaDocument xlink:href="../msData/wildcards/wildO019a.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildO019.v">
+<instanceDocument xlink:href="../msData/wildcards/wildO019.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildO020">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANYAttribute (w/ namespace=##local) with schema targetNamespace=http://foobar and instance document has attributes from other namespaces besides local</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildO020">
+<schemaDocument xlink:href="../msData/wildcards/wildO020.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildO020.i">
+<instanceDocument xlink:href="../msData/wildcards/wildO020.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildO021">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANYAttribute (w/ namespace=##targetNamespace) with schema targetNamespace=http://foobar and instance document has attributes from targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildO021">
+<schemaDocument xlink:href="../msData/wildcards/wildO021.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildO021.v">
+<instanceDocument xlink:href="../msData/wildcards/wildO021.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildO022">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANYAttribute (w/ namespace=##targetNamespace) with schema targetNamespace=http://foobar and instance document has attributes from other namespaces besides target</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildO022">
+<schemaDocument xlink:href="../msData/wildcards/wildO022.xsd"/>
+<schemaDocument xlink:href="../msData/wildcards/wildO022a.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildO022.i">
+<instanceDocument xlink:href="../msData/wildcards/wildO022.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildO023">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANYAttribute (w/ namespace=http://foobar) with schema targetNamespace=http://foobar and instance document has attributes from targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildO023">
+<schemaDocument xlink:href="../msData/wildcards/wildO023.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildO023.v">
+<instanceDocument xlink:href="../msData/wildcards/wildO023.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildO024">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANYAttribute (w/ namespace=http://foobar) with schema targetNamespace=http://foobar and instance document has attributes from other namespaces besides target</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildO024">
+<schemaDocument xlink:href="../msData/wildcards/wildO024.xsd"/>
+<schemaDocument xlink:href="../msData/wildcards/wildO024a.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildO024.i">
+<instanceDocument xlink:href="../msData/wildcards/wildO024.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildO025">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ namespace=##other) with schema targetNamespace=http://foobar and instance document has attributes from targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildO025">
+<schemaDocument xlink:href="../msData/wildcards/wildO025.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildO025.i">
+<instanceDocument xlink:href="../msData/wildcards/wildO025.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildO026">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ namespace=##other) with schema targetNamespace=http://foobar and instance document has attributes from other namespaces besides target</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildO026">
+<schemaDocument xlink:href="../msData/wildcards/wildO026.xsd"/>
+<schemaDocument xlink:href="../msData/wildcards/wildO026a.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildO026.v">
+<instanceDocument xlink:href="../msData/wildcards/wildO026.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildO027">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ namespace=##targetNamespace) with schema targetNamespace=http://foobar and instance document has attributes from targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildO027">
+<schemaDocument xlink:href="../msData/wildcards/wildO027.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildO027.v">
+<instanceDocument xlink:href="../msData/wildcards/wildO027.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildO028">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ namespace=##targetNamespace) with schema targetNamespace=http://foobar and instance document has attributes from other namespaces besides target</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildO028">
+<schemaDocument xlink:href="../msData/wildcards/wildO028.xsd"/>
+<schemaDocument xlink:href="../msData/wildcards/wildO028a.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildO028.i">
+<instanceDocument xlink:href="../msData/wildcards/wildO028.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildO029">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ namespace=##local) with schema targetNamespace=http://foobar and instance document has attributes from local</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildO029">
+<schemaDocument xlink:href="../msData/wildcards/wildO029.xsd"/>
+<schemaDocument xlink:href="../msData/wildcards/wildO029a.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildO029.v">
+<instanceDocument xlink:href="../msData/wildcards/wildO029.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildO030">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ namespace=##local) with schema targetNamespace=http://foobar and instance document has attributes from other namespaces besides target</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildO030">
+<schemaDocument xlink:href="../msData/wildcards/wildO030.xsd"/>
+<schemaDocument xlink:href="../msData/wildcards/wildO030a.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildO030.i">
+<instanceDocument xlink:href="../msData/wildcards/wildO030.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildO031">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ namespace=http://foobar) with schema targetNamespace=http://foobar and instance document has attributes from targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildO031">
+<schemaDocument xlink:href="../msData/wildcards/wildO031.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildO031.v">
+<instanceDocument xlink:href="../msData/wildcards/wildO031.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildO032">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANY (w/ namespace=http://foobar) with schema targetNamespace=http://foobar and instance document has attributes from other namespaces besides target</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildO032">
+<schemaDocument xlink:href="../msData/wildcards/wildO032.xsd"/>
+<schemaDocument xlink:href="../msData/wildcards/wildO032a.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildO032.i">
+<instanceDocument xlink:href="../msData/wildcards/wildO032.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildO033">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANYAttribute (w/ namespace=##local http://foobar) with schema targetNamespace=http://foobar and instance document has attributes from local</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildO033">
+<schemaDocument xlink:href="../msData/wildcards/wildO033.xsd"/>
+<schemaDocument xlink:href="../msData/wildcards/wildO033a.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildO033.v">
+<instanceDocument xlink:href="../msData/wildcards/wildO033.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildO034">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANYAttribute (w/ namespace=##local http://foobar) with schema targetNamespace=http://foobar and instance document has attributes from other namespaces besides listed</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildO034">
+<schemaDocument xlink:href="../msData/wildcards/wildO034.xsd"/>
+<schemaDocument xlink:href="../msData/wildcards/wildO034a.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildO034.i">
+<instanceDocument xlink:href="../msData/wildcards/wildO034.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildO035">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANYAttribute (w/ namespace=##local http://www.w3.org/1999/xhtml) with schema targetNamespace=http://foobar and instance document has attributes from targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildO035">
+<schemaDocument xlink:href="../msData/wildcards/wildO035.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildO035.i">
+<instanceDocument xlink:href="../msData/wildcards/wildO035.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildO037">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANYAttribute (w/ namespace=##local http://www.w3.org/1999/xhtml) with schema targetNamespace=http://foobar and instance document has attributes from the xhtml namespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildO037">
+<schemaDocument xlink:href="../msData/wildcards/wildO037.xsd"/>
+<schemaDocument xlink:href="../msData/wildcards/wildO037a.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildO037.v">
+<instanceDocument xlink:href="../msData/wildcards/wildO037.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildO038">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANYAttribute (w/ namespace=##targetNamespace http://www.w3.org/1999/xhtml) with schema targetNamespace=http://foobar and instance document has attributes from targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildO038">
+<schemaDocument xlink:href="../msData/wildcards/wildO038.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildO038.v">
+<instanceDocument xlink:href="../msData/wildcards/wildO038.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildO039">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANYAttribute (w/ namespace=##targetNamespace http://www.w3.org/1999/xhtml) with schema targetNamespace=http://foobar and instance document has attributes from other namespaces besides target</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildO039">
+<schemaDocument xlink:href="../msData/wildcards/wildO039.xsd"/>
+<schemaDocument xlink:href="../msData/wildcards/wildO039a.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildO039.i">
+<instanceDocument xlink:href="../msData/wildcards/wildO039.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildO040">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANYAttribute (w/ namespace=##targetNamespace http://www.w3.org/1999/xhtml) with schema targetNamespace=http://foobar and instance document has attributes from the xhtml namespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildO040">
+<schemaDocument xlink:href="../msData/wildcards/wildO040.xsd"/>
+<schemaDocument xlink:href="../msData/wildcards/wildO040a.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildO040.v">
+<instanceDocument xlink:href="../msData/wildcards/wildO040.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildP001">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANYAttribute (w/ processContents=strict and namespace=##targetNamespace) with schema targetNamespace=http://foobar, attribute declared and instance document has attributes from targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildP001">
+<schemaDocument xlink:href="../msData/wildcards/wildP001.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildP001.v">
+<instanceDocument xlink:href="../msData/wildcards/wildP001.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildP002">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANYAttribute (w/ processContents=strict and namespace=##targetNamespace) with schema targetNamespace=http://foobar, attribute not declared and instance document has attributes from targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildP002">
+<schemaDocument xlink:href="../msData/wildcards/wildP002.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildP002.i">
+<instanceDocument xlink:href="../msData/wildcards/wildP002.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildP003">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANYAttribute (w/ processContents=lax and namespace=##targetNamespace) with schema targetNamespace=http://foobar, attribute declared and instance document has attributes from targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildP003">
+<schemaDocument xlink:href="../msData/wildcards/wildP003.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildP003.v">
+<instanceDocument xlink:href="../msData/wildcards/wildP003.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildP004">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANYAttribute (w/ processContents=lax and namespace=##targetNamespace) with schema targetNamespace=http://foobar, attribute not declared and instance document has attributes from targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildP004">
+<schemaDocument xlink:href="../msData/wildcards/wildP004.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildP004.v">
+<instanceDocument xlink:href="../msData/wildcards/wildP004.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildP005">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANYAttribute (w/ processContents=skip and namespace=##targetNamespace) with schema targetNamespace=http://foobar, attribute declared and instance document has attributes from targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildP005">
+<schemaDocument xlink:href="../msData/wildcards/wildP005.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildP005.v">
+<instanceDocument xlink:href="../msData/wildcards/wildP005.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildP006">
+<annotation>
+<documentation>TEST :Syntax Validation - any : ANYAttribute (w/ processContents=skip and namespace=##targetNamespace) with schema targetNamespace=http://foobar, attribute not declared and instance document has attributes from targetNamespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildP006">
+<schemaDocument xlink:href="../msData/wildcards/wildP006.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildP006.v">
+<instanceDocument xlink:href="../msData/wildcards/wildP006.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildZ001">
+<annotation>
+<documentation>TEST :Syntax Validation - any : validate namespace set to a valid namespace URI and instance document has correct elements</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildZ001">
+<schemaDocument xlink:href="../msData/wildcards/wildZ001.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildZ001.i">
+<instanceDocument xlink:href="../msData/wildcards/wildZ001.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildZ002">
+<annotation>
+<documentation>TEST :Syntax Validation - any : attribute on xsd:any processContents="skip"</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildZ002">
+<schemaDocument xlink:href="../msData/wildcards/wildZ002.xsd"/>
+<schemaDocument xlink:href="../msData/wildcards/wildZ002_a.xsd"/>
+<schemaDocument xlink:href="../msData/wildcards/wildZ002_b.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildZ002.v">
+<instanceDocument xlink:href="../msData/wildcards/wildZ002.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildZ003">
+<annotation>
+<documentation>TEST :Syntax Validation - any : xsd: test valid instance with elements from a different namespace where xsd defint 'any' with ##other</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildZ003">
+<schemaDocument xlink:href="../msData/wildcards/wildZ003_b.xsd"/>
+<schemaDocument xlink:href="../msData/wildcards/wildZ003_a.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildZ003.v">
+<instanceDocument xlink:href="../msData/wildcards/wildZ003.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildZ004">
+<annotation>
+<documentation>TEST :Syntax Validation - any : xsd: un-declared element when content is xsd:anyType.</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildZ004">
+<schemaDocument xlink:href="../msData/wildcards/wildZ004.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildZ004.v">
+<instanceDocument xlink:href="../msData/wildcards/wildZ004.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildZ005">
+<annotation>
+<documentation>TEST :Syntax Validation - any : any with namespace ##other should not allow targetNamespace's element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildZ005">
+<schemaDocument xlink:href="../msData/wildcards/wildZ005.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildZ005.i">
+<instanceDocument xlink:href="../msData/wildcards/wildZ005.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildZ006">
+<annotation>
+<documentation>TEST :Syntax Validation - any : any with namespace ##other should not allow local element</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildZ006">
+<schemaDocument xlink:href="../msData/wildcards/wildZ006.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildZ006.i">
+<instanceDocument xlink:href="../msData/wildcards/wildZ006.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildZ007">
+<annotation>
+<documentation>TEST :Syntax Validation - any : XSD: When processContents=lax, xsd:any doesn't allow attributes from target namespace</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildZ007">
+<schemaDocument xlink:href="../msData/wildcards/wildZ007.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildZ007.v">
+<instanceDocument xlink:href="../msData/wildcards/wildZ007.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildZ008">
+<annotation>
+<documentation>TEST :Syntax Validation - any : XSD: processContents on derivation</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildZ008">
+<schemaDocument xlink:href="../msData/wildcards/wildZ008.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildZ009">
+<annotation>
+<documentation>TEST :Syntax Validation - any : XSD: processContents on derivation(2)</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildZ009">
+<schemaDocument xlink:href="../msData/wildcards/wildZ009.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildZ009b">
+<annotation>
+<documentation>TEST :Syntax Validation - any : XSD: processContents on derivation(3)</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildZ009b">
+<schemaDocument xlink:href="../msData/wildcards/wildZ009b.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildZ010">
+<annotation>
+<documentation>TEST :Syntax Validation - any : xsd: namespace='' on wildcard any should match against ##any</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildZ010">
+<schemaDocument xlink:href="../msData/wildcards/wildZ010_a.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildZ010.v">
+<instanceDocument xlink:href="../msData/wildcards/wildZ010.xml"/>
+<expected validity="valid"/>
+<current bugzilla="http://www.w3.org/Bugs/Public/show_bug.cgi?id=4066" status="queried" date="2006-12-22"/>
+<prior status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildZ011">
+<annotation>
+<documentation>TEST :Syntax Validation - any : XSD: process Contents for the complete wildcard component</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildZ011">
+<schemaDocument xlink:href="../msData/wildcards/wildZ011a.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildZ011.i">
+<instanceDocument xlink:href="../msData/wildcards/wildZ011.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildZ013">
+<annotation>
+<documentation>TEST :Syntax Validation - any : 328873: Attribute Wildcard Intersection and Union rules according to Errata E1-10 in schema set</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildZ013">
+<schemaDocument xlink:href="../msData/wildcards/test328873i.xsd"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+</testGroup>
+<testGroup name="wildZ013a">
+<annotation>
+<documentation>TEST :Syntax Validation - any : 328873: Attribute Wildcard Intersection and Union rules according to Errata E1-10 in schema set</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildZ013a">
+<schemaDocument xlink:href="../msData/wildcards/test328873.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildZ013a.i">
+<instanceDocument xlink:href="../msData/wildcards/test328873a.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildZ013b">
+<annotation>
+<documentation>TEST :Syntax Validation - any : 328873: Attribute Wildcard Intersection and Union rules according to Errata E1-10 in schema set</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildZ013b">
+<schemaDocument xlink:href="../msData/wildcards/test328873.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildZ013b.v">
+<instanceDocument xlink:href="../msData/wildcards/test328873b.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildZ013c">
+<annotation>
+<documentation>TEST :Syntax Validation - any : 328873: Attribute Wildcard Intersection and Union rules according to Errata E1-10 in schema set</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildZ013c">
+<schemaDocument xlink:href="../msData/wildcards/test328873.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildZ013c.v">
+<instanceDocument xlink:href="../msData/wildcards/test328873c.xml"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildZ013d">
+<annotation>
+<documentation>TEST :Syntax Validation - any : 328873: Attribute Wildcard Intersection and Union rules according to Errata E1-10 in schema set</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildZ013d">
+<schemaDocument xlink:href="../msData/wildcards/test328873.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildZ013d.i">
+<instanceDocument xlink:href="../msData/wildcards/test328873d.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildZ013e">
+<annotation>
+<documentation>TEST :Syntax Validation - any : 328873: Attribute Wildcard Intersection and Union rules according to Errata E1-10 in schema set</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildZ013e">
+<schemaDocument xlink:href="../msData/wildcards/test328873.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildZ013e.i">
+<instanceDocument xlink:href="../msData/wildcards/test328873e.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+<testGroup name="wildZ013f">
+<annotation>
+<documentation>TEST :Syntax Validation - any : 328873: Attribute Wildcard Intersection and Union rules according to Errata E1-10 in schema set</documentation>
+</annotation>
+<documentationReference xlink:href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#Wildcards"/>
+<schemaTest name="wildZ013f">
+<schemaDocument xlink:href="../msData/wildcards/test328873.xsd"/>
+<expected validity="valid"/>
+<current status="accepted" date="2006-07-16"/>
+</schemaTest>
+<instanceTest name="wildZ013f.i">
+<instanceDocument xlink:href="../msData/wildcards/test328873f.xml"/>
+<expected validity="invalid"/>
+<current status="accepted" date="2006-07-16"/>
+</instanceTest>
+</testGroup>
+</testSet>
+

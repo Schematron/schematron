@@ -1,0 +1,15 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+elementFormDefault="qualified">
+
+	<xsd:redefine schemaLocation="schN2_b.xsd">
+		<xsd:group name="c-g2">
+			<xsd:choice>
+				<xsd:group ref="c-g2"/>
+				<xsd:element name="c21" type="xsd:int" maxOccurs="3"/>
+				<xsd:element name="c24" type="xsd:int" maxOccurs="3"/>
+			</xsd:choice>
+		</xsd:group>
+  	</xsd:redefine>
+
+	
+</xsd:schema>

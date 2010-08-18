@@ -1,0 +1,21 @@
+<?xml version='1.0'?>
+<xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema' >
+<!-- Schema to test duration datatype -->
+  <xsd:element name='test' type='fooType' />
+  <xsd:complexType name='fooType' > 
+    <xsd:sequence>
+      <xsd:element name='foo' >
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:duration">
+            <xsd:enumeration value="P0Y"/>
+            <xsd:enumeration value="P0M"/>
+            <xsd:enumeration value="P0D"/>
+            <xsd:enumeration value="P0DT0H"/>
+            <xsd:enumeration value="P0DT0M"/>
+            <xsd:enumeration value="P0DT0S"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

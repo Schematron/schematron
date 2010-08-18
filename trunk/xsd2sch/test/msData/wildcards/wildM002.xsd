@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="foo">
+		<xsd:complexType>
+			<xsd:simpleContent>
+				<xsd:extension base="xsd:string">
+					<xsd:anyAttribute>
+						<xsd:annotation>
+							<xsd:appinfo>Application Information</xsd:appinfo>
+							<xsd:documentation>Documentation</xsd:documentation>
+						</xsd:annotation>
+						<xsd:annotation>
+							<xsd:appinfo>Application Information</xsd:appinfo>
+							<xsd:documentation>Documentation</xsd:documentation>
+						</xsd:annotation>
+					</xsd:anyAttribute>
+				</xsd:extension>
+			</xsd:simpleContent>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

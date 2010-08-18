@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <Foo xmlns="http://schema1"> -->
+<Sequence Name="New Sequence" xmlns="http://schema1">
+    <sa:Sample Name="Sample1" attr1="abc" attr2="123" xmlns:sa="http://schema2">
+        <ManagedItem Name="New Managed Item" Class="" Assembly="" xmlns="http://schema1" />
+	</sa:Sample>
+</Sequence>
+<!-- </Foo> -->

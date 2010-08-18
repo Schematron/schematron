@@ -1,0 +1,13 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <xsd:element name="a">
+
+      <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="b" minOccurs="1"/>
+              <xsd:attribute name="ATT" type="integer" use="optional" default="a"/>
+
+            </xsd:sequence>
+      </xsd:complexType>
+
+    </xsd:element>
+</xsd:schema>

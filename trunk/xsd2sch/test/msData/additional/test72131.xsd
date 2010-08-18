@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+elementFormDefault="qualified">
+ <xsd:complexType name="customerOrderType">
+  <xsd:sequence>
+   <xsd:element name="item" minOccurs="0" maxOccurs="unbounded">
+    <xsd:complexType>
+     <xsd:attribute name="itemID" type="xsd:string"/>
+    </xsd:complexType>
+   </xsd:element>
+  </xsd:sequence>
+  <xsd:attribute name="CustomerID" type="xsd:string"/>
+ </xsd:complexType>
+ <xsd:element name="ordersByCustomer">
+  <xsd:complexType>
+   <xsd:sequence>
+    <xsd:element name="customerOrders" type="customerOrderType"
+minOccurs="0" maxOccurs="unbounded"/>
+   </xsd:sequence>
+  </xsd:complexType>
+  <xsd:unique name="oneCustomerOrdersforEachCustomerID">
+   <xsd:selector xpath="customerOrders"/>
+   <xsd:field xpath="@customerID"/>
+  </xsd:unique>
+ </xsd:element>
+</xsd:schema>

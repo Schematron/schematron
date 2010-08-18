@@ -1,0 +1,19 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+targetNamespace="foo" 	xmlns="foo"> 
+<xsd:complexType name="foo">
+		<xsd:sequence>
+			<xsd:element name="foo"/>
+			<xsd:element name="bar">
+				<xsd:complexType>
+					<xsd:complexContent>
+						<xsd:restriction base="foo">
+							<xsd:sequence>
+								<xsd:element name="foo"/>
+							</xsd:sequence>
+						</xsd:restriction>
+					</xsd:complexContent>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+</xsd:complexType>
+</xsd:schema>

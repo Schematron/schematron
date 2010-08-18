@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="root">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="t" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+		<xs:key id="foo" name="tableu">
+			<xs:selector xpath=".//t"/>
+			<xs:field xpath="."/>
+		</xs:key>
+	</xs:element>
+	<xs:element name="t" type="xs:string"/>
+</xs:schema>

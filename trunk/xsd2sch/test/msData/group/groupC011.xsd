@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:complexType name="A">
+		<xsd:group ref="msxml"/>
+	</xsd:complexType>
+	<xsd:group name="msxml">
+		<xsd:sequence>
+			<xsd:element name="A"/>
+			<xsd:element name="B"/>
+		</xsd:sequence>
+	</xsd:group>
+	<xsd:element name="doc">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="msxml" type="A"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

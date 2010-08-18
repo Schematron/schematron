@@ -1,0 +1,13 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+targetNamespace="ns-a"
+xmlns="ns-a"
+xmlns:b="ns-b"
+xmlns:c="ns-c"
+>
+
+	<xsd:import namespace="ns-b" schemaLocation="schG13a.xsd"/>
+	<xsd:import namespace="ns-c" schemaLocation="schG13a.xsd"/>
+
+</xsd:schema>
+
+

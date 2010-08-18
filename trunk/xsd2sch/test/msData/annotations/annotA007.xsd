@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:attributeGroup name="myAttributeGroup">
+		<xsd:attribute name="someattribute1" type="xsd:integer"/>
+		<xsd:attribute name="someattribute2" type="xsd:string"/>
+	</xsd:attributeGroup>
+	<xsd:complexType name="myElementType">
+		<xsd:attributeGroup ref="myAttributeGroup">
+			<xsd:annotation>
+				<xsd:appinfo>Application Information</xsd:appinfo>
+				<xsd:documentation>Documentation</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attributeGroup>
+	</xsd:complexType>
+</xsd:schema>

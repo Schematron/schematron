@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:attribute name="foo" type="xsd:string"/>
+	<xsd:attribute name="bar" type="xsd:string"/>
+	<xsd:complexType name="ct">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string"/>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="attRef">
+		<xsd:attribute name="att1"/>
+		<xsd:attribute ref="ct"/>
+	</xsd:complexType>
+	<xsd:element name="doc">
+		<xsd:complexType>
+			<xsd:choice>
+				<xsd:element name="elem" type="attRef"/>
+			</xsd:choice>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

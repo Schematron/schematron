@@ -1,0 +1,3 @@
+<xs:schema targetNamespace="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="title" type="xs:string" />
+</xs:schema>

@@ -1,0 +1,12 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+elementFormDefault="qualified"
+>
+
+	<xsd:group name="b-g3">
+			<xsd:sequence>
+				<xsd:element name="c31" type="xsd:int" maxOccurs="5"/>
+				<xsd:element name="c32" type="xsd:int" maxOccurs="5"/>
+			</xsd:sequence>
+	</xsd:group>
+	
+</xsd:schema>

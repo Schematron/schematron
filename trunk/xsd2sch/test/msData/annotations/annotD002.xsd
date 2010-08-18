@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:a="foo">
+	<xsd:annotation>
+		<xsd:documentation>
+			<foo>foo<a:b/>bar</foo>
+		</xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

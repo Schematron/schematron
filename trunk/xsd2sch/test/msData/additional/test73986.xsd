@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        xmlns:foobar="http://xsdtesting"
+        targetNamespace="http://xsdtesting">
+
+  <element name="root" type="foobar:t1"/>
+
+  
+<simpleType name="t1">
+
+    <restriction base="QName">
+
+      <maxLength value="5"/>
+
+    </restriction>
+  
+</simpleType>
+
+
+</schema>

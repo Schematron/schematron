@@ -1,0 +1,6 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://importedXSD" attributeFormDefault="qualified">
+	<xsd:attributeGroup name="car">
+		<xsd:attribute name="model"/>
+		<xsd:attribute name="age" type="xsd:int"/>
+	</xsd:attributeGroup>
+</xsd:schema>

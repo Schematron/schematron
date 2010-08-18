@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='reI1.xsd' >
+
+<!-- 
+base='string', pattern='(\n\r\t\\\|\.\-\^\?\*\+\{\}\[\]\(\))*', value='\|.-^?*+[]{}()*[[]{}}))#xA;#xD;#x9;#x9;#xA;#xa;#xd;*()', type='valid', RULE='24'
+-->
+
+    <elem>\|.-^?*+[]{}()*[[]{}}))&#xA;&#xD;&#x9;&#x9;&#xA;&#xa;&#xd;*()</elem>
+
+ </doc>

@@ -1,0 +1,18 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xsd:complexType name="theSimple">
+   <xsd:simpleContent>
+    <xsd:extension base="xsd:decimal">
+     <xsd:attribute name="theAttribute" type="xsd:string"/>
+    </xsd:extension>
+   </xsd:simpleContent>
+</xsd:complexType>
+<xsd:complexType name="weird">
+  <xsd:complexContent>
+   <xsd:extension base="theSimple">
+    <xsd:sequence>
+     <xsd:element name="theElement" type="xsd:string"/>
+    </xsd:sequence>
+   </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='reL30.xsd' >
+
+<!-- 
+base='string', pattern='\p{IsHangulJamo}+', value='#x1100;#x11FF;', type='valid', RULE='25,36'
+-->
+
+      <elem att='&#x1100;&#x11FF;'/>
+
+ </doc>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:redefine schemaLocation="idH028.red">
+		<xsd:complexType name="uidtype">
+			<xsd:complexContent>
+				<xsd:extension base="uidtype">
+					<xsd:sequence>
+						<xsd:element name="iid" type="xsd:string"/>
+					</xsd:sequence>
+				</xsd:extension>
+			</xsd:complexContent>
+		</xsd:complexType>
+	</xsd:redefine>
+	<xsd:element name="root">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="uid" type="uidtype" maxOccurs="unbounded"/>
+				<xsd:element ref="kid" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+		<xsd:key id="foo1233" name="kuuid">
+			<xsd:selector xpath=".//kid"/>
+			<xsd:field xpath="@val"/>
+		</xsd:key>
+		<xsd:keyref id="foo123" name="kruuid" refer="kuuid">
+			<xsd:selector xpath=".//uid"/>
+			<xsd:field xpath="iid"/>
+		</xsd:keyref>
+	</xsd:element>
+	<xsd:element name="kid">
+		<xsd:complexType>
+			<xsd:attribute name="val" type="xsd:string"/>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

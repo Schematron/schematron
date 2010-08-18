@@ -1,0 +1,10 @@
+<?xml version='1.0'?>
+<root xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+       xsi:noNamespaceSchemaLocation="hexBinary002.xsd" >
+  <!-- test for simpleType list of hexBinary -->
+  <complexTest>
+    <comp_foo>12345678ABCDEF</comp_foo>
+  </complexTest>
+ 
+  <simpleTest>12345678ABCDEF</simpleTest>
+</root>

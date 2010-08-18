@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='reDI1.xsd' >
+
+<!-- 
+base='decimal', pattern='\p{Nd}+', value='10000101', type='valid', RULE=''
+-->
+
+      <elem att='10000101'/>
+
+ </doc>

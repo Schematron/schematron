@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<xs:schema id="repro" 
+                  elementFormDefault="qualified"
+                  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+                  
+       <xs:element name="item" type="xs:anySimpleType" />
+
+       <xs:element name="root">
+  	   <xs:complexType>
+	     <xs:sequence>
+		<xs:element ref="item" maxOccurs="unbounded" />
+	     </xs:sequence>
+	   </xs:complexType>
+	</xs:element>
+
+ 	<xs:element name="a" type="ct" substitutionGroup="item"/>
+
+	<xs:complexType name="ct">
+			<xs:sequence>
+				<xs:element name="e1" maxOccurs="2"/>
+				<xs:element name="e2" />
+			</xs:sequence>
+	</xs:complexType>
+</xs:schema>

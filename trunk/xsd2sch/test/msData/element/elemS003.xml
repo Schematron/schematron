@@ -1,0 +1,6 @@
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://xsdtesting elemS003.xsd" 
+xmlns="http://xsdtesting"
+>
+	<fe1_valid>ab</fe1_valid>
+</root>

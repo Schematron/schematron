@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:group name="myGroup">
+		<xs:sequence>
+			<xs:element name="myElement" type="xs:string"/>
+		</xs:sequence>
+	</xs:group>
+	<xs:complexType name="myType">
+		<xs:sequence>
+			<xs:any/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any"/>
+	</xs:complexType>
+	<xs:complexType name="fooType">
+		<xs:complexContent>
+			<xs:restriction base="myType">
+				<xs:group ref="myGroup"/>
+				<xs:attribute name="myAttr"/>
+			</xs:restriction>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="root" type="fooType"/>
+</xs:schema>

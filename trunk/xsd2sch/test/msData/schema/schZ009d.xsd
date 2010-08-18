@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="urn:z" xmlns="urn:z">
+
+<xs:import namespace="urn:x"/>
+<xs:import namespace="urn:y"/>
+  
+
+  <xs:complexType name="zType">
+	<xs:sequence>
+		<xs:element name="zId" type="xs:string"/>
+		<xs:element name="zName" type="xs:string"/>
+	</xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="zElem" type="zType"/>
+
+</xs:schema>
+

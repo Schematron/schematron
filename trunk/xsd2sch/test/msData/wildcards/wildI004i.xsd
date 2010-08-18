@@ -1,0 +1,20 @@
+﻿<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+ 
+    <xs:element name="alpha">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:any processContents="lax" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:element>
+ 
+    <xs:element name="beta">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element name="c" type="xs:string"/>
+          <xs:element name="d" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:element>
+ 
+  </xs:schema>

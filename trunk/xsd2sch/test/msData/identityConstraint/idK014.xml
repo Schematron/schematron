@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="idK014.xsd">
+	<uid val="1">
+		<pid>abc def</pid>
+	</uid>
+</root>

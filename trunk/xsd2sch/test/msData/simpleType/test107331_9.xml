@@ -1,0 +1,10 @@
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+
+<item xsi:type="ct1">1234567</item>
+<item xsi:type="ct1">abcdefgh</item>
+<item xsi:type="ct2">1.2 3.4 0.9</item>
+<item xsi:type="ct4" name="name" type="1" state="1">this is a string</item>
+
+</root>

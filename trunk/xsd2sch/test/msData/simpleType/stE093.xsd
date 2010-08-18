@@ -1,0 +1,13 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:a="a" xmlns:b="b">
+
+	<xsd:simpleType name="union">
+		<xsd:union memberTypes="xsd:float xsd:hexBinary xsd:integer xsd:QName"/>
+	</xsd:simpleType>
+
+	<xsd:element name="root" fixed="12 abcdef 4.0">
+		<xsd:simpleType>
+			<xsd:list itemType="union"/>
+		</xsd:simpleType>
+	</xsd:element>
+
+</xsd:schema>

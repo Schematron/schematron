@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<xsd:schema 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+	targetNamespace="http://xsdtesting" 
+	xmlns:x="http://xsdtesting" 
+	elementFormDefault="qualified"
+>
+
+	<xsd:import namespace="importedXSD" schemaLocation="particlesZ003.imp" />
+
+	<xsd:complexType name="B">
+		<xsd:sequence>
+			<xsd:element ref="imp:foo" xmlns:imp="importedXSD" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:element name="doc" type="x:B"/>
+
+</xsd:schema>
+

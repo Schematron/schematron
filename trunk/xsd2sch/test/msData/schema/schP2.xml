@@ -1,0 +1,7 @@
+<a:root	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="ns-a schP2_a.xsd"
+	xmlns:a="ns-a"
+>
+	<a:e1>1234</a:e1>
+	<a:b-e1>abcd</a:b-e1>
+</a:root>

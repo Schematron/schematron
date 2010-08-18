@@ -1,0 +1,12 @@
+<xs:schema xmlns:ns2="ns2" xmlns:ns1="ns1" targetNamespace="ns1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:import schemaLocation="test102850_2a.xsd" namespace="ns2"/>
+
+<xs:element type="ns1:ct" name="a"/>
+
+<xs:complexType name="ct">
+<xs:sequence>
+	<xs:any processContents="lax" minOccurs="0" namespace="##other"/>
+	<xs:group ref="ns2:g1"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

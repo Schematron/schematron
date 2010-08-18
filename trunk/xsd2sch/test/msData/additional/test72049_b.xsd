@@ -1,0 +1,13 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+targetNamespace="bar"
+elementFormDefault="qualified"
+>
+ <xsd:element name="root">
+    <xsd:complexType>
+       <xsd:sequence>
+        <xsd:element name="a"/>
+       </xsd:sequence>
+    </xsd:complexType>
+ </xsd:element>
+
+</xsd:schema>

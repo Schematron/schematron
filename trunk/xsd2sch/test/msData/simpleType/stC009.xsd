@@ -1,0 +1,5 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:simpleType name="fooType">
+		<xsd:restriction id="123" base="xsd:string"/>
+	</xsd:simpleType>
+</xsd:schema>

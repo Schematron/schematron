@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='reQ10.xsd' >
+
+<!-- 
+base='string', pattern='\c\i*a', value='zabcsdea', type='valid', RULE='37'
+-->
+
+     <elem>zabcsdea</elem>
+
+ </doc>

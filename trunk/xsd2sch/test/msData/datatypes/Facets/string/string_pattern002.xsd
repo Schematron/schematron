@@ -1,0 +1,17 @@
+<xsd:schema targetNamespace="TestNamespace" xmlns="TestNamespace"
+xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+ <xsd:element name="Xml" type="Xml"/>
+ <xsd:complexType name="Xml">
+  <xsd:sequence>
+   <xsd:element name="Hex" type="HexCodes" maxOccurs="unbounded"/>
+  </xsd:sequence>
+ </xsd:complexType>
+ <xsd:simpleType name="HexCodes">
+  <xsd:list itemType="Hex"/>
+ </xsd:simpleType>
+ <xsd:simpleType name="Hex">
+  <xsd:restriction base="xsd:string">
+   <xsd:pattern value="[0-9A-Fa-f]{2}"/>
+  </xsd:restriction>
+ </xsd:simpleType>
+</xsd:schema>

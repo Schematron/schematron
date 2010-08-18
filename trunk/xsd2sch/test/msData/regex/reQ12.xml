@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='reQ12.xsd' >
+
+<!-- 
+base='string', pattern='[\s\i]*', value='a b  c  Z  :_   d#xd;y #x9;b #xa;#x20;  ', type='valid', RULE='37'
+-->
+
+     <elem>a b  c  Z  :_   d&#xd;y &#x9;b &#xa;&#x20;  </elem>
+
+ </doc>

@@ -1,0 +1,19 @@
+<xsd:schema  xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="qualified" elementFormDefault="qualified">
+	    
+            
+	    <xsd:element name="root">
+	      <xsd:complexType>
+		<xsd:sequence maxOccurs="unbounded">
+		    <xsd:choice />
+		    <xsd:choice>
+			    <xsd:element name="E1" type="xsd:int" minOccurs="0" maxOccurs="20"/>
+			    <xsd:choice/>
+		    </xsd:choice>
+		    <xsd:choice/>
+		</xsd:sequence>
+	      </xsd:complexType>
+	    </xsd:element>
+
+
+</xsd:schema>
+

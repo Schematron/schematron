@@ -1,0 +1,18 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+targetNamespace="main"
+xmlns:m="main"
+xmlns:a="a"
+xmlns:b="b"
+>
+
+    <xsd:import namespace="a" schemaLocation="elemZ006_a.xsd"/>
+
+    <xsd:complexType name="ct">
+	<xsd:sequence>
+	    <xsd:element name="a" type="a:a"/>
+	    <xsd:element name="b" type="b:b"/>
+	</xsd:sequence>
+   </xsd:complexType>
+
+</xsd:schema>
+

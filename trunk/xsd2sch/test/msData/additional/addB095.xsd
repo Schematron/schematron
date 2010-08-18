@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" >
+
+<xsd:group name="g1">
+	<xsd:all>
+		<xsd:element name="e1" maxOccurs="2"/>
+		<xsd:element name="e2"/>
+	</xsd:all>
+</xsd:group>
+
+<xsd:element name="doc">
+	<xsd:complexType>
+		<xsd:group ref="g1" minOccurs="1" maxOccurs="1"/>
+	</xsd:complexType>
+</xsd:element>
+
+</xsd:schema>

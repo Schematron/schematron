@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='reF22.xsd' >
+
+<!-- 
+base='string', pattern='[^a-d-b-c]', value='ab', type='invalid', RULE='15,16'
+-->
+
+     <elem>ab</elem>
+
+ </doc>

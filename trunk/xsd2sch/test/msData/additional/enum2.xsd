@@ -1,0 +1,21 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">	
+
+	<xsd:element name="doc">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element minOccurs="0" type="enumType" name="foo"/>
+			</xsd:sequence>
+			<xsd:attribute ref="att"/>
+			</xsd:complexType>
+	</xsd:element>
+
+	<xsd:attribute type="enumType" name="att"/>
+
+	<xsd:simpleType name="enumType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="value"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+
+</xsd:schema>

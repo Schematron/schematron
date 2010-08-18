@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element abstract="true" name="aba" type="xs:string"/>
+    <xs:element abstract="true" name="abb" type="xs:int"/>
+    <xs:element abstract="true" name="abc" type="xs:date"/>
+    <xs:element name="a" substitutionGroup="aba" type="xs:string"/>
+    <xs:element name="b" substitutionGroup="abb" type="xs:int"/>
+    <xs:element name="c" substitutionGroup="abc" type="xs:date"/>
+    <xs:element name="d" type="xs:anyURI"/>
+    <xs:complexType name="test">
+        <xs:sequence>
+            <xs:group maxOccurs="unbounded" minOccurs="0" ref="abs"/>
+            <xs:element minOccurs="0" ref="d"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="test1">
+        <xs:complexContent>
+            <xs:restriction base="test">
+                <xs:sequence>
+                    <xs:sequence minOccurs="0" maxOccurs="1">
+                        <xs:element ref="a"/>
+                        <xs:element ref="b"/>
+                    </xs:sequence>
+                    <xs:element ref="d"/>
+                </xs:sequence>
+            </xs:restriction>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="test2">
+        <xs:complexContent>
+            <xs:restriction base="test">
+                <xs:sequence>
+                    <xs:sequence minOccurs="0" maxOccurs="0">
+                        <xs:element ref="a"/>
+                        <xs:element ref="b"/>
+                    </xs:sequence>
+                    <xs:element ref="d"/>
+                </xs:sequence>
+            </xs:restriction>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="test3">
+        <xs:complexContent>
+            <xs:restriction base="test">
+                <xs:sequence>
+                    <xs:sequence minOccurs="1" maxOccurs="2">
+                        <xs:element ref="a"/>
+                        <xs:element ref="b"/>
+                    </xs:sequence>
+                    <xs:element ref="d"/>
+                </xs:sequence>
+            </xs:restriction>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="test4">
+        <xs:complexContent>
+            <xs:restriction base="test">
+                <xs:sequence>
+                    <xs:sequence minOccurs="1" maxOccurs="1">
+                        <xs:element ref="a"/>
+                        <xs:element ref="b"/>
+                    </xs:sequence>
+                    <xs:element ref="d"/>
+                </xs:sequence>
+            </xs:restriction>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:group name="abs">
+        <xs:choice>
+            <xs:element ref="aba"/>
+            <xs:element ref="abb"/>
+            <xs:element ref="abc"/>
+        </xs:choice>
+    </xs:group>
+</xs:schema>

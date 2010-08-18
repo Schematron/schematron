@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:myNS="test">
+	<xsd:element name="root">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="keyElement"/>
+				<xsd:element ref="keyrefElement"/>
+			</xsd:sequence>
+		</xsd:complexType>
+		<xsd:key name="keyName">
+			<xsd:selector xpath=".//keyElement"/>
+			<xsd:field xpath="@keyField"/>
+		</xsd:key>
+		<xsd:keyref name="keyrefName" refer="keyName" myNS:attr="non-Schema attribute">
+			<xsd:selector xpath=".//keyrefElement"/>
+			<xsd:field xpath="@keyrefField"/>
+		</xsd:keyref>
+	</xsd:element>
+	<xsd:element name="keyElement">
+		<xsd:complexType>
+			<xsd:attribute name="keyField" type="xsd:string"/>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="keyrefElement">
+		<xsd:complexType>
+			<xsd:attribute name="keyrefField" type="xsd:string"/>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

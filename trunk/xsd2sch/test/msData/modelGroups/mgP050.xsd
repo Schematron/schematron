@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:redefine schemaLocation="foo">
+		<xsd:group name="group">
+			<xsd:all maxOccurs="2" minOccurs="2">
+				<xsd:element name="e1"/>
+			</xsd:all>
+		</xsd:group>
+	</xsd:redefine>
+</xsd:schema>

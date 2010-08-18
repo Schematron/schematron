@@ -1,0 +1,12 @@
+<root1 xmlns="foo" >
+  <root xmlns="bar">
+	<A>
+		<A1>
+			<A2>
+				<A3>YY</A3>
+			</A2>
+			<A22>YY</A22>
+		</A1>
+	</A>
+   </root>
+</root1>

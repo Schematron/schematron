@@ -1,0 +1,40 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+ 
+  <xs:simpleType name="type_a">   
+        <xs:restriction base="xs:string">
+          <xs:whiteSpace value="replace"/>
+        </xs:restriction>   
+  </xs:simpleType>
+
+<!-- There should be an error here --> 
+    <xs:simpleType name="type_b">   
+        <xs:restriction base="type_a">
+          <xs:whiteSpace value="preserve"/>
+        </xs:restriction>   
+  </xs:simpleType>
+ 
+<!-- Another error exists here --> 
+  <xs:simpleType name="type_c">
+    <xs:restriction>
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:whiteSpace value="replace"/>
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:whiteSpace value="preserve"/>
+    </xs:restriction>
+  </xs:simpleType> 
+
+<!-- This is OK -->
+ <xs:simpleType name="type_d">
+    <xs:restriction>
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:whiteSpace value="preserve"/>
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:whiteSpace value="replace"/>
+    </xs:restriction>
+  </xs:simpleType> 
+
+</xs:schema>

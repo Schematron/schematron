@@ -1,0 +1,15 @@
+<xsd:schema 
+       targetNamespace="http://b" 
+       xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+       xmlns:b="http://b" 
+       xmlns:a="http://a">
+       <xsd:import namespace="http://a"/>
+ 
+       <xsd:element name="B">
+              <xsd:complexType>
+                     <xsd:sequence>
+                           <xsd:element ref="a:A" />
+                     </xsd:sequence>
+              </xsd:complexType>
+       </xsd:element>
+</xsd:schema>

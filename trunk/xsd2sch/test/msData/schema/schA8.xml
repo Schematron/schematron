@@ -1,0 +1,8 @@
+<root 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="ns-b schA8_b.xsd" xsi:noNamespaceSchemaLocation="schA8_c.xsd" 
+    	xmlns:foo="foo">
+	<e1>
+		<a1>123</a1>
+		<a2>true</a2>
+	</e1>
+</root>

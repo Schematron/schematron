@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:po="testNS" targetNamespace="testNS" elementFormDefault="qualified">
+	<element name="purchaseOrder" type="po:PurchaseOrderType"/>
+	<element name="comment" type="string"/>
+	<complexType name="PurchaseOrderType">
+		<sequence>
+			<element name="shipTo" type="po:USAddress"/>
+			<element name="billTo" type="po:USAddress"/>
+			<element ref="po:comment" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	<complexType name="USAddress">
+		<sequence>
+			<element name="name" type="string"/>
+			<element name="street" type="string"/>
+		</sequence>
+		<attribute name="country" type="string" default="US"/>
+	</complexType>
+</schema>

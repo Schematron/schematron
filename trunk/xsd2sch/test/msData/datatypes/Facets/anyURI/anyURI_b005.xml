@@ -1,0 +1,7 @@
+<root xsi:noNamespaceSchemaLocation="anyURI_b005.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<bar>http://a/x  y</bar>
+	<bar>http://a/x%20 y</bar>
+	<bar>http://a/x%20%20y</bar>
+
+</root>

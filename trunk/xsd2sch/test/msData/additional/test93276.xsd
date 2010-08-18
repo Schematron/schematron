@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<schema
+	xmlns="http://www.w3.org/2001/XMLSchema" 
+	targetNamespace="foo" 	
+	xmlns:ts="foo" 
+	elementFormDefault="qualified">
+
+	<include schemaLocation="test93276_types.xsd" />
+	
+	<element name="root" type="ts:T0020V1Type" />
+
+	<complexType name="T0020V1Type">
+		<sequence>
+			<element name="e" type="ts:globalAddressTypeValues" />
+		</sequence>
+	</complexType>
+
+</schema>

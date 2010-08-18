@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<foo:root 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="foo test93490_1.xsd" 	
+	xmlns:foo="foo"
+	xmlns:bar="bar"
+>
+	<foo:elem2 xsi:schemaLocation="foo test93490_2.xsd" />
+
+	<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="foo" xmlns="foo">
+	</xs:schema>
+
+	<doc>
+		<elem ca1="123">test data</elem>
+	</doc>
+</foo:root>

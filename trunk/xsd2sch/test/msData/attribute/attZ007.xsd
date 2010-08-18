@@ -1,0 +1,33 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+        <xs:complexType name="One">
+                <xs:sequence>
+                        <xs:element name="elem1" minOccurs="0"/>
+                        <xs:element name="elem2" minOccurs="0"/>
+                </xs:sequence>
+                <xs:attribute name="att1" />
+                <xs:attribute name="att2"/>
+        </xs:complexType>
+        <xs:complexType name="Two">
+                <xs:complexContent>
+                        <xs:restriction base="One">
+                                <xs:attribute name="att1" use="prohibited"/>
+                        </xs:restriction>
+                </xs:complexContent>
+        </xs:complexType>
+        <xs:complexType name="Three">
+                <xs:complexContent>
+                        <xs:extension base="Two">
+                                <xs:attribute name="att1" use="required"/>
+                        </xs:extension>
+                </xs:complexContent>
+        </xs:complexType>
+	<xs:element name="doc">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="e1" type="One" />
+				<xs:element name="e2" type="Two" />
+				<xs:element name="e3" type="Three" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='reDG7.xsd' >
+
+<!-- 
+base='gMonth', pattern='[123456789]|(10|11|12)', value='9', type='valid', RULE=''
+-->
+
+      <elem att='--12--'/>
+
+ </doc>

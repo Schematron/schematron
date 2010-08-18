@@ -1,0 +1,60 @@
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="test78126.xsd">
+
+   <a att1="123" att2="true">a1</a>
+
+   <any>
+	<!-- undeclared elements with attributes -->
+	<foo bar="bla" a1="b" a2="b" a3="b"  a4="b" a5="b" a6="b" a7="b" a8="b"/>
+
+	<bar>
+		<foo bar="bla" a1="b" a2="b" a3="b"  a4="b" a5="b" a6="b" a7="b" a8="b"/>
+	</bar>
+	
+	<foo>
+	   <bar>
+		<foo bar="bla" a1="b" a2="b" a3="b"  a4="b" a5="b" a6="b" a7="b" a8="b"/>
+	   </bar>
+	</foo>
+
+	<foo>
+	   <bar>
+	<foo>
+	   <bar>
+		<foo bar="bla" a1="b" a2="b" a3="b"  a4="b" a5="b" a6="b" a7="b" a8="b"/>
+	   </bar>
+	</foo>
+	   </bar>
+	</foo>
+
+	<foo>
+	   <bar>
+	<foo>
+	   <bar>
+	<foo>
+	   <bar>
+	<foo>
+	   <bar>
+		<foo bar="bla" a1="b" a2="b" a3="b"  a4="b" a5="b" a6="b" a7="b" a8="b"/>
+	   </bar>
+	</foo>
+	   </bar>
+	</foo>
+	   </bar>
+	</foo>
+	   </bar>
+	</foo>
+
+
+
+	<!-- declared element with attribute -->
+   	<a att1="123" att2="true">a1</a>
+
+	<!-- declared but not valid element -->
+	<a>1</a>
+
+	<!-- declared but not valid attribute -->
+	<a att1="123" att2="false">blue</a>
+	<b att1="123" att2="false"/>
+   </any>
+
+</root>

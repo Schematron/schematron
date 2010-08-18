@@ -1,0 +1,19 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+ <xs:complexType name="base">  
+   <xs:sequence>
+    <xs:element name="e1" type="xs:string" />
+   </xs:sequence>
+ </xs:complexType>
+
+ <xs:complexType name="derived">  
+	<xs:complexContent>
+	<xs:restriction base="base">
+	  <xs:sequence>
+    		<xs:element name="e1" type="xs:ENTITY"/> 
+	  </xs:sequence>
+	</xs:restriction>
+	</xs:complexContent>
+ </xs:complexType>
+
+</xs:schema>

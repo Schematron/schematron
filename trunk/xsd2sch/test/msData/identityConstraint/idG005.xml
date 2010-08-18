@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="idG005.xsd">
+	<uid val="1">
+		<pid>a</pid>
+		<pid>b</pid>
+		<pid>c</pid>
+	</uid>
+</root>

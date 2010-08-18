@@ -1,0 +1,4 @@
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="test102159_1.xsd">
+	<nms>a b<!-- comment --> c d</nms>
+	<mylist>a<!-- comment --> b c d</mylist>
+</root>

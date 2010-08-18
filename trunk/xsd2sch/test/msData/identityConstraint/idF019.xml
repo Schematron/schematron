@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="idF019.xsd">
+	<t>
+		<col> 1 </col>
+		<row> 1 </row>
+	</t>
+	<t>
+		<col> 1 </col>
+		<row> 2 </row>
+	</t>
+	<t>
+		<col> 2 </col>
+		<row> 1 </row>
+	</t>
+	<t>
+		<col> 2 </col>
+		<row> 2 </row>
+	</t>
+</root>

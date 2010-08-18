@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<doc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="attgD021.xsd" xsi:schemaLocation="foo attgD021a.xsd">
+	<elem att1="123" foo:foo="foo" xmlns:foo="foo"/>
+</doc>

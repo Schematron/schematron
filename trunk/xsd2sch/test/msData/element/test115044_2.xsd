@@ -1,0 +1,11 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="foo" xmlns="foo" elementFormDefault="qualified">
+    <xsd:element name="root">
+	<xsd:complexType>
+	<xsd:sequence>
+		<xsd:element ref="e"/>
+	</xsd:sequence>
+	</xsd:complexType>
+    </xsd:element>
+    <xsd:element name="e" />
+    <xsd:element name="e1" type="xsd:int" substitutionGroup="e"/>
+</xsd:schema>

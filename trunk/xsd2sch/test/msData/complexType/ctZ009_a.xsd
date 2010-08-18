@@ -1,0 +1,14 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+
+	<xsd:element name="root">
+		<xsd:complexType>
+			<xsd:choice minOccurs="0" maxOccurs="unbounded">
+				<xsd:element name="foo" minOccurs="3" maxOccurs="5"/>
+				<xsd:element name="sg" minOccurs="3" maxOccurs="5"/>
+			</xsd:choice>
+		</xsd:complexType>
+	</xsd:element>
+
+
+</xsd:schema>

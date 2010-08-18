@@ -1,0 +1,14 @@
+<xsd:schema 
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+>
+
+<xsd:element name="foo" type="weightType" />
+
+<xsd:simpleType name="weightType">
+    <xsd:restriction base="xsd:decimal">
+        <xsd:totalDigits value="5"/>
+        <xsd:fractionDigits value="2"/>
+    </xsd:restriction>
+</xsd:simpleType>
+
+</xsd:schema>

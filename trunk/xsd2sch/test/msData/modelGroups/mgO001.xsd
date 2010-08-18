@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="doc" type="foo"/>
+	<xs:complexType name="foo">
+		<xs:all minOccurs="0" maxOccurs="0">
+			<xs:element name="e1"/>
+		</xs:all>
+	</xs:complexType>
+</xs:schema>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="root">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="r" type="test" maxOccurs="10"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:simpleType name="test">
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="(ab){2}x"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

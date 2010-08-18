@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+<!-- XSD has element pointing to nonexistant type, XML uses xsi:type to access the same nonexistant type   -->
+
+<xsd:element name='root'>
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref='foo test' />
+      </xsd:sequence>
+    </xsd:complexType>
+</xsd:element>
+
+<xsd:element name='foo test' type='myType' />
+
+<xsd:complexType name="fooType" abstract="true">
+	<xsd:sequence>
+		<xsd:element name="fooEle1" type="xsd:string" />
+		<xsd:element name="fooEle2" type="xsd:integer" />
+	</xsd:sequence>
+</xsd:complexType>
+
+</xsd:schema>

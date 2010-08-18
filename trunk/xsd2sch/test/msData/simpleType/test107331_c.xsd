@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<xs:schema id="repro" 
+                  elementFormDefault="qualified"
+                  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+                  
+       <xs:element name="item" type="xs:anySimpleType" />
+
+       <xs:element name="root">
+  	   <xs:complexType>
+	     <xs:sequence>
+		<xs:element ref="item" maxOccurs="unbounded" />
+	     </xs:sequence>
+	   </xs:complexType>
+	</xs:element>
+
+
+ 	<xs:element name="A" type="base-A" substitutionGroup="item"/>
+ 	<xs:element name="B" type="base-B" substitutionGroup="item"/>
+ 	<xs:element name="a" type="A" substitutionGroup="item"/>
+ 	<xs:element name="b" type="B" substitutionGroup="item"/>
+ 	<xs:element name="ua" type="Union-A" substitutionGroup="item"/>
+ 	<xs:element name="uab" type="Union-AB" substitutionGroup="item"/>
+ 	<xs:element name="la" type="List-A" substitutionGroup="item"/>
+ 	<xs:element name="lab" type="List-AB" substitutionGroup="item"/>
+ 	<xs:element name="ra" type="R-A" substitutionGroup="item"/>
+
+	<xs:simpleType name="base-A">
+		<xs:restriction base="xs:int">
+			<xs:minExclusive value="0"/>
+			<xs:maxInclusive value="10"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="base-B">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="0"/>
+			<xs:maxLength value="10"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="A">
+		<xs:restriction base="base-A">
+			<xs:enumeration value="1"/>
+			<xs:enumeration value="2"/>
+			<xs:enumeration value="3"/>
+			<xs:enumeration value="4"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="B">
+		<xs:restriction base="base-B">
+			<xs:enumeration value="a"/>
+			<xs:enumeration value="b"/>
+			<xs:enumeration value="c123456789"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="Union-A">
+		<xs:union memberTypes="A"/>
+	</xs:simpleType>
+
+	<xs:simpleType name="Union-AB">
+		<xs:union memberTypes="A B"/>
+	</xs:simpleType>
+
+	<xs:simpleType name="List-A">
+		<xs:list itemType="A"/>
+	</xs:simpleType>
+
+	<xs:simpleType name="List-AB">
+		<xs:list itemType="Union-AB"/>
+	</xs:simpleType>
+
+	<xs:simpleType name="R-A">
+		<xs:restriction base="A">
+			<xs:enumeration value="1"/>
+			<xs:enumeration value="2"/>
+		</xs:restriction>	
+	</xs:simpleType>
+
+
+</xs:schema>

@@ -1,0 +1,35 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="foo" xmlns="foo" elementFormDefault="qualified">
+
+<xsd:element name="root" >
+	<xsd:complexType>
+		<xsd:sequence>
+			<xsd:element name="e" type="ct" maxOccurs="3"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:element>
+
+ <xsd:simpleType name="myunion">
+ 	<xsd:union memberTypes="myboolean myint mystring" />
+ </xsd:simpleType>
+
+<xsd:simpleType name="myint">
+	<xsd:restriction base="xsd:int"/>
+</xsd:simpleType>
+<xsd:simpleType name="myboolean">
+	<xsd:restriction base="xsd:boolean"/>
+</xsd:simpleType>
+<xsd:simpleType name="mystring">
+	<xsd:restriction base="xsd:string"/>
+</xsd:simpleType>
+ 
+ <xsd:complexType name="ct">
+	<xsd:simpleContent>
+		<xsd:extension base="xsd:string">
+			<xsd:attribute name="att1" type="myunion" default="false"/>
+			<xsd:attribute name="att2" type="myunion" default="5"/>
+			<xsd:attribute name="att3" type="myunion" default="abc"/>
+		</xsd:extension>
+	</xsd:simpleContent>
+ </xsd:complexType>
+ 
+</xsd:schema>

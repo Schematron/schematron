@@ -1,0 +1,56 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+targetNamespace="ns-a"
+xmlns="ns-a"
+elementFormDefault="qualified"
+>
+	
+	<xsd:redefine schemaLocation="schT3_b.xsd">
+		<xsd:attributeGroup name="b-g2">
+			<xsd:attribute name="att1" />
+			<xsd:attribute name="att2" use="optional"/>
+			<xsd:attribute name="att3" use="required"/>
+			<xsd:attribute name="att4" use="prohibited"/>
+
+			<xsd:attribute name="att5" />
+			<xsd:attribute name="att6" use="optional"/>
+			<xsd:attribute name="att7" use="required"/>
+			<xsd:attribute name="att8" use="prohibited"/>
+
+			<xsd:attribute name="att9" use="required"/>
+			<xsd:attribute name="att10" use="prohibited"/>
+			
+			<xsd:attribute name="att11" type="derived-b-st"/>
+			
+			<xsd:attribute name="att12" default="abc"/>
+			<xsd:attribute name="att13" fixed="fix"/>
+			<xsd:attribute name="att14" default="abc"/>
+			<xsd:attribute name="att15" fixed="fix"/>
+			<xsd:attribute name="att16" fixed="fix"/>
+
+		</xsd:attributeGroup>
+  	</xsd:redefine>
+
+	<xsd:simpleType name="derived-b-st">
+		<xsd:restriction base="b-st">
+			<xsd:totalDigits value="1"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:complexType name="A-ct">
+		<xsd:attributeGroup ref="b-g2"/>
+	</xsd:complexType>
+	
+	<xsd:element name="e1" type="A-ct" />
+	<xsd:element name="e2" type="b-st" />
+	
+	<xsd:element name="root">
+		<xsd:complexType>
+			<xsd:choice maxOccurs="unbounded">
+				<xsd:any namespace="##any" processContents="strict"/>
+			</xsd:choice>
+		</xsd:complexType>
+	</xsd:element>
+
+</xsd:schema>
+
+

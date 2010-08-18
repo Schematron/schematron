@@ -1,0 +1,7 @@
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<item>abc</item>
+<item xsi:type="xs:anySimpleType">abc</item>
+
+</root>

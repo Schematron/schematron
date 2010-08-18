@@ -1,0 +1,10 @@
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="b" xmlns="b">
+
+ <xs:attribute name="attB"/>
+
+ <xs:attributeGroup name="attG-b">
+     <xs:anyAttribute namespace="##any"/>
+ </xs:attributeGroup>
+
+
+</xs:schema>

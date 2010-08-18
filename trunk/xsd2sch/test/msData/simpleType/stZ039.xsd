@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	    elementFormDefault="unqualified">
+
+ <xsd:element name="AlphaTestValue" type="AlphaNumMaxLength6"/>
+
+ <!-- <xsd:element name="AlphaTestValue" type="AlphaNumType"/> -->
+
+ <xsd:simpleType name="AlphaNumType">
+  <xsd:restriction base="xsd:string">
+   <xsd:pattern value="[A-Z]*"/>   
+  </xsd:restriction>
+ </xsd:simpleType>
+
+ <xsd:simpleType name="AlphaNumMaxLength6">
+  <xsd:restriction base="AlphaNumType">
+   <xsd:maxLength value="6"/>
+  </xsd:restriction>
+ </xsd:simpleType>
+
+</xsd:schema>

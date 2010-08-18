@@ -1,0 +1,10 @@
+<?xml version='1.0'?>
+<root xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+       xsi:noNamespaceSchemaLocation="token.xsd" >
+  <complexTest>
+  <!-- value=a  b -->
+    <comp_foo>a  b</comp_foo>
+  </complexTest>
+ 
+  <simpleTest>a  b</simpleTest>
+</root>

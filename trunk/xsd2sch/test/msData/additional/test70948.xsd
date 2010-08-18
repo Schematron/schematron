@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<xs:schema 	targetNamespace="http://xsdtesting" 
+			xmlns="http://xsdtesting" 
+			xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+
+	<xs:complexType name="confuse">
+		<xs:simpleContent>
+			<xs:extension base="xs:decimal" />
+		</xs:simpleContent>
+	</xs:complexType>
+
+	<xs:complexType name="myType">
+		<xs:simpleContent>
+			<xs:restriction base="confuse">
+				<xs:simpleType>
+					<xs:restriction base="xs:integer" />
+				</xs:simpleType>
+				<xs:maxInclusive value="16" />
+			</xs:restriction>
+		</xs:simpleContent>
+	</xs:complexType>
+
+	<xs:element name="root" type="myType">
+	</xs:element>
+</xs:schema>
+
+

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<root 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="test93490_5.xsd"	
+>
+	<elem2 />
+
+	<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+		<xs:element name="doc"/>
+	</xs:schema>
+
+	<doc></doc>
+</root>

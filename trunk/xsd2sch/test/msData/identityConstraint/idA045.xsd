@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="root">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="uniqueElement"/>
+			</xsd:sequence>
+		</xsd:complexType>
+		<xsd:unique name="fooID">
+			<xsd:selector xpath=".//uniqueElement"/>
+			<xsd:field xpath="@keyField"/>
+			<xsd:field xpath="subData"/>
+		</xsd:unique>
+	</xsd:element>
+	<xsd:element name="uniqueElement">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="subData" type="xsd:string"/>
+			</xsd:sequence>
+			<xsd:attribute name="keyField" type="xsd:string"/>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

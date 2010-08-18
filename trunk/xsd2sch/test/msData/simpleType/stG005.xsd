@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="root">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="fooTest"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="fooTest" type="fooType"/>
+	<xsd:simpleType name="myUnion">
+		<xsd:union>
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:integer"/>
+			</xsd:simpleType>
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:NMTOKEN">
+					<xsd:enumeration value="WA"/>
+					<xsd:enumeration value="OR"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:union>
+	</xsd:simpleType>
+	<xsd:simpleType name="fooType">
+		<xsd:list itemType="myUnion">
+		</xsd:list>
+	</xsd:simpleType>
+</xsd:schema>

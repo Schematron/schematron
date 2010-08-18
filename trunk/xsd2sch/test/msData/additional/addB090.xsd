@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:x = "http://xsdtesting"
+    elementFormDefault = "qualified">
+
+
+<xsd:complexType name="base">
+	<xsd:choice>
+		<xsd:any namespace="foo" maxOccurs="3" processContents="skip"/>
+	</xsd:choice>
+</xsd:complexType>
+
+
+<xsd:element name="doc">
+	<xsd:complexType>
+		<xsd:complexContent>
+			<xsd:extension base="base" >
+				<xsd:choice>
+					<xsd:element name="c1"/>
+					<xsd:element name="c2"/>
+				</xsd:choice>			
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+</xsd:element>
+
+<xsd:element name="foo"/>
+
+</xsd:schema>

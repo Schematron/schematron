@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="urn:my-namespace" xmlns:my="urn:my-namespace"
+xmlns="http://www.w3.org/2001/XMLSchema"> 
+   
+  <element name="Head2" type="string" abstract="true"/>
+     
+  <element name="Member2" type="string" substitutionGroup="my:Head2"/>
+   
+  <complexType name="ContainHead2Type" abstract="true">
+    <sequence>
+      <element ref="my:Head2"/>
+    </sequence>
+  </complexType>
+   
+  <complexType name="ContainMember2Type">
+    <complexContent>
+      <restriction base="my:ContainHead2Type">
+        <sequence>
+          <element ref="my:Member2"/>
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+   
+
+  <element name="root" type="my:ContainMember2Type" />
+
+</schema>

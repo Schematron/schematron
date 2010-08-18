@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='reL74.xsd' >
+
+<!-- 
+base='string', pattern='\p{IsHangulSyllables}+', value='#xAC00;#xD7A3;', type='valid', RULE='25,36'
+-->
+
+      <elem att='&#xAC00;&#xD7A3;'/>
+
+ </doc>

@@ -1,0 +1,30 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="e2" type="xs:integer" default="5"/>
+
+<xs:simpleType name="s1">
+ <xs:restriction base="xs:int">
+	<xs:maxInclusive value="6"/>
+ </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="s2">
+ <xs:restriction base="s1">
+	<xs:maxInclusive value="4"/>
+ </xs:restriction>
+</xs:simpleType>
+
+
+<xs:complexType name="Employee">
+ <xs:attribute name="Dept" type="xs:ID" fixed="abc"/>
+</xs:complexType>
+
+<xs:element name="Employee" type="Employee"/>
+<xs:element name="Employees">
+<xs:complexType>
+ <xs:sequence>
+  <xs:element ref="Employee" maxOccurs="unbounded"/>
+ </xs:sequence> 
+</xs:complexType>
+</xs:element>
+</xs:schema>

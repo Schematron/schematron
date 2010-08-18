@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:simpleType name="listOfMyInt">
+		<xsd:list>
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:integer">
+					<xsd:minInclusive value="10000"/>
+					<xsd:maxInclusive value="99999"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:list>
+	</xsd:simpleType>
+	<xsd:simpleType name="UnionTest">
+		<xsd:union memberTypes="xsd:integer  foo:listOfMyInt"/>
+	</xsd:simpleType>
+</xsd:schema>

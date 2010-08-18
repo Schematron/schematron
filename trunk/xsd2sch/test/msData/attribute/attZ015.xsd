@@ -1,0 +1,23 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+<xsd:complexType name="base">
+	<xsd:attribute name="a" />
+</xsd:complexType>
+
+<xsd:complexType name="derived">
+  <xsd:complexContent>
+
+    <xsd:restriction base="base">
+      <xsd:attributeGroup ref="attG"/>
+    </xsd:restriction>
+
+  </xsd:complexContent>
+</xsd:complexType>
+
+<xsd:attributeGroup name="attG">
+ <xsd:attribute name="a" use="prohibited"/> 
+</xsd:attributeGroup>
+
+<xsd:element name="doc" type="derived" />
+
+</xsd:schema>

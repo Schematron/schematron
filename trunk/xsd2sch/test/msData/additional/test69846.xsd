@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" >
+
+<!-- unique category, instance member (a)=1, boolean; instance member (b)=1, number -->
+
+    <xsd:element name='root'>
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="uid"  maxOccurs="unbounded"/>
+            </xsd:sequence>
+        </xsd:complexType>
+
+	<!--<xsd:unique id="foo123" name="uuid">
+	    <xsd:selector xpath=".//uid" />
+	    <xsd:field xpath="."/>
+	</xsd:unique>-->
+
+    </xsd:element>
+
+    <xsd:element name="uid" type="xsd:anyType"/>
+
+</xsd:schema>

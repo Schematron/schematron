@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='reDD1.xsd' >
+
+<!-- 
+base='duration', pattern='P\p{Nd}{4}Y\p{Nd}{2}M', value='P1111Y12M', type='valid', RULE=''
+-->
+
+      <elem att='P1111Y12M'/>
+
+ </doc>

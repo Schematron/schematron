@@ -1,0 +1,3 @@
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="elemT034.xsd">
+	<test xsi:type="Union-A">1</test>
+</root>

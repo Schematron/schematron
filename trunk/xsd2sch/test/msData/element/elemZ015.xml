@@ -1,0 +1,14 @@
+<xTask 
+xmlns="http://xsdtesting" 
+xmlns:f="http://xsdtesting" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns:mstns="http://xsdtesting"
+xsi:schemaLocation="http://xsdtesting elemZ015.xsd"
+>
+
+            <xTaskProperty  name="foo" xsi:type="select">
+                        <f:option default="true"></f:option>
+                        <f:option default="true"></f:option>
+            </xTaskProperty>
+</xTask>
+

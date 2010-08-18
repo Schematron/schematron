@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:annotation>
+		<xsd:appinfo>
+		some text content
+	</xsd:appinfo>
+		<xsd:appinfo>
+		some text content
+	</xsd:appinfo>
+		<xsd:documentation>
+		some text content
+	</xsd:documentation>
+		<xsd:documentation>
+		some text content
+	</xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

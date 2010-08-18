@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:complexType name="fooType">
+		<xs:anyAttribute namespace="##any"/>
+	</xs:complexType>
+	<xs:attribute name="attrTest" type="xs:string"/>
+	<xs:element name="root" type="fooType"/>
+</xs:schema>

@@ -1,0 +1,11 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:complexType name="RegistryValueModOpSetType">
+	  <xs:sequence>
+	    <xs:element name="regvalueop" type="xs:string" fixed="reg_value_delete"/>
+	    <xs:element name="regvalueop" type="xs:string" fixed="reg_value_write"/>
+	  </xs:sequence>
+	</xs:complexType>
+
+ <xs:element name="regvaluemodopset" type="RegistryValueModOpSetType"/>
+</xs:schema>

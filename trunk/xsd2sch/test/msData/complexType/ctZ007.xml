@@ -1,0 +1,14 @@
+<cust:Customers xmlns:cust="urn:xmlns:25hoursaday-com:customer" xmlns:addr="urn:xmlns:25hoursaday-com:address"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="urn:xmlns:25hoursaday-com:address ctZ007_a.xsd urn:xmlns:25hoursaday-com:customer ctZ007_b.xsd"
+>
+ <addr:MyCustomer customerID="12345" >
+  <cust:FirstName>Dare</cust:FirstName>
+  <cust:LastName>Obasanjo</cust:LastName>
+  <cust:PhoneNumber>425-555-1234</cust:PhoneNumber>
+  <addr:Address>2001</addr:Address>
+  <addr:City>Redmond</addr:City>
+  <addr:State>WA</addr:State>
+  <addr:Zip>98052</addr:Zip>
+ </addr:MyCustomer>
+</cust:Customers>

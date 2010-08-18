@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://xsdtesting" xmlns:x="http://xsdtesting">
+	<xsd:attribute name="ga1" type="xsd:integer">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string"/>
+		</xsd:simpleType>
+	</xsd:attribute>
+	<xsd:attribute name="ga2" type="xsd:integer"/>
+	<xsd:attributeGroup name="attG">
+		<xsd:attribute name="aga1"/>
+		<xsd:attribute name="aga2"/>
+	</xsd:attributeGroup>
+	<xsd:complexType name="attRef">
+		<xsd:attribute name="ca1"/>
+		<xsd:attribute name="ca2"/>
+		<xsd:attributeGroup ref="x:attG"/>
+		<xsd:attribute ref="x:ga2"/>
+	</xsd:complexType>
+	<xsd:element name="doc">
+		<xsd:complexType>
+			<xsd:choice>
+				<xsd:element name="elem" type="x:attRef"/>
+			</xsd:choice>
+			<xsd:attribute ref="x:ga1"/>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

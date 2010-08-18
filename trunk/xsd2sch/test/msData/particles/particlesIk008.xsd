@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://xsdtesting" xmlns:x="http://xsdtesting" elementFormDefault="qualified">
+	<xsd:simpleType name="U">
+		<xsd:union>
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:float"/>
+			</xsd:simpleType>
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:integer"/>
+			</xsd:simpleType>
+		</xsd:union>
+	</xsd:simpleType>
+	<xsd:simpleType name="myString2">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="l1"/>
+			<xsd:enumeration value="l2"/>
+			<xsd:enumeration value="l3"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="L2">
+		<xsd:list itemType="x:myString2"/>
+	</xsd:simpleType>
+	<xsd:complexType name="B">
+		<xsd:choice>
+			<xsd:element name="c1" type="x:U"/>
+			<xsd:element name="c2"/>
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="R">
+		<xsd:complexContent>
+			<xsd:restriction base="x:B">
+				<xsd:choice>
+					<xsd:element name="c1" type="x:L2"/>
+					<xsd:element name="c2"/>
+				</xsd:choice>
+			</xsd:restriction>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:element name="doc">
+		<xsd:complexType>
+			<xsd:choice>
+				<xsd:element name="elem" type="x:R"/>
+			</xsd:choice>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

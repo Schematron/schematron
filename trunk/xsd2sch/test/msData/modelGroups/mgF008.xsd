@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="doc" type="foo"/>
+	<xsd:complexType name="foo">
+		<xsd:sequence>
+			<xsd:annotation>
+				<xsd:documentation>
+				Test Test
+			</xsd:documentation>
+			</xsd:annotation>
+			<xsd:any namespace="http://www.w3.org/1999/xhtml" minOccurs="1" maxOccurs="unbounded" processContents="skip"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

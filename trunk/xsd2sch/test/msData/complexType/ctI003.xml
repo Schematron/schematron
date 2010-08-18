@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ctI003.xsd" fooType="attribute">
+	<myEle3>token</myEle3>
+	<myEle4>1234567890123456789</myEle4>
+</root>

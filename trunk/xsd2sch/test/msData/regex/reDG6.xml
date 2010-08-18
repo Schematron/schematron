@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='reDG6.xsd' >
+
+<!-- 
+base='gDay', pattern='([123]0)|([12]?[1-9])|(31)', value='30', type='valid', RULE=''
+-->
+
+     <elem>---30</elem>
+
+ </doc>

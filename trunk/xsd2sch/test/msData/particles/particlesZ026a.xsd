@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema targetNamespace="http://schema1" elementFormDefault="qualified" xmlns="http://schema1" xmlns:mstns="http://schema1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<!-- dummy concrete outer element -->
+    <xs:element name="Foo">
+		<xs:complexType>
+			<xs:sequence>
+                <xs:element ref="AbstractStatement" minOccurs="1" maxOccurs="1" />
+			</xs:sequence>
+		</xs:complexType>
+    </xs:element>
+    
+    <xs:element name="AbstractStatement" type="StatementType" abstract="true" />
+    <xs:element name="Sequence" type="SequenceType" substitutionGroup="AbstractStatement" />
+    <xs:element name="AbstractItem" type="ItemType" substitutionGroup="AbstractStatement" abstract="true" />
+    <xs:element name="ManagedItem" type="ManagedItemType" substitutionGroup="AbstractItem" />
+
+    <xs:complexType name="StatementType" abstract="true">
+        <xs:attribute name="Name" type="xs:string" use="required" />
+    </xs:complexType>
+
+    <xs:complexType name="NestedStatementType" abstract="true">
+        <xs:complexContent>
+            <xs:extension base="StatementType">
+                <xs:sequence>
+                    <xs:element ref="AbstractStatement" minOccurs="1" maxOccurs="unbounded" />
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="SequenceType">
+        <xs:complexContent>
+            <xs:extension base="NestedStatementType">
+                <xs:attribute name="StatementAssembly" type="xs:string" fixed="Microsoft.Wtt.TestHarness.Thstatements" />
+                <xs:attribute name="StatementClass" type="xs:string" fixed="Microsoft.Wtt.TestHarness.SequenceStatement" />
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="ItemType" abstract="true">
+        <xs:complexContent>
+            <xs:extension base="StatementType">
+                <xs:attribute name="StatementAssembly" type="xs:string" fixed="Microsoft.Wtt.TestHarness.Thstatements" />
+                <xs:attribute name="StatementClass" type="xs:string" fixed="Microsoft.Wtt.TestHarness.ItemStatement" />
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="ManagedItemType">
+        <xs:complexContent>
+            <xs:extension base="ItemType">
+                <xs:attribute name="Assembly" type="xs:string" use="required" />
+                <xs:attribute name="Class" type="xs:string" use="required" />
+                <xs:attribute name="StatementAssembly" type="xs:string" fixed="Microsoft.Wtt.TestHarness.Managedstatements" />
+                <xs:attribute name="StatementClass" type="xs:string" fixed="Microsoft.Wtt.TestHarness.ManagedItemStatement" />
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+</xs:schema>
