@@ -1252,7 +1252,7 @@
 <current date="2006-07-16" status="accepted"/>
 </instanceTest>
 </testGroup>
-   <testGroup name="particlesDa001">
+   <!--<testGroup name="particlesDa001">
         <annotation>
             <documentation>TEST :3.9.1 The Particle Schema Component [ check length of element
                 information items ] : The {term} is 'element' with scope=local, abstract=absent,
@@ -1271,7 +1271,7 @@
             <expected validity="invalid"/>
             <current date="2006-07-16" status="accepted"/>
         </instanceTest>
-    </testGroup>
+    </testGroup>-->
     <testGroup name="particlesDa002">
         <annotation>
             <documentation>TEST :3.9.1 The Particle Schema Component [ check length of element
@@ -1328,7 +1328,7 @@
             <expected validity="invalid"/>
             <current date="2006-07-16" status="accepted"/>
         </instanceTest>
-    </testGroup>-->
+    </testGroup>
     <testGroup name="particlesDa005">
         <annotation>
             <documentation>TEST :3.9.1 The Particle Schema Component [ check length of element
@@ -1378,7 +1378,7 @@
             <current date="2006-07-16" status="accepted"/>
         </schemaTest>
     </testGroup>
-    <testGroup name="particlesDb001">
+    <!--<testGroup name="particlesDb001">
         <annotation>
             <documentation>TEST :3.9.1 The Particle Schema Component [ check length of element
                 information items ] : The {term} is 'element' with scope=global, abstract=absent,
@@ -1397,7 +1397,7 @@
             <expected validity="invalid"/>
             <current date="2006-07-16" status="accepted"/>
         </instanceTest>
-    </testGroup>
+    </testGroup>-->
     <testGroup name="particlesDb002">
         <annotation>
             <documentation>TEST :3.9.1 The Particle Schema Component [ check length of element
@@ -1589,7 +1589,7 @@
             <expected validity="invalid"/>
             <current date="2006-07-16" status="accepted"/>
         </instanceTest>
-    </testGroup>-->
+    </testGroup>
     <testGroup name="particlesDc001">
         <annotation>
             <documentation>TEST :3.9.1 The Particle Schema Component [ check length of element

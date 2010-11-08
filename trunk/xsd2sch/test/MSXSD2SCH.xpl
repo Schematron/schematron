@@ -2,10 +2,10 @@
 <?oxygen RNGSchema="file:/Applications/oxygen%2011.2/frameworks/xproc/xproc.rnc" type="compact"?>
 
 <!-- RUNNING FROM THE COMMAND LINE -->
-<!-- C:\Program Files\xmlcalabash-0.9.23\
-    calabash C:\Users\Paul\XSD2SCH\MSXSD2SCH.xpl -->
-<!-- C:\Program Files\calumet-1.0.11\bin>
-    calumet -c config.xml C:\Users\Paul\XSD2SCH\MSXSD2SCH.xpl-->
+<!-- C:\Program Files\xmlcalabash-0.9.24\
+    calabash C:\Users\Paul\XSD2SCH\trunk\xsd2sch\test\MSXSD2SCH.xpl -->
+<!-- C:\Program Files\calumet-1.0.12\bin>
+    calumet -c config.xml C:\Users\Paul\XSD2SCH\trunk\xsd2sch\test\MSXSD2SCH.xpl-->
 
 <p:declare-step 
     xmlns:p="http://www.w3.org/ns/xproc"
@@ -36,10 +36,6 @@
     <p:variable name="folderpath" select="concat($filepath,'/../')"/>
     <!-- setting the directory with the tests -->
     <p:variable name="testpath" select="concat($folderpath,'msMeta/')"/>
-   
-    
-    <!-- Detecting the XProc processor used -->
-    <p:variable name="product" select="p:system-property('p:product-name')"/>
     
     <!-- Importing the Calabash extension steps -->    
     <p:import href="http://xmlcalabash.com/extension/steps/library-1.0.xpl"/>
@@ -82,18 +78,22 @@
             <p:pipe port="result" step="store"/>
         </p:output>
         <!--  Loop over these files  -->
-        <!-- TEMPORARY FIX using position() to take a subset: looping over all the files lead to a JAVA HEAP SPACE error both in Calabash and Calumet[position() &gt; 12]] -->
-        <p:iteration-source select="/c:directory/c:file[position() = 1]"/>
+        <!-- XMLCALABASH TEMPORARY FIX use position() to take a subset: looping over all the files leads to a JAVA HEAP SPACE error -->
+        <p:iteration-source select="/c:directory/c:file"/>
         <p:variable name="path" select="/c:file/@name"/>
         <p:variable name="file" select="/c:file/@file"/>
+        <!-- Detecting the XProc processor used -->
+        <p:variable name="product" select="p:system-property('p:product-name')"/>
         
-        <!-- switch comments between cx (calabash) and emx (calumesh) messages due to use-when not allowed on emx:message -->
-       <!-- <cx:message>
-            <p:with-option name="message" select="concat('>>>>>>> FILE: ', $file)"/>
-        </cx:message>-->
-        <emx:message>
+        <!-- XMLCALABASH TEMPORARY FIX comment all messages since error thrown -->
+        <cx:message p:use-when="contains(p:system-property('p:product-name'),'Calabash')">
+            <p:with-option name="message" select="concat('FILE: ', $file)"/>
+        </cx:message>
+        <emx:message p:use-when="contains(p:system-property('p:product-name'),'Calumet')">
             <p:with-option name="message" select="concat('FILE: ', $file)"/>
         </emx:message>
+        
+        
         <!-- Read the file-->
         <p:load>
             <p:with-option name="href" select="$path"/>
@@ -111,18 +111,23 @@
                 select="substring-after(/wts:testGroup/wts:schemaTest/wts:schemaDocument[1]/@xlink:href,'/')"/>
             <p:variable name="xml"
                 select="substring-after(/wts:testGroup/wts:instanceTest/wts:instanceDocument/@xlink:href,'/')"/>
-            <emx:message>
+            
+            <!-- XMLCALABASH TEMPORARY FIX comment all messages since error thrown -->
+            <emx:message p:use-when="contains(p:system-property('p:product-name'),'Calumet')">
                 <p:with-option name="message" select="concat('XSD: ', $xsd)"/>
             </emx:message>
-            <emx:message>
+            <emx:message p:use-when="contains(p:system-property('p:product-name'),'Calumet')">
                 <p:with-option name="message" select="concat('XML: ', $xml)"/>
             </emx:message>
-           <!-- <cx:message>
-                <p:with-option name="message" select="concat('>>>>> XSD: ', $xsd)"/>
+            <cx:message p:use-when="contains(p:system-property('p:product-name'),'Calabash')">
+                <p:with-option name="message" select="concat('XSD: ', $xsd)"/>
             </cx:message>
-            <cx:message>
-                <p:with-option name="message" select="concat('>>>>>> XML: ', $xml)"/>
-            </cx:message>-->
+            <cx:message p:use-when="contains(p:system-property('p:product-name'),'Calabash')">
+                <p:with-option name="message" select="concat('XML: ', $xml)"/>
+            </cx:message>
+            
+            
+            
             <!-- Load the respective schema -->
             <p:load name="schema">
                 <p:with-option name="href" select="concat('./',$xsd)"/>
