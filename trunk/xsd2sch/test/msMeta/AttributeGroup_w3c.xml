@@ -296,7 +296,7 @@
 <current date="2006-07-16" status="accepted"/>
 </schemaTest>
 </testGroup>
-<testGroup name="attgC004">
+<!--<testGroup name="attgC004">
 <annotation>
 <documentation>TEST :Syntax Checking for Attribute Declaration (ID) : Test attributeGroup declaration: parent is attributeGroup, ref='name of a global attribute group from included xsd'</documentation>
 </annotation>
@@ -306,7 +306,7 @@
 <expected validity="valid"/>
 <current date="2006-07-16" status="accepted"/>
 </schemaTest>
-</testGroup>
+</testGroup>-->
 <testGroup name="attgC005">
 <annotation>
 <documentation>TEST :Syntax Checking for Attribute Declaration (ID) : Test attributeGroup declaration: can only reference global attributeGroup parent is attributeGroup, ref='name of global attribute group declared at the end of xsd'</documentation>
@@ -825,7 +825,7 @@
 <current date="2006-07-16" status="accepted"/>
 </schemaTest>
 </testGroup>
-<testGroup name="attgD003">
+<!--<testGroup name="attgD003">
 <annotation>
 <documentation>TEST :Syntax Checking for Attribute Declaration (ID) : attributeGroup with 2000 attribute decl as child, the xml has the 2000 attributes</documentation>
 </annotation>
@@ -840,7 +840,7 @@
 <expected validity="valid"/>
 <current date="2006-07-16" status="accepted"/>
 </instanceTest>
-</testGroup>
+</testGroup>-->
 <testGroup name="attgD004">
 <annotation>
 <documentation>TEST :Syntax Checking for Attribute Declaration (ID) : attributeGroup with just another attributeGroup, the xml has the attributes</documentation>

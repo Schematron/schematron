@@ -2,7 +2,7 @@
 <?oxygen RNGSchema="file:/Applications/oxygen%2011.2/frameworks/xproc/xproc.rnc" type="compact"?>
 
 <!-- RUNNING FROM THE COMMAND LINE -->
-<!-- C:\Program Files\xmlcalabash-0.9.24\
+<!-- C:\Program Files\xmlcalabash-0.9.30\ SET -Xmx to 1500m
     calabash C:\Users\Paul\XSD2SCH\trunk\xsd2sch\test\MSXSD2SCH.xpl -->
 <!-- C:\Program Files\calumet-1.0.12\bin>
     calumet -c config.xml C:\Users\Paul\XSD2SCH\trunk\xsd2sch\test\MSXSD2SCH.xpl-->
@@ -78,7 +78,6 @@
             <p:pipe port="result" step="store"/>
         </p:output>
         <!--  Loop over these files  -->
-        <!-- XMLCALABASH TEMPORARY FIX use position() to take a subset: looping over all the files leads to a JAVA HEAP SPACE error -->
         <p:iteration-source select="/c:directory/c:file"/>
         <p:variable name="path" select="/c:file/@name"/>
         <p:variable name="file" select="/c:file/@file"/>
@@ -87,6 +86,7 @@
         
         <!-- XMLCALABASH TEMPORARY FIX comment all messages since error thrown -->
         <cx:message p:use-when="contains(p:system-property('p:product-name'),'Calabash')">
+        <cx:message>
             <p:with-option name="message" select="concat('FILE: ', $file)"/>
         </cx:message>
         <emx:message p:use-when="contains(p:system-property('p:product-name'),'Calumet')">
@@ -120,9 +120,11 @@
                 <p:with-option name="message" select="concat('XML: ', $xml)"/>
             </emx:message>
             <cx:message p:use-when="contains(p:system-property('p:product-name'),'Calabash')">
+            <cx:message>
                 <p:with-option name="message" select="concat('XSD: ', $xsd)"/>
             </cx:message>
             <cx:message p:use-when="contains(p:system-property('p:product-name'),'Calabash')">
+            <cx:message>
                 <p:with-option name="message" select="concat('XML: ', $xml)"/>
             </cx:message>
             
@@ -164,7 +166,7 @@
                 <p:xslt name="xsd-expand-ref">
                     <p:input port="source"/>
                     <p:input port="stylesheet">
-                        <p:document href="../code//expand.xsl"/>
+                        <p:document href="../code/expand.xsl"/>
                     </p:input>
                     <p:input port="parameters">
                         <p:empty/>
