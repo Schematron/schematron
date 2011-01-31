@@ -2,7 +2,7 @@
 <?oxygen RNGSchema="file:/Applications/oxygen%2011.2/frameworks/xproc/xproc.rnc" type="compact"?>
 
 <!-- RUNNING FROM THE COMMAND LINE -->
-<!-- C:\Program Files\xmlcalabash-0.9.30\ SET -Xmx to 1500m
+<!-- C:\Program Files\xmlcalabash-0.9.32\ SET -Xmx to 1500m
     calabash C:\Users\Paul\XSD2SCH\trunk\xsd2sch\test\MSXSD2SCH.xpl -->
 <!-- C:\Program Files\calumet-1.0.12\bin>
     calumet -c config.xml C:\Users\Paul\XSD2SCH\trunk\xsd2sch\test\MSXSD2SCH.xpl-->
@@ -84,9 +84,7 @@
         <!-- Detecting the XProc processor used -->
         <p:variable name="product" select="p:system-property('p:product-name')"/>
         
-        <!-- XMLCALABASH TEMPORARY FIX comment all messages since error thrown -->
         <cx:message p:use-when="contains(p:system-property('p:product-name'),'Calabash')">
-        <cx:message>
             <p:with-option name="message" select="concat('FILE: ', $file)"/>
         </cx:message>
         <emx:message p:use-when="contains(p:system-property('p:product-name'),'Calumet')">
@@ -112,7 +110,6 @@
             <p:variable name="xml"
                 select="substring-after(/wts:testGroup/wts:instanceTest/wts:instanceDocument/@xlink:href,'/')"/>
             
-            <!-- XMLCALABASH TEMPORARY FIX comment all messages since error thrown -->
             <emx:message p:use-when="contains(p:system-property('p:product-name'),'Calumet')">
                 <p:with-option name="message" select="concat('XSD: ', $xsd)"/>
             </emx:message>
@@ -120,11 +117,9 @@
                 <p:with-option name="message" select="concat('XML: ', $xml)"/>
             </emx:message>
             <cx:message p:use-when="contains(p:system-property('p:product-name'),'Calabash')">
-            <cx:message>
                 <p:with-option name="message" select="concat('XSD: ', $xsd)"/>
             </cx:message>
             <cx:message p:use-when="contains(p:system-property('p:product-name'),'Calabash')">
-            <cx:message>
                 <p:with-option name="message" select="concat('XML: ', $xml)"/>
             </cx:message>
             
