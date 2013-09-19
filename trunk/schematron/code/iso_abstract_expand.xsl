@@ -6,10 +6,11 @@
 	    This is a preprocessor for ISO Schematron, which implements abstract patterns. 
 	    It also 
 	       	* extracts a particular schema using an ID, where there are multiple 
-	    schemas, such as when they are embedded in the same NVDL script 
-	    	* experimentally, allows parameter recognition and substitution inside
-	    	text as well as @context, @test, & @select.
-		
+             schemas, such as when they are embedded in the same NVDL script 
+           * allows parameter substitution inside @context, @test, @select, @path
+	    	   * experimentally, allows parameter recognition and substitution inside
+             text (NOTE: to be removed, for compataibility with other implementations,   
+             please do not use this) 
 		
 		This should be used after iso-dsdl-include.xsl and before the skeleton or
 		meta-stylesheet (e.g. iso-svrl.xsl) . It only requires XSLT 1.
@@ -49,7 +50,10 @@ THE SOFTWARE.
 -->
 
 <!--
-  VERSION INFORMATION
+VERSION INFORMATION
+  2013-09-19 RJ
+     * Allow macro expansion in  @path attributes, eg. for   sch:name/@path
+
   2010-07-10 RJ
   		* Move to MIT license
   		
@@ -241,7 +245,7 @@ THE SOFTWARE.
 	<xslt:template mode="iae:do-pattern" match="*">
 		<xslt:param name="caller"/>
 		<xslt:copy>
-			<xslt:for-each select="@*[name()='test' or name()='context' or name()='select']">
+			<xslt:for-each select="@*[name()='test' or name()='context' or name()='select'   or name()='path'  ]">
 				<xslt:attribute name="{name()}">
 				<xslt:call-template name="iae:macro-expand">
 						<xslt:with-param name="text"><xslt:value-of select="."/></xslt:with-param>
@@ -249,12 +253,13 @@ THE SOFTWARE.
 					</xslt:call-template>
 				</xslt:attribute>
 			</xslt:for-each>	
-			<xslt:copy-of select="@*[name()!='test'][name()!='context'][name()!='select']" />
+			<xslt:copy-of select="@*[name()!='test'][name()!='context'][name()!='select'][name()!='path']" />
 			<xsl:for-each select="node()">
 				<xsl:choose>
 				    <!-- Experiment: replace macros in text as well, to allow parameterized assertions
 				        and so on, without having to have spurious <iso:value-of> calls and multiple
-				        delimiting -->
+				        delimiting.
+                NOTE: THIS FUNCTIONALITY WILL BE REMOVED IN THE FUTURE    -->
 					<xsl:when test="self::text()">	
 						<xslt:call-template name="iae:macro-expand">
 							<xslt:with-param name="text"><xslt:value-of select="."/></xslt:with-param>
