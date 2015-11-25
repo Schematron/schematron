@@ -51,6 +51,9 @@ THE SOFTWARE.
 
 <!--
 VERSION INFORMATION
+  2015-11-23 SW (Susanne Wunsch, TU Dresden, Germany)
+     * Keep rich Schematron and foreign attributes in pattern
+
   2013-09-19 RJ
      * Allow macro expansion in  @path attributes, eg. for   sch:name/@path
 
@@ -164,7 +167,8 @@ VERSION INFORMATION
 	 
 	
 	<!-- output everything else unchanged -->
-	<xslt:template match="*" priority="-1"  mode="iae:go" >
+	<!-- Keep rich Schematron and foreign attributes -->
+	<xslt:template match="*|@*" priority="-1"  mode="iae:go" >
 	    <xslt:copy>
 			<xslt:copy-of select="@*" />
 			<xslt:apply-templates mode="iae:go"/> 
@@ -232,6 +236,9 @@ VERSION INFORMATION
 		      </xslt:otherwise>
 		    </xslt:choose> 
 			
+			<!-- Keep rich Schematron and foreign attributes in the pattern -->
+			<xsl:apply-templates select="@*[name()!='id'][name()!='abstract']" mode="iae:go"/>
+
 			<xslt:apply-templates select="*|text()" mode="iae:do-pattern"    >
 				<xslt:with-param name="caller"><xslt:value-of select="$caller"/></xslt:with-param>
 			</xslt:apply-templates>	
