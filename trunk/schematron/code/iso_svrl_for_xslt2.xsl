@@ -30,6 +30,8 @@
   
 
   History: 
+    2015-11-24 SW (Susanne Wunsch, TU Dresden, Germany)
+       * Forward foreign attributes into SVRL
    	2010-07-10
    		* MIT license
     2010-04-14
@@ -300,6 +302,10 @@ THE SOFTWARE.
 				<axsl:apply-templates select="." mode="schematron-select-full-path"/>
 			</axsl:attribute>
 		</xsl:if>
+		<!-- Forward foreign attributes into SVRL -->
+		<xsl:call-template name="foreignParms">
+			<xsl:with-param name="currentElement" select="."/>
+		</xsl:call-template>
 		  
 		<svrl:text>
 			<xsl:apply-templates mode="text" />
@@ -376,7 +382,12 @@ THE SOFTWARE.
 				<axsl:apply-templates select="." mode="schematron-select-full-path"/>
 			</axsl:attribute>
 		</xsl:if>
-	 
+
+		<!-- Forward foreign attributes into SVRL -->
+		<xsl:call-template name="foreignParms">
+			<xsl:with-param name="currentElement" select="."/>
+		</xsl:call-template>
+
 		<svrl:text>
 			<xsl:apply-templates mode="text" />
 
@@ -429,6 +440,11 @@ THE SOFTWARE.
 			<xsl:with-param name="see" select="$see" />
 			<xsl:with-param name="space" select="$space" />
 		</xsl:call-template> 
+
+		<!-- Forward foreign attributes into SVRL -->
+		<xsl:call-template name="foreignParms">
+			<xsl:with-param name="currentElement" select="."/>
+		</xsl:call-template>
 <xsl:text>
 </xsl:text>
  
@@ -506,6 +522,11 @@ THE SOFTWARE.
 			<xsl:with-param name="see" select="$see" />
 			<xsl:with-param name="space" select="$space" />
 		</xsl:call-template>
+
+		<!-- Forward foreign attributes into SVRL -->
+		<xsl:call-template name="foreignParms">
+			<xsl:with-param name="currentElement" select="."/>
+		</xsl:call-template>
 		
 		
 		    <xsl:if test="$property= 'yes' or $property= 'true' ">
@@ -569,7 +590,12 @@ THE SOFTWARE.
 			<xsl:with-param name="see" select="$see" />
 			<xsl:with-param name="space" select="$space" />
 		</xsl:call-template>
-		
+
+		<!-- Forward foreign attributes into SVRL -->
+		<xsl:call-template name="foreignParms">
+			<xsl:with-param name="currentElement" select="."/>
+		</xsl:call-template>
+
 		<!-- ?? report that this screws up iso:title processing  -->
 		<xsl:apply-templates mode="do-pattern-p"/>
 		<!-- ?? Seems that this apply-templates is never triggered DP -->
@@ -654,7 +680,24 @@ THE SOFTWARE.
        Instead, the Schematron subject attribute is folded into the location attribute -->
 </xsl:template>
 
+	<!-- processing foreign parameters. -->
+	<xsl:template name="foreignParms">
+		<xsl:param name="currentElement"/>
 
+		<!-- Forward foreign attributes into SVRL -->
+		<xsl:if  test=" $allow-foreign = 'true'">
+			<xsl:for-each select="$currentElement/@*
+				[namespace-uri()!='']
+				[namespace-uri()!='http://purl.oclc.org/dsdl/schematron']
+				[namespace-uri()!='http://www.w3.org/XML/1998/namespace']">
+				<xsl:if test=" string(current() )">
+					<axsl:attribute name="{name()}">
+						<xsl:value-of select="." />
+					</axsl:attribute>
+				</xsl:if>
+			</xsl:for-each>
+		</xsl:if>
+	</xsl:template>
 
 	<!-- ===================================================== -->
 	<!-- Extension API:              			               -->
