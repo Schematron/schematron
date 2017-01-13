@@ -1,6937 +1,0 @@
-10
-
-dir
-0
-https://workspace.activestate.com/svn/proxml/msData/datatypes/Facets/Schemas
-https://workspace.activestate.com/svn/proxml
-add
-
-
-
-
-
-
-
-svn:special svn:externals svn:needs-lock
-
-
-
-
-
-
-
-
-
-
-
-1b3ceb3c-19de-44e1-9963-2b9d4c904b94
-
-IDREFS_enumeration001.xsd
-file
-
-
-
-add
-
-IDREFS_enumeration002.xsd
-file
-
-
-
-add
-
-IDREFS_length001.xsd
-file
-
-
-
-add
-
-IDREFS_length002.xsd
-file
-
-
-
-add
-
-IDREFS_length003.xsd
-file
-
-
-
-add
-
-IDREFS_length004.xsd
-file
-
-
-
-add
-
-IDREFS_length005.xsd
-file
-
-
-
-add
-
-IDREFS_length006.xsd
-file
-
-
-
-add
-
-IDREFS_length007.xsd
-file
-
-
-
-add
-
-IDREFS_maxLength001.xsd
-file
-
-
-
-add
-
-IDREFS_maxLength002.xsd
-file
-
-
-
-add
-
-IDREFS_maxLength003.xsd
-file
-
-
-
-add
-
-IDREFS_maxLength004.xsd
-file
-
-
-
-add
-
-IDREFS_maxLength005.xsd
-file
-
-
-
-add
-
-IDREFS_minLength001.xsd
-file
-
-
-
-add
-
-IDREFS_minLength002.xsd
-file
-
-
-
-add
-
-IDREFS_minLength003.xsd
-file
-
-
-
-add
-
-IDREFS_minLength004.xsd
-file
-
-
-
-add
-
-IDREFS_minLength005.xsd
-file
-
-
-
-add
-
-IDREFS_minLength006.xsd
-file
-
-
-
-add
-
-IDREFS_minLength007.xsd
-file
-
-
-
-add
-
-IDREF_enumeration001.xsd
-file
-
-
-
-add
-
-IDREF_enumeration002.xsd
-file
-
-
-
-add
-
-IDREF_length001.xsd
-file
-
-
-
-add
-
-IDREF_length002.xsd
-file
-
-
-
-add
-
-IDREF_length003.xsd
-file
-
-
-
-add
-
-IDREF_length004.xsd
-file
-
-
-
-add
-
-IDREF_length005.xsd
-file
-
-
-
-add
-
-IDREF_length006.xsd
-file
-
-
-
-add
-
-IDREF_length007.xsd
-file
-
-
-
-add
-
-IDREF_maxLength001.xsd
-file
-
-
-
-add
-
-IDREF_maxLength002.xsd
-file
-
-
-
-add
-
-IDREF_maxLength003.xsd
-file
-
-
-
-add
-
-IDREF_maxLength004.xsd
-file
-
-
-
-add
-
-IDREF_maxLength005.xsd
-file
-
-
-
-add
-
-IDREF_minLength001.xsd
-file
-
-
-
-add
-
-IDREF_minLength002.xsd
-file
-
-
-
-add
-
-IDREF_minLength003.xsd
-file
-
-
-
-add
-
-IDREF_minLength004.xsd
-file
-
-
-
-add
-
-IDREF_minLength005.xsd
-file
-
-
-
-add
-
-IDREF_minLength006.xsd
-file
-
-
-
-add
-
-IDREF_minLength007.xsd
-file
-
-
-
-add
-
-IDREF_pattern001.xsd
-file
-
-
-
-add
-
-ID_enumeration001.xsd
-file
-
-
-
-add
-
-ID_enumeration002.xsd
-file
-
-
-
-add
-
-ID_length001.xsd
-file
-
-
-
-add
-
-ID_length002.xsd
-file
-
-
-
-add
-
-ID_length003.xsd
-file
-
-
-
-add
-
-ID_length004.xsd
-file
-
-
-
-add
-
-ID_length005.xsd
-file
-
-
-
-add
-
-ID_length006.xsd
-file
-
-
-
-add
-
-ID_length007.xsd
-file
-
-
-
-add
-
-ID_maxLength001.xsd
-file
-
-
-
-add
-
-ID_maxLength002.xsd
-file
-
-
-
-add
-
-ID_maxLength003.xsd
-file
-
-
-
-add
-
-ID_maxLength004.xsd
-file
-
-
-
-add
-
-ID_maxLength005.xsd
-file
-
-
-
-add
-
-ID_minLength001.xsd
-file
-
-
-
-add
-
-ID_minLength002.xsd
-file
-
-
-
-add
-
-ID_minLength003.xsd
-file
-
-
-
-add
-
-ID_minLength004.xsd
-file
-
-
-
-add
-
-ID_minLength005.xsd
-file
-
-
-
-add
-
-ID_minLength006.xsd
-file
-
-
-
-add
-
-ID_minLength007.xsd
-file
-
-
-
-add
-
-ID_pattern001.xsd
-file
-
-
-
-add
-
-NCName_enumeration001.xsd
-file
-
-
-
-add
-
-NCName_enumeration002.xsd
-file
-
-
-
-add
-
-NCName_length001.xsd
-file
-
-
-
-add
-
-NCName_length002.xsd
-file
-
-
-
-add
-
-NCName_length003.xsd
-file
-
-
-
-add
-
-NCName_length004.xsd
-file
-
-
-
-add
-
-NCName_length005.xsd
-file
-
-
-
-add
-
-NCName_length006.xsd
-file
-
-
-
-add
-
-NCName_length007.xsd
-file
-
-
-
-add
-
-NCName_maxLength001.xsd
-file
-
-
-
-add
-
-NCName_maxLength002.xsd
-file
-
-
-
-add
-
-NCName_maxLength003.xsd
-file
-
-
-
-add
-
-NCName_maxLength004.xsd
-file
-
-
-
-add
-
-NCName_maxLength005.xsd
-file
-
-
-
-add
-
-NCName_minLength001.xsd
-file
-
-
-
-add
-
-NCName_minLength002.xsd
-file
-
-
-
-add
-
-NCName_minLength003.xsd
-file
-
-
-
-add
-
-NCName_minLength004.xsd
-file
-
-
-
-add
-
-NCName_minLength005.xsd
-file
-
-
-
-add
-
-NCName_minLength006.xsd
-file
-
-
-
-add
-
-NCName_minLength007.xsd
-file
-
-
-
-add
-
-NCName_pattern001.xsd
-file
-
-
-
-add
-
-NMTOKENS_enumeration001.xsd
-file
-
-
-
-add
-
-NMTOKENS_enumeration002.xsd
-file
-
-
-
-add
-
-NMTOKENS_length001.xsd
-file
-
-
-
-add
-
-NMTOKENS_length002.xsd
-file
-
-
-
-add
-
-NMTOKENS_length003.xsd
-file
-
-
-
-add
-
-NMTOKENS_length004.xsd
-file
-
-
-
-add
-
-NMTOKENS_length005.xsd
-file
-
-
-
-add
-
-NMTOKENS_length006.xsd
-file
-
-
-
-add
-
-NMTOKENS_length007.xsd
-file
-
-
-
-add
-
-NMTOKENS_maxLength001.xsd
-file
-
-
-
-add
-
-NMTOKENS_maxLength002.xsd
-file
-
-
-
-add
-
-NMTOKENS_maxLength003.xsd
-file
-
-
-
-add
-
-NMTOKENS_maxLength004.xsd
-file
-
-
-
-add
-
-NMTOKENS_maxLength005.xsd
-file
-
-
-
-add
-
-NMTOKENS_minLength001.xsd
-file
-
-
-
-add
-
-NMTOKENS_minLength002.xsd
-file
-
-
-
-add
-
-NMTOKENS_minLength003.xsd
-file
-
-
-
-add
-
-NMTOKENS_minLength004.xsd
-file
-
-
-
-add
-
-NMTOKENS_minLength005.xsd
-file
-
-
-
-add
-
-NMTOKENS_minLength006.xsd
-file
-
-
-
-add
-
-NMTOKENS_minLength007.xsd
-file
-
-
-
-add
-
-NMTOKEN_enumeration001.xsd
-file
-
-
-
-add
-
-NMTOKEN_enumeration002.xsd
-file
-
-
-
-add
-
-NMTOKEN_length001.xsd
-file
-
-
-
-add
-
-NMTOKEN_length002.xsd
-file
-
-
-
-add
-
-NMTOKEN_length003.xsd
-file
-
-
-
-add
-
-NMTOKEN_length004.xsd
-file
-
-
-
-add
-
-NMTOKEN_length005.xsd
-file
-
-
-
-add
-
-NMTOKEN_length006.xsd
-file
-
-
-
-add
-
-NMTOKEN_length007.xsd
-file
-
-
-
-add
-
-NMTOKEN_maxLength001.xsd
-file
-
-
-
-add
-
-NMTOKEN_maxLength002.xsd
-file
-
-
-
-add
-
-NMTOKEN_maxLength003.xsd
-file
-
-
-
-add
-
-NMTOKEN_maxLength004.xsd
-file
-
-
-
-add
-
-NMTOKEN_maxLength005.xsd
-file
-
-
-
-add
-
-NMTOKEN_minLength001.xsd
-file
-
-
-
-add
-
-NMTOKEN_minLength002.xsd
-file
-
-
-
-add
-
-NMTOKEN_minLength003.xsd
-file
-
-
-
-add
-
-NMTOKEN_minLength004.xsd
-file
-
-
-
-add
-
-NMTOKEN_minLength005.xsd
-file
-
-
-
-add
-
-NMTOKEN_minLength006.xsd
-file
-
-
-
-add
-
-NMTOKEN_minLength007.xsd
-file
-
-
-
-add
-
-NMTOKEN_pattern001.xsd
-file
-
-
-
-add
-
-NOTATION_enumeration001.xsd
-file
-
-
-
-add
-
-NOTATION_enumeration002.xsd
-file
-
-
-
-add
-
-NOTATION_length001.xsd
-file
-
-
-
-add
-
-NOTATION_length002.xsd
-file
-
-
-
-add
-
-NOTATION_length003.xsd
-file
-
-
-
-add
-
-NOTATION_length004.xsd
-file
-
-
-
-add
-
-NOTATION_length005.xsd
-file
-
-
-
-add
-
-NOTATION_length006.xsd
-file
-
-
-
-add
-
-NOTATION_length007.xsd
-file
-
-
-
-add
-
-NOTATION_maxLength001.xsd
-file
-
-
-
-add
-
-NOTATION_maxLength002.xsd
-file
-
-
-
-add
-
-NOTATION_maxLength003.xsd
-file
-
-
-
-add
-
-NOTATION_maxLength004.xsd
-file
-
-
-
-add
-
-NOTATION_maxLength005.xsd
-file
-
-
-
-add
-
-NOTATION_minLength001.xsd
-file
-
-
-
-add
-
-NOTATION_minLength002.xsd
-file
-
-
-
-add
-
-NOTATION_minLength003.xsd
-file
-
-
-
-add
-
-NOTATION_minLength004.xsd
-file
-
-
-
-add
-
-NOTATION_minLength005.xsd
-file
-
-
-
-add
-
-NOTATION_minLength006.xsd
-file
-
-
-
-add
-
-NOTATION_minLength007.xsd
-file
-
-
-
-add
-
-NOTATION_pattern001.xsd
-file
-
-
-
-add
-
-Name_enumeration001.xsd
-file
-
-
-
-add
-
-Name_enumeration002.xsd
-file
-
-
-
-add
-
-Name_length001.xsd
-file
-
-
-
-add
-
-Name_length002.xsd
-file
-
-
-
-add
-
-Name_length003.xsd
-file
-
-
-
-add
-
-Name_length004.xsd
-file
-
-
-
-add
-
-Name_length005.xsd
-file
-
-
-
-add
-
-Name_length006.xsd
-file
-
-
-
-add
-
-Name_length007.xsd
-file
-
-
-
-add
-
-Name_maxLength001.xsd
-file
-
-
-
-add
-
-Name_maxLength002.xsd
-file
-
-
-
-add
-
-Name_maxLength003.xsd
-file
-
-
-
-add
-
-Name_maxLength004.xsd
-file
-
-
-
-add
-
-Name_maxLength005.xsd
-file
-
-
-
-add
-
-Name_minLength001.xsd
-file
-
-
-
-add
-
-Name_minLength002.xsd
-file
-
-
-
-add
-
-Name_minLength003.xsd
-file
-
-
-
-add
-
-Name_minLength004.xsd
-file
-
-
-
-add
-
-Name_minLength005.xsd
-file
-
-
-
-add
-
-Name_minLength006.xsd
-file
-
-
-
-add
-
-Name_minLength007.xsd
-file
-
-
-
-add
-
-Name_pattern001.xsd
-file
-
-
-
-add
-
-QName_enumeration001.xsd
-file
-
-
-
-add
-
-QName_enumeration002.xsd
-file
-
-
-
-add
-
-QName_length001.xsd
-file
-
-
-
-add
-
-QName_length002.xsd
-file
-
-
-
-add
-
-QName_length003.xsd
-file
-
-
-
-add
-
-QName_length004.xsd
-file
-
-
-
-add
-
-QName_length005.xsd
-file
-
-
-
-add
-
-QName_length006.xsd
-file
-
-
-
-add
-
-QName_length007.xsd
-file
-
-
-
-add
-
-QName_maxLength001.xsd
-file
-
-
-
-add
-
-QName_maxLength002.xsd
-file
-
-
-
-add
-
-QName_maxLength003.xsd
-file
-
-
-
-add
-
-QName_maxLength004.xsd
-file
-
-
-
-add
-
-QName_maxLength005.xsd
-file
-
-
-
-add
-
-QName_minLength001.xsd
-file
-
-
-
-add
-
-QName_minLength002.xsd
-file
-
-
-
-add
-
-QName_minLength003.xsd
-file
-
-
-
-add
-
-QName_minLength004.xsd
-file
-
-
-
-add
-
-QName_minLength005.xsd
-file
-
-
-
-add
-
-QName_minLength006.xsd
-file
-
-
-
-add
-
-QName_minLength007.xsd
-file
-
-
-
-add
-
-QName_pattern001.xsd
-file
-
-
-
-add
-
-anyURI_enumeration001.xsd
-file
-
-
-
-add
-
-anyURI_enumeration002.xsd
-file
-
-
-
-add
-
-anyURI_length002.xsd
-file
-
-
-
-add
-
-anyURI_length003.xsd
-file
-
-
-
-add
-
-anyURI_length004.xsd
-file
-
-
-
-add
-
-anyURI_length005.xsd
-file
-
-
-
-add
-
-anyURI_length006.xsd
-file
-
-
-
-add
-
-anyURI_length007.xsd
-file
-
-
-
-add
-
-anyURI_maxLength001.xsd
-file
-
-
-
-add
-
-anyURI_maxLength002.xsd
-file
-
-
-
-add
-
-anyURI_maxLength003.xsd
-file
-
-
-
-add
-
-anyURI_maxLength004.xsd
-file
-
-
-
-add
-
-anyURI_maxLength005.xsd
-file
-
-
-
-add
-
-anyURI_minLength001.xsd
-file
-
-
-
-add
-
-anyURI_minLength002.xsd
-file
-
-
-
-add
-
-anyURI_minLength003.xsd
-file
-
-
-
-add
-
-anyURI_minLength004.xsd
-file
-
-
-
-add
-
-anyURI_minLength005.xsd
-file
-
-
-
-add
-
-anyURI_minLength006.xsd
-file
-
-
-
-add
-
-anyURI_minLength007.xsd
-file
-
-
-
-add
-
-base64Binary_enumeration001.xsd
-file
-
-
-
-add
-
-base64Binary_enumeration002.xsd
-file
-
-
-
-add
-
-base64Binary_enumeration003.xsd
-file
-
-
-
-add
-
-base64Binary_length001.xsd
-file
-
-
-
-add
-
-base64Binary_length002.xsd
-file
-
-
-
-add
-
-base64Binary_length003.xsd
-file
-
-
-
-add
-
-base64Binary_length004.xsd
-file
-
-
-
-add
-
-base64Binary_length005.xsd
-file
-
-
-
-add
-
-base64Binary_length006.xsd
-file
-
-
-
-add
-
-base64Binary_length007.xsd
-file
-
-
-
-add
-
-base64Binary_maxLength001.xsd
-file
-
-
-
-add
-
-base64Binary_maxLength002.xsd
-file
-
-
-
-add
-
-base64Binary_maxLength003.xsd
-file
-
-
-
-add
-
-base64Binary_maxLength004.xsd
-file
-
-
-
-add
-
-base64Binary_maxLength005.xsd
-file
-
-
-
-add
-
-base64Binary_minLength001.xsd
-file
-
-
-
-add
-
-base64Binary_minLength002.xsd
-file
-
-
-
-add
-
-base64Binary_minLength003.xsd
-file
-
-
-
-add
-
-base64Binary_minLength004.xsd
-file
-
-
-
-add
-
-base64Binary_minLength005.xsd
-file
-
-
-
-add
-
-base64Binary_minLength006.xsd
-file
-
-
-
-add
-
-base64Binary_minLength007.xsd
-file
-
-
-
-add
-
-byte_enumeration001.xsd
-file
-
-
-
-add
-
-byte_enumeration002.xsd
-file
-
-
-
-add
-
-byte_fractionDigits001.xsd
-file
-
-
-
-add
-
-byte_fractionDigits002.xsd
-file
-
-
-
-add
-
-byte_fractionDigits003.xsd
-file
-
-
-
-add
-
-byte_fractionDigits004.xsd
-file
-
-
-
-add
-
-byte_fractionDigits005.xsd
-file
-
-
-
-add
-
-byte_fractionDigits006.xsd
-file
-
-
-
-add
-
-byte_fractionDigits007.xsd
-file
-
-
-
-add
-
-byte_fractionDigits008.xsd
-file
-
-
-
-add
-
-byte_maxExclusive001.xsd
-file
-
-
-
-add
-
-byte_maxExclusive002.xsd
-file
-
-
-
-add
-
-byte_maxExclusive003.xsd
-file
-
-
-
-add
-
-byte_maxExclusive004.xsd
-file
-
-
-
-add
-
-byte_maxInclusive001.xsd
-file
-
-
-
-add
-
-byte_maxInclusive002.xsd
-file
-
-
-
-add
-
-byte_maxInclusive003.xsd
-file
-
-
-
-add
-
-byte_maxInclusive004.xsd
-file
-
-
-
-add
-
-byte_maxInclusive005.xsd
-file
-
-
-
-add
-
-byte_minExclusive001.xsd
-file
-
-
-
-add
-
-byte_minExclusive002.xsd
-file
-
-
-
-add
-
-byte_minExclusive003.xsd
-file
-
-
-
-add
-
-byte_minExclusive004.xsd
-file
-
-
-
-add
-
-byte_minExclusive005.xsd
-file
-
-
-
-add
-
-byte_minInclusive001.xsd
-file
-
-
-
-add
-
-byte_minInclusive002.xsd
-file
-
-
-
-add
-
-byte_minInclusive003.xsd
-file
-
-
-
-add
-
-byte_minInclusive004.xsd
-file
-
-
-
-add
-
-byte_minInclusive005.xsd
-file
-
-
-
-add
-
-byte_pattern001.xsd
-file
-
-
-
-add
-
-byte_totalDigits001.xsd
-file
-
-
-
-add
-
-byte_totalDigits002.xsd
-file
-
-
-
-add
-
-byte_totalDigits003.xsd
-file
-
-
-
-add
-
-byte_totalDigits004.xsd
-file
-
-
-
-add
-
-byte_totalDigits005.xsd
-file
-
-
-
-add
-
-byte_totalDigits006.xsd
-file
-
-
-
-add
-
-dateTime_enumeration001.xsd
-file
-
-
-
-add
-
-dateTime_enumeration002.xsd
-file
-
-
-
-add
-
-dateTime_enumeration003.xsd
-file
-
-
-
-add
-
-dateTime_maxExclusive001.xsd
-file
-
-
-
-add
-
-dateTime_maxExclusive002.xsd
-file
-
-
-
-add
-
-dateTime_maxInclusive001.xsd
-file
-
-
-
-add
-
-dateTime_maxInclusive002.xsd
-file
-
-
-
-add
-
-dateTime_maxInclusive003.xsd
-file
-
-
-
-add
-
-dateTime_maxInclusive004.xsd
-file
-
-
-
-add
-
-dateTime_minExclusive001.xsd
-file
-
-
-
-add
-
-dateTime_minExclusive002.xsd
-file
-
-
-
-add
-
-dateTime_minExclusive003.xsd
-file
-
-
-
-add
-
-dateTime_minInclusive001.xsd
-file
-
-
-
-add
-
-dateTime_minInclusive002.xsd
-file
-
-
-
-add
-
-dateTime_minInclusive003.xsd
-file
-
-
-
-add
-
-dateTime_pattern001.xsd
-file
-
-
-
-add
-
-date_enumeration001.xsd
-file
-
-
-
-add
-
-date_enumeration002.xsd
-file
-
-
-
-add
-
-date_maxExclusive001.xsd
-file
-
-
-
-add
-
-date_maxExclusive002.xsd
-file
-
-
-
-add
-
-date_maxInclusive001.xsd
-file
-
-
-
-add
-
-date_maxInclusive002.xsd
-file
-
-
-
-add
-
-date_maxInclusive003.xsd
-file
-
-
-
-add
-
-date_maxInclusive007.xsd
-file
-
-
-
-add
-
-date_maxInclusive008.xsd
-file
-
-
-
-add
-
-date_maxInclusive009.xsd
-file
-
-
-
-add
-
-date_minExclusive001.xsd
-file
-
-
-
-add
-
-date_minExclusive002.xsd
-file
-
-
-
-add
-
-date_minExclusive003.xsd
-file
-
-
-
-add
-
-date_minInclusive001.xsd
-file
-
-
-
-add
-
-date_minInclusive002.xsd
-file
-
-
-
-add
-
-date_minInclusive003.xsd
-file
-
-
-
-add
-
-date_pattern001.xsd
-file
-
-
-
-add
-
-decimal_enumeration001.xsd
-file
-
-
-
-add
-
-decimal_enumeration002.xsd
-file
-
-
-
-add
-
-decimal_fractionDigits001.xsd
-file
-
-
-
-add
-
-decimal_fractionDigits002.xsd
-file
-
-
-
-add
-
-decimal_fractionDigits003.xsd
-file
-
-
-
-add
-
-decimal_fractionDigits004.xsd
-file
-
-
-
-add
-
-decimal_fractionDigits005.xsd
-file
-
-
-
-add
-
-decimal_fractionDigits006.xsd
-file
-
-
-
-add
-
-decimal_fractionDigits007.xsd
-file
-
-
-
-add
-
-decimal_fractionDigits008.xsd
-file
-
-
-
-add
-
-decimal_maxExclusive001.xsd
-file
-
-
-
-add
-
-decimal_maxExclusive002.xsd
-file
-
-
-
-add
-
-decimal_maxInclusive001.xsd
-file
-
-
-
-add
-
-decimal_maxInclusive002.xsd
-file
-
-
-
-add
-
-decimal_maxInclusive003.xsd
-file
-
-
-
-add
-
-decimal_minExclusive001.xsd
-file
-
-
-
-add
-
-decimal_minExclusive002.xsd
-file
-
-
-
-add
-
-decimal_minExclusive003.xsd
-file
-
-
-
-add
-
-decimal_minInclusive001.xsd
-file
-
-
-
-add
-
-decimal_minInclusive002.xsd
-file
-
-
-
-add
-
-decimal_minInclusive003.xsd
-file
-
-
-
-add
-
-decimal_pattern001.xsd
-file
-
-
-
-add
-
-decimal_totalDigits001.xsd
-file
-
-
-
-add
-
-decimal_totalDigits002.xsd
-file
-
-
-
-add
-
-decimal_totalDigits003.xsd
-file
-
-
-
-add
-
-decimal_totalDigits004.xsd
-file
-
-
-
-add
-
-decimal_totalDigits005.xsd
-file
-
-
-
-add
-
-decimal_totalDigits006.xsd
-file
-
-
-
-add
-
-decimal_totalDigits007.xsd
-file
-
-
-
-add
-
-double_enumeration001.xsd
-file
-
-
-
-add
-
-double_enumeration002.xsd
-file
-
-
-
-add
-
-double_maxExclusive001.xsd
-file
-
-
-
-add
-
-double_maxExclusive002.xsd
-file
-
-
-
-add
-
-double_maxInclusive001.xsd
-file
-
-
-
-add
-
-double_maxInclusive002.xsd
-file
-
-
-
-add
-
-double_maxInclusive003.xsd
-file
-
-
-
-add
-
-double_minExclusive001.xsd
-file
-
-
-
-add
-
-double_minExclusive002.xsd
-file
-
-
-
-add
-
-double_minExclusive003.xsd
-file
-
-
-
-add
-
-double_minInclusive001.xsd
-file
-
-
-
-add
-
-double_minInclusive002.xsd
-file
-
-
-
-add
-
-double_minInclusive003.xsd
-file
-
-
-
-add
-
-double_pattern001.xsd
-file
-
-
-
-add
-
-duration_enumeration001.xsd
-file
-
-
-
-add
-
-duration_enumeration002.xsd
-file
-
-
-
-add
-
-duration_enumeration003.xsd
-file
-
-
-
-add
-
-duration_enumeration004.xsd
-file
-
-
-
-add
-
-duration_maxExclusive001.xsd
-file
-
-
-
-add
-
-duration_maxExclusive002.xsd
-file
-
-
-
-add
-
-duration_maxInclusive001.xsd
-file
-
-
-
-add
-
-duration_maxInclusive002.xsd
-file
-
-
-
-add
-
-duration_maxInclusive003.xsd
-file
-
-
-
-add
-
-duration_minExclusive001.xsd
-file
-
-
-
-add
-
-duration_minExclusive002.xsd
-file
-
-
-
-add
-
-duration_minExclusive003.xsd
-file
-
-
-
-add
-
-duration_minInclusive001.xsd
-file
-
-
-
-add
-
-duration_minInclusive002.xsd
-file
-
-
-
-add
-
-duration_minInclusive003.xsd
-file
-
-
-
-add
-
-duration_minInclusive004.xsd
-file
-
-
-
-add
-
-duration_pattern001.xsd
-file
-
-
-
-add
-
-float_enumeration001.xsd
-file
-
-
-
-add
-
-float_enumeration002.xsd
-file
-
-
-
-add
-
-float_maxExclusive001.xsd
-file
-
-
-
-add
-
-float_maxExclusive002.xsd
-file
-
-
-
-add
-
-float_maxInclusive001.xsd
-file
-
-
-
-add
-
-float_maxInclusive002.xsd
-file
-
-
-
-add
-
-float_maxInclusive003.xsd
-file
-
-
-
-add
-
-float_minExclusive001.xsd
-file
-
-
-
-add
-
-float_minExclusive002.xsd
-file
-
-
-
-add
-
-float_minExclusive003.xsd
-file
-
-
-
-add
-
-float_minInclusive001.xsd
-file
-
-
-
-add
-
-float_minInclusive002.xsd
-file
-
-
-
-add
-
-float_minInclusive003.xsd
-file
-
-
-
-add
-
-float_pattern001.xsd
-file
-
-
-
-add
-
-gDay_enumeration001.xsd
-file
-
-
-
-add
-
-gDay_enumeration002.xsd
-file
-
-
-
-add
-
-gDay_maxExclusive001.xsd
-file
-
-
-
-add
-
-gDay_maxExclusive002.xsd
-file
-
-
-
-add
-
-gDay_maxInclusive001.xsd
-file
-
-
-
-add
-
-gDay_maxInclusive002.xsd
-file
-
-
-
-add
-
-gDay_maxInclusive003.xsd
-file
-
-
-
-add
-
-gDay_minExclusive001.xsd
-file
-
-
-
-add
-
-gDay_minExclusive002.xsd
-file
-
-
-
-add
-
-gDay_minExclusive003.xsd
-file
-
-
-
-add
-
-gDay_minInclusive001.xsd
-file
-
-
-
-add
-
-gDay_minInclusive002.xsd
-file
-
-
-
-add
-
-gDay_minInclusive003.xsd
-file
-
-
-
-add
-
-gDay_pattern001.xsd
-file
-
-
-
-add
-
-gMonthDay_enumeration001.xsd
-file
-
-
-
-add
-
-gMonthDay_enumeration002.xsd
-file
-
-
-
-add
-
-gMonthDay_maxExclusive001.xsd
-file
-
-
-
-add
-
-gMonthDay_maxExclusive002.xsd
-file
-
-
-
-add
-
-gMonthDay_maxInclusive001.xsd
-file
-
-
-
-add
-
-gMonthDay_maxInclusive002.xsd
-file
-
-
-
-add
-
-gMonthDay_maxInclusive003.xsd
-file
-
-
-
-add
-
-gMonthDay_minExclusive001.xsd
-file
-
-
-
-add
-
-gMonthDay_minExclusive002.xsd
-file
-
-
-
-add
-
-gMonthDay_minExclusive003.xsd
-file
-
-
-
-add
-
-gMonthDay_minInclusive001.xsd
-file
-
-
-
-add
-
-gMonthDay_minInclusive002.xsd
-file
-
-
-
-add
-
-gMonthDay_minInclusive003.xsd
-file
-
-
-
-add
-
-gMonthDay_pattern001.xsd
-file
-
-
-
-add
-
-gMonth_enumeration001.xsd
-file
-
-
-
-add
-
-gMonth_enumeration002.xsd
-file
-
-
-
-add
-
-gMonth_maxExclusive001.xsd
-file
-
-
-
-add
-
-gMonth_maxExclusive002.xsd
-file
-
-
-
-add
-
-gMonth_maxInclusive001.xsd
-file
-
-
-
-add
-
-gMonth_maxInclusive002.xsd
-file
-
-
-
-add
-
-gMonth_maxInclusive003.xsd
-file
-
-
-
-add
-
-gMonth_minExclusive001.xsd
-file
-
-
-
-add
-
-gMonth_minExclusive002.xsd
-file
-
-
-
-add
-
-gMonth_minExclusive003.xsd
-file
-
-
-
-add
-
-gMonth_minInclusive001.xsd
-file
-
-
-
-add
-
-gMonth_minInclusive002.xsd
-file
-
-
-
-add
-
-gMonth_minInclusive003.xsd
-file
-
-
-
-add
-
-gMonth_pattern001.xsd
-file
-
-
-
-add
-
-gYearMonth_enumeration001.xsd
-file
-
-
-
-add
-
-gYearMonth_enumeration002.xsd
-file
-
-
-
-add
-
-gYearMonth_maxExclusive001.xsd
-file
-
-
-
-add
-
-gYearMonth_maxExclusive002.xsd
-file
-
-
-
-add
-
-gYearMonth_maxInclusive001.xsd
-file
-
-
-
-add
-
-gYearMonth_maxInclusive002.xsd
-file
-
-
-
-add
-
-gYearMonth_maxInclusive003.xsd
-file
-
-
-
-add
-
-gYearMonth_minExclusive001.xsd
-file
-
-
-
-add
-
-gYearMonth_minExclusive002.xsd
-file
-
-
-
-add
-
-gYearMonth_minExclusive003.xsd
-file
-
-
-
-add
-
-gYearMonth_minInclusive001.xsd
-file
-
-
-
-add
-
-gYearMonth_minInclusive002.xsd
-file
-
-
-
-add
-
-gYearMonth_minInclusive003.xsd
-file
-
-
-
-add
-
-gYearMonth_pattern001.xsd
-file
-
-
-
-add
-
-gYear_enumeration001.xsd
-file
-
-
-
-add
-
-gYear_enumeration002.xsd
-file
-
-
-
-add
-
-gYear_maxExclusive001.xsd
-file
-
-
-
-add
-
-gYear_maxExclusive002.xsd
-file
-
-
-
-add
-
-gYear_maxInclusive001.xsd
-file
-
-
-
-add
-
-gYear_maxInclusive002.xsd
-file
-
-
-
-add
-
-gYear_maxInclusive003.xsd
-file
-
-
-
-add
-
-gYear_minExclusive001.xsd
-file
-
-
-
-add
-
-gYear_minExclusive002.xsd
-file
-
-
-
-add
-
-gYear_minExclusive003.xsd
-file
-
-
-
-add
-
-gYear_minInclusive001.xsd
-file
-
-
-
-add
-
-gYear_minInclusive002.xsd
-file
-
-
-
-add
-
-gYear_minInclusive003.xsd
-file
-
-
-
-add
-
-gYear_pattern001.xsd
-file
-
-
-
-add
-
-hexBinary_enumeration001.xsd
-file
-
-
-
-add
-
-hexBinary_enumeration002.xsd
-file
-
-
-
-add
-
-hexBinary_length001.xsd
-file
-
-
-
-add
-
-hexBinary_length002.xsd
-file
-
-
-
-add
-
-hexBinary_length003.xsd
-file
-
-
-
-add
-
-hexBinary_length004.xsd
-file
-
-
-
-add
-
-hexBinary_length005.xsd
-file
-
-
-
-add
-
-hexBinary_length006.xsd
-file
-
-
-
-add
-
-hexBinary_length007.xsd
-file
-
-
-
-add
-
-hexBinary_maxLength001.xsd
-file
-
-
-
-add
-
-hexBinary_maxLength002.xsd
-file
-
-
-
-add
-
-hexBinary_maxLength003.xsd
-file
-
-
-
-add
-
-hexBinary_maxLength004.xsd
-file
-
-
-
-add
-
-hexBinary_maxLength005.xsd
-file
-
-
-
-add
-
-hexBinary_minLength001.xsd
-file
-
-
-
-add
-
-hexBinary_minLength002.xsd
-file
-
-
-
-add
-
-hexBinary_minLength003.xsd
-file
-
-
-
-add
-
-hexBinary_minLength004.xsd
-file
-
-
-
-add
-
-hexBinary_minLength005.xsd
-file
-
-
-
-add
-
-hexBinary_minLength006.xsd
-file
-
-
-
-add
-
-hexBinary_minLength007.xsd
-file
-
-
-
-add
-
-int_enumeration001.xsd
-file
-
-
-
-add
-
-int_enumeration002.xsd
-file
-
-
-
-add
-
-int_fractionDigits001.xsd
-file
-
-
-
-add
-
-int_fractionDigits002.xsd
-file
-
-
-
-add
-
-int_fractionDigits003.xsd
-file
-
-
-
-add
-
-int_fractionDigits004.xsd
-file
-
-
-
-add
-
-int_fractionDigits005.xsd
-file
-
-
-
-add
-
-int_fractionDigits006.xsd
-file
-
-
-
-add
-
-int_fractionDigits007.xsd
-file
-
-
-
-add
-
-int_fractionDigits008.xsd
-file
-
-
-
-add
-
-int_maxExclusive001.xsd
-file
-
-
-
-add
-
-int_maxExclusive002.xsd
-file
-
-
-
-add
-
-int_maxExclusive003.xsd
-file
-
-
-
-add
-
-int_maxInclusive001.xsd
-file
-
-
-
-add
-
-int_maxInclusive002.xsd
-file
-
-
-
-add
-
-int_maxInclusive003.xsd
-file
-
-
-
-add
-
-int_maxInclusive004.xsd
-file
-
-
-
-add
-
-int_maxInclusive005.xsd
-file
-
-
-
-add
-
-int_minExclusive001.xsd
-file
-
-
-
-add
-
-int_minExclusive002.xsd
-file
-
-
-
-add
-
-int_minExclusive003.xsd
-file
-
-
-
-add
-
-int_minExclusive004.xsd
-file
-
-
-
-add
-
-int_minExclusive005.xsd
-file
-
-
-
-add
-
-int_minInclusive001.xsd
-file
-
-
-
-add
-
-int_minInclusive002.xsd
-file
-
-
-
-add
-
-int_minInclusive003.xsd
-file
-
-
-
-add
-
-int_minInclusive004.xsd
-file
-
-
-
-add
-
-int_minInclusive005.xsd
-file
-
-
-
-add
-
-int_pattern001.xsd
-file
-
-
-
-add
-
-int_totalDigits001.xsd
-file
-
-
-
-add
-
-int_totalDigits002.xsd
-file
-
-
-
-add
-
-int_totalDigits003.xsd
-file
-
-
-
-add
-
-int_totalDigits004.xsd
-file
-
-
-
-add
-
-int_totalDigits005.xsd
-file
-
-
-
-add
-
-int_totalDigits006.xsd
-file
-
-
-
-add
-
-integer_enumeration001.xsd
-file
-
-
-
-add
-
-integer_enumeration002.xsd
-file
-
-
-
-add
-
-integer_fractionDigits001.xsd
-file
-
-
-
-add
-
-integer_fractionDigits002.xsd
-file
-
-
-
-add
-
-integer_fractionDigits003.xsd
-file
-
-
-
-add
-
-integer_fractionDigits004.xsd
-file
-
-
-
-add
-
-integer_fractionDigits005.xsd
-file
-
-
-
-add
-
-integer_fractionDigits006.xsd
-file
-
-
-
-add
-
-integer_fractionDigits007.xsd
-file
-
-
-
-add
-
-integer_fractionDigits008.xsd
-file
-
-
-
-add
-
-integer_maxExclusive001.xsd
-file
-
-
-
-add
-
-integer_maxExclusive002.xsd
-file
-
-
-
-add
-
-integer_maxInclusive001.xsd
-file
-
-
-
-add
-
-integer_maxInclusive002.xsd
-file
-
-
-
-add
-
-integer_maxInclusive003.xsd
-file
-
-
-
-add
-
-integer_minExclusive001.xsd
-file
-
-
-
-add
-
-integer_minExclusive002.xsd
-file
-
-
-
-add
-
-integer_minExclusive003.xsd
-file
-
-
-
-add
-
-integer_minExclusive004.xsd
-file
-
-
-
-add
-
-integer_minInclusive001.xsd
-file
-
-
-
-add
-
-integer_minInclusive002.xsd
-file
-
-
-
-add
-
-integer_minInclusive003.xsd
-file
-
-
-
-add
-
-integer_minInclusive004.xsd
-file
-
-
-
-add
-
-integer_pattern001.xsd
-file
-
-
-
-add
-
-integer_totalDigits001.xsd
-file
-
-
-
-add
-
-integer_totalDigits002.xsd
-file
-
-
-
-add
-
-integer_totalDigits003.xsd
-file
-
-
-
-add
-
-integer_totalDigits004.xsd
-file
-
-
-
-add
-
-integer_totalDigits005.xsd
-file
-
-
-
-add
-
-integer_totalDigits006.xsd
-file
-
-
-
-add
-
-language_enumeration001.xsd
-file
-
-
-
-add
-
-language_enumeration002.xsd
-file
-
-
-
-add
-
-language_length001.xsd
-file
-
-
-
-add
-
-language_length002.xsd
-file
-
-
-
-add
-
-language_length003.xsd
-file
-
-
-
-add
-
-language_length004.xsd
-file
-
-
-
-add
-
-language_length005.xsd
-file
-
-
-
-add
-
-language_length006.xsd
-file
-
-
-
-add
-
-language_length007.xsd
-file
-
-
-
-add
-
-language_maxLength001.xsd
-file
-
-
-
-add
-
-language_maxLength002.xsd
-file
-
-
-
-add
-
-language_maxLength003.xsd
-file
-
-
-
-add
-
-language_maxLength004.xsd
-file
-
-
-
-add
-
-language_maxLength005.xsd
-file
-
-
-
-add
-
-language_minLength001.xsd
-file
-
-
-
-add
-
-language_minLength002.xsd
-file
-
-
-
-add
-
-language_minLength003.xsd
-file
-
-
-
-add
-
-language_minLength004.xsd
-file
-
-
-
-add
-
-language_minLength005.xsd
-file
-
-
-
-add
-
-language_minLength006.xsd
-file
-
-
-
-add
-
-language_minLength007.xsd
-file
-
-
-
-add
-
-language_pattern001.xsd
-file
-
-
-
-add
-
-long_enumeration001.xsd
-file
-
-
-
-add
-
-long_enumeration002.xsd
-file
-
-
-
-add
-
-long_fractionDigits001.xsd
-file
-
-
-
-add
-
-long_fractionDigits002.xsd
-file
-
-
-
-add
-
-long_fractionDigits003.xsd
-file
-
-
-
-add
-
-long_fractionDigits004.xsd
-file
-
-
-
-add
-
-long_fractionDigits005.xsd
-file
-
-
-
-add
-
-long_fractionDigits006.xsd
-file
-
-
-
-add
-
-long_fractionDigits007.xsd
-file
-
-
-
-add
-
-long_fractionDigits008.xsd
-file
-
-
-
-add
-
-long_maxExclusive001.xsd
-file
-
-
-
-add
-
-long_maxExclusive002.xsd
-file
-
-
-
-add
-
-long_maxExclusive003.xsd
-file
-
-
-
-add
-
-long_maxExclusive004.xsd
-file
-
-
-
-add
-
-long_maxInclusive001.xsd
-file
-
-
-
-add
-
-long_maxInclusive002.xsd
-file
-
-
-
-add
-
-long_maxInclusive003.xsd
-file
-
-
-
-add
-
-long_maxInclusive004.xsd
-file
-
-
-
-add
-
-long_maxInclusive005.xsd
-file
-
-
-
-add
-
-long_minExclusive001.xsd
-file
-
-
-
-add
-
-long_minExclusive002.xsd
-file
-
-
-
-add
-
-long_minExclusive003.xsd
-file
-
-
-
-add
-
-long_minExclusive004.xsd
-file
-
-
-
-add
-
-long_minExclusive005.xsd
-file
-
-
-
-add
-
-long_minInclusive001.xsd
-file
-
-
-
-add
-
-long_minInclusive002.xsd
-file
-
-
-
-add
-
-long_minInclusive003.xsd
-file
-
-
-
-add
-
-long_minInclusive004.xsd
-file
-
-
-
-add
-
-long_minInclusive005.xsd
-file
-
-
-
-add
-
-long_pattern001.xsd
-file
-
-
-
-add
-
-long_totalDigits001.xsd
-file
-
-
-
-add
-
-long_totalDigits002.xsd
-file
-
-
-
-add
-
-long_totalDigits003.xsd
-file
-
-
-
-add
-
-long_totalDigits004.xsd
-file
-
-
-
-add
-
-long_totalDigits005.xsd
-file
-
-
-
-add
-
-long_totalDigits006.xsd
-file
-
-
-
-add
-
-negativeInteger_enumeration001.xsd
-file
-
-
-
-add
-
-negativeInteger_enumeration002.xsd
-file
-
-
-
-add
-
-negativeInteger_fractionDigits001.xsd
-file
-
-
-
-add
-
-negativeInteger_fractionDigits002.xsd
-file
-
-
-
-add
-
-negativeInteger_fractionDigits003.xsd
-file
-
-
-
-add
-
-negativeInteger_fractionDigits004.xsd
-file
-
-
-
-add
-
-negativeInteger_fractionDigits005.xsd
-file
-
-
-
-add
-
-negativeInteger_fractionDigits006.xsd
-file
-
-
-
-add
-
-negativeInteger_fractionDigits007.xsd
-file
-
-
-
-add
-
-negativeInteger_fractionDigits008.xsd
-file
-
-
-
-add
-
-negativeInteger_maxExclusive001.xsd
-file
-
-
-
-add
-
-negativeInteger_maxExclusive002.xsd
-file
-
-
-
-add
-
-negativeInteger_maxExclusive003.xsd
-file
-
-
-
-add
-
-negativeInteger_maxInclusive001.xsd
-file
-
-
-
-add
-
-negativeInteger_maxInclusive002.xsd
-file
-
-
-
-add
-
-negativeInteger_maxInclusive003.xsd
-file
-
-
-
-add
-
-negativeInteger_maxInclusive004.xsd
-file
-
-
-
-add
-
-negativeInteger_minExclusive001.xsd
-file
-
-
-
-add
-
-negativeInteger_minExclusive002.xsd
-file
-
-
-
-add
-
-negativeInteger_minExclusive003.xsd
-file
-
-
-
-add
-
-negativeInteger_minExclusive004.xsd
-file
-
-
-
-add
-
-negativeInteger_minInclusive001.xsd
-file
-
-
-
-add
-
-negativeInteger_minInclusive002.xsd
-file
-
-
-
-add
-
-negativeInteger_minInclusive003.xsd
-file
-
-
-
-add
-
-negativeInteger_minInclusive004.xsd
-file
-
-
-
-add
-
-negativeInteger_pattern001.xsd
-file
-
-
-
-add
-
-negativeInteger_totalDigits001.xsd
-file
-
-
-
-add
-
-negativeInteger_totalDigits002.xsd
-file
-
-
-
-add
-
-negativeInteger_totalDigits003.xsd
-file
-
-
-
-add
-
-negativeInteger_totalDigits004.xsd
-file
-
-
-
-add
-
-negativeInteger_totalDigits005.xsd
-file
-
-
-
-add
-
-negativeInteger_totalDigits006.xsd
-file
-
-
-
-add
-
-nonNegativeInteger_enumeration001.xsd
-file
-
-
-
-add
-
-nonNegativeInteger_enumeration002.xsd
-file
-
-
-
-add
-
-nonNegativeInteger_fractionDigits001.xsd
-file
-
-
-
-add
-
-nonNegativeInteger_fractionDigits002.xsd
-file
-
-
-
-add
-
-nonNegativeInteger_fractionDigits003.xsd
-file
-
-
-
-add
-
-nonNegativeInteger_fractionDigits004.xsd
-file
-
-
-
-add
-
-nonNegativeInteger_fractionDigits005.xsd
-file
-
-
-
-add
-
-nonNegativeInteger_fractionDigits006.xsd
-file
-
-
-
-add
-
-nonNegativeInteger_fractionDigits007.xsd
-file
-
-
-
-add
-
-nonNegativeInteger_fractionDigits008.xsd
-file
-
-
-
-add
-
-nonNegativeInteger_maxExclusive001.xsd
-file
-
-
-
-add
-
-nonNegativeInteger_maxExclusive002.xsd
-file
-
-
-
-add
-
-nonNegativeInteger_maxExclusive003.xsd
-file
-
-
-
-add
-
-nonNegativeInteger_maxInclusive001.xsd
-file
-
-
-
-add
-
-nonNegativeInteger_maxInclusive002.xsd
-file
-
-
-
-add
-
-nonNegativeInteger_maxInclusive003.xsd
-file
-
-
-
-add
-
-nonNegativeInteger_maxInclusive004.xsd
-file
-
-
-
-add
-
-nonNegativeInteger_minExclusive001.xsd
-file
-
-
-
-add
-
-nonNegativeInteger_minExclusive002.xsd
-file
-
-
-
-add
-
-nonNegativeInteger_minExclusive003.xsd
-file
-
-
-
-add
-
-nonNegativeInteger_minExclusive004.xsd
-file
-
-
-
-add
-
-nonNegativeInteger_minInclusive001.xsd
-file
-
-
-
-add
-
-nonNegativeInteger_minInclusive002.xsd
-file
-
-
-
-add
-
-nonNegativeInteger_minInclusive003.xsd
-file
-
-
-
-add
-
-nonNegativeInteger_minInclusive004.xsd
-file
-
-
-
-add
-
-nonNegativeInteger_pattern001.xsd
-file
-
-
-
-add
-
-nonNegativeInteger_totalDigits001.xsd
-file
-
-
-
-add
-
-nonNegativeInteger_totalDigits002.xsd
-file
-
-
-
-add
-
-nonNegativeInteger_totalDigits003.xsd
-file
-
-
-
-add
-
-nonNegativeInteger_totalDigits004.xsd
-file
-
-
-
-add
-
-nonNegativeInteger_totalDigits005.xsd
-file
-
-
-
-add
-
-nonNegativeInteger_totalDigits006.xsd
-file
-
-
-
-add
-
-nonPositiveInteger_enumeration001.xsd
-file
-
-
-
-add
-
-nonPositiveInteger_enumeration002.xsd
-file
-
-
-
-add
-
-nonPositiveInteger_fractionDigits001.xsd
-file
-
-
-
-add
-
-nonPositiveInteger_fractionDigits002.xsd
-file
-
-
-
-add
-
-nonPositiveInteger_fractionDigits003.xsd
-file
-
-
-
-add
-
-nonPositiveInteger_fractionDigits004.xsd
-file
-
-
-
-add
-
-nonPositiveInteger_fractionDigits005.xsd
-file
-
-
-
-add
-
-nonPositiveInteger_fractionDigits006.xsd
-file
-
-
-
-add
-
-nonPositiveInteger_fractionDigits007.xsd
-file
-
-
-
-add
-
-nonPositiveInteger_fractionDigits008.xsd
-file
-
-
-
-add
-
-nonPositiveInteger_maxExclusive001.xsd
-file
-
-
-
-add
-
-nonPositiveInteger_maxExclusive002.xsd
-file
-
-
-
-add
-
-nonPositiveInteger_maxExclusive003.xsd
-file
-
-
-
-add
-
-nonPositiveInteger_maxInclusive001.xsd
-file
-
-
-
-add
-
-nonPositiveInteger_maxInclusive002.xsd
-file
-
-
-
-add
-
-nonPositiveInteger_maxInclusive003.xsd
-file
-
-
-
-add
-
-nonPositiveInteger_maxInclusive004.xsd
-file
-
-
-
-add
-
-nonPositiveInteger_minExclusive001.xsd
-file
-
-
-
-add
-
-nonPositiveInteger_minExclusive002.xsd
-file
-
-
-
-add
-
-nonPositiveInteger_minExclusive003.xsd
-file
-
-
-
-add
-
-nonPositiveInteger_minExclusive004.xsd
-file
-
-
-
-add
-
-nonPositiveInteger_minInclusive001.xsd
-file
-
-
-
-add
-
-nonPositiveInteger_minInclusive002.xsd
-file
-
-
-
-add
-
-nonPositiveInteger_minInclusive003.xsd
-file
-
-
-
-add
-
-nonPositiveInteger_minInclusive004.xsd
-file
-
-
-
-add
-
-nonPositiveInteger_pattern001.xsd
-file
-
-
-
-add
-
-nonPositiveInteger_totalDigits001.xsd
-file
-
-
-
-add
-
-nonPositiveInteger_totalDigits002.xsd
-file
-
-
-
-add
-
-nonPositiveInteger_totalDigits003.xsd
-file
-
-
-
-add
-
-nonPositiveInteger_totalDigits004.xsd
-file
-
-
-
-add
-
-nonPositiveInteger_totalDigits005.xsd
-file
-
-
-
-add
-
-nonPositiveInteger_totalDigits006.xsd
-file
-
-
-
-add
-
-normalizedString_enumeration001.xsd
-file
-
-
-
-add
-
-normalizedString_enumeration002.xsd
-file
-
-
-
-add
-
-normalizedString_length001.xsd
-file
-
-
-
-add
-
-normalizedString_length002.xsd
-file
-
-
-
-add
-
-normalizedString_length003.xsd
-file
-
-
-
-add
-
-normalizedString_length004.xsd
-file
-
-
-
-add
-
-normalizedString_length005.xsd
-file
-
-
-
-add
-
-normalizedString_length006.xsd
-file
-
-
-
-add
-
-normalizedString_length007.xsd
-file
-
-
-
-add
-
-normalizedString_maxLength001.xsd
-file
-
-
-
-add
-
-normalizedString_maxLength002.xsd
-file
-
-
-
-add
-
-normalizedString_maxLength003.xsd
-file
-
-
-
-add
-
-normalizedString_maxLength004.xsd
-file
-
-
-
-add
-
-normalizedString_maxLength005.xsd
-file
-
-
-
-add
-
-normalizedString_minLength001.xsd
-file
-
-
-
-add
-
-normalizedString_minLength002.xsd
-file
-
-
-
-add
-
-normalizedString_minLength003.xsd
-file
-
-
-
-add
-
-normalizedString_minLength004.xsd
-file
-
-
-
-add
-
-normalizedString_minLength005.xsd
-file
-
-
-
-add
-
-normalizedString_minLength006.xsd
-file
-
-
-
-add
-
-normalizedString_minLength007.xsd
-file
-
-
-
-add
-
-normalizedString_pattern001.xsd
-file
-
-
-
-add
-
-normalizedString_whitespace001.xsd
-file
-
-
-
-add
-
-positiveInteger_enumeration001.xsd
-file
-
-
-
-add
-
-positiveInteger_enumeration002.xsd
-file
-
-
-
-add
-
-positiveInteger_fractionDigits001.xsd
-file
-
-
-
-add
-
-positiveInteger_fractionDigits002.xsd
-file
-
-
-
-add
-
-positiveInteger_fractionDigits003.xsd
-file
-
-
-
-add
-
-positiveInteger_fractionDigits004.xsd
-file
-
-
-
-add
-
-positiveInteger_fractionDigits005.xsd
-file
-
-
-
-add
-
-positiveInteger_fractionDigits006.xsd
-file
-
-
-
-add
-
-positiveInteger_fractionDigits007.xsd
-file
-
-
-
-add
-
-positiveInteger_fractionDigits008.xsd
-file
-
-
-
-add
-
-positiveInteger_maxExclusive001.xsd
-file
-
-
-
-add
-
-positiveInteger_maxExclusive002.xsd
-file
-
-
-
-add
-
-positiveInteger_maxExclusive003.xsd
-file
-
-
-
-add
-
-positiveInteger_maxInclusive001.xsd
-file
-
-
-
-add
-
-positiveInteger_maxInclusive002.xsd
-file
-
-
-
-add
-
-positiveInteger_maxInclusive003.xsd
-file
-
-
-
-add
-
-positiveInteger_maxInclusive004.xsd
-file
-
-
-
-add
-
-positiveInteger_minExclusive001.xsd
-file
-
-
-
-add
-
-positiveInteger_minExclusive002.xsd
-file
-
-
-
-add
-
-positiveInteger_minExclusive003.xsd
-file
-
-
-
-add
-
-positiveInteger_minExclusive004.xsd
-file
-
-
-
-add
-
-positiveInteger_minInclusive001.xsd
-file
-
-
-
-add
-
-positiveInteger_minInclusive002.xsd
-file
-
-
-
-add
-
-positiveInteger_minInclusive003.xsd
-file
-
-
-
-add
-
-positiveInteger_minInclusive004.xsd
-file
-
-
-
-add
-
-positiveInteger_pattern001.xsd
-file
-
-
-
-add
-
-positiveInteger_totalDigits001.xsd
-file
-
-
-
-add
-
-positiveInteger_totalDigits002.xsd
-file
-
-
-
-add
-
-positiveInteger_totalDigits003.xsd
-file
-
-
-
-add
-
-positiveInteger_totalDigits004.xsd
-file
-
-
-
-add
-
-positiveInteger_totalDigits005.xsd
-file
-
-
-
-add
-
-positiveInteger_totalDigits006.xsd
-file
-
-
-
-add
-
-short_enumeration001.xsd
-file
-
-
-
-add
-
-short_enumeration002.xsd
-file
-
-
-
-add
-
-short_fractionDigits001.xsd
-file
-
-
-
-add
-
-short_fractionDigits002.xsd
-file
-
-
-
-add
-
-short_fractionDigits003.xsd
-file
-
-
-
-add
-
-short_fractionDigits004.xsd
-file
-
-
-
-add
-
-short_fractionDigits005.xsd
-file
-
-
-
-add
-
-short_fractionDigits006.xsd
-file
-
-
-
-add
-
-short_fractionDigits007.xsd
-file
-
-
-
-add
-
-short_fractionDigits008.xsd
-file
-
-
-
-add
-
-short_maxExclusive001.xsd
-file
-
-
-
-add
-
-short_maxExclusive002.xsd
-file
-
-
-
-add
-
-short_maxExclusive003.xsd
-file
-
-
-
-add
-
-short_maxExclusive004.xsd
-file
-
-
-
-add
-
-short_maxInclusive001.xsd
-file
-
-
-
-add
-
-short_maxInclusive002.xsd
-file
-
-
-
-add
-
-short_maxInclusive003.xsd
-file
-
-
-
-add
-
-short_maxInclusive004.xsd
-file
-
-
-
-add
-
-short_maxInclusive005.xsd
-file
-
-
-
-add
-
-short_minExclusive001.xsd
-file
-
-
-
-add
-
-short_minExclusive002.xsd
-file
-
-
-
-add
-
-short_minExclusive003.xsd
-file
-
-
-
-add
-
-short_minExclusive004.xsd
-file
-
-
-
-add
-
-short_minExclusive005.xsd
-file
-
-
-
-add
-
-short_minInclusive001.xsd
-file
-
-
-
-add
-
-short_minInclusive002.xsd
-file
-
-
-
-add
-
-short_minInclusive003.xsd
-file
-
-
-
-add
-
-short_minInclusive004.xsd
-file
-
-
-
-add
-
-short_minInclusive005.xsd
-file
-
-
-
-add
-
-short_pattern001.xsd
-file
-
-
-
-add
-
-short_totalDigits001.xsd
-file
-
-
-
-add
-
-short_totalDigits002.xsd
-file
-
-
-
-add
-
-short_totalDigits003.xsd
-file
-
-
-
-add
-
-short_totalDigits004.xsd
-file
-
-
-
-add
-
-short_totalDigits005.xsd
-file
-
-
-
-add
-
-short_totalDigits006.xsd
-file
-
-
-
-add
-
-string_enumeration001.xsd
-file
-
-
-
-add
-
-string_enumeration002.xsd
-file
-
-
-
-add
-
-string_length001.xsd
-file
-
-
-
-add
-
-string_length002.xsd
-file
-
-
-
-add
-
-string_length003.xsd
-file
-
-
-
-add
-
-string_length004.xsd
-file
-
-
-
-add
-
-string_length005.xsd
-file
-
-
-
-add
-
-string_length006.xsd
-file
-
-
-
-add
-
-string_length007.xsd
-file
-
-
-
-add
-
-string_maxLength001.xsd
-file
-
-
-
-add
-
-string_maxLength002.xsd
-file
-
-
-
-add
-
-string_maxLength003.xsd
-file
-
-
-
-add
-
-string_maxLength004.xsd
-file
-
-
-
-add
-
-string_maxLength005.xsd
-file
-
-
-
-add
-
-string_minLength001.xsd
-file
-
-
-
-add
-
-string_minLength002.xsd
-file
-
-
-
-add
-
-string_minLength003.xsd
-file
-
-
-
-add
-
-string_minLength004.xsd
-file
-
-
-
-add
-
-string_minLength005.xsd
-file
-
-
-
-add
-
-string_minLength006.xsd
-file
-
-
-
-add
-
-string_minLength007.xsd
-file
-
-
-
-add
-
-string_minLength008.xsd
-file
-
-
-
-add
-
-string_pattern001.xsd
-file
-
-
-
-add
-
-time_enumeration001.xsd
-file
-
-
-
-add
-
-time_enumeration002.xsd
-file
-
-
-
-add
-
-time_maxExclusive001.xsd
-file
-
-
-
-add
-
-time_maxExclusive002.xsd
-file
-
-
-
-add
-
-time_maxInclusive001.xsd
-file
-
-
-
-add
-
-time_maxInclusive002.xsd
-file
-
-
-
-add
-
-time_maxInclusive003.xsd
-file
-
-
-
-add
-
-time_maxInclusive007.xsd
-file
-
-
-
-add
-
-time_minExclusive001.xsd
-file
-
-
-
-add
-
-time_minExclusive002.xsd
-file
-
-
-
-add
-
-time_minExclusive003.xsd
-file
-
-
-
-add
-
-time_minInclusive001.xsd
-file
-
-
-
-add
-
-time_minInclusive002.xsd
-file
-
-
-
-add
-
-time_minInclusive003.xsd
-file
-
-
-
-add
-
-time_pattern001.xsd
-file
-
-
-
-add
-
-token_enumeration001.xsd
-file
-
-
-
-add
-
-token_enumeration002.xsd
-file
-
-
-
-add
-
-token_length001.xsd
-file
-
-
-
-add
-
-token_length002.xsd
-file
-
-
-
-add
-
-token_length003.xsd
-file
-
-
-
-add
-
-token_length004.xsd
-file
-
-
-
-add
-
-token_length005.xsd
-file
-
-
-
-add
-
-token_length006.xsd
-file
-
-
-
-add
-
-token_length007.xsd
-file
-
-
-
-add
-
-token_maxLength001.xsd
-file
-
-
-
-add
-
-token_maxLength002.xsd
-file
-
-
-
-add
-
-token_maxLength003.xsd
-file
-
-
-
-add
-
-token_maxLength004.xsd
-file
-
-
-
-add
-
-token_maxLength005.xsd
-file
-
-
-
-add
-
-token_minLength001.xsd
-file
-
-
-
-add
-
-token_minLength002.xsd
-file
-
-
-
-add
-
-token_minLength003.xsd
-file
-
-
-
-add
-
-token_minLength004.xsd
-file
-
-
-
-add
-
-token_minLength005.xsd
-file
-
-
-
-add
-
-token_minLength006.xsd
-file
-
-
-
-add
-
-token_minLength007.xsd
-file
-
-
-
-add
-
-token_pattern001.xsd
-file
-
-
-
-add
-
-token_whitespace001.xsd
-file
-
-
-
-add
-
-unsignedByte_enumeration001.xsd
-file
-
-
-
-add
-
-unsignedByte_enumeration002.xsd
-file
-
-
-
-add
-
-unsignedByte_fractionDigits001.xsd
-file
-
-
-
-add
-
-unsignedByte_fractionDigits002.xsd
-file
-
-
-
-add
-
-unsignedByte_fractionDigits003.xsd
-file
-
-
-
-add
-
-unsignedByte_fractionDigits004.xsd
-file
-
-
-
-add
-
-unsignedByte_fractionDigits005.xsd
-file
-
-
-
-add
-
-unsignedByte_fractionDigits006.xsd
-file
-
-
-
-add
-
-unsignedByte_fractionDigits007.xsd
-file
-
-
-
-add
-
-unsignedByte_fractionDigits008.xsd
-file
-
-
-
-add
-
-unsignedByte_maxExclusive001.xsd
-file
-
-
-
-add
-
-unsignedByte_maxExclusive002.xsd
-file
-
-
-
-add
-
-unsignedByte_maxExclusive003.xsd
-file
-
-
-
-add
-
-unsignedByte_maxExclusive004.xsd
-file
-
-
-
-add
-
-unsignedByte_maxInclusive001.xsd
-file
-
-
-
-add
-
-unsignedByte_maxInclusive002.xsd
-file
-
-
-
-add
-
-unsignedByte_maxInclusive003.xsd
-file
-
-
-
-add
-
-unsignedByte_maxInclusive004.xsd
-file
-
-
-
-add
-
-unsignedByte_maxInclusive005.xsd
-file
-
-
-
-add
-
-unsignedByte_minExclusive001.xsd
-file
-
-
-
-add
-
-unsignedByte_minExclusive002.xsd
-file
-
-
-
-add
-
-unsignedByte_minExclusive003.xsd
-file
-
-
-
-add
-
-unsignedByte_minExclusive004.xsd
-file
-
-
-
-add
-
-unsignedByte_minExclusive005.xsd
-file
-
-
-
-add
-
-unsignedByte_minInclusive001.xsd
-file
-
-
-
-add
-
-unsignedByte_minInclusive002.xsd
-file
-
-
-
-add
-
-unsignedByte_minInclusive003.xsd
-file
-
-
-
-add
-
-unsignedByte_minInclusive004.xsd
-file
-
-
-
-add
-
-unsignedByte_minInclusive005.xsd
-file
-
-
-
-add
-
-unsignedByte_pattern001.xsd
-file
-
-
-
-add
-
-unsignedByte_totalDigits001.xsd
-file
-
-
-
-add
-
-unsignedByte_totalDigits002.xsd
-file
-
-
-
-add
-
-unsignedByte_totalDigits003.xsd
-file
-
-
-
-add
-
-unsignedByte_totalDigits004.xsd
-file
-
-
-
-add
-
-unsignedByte_totalDigits005.xsd
-file
-
-
-
-add
-
-unsignedByte_totalDigits006.xsd
-file
-
-
-
-add
-
-unsignedInt_enumeration001.xsd
-file
-
-
-
-add
-
-unsignedInt_enumeration002.xsd
-file
-
-
-
-add
-
-unsignedInt_fractionDigits001.xsd
-file
-
-
-
-add
-
-unsignedInt_fractionDigits002.xsd
-file
-
-
-
-add
-
-unsignedInt_fractionDigits003.xsd
-file
-
-
-
-add
-
-unsignedInt_fractionDigits004.xsd
-file
-
-
-
-add
-
-unsignedInt_fractionDigits005.xsd
-file
-
-
-
-add
-
-unsignedInt_fractionDigits006.xsd
-file
-
-
-
-add
-
-unsignedInt_fractionDigits007.xsd
-file
-
-
-
-add
-
-unsignedInt_fractionDigits008.xsd
-file
-
-
-
-add
-
-unsignedInt_maxExclusive001.xsd
-file
-
-
-
-add
-
-unsignedInt_maxExclusive002.xsd
-file
-
-
-
-add
-
-unsignedInt_maxExclusive003.xsd
-file
-
-
-
-add
-
-unsignedInt_maxExclusive004.xsd
-file
-
-
-
-add
-
-unsignedInt_maxInclusive001.xsd
-file
-
-
-
-add
-
-unsignedInt_maxInclusive002.xsd
-file
-
-
-
-add
-
-unsignedInt_maxInclusive003.xsd
-file
-
-
-
-add
-
-unsignedInt_maxInclusive004.xsd
-file
-
-
-
-add
-
-unsignedInt_maxInclusive005.xsd
-file
-
-
-
-add
-
-unsignedInt_minExclusive001.xsd
-file
-
-
-
-add
-
-unsignedInt_minExclusive002.xsd
-file
-
-
-
-add
-
-unsignedInt_minExclusive003.xsd
-file
-
-
-
-add
-
-unsignedInt_minExclusive004.xsd
-file
-
-
-
-add
-
-unsignedInt_minExclusive005.xsd
-file
-
-
-
-add
-
-unsignedInt_minInclusive001.xsd
-file
-
-
-
-add
-
-unsignedInt_minInclusive002.xsd
-file
-
-
-
-add
-
-unsignedInt_minInclusive003.xsd
-file
-
-
-
-add
-
-unsignedInt_minInclusive004.xsd
-file
-
-
-
-add
-
-unsignedInt_minInclusive005.xsd
-file
-
-
-
-add
-
-unsignedInt_pattern001.xsd
-file
-
-
-
-add
-
-unsignedInt_totalDigits001.xsd
-file
-
-
-
-add
-
-unsignedInt_totalDigits002.xsd
-file
-
-
-
-add
-
-unsignedInt_totalDigits003.xsd
-file
-
-
-
-add
-
-unsignedInt_totalDigits004.xsd
-file
-
-
-
-add
-
-unsignedInt_totalDigits005.xsd
-file
-
-
-
-add
-
-unsignedInt_totalDigits006.xsd
-file
-
-
-
-add
-
-unsignedLong_enumeration001.xsd
-file
-
-
-
-add
-
-unsignedLong_enumeration002.xsd
-file
-
-
-
-add
-
-unsignedLong_fractionDigits001.xsd
-file
-
-
-
-add
-
-unsignedLong_fractionDigits002.xsd
-file
-
-
-
-add
-
-unsignedLong_fractionDigits003.xsd
-file
-
-
-
-add
-
-unsignedLong_fractionDigits004.xsd
-file
-
-
-
-add
-
-unsignedLong_fractionDigits005.xsd
-file
-
-
-
-add
-
-unsignedLong_fractionDigits006.xsd
-file
-
-
-
-add
-
-unsignedLong_fractionDigits007.xsd
-file
-
-
-
-add
-
-unsignedLong_fractionDigits008.xsd
-file
-
-
-
-add
-
-unsignedLong_maxExclusive001.xsd
-file
-
-
-
-add
-
-unsignedLong_maxExclusive002.xsd
-file
-
-
-
-add
-
-unsignedLong_maxExclusive003.xsd
-file
-
-
-
-add
-
-unsignedLong_maxExclusive004.xsd
-file
-
-
-
-add
-
-unsignedLong_maxInclusive001.xsd
-file
-
-
-
-add
-
-unsignedLong_maxInclusive002.xsd
-file
-
-
-
-add
-
-unsignedLong_maxInclusive003.xsd
-file
-
-
-
-add
-
-unsignedLong_maxInclusive004.xsd
-file
-
-
-
-add
-
-unsignedLong_maxInclusive005.xsd
-file
-
-
-
-add
-
-unsignedLong_minExclusive001.xsd
-file
-
-
-
-add
-
-unsignedLong_minExclusive002.xsd
-file
-
-
-
-add
-
-unsignedLong_minExclusive003.xsd
-file
-
-
-
-add
-
-unsignedLong_minExclusive004.xsd
-file
-
-
-
-add
-
-unsignedLong_minExclusive005.xsd
-file
-
-
-
-add
-
-unsignedLong_minInclusive001.xsd
-file
-
-
-
-add
-
-unsignedLong_minInclusive002.xsd
-file
-
-
-
-add
-
-unsignedLong_minInclusive003.xsd
-file
-
-
-
-add
-
-unsignedLong_minInclusive004.xsd
-file
-
-
-
-add
-
-unsignedLong_minInclusive005.xsd
-file
-
-
-
-add
-
-unsignedLong_pattern001.xsd
-file
-
-
-
-add
-
-unsignedLong_totalDigits001.xsd
-file
-
-
-
-add
-
-unsignedLong_totalDigits002.xsd
-file
-
-
-
-add
-
-unsignedLong_totalDigits003.xsd
-file
-
-
-
-add
-
-unsignedLong_totalDigits004.xsd
-file
-
-
-
-add
-
-unsignedLong_totalDigits005.xsd
-file
-
-
-
-add
-
-unsignedLong_totalDigits006.xsd
-file
-
-
-
-add
-
-unsignedShort_enumeration001.xsd
-file
-
-
-
-add
-
-unsignedShort_enumeration002.xsd
-file
-
-
-
-add
-
-unsignedShort_fractionDigits001.xsd
-file
-
-
-
-add
-
-unsignedShort_fractionDigits002.xsd
-file
-
-
-
-add
-
-unsignedShort_fractionDigits003.xsd
-file
-
-
-
-add
-
-unsignedShort_fractionDigits004.xsd
-file
-
-
-
-add
-
-unsignedShort_fractionDigits005.xsd
-file
-
-
-
-add
-
-unsignedShort_fractionDigits006.xsd
-file
-
-
-
-add
-
-unsignedShort_fractionDigits007.xsd
-file
-
-
-
-add
-
-unsignedShort_fractionDigits008.xsd
-file
-
-
-
-add
-
-unsignedShort_maxExclusive001.xsd
-file
-
-
-
-add
-
-unsignedShort_maxExclusive002.xsd
-file
-
-
-
-add
-
-unsignedShort_maxExclusive003.xsd
-file
-
-
-
-add
-
-unsignedShort_maxExclusive004.xsd
-file
-
-
-
-add
-
-unsignedShort_maxInclusive001.xsd
-file
-
-
-
-add
-
-unsignedShort_maxInclusive002.xsd
-file
-
-
-
-add
-
-unsignedShort_maxInclusive003.xsd
-file
-
-
-
-add
-
-unsignedShort_maxInclusive004.xsd
-file
-
-
-
-add
-
-unsignedShort_maxInclusive005.xsd
-file
-
-
-
-add
-
-unsignedShort_minExclusive001.xsd
-file
-
-
-
-add
-
-unsignedShort_minExclusive002.xsd
-file
-
-
-
-add
-
-unsignedShort_minExclusive003.xsd
-file
-
-
-
-add
-
-unsignedShort_minExclusive004.xsd
-file
-
-
-
-add
-
-unsignedShort_minExclusive005.xsd
-file
-
-
-
-add
-
-unsignedShort_minInclusive001.xsd
-file
-
-
-
-add
-
-unsignedShort_minInclusive002.xsd
-file
-
-
-
-add
-
-unsignedShort_minInclusive003.xsd
-file
-
-
-
-add
-
-unsignedShort_minInclusive004.xsd
-file
-
-
-
-add
-
-unsignedShort_minInclusive005.xsd
-file
-
-
-
-add
-
-unsignedShort_pattern001.xsd
-file
-
-
-
-add
-
-unsignedShort_totalDigits001.xsd
-file
-
-
-
-add
-
-unsignedShort_totalDigits002.xsd
-file
-
-
-
-add
-
-unsignedShort_totalDigits003.xsd
-file
-
-
-
-add
-
-unsignedShort_totalDigits004.xsd
-file
-
-
-
-add
-
-unsignedShort_totalDigits005.xsd
-file
-
-
-
-add
-
-unsignedShort_totalDigits006.xsd
-file
-
-
-
-add
-

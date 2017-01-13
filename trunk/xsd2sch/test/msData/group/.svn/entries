@@ -1,2513 +1,0 @@
-10
-
-dir
-0
-https://workspace.activestate.com/svn/proxml/msData/group
-https://workspace.activestate.com/svn/proxml
-add
-
-
-
-
-
-
-
-svn:special svn:externals svn:needs-lock
-
-
-
-
-
-
-
-
-
-
-
-1b3ceb3c-19de-44e1-9963-2b9d4c904b94
-
-groupA001.xsd
-file
-
-
-
-add
-
-groupA002.xsd
-file
-
-
-
-add
-
-groupA003.xsd
-file
-
-
-
-add
-
-groupA004.xsd
-file
-
-
-
-add
-
-groupA005.xsd
-file
-
-
-
-add
-
-groupA006.red
-file
-
-
-
-add
-
-groupA006.xsd
-file
-
-
-
-add
-
-groupA007.red
-file
-
-
-
-add
-
-groupA007.xsd
-file
-
-
-
-add
-
-groupA008.xsd
-file
-
-
-
-add
-
-groupA008ea.red
-file
-
-
-
-add
-
-groupA008eb.red
-file
-
-
-
-add
-
-groupA009.xsd
-file
-
-
-
-add
-
-groupA010.xsd
-file
-
-
-
-add
-
-groupA011.xsd
-file
-
-
-
-add
-
-groupA012.xsd
-file
-
-
-
-add
-
-groupB001.xsd
-file
-
-
-
-add
-
-groupB002.xml
-file
-
-
-
-add
-
-groupB002.xsd
-file
-
-
-
-add
-
-groupB003.xml
-file
-
-
-
-add
-
-groupB003.xsd
-file
-
-
-
-add
-
-groupB004.xml
-file
-
-
-
-add
-
-groupB004.xsd
-file
-
-
-
-add
-
-groupB005.xml
-file
-
-
-
-add
-
-groupB005.xsd
-file
-
-
-
-add
-
-groupB006.xml
-file
-
-
-
-add
-
-groupB006.xsd
-file
-
-
-
-add
-
-groupB007.red
-file
-
-
-
-add
-
-groupB007.xsd
-file
-
-
-
-add
-
-groupB008.xsd
-file
-
-
-
-add
-
-groupB009.imp
-file
-
-
-
-add
-
-groupB009.xml
-file
-
-
-
-add
-
-groupB009.xsd
-file
-
-
-
-add
-
-groupB010.imp
-file
-
-
-
-add
-
-groupB010.xml
-file
-
-
-
-add
-
-groupB010.xsd
-file
-
-
-
-add
-
-groupB011.xsd
-file
-
-
-
-add
-
-groupB012.xsd
-file
-
-
-
-add
-
-groupB013.xsd
-file
-
-
-
-add
-
-groupB014.xsd
-file
-
-
-
-add
-
-groupB015.xsd
-file
-
-
-
-add
-
-groupB016.xsd
-file
-
-
-
-add
-
-groupB017.xsd
-file
-
-
-
-add
-
-groupB018.xsd
-file
-
-
-
-add
-
-groupB018.xsdmod
-file
-
-
-
-add
-
-groupC001.xsd
-file
-
-
-
-add
-
-groupC002.xsd
-file
-
-
-
-add
-
-groupC003.red
-file
-
-
-
-add
-
-groupC003.xsd
-file
-
-
-
-add
-
-groupC004.xsd
-file
-
-
-
-add
-
-groupC005.xsd
-file
-
-
-
-add
-
-groupC006.xsd
-file
-
-
-
-add
-
-groupC007.xsd
-file
-
-
-
-add
-
-groupC008.xsd
-file
-
-
-
-add
-
-groupC009.xsd
-file
-
-
-
-add
-
-groupC010.xsd
-file
-
-
-
-add
-
-groupC011.xsd
-file
-
-
-
-add
-
-groupC012.xsd
-file
-
-
-
-add
-
-groupD001.xsd
-file
-
-
-
-add
-
-groupD002.red
-file
-
-
-
-add
-
-groupD002.xsd
-file
-
-
-
-add
-
-groupD003.xsd
-file
-
-
-
-add
-
-groupD004.red
-file
-
-
-
-add
-
-groupD004.xsd
-file
-
-
-
-add
-
-groupE002.xsd
-file
-
-
-
-add
-
-groupE003.xml
-file
-
-
-
-add
-
-groupE003.xsd
-file
-
-
-
-add
-
-groupE004.xml
-file
-
-
-
-add
-
-groupE004.xsd
-file
-
-
-
-add
-
-groupE005.xml
-file
-
-
-
-add
-
-groupE005.xsd
-file
-
-
-
-add
-
-groupF001.xml
-file
-
-
-
-add
-
-groupF001.xsd
-file
-
-
-
-add
-
-groupF002.xml
-file
-
-
-
-add
-
-groupF002.xsd
-file
-
-
-
-add
-
-groupF003.xml
-file
-
-
-
-add
-
-groupF003.xsd
-file
-
-
-
-add
-
-groupF004.xml
-file
-
-
-
-add
-
-groupF004.xsd
-file
-
-
-
-add
-
-groupF005.xml
-file
-
-
-
-add
-
-groupF005.xsd
-file
-
-
-
-add
-
-groupF006.xml
-file
-
-
-
-add
-
-groupF006.xsd
-file
-
-
-
-add
-
-groupF007.xml
-file
-
-
-
-add
-
-groupF007.xsd
-file
-
-
-
-add
-
-groupF008.xml
-file
-
-
-
-add
-
-groupF008.xsd
-file
-
-
-
-add
-
-groupF009.xml
-file
-
-
-
-add
-
-groupF009.xsd
-file
-
-
-
-add
-
-groupF010.xml
-file
-
-
-
-add
-
-groupF010.xsd
-file
-
-
-
-add
-
-groupF011.xml
-file
-
-
-
-add
-
-groupF011.xsd
-file
-
-
-
-add
-
-groupF012.xml
-file
-
-
-
-add
-
-groupF012.xsd
-file
-
-
-
-add
-
-groupF013.xml
-file
-
-
-
-add
-
-groupF013.xsd
-file
-
-
-
-add
-
-groupF014.xml
-file
-
-
-
-add
-
-groupF014.xsd
-file
-
-
-
-add
-
-groupF015.xml
-file
-
-
-
-add
-
-groupF015.xsd
-file
-
-
-
-add
-
-groupF016.xml
-file
-
-
-
-add
-
-groupF016.xsd
-file
-
-
-
-add
-
-groupF017.xml
-file
-
-
-
-add
-
-groupF017.xsd
-file
-
-
-
-add
-
-groupF018.xml
-file
-
-
-
-add
-
-groupF018.xsd
-file
-
-
-
-add
-
-groupF019.xml
-file
-
-
-
-add
-
-groupF019.xsd
-file
-
-
-
-add
-
-groupF020.xsd
-file
-
-
-
-add
-
-groupF021.xml
-file
-
-
-
-add
-
-groupF021.xsd
-file
-
-
-
-add
-
-groupF022.xsd
-file
-
-
-
-add
-
-groupF023.xsd
-file
-
-
-
-add
-
-groupF024.xsd
-file
-
-
-
-add
-
-groupF025.xsd
-file
-
-
-
-add
-
-groupG002.xsd
-file
-
-
-
-add
-
-groupG003.xml
-file
-
-
-
-add
-
-groupG003.xsd
-file
-
-
-
-add
-
-groupG004.xml
-file
-
-
-
-add
-
-groupG004.xsd
-file
-
-
-
-add
-
-groupG005.xml
-file
-
-
-
-add
-
-groupG005.xsd
-file
-
-
-
-add
-
-groupH001.xml
-file
-
-
-
-add
-
-groupH001.xsd
-file
-
-
-
-add
-
-groupH002.xml
-file
-
-
-
-add
-
-groupH002.xsd
-file
-
-
-
-add
-
-groupH003.xml
-file
-
-
-
-add
-
-groupH003.xsd
-file
-
-
-
-add
-
-groupH004.xml
-file
-
-
-
-add
-
-groupH004.xsd
-file
-
-
-
-add
-
-groupH005.xml
-file
-
-
-
-add
-
-groupH005.xsd
-file
-
-
-
-add
-
-groupH006.xml
-file
-
-
-
-add
-
-groupH006.xsd
-file
-
-
-
-add
-
-groupH007.xsd
-file
-
-
-
-add
-
-groupH008.xml
-file
-
-
-
-add
-
-groupH008.xsd
-file
-
-
-
-add
-
-groupH009.xml
-file
-
-
-
-add
-
-groupH009.xsd
-file
-
-
-
-add
-
-groupH010.xml
-file
-
-
-
-add
-
-groupH010.xsd
-file
-
-
-
-add
-
-groupH011.xml
-file
-
-
-
-add
-
-groupH011.xsd
-file
-
-
-
-add
-
-groupH012.xml
-file
-
-
-
-add
-
-groupH012.xsd
-file
-
-
-
-add
-
-groupH013.xml
-file
-
-
-
-add
-
-groupH013.xsd
-file
-
-
-
-add
-
-groupH014.xml
-file
-
-
-
-add
-
-groupH014.xsd
-file
-
-
-
-add
-
-groupH015.xml
-file
-
-
-
-add
-
-groupH015.xsd
-file
-
-
-
-add
-
-groupH016.xml
-file
-
-
-
-add
-
-groupH016.xsd
-file
-
-
-
-add
-
-groupH017.xml
-file
-
-
-
-add
-
-groupH017.xsd
-file
-
-
-
-add
-
-groupH018.xml
-file
-
-
-
-add
-
-groupH018.xsd
-file
-
-
-
-add
-
-groupH019.xml
-file
-
-
-
-add
-
-groupH019.xsd
-file
-
-
-
-add
-
-groupH020.xsd
-file
-
-
-
-add
-
-groupH021.xsd
-file
-
-
-
-add
-
-groupH022.xsd
-file
-
-
-
-add
-
-groupH023.xsd
-file
-
-
-
-add
-
-groupH024.xsd
-file
-
-
-
-add
-
-groupH025.xsd
-file
-
-
-
-add
-
-groupI002.xsd
-file
-
-
-
-add
-
-groupI003.xml
-file
-
-
-
-add
-
-groupI003.xsd
-file
-
-
-
-add
-
-groupI004.xml
-file
-
-
-
-add
-
-groupI004.xsd
-file
-
-
-
-add
-
-groupI005.xml
-file
-
-
-
-add
-
-groupI005.xsd
-file
-
-
-
-add
-
-groupJ001.xml
-file
-
-
-
-add
-
-groupJ001.xsd
-file
-
-
-
-add
-
-groupJ002.xml
-file
-
-
-
-add
-
-groupJ002.xsd
-file
-
-
-
-add
-
-groupJ003.xml
-file
-
-
-
-add
-
-groupJ003.xsd
-file
-
-
-
-add
-
-groupJ004.xml
-file
-
-
-
-add
-
-groupJ004.xsd
-file
-
-
-
-add
-
-groupJ005.xml
-file
-
-
-
-add
-
-groupJ005.xsd
-file
-
-
-
-add
-
-groupJ006.xml
-file
-
-
-
-add
-
-groupJ006.xsd
-file
-
-
-
-add
-
-groupJ007.xml
-file
-
-
-
-add
-
-groupJ007.xsd
-file
-
-
-
-add
-
-groupJ008.xml
-file
-
-
-
-add
-
-groupJ008.xsd
-file
-
-
-
-add
-
-groupJ009.xml
-file
-
-
-
-add
-
-groupJ009.xsd
-file
-
-
-
-add
-
-groupJ010.xml
-file
-
-
-
-add
-
-groupJ010.xsd
-file
-
-
-
-add
-
-groupJ011.xml
-file
-
-
-
-add
-
-groupJ011.xsd
-file
-
-
-
-add
-
-groupJ012.xml
-file
-
-
-
-add
-
-groupJ012.xsd
-file
-
-
-
-add
-
-groupJ013.xml
-file
-
-
-
-add
-
-groupJ013.xsd
-file
-
-
-
-add
-
-groupJ014.xml
-file
-
-
-
-add
-
-groupJ014.xsd
-file
-
-
-
-add
-
-groupJ015.xml
-file
-
-
-
-add
-
-groupJ015.xsd
-file
-
-
-
-add
-
-groupJ016.xml
-file
-
-
-
-add
-
-groupJ016.xsd
-file
-
-
-
-add
-
-groupJ017.xml
-file
-
-
-
-add
-
-groupJ017.xsd
-file
-
-
-
-add
-
-groupJ018.xml
-file
-
-
-
-add
-
-groupJ018.xsd
-file
-
-
-
-add
-
-groupJ019.xml
-file
-
-
-
-add
-
-groupJ019.xsd
-file
-
-
-
-add
-
-groupJ020.xsd
-file
-
-
-
-add
-
-groupJ021.xml
-file
-
-
-
-add
-
-groupJ021.xsd
-file
-
-
-
-add
-
-groupJ022.xsd
-file
-
-
-
-add
-
-groupJ023.xsd
-file
-
-
-
-add
-
-groupJ024.xsd
-file
-
-
-
-add
-
-groupJ025.xsd
-file
-
-
-
-add
-
-groupK002.xsd
-file
-
-
-
-add
-
-groupK003.xml
-file
-
-
-
-add
-
-groupK003.xsd
-file
-
-
-
-add
-
-groupK004.xml
-file
-
-
-
-add
-
-groupK004.xsd
-file
-
-
-
-add
-
-groupK005.xml
-file
-
-
-
-add
-
-groupK005.xsd
-file
-
-
-
-add
-
-groupL001.xml
-file
-
-
-
-add
-
-groupL001.xsd
-file
-
-
-
-add
-
-groupL002.xml
-file
-
-
-
-add
-
-groupL002.xsd
-file
-
-
-
-add
-
-groupL003.xml
-file
-
-
-
-add
-
-groupL003.xsd
-file
-
-
-
-add
-
-groupL004.xml
-file
-
-
-
-add
-
-groupL004.xsd
-file
-
-
-
-add
-
-groupL005.xml
-file
-
-
-
-add
-
-groupL005.xsd
-file
-
-
-
-add
-
-groupL006.xml
-file
-
-
-
-add
-
-groupL006.xsd
-file
-
-
-
-add
-
-groupL007.xml
-file
-
-
-
-add
-
-groupL007.xsd
-file
-
-
-
-add
-
-groupL008.xml
-file
-
-
-
-add
-
-groupL008.xsd
-file
-
-
-
-add
-
-groupL009.xml
-file
-
-
-
-add
-
-groupL009.xsd
-file
-
-
-
-add
-
-groupL010.xml
-file
-
-
-
-add
-
-groupL010.xsd
-file
-
-
-
-add
-
-groupL011.xml
-file
-
-
-
-add
-
-groupL011.xsd
-file
-
-
-
-add
-
-groupL012.xml
-file
-
-
-
-add
-
-groupL012.xsd
-file
-
-
-
-add
-
-groupL013.xml
-file
-
-
-
-add
-
-groupL013.xsd
-file
-
-
-
-add
-
-groupL014.xml
-file
-
-
-
-add
-
-groupL014.xsd
-file
-
-
-
-add
-
-groupL015.xml
-file
-
-
-
-add
-
-groupL015.xsd
-file
-
-
-
-add
-
-groupL016.xml
-file
-
-
-
-add
-
-groupL016.xsd
-file
-
-
-
-add
-
-groupL017.xml
-file
-
-
-
-add
-
-groupL017.xsd
-file
-
-
-
-add
-
-groupL018.xml
-file
-
-
-
-add
-
-groupL018.xsd
-file
-
-
-
-add
-
-groupL019.xml
-file
-
-
-
-add
-
-groupL019.xsd
-file
-
-
-
-add
-
-groupL020.xsd
-file
-
-
-
-add
-
-groupL021.xml
-file
-
-
-
-add
-
-groupL021.xsd
-file
-
-
-
-add
-
-groupL022.xsd
-file
-
-
-
-add
-
-groupL023.xsd
-file
-
-
-
-add
-
-groupL024.xsd
-file
-
-
-
-add
-
-groupL025.xsd
-file
-
-
-
-add
-
-groupM002.xsd
-file
-
-
-
-add
-
-groupM003.xml
-file
-
-
-
-add
-
-groupM003.xsd
-file
-
-
-
-add
-
-groupM004.xml
-file
-
-
-
-add
-
-groupM004.xsd
-file
-
-
-
-add
-
-groupM005.xml
-file
-
-
-
-add
-
-groupM005.xsd
-file
-
-
-
-add
-
-groupN001.xml
-file
-
-
-
-add
-
-groupN001.xsd
-file
-
-
-
-add
-
-groupN002.xml
-file
-
-
-
-add
-
-groupN002.xsd
-file
-
-
-
-add
-
-groupN003.xml
-file
-
-
-
-add
-
-groupN003.xsd
-file
-
-
-
-add
-
-groupN004.xml
-file
-
-
-
-add
-
-groupN004.xsd
-file
-
-
-
-add
-
-groupN005.xml
-file
-
-
-
-add
-
-groupN005.xsd
-file
-
-
-
-add
-
-groupN006.xml
-file
-
-
-
-add
-
-groupN006.xsd
-file
-
-
-
-add
-
-groupN007.xml
-file
-
-
-
-add
-
-groupN007.xsd
-file
-
-
-
-add
-
-groupN008.xml
-file
-
-
-
-add
-
-groupN008.xsd
-file
-
-
-
-add
-
-groupN009.xml
-file
-
-
-
-add
-
-groupN009.xsd
-file
-
-
-
-add
-
-groupN010.xml
-file
-
-
-
-add
-
-groupN010.xsd
-file
-
-
-
-add
-
-groupN011.xml
-file
-
-
-
-add
-
-groupN011.xsd
-file
-
-
-
-add
-
-groupN012.xml
-file
-
-
-
-add
-
-groupN012.xsd
-file
-
-
-
-add
-
-groupN013.xml
-file
-
-
-
-add
-
-groupN013.xsd
-file
-
-
-
-add
-
-groupN014.xml
-file
-
-
-
-add
-
-groupN014.xsd
-file
-
-
-
-add
-
-groupN015.xml
-file
-
-
-
-add
-
-groupN015.xsd
-file
-
-
-
-add
-
-groupN016.xml
-file
-
-
-
-add
-
-groupN016.xsd
-file
-
-
-
-add
-
-groupN017.xml
-file
-
-
-
-add
-
-groupN017.xsd
-file
-
-
-
-add
-
-groupN018.xml
-file
-
-
-
-add
-
-groupN018.xsd
-file
-
-
-
-add
-
-groupN019.xml
-file
-
-
-
-add
-
-groupN019.xsd
-file
-
-
-
-add
-
-groupN020.xsd
-file
-
-
-
-add
-
-groupN021.xml
-file
-
-
-
-add
-
-groupN021.xsd
-file
-
-
-
-add
-
-groupN022.xsd
-file
-
-
-
-add
-
-groupN023.xsd
-file
-
-
-
-add
-
-groupN024.xsd
-file
-
-
-
-add
-
-groupN025.xsd
-file
-
-
-
-add
-
-groupO001.xsd
-file
-
-
-
-add
-
-groupO002.xsd
-file
-
-
-
-add
-
-groupO003.xsd
-file
-
-
-
-add
-
-groupO004.xml
-file
-
-
-
-add
-
-groupO004.xsd
-file
-
-
-
-add
-
-groupO005.xml
-file
-
-
-
-add
-
-groupO005.xsd
-file
-
-
-
-add
-
-groupO006.xml
-file
-
-
-
-add
-
-groupO006.xsd
-file
-
-
-
-add
-
-groupO007.xml
-file
-
-
-
-add
-
-groupO007.xsd
-file
-
-
-
-add
-
-groupO008.xml
-file
-
-
-
-add
-
-groupO008.xsd
-file
-
-
-
-add
-
-groupO009.xml
-file
-
-
-
-add
-
-groupO009.xsd
-file
-
-
-
-add
-
-groupO010.xsd
-file
-
-
-
-add
-
-groupO011.xsd
-file
-
-
-
-add
-
-groupO012.xsd
-file
-
-
-
-add
-
-groupO013.xsd
-file
-
-
-
-add
-
-groupO014.xsd
-file
-
-
-
-add
-
-groupO015.xsd
-file
-
-
-
-add
-
-groupO016.xsd
-file
-
-
-
-add
-
-groupO017.xsd
-file
-
-
-
-add
-
-groupO018.xsd
-file
-
-
-
-add
-
-groupO019.xsd
-file
-
-
-
-add
-
-groupO020.xsd
-file
-
-
-
-add
-
-groupO021.xsd
-file
-
-
-
-add
-
-groupO022.xsd
-file
-
-
-
-add
-
-groupO023.xsd
-file
-
-
-
-add
-
-groupO024.xsd
-file
-
-
-
-add
-
-groupO025.xsd
-file
-
-
-
-add
-
-groupO026.xsd
-file
-
-
-
-add
-
-groupO027.xsd
-file
-
-
-
-add
-

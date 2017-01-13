@@ -1,210 +1,0 @@
-10
-
-dir
-0
-https://workspace.activestate.com/svn/proxml/msData/datatypes/Facets/base64Binary
-https://workspace.activestate.com/svn/proxml
-add
-
-
-
-
-
-
-
-svn:special svn:externals svn:needs-lock
-
-
-
-
-
-
-
-
-
-
-
-1b3ceb3c-19de-44e1-9963-2b9d4c904b94
-
-base64Binary_enumeration001.xml
-file
-
-
-
-add
-
-base64Binary_enumeration001.xsd
-file
-
-
-
-add
-
-base64Binary_enumeration002.xml
-file
-
-
-
-add
-
-base64Binary_enumeration002.xsd
-file
-
-
-
-add
-
-base64Binary_enumeration003.xml
-file
-
-
-
-add
-
-base64Binary_enumeration003.xsd
-file
-
-
-
-add
-
-base64Binary_length001.xml
-file
-
-
-
-add
-
-base64Binary_length001.xsd
-file
-
-
-
-add
-
-base64Binary_length002.xml
-file
-
-
-
-add
-
-base64Binary_length002.xsd
-file
-
-
-
-add
-
-base64Binary_length003.xml
-file
-
-
-
-add
-
-base64Binary_length003.xsd
-file
-
-
-
-add
-
-base64Binary_maxLength001.xml
-file
-
-
-
-add
-
-base64Binary_maxLength001.xsd
-file
-
-
-
-add
-
-base64Binary_maxLength002.xml
-file
-
-
-
-add
-
-base64Binary_maxLength002.xsd
-file
-
-
-
-add
-
-base64Binary_maxLength003.xml
-file
-
-
-
-add
-
-base64Binary_maxLength003.xsd
-file
-
-
-
-add
-
-base64Binary_minLength001.xml
-file
-
-
-
-add
-
-base64Binary_minLength001.xsd
-file
-
-
-
-add
-
-base64Binary_minLength002.xml
-file
-
-
-
-add
-
-base64Binary_minLength002.xsd
-file
-
-
-
-add
-
-base64Binary_minLength003.xml
-file
-
-
-
-add
-
-base64Binary_minLength003.xsd
-file
-
-
-
-add
-
-base64Binary_minLength004.xml
-file
-
-
-
-add
-
-base64Binary_minLength004.xsd
-file
-
-
-
-add
-

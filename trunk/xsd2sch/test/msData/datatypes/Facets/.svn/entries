@@ -1,413 +1,0 @@
-10
-
-dir
-0
-https://workspace.activestate.com/svn/proxml/msData/datatypes/Facets
-https://workspace.activestate.com/svn/proxml
-add
-
-
-
-
-
-
-
-svn:special svn:externals svn:needs-lock
-
-
-
-
-
-
-
-
-
-
-
-1b3ceb3c-19de-44e1-9963-2b9d4c904b94
-
-CDATA
-dir
-
-
-
-add
-
-ENTITIES
-dir
-
-
-
-add
-
-ENTITY
-dir
-
-
-
-add
-
-ID
-dir
-
-
-
-add
-
-IDREF
-dir
-
-
-
-add
-
-IDREFS
-dir
-
-
-
-add
-
-NCName
-dir
-
-
-
-add
-
-NMTOKEN
-dir
-
-
-
-add
-
-NMTOKENS
-dir
-
-
-
-add
-
-NOTATION
-dir
-
-
-
-add
-
-Name
-dir
-
-
-
-add
-
-QName
-dir
-
-
-
-add
-
-Schemas
-dir
-
-
-
-add
-
-anyURI
-dir
-
-
-
-add
-
-base64Binary
-dir
-
-
-
-add
-
-binary
-dir
-
-
-
-add
-
-byte
-dir
-
-
-
-add
-
-century
-dir
-
-
-
-add
-
-date
-dir
-
-
-
-add
-
-dateTime
-dir
-
-
-
-add
-
-decimal
-dir
-
-
-
-add
-
-double
-dir
-
-
-
-add
-
-duration
-dir
-
-
-
-add
-
-float
-dir
-
-
-
-add
-
-gDay
-dir
-
-
-
-add
-
-gMonth
-dir
-
-
-
-add
-
-gMonthDay
-dir
-
-
-
-add
-
-gYear
-dir
-
-
-
-add
-
-gYearMonth
-dir
-
-
-
-add
-
-hexBinary
-dir
-
-
-
-add
-
-int
-dir
-
-
-
-add
-
-integer
-dir
-
-
-
-add
-
-language
-dir
-
-
-
-add
-
-list
-dir
-
-
-
-add
-
-long
-dir
-
-
-
-add
-
-month
-dir
-
-
-
-add
-
-negativeInteger
-dir
-
-
-
-add
-
-nonNegativeInteger
-dir
-
-
-
-add
-
-nonPositiveInteger
-dir
-
-
-
-add
-
-normalizedString
-dir
-
-
-
-add
-
-positiveInteger
-dir
-
-
-
-add
-
-recurringDate
-dir
-
-
-
-add
-
-recurringDay
-dir
-
-
-
-add
-
-recurringDuration
-dir
-
-
-
-add
-
-short
-dir
-
-
-
-add
-
-string
-dir
-
-
-
-add
-
-time
-dir
-
-
-
-add
-
-timeDuration
-dir
-
-
-
-add
-
-timeInstant
-dir
-
-
-
-add
-
-timePeriod
-dir
-
-
-
-add
-
-token
-dir
-
-
-
-add
-
-unsignedByte
-dir
-
-
-
-add
-
-unsignedInt
-dir
-
-
-
-add
-
-unsignedLong
-dir
-
-
-
-add
-
-unsignedShort
-dir
-
-
-
-add
-
