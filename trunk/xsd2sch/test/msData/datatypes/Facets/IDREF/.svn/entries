@@ -1,238 +1,0 @@
-10
-
-dir
-0
-https://workspace.activestate.com/svn/proxml/msData/datatypes/Facets/IDREF
-https://workspace.activestate.com/svn/proxml
-add
-
-
-
-
-
-
-
-svn:special svn:externals svn:needs-lock
-
-
-
-
-
-
-
-
-
-
-
-1b3ceb3c-19de-44e1-9963-2b9d4c904b94
-
-IDREF_enumeration001.xml
-file
-
-
-
-add
-
-IDREF_enumeration001.xsd
-file
-
-
-
-add
-
-IDREF_enumeration002.xml
-file
-
-
-
-add
-
-IDREF_enumeration002.xsd
-file
-
-
-
-add
-
-IDREF_enumeration003.xml
-file
-
-
-
-add
-
-IDREF_enumeration003.xsd
-file
-
-
-
-add
-
-IDREF_enumeration004.xml
-file
-
-
-
-add
-
-IDREF_enumeration004.xsd
-file
-
-
-
-add
-
-IDREF_length001.xml
-file
-
-
-
-add
-
-IDREF_length001.xsd
-file
-
-
-
-add
-
-IDREF_length002.xml
-file
-
-
-
-add
-
-IDREF_length002.xsd
-file
-
-
-
-add
-
-IDREF_length003.xml
-file
-
-
-
-add
-
-IDREF_length003.xsd
-file
-
-
-
-add
-
-IDREF_maxLength001.xml
-file
-
-
-
-add
-
-IDREF_maxLength001.xsd
-file
-
-
-
-add
-
-IDREF_maxLength002.xml
-file
-
-
-
-add
-
-IDREF_maxLength002.xsd
-file
-
-
-
-add
-
-IDREF_maxLength003.xml
-file
-
-
-
-add
-
-IDREF_maxLength003.xsd
-file
-
-
-
-add
-
-IDREF_minLength001.xml
-file
-
-
-
-add
-
-IDREF_minLength001.xsd
-file
-
-
-
-add
-
-IDREF_minLength002.xml
-file
-
-
-
-add
-
-IDREF_minLength002.xsd
-file
-
-
-
-add
-
-IDREF_minLength003.xml
-file
-
-
-
-add
-
-IDREF_minLength003.xsd
-file
-
-
-
-add
-
-IDREF_minLength004.xml
-file
-
-
-
-add
-
-IDREF_minLength004.xsd
-file
-
-
-
-add
-
-IDREF_pattern001.xml
-file
-
-
-
-add
-
-IDREF_pattern001.xsd
-file
-
-
-
-add
-

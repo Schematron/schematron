@@ -1,252 +1,0 @@
-10
-
-dir
-0
-https://workspace.activestate.com/svn/proxml/msData/datatypes/Facets/string
-https://workspace.activestate.com/svn/proxml
-add
-
-
-
-
-
-
-
-svn:special svn:externals svn:needs-lock
-
-
-
-
-
-
-
-
-
-
-
-1b3ceb3c-19de-44e1-9963-2b9d4c904b94
-
-string_enumeration001.xml
-file
-
-
-
-add
-
-string_enumeration001.xsd
-file
-
-
-
-add
-
-string_enumeration002.xml
-file
-
-
-
-add
-
-string_enumeration002.xsd
-file
-
-
-
-add
-
-string_enumeration003.xml
-file
-
-
-
-add
-
-string_enumeration003.xsd
-file
-
-
-
-add
-
-string_enumeration004.xml
-file
-
-
-
-add
-
-string_enumeration004.xsd
-file
-
-
-
-add
-
-string_length001.xml
-file
-
-
-
-add
-
-string_length001.xsd
-file
-
-
-
-add
-
-string_length002.xml
-file
-
-
-
-add
-
-string_length002.xsd
-file
-
-
-
-add
-
-string_length003.xml
-file
-
-
-
-add
-
-string_length003.xsd
-file
-
-
-
-add
-
-string_maxLength001.xml
-file
-
-
-
-add
-
-string_maxLength001.xsd
-file
-
-
-
-add
-
-string_maxLength002.xml
-file
-
-
-
-add
-
-string_maxLength002.xsd
-file
-
-
-
-add
-
-string_maxLength003.xml
-file
-
-
-
-add
-
-string_maxLength003.xsd
-file
-
-
-
-add
-
-string_minLength001.xml
-file
-
-
-
-add
-
-string_minLength001.xsd
-file
-
-
-
-add
-
-string_minLength002.xml
-file
-
-
-
-add
-
-string_minLength002.xsd
-file
-
-
-
-add
-
-string_minLength003.xml
-file
-
-
-
-add
-
-string_minLength003.xsd
-file
-
-
-
-add
-
-string_minLength004.xml
-file
-
-
-
-add
-
-string_minLength004.xsd
-file
-
-
-
-add
-
-string_pattern001.xml
-file
-
-
-
-add
-
-string_pattern001.xsd
-file
-
-
-
-add
-
-string_pattern002.xml
-file
-
-
-
-add
-
-string_pattern002.xsd
-file
-
-
-
-add
-
