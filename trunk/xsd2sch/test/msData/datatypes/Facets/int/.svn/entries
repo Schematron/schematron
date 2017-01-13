@@ -1,602 +1,0 @@
-10
-
-dir
-0
-https://workspace.activestate.com/svn/proxml/msData/datatypes/Facets/int
-https://workspace.activestate.com/svn/proxml
-add
-
-
-
-
-
-
-
-svn:special svn:externals svn:needs-lock
-
-
-
-
-
-
-
-
-
-
-
-1b3ceb3c-19de-44e1-9963-2b9d4c904b94
-
-int_enumeration001.xml
-file
-
-
-
-add
-
-int_enumeration001.xsd
-file
-
-
-
-add
-
-int_enumeration002.xml
-file
-
-
-
-add
-
-int_enumeration002.xsd
-file
-
-
-
-add
-
-int_enumeration003.xml
-file
-
-
-
-add
-
-int_enumeration003.xsd
-file
-
-
-
-add
-
-int_enumeration004.xml
-file
-
-
-
-add
-
-int_enumeration004.xsd
-file
-
-
-
-add
-
-int_maxExclusive001.xml
-file
-
-
-
-add
-
-int_maxExclusive001.xsd
-file
-
-
-
-add
-
-int_maxExclusive002.xml
-file
-
-
-
-add
-
-int_maxExclusive002.xsd
-file
-
-
-
-add
-
-int_maxExclusive003.xml
-file
-
-
-
-add
-
-int_maxExclusive003.xsd
-file
-
-
-
-add
-
-int_maxExclusive004b.xsd
-file
-
-
-
-add
-
-int_maxExclusive004c.xsd
-file
-
-
-
-add
-
-int_maxExclusive004d.xsd
-file
-
-
-
-add
-
-int_maxExclusive004e.xsd
-file
-
-
-
-add
-
-int_maxExclusive004f.xsd
-file
-
-
-
-add
-
-int_maxExclusive004h.xsd
-file
-
-
-
-add
-
-int_maxExclusive004i.xsd
-file
-
-
-
-add
-
-int_maxInclusive001.xml
-file
-
-
-
-add
-
-int_maxInclusive001.xsd
-file
-
-
-
-add
-
-int_maxInclusive002.xml
-file
-
-
-
-add
-
-int_maxInclusive002.xsd
-file
-
-
-
-add
-
-int_maxInclusive003.xml
-file
-
-
-
-add
-
-int_maxInclusive003.xsd
-file
-
-
-
-add
-
-int_maxInclusive004a.xsd
-file
-
-
-
-add
-
-int_maxInclusive004b.xsd
-file
-
-
-
-add
-
-int_maxInclusive004c.xsd
-file
-
-
-
-add
-
-int_maxInclusive004d.xsd
-file
-
-
-
-add
-
-int_maxInclusive004e.xsd
-file
-
-
-
-add
-
-int_maxInclusive004f.xsd
-file
-
-
-
-add
-
-int_maxInclusive004g.xsd
-file
-
-
-
-add
-
-int_maxInclusive004h.xsd
-file
-
-
-
-add
-
-int_maxInclusive004i.xsd
-file
-
-
-
-add
-
-int_minExclusive001.xml
-file
-
-
-
-add
-
-int_minExclusive001.xsd
-file
-
-
-
-add
-
-int_minExclusive002.xml
-file
-
-
-
-add
-
-int_minExclusive002.xsd
-file
-
-
-
-add
-
-int_minExclusive003.xml
-file
-
-
-
-add
-
-int_minExclusive003.xsd
-file
-
-
-
-add
-
-int_minExclusive004.xml
-file
-
-
-
-add
-
-int_minExclusive004.xsd
-file
-
-
-
-add
-
-int_minExclusive005.xml
-file
-
-
-
-add
-
-int_minExclusive005.xsd
-file
-
-
-
-add
-
-int_minExclusive006a.xsd
-file
-
-
-
-add
-
-int_minExclusive006c.xsd
-file
-
-
-
-add
-
-int_minExclusive006e.xsd
-file
-
-
-
-add
-
-int_minExclusive006f.xsd
-file
-
-
-
-add
-
-int_minExclusive006g.xsd
-file
-
-
-
-add
-
-int_minExclusive006h.xsd
-file
-
-
-
-add
-
-int_minExclusive006i.xsd
-file
-
-
-
-add
-
-int_minExclusive006j.xsd
-file
-
-
-
-add
-
-int_minInclusive001.xml
-file
-
-
-
-add
-
-int_minInclusive001.xsd
-file
-
-
-
-add
-
-int_minInclusive002.xml
-file
-
-
-
-add
-
-int_minInclusive002.xsd
-file
-
-
-
-add
-
-int_minInclusive003.xml
-file
-
-
-
-add
-
-int_minInclusive003.xsd
-file
-
-
-
-add
-
-int_minInclusive004.xml
-file
-
-
-
-add
-
-int_minInclusive004.xsd
-file
-
-
-
-add
-
-int_minInclusive005.xml
-file
-
-
-
-add
-
-int_minInclusive005.xsd
-file
-
-
-
-add
-
-int_minInclusive006a.xsd
-file
-
-
-
-add
-
-int_minInclusive006b.xsd
-file
-
-
-
-add
-
-int_minInclusive006c.xsd
-file
-
-
-
-add
-
-int_minInclusive006d.xsd
-file
-
-
-
-add
-
-int_minInclusive006f.xsd
-file
-
-
-
-add
-
-int_minInclusive006g.xsd
-file
-
-
-
-add
-
-int_minInclusive006h.xsd
-file
-
-
-
-add
-
-int_minInclusive006i.xsd
-file
-
-
-
-add
-
-int_pattern001.xml
-file
-
-
-
-add
-
-int_pattern001.xsd
-file
-
-
-
-add
-
-int_totalDigits001.xml
-file
-
-
-
-add
-
-int_totalDigits001.xsd
-file
-
-
-
-add
-
-int_totalDigits002.xml
-file
-
-
-
-add
-
-int_totalDigits002.xsd
-file
-
-
-
-add
-
-int_totalDigits003.xml
-file
-
-
-
-add
-
-int_totalDigits003.xsd
-file
-
-
-
-add
-
-test111092.xml
-file
-
-
-
-add
-
-test111092.xsd
-file
-
-
-
-add
-

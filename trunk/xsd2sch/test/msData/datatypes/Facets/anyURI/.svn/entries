@@ -1,427 +1,0 @@
-10
-
-dir
-0
-https://workspace.activestate.com/svn/proxml/msData/datatypes/Facets/anyURI
-https://workspace.activestate.com/svn/proxml
-add
-
-
-
-
-
-
-
-svn:special svn:externals svn:needs-lock
-
-
-
-
-
-
-
-
-
-
-
-1b3ceb3c-19de-44e1-9963-2b9d4c904b94
-
-anyURI_a001.xml
-file
-
-
-
-add
-
-anyURI_a001.xsd
-file
-
-
-
-add
-
-anyURI_a002.xml
-file
-
-
-
-add
-
-anyURI_a002.xsd
-file
-
-
-
-add
-
-anyURI_a003.xsd
-file
-
-
-
-add
-
-anyURI_a004.xml
-file
-
-
-
-add
-
-anyURI_a004.xsd
-file
-
-
-
-add
-
-anyURI_a005.xsd
-file
-
-
-
-add
-
-anyURI_a006.xsd
-file
-
-
-
-add
-
-anyURI_a007.xsd
-file
-
-
-
-add
-
-anyURI_a008.xsd
-file
-
-
-
-add
-
-anyURI_a009.xsd
-file
-
-
-
-add
-
-anyURI_a010.xsd
-file
-
-
-
-add
-
-anyURI_a011.xsd
-file
-
-
-
-add
-
-anyURI_a012.xsd
-file
-
-
-
-add
-
-anyURI_a013.xsd
-file
-
-
-
-add
-
-anyURI_a014.xsd
-file
-
-
-
-add
-
-anyURI_a015.xsd
-file
-
-
-
-add
-
-anyURI_a016.xsd
-file
-
-
-
-add
-
-anyURI_b001.xml
-file
-
-
-
-add
-
-anyURI_b001.xsd
-file
-
-
-
-add
-
-anyURI_b002.xml
-file
-
-
-
-add
-
-anyURI_b002.xsd
-file
-
-
-
-add
-
-anyURI_b004.xml
-file
-
-
-
-add
-
-anyURI_b004.xsd
-file
-
-
-
-add
-
-anyURI_b005.xml
-file
-
-
-
-add
-
-anyURI_b005.xsd
-file
-
-
-
-add
-
-anyURI_b006.xml
-file
-
-
-
-add
-
-anyURI_b006.xsd
-file
-
-
-
-add
-
-anyURI_enumeration001.xml
-file
-
-
-
-add
-
-anyURI_enumeration001.xsd
-file
-
-
-
-add
-
-anyURI_enumeration002.xml
-file
-
-
-
-add
-
-anyURI_enumeration002.xsd
-file
-
-
-
-add
-
-anyURI_enumeration003.xml
-file
-
-
-
-add
-
-anyURI_enumeration003.xsd
-file
-
-
-
-add
-
-anyURI_enumeration004.xml
-file
-
-
-
-add
-
-anyURI_enumeration004.xsd
-file
-
-
-
-add
-
-anyURI_length001.xml
-file
-
-
-
-add
-
-anyURI_length001.xsd
-file
-
-
-
-add
-
-anyURI_length002.xml
-file
-
-
-
-add
-
-anyURI_length002.xsd
-file
-
-
-
-add
-
-anyURI_length003.xml
-file
-
-
-
-add
-
-anyURI_length003.xsd
-file
-
-
-
-add
-
-anyURI_maxLength001.xml
-file
-
-
-
-add
-
-anyURI_maxLength001.xsd
-file
-
-
-
-add
-
-anyURI_maxLength002.xml
-file
-
-
-
-add
-
-anyURI_maxLength002.xsd
-file
-
-
-
-add
-
-anyURI_maxLength003.xml
-file
-
-
-
-add
-
-anyURI_maxLength003.xsd
-file
-
-
-
-add
-
-anyURI_minLength001.xml
-file
-
-
-
-add
-
-anyURI_minLength001.xsd
-file
-
-
-
-add
-
-anyURI_minLength002.xml
-file
-
-
-
-add
-
-anyURI_minLength002.xsd
-file
-
-
-
-add
-
-anyURI_minLength003.xml
-file
-
-
-
-add
-
-anyURI_minLength003.xsd
-file
-
-
-
-add
-
-anyURI_minLength004.xml
-file
-
-
-
-add
-
-anyURI_minLength004.xsd
-file
-
-
-
-add
-

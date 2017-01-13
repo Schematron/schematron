@@ -1,868 +1,0 @@
-10
-
-dir
-0
-https://workspace.activestate.com/svn/proxml/msData/notations
-https://workspace.activestate.com/svn/proxml
-add
-
-
-
-
-
-
-
-svn:special svn:externals svn:needs-lock
-
-
-
-
-
-
-
-
-
-
-
-1b3ceb3c-19de-44e1-9963-2b9d4c904b94
-
-notatA001.xsd
-file
-
-
-
-add
-
-notatA002.xsd
-file
-
-
-
-add
-
-notatA003.xsd
-file
-
-
-
-add
-
-notatA004.xsd
-file
-
-
-
-add
-
-notatA005.xsd
-file
-
-
-
-add
-
-notatA006.xsd
-file
-
-
-
-add
-
-notatA007.xsd
-file
-
-
-
-add
-
-notatB001.xsd
-file
-
-
-
-add
-
-notatB002.xsd
-file
-
-
-
-add
-
-notatB003.xsd
-file
-
-
-
-add
-
-notatB004.xsd
-file
-
-
-
-add
-
-notatB005.xsd
-file
-
-
-
-add
-
-notatB006.xsd
-file
-
-
-
-add
-
-notatB008.xsd
-file
-
-
-
-add
-
-notatB009.xsd
-file
-
-
-
-add
-
-notatB010.xsd
-file
-
-
-
-add
-
-notatB011.xsd
-file
-
-
-
-add
-
-notatB012.xsd
-file
-
-
-
-add
-
-notatB013.xsd
-file
-
-
-
-add
-
-notatB014.xsd
-file
-
-
-
-add
-
-notatB015.xsd
-file
-
-
-
-add
-
-notatB016.xsd
-file
-
-
-
-add
-
-notatC001.xsd
-file
-
-
-
-add
-
-notatC003.xsd
-file
-
-
-
-add
-
-notatC004.xsd
-file
-
-
-
-add
-
-notatC005.xsd
-file
-
-
-
-add
-
-notatC006.xsd
-file
-
-
-
-add
-
-notatD001.xsd
-file
-
-
-
-add
-
-notatD004.xsd
-file
-
-
-
-add
-
-notatD005.xsd
-file
-
-
-
-add
-
-notatD006.xsd
-file
-
-
-
-add
-
-notatD007.xsd
-file
-
-
-
-add
-
-notatE001.xsd
-file
-
-
-
-add
-
-notatE002.xsd
-file
-
-
-
-add
-
-notatE003.xsd
-file
-
-
-
-add
-
-notatE004.xsd
-file
-
-
-
-add
-
-notatF001.xsd
-file
-
-
-
-add
-
-notatF002.xsd
-file
-
-
-
-add
-
-notatF003.xsd
-file
-
-
-
-add
-
-notatF004.xsd
-file
-
-
-
-add
-
-notatF005.xsd
-file
-
-
-
-add
-
-notatF006.xsd
-file
-
-
-
-add
-
-notatF007.xsd
-file
-
-
-
-add
-
-notatF008.xsd
-file
-
-
-
-add
-
-notatF009.xsd
-file
-
-
-
-add
-
-notatF010.xsd
-file
-
-
-
-add
-
-notatF011.xsd
-file
-
-
-
-add
-
-notatF012.xsd
-file
-
-
-
-add
-
-notatF013.xsd
-file
-
-
-
-add
-
-notatF014.xsd
-file
-
-
-
-add
-
-notatF015.xsd
-file
-
-
-
-add
-
-notatF016.xsd
-file
-
-
-
-add
-
-notatF017.xsd
-file
-
-
-
-add
-
-notatF018.xsd
-file
-
-
-
-add
-
-notatF019.xsd
-file
-
-
-
-add
-
-notatF020.xsd
-file
-
-
-
-add
-
-notatF021.xsd
-file
-
-
-
-add
-
-notatF022.xsd
-file
-
-
-
-add
-
-notatF023.xsd
-file
-
-
-
-add
-
-notatF024.xsd
-file
-
-
-
-add
-
-notatF025.xsd
-file
-
-
-
-add
-
-notatF026.xsd
-file
-
-
-
-add
-
-notatF027.xsd
-file
-
-
-
-add
-
-notatF028.xsd
-file
-
-
-
-add
-
-notatF029.xsd
-file
-
-
-
-add
-
-notatF030.xsd
-file
-
-
-
-add
-
-notatF031.xsd
-file
-
-
-
-add
-
-notatF032.xsd
-file
-
-
-
-add
-
-notatF033.xsd
-file
-
-
-
-add
-
-notatF034.xsd
-file
-
-
-
-add
-
-notatF035.xsd
-file
-
-
-
-add
-
-notatF036.xsd
-file
-
-
-
-add
-
-notatF037.xsd
-file
-
-
-
-add
-
-notatF038.xsd
-file
-
-
-
-add
-
-notatF039.xsd
-file
-
-
-
-add
-
-notatF040.xsd
-file
-
-
-
-add
-
-notatF041.xsd
-file
-
-
-
-add
-
-notatF042.xsd
-file
-
-
-
-add
-
-notatF043.xsd
-file
-
-
-
-add
-
-notatF044.xsd
-file
-
-
-
-add
-
-notatF045.xsd
-file
-
-
-
-add
-
-notatF046.xsd
-file
-
-
-
-add
-
-notatF047.xsd
-file
-
-
-
-add
-
-notatF048.xsd
-file
-
-
-
-add
-
-notatF049.xsd
-file
-
-
-
-add
-
-notatF050.xsd
-file
-
-
-
-add
-
-notatF051.xsd
-file
-
-
-
-add
-
-notatF052.xsd
-file
-
-
-
-add
-
-notatF053.xsd
-file
-
-
-
-add
-
-notatF054.xsd
-file
-
-
-
-add
-
-notatF055.xsd
-file
-
-
-
-add
-
-notatF056.xsd
-file
-
-
-
-add
-
-notatF057.xsd
-file
-
-
-
-add
-
-notatF058.xsd
-file
-
-
-
-add
-
-notatF059.xsd
-file
-
-
-
-add
-
-notatF060.xsd
-file
-
-
-
-add
-
-notatF061.xsd
-file
-
-
-
-add
-
-notatF062.xsd
-file
-
-
-
-add
-
-notatF063.xsd
-file
-
-
-
-add
-
-notatF064.xsd
-file
-
-
-
-add
-
-notatF065.xsd
-file
-
-
-
-add
-
-notatF066.xsd
-file
-
-
-
-add
-
-notatF067.xsd
-file
-
-
-
-add
-
-notatF068.xsd
-file
-
-
-
-add
-
-notatF069.xsd
-file
-
-
-
-add
-
-notatF070.xsd
-file
-
-
-
-add
-
-notatF071.xsd
-file
-
-
-
-add
-
-notatF072.xsd
-file
-
-
-
-add
-
-notatG001.xsd
-file
-
-
-
-add
-
-notatG002.xsd
-file
-
-
-
-add
-
-notatG003.xsd
-file
-
-
-
-add
-
-notatG005.xsd
-file
-
-
-
-add
-
-notatG006.xsd
-file
-
-
-
-add
-
-notatH001.xml
-file
-
-
-
-add
-
-notatH001.xsd
-file
-
-
-
-add
-
-notatH001a.xsd
-file
-
-
-
-add
-
-notatH002.xml
-file
-
-
-
-add
-
-notatH002.xsd
-file
-
-
-
-add
-
-notatH003.xml
-file
-
-
-
-add
-
-notatH003.xsd
-file
-
-
-
-add
-

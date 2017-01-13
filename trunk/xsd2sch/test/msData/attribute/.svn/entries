@@ -1,2926 +1,0 @@
-10
-
-dir
-0
-https://workspace.activestate.com/svn/proxml/msData/attribute
-https://workspace.activestate.com/svn/proxml
-add
-
-
-
-
-
-
-
-svn:special svn:externals svn:needs-lock
-
-
-
-
-
-
-
-
-
-
-
-1b3ceb3c-19de-44e1-9963-2b9d4c904b94
-
-attA001.xsd
-file
-
-
-
-add
-
-attA002.xsd
-file
-
-
-
-add
-
-attA003.xsd
-file
-
-
-
-add
-
-attA004.xsd
-file
-
-
-
-add
-
-attA005.xsd
-file
-
-
-
-add
-
-attA006.xsd
-file
-
-
-
-add
-
-attA007.xsd
-file
-
-
-
-add
-
-attA008.xsd
-file
-
-
-
-add
-
-attB001.xsd
-file
-
-
-
-add
-
-attB002.xsd
-file
-
-
-
-add
-
-attB003.xsd
-file
-
-
-
-add
-
-attB004.xsd
-file
-
-
-
-add
-
-attB005.xsd
-file
-
-
-
-add
-
-attB006.xsd
-file
-
-
-
-add
-
-attC001.xsd
-file
-
-
-
-add
-
-attC002.xsd
-file
-
-
-
-add
-
-attC003.xsd
-file
-
-
-
-add
-
-attC004.xsd
-file
-
-
-
-add
-
-attC005.xsd
-file
-
-
-
-add
-
-attC006.xsd
-file
-
-
-
-add
-
-attC007.xsd
-file
-
-
-
-add
-
-attC008.xsd
-file
-
-
-
-add
-
-attC009.xsd
-file
-
-
-
-add
-
-attC010.xsd
-file
-
-
-
-add
-
-attD001.xsd
-file
-
-
-
-add
-
-attD002.xsd
-file
-
-
-
-add
-
-attD003.xml
-file
-
-
-
-add
-
-attD003.xsd
-file
-
-
-
-add
-
-attD004.xml
-file
-
-
-
-add
-
-attD004.xsd
-file
-
-
-
-add
-
-attD005.xsd
-file
-
-
-
-add
-
-attD006.xsd
-file
-
-
-
-add
-
-attD007.xml
-file
-
-
-
-add
-
-attD007.xsd
-file
-
-
-
-add
-
-attE001.xml
-file
-
-
-
-add
-
-attE001.xsd
-file
-
-
-
-add
-
-attE002.xsd
-file
-
-
-
-add
-
-attE003.xsd
-file
-
-
-
-add
-
-attE004.xsd
-file
-
-
-
-add
-
-attE005.xsd
-file
-
-
-
-add
-
-attE006.xsd
-file
-
-
-
-add
-
-attE007.xsd
-file
-
-
-
-add
-
-attE008.imp
-file
-
-
-
-add
-
-attE008.xsd
-file
-
-
-
-add
-
-attF001.xml
-file
-
-
-
-add
-
-attF001.xsd
-file
-
-
-
-add
-
-attF002.xml
-file
-
-
-
-add
-
-attF002.xsd
-file
-
-
-
-add
-
-attF003.xml
-file
-
-
-
-add
-
-attF003.xsd
-file
-
-
-
-add
-
-attF004.xsd
-file
-
-
-
-add
-
-attF005.xsd
-file
-
-
-
-add
-
-attF006.xsd
-file
-
-
-
-add
-
-attF007.xsd
-file
-
-
-
-add
-
-attF008.xsd
-file
-
-
-
-add
-
-attF009.xsd
-file
-
-
-
-add
-
-attF010.xsd
-file
-
-
-
-add
-
-attF011.xsd
-file
-
-
-
-add
-
-attG001.xsd
-file
-
-
-
-add
-
-attG002.xsd
-file
-
-
-
-add
-
-attG003.xsd
-file
-
-
-
-add
-
-attH001.xsd
-file
-
-
-
-add
-
-attI001.xsd
-file
-
-
-
-add
-
-attI002.xsd
-file
-
-
-
-add
-
-attI003.xml
-file
-
-
-
-add
-
-attI003.xsd
-file
-
-
-
-add
-
-attI004.xsd
-file
-
-
-
-add
-
-attI005.xsd
-file
-
-
-
-add
-
-attI006.xsd
-file
-
-
-
-add
-
-attJ001.xml
-file
-
-
-
-add
-
-attJ001.xsd
-file
-
-
-
-add
-
-attJ002.xml
-file
-
-
-
-add
-
-attJ002.xsd
-file
-
-
-
-add
-
-attJ003.xml
-file
-
-
-
-add
-
-attJ003.xsd
-file
-
-
-
-add
-
-attJ004.xml
-file
-
-
-
-add
-
-attJ004.xsd
-file
-
-
-
-add
-
-attJ005.xml
-file
-
-
-
-add
-
-attJ005.xsd
-file
-
-
-
-add
-
-attJ006.xml
-file
-
-
-
-add
-
-attJ006.xsd
-file
-
-
-
-add
-
-attJ007.xml
-file
-
-
-
-add
-
-attJ007.xsd
-file
-
-
-
-add
-
-attJ008.xml
-file
-
-
-
-add
-
-attJ008.xsd
-file
-
-
-
-add
-
-attJ009.xml
-file
-
-
-
-add
-
-attJ009.xsd
-file
-
-
-
-add
-
-attJ010.xml
-file
-
-
-
-add
-
-attJ010.xsd
-file
-
-
-
-add
-
-attJ011.xsd
-file
-
-
-
-add
-
-attJ012.xsd
-file
-
-
-
-add
-
-attJ013.xsd
-file
-
-
-
-add
-
-attJ014.xsd
-file
-
-
-
-add
-
-attJ015.xsd
-file
-
-
-
-add
-
-attJ016.xsd
-file
-
-
-
-add
-
-attJ017.xsd
-file
-
-
-
-add
-
-attJ018.xml
-file
-
-
-
-add
-
-attJ018.xsd
-file
-
-
-
-add
-
-attKa001.xsd
-file
-
-
-
-add
-
-attKa002.xsd
-file
-
-
-
-add
-
-attKa003.xsd
-file
-
-
-
-add
-
-attKa004.xsd
-file
-
-
-
-add
-
-attKa005.xsd
-file
-
-
-
-add
-
-attKa006.xsd
-file
-
-
-
-add
-
-attKa007.xsd
-file
-
-
-
-add
-
-attKa008.xsd
-file
-
-
-
-add
-
-attKa009.xsd
-file
-
-
-
-add
-
-attKa010.xsd
-file
-
-
-
-add
-
-attKa011.xsd
-file
-
-
-
-add
-
-attKa012.xsd
-file
-
-
-
-add
-
-attKa013.xsd
-file
-
-
-
-add
-
-attKa014.xsd
-file
-
-
-
-add
-
-attKa015.xsd
-file
-
-
-
-add
-
-attKb001.xsd
-file
-
-
-
-add
-
-attKb002.xsd
-file
-
-
-
-add
-
-attKb003.xsd
-file
-
-
-
-add
-
-attKb004.xsd
-file
-
-
-
-add
-
-attKb005.xsd
-file
-
-
-
-add
-
-attKb006.xsd
-file
-
-
-
-add
-
-attKb007.xsd
-file
-
-
-
-add
-
-attKb008.xsd
-file
-
-
-
-add
-
-attKb009.xsd
-file
-
-
-
-add
-
-attKb010.xsd
-file
-
-
-
-add
-
-attKb011.xsd
-file
-
-
-
-add
-
-attKb012.xsd
-file
-
-
-
-add
-
-attKb013.xsd
-file
-
-
-
-add
-
-attKb014.xsd
-file
-
-
-
-add
-
-attKb015.xsd
-file
-
-
-
-add
-
-attKb016.xsd
-file
-
-
-
-add
-
-attKb017.xsd
-file
-
-
-
-add
-
-attKb018.xsd
-file
-
-
-
-add
-
-attKb018a.xsd
-file
-
-
-
-add
-
-attKc001.xsd
-file
-
-
-
-add
-
-attKc002.xsd
-file
-
-
-
-add
-
-attKc003.xsd
-file
-
-
-
-add
-
-attKc004.xsd
-file
-
-
-
-add
-
-attKc005.xsd
-file
-
-
-
-add
-
-attKc006.xsd
-file
-
-
-
-add
-
-attKc007.xsd
-file
-
-
-
-add
-
-attKc008.xsd
-file
-
-
-
-add
-
-attKc009.xsd
-file
-
-
-
-add
-
-attKc010.xsd
-file
-
-
-
-add
-
-attKc011.xsd
-file
-
-
-
-add
-
-attKc012.xsd
-file
-
-
-
-add
-
-attKc013.xsd
-file
-
-
-
-add
-
-attKc014.xsd
-file
-
-
-
-add
-
-attKc015.xsd
-file
-
-
-
-add
-
-attKc016.xsd
-file
-
-
-
-add
-
-attKc017.xsd
-file
-
-
-
-add
-
-attKc018.xsd
-file
-
-
-
-add
-
-attKc018a.xsd
-file
-
-
-
-add
-
-attLa001.xml
-file
-
-
-
-add
-
-attLa001.xsd
-file
-
-
-
-add
-
-attLa002.xml
-file
-
-
-
-add
-
-attLa002.xsd
-file
-
-
-
-add
-
-attLa003.xml
-file
-
-
-
-add
-
-attLa003.xsd
-file
-
-
-
-add
-
-attLa004.xml
-file
-
-
-
-add
-
-attLa004.xsd
-file
-
-
-
-add
-
-attLa005.xml
-file
-
-
-
-add
-
-attLa005.xsd
-file
-
-
-
-add
-
-attLa006.xml
-file
-
-
-
-add
-
-attLa006.xsd
-file
-
-
-
-add
-
-attLb001.xml
-file
-
-
-
-add
-
-attLb001.xsd
-file
-
-
-
-add
-
-attLb002.xml
-file
-
-
-
-add
-
-attLb002.xsd
-file
-
-
-
-add
-
-attLb003.xml
-file
-
-
-
-add
-
-attLb003.xsd
-file
-
-
-
-add
-
-attLb004.xml
-file
-
-
-
-add
-
-attLb004.xsd
-file
-
-
-
-add
-
-attLb005.xml
-file
-
-
-
-add
-
-attLb005.xsd
-file
-
-
-
-add
-
-attLb006.xml
-file
-
-
-
-add
-
-attLb006.xsd
-file
-
-
-
-add
-
-attLc001.xml
-file
-
-
-
-add
-
-attLc001.xsd
-file
-
-
-
-add
-
-attLc002.xml
-file
-
-
-
-add
-
-attLc002.xsd
-file
-
-
-
-add
-
-attLc003.xml
-file
-
-
-
-add
-
-attLc003.xsd
-file
-
-
-
-add
-
-attLc004.xml
-file
-
-
-
-add
-
-attLc004.xsd
-file
-
-
-
-add
-
-attLc005.xml
-file
-
-
-
-add
-
-attLc005.xsd
-file
-
-
-
-add
-
-attLc006.xml
-file
-
-
-
-add
-
-attLc006.xsd
-file
-
-
-
-add
-
-attMa001.xml
-file
-
-
-
-add
-
-attMa001.xsd
-file
-
-
-
-add
-
-attMa002.xml
-file
-
-
-
-add
-
-attMa002.xsd
-file
-
-
-
-add
-
-attMa003.xml
-file
-
-
-
-add
-
-attMa003.xsd
-file
-
-
-
-add
-
-attMa004.xml
-file
-
-
-
-add
-
-attMa004.xsd
-file
-
-
-
-add
-
-attMb001.xml
-file
-
-
-
-add
-
-attMb001.xsd
-file
-
-
-
-add
-
-attMb002.xml
-file
-
-
-
-add
-
-attMb002.xsd
-file
-
-
-
-add
-
-attMb003.xml
-file
-
-
-
-add
-
-attMb003.xsd
-file
-
-
-
-add
-
-attMb004.xml
-file
-
-
-
-add
-
-attMb004.xsd
-file
-
-
-
-add
-
-attMb005.xml
-file
-
-
-
-add
-
-attMb005.xsd
-file
-
-
-
-add
-
-attMb006.xml
-file
-
-
-
-add
-
-attMb006.xsd
-file
-
-
-
-add
-
-attMb007.xml
-file
-
-
-
-add
-
-attMb007.xsd
-file
-
-
-
-add
-
-attMb008.xml
-file
-
-
-
-add
-
-attMb008.xsd
-file
-
-
-
-add
-
-attMb009.xml
-file
-
-
-
-add
-
-attMb009.xsd
-file
-
-
-
-add
-
-attMb010.xml
-file
-
-
-
-add
-
-attMb010.xsd
-file
-
-
-
-add
-
-attMb011.xml
-file
-
-
-
-add
-
-attMb011.xsd
-file
-
-
-
-add
-
-attMb012.xml
-file
-
-
-
-add
-
-attMb012.xsd
-file
-
-
-
-add
-
-attMc001.xml
-file
-
-
-
-add
-
-attMc001.xsd
-file
-
-
-
-add
-
-attMc002.xml
-file
-
-
-
-add
-
-attMc002.xsd
-file
-
-
-
-add
-
-attMc003.xml
-file
-
-
-
-add
-
-attMc003.xsd
-file
-
-
-
-add
-
-attMc004.xml
-file
-
-
-
-add
-
-attMc004.xsd
-file
-
-
-
-add
-
-attMc005.xml
-file
-
-
-
-add
-
-attMc005.xsd
-file
-
-
-
-add
-
-attMc006.xml
-file
-
-
-
-add
-
-attMc006.xsd
-file
-
-
-
-add
-
-attMc007.xml
-file
-
-
-
-add
-
-attMc007.xsd
-file
-
-
-
-add
-
-attMc008.xml
-file
-
-
-
-add
-
-attMc008.xsd
-file
-
-
-
-add
-
-attMc009.xml
-file
-
-
-
-add
-
-attMc009.xsd
-file
-
-
-
-add
-
-attMc010.xml
-file
-
-
-
-add
-
-attMc010.xsd
-file
-
-
-
-add
-
-attMc011.xml
-file
-
-
-
-add
-
-attMc011.xsd
-file
-
-
-
-add
-
-attMc012.xml
-file
-
-
-
-add
-
-attMc012.xsd
-file
-
-
-
-add
-
-attO001.xml
-file
-
-
-
-add
-
-attO001.xsd
-file
-
-
-
-add
-
-attO002.xsd
-file
-
-
-
-add
-
-attO003.xsd
-file
-
-
-
-add
-
-attO004.xml
-file
-
-
-
-add
-
-attO004.xsd
-file
-
-
-
-add
-
-attO005.xsd
-file
-
-
-
-add
-
-attO006.xml
-file
-
-
-
-add
-
-attO006.xsd
-file
-
-
-
-add
-
-attO007.xml
-file
-
-
-
-add
-
-attO007.xsd
-file
-
-
-
-add
-
-attO008.xml
-file
-
-
-
-add
-
-attO008.xsd
-file
-
-
-
-add
-
-attO009.xml
-file
-
-
-
-add
-
-attO009.xsd
-file
-
-
-
-add
-
-attO010.xml
-file
-
-
-
-add
-
-attO010.xsd
-file
-
-
-
-add
-
-attO011.xml
-file
-
-
-
-add
-
-attO011.xsd
-file
-
-
-
-add
-
-attO012.xml
-file
-
-
-
-add
-
-attO012.xsd
-file
-
-
-
-add
-
-attO013.xsd
-file
-
-
-
-add
-
-attO014.xsd
-file
-
-
-
-add
-
-attO015.xsd
-file
-
-
-
-add
-
-attO016.xsd
-file
-
-
-
-add
-
-attO017.xsd
-file
-
-
-
-add
-
-attO018.xsd
-file
-
-
-
-add
-
-attO019.xsd
-file
-
-
-
-add
-
-attO020.xsd
-file
-
-
-
-add
-
-attO021.xsd
-file
-
-
-
-add
-
-attO022.xsd
-file
-
-
-
-add
-
-attO023.xsd
-file
-
-
-
-add
-
-attO024.xsd
-file
-
-
-
-add
-
-attO025.xsd
-file
-
-
-
-add
-
-attP001.xsd
-file
-
-
-
-add
-
-attP002.xsd
-file
-
-
-
-add
-
-attP003.xsd
-file
-
-
-
-add
-
-attP004.xml
-file
-
-
-
-add
-
-attP004.xsd
-file
-
-
-
-add
-
-attP005.xml
-file
-
-
-
-add
-
-attP005.xsd
-file
-
-
-
-add
-
-attP006.xsd
-file
-
-
-
-add
-
-attP007.xml
-file
-
-
-
-add
-
-attP007.xsd
-file
-
-
-
-add
-
-attP008.xml
-file
-
-
-
-add
-
-attP008.xsd
-file
-
-
-
-add
-
-attP009.xml
-file
-
-
-
-add
-
-attP009.xsd
-file
-
-
-
-add
-
-attP010.xml
-file
-
-
-
-add
-
-attP010.xsd
-file
-
-
-
-add
-
-attP011.xml
-file
-
-
-
-add
-
-attP011.xsd
-file
-
-
-
-add
-
-attP012.xml
-file
-
-
-
-add
-
-attP012.xsd
-file
-
-
-
-add
-
-attP013.xml
-file
-
-
-
-add
-
-attP013.xsd
-file
-
-
-
-add
-
-attP014.xml
-file
-
-
-
-add
-
-attP014.xsd
-file
-
-
-
-add
-
-attP015.xml
-file
-
-
-
-add
-
-attP015.xsd
-file
-
-
-
-add
-
-attP016.xml
-file
-
-
-
-add
-
-attP016.xsd
-file
-
-
-
-add
-
-attP017.xml
-file
-
-
-
-add
-
-attP017.xsd
-file
-
-
-
-add
-
-attP018.xml
-file
-
-
-
-add
-
-attP018.xsd
-file
-
-
-
-add
-
-attP019.xml
-file
-
-
-
-add
-
-attP019.xsd
-file
-
-
-
-add
-
-attP020.xml
-file
-
-
-
-add
-
-attP020.xsd
-file
-
-
-
-add
-
-attP021.xml
-file
-
-
-
-add
-
-attP021.xsd
-file
-
-
-
-add
-
-attP022.xml
-file
-
-
-
-add
-
-attP022.xsd
-file
-
-
-
-add
-
-attP023.xml
-file
-
-
-
-add
-
-attP023.xsd
-file
-
-
-
-add
-
-attP024.xml
-file
-
-
-
-add
-
-attP024.xsd
-file
-
-
-
-add
-
-attP025.xml
-file
-
-
-
-add
-
-attP025.xsd
-file
-
-
-
-add
-
-attP026.xml
-file
-
-
-
-add
-
-attP026.xsd
-file
-
-
-
-add
-
-attP027.xml
-file
-
-
-
-add
-
-attP027.xsd
-file
-
-
-
-add
-
-attP028.xml
-file
-
-
-
-add
-
-attP028.xsd
-file
-
-
-
-add
-
-attP029.xml
-file
-
-
-
-add
-
-attP029.xsd
-file
-
-
-
-add
-
-attP030.xsd
-file
-
-
-
-add
-
-attP031.xml
-file
-
-
-
-add
-
-attP031.xsd
-file
-
-
-
-add
-
-attP032.imp
-file
-
-
-
-add
-
-attP032.inc
-file
-
-
-
-add
-
-attP032.red
-file
-
-
-
-add
-
-attP032.xml
-file
-
-
-
-add
-
-attP032.xsd
-file
-
-
-
-add
-
-attQ001.xsd
-file
-
-
-
-add
-
-attQ002.xsd
-file
-
-
-
-add
-
-attQ003.xml
-file
-
-
-
-add
-
-attQ003.xsd
-file
-
-
-
-add
-
-attQ004.xsd
-file
-
-
-
-add
-
-attQ005.xsd
-file
-
-
-
-add
-
-attQ006.xsd
-file
-
-
-
-add
-
-attQ007.xsd
-file
-
-
-
-add
-
-attQ008.xsd
-file
-
-
-
-add
-
-attQ009.xsd
-file
-
-
-
-add
-
-attQ010.imp
-file
-
-
-
-add
-
-attQ010.xsd
-file
-
-
-
-add
-
-attQ011.red
-file
-
-
-
-add
-
-attQ011.xsd
-file
-
-
-
-add
-
-attQ012.inc
-file
-
-
-
-add
-
-attQ012.xsd
-file
-
-
-
-add
-
-attQ013.xsd
-file
-
-
-
-add
-
-attQ014.xml
-file
-
-
-
-add
-
-attQ014.xsd
-file
-
-
-
-add
-
-attQ015.xsd
-file
-
-
-
-add
-
-attQ016.imp
-file
-
-
-
-add
-
-attQ016.xsd
-file
-
-
-
-add
-
-attQ017.red
-file
-
-
-
-add
-
-attQ017.xsd
-file
-
-
-
-add
-
-attQ018.inc
-file
-
-
-
-add
-
-attQ018.xsd
-file
-
-
-
-add
-
-attQ019.imp
-file
-
-
-
-add
-
-attQ019.xml
-file
-
-
-
-add
-
-attQ019.xsd
-file
-
-
-
-add
-
-attZ001.xml
-file
-
-
-
-add
-
-attZ001.xsd
-file
-
-
-
-add
-
-attZ001a.xsd
-file
-
-
-
-add
-
-attZ002.xml
-file
-
-
-
-add
-
-attZ002.xsd
-file
-
-
-
-add
-
-attZ004.xsd
-file
-
-
-
-add
-
-attZ005.xml
-file
-
-
-
-add
-
-attZ005.xsd
-file
-
-
-
-add
-
-attZ006.xsd
-file
-
-
-
-add
-
-attZ007.xsd
-file
-
-
-
-add
-
-attZ007i.xml
-file
-
-
-
-add
-
-attZ007v.xml
-file
-
-
-
-add
-
-attZ008_a.xsd
-file
-
-
-
-add
-
-attZ008_b.xsd
-file
-
-
-
-add
-
-attZ008_c.xsd
-file
-
-
-
-add
-
-attZ008_d.xsd
-file
-
-
-
-add
-
-attZ008_e.xsd
-file
-
-
-
-add
-
-attZ008_f.xsd
-file
-
-
-
-add
-
-attZ008_g.xsd
-file
-
-
-
-add
-
-attZ008_h.xsd
-file
-
-
-
-add
-
-attZ009.xml
-file
-
-
-
-add
-
-attZ009.xsd
-file
-
-
-
-add
-
-attZ010a.xsd
-file
-
-
-
-add
-
-attZ010b.xsd
-file
-
-
-
-add
-
-attZ010c.xsd
-file
-
-
-
-add
-
-attZ011.xsd
-file
-
-
-
-add
-
-attZ012.xsd
-file
-
-
-
-add
-
-attZ013a.xsd
-file
-
-
-
-add
-
-attZ013b.xsd
-file
-
-
-
-add
-
-attZ014a.xml
-file
-
-
-
-add
-
-attZ014a.xsd
-file
-
-
-
-add
-
-attZ014b.xml
-file
-
-
-
-add
-
-attZ014b.xsd
-file
-
-
-
-add
-
-attZ015.xml
-file
-
-
-
-add
-
-attZ015.xsd
-file
-
-
-
-add
-
-test108565_1.xml
-file
-
-
-
-add
-
-test108565_10.xml
-file
-
-
-
-add
-
-test108565_11.xml
-file
-
-
-
-add
-
-test108565_2.xml
-file
-
-
-
-add
-
-test108565_3.xml
-file
-
-
-
-add
-
-test108565_4.xml
-file
-
-
-
-add
-
-test108565_5.xml
-file
-
-
-
-add
-
-test108565_6.xml
-file
-
-
-
-add
-
-test108565_7.xml
-file
-
-
-
-add
-
-test108565_8.xml
-file
-
-
-
-add
-
-test108565_9.xml
-file
-
-
-
-add
-

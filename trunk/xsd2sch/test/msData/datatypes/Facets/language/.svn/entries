@@ -1,238 +1,0 @@
-10
-
-dir
-0
-https://workspace.activestate.com/svn/proxml/msData/datatypes/Facets/language
-https://workspace.activestate.com/svn/proxml
-add
-
-
-
-
-
-
-
-svn:special svn:externals svn:needs-lock
-
-
-
-
-
-
-
-
-
-
-
-1b3ceb3c-19de-44e1-9963-2b9d4c904b94
-
-language_enumeration001.xml
-file
-
-
-
-add
-
-language_enumeration001.xsd
-file
-
-
-
-add
-
-language_enumeration002.xml
-file
-
-
-
-add
-
-language_enumeration002.xsd
-file
-
-
-
-add
-
-language_enumeration003.xml
-file
-
-
-
-add
-
-language_enumeration003.xsd
-file
-
-
-
-add
-
-language_enumeration004.xml
-file
-
-
-
-add
-
-language_enumeration004.xsd
-file
-
-
-
-add
-
-language_length001.xml
-file
-
-
-
-add
-
-language_length001.xsd
-file
-
-
-
-add
-
-language_length002.xml
-file
-
-
-
-add
-
-language_length002.xsd
-file
-
-
-
-add
-
-language_length003.xml
-file
-
-
-
-add
-
-language_length003.xsd
-file
-
-
-
-add
-
-language_maxLength001.xml
-file
-
-
-
-add
-
-language_maxLength001.xsd
-file
-
-
-
-add
-
-language_maxLength002.xml
-file
-
-
-
-add
-
-language_maxLength002.xsd
-file
-
-
-
-add
-
-language_maxLength003.xml
-file
-
-
-
-add
-
-language_maxLength003.xsd
-file
-
-
-
-add
-
-language_minLength001.xml
-file
-
-
-
-add
-
-language_minLength001.xsd
-file
-
-
-
-add
-
-language_minLength002.xml
-file
-
-
-
-add
-
-language_minLength002.xsd
-file
-
-
-
-add
-
-language_minLength003.xml
-file
-
-
-
-add
-
-language_minLength003.xsd
-file
-
-
-
-add
-
-language_minLength004.xml
-file
-
-
-
-add
-
-language_minLength004.xsd
-file
-
-
-
-add
-
-language_pattern001.xml
-file
-
-
-
-add
-
-language_pattern001.xsd
-file
-
-
-
-add
-

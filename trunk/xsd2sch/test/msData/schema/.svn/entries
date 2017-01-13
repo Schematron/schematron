@@ -1,2380 +1,0 @@
-10
-
-dir
-0
-https://workspace.activestate.com/svn/proxml/msData/schema
-https://workspace.activestate.com/svn/proxml
-add
-
-
-
-
-
-
-
-svn:special svn:externals svn:needs-lock
-
-
-
-
-
-
-
-
-
-
-
-1b3ceb3c-19de-44e1-9963-2b9d4c904b94
-
-78029a.xsd
-file
-
-
-
-add
-
-78029b.xsd
-file
-
-
-
-add
-
-78029c.xsd
-file
-
-
-
-add
-
-bogus.xsd
-file
-
-
-
-add
-
-not-schema.xsd
-file
-
-
-
-add
-
-not-wf.xsd
-file
-
-
-
-add
-
-schA1.xml
-file
-
-
-
-add
-
-schA1_a.xsd
-file
-
-
-
-add
-
-schA1_b.xsd
-file
-
-
-
-add
-
-schA1_c.xsd
-file
-
-
-
-add
-
-schA2.xml
-file
-
-
-
-add
-
-schA2_a.xsd
-file
-
-
-
-add
-
-schA2_b.xsd
-file
-
-
-
-add
-
-schA3.xml
-file
-
-
-
-add
-
-schA3_a.xsd
-file
-
-
-
-add
-
-schA4.xml
-file
-
-
-
-add
-
-schA4_a.xsd
-file
-
-
-
-add
-
-schA5.xml
-file
-
-
-
-add
-
-schA5_a.xsd
-file
-
-
-
-add
-
-schA5_b.xsd
-file
-
-
-
-add
-
-schA5_d.xsd
-file
-
-
-
-add
-
-schA7.xml
-file
-
-
-
-add
-
-schA7_a.xsd
-file
-
-
-
-add
-
-schA7_b.xsd
-file
-
-
-
-add
-
-schA7_c.xsd
-file
-
-
-
-add
-
-schA8.xml
-file
-
-
-
-add
-
-schA8_b.xsd
-file
-
-
-
-add
-
-schA8_c.xsd
-file
-
-
-
-add
-
-schB1_a.xsd
-file
-
-
-
-add
-
-schB1_b.xsd
-file
-
-
-
-add
-
-schB1i.xsd
-file
-
-
-
-add
-
-schB2_a.xsd
-file
-
-
-
-add
-
-schB2_b.xsd
-file
-
-
-
-add
-
-schB3.xsd
-file
-
-
-
-add
-
-schB4_a.xsd
-file
-
-
-
-add
-
-schB4_b.xsd
-file
-
-
-
-add
-
-schB5_a.xsd
-file
-
-
-
-add
-
-schB5_b.xsd
-file
-
-
-
-add
-
-schB6.xml
-file
-
-
-
-add
-
-schB8.xsd
-file
-
-
-
-add
-
-schC2_a.xsd
-file
-
-
-
-add
-
-schC2_b.xsd
-file
-
-
-
-add
-
-schC3.xml
-file
-
-
-
-add
-
-schC3_a.xsd
-file
-
-
-
-add
-
-schC3_b.xsd
-file
-
-
-
-add
-
-schC4.xml
-file
-
-
-
-add
-
-schC4_a.xsd
-file
-
-
-
-add
-
-schC4_b.xsd
-file
-
-
-
-add
-
-schC5_a.xsd
-file
-
-
-
-add
-
-schC5_b.xsd
-file
-
-
-
-add
-
-schD10.xml
-file
-
-
-
-add
-
-schD10_a.xsd
-file
-
-
-
-add
-
-schD10_b.xsd
-file
-
-
-
-add
-
-schD10_c.xsd
-file
-
-
-
-add
-
-schD11_nons.xsd
-file
-
-
-
-add
-
-schD11a.xsd
-file
-
-
-
-add
-
-schD5.xml
-file
-
-
-
-add
-
-schD5_a.xsd
-file
-
-
-
-add
-
-schD5_b.xsd
-file
-
-
-
-add
-
-schD5_c.xsd
-file
-
-
-
-add
-
-schD7.xml
-file
-
-
-
-add
-
-schD7_a.xsd
-file
-
-
-
-add
-
-schD7_c.xsd
-file
-
-
-
-add
-
-schD8.xsd
-file
-
-
-
-add
-
-schE10.xsd
-file
-
-
-
-add
-
-schE1_a.xsd
-file
-
-
-
-add
-
-schE1_b.xsd
-file
-
-
-
-add
-
-schE1i.xsd
-file
-
-
-
-add
-
-schE2_a.xsd
-file
-
-
-
-add
-
-schE2_b.xsd
-file
-
-
-
-add
-
-schE3.xsd
-file
-
-
-
-add
-
-schE4.xml
-file
-
-
-
-add
-
-schE4.xsd
-file
-
-
-
-add
-
-schE5.xsd
-file
-
-
-
-add
-
-schE5_b.xsd
-file
-
-
-
-add
-
-schE6.xsd
-file
-
-
-
-add
-
-schE6_b.xsd
-file
-
-
-
-add
-
-schE7.xml
-file
-
-
-
-add
-
-schE9.xsd
-file
-
-
-
-add
-
-schF1.xml
-file
-
-
-
-add
-
-schF1_a.xsd
-file
-
-
-
-add
-
-schF1_b.xsd
-file
-
-
-
-add
-
-schF2.xml
-file
-
-
-
-add
-
-schF2_a.xsd
-file
-
-
-
-add
-
-schF2_b.xsd
-file
-
-
-
-add
-
-schF3_a.xsd
-file
-
-
-
-add
-
-schF3_b.xsd
-file
-
-
-
-add
-
-schF4_a.xsd
-file
-
-
-
-add
-
-schF4_b.xsd
-file
-
-
-
-add
-
-schF5.xml
-file
-
-
-
-add
-
-schF5_a.xsd
-file
-
-
-
-add
-
-schF5_b.xsd
-file
-
-
-
-add
-
-schF6_a.xsd
-file
-
-
-
-add
-
-schF6_b.xsd
-file
-
-
-
-add
-
-schF6_c.xsd
-file
-
-
-
-add
-
-schG1.xml
-file
-
-
-
-add
-
-schG10_a.xsd
-file
-
-
-
-add
-
-schG10_b.xsd
-file
-
-
-
-add
-
-schG11_a.xsd
-file
-
-
-
-add
-
-schG11_b.xsd
-file
-
-
-
-add
-
-schG11_c.xsd
-file
-
-
-
-add
-
-schG12.xml
-file
-
-
-
-add
-
-schG12_a.xsd
-file
-
-
-
-add
-
-schG12_b.xsd
-file
-
-
-
-add
-
-schG12_c.xsd
-file
-
-
-
-add
-
-schG13.xsd
-file
-
-
-
-add
-
-schG13a.xsd
-file
-
-
-
-add
-
-schG14.xsd
-file
-
-
-
-add
-
-schG14a.xsd
-file
-
-
-
-add
-
-schG15_a.xsd
-file
-
-
-
-add
-
-schG15_b.xsd
-file
-
-
-
-add
-
-schG1_a.xsd
-file
-
-
-
-add
-
-schG1_b.xsd
-file
-
-
-
-add
-
-schG1_c.xsd
-file
-
-
-
-add
-
-schG2.xml
-file
-
-
-
-add
-
-schG2_a.xsd
-file
-
-
-
-add
-
-schG2_b.xsd
-file
-
-
-
-add
-
-schG3.xml
-file
-
-
-
-add
-
-schG3_a.xsd
-file
-
-
-
-add
-
-schG3_b.xsd
-file
-
-
-
-add
-
-schG3_c.xsd
-file
-
-
-
-add
-
-schG4.xml
-file
-
-
-
-add
-
-schG4_a.xsd
-file
-
-
-
-add
-
-schG4_b.xsd
-file
-
-
-
-add
-
-schG4_c.xsd
-file
-
-
-
-add
-
-schG5.xml
-file
-
-
-
-add
-
-schG5_a.xsd
-file
-
-
-
-add
-
-schG5_b.xsd
-file
-
-
-
-add
-
-schG5_c.xsd
-file
-
-
-
-add
-
-schG6_a.xsd
-file
-
-
-
-add
-
-schG6_b.xsd
-file
-
-
-
-add
-
-schG6_c.xsd
-file
-
-
-
-add
-
-schG7.xml
-file
-
-
-
-add
-
-schG7_a.xsd
-file
-
-
-
-add
-
-schG7_b.xsd
-file
-
-
-
-add
-
-schG7_c.xsd
-file
-
-
-
-add
-
-schG7_d.xsd
-file
-
-
-
-add
-
-schG8.xml
-file
-
-
-
-add
-
-schG8_a.xsd
-file
-
-
-
-add
-
-schG8_c.xsd
-file
-
-
-
-add
-
-schG9_a.xsd
-file
-
-
-
-add
-
-schG9_b.xsd
-file
-
-
-
-add
-
-schG9_c.xsd
-file
-
-
-
-add
-
-schG9_d.xsd
-file
-
-
-
-add
-
-schH1_a.xsd
-file
-
-
-
-add
-
-schH1_b.xsd
-file
-
-
-
-add
-
-schH2_a.xsd
-file
-
-
-
-add
-
-schH2_b.xsd
-file
-
-
-
-add
-
-schH3.xsd
-file
-
-
-
-add
-
-schH4_a.xsd
-file
-
-
-
-add
-
-schH4_b.xsd
-file
-
-
-
-add
-
-schH5.xsd
-file
-
-
-
-add
-
-schH6.xsd
-file
-
-
-
-add
-
-schH7.xml
-file
-
-
-
-add
-
-schH9.xsd
-file
-
-
-
-add
-
-schI2_a.xsd
-file
-
-
-
-add
-
-schI2_b.xsd
-file
-
-
-
-add
-
-schI5_a.xsd
-file
-
-
-
-add
-
-schI5_b.xsd
-file
-
-
-
-add
-
-schJ2_a.xsd
-file
-
-
-
-add
-
-schJ2_b.xsd
-file
-
-
-
-add
-
-schJ3_a.xsd
-file
-
-
-
-add
-
-schJ3_b.xsd
-file
-
-
-
-add
-
-schK2_a.xsd
-file
-
-
-
-add
-
-schK2_b.xsd
-file
-
-
-
-add
-
-schK3_a.xsd
-file
-
-
-
-add
-
-schK3_b.xsd
-file
-
-
-
-add
-
-schL10_a.xsd
-file
-
-
-
-add
-
-schL10_b.xsd
-file
-
-
-
-add
-
-schL10_c.xsd
-file
-
-
-
-add
-
-schL1_a.xsd
-file
-
-
-
-add
-
-schL1_b.xsd
-file
-
-
-
-add
-
-schL3_a.xsd
-file
-
-
-
-add
-
-schL3_b.xsd
-file
-
-
-
-add
-
-schL5_a.xsd
-file
-
-
-
-add
-
-schL5_b.xsd
-file
-
-
-
-add
-
-schL6_a.xsd
-file
-
-
-
-add
-
-schL6_b.xsd
-file
-
-
-
-add
-
-schL8_a.xsd
-file
-
-
-
-add
-
-schL8_b.xsd
-file
-
-
-
-add
-
-schM10_a.xsd
-file
-
-
-
-add
-
-schM3_a.xsd
-file
-
-
-
-add
-
-schM3_b.xsd
-file
-
-
-
-add
-
-schM4_a.xsd
-file
-
-
-
-add
-
-schM4_b.xsd
-file
-
-
-
-add
-
-schM5.xsd
-file
-
-
-
-add
-
-schM5_a.xsd
-file
-
-
-
-add
-
-schM5_b.xsd
-file
-
-
-
-add
-
-schM7_c.xsd
-file
-
-
-
-add
-
-schM8_a.xsd
-file
-
-
-
-add
-
-schM8_b.xsd
-file
-
-
-
-add
-
-schM9_a.xsd
-file
-
-
-
-add
-
-schM9_b.xsd
-file
-
-
-
-add
-
-schN10_a.xsd
-file
-
-
-
-add
-
-schN11_a.xsd
-file
-
-
-
-add
-
-schN11_b.xsd
-file
-
-
-
-add
-
-schN11_c.xsd
-file
-
-
-
-add
-
-schN12_a.xsd
-file
-
-
-
-add
-
-schN12_b.xsd
-file
-
-
-
-add
-
-schN12_c.xsd
-file
-
-
-
-add
-
-schN13a_i.xsd
-file
-
-
-
-add
-
-schN13a_v.xsd
-file
-
-
-
-add
-
-schN13b.xsd
-file
-
-
-
-add
-
-schN2_b.xsd
-file
-
-
-
-add
-
-schN2_c.xsd
-file
-
-
-
-add
-
-schN4.xsd
-file
-
-
-
-add
-
-schN4_a.xsd
-file
-
-
-
-add
-
-schN4_b.xsd
-file
-
-
-
-add
-
-schN4_c.xsd
-file
-
-
-
-add
-
-schN5.xsd
-file
-
-
-
-add
-
-schN5_a.xsd
-file
-
-
-
-add
-
-schN5_b.xsd
-file
-
-
-
-add
-
-schN5_c.xsd
-file
-
-
-
-add
-
-schN6.xsd
-file
-
-
-
-add
-
-schN6_a.xsd
-file
-
-
-
-add
-
-schN6_b.xsd
-file
-
-
-
-add
-
-schN6_c.xsd
-file
-
-
-
-add
-
-schN7.xsd
-file
-
-
-
-add
-
-schN7_a.xsd
-file
-
-
-
-add
-
-schN7_b.xsd
-file
-
-
-
-add
-
-schN7_c.xsd
-file
-
-
-
-add
-
-schO2_a.xsd
-file
-
-
-
-add
-
-schO2_b.xsd
-file
-
-
-
-add
-
-schO2_c.xsd
-file
-
-
-
-add
-
-schP1_a.xsd
-file
-
-
-
-add
-
-schP1_b.xsd
-file
-
-
-
-add
-
-schP2.xml
-file
-
-
-
-add
-
-schP2_a.xsd
-file
-
-
-
-add
-
-schP2_b.xsd
-file
-
-
-
-add
-
-schP3_a.xsd
-file
-
-
-
-add
-
-schP3_b.xsd
-file
-
-
-
-add
-
-schP3_c.xsd
-file
-
-
-
-add
-
-schQ1.xml
-file
-
-
-
-add
-
-schQ1_a.xsd
-file
-
-
-
-add
-
-schQ1_b.xsd
-file
-
-
-
-add
-
-schQ2_a.xsd
-file
-
-
-
-add
-
-schQ2_b.xsd
-file
-
-
-
-add
-
-schQ2_c.xsd
-file
-
-
-
-add
-
-schQ3.xml
-file
-
-
-
-add
-
-schQ3_a.xsd
-file
-
-
-
-add
-
-schQ3_b.xsd
-file
-
-
-
-add
-
-schQ4_a.xsd
-file
-
-
-
-add
-
-schQ4_b.xsd
-file
-
-
-
-add
-
-schQ4_c.xsd
-file
-
-
-
-add
-
-schR2.xml
-file
-
-
-
-add
-
-schR2_a.xsd
-file
-
-
-
-add
-
-schR2_b.xsd
-file
-
-
-
-add
-
-schR3_a.xsd
-file
-
-
-
-add
-
-schR3_b.xsd
-file
-
-
-
-add
-
-schR4_a.xsd
-file
-
-
-
-add
-
-schR4_b.xsd
-file
-
-
-
-add
-
-schR5_a.xsd
-file
-
-
-
-add
-
-schR5_b.xsd
-file
-
-
-
-add
-
-schS1_a.xsd
-file
-
-
-
-add
-
-schS1_b.xsd
-file
-
-
-
-add
-
-schT10.xml
-file
-
-
-
-add
-
-schT10_a.xsd
-file
-
-
-
-add
-
-schT10_b.xsd
-file
-
-
-
-add
-
-schT1_a.xsd
-file
-
-
-
-add
-
-schT1_b.xsd
-file
-
-
-
-add
-
-schT2_a.xsd
-file
-
-
-
-add
-
-schT2_b.xsd
-file
-
-
-
-add
-
-schT3.xml
-file
-
-
-
-add
-
-schT3_a.xsd
-file
-
-
-
-add
-
-schT3_b.xsd
-file
-
-
-
-add
-
-schT6.xml
-file
-
-
-
-add
-
-schT6_a.xsd
-file
-
-
-
-add
-
-schT6_b.xsd
-file
-
-
-
-add
-
-schT9.xml
-file
-
-
-
-add
-
-schT9_a.xsd
-file
-
-
-
-add
-
-schT9_b.xsd
-file
-
-
-
-add
-
-schU1_a.xsd
-file
-
-
-
-add
-
-schU1_b.xsd
-file
-
-
-
-add
-
-schU2_a.xsd
-file
-
-
-
-add
-
-schU2_b.xsd
-file
-
-
-
-add
-
-schU2_c.xsd
-file
-
-
-
-add
-
-schU3.xml
-file
-
-
-
-add
-
-schU3_a.xsd
-file
-
-
-
-add
-
-schU3_b.xsd
-file
-
-
-
-add
-
-schU3_c.xsd
-file
-
-
-
-add
-
-schU3_d.xsd
-file
-
-
-
-add
-
-schU3_e.xsd
-file
-
-
-
-add
-
-schU4.xml
-file
-
-
-
-add
-
-schU4_a.xsd
-file
-
-
-
-add
-
-schU4_b.xsd
-file
-
-
-
-add
-
-schU4_c.xsd
-file
-
-
-
-add
-
-schU4_d.xsd
-file
-
-
-
-add
-
-schU4_e.xsd
-file
-
-
-
-add
-
-schU4_f.xsd
-file
-
-
-
-add
-
-schU4_g.xsd
-file
-
-
-
-add
-
-schU4_h.xsd
-file
-
-
-
-add
-
-schU5.xml
-file
-
-
-
-add
-
-schU5_a.xsd
-file
-
-
-
-add
-
-schU5_b.xsd
-file
-
-
-
-add
-
-schU5_c.xsd
-file
-
-
-
-add
-
-schU5_d.xsd
-file
-
-
-
-add
-
-schU5_e.xsd
-file
-
-
-
-add
-
-schU5_f.xsd
-file
-
-
-
-add
-
-schU5_g.xsd
-file
-
-
-
-add
-
-schU5_h.xsd
-file
-
-
-
-add
-
-schU5_i.xsd
-file
-
-
-
-add
-
-schU5_j.xsd
-file
-
-
-
-add
-
-schU5_k.xsd
-file
-
-
-
-add
-
-schZ004.xsd
-file
-
-
-
-add
-
-schZ004a.xsd
-file
-
-
-
-add
-
-schZ004b.xsd
-file
-
-
-
-add
-
-schZ005.xsd
-file
-
-
-
-add
-
-schZ005a.xsd
-file
-
-
-
-add
-
-schZ005b.xsd
-file
-
-
-
-add
-
-schZ006.xsd
-file
-
-
-
-add
-
-schZ006_b.xsd
-file
-
-
-
-add
-
-schZ007.xsd
-file
-
-
-
-add
-
-schZ007_address.xsd
-file
-
-
-
-add
-
-schZ007_personName.xsd
-file
-
-
-
-add
-
-schZ008_a.xsd
-file
-
-
-
-add
-
-schZ008_b.xsd
-file
-
-
-
-add
-
-schZ009a.xsd
-file
-
-
-
-add
-
-schZ009b.xsd
-file
-
-
-
-add
-
-schZ009c.xsd
-file
-
-
-
-add
-
-schZ009d.xsd
-file
-
-
-
-add
-
-schZ010.xsd
-file
-
-
-
-add
-
-schZ011_a.xsd
-file
-
-
-
-add
-
-schZ011_b.xsd
-file
-
-
-
-add
-
-schZ011_c.xsd
-file
-
-
-
-add
-
-schZ011_d.xsd
-file
-
-
-
-add
-
-schZ012_a.xsd
-file
-
-
-
-add
-
-schZ012_b.xsd
-file
-
-
-
-add
-
-schZ012_b2.xsd
-file
-
-
-
-add
-
-schZ012_c.xsd
-file
-
-
-
-add
-
-schZ012_c2.xsd
-file
-
-
-
-add
-
-schZ013a.xsd
-file
-
-
-
-add
-
-schZ013b.xsd
-file
-
-
-
-add
-
-schZ013c.xsd
-file
-
-
-
-add
-
-schZ014_a.xsd
-file
-
-
-
-add
-
-schZ014_b.xsd
-file
-
-
-
-add
-
-schZ015.xsd
-file
-
-
-
-add
-

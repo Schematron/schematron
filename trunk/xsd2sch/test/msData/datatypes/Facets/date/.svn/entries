@@ -1,322 +1,0 @@
-10
-
-dir
-0
-https://workspace.activestate.com/svn/proxml/msData/datatypes/Facets/date
-https://workspace.activestate.com/svn/proxml
-add
-
-
-
-
-
-
-
-svn:special svn:externals svn:needs-lock
-
-
-
-
-
-
-
-
-
-
-
-1b3ceb3c-19de-44e1-9963-2b9d4c904b94
-
-date_enumeration001.xml
-file
-
-
-
-add
-
-date_enumeration001.xsd
-file
-
-
-
-add
-
-date_enumeration002.xml
-file
-
-
-
-add
-
-date_enumeration002.xsd
-file
-
-
-
-add
-
-date_enumeration003.xml
-file
-
-
-
-add
-
-date_enumeration003.xsd
-file
-
-
-
-add
-
-date_enumeration004.xml
-file
-
-
-
-add
-
-date_enumeration004.xsd
-file
-
-
-
-add
-
-date_maxExclusive001.xml
-file
-
-
-
-add
-
-date_maxExclusive001.xsd
-file
-
-
-
-add
-
-date_maxExclusive002.xml
-file
-
-
-
-add
-
-date_maxExclusive002.xsd
-file
-
-
-
-add
-
-date_maxExclusive003.xml
-file
-
-
-
-add
-
-date_maxExclusive003.xsd
-file
-
-
-
-add
-
-date_maxInclusive001.xml
-file
-
-
-
-add
-
-date_maxInclusive001.xsd
-file
-
-
-
-add
-
-date_maxInclusive002.xml
-file
-
-
-
-add
-
-date_maxInclusive002.xsd
-file
-
-
-
-add
-
-date_maxInclusive003.xml
-file
-
-
-
-add
-
-date_maxInclusive003.xsd
-file
-
-
-
-add
-
-date_minExclusive001.xml
-file
-
-
-
-add
-
-date_minExclusive001.xsd
-file
-
-
-
-add
-
-date_minExclusive002.xml
-file
-
-
-
-add
-
-date_minExclusive002.xsd
-file
-
-
-
-add
-
-date_minExclusive003.xml
-file
-
-
-
-add
-
-date_minExclusive003.xsd
-file
-
-
-
-add
-
-date_minExclusive004.xml
-file
-
-
-
-add
-
-date_minExclusive004.xsd
-file
-
-
-
-add
-
-date_minExclusive005.xml
-file
-
-
-
-add
-
-date_minExclusive005.xsd
-file
-
-
-
-add
-
-date_minInclusive001.xml
-file
-
-
-
-add
-
-date_minInclusive001.xsd
-file
-
-
-
-add
-
-date_minInclusive002.xml
-file
-
-
-
-add
-
-date_minInclusive002.xsd
-file
-
-
-
-add
-
-date_minInclusive003.xml
-file
-
-
-
-add
-
-date_minInclusive003.xsd
-file
-
-
-
-add
-
-date_minInclusive004.xml
-file
-
-
-
-add
-
-date_minInclusive004.xsd
-file
-
-
-
-add
-
-date_minInclusive005.xml
-file
-
-
-
-add
-
-date_minInclusive005.xsd
-file
-
-
-
-add
-
-date_pattern001.xml
-file
-
-
-
-add
-
-date_pattern001.xsd
-file
-
-
-
-add
-
