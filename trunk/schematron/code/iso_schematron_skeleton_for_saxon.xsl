@@ -1561,6 +1561,9 @@ which require a preprocess.
 				 mode="M{ count(preceding-sibling::*) }">
 		    <axsl:apply-templates select="{$context-xpath}" mode="M{count(preceding-sibling::*)}"/>
 		  </axsl:template>
+		<axsl:template match="@*|comment()|text()|processing-instruction()"
+				priority="-2"
+				mode="M{ count(preceding-sibling::*) }"/>
 		</xsl:if>
       </xsl:if>
 	</xsl:template>
