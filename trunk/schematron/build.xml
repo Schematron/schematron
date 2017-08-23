@@ -147,12 +147,18 @@
 	   <!-- Do ZIP -->
 	<target name="make-zips" >
 	   <zip destfile="${dist.dir}/iso-schematron-xslt1.zip">
-	   		<fileset dir="." 
+	   		<fileset dir="${basedir}/code" 
 	   		includes="iso_abstract_expand.xsl, iso_dsdl_include.xsl, iso_schematron_skeleton_for_xslt1.xsl, iso_svrl_for_xslt1.xsl,
 	   			iso_schematron_message.xsl, readme.txt, schematron-skeleton-api.htm,
 	   			ExtractSchFromRNG.xsl, ExtractSchFromXSD.xsl" />
 	   </zip>
  
 	</target>
+
+<!-- Utility targets. -->
+
+<target name="echoproperties">
+  <echoproperties />
+</target>
 	
 </project>
