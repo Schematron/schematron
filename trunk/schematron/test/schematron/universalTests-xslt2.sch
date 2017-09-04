@@ -20,19 +20,19 @@
      <sch:title>Always True</sch:title>
      
      <sch:rule context="/">
-     	<sch:assert test="true()" >U1: This assertion should never fail.</sch:assert>
-     	<sch:report test="false()" >U2: This report should never succeed.</sch:report>
+     	<sch:assert test="true()" id="U1">U1: This assertion should never fail.</sch:assert>
+     	<sch:report test="false()" id="U2">U2: This report should never succeed.</sch:report>
      </sch:rule>
  
      <sch:rule context="/*">
-     	<sch:assert test="true()" >U3: This assertion should never fail.</sch:assert>
-     	<sch:report test="false()" >U4: This report should never succeed.</sch:report>
+     	<sch:assert test="true()" id="U3">U3: This assertion should never fail.</sch:assert>
+     	<sch:report test="false()" id="U4">U4: This report should never succeed.</sch:report>
      </sch:rule> 
      
      <!-- Test rule fallthrough -->
      <sch:rule context="/*">
-     	<sch:assert test="false()" >U5: This assertion should never succeed because the rule should never fire.</sch:assert>
-     	<sch:report test="true()" >U6: This report should never succeed because the rule should never fire.</sch:report>
+     	<sch:assert test="false()" id="U5">U5: This assertion should never succeed because the rule should never fire.</sch:assert>
+     	<sch:report test="true()" id="U6">U6: This report should never succeed because the rule should never fire.</sch:report>
      </sch:rule> 
  
   </sch:pattern>
@@ -41,19 +41,19 @@
      <sch:title>Always False</sch:title>
      
      <sch:rule context="/">
-     	<sch:assert test="false()" >U7: This assertion should always fail.</sch:assert>
-     	<sch:report test="true()" >U8: This report should always succeed.</sch:report>
+     	<sch:assert test="false()" id="U7">U7: This assertion should always fail.</sch:assert>
+     	<sch:report test="true()" id="U8">U8: This report should always succeed.</sch:report>
      </sch:rule>
      
      <sch:rule context="/*">
-     	<sch:assert test="false()" >U9: This assertion should always fail.</sch:assert>
-     	<sch:report test="true()" >U10: This report should always succeed.</sch:report>
+     	<sch:assert test="false()" id="U9">U9: This assertion should always fail.</sch:assert>
+     	<sch:report test="true()" id="U10">U10: This report should always succeed.</sch:report>
      </sch:rule>
      
      <!-- Test rule fallthrough -->
      <sch:rule context="/*">
-     	<sch:assert test="false()" >U11: This assertion should never succeed because the rule should never fire.</sch:assert>
-     	<sch:report test="true()" >U12: This report should never succeed because the rule should never fire.</sch:report>
+     	<sch:assert test="false()" id="U11">U11: This assertion should never succeed because the rule should never fire.</sch:assert>
+     	<sch:report test="true()" id="U12">U12: This report should never succeeed because the rule should never fire.</sch:report>
      </sch:rule> 
   </sch:pattern>
   
