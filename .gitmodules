@@ -1,0 +1,3 @@
+[submodule "trunk/schematron/test"]
+	path = trunk/schematron/test
+	url = git@github.com:Schematron/schematron-test.git
