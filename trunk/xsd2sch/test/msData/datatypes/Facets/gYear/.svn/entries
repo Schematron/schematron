@@ -1,322 +1,0 @@
-10
-
-dir
-0
-https://workspace.activestate.com/svn/proxml/msData/datatypes/Facets/gYear
-https://workspace.activestate.com/svn/proxml
-add
-
-
-
-
-
-
-
-svn:special svn:externals svn:needs-lock
-
-
-
-
-
-
-
-
-
-
-
-1b3ceb3c-19de-44e1-9963-2b9d4c904b94
-
-gYear_enumeration001.xml
-file
-
-
-
-add
-
-gYear_enumeration001.xsd
-file
-
-
-
-add
-
-gYear_enumeration002.xml
-file
-
-
-
-add
-
-gYear_enumeration002.xsd
-file
-
-
-
-add
-
-gYear_enumeration003.xml
-file
-
-
-
-add
-
-gYear_enumeration003.xsd
-file
-
-
-
-add
-
-gYear_enumeration004.xml
-file
-
-
-
-add
-
-gYear_enumeration004.xsd
-file
-
-
-
-add
-
-gYear_maxExclusive001.xml
-file
-
-
-
-add
-
-gYear_maxExclusive001.xsd
-file
-
-
-
-add
-
-gYear_maxExclusive002.xml
-file
-
-
-
-add
-
-gYear_maxExclusive002.xsd
-file
-
-
-
-add
-
-gYear_maxExclusive003.xml
-file
-
-
-
-add
-
-gYear_maxExclusive003.xsd
-file
-
-
-
-add
-
-gYear_maxInclusive001.xml
-file
-
-
-
-add
-
-gYear_maxInclusive001.xsd
-file
-
-
-
-add
-
-gYear_maxInclusive002.xml
-file
-
-
-
-add
-
-gYear_maxInclusive002.xsd
-file
-
-
-
-add
-
-gYear_maxInclusive003.xml
-file
-
-
-
-add
-
-gYear_maxInclusive003.xsd
-file
-
-
-
-add
-
-gYear_minExclusive001.xml
-file
-
-
-
-add
-
-gYear_minExclusive001.xsd
-file
-
-
-
-add
-
-gYear_minExclusive002.xml
-file
-
-
-
-add
-
-gYear_minExclusive002.xsd
-file
-
-
-
-add
-
-gYear_minExclusive003.xml
-file
-
-
-
-add
-
-gYear_minExclusive003.xsd
-file
-
-
-
-add
-
-gYear_minExclusive004.xml
-file
-
-
-
-add
-
-gYear_minExclusive004.xsd
-file
-
-
-
-add
-
-gYear_minExclusive005.xml
-file
-
-
-
-add
-
-gYear_minExclusive005.xsd
-file
-
-
-
-add
-
-gYear_minInclusive001.xml
-file
-
-
-
-add
-
-gYear_minInclusive001.xsd
-file
-
-
-
-add
-
-gYear_minInclusive002.xml
-file
-
-
-
-add
-
-gYear_minInclusive002.xsd
-file
-
-
-
-add
-
-gYear_minInclusive003.xml
-file
-
-
-
-add
-
-gYear_minInclusive003.xsd
-file
-
-
-
-add
-
-gYear_minInclusive004.xml
-file
-
-
-
-add
-
-gYear_minInclusive004.xsd
-file
-
-
-
-add
-
-gYear_minInclusive005.xml
-file
-
-
-
-add
-
-gYear_minInclusive005.xsd
-file
-
-
-
-add
-
-gYear_pattern001.xml
-file
-
-
-
-add
-
-gYear_pattern001.xsd
-file
-
-
-
-add
-

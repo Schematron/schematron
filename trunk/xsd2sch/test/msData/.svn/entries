@@ -1,161 +1,0 @@
-10
-
-dir
-0
-https://workspace.activestate.com/svn/proxml/msData
-https://workspace.activestate.com/svn/proxml
-add
-
-
-
-
-
-
-
-svn:special svn:externals svn:needs-lock
-
-
-
-
-
-
-
-
-
-
-
-1b3ceb3c-19de-44e1-9963-2b9d4c904b94
-
-CVS
-dir
-
-
-
-add
-
-README
-file
-
-
-
-add
-
-additional
-dir
-
-
-
-add
-
-annotations
-dir
-
-
-
-add
-
-attribute
-dir
-
-
-
-add
-
-attributeGroup
-dir
-
-
-
-add
-
-complexType
-dir
-
-
-
-add
-
-datatypes
-dir
-
-
-
-add
-
-element
-dir
-
-
-
-add
-
-errata10
-dir
-
-
-
-add
-
-group
-dir
-
-
-
-add
-
-identityConstraint
-dir
-
-
-
-add
-
-modelGroups
-dir
-
-
-
-add
-
-notations
-dir
-
-
-
-add
-
-particles
-dir
-
-
-
-add
-
-regex
-dir
-
-
-
-add
-
-schema
-dir
-
-
-
-add
-
-simpleType
-dir
-
-
-
-add
-
-wildcards
-dir
-
-
-
-add
-

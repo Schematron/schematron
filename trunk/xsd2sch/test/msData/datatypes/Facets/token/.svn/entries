@@ -1,238 +1,0 @@
-10
-
-dir
-0
-https://workspace.activestate.com/svn/proxml/msData/datatypes/Facets/token
-https://workspace.activestate.com/svn/proxml
-add
-
-
-
-
-
-
-
-svn:special svn:externals svn:needs-lock
-
-
-
-
-
-
-
-
-
-
-
-1b3ceb3c-19de-44e1-9963-2b9d4c904b94
-
-token_enumeration001.xml
-file
-
-
-
-add
-
-token_enumeration001.xsd
-file
-
-
-
-add
-
-token_enumeration002.xml
-file
-
-
-
-add
-
-token_enumeration002.xsd
-file
-
-
-
-add
-
-token_enumeration003.xml
-file
-
-
-
-add
-
-token_enumeration003.xsd
-file
-
-
-
-add
-
-token_enumeration004.xml
-file
-
-
-
-add
-
-token_enumeration004.xsd
-file
-
-
-
-add
-
-token_length001.xml
-file
-
-
-
-add
-
-token_length001.xsd
-file
-
-
-
-add
-
-token_length002.xml
-file
-
-
-
-add
-
-token_length002.xsd
-file
-
-
-
-add
-
-token_length003.xml
-file
-
-
-
-add
-
-token_length003.xsd
-file
-
-
-
-add
-
-token_maxLength001.xml
-file
-
-
-
-add
-
-token_maxLength001.xsd
-file
-
-
-
-add
-
-token_maxLength002.xml
-file
-
-
-
-add
-
-token_maxLength002.xsd
-file
-
-
-
-add
-
-token_maxLength003.xml
-file
-
-
-
-add
-
-token_maxLength003.xsd
-file
-
-
-
-add
-
-token_minLength001.xml
-file
-
-
-
-add
-
-token_minLength001.xsd
-file
-
-
-
-add
-
-token_minLength002.xml
-file
-
-
-
-add
-
-token_minLength002.xsd
-file
-
-
-
-add
-
-token_minLength003.xml
-file
-
-
-
-add
-
-token_minLength003.xsd
-file
-
-
-
-add
-
-token_minLength004.xml
-file
-
-
-
-add
-
-token_minLength004.xsd
-file
-
-
-
-add
-
-token_pattern001.xml
-file
-
-
-
-add
-
-token_pattern001.xsd
-file
-
-
-
-add
-

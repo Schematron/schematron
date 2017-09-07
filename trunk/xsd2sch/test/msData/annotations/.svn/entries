@@ -1,595 +1,0 @@
-10
-
-dir
-0
-https://workspace.activestate.com/svn/proxml/msData/annotations
-https://workspace.activestate.com/svn/proxml
-add
-
-
-
-
-
-
-
-svn:special svn:externals svn:needs-lock
-
-
-
-
-
-
-
-
-
-
-
-1b3ceb3c-19de-44e1-9963-2b9d4c904b94
-
-annotA001.xsd
-file
-
-
-
-add
-
-annotA002.xsd
-file
-
-
-
-add
-
-annotA003.xsd
-file
-
-
-
-add
-
-annotA004.xsd
-file
-
-
-
-add
-
-annotA005.xsd
-file
-
-
-
-add
-
-annotA006.xsd
-file
-
-
-
-add
-
-annotA007.xsd
-file
-
-
-
-add
-
-annotA008.xsd
-file
-
-
-
-add
-
-annotA009.xsd
-file
-
-
-
-add
-
-annotA010.xsd
-file
-
-
-
-add
-
-annotA011.xsd
-file
-
-
-
-add
-
-annotA012.xsd
-file
-
-
-
-add
-
-annotA013.xsd
-file
-
-
-
-add
-
-annotA014.xsd
-file
-
-
-
-add
-
-annotA015.xsd
-file
-
-
-
-add
-
-annotA016.xsd
-file
-
-
-
-add
-
-annotA017.xsd
-file
-
-
-
-add
-
-annotA018.xsd
-file
-
-
-
-add
-
-annotA019.red
-file
-
-
-
-add
-
-annotA019.xsd
-file
-
-
-
-add
-
-annotA020.xsd
-file
-
-
-
-add
-
-annotA021.xsd
-file
-
-
-
-add
-
-annotA022.xsd
-file
-
-
-
-add
-
-annotA023.xsd
-file
-
-
-
-add
-
-annotB001.xsd
-file
-
-
-
-add
-
-annotB002.xsd
-file
-
-
-
-add
-
-annotB003.xsd
-file
-
-
-
-add
-
-annotB004.xsd
-file
-
-
-
-add
-
-annotB005.xsd
-file
-
-
-
-add
-
-annotB006.xsd
-file
-
-
-
-add
-
-annotB007.xsd
-file
-
-
-
-add
-
-annotB008.xsd
-file
-
-
-
-add
-
-annotB009.xsd
-file
-
-
-
-add
-
-annotB010.xsd
-file
-
-
-
-add
-
-annotB011.xsd
-file
-
-
-
-add
-
-annotB012.xsd
-file
-
-
-
-add
-
-annotB013.xsd
-file
-
-
-
-add
-
-annotB014.xsd
-file
-
-
-
-add
-
-annotB015.xsd
-file
-
-
-
-add
-
-annotB016.xsd
-file
-
-
-
-add
-
-annotB017.xsd
-file
-
-
-
-add
-
-annotB018.xsd
-file
-
-
-
-add
-
-annotB019.xsd
-file
-
-
-
-add
-
-annotB020.xsd
-file
-
-
-
-add
-
-annotB021.xsd
-file
-
-
-
-add
-
-annotB022.xsd
-file
-
-
-
-add
-
-annotB023.xsd
-file
-
-
-
-add
-
-annotB024.xsd
-file
-
-
-
-add
-
-annotB025.xsd
-file
-
-
-
-add
-
-annotB026.xsd
-file
-
-
-
-add
-
-annotB027.xsd
-file
-
-
-
-add
-
-annotB028.xsd
-file
-
-
-
-add
-
-annotB029.xsd
-file
-
-
-
-add
-
-annotB030.xsd
-file
-
-
-
-add
-
-annotB031.xsd
-file
-
-
-
-add
-
-annotB032.xsd
-file
-
-
-
-add
-
-annotB033.xsd
-file
-
-
-
-add
-
-annotC001.xsd
-file
-
-
-
-add
-
-annotC002.xsd
-file
-
-
-
-add
-
-annotC003.xsd
-file
-
-
-
-add
-
-annotC004.xsd
-file
-
-
-
-add
-
-annotC005.xsd
-file
-
-
-
-add
-
-annotD001.xsd
-file
-
-
-
-add
-
-annotD002.xsd
-file
-
-
-
-add
-
-annotD003.xsd
-file
-
-
-
-add
-
-annotD004.xsd
-file
-
-
-
-add
-
-annotD005.xsd
-file
-
-
-
-add
-
-annotE001.xsd
-file
-
-
-
-add
-
-annotE002.xsd
-file
-
-
-
-add
-
-annotF001.xsd
-file
-
-
-
-add
-
-annotF002.xsd
-file
-
-
-
-add
-
-annotF003.xsd
-file
-
-
-
-add
-
-annotF004.xsd
-file
-
-
-
-add
-
-annotF005.xsd
-file
-
-
-
-add
-
-annotF006.xsd
-file
-
-
-
-add
-
-annotF007.xsd
-file
-
-
-
-add
-
-annotF008.xsd
-file
-
-
-
-add
-
-annotF009.xsd
-file
-
-
-
-add
-
-annotZ001.xsd
-file
-
-
-
-add
-
-annotZ002.xsd
-file
-
-
-
-add
-
-annotZ004.xsd
-file
-
-
-
-add
-

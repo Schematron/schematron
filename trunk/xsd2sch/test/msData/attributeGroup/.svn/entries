@@ -1,1428 +1,0 @@
-10
-
-dir
-0
-https://workspace.activestate.com/svn/proxml/msData/attributeGroup
-https://workspace.activestate.com/svn/proxml
-add
-
-
-
-
-
-
-
-svn:special svn:externals svn:needs-lock
-
-
-
-
-
-
-
-
-
-
-
-1b3ceb3c-19de-44e1-9963-2b9d4c904b94
-
-attgA001.xsd
-file
-
-
-
-add
-
-attgA002.xsd
-file
-
-
-
-add
-
-attgA003.xsd
-file
-
-
-
-add
-
-attgA004.xsd
-file
-
-
-
-add
-
-attgA005.xsd
-file
-
-
-
-add
-
-attgA006.imp
-file
-
-
-
-add
-
-attgA006.xsd
-file
-
-
-
-add
-
-attgA007.xsd
-file
-
-
-
-add
-
-attgA008.imp
-file
-
-
-
-add
-
-attgA008.inc
-file
-
-
-
-add
-
-attgA008.xsd
-file
-
-
-
-add
-
-attgA009.imp
-file
-
-
-
-add
-
-attgA009.xsd
-file
-
-
-
-add
-
-attgB001.xsd
-file
-
-
-
-add
-
-attgB002.xsd
-file
-
-
-
-add
-
-attgB003.xsd
-file
-
-
-
-add
-
-attgB004.xsd
-file
-
-
-
-add
-
-attgB005.xsd
-file
-
-
-
-add
-
-attgB005vRed.xsd
-file
-
-
-
-add
-
-attgB006.xsd
-file
-
-
-
-add
-
-attgB007.xsd
-file
-
-
-
-add
-
-attgB008.xsd
-file
-
-
-
-add
-
-attgB009.imp
-file
-
-
-
-add
-
-attgB009.inc
-file
-
-
-
-add
-
-attgB009.xsd
-file
-
-
-
-add
-
-attgB010.xsd
-file
-
-
-
-add
-
-attgB011.imp
-file
-
-
-
-add
-
-attgB011.red
-file
-
-
-
-add
-
-attgB011.xsd
-file
-
-
-
-add
-
-attgB012.imp
-file
-
-
-
-add
-
-attgB012.red
-file
-
-
-
-add
-
-attgB012.xsd
-file
-
-
-
-add
-
-attgB013.imp
-file
-
-
-
-add
-
-attgB013.xsd
-file
-
-
-
-add
-
-attgB013v1.imp
-file
-
-
-
-add
-
-attgB014.imp
-file
-
-
-
-add
-
-attgB014.xsd
-file
-
-
-
-add
-
-attgB014vRed.xsd
-file
-
-
-
-add
-
-attgB015.imp
-file
-
-
-
-add
-
-attgB015.inc
-file
-
-
-
-add
-
-attgB015.xsd
-file
-
-
-
-add
-
-attgC001.xsd
-file
-
-
-
-add
-
-attgC002.xsd
-file
-
-
-
-add
-
-attgC003.imp
-file
-
-
-
-add
-
-attgC003.xsd
-file
-
-
-
-add
-
-attgC004.imp
-file
-
-
-
-add
-
-attgC004.xsd
-file
-
-
-
-add
-
-attgC005.xsd
-file
-
-
-
-add
-
-attgC006.xml
-file
-
-
-
-add
-
-attgC006.xsd
-file
-
-
-
-add
-
-attgC006vRed.xsd
-file
-
-
-
-add
-
-attgC007.xml
-file
-
-
-
-add
-
-attgC007.xsd
-file
-
-
-
-add
-
-attgC007vRed.xsd
-file
-
-
-
-add
-
-attgC008.xsd
-file
-
-
-
-add
-
-attgC009.xsd
-file
-
-
-
-add
-
-attgC010.xsd
-file
-
-
-
-add
-
-attgC011.xsd
-file
-
-
-
-add
-
-attgC012.xsd
-file
-
-
-
-add
-
-attgC013.xsd
-file
-
-
-
-add
-
-attgC014.imp
-file
-
-
-
-add
-
-attgC014.xsd
-file
-
-
-
-add
-
-attgC015.imp
-file
-
-
-
-add
-
-attgC015.xsd
-file
-
-
-
-add
-
-attgC016.xsd
-file
-
-
-
-add
-
-attgC017.imp
-file
-
-
-
-add
-
-attgC017.xsd
-file
-
-
-
-add
-
-attgC018.xsd
-file
-
-
-
-add
-
-attgC019.xsd
-file
-
-
-
-add
-
-attgC020.xsd
-file
-
-
-
-add
-
-attgC021.xsd
-file
-
-
-
-add
-
-attgC022.xsd
-file
-
-
-
-add
-
-attgC023.xsd
-file
-
-
-
-add
-
-attgC024.imp
-file
-
-
-
-add
-
-attgC024.xml
-file
-
-
-
-add
-
-attgC024.xsd
-file
-
-
-
-add
-
-attgC025.xml
-file
-
-
-
-add
-
-attgC025.xsd
-file
-
-
-
-add
-
-attgC025vInc.xsd
-file
-
-
-
-add
-
-attgC026.xml
-file
-
-
-
-add
-
-attgC026.xsd
-file
-
-
-
-add
-
-attgC026vInc.xsd
-file
-
-
-
-add
-
-attgC027.xsd
-file
-
-
-
-add
-
-attgC028.imp
-file
-
-
-
-add
-
-attgC028.xsd
-file
-
-
-
-add
-
-attgC029.xsd
-file
-
-
-
-add
-
-attgC030.xsd
-file
-
-
-
-add
-
-attgC031.xsd
-file
-
-
-
-add
-
-attgC032.xsd
-file
-
-
-
-add
-
-attgC033.xsd
-file
-
-
-
-add
-
-attgC034.imp
-file
-
-
-
-add
-
-attgC034.xsd
-file
-
-
-
-add
-
-attgC035.imp
-file
-
-
-
-add
-
-attgC035.red
-file
-
-
-
-add
-
-attgC035.xml
-file
-
-
-
-add
-
-attgC035.xsd
-file
-
-
-
-add
-
-attgC036.inc
-file
-
-
-
-add
-
-attgC036.red
-file
-
-
-
-add
-
-attgC036.xml
-file
-
-
-
-add
-
-attgC036.xsd
-file
-
-
-
-add
-
-attgC037.xml
-file
-
-
-
-add
-
-attgC037.xsd
-file
-
-
-
-add
-
-attgC038.xml
-file
-
-
-
-add
-
-attgC038.xsd
-file
-
-
-
-add
-
-attgC038v1.red
-file
-
-
-
-add
-
-attgC038v2.red
-file
-
-
-
-add
-
-attgC039.red
-file
-
-
-
-add
-
-attgC039.xsd
-file
-
-
-
-add
-
-attgC040.red
-file
-
-
-
-add
-
-attgC040.xsd
-file
-
-
-
-add
-
-attgC041.red
-file
-
-
-
-add
-
-attgC041.xsd
-file
-
-
-
-add
-
-attgC042.red
-file
-
-
-
-add
-
-attgC042.xsd
-file
-
-
-
-add
-
-attgC043.red
-file
-
-
-
-add
-
-attgC043.xsd
-file
-
-
-
-add
-
-attgC044.red
-file
-
-
-
-add
-
-attgC044.xsd
-file
-
-
-
-add
-
-attgC045.xsd
-file
-
-
-
-add
-
-attgD001.xsd
-file
-
-
-
-add
-
-attgD002.xsd
-file
-
-
-
-add
-
-attgD003.xml
-file
-
-
-
-add
-
-attgD003.xsd
-file
-
-
-
-add
-
-attgD004.xml
-file
-
-
-
-add
-
-attgD004.xsd
-file
-
-
-
-add
-
-attgD005.xml
-file
-
-
-
-add
-
-attgD005.xsd
-file
-
-
-
-add
-
-attgD006.inc
-file
-
-
-
-add
-
-attgD006.xsd
-file
-
-
-
-add
-
-attgD007.xsd
-file
-
-
-
-add
-
-attgD008.xsd
-file
-
-
-
-add
-
-attgD009.xsd
-file
-
-
-
-add
-
-attgD010.xsd
-file
-
-
-
-add
-
-attgD011.xsd
-file
-
-
-
-add
-
-attgD012.xsd
-file
-
-
-
-add
-
-attgD013.xsd
-file
-
-
-
-add
-
-attgD014.xsd
-file
-
-
-
-add
-
-attgD015.xsd
-file
-
-
-
-add
-
-attgD016.xsd
-file
-
-
-
-add
-
-attgD017.imp
-file
-
-
-
-add
-
-attgD017.xsd
-file
-
-
-
-add
-
-attgD018.xml
-file
-
-
-
-add
-
-attgD018.xsd
-file
-
-
-
-add
-
-attgD019.xml
-file
-
-
-
-add
-
-attgD019.xsd
-file
-
-
-
-add
-
-attgD019a.xsd
-file
-
-
-
-add
-
-attgD020.xml
-file
-
-
-
-add
-
-attgD020.xsd
-file
-
-
-
-add
-
-attgD020a.xsd
-file
-
-
-
-add
-
-attgD021.xml
-file
-
-
-
-add
-
-attgD021.xsd
-file
-
-
-
-add
-
-attgD021a.xsd
-file
-
-
-
-add
-
-attgD022.xml
-file
-
-
-
-add
-
-attgD022.xsd
-file
-
-
-
-add
-
-attgD022a.xsd
-file
-
-
-
-add
-
-attgD023.xml
-file
-
-
-
-add
-
-attgD023.xsd
-file
-
-
-
-add
-
-attgD024.xml
-file
-
-
-
-add
-
-attgD024.xsd
-file
-
-
-
-add
-
-attgD025.xml
-file
-
-
-
-add
-
-attgD025.xsd
-file
-
-
-
-add
-
-attgD025a.xsd
-file
-
-
-
-add
-
-attgD026.xml
-file
-
-
-
-add
-
-attgD026.xsd
-file
-
-
-
-add
-
-attgD027.xml
-file
-
-
-
-add
-
-attgD027.xsd
-file
-
-
-
-add
-
-attgD028.xml
-file
-
-
-
-add
-
-attgD028.xsd
-file
-
-
-
-add
-
-attgD029.xml
-file
-
-
-
-add
-
-attgD029.xsd
-file
-
-
-
-add
-
-attgD030.xml
-file
-
-
-
-add
-
-attgD030.xsd
-file
-
-
-
-add
-
-attgD031.xml
-file
-
-
-
-add
-
-attgD031.xsd
-file
-
-
-
-add
-
-attgD032.xml
-file
-
-
-
-add
-
-attgD032.xsd
-file
-
-
-
-add
-
-attgD033.xml
-file
-
-
-
-add
-
-attgD033.xsd
-file
-
-
-
-add
-
-attgD034.inc
-file
-
-
-
-add
-
-attgD034.xml
-file
-
-
-
-add
-
-attgD034.xsd
-file
-
-
-
-add
-
-attgD035.red
-file
-
-
-
-add
-
-attgD035.xml
-file
-
-
-
-add
-
-attgD035.xsd
-file
-
-
-
-add
-
-attgD036.red
-file
-
-
-
-add
-
-attgD036.xml
-file
-
-
-
-add
-
-attgD036.xsd
-file
-
-
-
-add
-
-attgD037.xsd
-file
-
-
-
-add
-
-attgD038.xsd
-file
-
-
-
-add
-
-attgD039.xsd
-file
-
-
-
-add
-
-attgD040.xsd
-file
-
-
-
-add
-
-attgD041.xsd
-file
-
-
-
-add
-
-attgD042.xml
-file
-
-
-
-add
-
-attgD042.xsd
-file
-
-
-
-add
-
-attgZ001.xml
-file
-
-
-
-add
-
-attgZ001.xsd
-file
-
-
-
-add
-
-attgZ002.imp
-file
-
-
-
-add
-
-attgZ002.xsd
-file
-
-
-
-add
-
-attgZ003.imp
-file
-
-
-
-add
-
-attgZ003.xsd
-file
-
-
-
-add
-

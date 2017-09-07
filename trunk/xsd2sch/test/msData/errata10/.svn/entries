@@ -1,259 +1,0 @@
-10
-
-dir
-0
-https://workspace.activestate.com/svn/proxml/msData/errata10
-https://workspace.activestate.com/svn/proxml
-add
-
-
-
-
-
-
-
-svn:special svn:externals svn:needs-lock
-
-
-
-
-
-
-
-
-
-
-
-1b3ceb3c-19de-44e1-9963-2b9d4c904b94
-
-errA001.xml
-file
-
-
-
-add
-
-errA001.xsd
-file
-
-
-
-add
-
-errA002.xml
-file
-
-
-
-add
-
-errA002.xsd
-file
-
-
-
-add
-
-errA002a.xsd
-file
-
-
-
-add
-
-errA002b.xsd
-file
-
-
-
-add
-
-errA003.xml
-file
-
-
-
-add
-
-errA003.xsd
-file
-
-
-
-add
-
-errC001.xml
-file
-
-
-
-add
-
-errC001.xsd
-file
-
-
-
-add
-
-errC002.xsd
-file
-
-
-
-add
-
-errC003.xsd
-file
-
-
-
-add
-
-errC004.xsd
-file
-
-
-
-add
-
-errC005.xsd
-file
-
-
-
-add
-
-errC006.xsd
-file
-
-
-
-add
-
-errC007.xml
-file
-
-
-
-add
-
-errC007.xsd
-file
-
-
-
-add
-
-errC008.xsd
-file
-
-
-
-add
-
-errC009.xsd
-file
-
-
-
-add
-
-errE001.xml
-file
-
-
-
-add
-
-errE001.xsd
-file
-
-
-
-add
-
-errE002.xml
-file
-
-
-
-add
-
-errE002.xsd
-file
-
-
-
-add
-
-errE003.xml
-file
-
-
-
-add
-
-errE003.xsd
-file
-
-
-
-add
-
-errE004.xml
-file
-
-
-
-add
-
-errE004.xsd
-file
-
-
-
-add
-
-errE006.xml
-file
-
-
-
-add
-
-errE006.xsd
-file
-
-
-
-add
-
-errE008.xml
-file
-
-
-
-add
-
-errE008.xsd
-file
-
-
-
-add
-
-errF001.xml
-file
-
-
-
-add
-
-errF001.xsd
-file
-
-
-
-add
-

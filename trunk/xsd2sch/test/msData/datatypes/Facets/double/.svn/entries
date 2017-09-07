@@ -1,322 +1,0 @@
-10
-
-dir
-0
-https://workspace.activestate.com/svn/proxml/msData/datatypes/Facets/double
-https://workspace.activestate.com/svn/proxml
-add
-
-
-
-
-
-
-
-svn:special svn:externals svn:needs-lock
-
-
-
-
-
-
-
-
-
-
-
-1b3ceb3c-19de-44e1-9963-2b9d4c904b94
-
-double_enumeration001.xml
-file
-
-
-
-add
-
-double_enumeration001.xsd
-file
-
-
-
-add
-
-double_enumeration002.xml
-file
-
-
-
-add
-
-double_enumeration002.xsd
-file
-
-
-
-add
-
-double_enumeration003.xml
-file
-
-
-
-add
-
-double_enumeration003.xsd
-file
-
-
-
-add
-
-double_enumeration004.xml
-file
-
-
-
-add
-
-double_enumeration004.xsd
-file
-
-
-
-add
-
-double_maxExclusive001.xml
-file
-
-
-
-add
-
-double_maxExclusive001.xsd
-file
-
-
-
-add
-
-double_maxExclusive002.xml
-file
-
-
-
-add
-
-double_maxExclusive002.xsd
-file
-
-
-
-add
-
-double_maxExclusive003.xml
-file
-
-
-
-add
-
-double_maxExclusive003.xsd
-file
-
-
-
-add
-
-double_maxInclusive001.xml
-file
-
-
-
-add
-
-double_maxInclusive001.xsd
-file
-
-
-
-add
-
-double_maxInclusive002.xml
-file
-
-
-
-add
-
-double_maxInclusive002.xsd
-file
-
-
-
-add
-
-double_maxInclusive003.xml
-file
-
-
-
-add
-
-double_maxInclusive003.xsd
-file
-
-
-
-add
-
-double_minExclusive001.xml
-file
-
-
-
-add
-
-double_minExclusive001.xsd
-file
-
-
-
-add
-
-double_minExclusive002.xml
-file
-
-
-
-add
-
-double_minExclusive002.xsd
-file
-
-
-
-add
-
-double_minExclusive003.xml
-file
-
-
-
-add
-
-double_minExclusive003.xsd
-file
-
-
-
-add
-
-double_minExclusive004.xml
-file
-
-
-
-add
-
-double_minExclusive004.xsd
-file
-
-
-
-add
-
-double_minExclusive005.xml
-file
-
-
-
-add
-
-double_minExclusive005.xsd
-file
-
-
-
-add
-
-double_minInclusive001.xml
-file
-
-
-
-add
-
-double_minInclusive001.xsd
-file
-
-
-
-add
-
-double_minInclusive002.xml
-file
-
-
-
-add
-
-double_minInclusive002.xsd
-file
-
-
-
-add
-
-double_minInclusive003.xml
-file
-
-
-
-add
-
-double_minInclusive003.xsd
-file
-
-
-
-add
-
-double_minInclusive004.xml
-file
-
-
-
-add
-
-double_minInclusive004.xsd
-file
-
-
-
-add
-
-double_minInclusive005.xml
-file
-
-
-
-add
-
-double_minInclusive005.xsd
-file
-
-
-
-add
-
-double_pattern001.xml
-file
-
-
-
-add
-
-double_pattern001.xsd
-file
-
-
-
-add
-

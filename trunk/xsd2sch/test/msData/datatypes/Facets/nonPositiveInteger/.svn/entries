@@ -1,364 +1,0 @@
-10
-
-dir
-0
-https://workspace.activestate.com/svn/proxml/msData/datatypes/Facets/nonPositiveInteger
-https://workspace.activestate.com/svn/proxml
-add
-
-
-
-
-
-
-
-svn:special svn:externals svn:needs-lock
-
-
-
-
-
-
-
-
-
-
-
-1b3ceb3c-19de-44e1-9963-2b9d4c904b94
-
-nonPositiveInteger_enumeration001.xml
-file
-
-
-
-add
-
-nonPositiveInteger_enumeration001.xsd
-file
-
-
-
-add
-
-nonPositiveInteger_enumeration002.xml
-file
-
-
-
-add
-
-nonPositiveInteger_enumeration002.xsd
-file
-
-
-
-add
-
-nonPositiveInteger_enumeration003.xml
-file
-
-
-
-add
-
-nonPositiveInteger_enumeration003.xsd
-file
-
-
-
-add
-
-nonPositiveInteger_enumeration004.xml
-file
-
-
-
-add
-
-nonPositiveInteger_enumeration004.xsd
-file
-
-
-
-add
-
-nonPositiveInteger_maxExclusive001.xml
-file
-
-
-
-add
-
-nonPositiveInteger_maxExclusive001.xsd
-file
-
-
-
-add
-
-nonPositiveInteger_maxExclusive002.xml
-file
-
-
-
-add
-
-nonPositiveInteger_maxExclusive002.xsd
-file
-
-
-
-add
-
-nonPositiveInteger_maxExclusive003.xml
-file
-
-
-
-add
-
-nonPositiveInteger_maxExclusive003.xsd
-file
-
-
-
-add
-
-nonPositiveInteger_maxInclusive001.xml
-file
-
-
-
-add
-
-nonPositiveInteger_maxInclusive001.xsd
-file
-
-
-
-add
-
-nonPositiveInteger_maxInclusive002.xml
-file
-
-
-
-add
-
-nonPositiveInteger_maxInclusive002.xsd
-file
-
-
-
-add
-
-nonPositiveInteger_maxInclusive003.xml
-file
-
-
-
-add
-
-nonPositiveInteger_maxInclusive003.xsd
-file
-
-
-
-add
-
-nonPositiveInteger_minExclusive001.xml
-file
-
-
-
-add
-
-nonPositiveInteger_minExclusive001.xsd
-file
-
-
-
-add
-
-nonPositiveInteger_minExclusive002.xml
-file
-
-
-
-add
-
-nonPositiveInteger_minExclusive002.xsd
-file
-
-
-
-add
-
-nonPositiveInteger_minExclusive003.xml
-file
-
-
-
-add
-
-nonPositiveInteger_minExclusive003.xsd
-file
-
-
-
-add
-
-nonPositiveInteger_minExclusive004.xml
-file
-
-
-
-add
-
-nonPositiveInteger_minExclusive004.xsd
-file
-
-
-
-add
-
-nonPositiveInteger_minExclusive005.xml
-file
-
-
-
-add
-
-nonPositiveInteger_minExclusive005.xsd
-file
-
-
-
-add
-
-nonPositiveInteger_minInclusive001.xml
-file
-
-
-
-add
-
-nonPositiveInteger_minInclusive001.xsd
-file
-
-
-
-add
-
-nonPositiveInteger_minInclusive002.xml
-file
-
-
-
-add
-
-nonPositiveInteger_minInclusive002.xsd
-file
-
-
-
-add
-
-nonPositiveInteger_minInclusive003.xml
-file
-
-
-
-add
-
-nonPositiveInteger_minInclusive003.xsd
-file
-
-
-
-add
-
-nonPositiveInteger_minInclusive004.xml
-file
-
-
-
-add
-
-nonPositiveInteger_minInclusive004.xsd
-file
-
-
-
-add
-
-nonPositiveInteger_minInclusive005.xml
-file
-
-
-
-add
-
-nonPositiveInteger_minInclusive005.xsd
-file
-
-
-
-add
-
-nonPositiveInteger_pattern001.xml
-file
-
-
-
-add
-
-nonPositiveInteger_pattern001.xsd
-file
-
-
-
-add
-
-nonPositiveInteger_totalDigits001.xml
-file
-
-
-
-add
-
-nonPositiveInteger_totalDigits001.xsd
-file
-
-
-
-add
-
-nonPositiveInteger_totalDigits002.xml
-file
-
-
-
-add
-
-nonPositiveInteger_totalDigits002.xsd
-file
-
-
-
-add
-
-nonPositiveInteger_totalDigits003.xml
-file
-
-
-
-add
-
-nonPositiveInteger_totalDigits003.xsd
-file
-
-
-
-add
-

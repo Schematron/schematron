@@ -1,161 +1,0 @@
-10
-
-dir
-0
-https://workspace.activestate.com/svn/proxml/msMeta
-https://workspace.activestate.com/svn/proxml
-add
-
-
-
-
-
-
-
-svn:special svn:externals svn:needs-lock
-
-
-
-
-
-
-
-
-
-
-
-1b3ceb3c-19de-44e1-9963-2b9d4c904b94
-
-Additional_w3c.xml
-file
-
-
-
-add
-
-AnnotatedTSSchema.xsd
-file
-
-
-
-add
-
-Annotations_w3c.xml
-file
-
-
-
-add
-
-AttributeGroup_w3c.xml
-file
-
-
-
-add
-
-Attribute_w3c.xml
-file
-
-
-
-add
-
-CVS
-dir
-
-
-
-add
-
-ComplexType_w3c.xml
-file
-
-
-
-add
-
-DataTypes_w3c.xml
-file
-
-
-
-add
-
-Element_w3c.xml
-file
-
-
-
-add
-
-Errata10_w3c.xml
-file
-
-
-
-add
-
-Group_w3c.xml
-file
-
-
-
-add
-
-IdentityConstraint_w3c.xml
-file
-
-
-
-add
-
-ModelGroups_w3c.xml
-file
-
-
-
-add
-
-Notations_w3c.xml
-file
-
-
-
-add
-
-Particles_w3c.xml
-file
-
-
-
-add
-
-Regex_w3c.xml
-file
-
-
-
-add
-
-Schema_w3c.xml
-file
-
-
-
-add
-
-SimpleType_w3c.xml
-file
-
-
-
-add
-
-Wildcards_w3c.xml
-file
-
-
-
-add
-

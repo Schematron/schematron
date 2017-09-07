@@ -1,3213 +1,0 @@
-10
-
-dir
-0
-https://workspace.activestate.com/svn/proxml/msData/datatypes
-https://workspace.activestate.com/svn/proxml
-add
-
-
-
-
-
-
-
-svn:special svn:externals svn:needs-lock
-
-
-
-
-
-
-
-
-
-
-
-1b3ceb3c-19de-44e1-9963-2b9d4c904b94
-
-Facets
-dir
-
-
-
-add
-
-ID_test64335.xml
-file
-
-
-
-add
-
-ID_test64335.xsd
-file
-
-
-
-add
-
-ID_test70681.xml
-file
-
-
-
-add
-
-Infoset
-dir
-
-
-
-add
-
-NCName.xsd
-file
-
-
-
-add
-
-NCName001.xml
-file
-
-
-
-add
-
-NCName002.xml
-file
-
-
-
-add
-
-NCName003.xml
-file
-
-
-
-add
-
-NCName004.xml
-file
-
-
-
-add
-
-NCName005.xml
-file
-
-
-
-add
-
-NCName006.xml
-file
-
-
-
-add
-
-NCName007.xml
-file
-
-
-
-add
-
-NCName008.xml
-file
-
-
-
-add
-
-NCName009.xml
-file
-
-
-
-add
-
-NCName010.xml
-file
-
-
-
-add
-
-NCName011.xml
-file
-
-
-
-add
-
-Name.xsd
-file
-
-
-
-add
-
-Name001.xml
-file
-
-
-
-add
-
-Name002.xml
-file
-
-
-
-add
-
-Name003.xml
-file
-
-
-
-add
-
-Name004.xml
-file
-
-
-
-add
-
-Name005.xml
-file
-
-
-
-add
-
-Name006.xml
-file
-
-
-
-add
-
-Name007.xml
-file
-
-
-
-add
-
-Name008.xml
-file
-
-
-
-add
-
-Name009.xml
-file
-
-
-
-add
-
-Name010.xml
-file
-
-
-
-add
-
-Name011.xml
-file
-
-
-
-add
-
-Name012.xml
-file
-
-
-
-add
-
-Name013.xml
-file
-
-
-
-add
-
-Name014.xml
-file
-
-
-
-add
-
-Name015.xml
-file
-
-
-
-add
-
-Name016.xml
-file
-
-
-
-add
-
-Name017.xml
-file
-
-
-
-add
-
-Name018.xml
-file
-
-
-
-add
-
-QName.xsd
-file
-
-
-
-add
-
-QName001.xml
-file
-
-
-
-add
-
-QName002.xml
-file
-
-
-
-add
-
-QName003.xml
-file
-
-
-
-add
-
-QName004.xml
-file
-
-
-
-add
-
-QName005.xml
-file
-
-
-
-add
-
-QName006.xml
-file
-
-
-
-add
-
-QName007.xml
-file
-
-
-
-add
-
-QName008.xml
-file
-
-
-
-add
-
-QName009.xml
-file
-
-
-
-add
-
-QName010.xml
-file
-
-
-
-add
-
-QName011.xml
-file
-
-
-
-add
-
-anyURI.xsd
-file
-
-
-
-add
-
-anyURI001.xml
-file
-
-
-
-add
-
-anyURI002.xml
-file
-
-
-
-add
-
-anyURI003.xml
-file
-
-
-
-add
-
-anyURI004.xml
-file
-
-
-
-add
-
-anyURI005.xml
-file
-
-
-
-add
-
-anyURI006.xml
-file
-
-
-
-add
-
-anyURI007.xml
-file
-
-
-
-add
-
-anyURI008.xml
-file
-
-
-
-add
-
-anyURI009.xml
-file
-
-
-
-add
-
-anyURI010.xml
-file
-
-
-
-add
-
-anyURI011.xml
-file
-
-
-
-add
-
-anyURI011.xsd
-file
-
-
-
-add
-
-base64Binary.xsd
-file
-
-
-
-add
-
-base64Binary001.xml
-file
-
-
-
-add
-
-base64Binary002.xml
-file
-
-
-
-add
-
-base64Binary002.xsd
-file
-
-
-
-add
-
-boolean.xsd
-file
-
-
-
-add
-
-boolean001.xml
-file
-
-
-
-add
-
-boolean002.xml
-file
-
-
-
-add
-
-boolean003.xml
-file
-
-
-
-add
-
-boolean004.xml
-file
-
-
-
-add
-
-boolean005.xml
-file
-
-
-
-add
-
-boolean006.xml
-file
-
-
-
-add
-
-boolean007.xml
-file
-
-
-
-add
-
-boolean008.xml
-file
-
-
-
-add
-
-boolean009.xml
-file
-
-
-
-add
-
-boolean010.xml
-file
-
-
-
-add
-
-boolean011.xml
-file
-
-
-
-add
-
-boolean012.xml
-file
-
-
-
-add
-
-boolean013.xml
-file
-
-
-
-add
-
-boolean014.xml
-file
-
-
-
-add
-
-boolean015.xml
-file
-
-
-
-add
-
-boolean016.xml
-file
-
-
-
-add
-
-boolean017.xml
-file
-
-
-
-add
-
-boolean018.xml
-file
-
-
-
-add
-
-boolean018.xsd
-file
-
-
-
-add
-
-byte.xsd
-file
-
-
-
-add
-
-byte001.xml
-file
-
-
-
-add
-
-byte002.xml
-file
-
-
-
-add
-
-byte003.xml
-file
-
-
-
-add
-
-byte004.xml
-file
-
-
-
-add
-
-byte005.xml
-file
-
-
-
-add
-
-byte006.xml
-file
-
-
-
-add
-
-byte007.xml
-file
-
-
-
-add
-
-byte008.xml
-file
-
-
-
-add
-
-byte009.xml
-file
-
-
-
-add
-
-byte009.xsd
-file
-
-
-
-add
-
-datatypes.xsd
-file
-
-
-
-add
-
-date.xsd
-file
-
-
-
-add
-
-date001.xml
-file
-
-
-
-add
-
-date002.xml
-file
-
-
-
-add
-
-date003.xml
-file
-
-
-
-add
-
-date004.xml
-file
-
-
-
-add
-
-date005.xml
-file
-
-
-
-add
-
-date006.xml
-file
-
-
-
-add
-
-date009.xml
-file
-
-
-
-add
-
-date010.xml
-file
-
-
-
-add
-
-date011.xml
-file
-
-
-
-add
-
-dateTime.xsd
-file
-
-
-
-add
-
-dateTime001.xml
-file
-
-
-
-add
-
-dateTime002.xml
-file
-
-
-
-add
-
-dateTime003.xml
-file
-
-
-
-add
-
-dateTime004.xml
-file
-
-
-
-add
-
-dateTime005.xml
-file
-
-
-
-add
-
-dateTime006.xml
-file
-
-
-
-add
-
-dateTime007.xml
-file
-
-
-
-add
-
-dateTime008.xml
-file
-
-
-
-add
-
-dateTime010.xml
-file
-
-
-
-add
-
-dateTime011.xml
-file
-
-
-
-add
-
-dateTime013.xml
-file
-
-
-
-add
-
-decimal.xsd
-file
-
-
-
-add
-
-decimal001.xml
-file
-
-
-
-add
-
-decimal002.xml
-file
-
-
-
-add
-
-decimal003.xml
-file
-
-
-
-add
-
-decimal004.xml
-file
-
-
-
-add
-
-decimal005.xml
-file
-
-
-
-add
-
-decimal006.xml
-file
-
-
-
-add
-
-decimal007.xml
-file
-
-
-
-add
-
-decimal008.xml
-file
-
-
-
-add
-
-decimal009.xml
-file
-
-
-
-add
-
-decimal010.xml
-file
-
-
-
-add
-
-decimal011.xml
-file
-
-
-
-add
-
-decimal012.xml
-file
-
-
-
-add
-
-decimal013.xml
-file
-
-
-
-add
-
-decimal014.xml
-file
-
-
-
-add
-
-decimal015.xml
-file
-
-
-
-add
-
-decimal016.xml
-file
-
-
-
-add
-
-decimal017.xml
-file
-
-
-
-add
-
-decimal018.xml
-file
-
-
-
-add
-
-decimal019.xml
-file
-
-
-
-add
-
-decimal020.xml
-file
-
-
-
-add
-
-decimal021.xml
-file
-
-
-
-add
-
-decimal022.xml
-file
-
-
-
-add
-
-decimal023.xml
-file
-
-
-
-add
-
-decimal024.xml
-file
-
-
-
-add
-
-decimal025.xml
-file
-
-
-
-add
-
-double.xsd
-file
-
-
-
-add
-
-double001.xml
-file
-
-
-
-add
-
-double002.xml
-file
-
-
-
-add
-
-double003.xml
-file
-
-
-
-add
-
-double004.xml
-file
-
-
-
-add
-
-double005.xml
-file
-
-
-
-add
-
-double006.xml
-file
-
-
-
-add
-
-double007.xml
-file
-
-
-
-add
-
-double008.xml
-file
-
-
-
-add
-
-double009.xml
-file
-
-
-
-add
-
-double010.xml
-file
-
-
-
-add
-
-double011.xml
-file
-
-
-
-add
-
-double012.xml
-file
-
-
-
-add
-
-double013.xml
-file
-
-
-
-add
-
-double014.xml
-file
-
-
-
-add
-
-double015.xml
-file
-
-
-
-add
-
-double016.xml
-file
-
-
-
-add
-
-double017.xml
-file
-
-
-
-add
-
-double018.xml
-file
-
-
-
-add
-
-double019.xml
-file
-
-
-
-add
-
-double020.xml
-file
-
-
-
-add
-
-double021.xml
-file
-
-
-
-add
-
-double022.xml
-file
-
-
-
-add
-
-double023.xml
-file
-
-
-
-add
-
-double024.xml
-file
-
-
-
-add
-
-double025.xml
-file
-
-
-
-add
-
-double026.xml
-file
-
-
-
-add
-
-double027.xml
-file
-
-
-
-add
-
-double028.xml
-file
-
-
-
-add
-
-double029.xml
-file
-
-
-
-add
-
-double030.xml
-file
-
-
-
-add
-
-double030.xsd
-file
-
-
-
-add
-
-duration.xsd
-file
-
-
-
-add
-
-duration001.xml
-file
-
-
-
-add
-
-duration002.xml
-file
-
-
-
-add
-
-duration003.xml
-file
-
-
-
-add
-
-duration004.xml
-file
-
-
-
-add
-
-duration005.xml
-file
-
-
-
-add
-
-duration006.xml
-file
-
-
-
-add
-
-duration007.xml
-file
-
-
-
-add
-
-duration008.xml
-file
-
-
-
-add
-
-duration009.xml
-file
-
-
-
-add
-
-duration010.xml
-file
-
-
-
-add
-
-duration011.xml
-file
-
-
-
-add
-
-duration012.xml
-file
-
-
-
-add
-
-duration013.xml
-file
-
-
-
-add
-
-duration014.xml
-file
-
-
-
-add
-
-duration015.xml
-file
-
-
-
-add
-
-duration016.xml
-file
-
-
-
-add
-
-duration017.xml
-file
-
-
-
-add
-
-duration018.xml
-file
-
-
-
-add
-
-duration019.xml
-file
-
-
-
-add
-
-duration020.xml
-file
-
-
-
-add
-
-duration021.xml
-file
-
-
-
-add
-
-duration022.xml
-file
-
-
-
-add
-
-duration023.xml
-file
-
-
-
-add
-
-duration024.xml
-file
-
-
-
-add
-
-duration025.xml
-file
-
-
-
-add
-
-duration026.xml
-file
-
-
-
-add
-
-duration027.xml
-file
-
-
-
-add
-
-duration027.xsd
-file
-
-
-
-add
-
-duration028.xml
-file
-
-
-
-add
-
-duration029.xml
-file
-
-
-
-add
-
-duration030.xml
-file
-
-
-
-add
-
-float.xsd
-file
-
-
-
-add
-
-float001.xml
-file
-
-
-
-add
-
-float002.xml
-file
-
-
-
-add
-
-float003.xml
-file
-
-
-
-add
-
-float004.xml
-file
-
-
-
-add
-
-float005.xml
-file
-
-
-
-add
-
-float006.xml
-file
-
-
-
-add
-
-float007.xml
-file
-
-
-
-add
-
-float008.xml
-file
-
-
-
-add
-
-float009.xml
-file
-
-
-
-add
-
-float010.xml
-file
-
-
-
-add
-
-float011.xml
-file
-
-
-
-add
-
-float012.xml
-file
-
-
-
-add
-
-float013.xml
-file
-
-
-
-add
-
-float014.xml
-file
-
-
-
-add
-
-float015.xml
-file
-
-
-
-add
-
-float016.xml
-file
-
-
-
-add
-
-float017.xml
-file
-
-
-
-add
-
-float018.xml
-file
-
-
-
-add
-
-float019.xml
-file
-
-
-
-add
-
-float020.xml
-file
-
-
-
-add
-
-float021.xml
-file
-
-
-
-add
-
-float022.xml
-file
-
-
-
-add
-
-float023.xml
-file
-
-
-
-add
-
-float024.xml
-file
-
-
-
-add
-
-float025.xml
-file
-
-
-
-add
-
-float026.xml
-file
-
-
-
-add
-
-float027.xml
-file
-
-
-
-add
-
-float028.xml
-file
-
-
-
-add
-
-float029.xml
-file
-
-
-
-add
-
-float030.xml
-file
-
-
-
-add
-
-float031.xml
-file
-
-
-
-add
-
-float032.xml
-file
-
-
-
-add
-
-float033.xml
-file
-
-
-
-add
-
-float034.xml
-file
-
-
-
-add
-
-float035.xml
-file
-
-
-
-add
-
-float036.xml
-file
-
-
-
-add
-
-float037.xml
-file
-
-
-
-add
-
-float038.xml
-file
-
-
-
-add
-
-float038.xsd
-file
-
-
-
-add
-
-float039.xml
-file
-
-
-
-add
-
-float039.xsd
-file
-
-
-
-add
-
-gDay.xsd
-file
-
-
-
-add
-
-gDay001.xml
-file
-
-
-
-add
-
-gDay002.xml
-file
-
-
-
-add
-
-gDay003.xml
-file
-
-
-
-add
-
-gDay004.xml
-file
-
-
-
-add
-
-gDay005.xml
-file
-
-
-
-add
-
-gMonth.xsd
-file
-
-
-
-add
-
-gMonth001.xml
-file
-
-
-
-add
-
-gMonth002.xml
-file
-
-
-
-add
-
-gMonth003.xml
-file
-
-
-
-add
-
-gMonth004.xml
-file
-
-
-
-add
-
-gMonth005.xml
-file
-
-
-
-add
-
-gMonth006.xml
-file
-
-
-
-add
-
-gMonth007.xml
-file
-
-
-
-add
-
-gMonthDay.xsd
-file
-
-
-
-add
-
-gMonthDay001.xml
-file
-
-
-
-add
-
-gMonthDay002.xml
-file
-
-
-
-add
-
-gMonthDay003.xml
-file
-
-
-
-add
-
-gMonthDay004.xml
-file
-
-
-
-add
-
-gMonthDay005.xml
-file
-
-
-
-add
-
-gMonthDay006.xml
-file
-
-
-
-add
-
-gYear.xsd
-file
-
-
-
-add
-
-gYear001.xml
-file
-
-
-
-add
-
-gYear002.xml
-file
-
-
-
-add
-
-gYear005.xml
-file
-
-
-
-add
-
-gYear006.xml
-file
-
-
-
-add
-
-gYearMonth.xsd
-file
-
-
-
-add
-
-gYearMonth001.xml
-file
-
-
-
-add
-
-gYearMonth002.xml
-file
-
-
-
-add
-
-gYearMonth003.xml
-file
-
-
-
-add
-
-gYearMonth004.xml
-file
-
-
-
-add
-
-gYearMonth006.xml
-file
-
-
-
-add
-
-hexBinary.xsd
-file
-
-
-
-add
-
-hexBinary001.xml
-file
-
-
-
-add
-
-hexBinary002.xml
-file
-
-
-
-add
-
-hexBinary002.xsd
-file
-
-
-
-add
-
-hexBinary003.xml
-file
-
-
-
-add
-
-hexBinary004.xml
-file
-
-
-
-add
-
-int.xsd
-file
-
-
-
-add
-
-int001.xml
-file
-
-
-
-add
-
-int002.xml
-file
-
-
-
-add
-
-int003.xml
-file
-
-
-
-add
-
-int004.xml
-file
-
-
-
-add
-
-int005.xml
-file
-
-
-
-add
-
-int006.xml
-file
-
-
-
-add
-
-int007.xml
-file
-
-
-
-add
-
-int008.xml
-file
-
-
-
-add
-
-integer.xsd
-file
-
-
-
-add
-
-integer001.xml
-file
-
-
-
-add
-
-integer002.xml
-file
-
-
-
-add
-
-integer003.xml
-file
-
-
-
-add
-
-integer004.xml
-file
-
-
-
-add
-
-integer005.xml
-file
-
-
-
-add
-
-integer006.xml
-file
-
-
-
-add
-
-integer007.xml
-file
-
-
-
-add
-
-integer008.xml
-file
-
-
-
-add
-
-integer009.xml
-file
-
-
-
-add
-
-integer010.xml
-file
-
-
-
-add
-
-integer011.xml
-file
-
-
-
-add
-
-integer012.xml
-file
-
-
-
-add
-
-integer013.xml
-file
-
-
-
-add
-
-integer014.xml
-file
-
-
-
-add
-
-integer015.xml
-file
-
-
-
-add
-
-integer016.xml
-file
-
-
-
-add
-
-language.xsd
-file
-
-
-
-add
-
-language001.xml
-file
-
-
-
-add
-
-language002.xml
-file
-
-
-
-add
-
-language003.xml
-file
-
-
-
-add
-
-language004.xml
-file
-
-
-
-add
-
-language005.xml
-file
-
-
-
-add
-
-language006.xml
-file
-
-
-
-add
-
-language007.xml
-file
-
-
-
-add
-
-language008.xml
-file
-
-
-
-add
-
-language009.xml
-file
-
-
-
-add
-
-language010.xml
-file
-
-
-
-add
-
-long.xsd
-file
-
-
-
-add
-
-long001.xml
-file
-
-
-
-add
-
-long002.xml
-file
-
-
-
-add
-
-long003.xml
-file
-
-
-
-add
-
-long004.xml
-file
-
-
-
-add
-
-long005.xml
-file
-
-
-
-add
-
-long006.xml
-file
-
-
-
-add
-
-long007.xml
-file
-
-
-
-add
-
-long008.xml
-file
-
-
-
-add
-
-long009.xml
-file
-
-
-
-add
-
-long009.xsd
-file
-
-
-
-add
-
-negativeInteger.xsd
-file
-
-
-
-add
-
-negativeInteger001.xml
-file
-
-
-
-add
-
-negativeInteger002.xml
-file
-
-
-
-add
-
-negativeInteger003.xml
-file
-
-
-
-add
-
-negativeInteger004.xml
-file
-
-
-
-add
-
-negativeInteger005.xml
-file
-
-
-
-add
-
-nonNegativeInteger.xsd
-file
-
-
-
-add
-
-nonNegativeInteger001.xml
-file
-
-
-
-add
-
-nonNegativeInteger002.xml
-file
-
-
-
-add
-
-nonNegativeInteger003.xml
-file
-
-
-
-add
-
-nonNegativeInteger004.xml
-file
-
-
-
-add
-
-nonNegativeInteger005.xml
-file
-
-
-
-add
-
-nonPositiveInteger.xsd
-file
-
-
-
-add
-
-nonPositiveInteger001.xml
-file
-
-
-
-add
-
-nonPositiveInteger002.xml
-file
-
-
-
-add
-
-nonPositiveInteger003.xml
-file
-
-
-
-add
-
-nonPositiveInteger004.xml
-file
-
-
-
-add
-
-nonPositiveInteger005.xml
-file
-
-
-
-add
-
-normalizedString.xsd
-file
-
-
-
-add
-
-normalizedString001.xml
-file
-
-
-
-add
-
-normalizedString002.xml
-file
-
-
-
-add
-
-normalizedString003.xml
-file
-
-
-
-add
-
-positiveInteger.xsd
-file
-
-
-
-add
-
-positiveInteger001.xml
-file
-
-
-
-add
-
-positiveInteger002.xml
-file
-
-
-
-add
-
-positiveInteger003.xml
-file
-
-
-
-add
-
-positiveInteger004.xml
-file
-
-
-
-add
-
-positiveInteger005.xml
-file
-
-
-
-add
-
-short.xsd
-file
-
-
-
-add
-
-short001.xml
-file
-
-
-
-add
-
-short002.xml
-file
-
-
-
-add
-
-short003.xml
-file
-
-
-
-add
-
-short004.xml
-file
-
-
-
-add
-
-short005.xml
-file
-
-
-
-add
-
-short006.xml
-file
-
-
-
-add
-
-short007.xml
-file
-
-
-
-add
-
-short008.xml
-file
-
-
-
-add
-
-short009.xml
-file
-
-
-
-add
-
-short009.xsd
-file
-
-
-
-add
-
-string.xsd
-file
-
-
-
-add
-
-string001.xml
-file
-
-
-
-add
-
-string002.xml
-file
-
-
-
-add
-
-string003.xml
-file
-
-
-
-add
-
-string004.xml
-file
-
-
-
-add
-
-string005.xml
-file
-
-
-
-add
-
-string006.xml
-file
-
-
-
-add
-
-test100507.xml
-file
-
-
-
-add
-
-test100507.xsd
-file
-
-
-
-add
-
-test107447.xml
-file
-
-
-
-add
-
-test107447.xsd
-file
-
-
-
-add
-
-test107447_1.xml
-file
-
-
-
-add
-
-test107447_a.xsd
-file
-
-
-
-add
-
-test86723.xml
-file
-
-
-
-add
-
-test86723.xsd
-file
-
-
-
-add
-
-time.xsd
-file
-
-
-
-add
-
-time001.xml
-file
-
-
-
-add
-
-time002.xml
-file
-
-
-
-add
-
-time003.xml
-file
-
-
-
-add
-
-time004.xml
-file
-
-
-
-add
-
-time005.xml
-file
-
-
-
-add
-
-time006.xml
-file
-
-
-
-add
-
-time007.xml
-file
-
-
-
-add
-
-time008.xml
-file
-
-
-
-add
-
-time009.xml
-file
-
-
-
-add
-
-time011.xml
-file
-
-
-
-add
-
-time012.xml
-file
-
-
-
-add
-
-time013.xml
-file
-
-
-
-add
-
-time014.xml
-file
-
-
-
-add
-
-time015.xml
-file
-
-
-
-add
-
-time016.xml
-file
-
-
-
-add
-
-time017.xml
-file
-
-
-
-add
-
-time018.xml
-file
-
-
-
-add
-
-time019.xml
-file
-
-
-
-add
-
-time020.xml
-file
-
-
-
-add
-
-time021.xml
-file
-
-
-
-add
-
-time022.xml
-file
-
-
-
-add
-
-token.xsd
-file
-
-
-
-add
-
-token001.xml
-file
-
-
-
-add
-
-token002.xml
-file
-
-
-
-add
-
-token003.xml
-file
-
-
-
-add
-
-token004.xml
-file
-
-
-
-add
-
-union_minInclusive.xsd
-file
-
-
-
-add
-
-unsignedByte.xsd
-file
-
-
-
-add
-
-unsignedByte001.xml
-file
-
-
-
-add
-
-unsignedByte002.xml
-file
-
-
-
-add
-
-unsignedByte003.xml
-file
-
-
-
-add
-
-unsignedByte004.xml
-file
-
-
-
-add
-
-unsignedByte005.xml
-file
-
-
-
-add
-
-unsignedByte006.xml
-file
-
-
-
-add
-
-unsignedByte007.xml
-file
-
-
-
-add
-
-unsignedByte007.xsd
-file
-
-
-
-add
-
-unsignedInt.xsd
-file
-
-
-
-add
-
-unsignedInt001.xml
-file
-
-
-
-add
-
-unsignedInt002.xml
-file
-
-
-
-add
-
-unsignedInt003.xml
-file
-
-
-
-add
-
-unsignedInt004.xml
-file
-
-
-
-add
-
-unsignedInt005.xml
-file
-
-
-
-add
-
-unsignedInt006.xml
-file
-
-
-
-add
-
-unsignedInt007.xml
-file
-
-
-
-add
-
-unsignedInt007.xsd
-file
-
-
-
-add
-
-unsignedLong.xsd
-file
-
-
-
-add
-
-unsignedLong001.xml
-file
-
-
-
-add
-
-unsignedLong002.xml
-file
-
-
-
-add
-
-unsignedLong003.xml
-file
-
-
-
-add
-
-unsignedLong004.xml
-file
-
-
-
-add
-
-unsignedLong005.xml
-file
-
-
-
-add
-
-unsignedLong006.xml
-file
-
-
-
-add
-
-unsignedLong007.xml
-file
-
-
-
-add
-
-unsignedLong007.xsd
-file
-
-
-
-add
-
-unsignedShort.xsd
-file
-
-
-
-add
-
-unsignedShort001.xml
-file
-
-
-
-add
-
-unsignedShort002.xml
-file
-
-
-
-add
-
-unsignedShort003.xml
-file
-
-
-
-add
-
-unsignedShort004.xml
-file
-
-
-
-add
-
-unsignedShort005.xml
-file
-
-
-
-add
-
-unsignedShort006.xml
-file
-
-
-
-add
-
-unsignedShort007.xml
-file
-
-
-
-add
-
-unsignedShort007.xsd
-file
-
-
-
-add
-
