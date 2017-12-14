@@ -29,7 +29,9 @@
   validate with schemas from either namespace.
   
 
-  History: 
+  History:
+    2017-12-14
+        * Changed attribute name from "document" to "documents" in active-pattern (as defined in svrl.rnc)  
    	2010-07-10
    		* MIT license
     2010-04-14
@@ -548,7 +550,7 @@ THE SOFTWARE.
 	<xsl:param name="see" />
 	<xsl:param name="space" />
 	<svrl:active-pattern >
-	    <axsl:attribute name="document">
+	    <axsl:attribute name="documents">
 	    	<axsl:value-of select="document-uri(/)" />
 	    </axsl:attribute><!-- If XSLT1 remove this -->
 		<xsl:if test=" string( $id )">
