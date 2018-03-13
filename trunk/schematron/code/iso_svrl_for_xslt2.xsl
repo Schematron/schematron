@@ -161,6 +161,9 @@ THE SOFTWARE.
    necessary for your system.
 -->
 <xsl:import href="iso_schematron_skeleton_for_saxon.xsl"/>
+	
+<!-- Support to generate message in multiple languages  -->
+<xsl:import href="iso_schematron_multilingual_message_xslt2.xsl"/>
  
  <!--
 <xsl:import href="iso_schematron_skeleton_for_xslt1.xsl"/>
@@ -302,8 +305,10 @@ THE SOFTWARE.
 		</xsl:if>
 		  
 		<svrl:text>
-			<xsl:apply-templates mode="text" />
-	
+			<xsl:call-template name="generateTextMassage">
+				<xsl:with-param name="diagnostics" select="$diagnostics"/>
+				<xsl:with-param name="currentLanguage" select="$langCode"/>
+			</xsl:call-template>
 		</svrl:text>
 		    <xsl:if test="$diagnose = 'yes' or $diagnose= 'true' ">
 			<!-- true/false is the new way -->
@@ -378,8 +383,10 @@ THE SOFTWARE.
 		</xsl:if>
 	 
 		<svrl:text>
-			<xsl:apply-templates mode="text" />
-
+			<xsl:call-template name="generateTextMassage">
+				<xsl:with-param name="diagnostics" select="$diagnostics"/>
+				<xsl:with-param name="currentLanguage" select="$langCode"/>
+			</xsl:call-template>
 		</svrl:text>
 			<xsl:if test="$diagnose = 'yes' or $diagnose='true' ">
 			<!-- true/false is the new way -->
@@ -404,9 +411,6 @@ THE SOFTWARE.
 		   <axsl:message terminate="yes"  >TERMINATING</axsl:message>
 		</xsl:if>
 </xsl:template>
-
-
-
 
 <xsl:template name="process-diagnostic">
 	<xsl:param name="id"/>
@@ -581,6 +585,7 @@ THE SOFTWARE.
 <xsl:template name="process-message" > 
 	<xsl:param name="pattern"/>
 	<xsl:param name="role"/>
+	<xsl:param name="diagnostics"/>
 </xsl:template>
 
 

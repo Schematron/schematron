@@ -1986,6 +1986,7 @@ which require a preprocess.
 		<xsl:call-template name="process-message">
 			<xsl:with-param name="pattern" select="$test"/>
 			<xsl:with-param name="role" select="$role"/>
+			<xsl:with-param name="diagnostics" select="$diagnostics"/>
 		</xsl:call-template>
 		
 		<xsl:if test=" $terminate = 'yes' or $terminate = 'true' ">
@@ -2149,7 +2150,8 @@ which require a preprocess.
 	<!-- default output action: the simplest customization is to just override this -->
 	<xsl:template name="process-message">
 		<xsl:param name="pattern" />
-            <xsl:param name="role" />
+        <xsl:param name="role" />
+		<xsl:param name="diagnostics"/>
 
 		<xsl:apply-templates mode="text"/>	
 		 <xsl:if test=" $message-newline = 'true'" >
