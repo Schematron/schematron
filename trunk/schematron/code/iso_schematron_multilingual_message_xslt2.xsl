@@ -32,7 +32,16 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 -->
 
-<!-- Schematron message -->
+<!-- 
+   Schematron multilingual messages
+   
+   Annex G of the ISO Schematron specification defines the use of multilingual Schematron as follows:
+   Diagnostics in multiple languages may be supported by using a different diagnostic element for each language, 
+   with the appropriate xml:lang language attribute, and referencing all the unique identifiers of the diagnostic 
+   elements in the diagnostics attribute of the assertion.
+   
+   The language of the messages is controlled by the $langCode global parameter.
+-->
 
 <xsl:stylesheet
    version="2.0"
@@ -44,9 +53,9 @@ THE SOFTWARE.
    <!-- The diagnostics elements -->  
    <xsl:key name="diag" match="iso:diagnostic" use="@id"/>   
    
-   <!-- Generate the message dependeng on the language 
-         - if a language code is set in the value of the $langCode parameter, the message in thet language will be presented
-         - Otherwise, all messages will be presented  
+   <!-- Generate the message depending on the language 
+         - if there are messages in the language specified by the $currentLanguage parameter, the messages in that language will be presented
+         - otherwise, all messages will be presented, prefixed with language code 
    -->
    <xsl:template name="generateTextMassage">
       <xsl:param name="diagnostics"/>
