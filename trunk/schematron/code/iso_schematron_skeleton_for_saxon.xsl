@@ -1438,19 +1438,9 @@ which require a preprocess.
  		    		as="xs:string*"  /> 
  		    	
 				<axsl:for-each  select="$thePath">  
-					<axsl:choose>
-						<axsl:when test="starts-with( ., 'http:') or starts-with(., 'file:' )
-						   or starts-with(., '/')"><!-- try as absolute path -->
-		  					<axsl:for-each select="document(.)"> 
-		    					<xsl:call-template name="handle-pattern"  />
-							</axsl:for-each>
-						</axsl:when>
-						<axsl:otherwise><!-- is relative path -->
-		  					<axsl:for-each select="document(concat( $document-uri , '/../', .))"> 
-		    					<xsl:call-template name="handle-pattern"  />
-							</axsl:for-each>
-						</axsl:otherwise>
-				  </axsl:choose>		
+				  <axsl:for-each select="document(resolve-uri(., $document-uri))">
+				    <xsl:call-template name="handle-pattern"/>
+				  </axsl:for-each>
 				</axsl:for-each>
 			</xsl:otherwise>
 		</xsl:choose>	
