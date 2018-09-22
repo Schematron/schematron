@@ -1,0 +1,30 @@
+language: generic
+env:
+    global:
+        # full path to Saxon jar
+        - SAXON_CP=/tmp/xspec/saxon/saxon9he.jar
+        # Ant version used in oXygen
+        - ANT_VERSION=1.9.8
+        # full path to XML Resolver jar
+        - XML_RESOLVER_CP=/tmp/xspec/xml-resolver/resolver.jar
+    matrix:
+        # latest Saxon 9.8 version and full path to Jing jar
+        - SAXON_VERSION=9.8.0-7
+          JING_CP=/tmp/xspec/jing/jing.jar
+
+before_install:
+    - unset _JAVA_OPTIONS
+
+before_script:
+    # install Saxon
+    - curl -fsSL --create-dirs -o ${SAXON_CP} http://central.maven.org/maven2/net/sf/saxon/Saxon-HE/${SAXON_VERSION}/Saxon-HE-${SAXON_VERSION}.jar
+    # install Ant
+    - curl -fsSL --create-dirs -o /tmp/xspec/ant/ant.tar.gz http://archive.apache.org/dist/ant/binaries/apache-ant-${ANT_VERSION}-bin.tar.gz
+    - tar xf /tmp/xspec/ant/ant.tar.gz -C /tmp/xspec/ant;
+    - export PATH=/tmp/xspec/ant/apache-ant-${ANT_VERSION}/bin:{$PATH}
+    # install XML Resolver
+    - curl -fsSL --create-dirs -o ${XML_RESOLVER_CP} http://central.maven.org/maven2/xml-resolver/xml-resolver/1.2/xml-resolver-1.2.jar
+
+script:
+    - ant -version
+    - cd test
