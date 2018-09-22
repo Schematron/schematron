@@ -27,4 +27,4 @@ before_script:
 
 script:
     - ant -version
-    - cd test
+    - cd trunk/schematron/test
