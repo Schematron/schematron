@@ -21,7 +21,7 @@ before_install:
 before_script:
     # install XSpec
     - curl -fsSL --create-dirs -o /tmp/schematron/xspec/xspec.zip https://github.com/xspec/xspec/archive/v${XSPEC_VERSION}.zip;
-    - unzip /tmp/schematron/xspe/xspec.zip -d /tmp/xspec/xspec;
+    - unzip /tmp/schematron/xspec/xspec.zip -d /tmp/xspec/xspec;
     - export XSPEC_HOME=/tmp/schematron/xspec/xspec-${XSPEC_VERSION};
     # install Saxon
     - curl -fsSL --create-dirs -o ${SAXON_CP} http://central.maven.org/maven2/net/sf/saxon/Saxon-HE/${SAXON_VERSION}/Saxon-HE-${SAXON_VERSION}.jar
