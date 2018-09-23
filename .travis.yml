@@ -26,12 +26,13 @@ before_script:
     # install Saxon
     - curl -fsSL --create-dirs -o ${SAXON_CP} http://central.maven.org/maven2/net/sf/saxon/Saxon-HE/${SAXON_VERSION}/Saxon-HE-${SAXON_VERSION}.jar
     # install Ant
-    - curl -fsSL --create-dirs -o /tmp/xspec/ant/ant.tar.gz http://archive.apache.org/dist/ant/binaries/apache-ant-${ANT_VERSION}-bin.tar.gz
-    - tar xf /tmp/xspec/ant/ant.tar.gz -C /tmp/xspec/ant;
-    - export PATH=/tmp/xspec/ant/apache-ant-${ANT_VERSION}/bin:{$PATH}
+    - curl -fsSL --create-dirs -o /tmp/schematron/ant/ant.tar.gz http://archive.apache.org/dist/ant/binaries/apache-ant-${ANT_VERSION}-bin.tar.gz
+    - tar xf /tmp/schematron/ant/ant.tar.gz -C /tmp/schematron/ant;
+    - export PATH=/tmp/schematron/ant/apache-ant-${ANT_VERSION}/bin:{$PATH}
     # install XML Resolver
     - curl -fsSL --create-dirs -o ${XML_RESOLVER_CP} http://central.maven.org/maven2/xml-resolver/xml-resolver/1.2/xml-resolver-1.2.jar
 
 script:
     - ant -version
     - cd trunk/schematron/test
+    - ant -Dsaxon.jar=${SAXON_CP} -Dxspec.project.dir=${XSPEC_HOME}
