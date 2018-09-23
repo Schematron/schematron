@@ -1,12 +1,15 @@
 language: generic
 env:
     global:
+        # XSpec version
+        - XSPEC_VERSION=1.0.0
+        #- XSPEC_HOME=/tmp/schematron/xspec/
         # full path to Saxon jar
-        - SAXON_CP=/tmp/xspec/saxon/saxon9he.jar
+        - SAXON_CP=/tmp/schematron/saxon/saxon9he.jar
         # Ant version used in oXygen
         - ANT_VERSION=1.9.8
         # full path to XML Resolver jar
-        - XML_RESOLVER_CP=/tmp/xspec/xml-resolver/resolver.jar
+        - XML_RESOLVER_CP=/tmp/schematron/xml-resolver/resolver.jar
     matrix:
         # latest Saxon 9.8 version and full path to Jing jar
         - SAXON_VERSION=9.8.0-7
