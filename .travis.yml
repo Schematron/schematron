@@ -35,5 +35,6 @@ before_script:
 script:
     - ant -version
     - cd trunk/schematron/test
+    - pwd
     - ls -al
     - ant -Dsaxon.jar=${SAXON_CP} -Dxspec.project.dir=${XSPEC_HOME}
