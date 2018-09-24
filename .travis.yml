@@ -38,4 +38,4 @@ script:
     - pwd
     - ls -al
     #- ant -Dsaxon.jar=${SAXON_CP} -Dxspec.project.dir=${XSPEC_HOME}
-    - ${XSPEC_HOME}/bin/xspec.sh -s schematron/universalTests.sch
+    - ${XSPEC_HOME}/bin/xspec.sh -s schematron/universalTests.xspec
