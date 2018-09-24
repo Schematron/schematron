@@ -37,4 +37,5 @@ script:
     - cd trunk/schematron/test
     - pwd
     - ls -al
-    - ant -Dsaxon.jar=${SAXON_CP} -Dxspec.project.dir=${XSPEC_HOME}
+    #- ant -Dsaxon.jar=${SAXON_CP} -Dxspec.project.dir=${XSPEC_HOME}
+    - ${XSPEC_HOME}/bin/xspec.sh -s schematron/universalTests.sch
