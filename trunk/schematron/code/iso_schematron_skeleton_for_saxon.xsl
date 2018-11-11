@@ -660,7 +660,7 @@ which require a preprocess.
     <xsl:text>&#10;&#10;</xsl:text><xsl:comment>XSD TYPES FOR XSLT2</xsl:comment><xsl:text>&#10;</xsl:text>
 	<xsl:apply-templates mode="do-types"   select="xsl:import-schema"/>
     <xsl:text>&#10;&#10;</xsl:text><xsl:comment>KEYS AND FUNCTIONS</xsl:comment><xsl:text>&#10;</xsl:text>
-	<xsl:apply-templates mode="do-keys"   select="xsl:key | xsl:function "/>
+	<xsl:apply-templates mode="do-keys"   select="xsl:key | xsl:function | xsl:include "/>
     <xsl:text>&#10;&#10;</xsl:text><xsl:comment>DEFAULT RULES</xsl:comment><xsl:text>&#10;</xsl:text>
     <xsl:call-template name="generate-default-rules" />
     <xsl:text>&#10;&#10;</xsl:text><xsl:comment>SCHEMA SETUP</xsl:comment><xsl:text>&#10;</xsl:text>
@@ -1199,6 +1199,10 @@ which require a preprocess.
 	<xsl:template match="iso:function "  >
 		<xsl:message><xsl:call-template name="outputLocalizedMessage" ><xsl:with-param name="number">17</xsl:with-param></xsl:call-template></xsl:message>
     </xsl:template>
+	
+	<xsl:template match="xsl:include" mode="do-keys">
+		<xsl:copy-of select="."/>
+	</xsl:template>
 
 
    <!-- ISO INCLUDE -->
