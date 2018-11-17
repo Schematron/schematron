@@ -8,6 +8,7 @@ env:
         - SCHEMATRON_XSLT_INCLUDE=$PWD/trunk/schematron/code/iso_dsdl_include.xsl
         - SCHEMATRON_XSLT_EXPAND=$PWD/trunk/schematron/code/iso_abstract_expand.xsl
         - SCHEMATRON_XSLT_COMPILE=$PWD/trunk/schematron/code/iso_svrl_for_xslt2.xsl
+        - XSPEC_HOME=$PWD/trunk/schematron/test/xspec-dist
     matrix:
         # latest Saxon 9.8 version and full path to Jing jar
         - SAXON_VERSION=9.8.0-7
