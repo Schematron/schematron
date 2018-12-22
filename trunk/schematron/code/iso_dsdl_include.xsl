@@ -71,6 +71,8 @@ THE SOFTWARE.
 
 <!-- 
   VERSION INFORMATION
+    2017-01-13 http://schematron.com/2017/01/triage-of-reported-errors-for-schematron-skeleton-implementation/
+    * RJ typo on check of sch:name (@value  not @path) #12
     2010-07-10
     * Move to MIT license
     2010-04-21
@@ -212,7 +214,7 @@ THE SOFTWARE.
 	
 		<xslt:template match="iso:name[@path]" mode="dsdl:go">
 	  <xsl:call-template name="sch-check:xpath-wf-message">
-          <xsl:with-param name="string" select=" @select "  />
+          <xsl:with-param name="string" select=" @path "  />
           <xsl:with-param name="subject" select=" 'Bad name element: ' "  />
         </xsl:call-template>
         

@@ -191,6 +191,8 @@ THE SOFTWARE.
    Note that several enhancements for the SAXON/XSLT2 version have not been put in place 
    in this XSLT1 version. Therefore even if the two stylesheets are of the same date, they
    may not have matching functionality.
+   2017-01-13 http://schematron.com/2017/01/triage-of-reported-errors-for-schematron-skeleton-implementation/
+     * RJ Fix up optimization. Don't optimize if inclusions  #28. Default to visit text. #30
      2010-04-14
      	* RJ Reorder call-template in exslt case only, report by BD
         * Add command line parameter 'terminate' which will terminate on first failed 
@@ -432,10 +434,12 @@ THE SOFTWARE.
          defaults to true if there is any possibility that a context could match an attribute,
          err on the side if caution, a context of *[.='@'] would cause this param to defualt to true
          even though @ is in a string
+         
+     RJ No attribute optimization if could be included/extended schema construction
 -->
 <xsl:param name="attributes">
   <xsl:choose>
-    <xsl:when test="//iso:rule[contains(@context,'@') or contains(@context,'attribute')]">true</xsl:when>
+  	<xsl:when test="//iso:rule[contains(@context,'@') or contains(@context,'attribute')]  or //@href[not(parent::iso:see)]">true</xsl:when>
     <xsl:otherwise>false</xsl:otherwise>
   </xsl:choose>
 </xsl:param>
@@ -443,21 +447,21 @@ THE SOFTWARE.
 <!-- DPC set to true if contexts should be checked on just elements in the child axis
          defaults to true if there is any possibility that a context could match an comment or PI
          err on the side if caution, a context of *[.='('] would cause this param to defualt to true
-         even though ( is in a string, but node() comment() and processing-instruction()  all have a (
+         even though ( is in a string, but node() comment() and processing-instruction()  all have a 
+         
+     RJ No attribute optimization if could be included/extended schema construction
 -->
 <xsl:param name="only-child-elements">
   <xsl:choose>
-    <xsl:when test="//iso:rule[contains(@context,'(')]">true</xsl:when>
+  	<xsl:when test="//iso:rule[contains(@context,'(')] or //@href[not(parent::iso:see)]">true</xsl:when>
     <xsl:otherwise>false</xsl:otherwise>
   </xsl:choose>
 </xsl:param>
 
 <!-- DPC set to true if contexts should be checked on text nodes nodes (if only-child-elements is false)
-         THIS IS NON CONFORMANT BEHAVIOUR JUST FOR DISCUSSION OF A POSSIBLE CHANGE TO THE
-         SPECIFICATION. THIS PARAM SHOULD GO IF THE FINAL DECISION IS THAT THE SPEC DOES NOT CHANGE.
-	 Always defaults to false
+
 -->
-<xsl:param name="visit-text" select="'false'"/>
+<xsl:param name="visit-text" select="'true'"/>
 
 <!-- DPC
   When selecting contexts the specified behaviour is

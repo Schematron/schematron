@@ -127,7 +127,7 @@ THE SOFTWARE.
        * Add all formal parameters to default templates
        * Fix missing apply-templates from process-ns and add params back
 
-  EXSLT:  Experimental support
+  EXSLT:  Support
      A schema using the EXSLT query binding will have a /schema/@queryBinding='exslt'.
      It is built on XSLT 1. After experience is gained, this binding is expected to be 
      formalized as part of ISO Schematron, which currently reserves the "exslt" name for this purpose.
@@ -136,13 +136,13 @@ THE SOFTWARE.
      provide library locations. For engines that require the functions, either hard code
      them in this script or provide them on the command-line argument.
       
-  XSLT 2:   Experimental support
+  XSLT 2:   Support
      A schema using the XSLT 2 query binding will have a /schema/@queryBinding='xslt2'.
      This binding is expected to be formalized as part of ISO
      Schematron, which currently reserves the "xslt2" name for this purpose.
      The xsl:import-schema, xsl:key and xsl:function elements are allowed as top elements. 
      
-  XPATH:    Experimental support
+  XPATH:    Support
      A schema using the XPATH query binding will have a /schema/@queryBinding='xpath'.
      It can run with XSLT 1 and is a strict superset of default ISO Schematron. After
      experience is gained, this binding is expected to be formalized as part of ISO
@@ -154,6 +154,10 @@ THE SOFTWARE.
      Consequently, in this binding, the <let> element and command-line variables passed
      to the schema should not be used? 
      The xsl:import-schema element is not allowed.
+     
+   XPATH 2: support as if XSLT2.
+   
+   XPATH 3: Experimental support: generate XSLT2 code, and just generate stylesheet version XLST2.
      
 -->
 <!--
@@ -190,7 +194,7 @@ THE SOFTWARE.
              
   This version has been developed to work with 
      Saxon 9
-  For versions for XSLT 1 processors, see www.xml.com
+  For versions for XSLT 1 processors, see https://github.com/schematron/schematron
 
  Please note that if you are using SAXON and JAXP, then you should use 
   System.setProperty("javax.xml.transform.TransformerFactory",
@@ -202,6 +206,10 @@ THE SOFTWARE.
 --> 
 <!--
   VERSION INFORMATION
+     2017-01-13  http://schematron.com/2017/01/triage-of-reported-errors-for-schematron-skeleton-implementation/
+     	* RJ experimental support for XPath3. Improve comments. #20
+     	* RJ Bug with variable $context-node #29	
+        * RJ Fix up optimization. Don't optimize if inclusions  #28. Default to visit text. #30
      2010-04-14
      	* RJ Reorder call-template in exslt case only, report by BD
         * Add command line parameter 'terminate' which will terminate on first failed 
@@ -469,11 +477,12 @@ which require a preprocess.
 <!-- DPC set to true if contexts should be checked on attribute nodes
          defaults to true if there is any possibility that a context could match an attribute,
          err on the side if caution, a context of *[.='@'] would cause this param to defualt to true
-         even though @ is in a string
+         even though @ is in a string.
+      RJ No optimization if there is any @href element, like iso:extends or iso:include or dsdl:include
 -->
 <xsl:param name="attributes">
   <xsl:choose>
-    <xsl:when test="//iso:rule[contains(@context,'@') or contains(@context,'attribute')]">true</xsl:when>
+    <xsl:when test="//iso:rule[contains(@context,'@') or contains(@context,'attribute')] or //@href[not(parent::iso:see)]">true</xsl:when>
     <xsl:otherwise>false</xsl:otherwise>
   </xsl:choose>
 </xsl:param>
@@ -482,20 +491,21 @@ which require a preprocess.
          defaults to true if there is any possibility that a context could match an comment or PI
          err on the side if caution, a context of *[.='('] would cause this param to defualt to true
          even though ( is in a string, but node() comment() and processing-instruction()  all have a (
+         
+         
+     RJ No attribute optimization if could be included/extended schema construction
 -->
 <xsl:param name="only-child-elements">
   <xsl:choose>
-    <xsl:when test="//iso:rule[contains(@context,'(')]">true</xsl:when>
+  	<xsl:when test="//iso:rule[contains(@context,'(')] or //@href[not(parent::iso:see)] ">true</xsl:when>
     <xsl:otherwise>false</xsl:otherwise>
   </xsl:choose>
 </xsl:param>
 
 <!-- DPC set to true if contexts should be checked on text nodes nodes (if only-child-elements is false)
-         THIS IS NON CONFORMANT BEHAVIOUR JUST FOR DISCUSSION OF A POSSIBLE CHANGE TO THE
-         SPECIFICATION. THIS PARAM SHOULD GO IF THE FINAL DECISION IS THAT THE SPEC DOES NOT CHANGE.
-	 Always defaults to false
+    
 -->
-<xsl:param name="visit-text" select="'false'"/>
+<xsl:param name="visit-text" select="'true'"/>
 
 <!-- DPC
   When selecting contexts the specified behaviour is
@@ -516,7 +526,7 @@ which require a preprocess.
   which I find a bit surprising but anyway I'll use the longr faster version.
 -->
 <xsl:variable name="context-xpath">
-  <xsl:if test="$attributes='true' and parent::node() ">@*|</xsl:if>
+  <xsl:if test="$attributes='true'">@*|</xsl:if>
   <xsl:choose>
     <xsl:when test="$only-child-elements='true'">*</xsl:when>
     <xsl:when test="$visit-text='true'">node()</xsl:when>
@@ -625,6 +635,27 @@ which require a preprocess.
 		<!-- was xsl:call-template name="stylesheetbody"/ -->
 	</axsl:stylesheet>
 </xsl:template>
+
+
+	<!-- Experimental:  Using XPath 3 -->
+	<!-- There is no XSLT2 QLB binding yet -->
+	<xsl:template 
+		match="iso:schema[@queryBinding ='xpath3']" 
+		priority="10">
+		<axsl:stylesheet
+			xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+			xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+			xmlns:saxon="http://saxon.sf.net/" 
+			>
+			<xsl:apply-templates 
+				select="iso:ns" />
+			<!-- Handle the namespaces before the version attribute: reported to help SAXON -->
+			<xsl:attribute name="version">3.0</xsl:attribute>
+			
+			<xsl:apply-templates select="." mode="stylesheetbody"/>
+			<!-- was xsl:call-template name="stylesheetbody"/ -->
+		</axsl:stylesheet>
+	</xsl:template>
 
 
 <!-- Uses unknown query language binding -->

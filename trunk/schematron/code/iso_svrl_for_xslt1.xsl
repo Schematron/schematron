@@ -30,6 +30,8 @@
   
 
   History:
+    2017-01-13  http://schematron.com/2017/01/triage-of-reported-errors-for-schematron-skeleton-implementation/
+    	* RJ SVRL diagnostics-reference missed tags for svrl:text  #26
     2010-07-10
     	* MIT license
     2010-04-14
@@ -417,9 +419,9 @@ THE SOFTWARE.
 		</xsl:call-template> 
 <xsl:text>
 </xsl:text>
- 
+     <svrl:text>
 		<xsl:apply-templates mode="text"/>
-		 
+     </svrl:text> 
 	</svrl:diagnostic-reference>
 </xsl:template>
 
