@@ -1915,18 +1915,7 @@ which require a preprocess.
 	<xsl:template match="schold:*"  priority="-2" />
 	 
 	<xsl:template match="*"  priority="-3">
-	    <xsl:choose>
-	       <xsl:when test=" $allow-foreign = 'false' ">
-				<xsl:message>
-					<xsl:call-template name="outputLocalizedMessage" ><xsl:with-param name="number">39a</xsl:with-param></xsl:call-template>
-					<xsl:value-of select="name(.)"/>
-					<xsl:call-template name="outputLocalizedMessage" ><xsl:with-param name="number">39b</xsl:with-param></xsl:call-template>
-				</xsl:message>
-			</xsl:when>
-			<xsl:otherwise>
-				<xsl:copy-of select="." />
-			</xsl:otherwise>
-		</xsl:choose>
+          <xsl:call-template name="process-foreign"/>
 	</xsl:template>
 	
 	<xsl:template match="iso:*" mode="text" priority="-2" />
@@ -2145,6 +2134,21 @@ which require a preprocess.
 		<axsl:value-of select="{$select}"/>
 		<axsl:text> </axsl:text>
 	</xsl:template>
+
+        <xsl:template name="process-foreign">
+          <xsl:choose>
+	    <xsl:when test=" $allow-foreign = 'false' ">
+	      <xsl:message>
+		<xsl:call-template name="outputLocalizedMessage" ><xsl:with-param name="number">39a</xsl:with-param></xsl:call-template>
+		<xsl:value-of select="name(.)"/>
+		<xsl:call-template name="outputLocalizedMessage" ><xsl:with-param name="number">39b</xsl:with-param></xsl:call-template>
+	      </xsl:message>
+	    </xsl:when>
+	    <xsl:otherwise>
+	      <xsl:copy-of select="." />
+	    </xsl:otherwise>
+	  </xsl:choose>
+        </xsl:template>
 
 	<!-- default output action: the simplest customization is to just override this -->
 	<xsl:template name="process-message">
