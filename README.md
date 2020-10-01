@@ -1,4 +1,6 @@
-[![Travis Build Status](https://travis-ci.com/Schematron/schematron.svg?branch=master "Travis Build Status")](https://travis-ci.com/Schematron/schematron.svg?branch=master)
+**This repository was archived and made read-only on 1 October 2020.**
+
+**At that time, new applications of Schematron were advised to use the SchXslt Schematron implementation at https://github.com/schxslt/schxslt. The list of currently known Schematron implementations is maintained in the 'Awesome Schematron' repository at https://github.com/Schematron/awesome-schematron#software.**
 
 # schematron [![Release](https://img.shields.io/github/release/schematron/schematron.svg)](https://github.com/schematron/schematron/releases/latest)
 This is the most recent version of the "skeleton" XSLT implementation of ISO Schematron by Rick Jelliffe and many others. 
