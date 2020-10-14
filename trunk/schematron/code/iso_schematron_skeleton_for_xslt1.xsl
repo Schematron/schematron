@@ -692,6 +692,7 @@ THE SOFTWARE.
        	 	
        	 	
 		<axsl:template match="@*" mode="schematron-get-full-path">
+			<axsl:apply-templates select="parent::*" mode="schematron-get-full-path"/>
 		
 			<!-- XSLT1 syntax -->
 		<axsl:text>/</axsl:text>
