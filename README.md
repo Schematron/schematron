@@ -17,3 +17,20 @@ minor forks of Schematron on the web: as at January 2017, this site is Rick's "o
 Status: The code has tracked the various versions of Schematron from version 1.1 to ISO Schematron 2006 and draft ISO Schematron 
 2nd edition  (now ISO Schematron 2016). The scripts are currently being checked against the released ISO Schematron 2016 
 International Standard to confirm conformance, and to merge various bug fixes and enhancements that have been requested over the last decade. 
+
+## Bugs and Limitations
+
+As of October 2020 this implementation is not conformant to the ISO specification with regards to the following requirements:
+
+- The language tag of a diagnostic is not copied to the SVRL output.
+- Property references are not copied to the SVRL output.
+- The xsl:copy-of instruction is not executed inside a sch:property element.
+- The sch:name element with a @path attribute does not expand into the value of evaluating the expression in @path.
+- An xsl:key element cannot contain a sequence constructor.
+- A variable defined for a phase is not scoped to this phase, but has global scope.
+- A variable defined for a patter is not scoped to this pattern, but has global scope.
+- The rule context cannot be a comment node.
+- The rule context cannot be a processing instruction node.
+- A subordinate document expressions cannot contain a variable.
+- A rule can extend an abstract rule that is defined in a different pattern.
+
