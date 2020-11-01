@@ -1,0 +1,78 @@
+Schematon conformance testsuite, 2020-11-01 (XSLT 1.0 query binding w/ Xalan)
+
+SUCCESS The sch:name element expands into the name of the context node if no @path is present
+FAILURE Language tag of diagnostic is preserved in SVRL output
+	id: svrl-diagnostic-02
+FAILURE Property references are copied to SVRL output
+	id: svrl-property-01
+FAILURE A xsl:copy-of inside a sch:property is executed
+	id: svrl-property-copy-of
+FAILURE The sch:name element expands into the value of evaluating the expression in @path
+	id: svrl-name-path-01
+SUCCESS Diagnostic references are copied to SVRL output
+SUCCESS The sch:value-of element expands into the value of evaluating the expression in @select
+FAILURE Include performs base URI fixup
+	id: include-baseuri-fixup
+FAILURE It is an error for a variable to be multiply defined in the current schema
+	id: let-name-collision-error-03
+SUCCESS Lexical order of rules is significant
+SUCCESS When a phase named '#DEFAULT' is given, the processor uses the phase given in @defaultPhase
+SUCCESS Context node is the root node
+SUCCESS Let uses the element content as value
+SUCCESS Rule context expression uses a pattern variable
+SKIPPED An xsl:key element can have element content
+	message: Required features not supported: [xslt2]
+	id: xslt-key-element-content-01
+SUCCESS An abstract rule is instantiated
+FAILURE Pattern in a subordinate document
+	id: pattern-subordinate-document-01
+FAILURE It is an error to define a pattern variable with the same name as a global variable
+	id: let-name-collision-error-06
+SUCCESS Context node is an element node
+SUCCESS Extends is recursive
+FAILURE It is an error for a variable to be multiply defined globally
+	id: let-name-collision-error-05
+SUCCESS Include is recursive
+SUCCESS Phase-variable is scoped to the phase
+SUCCESS Rule context expression uses a phase variable
+SUCCESS It is an error to reference a variable in an report test expression that has not been defined globally
+SUCCESS Context node is an attribute node
+SUCCESS It is an error to reference a variable in an rule variable that has not been defined globally
+FAILURE Context node is a comment node
+	id: rule-context-comment-01
+SUCCESS A rule variable can use a schema variable
+FAILURE Context node is a text node
+	id: rule-context-text-01
+FAILURE Context node is a processing instruction node
+	id: rule-context-pi-01
+FAILURE An abstract pattern is instantiated
+	message: java.lang.NullPointerException
+	id: pattern-abstract-01
+SUCCESS It is an error to reference a variable in an assert test expression that has not been defined globally
+SUCCESS It is an error to reference a variable in the @select expression of a sch:value-of element that has not been defined globally
+FAILURE The subordinate document expression contains a variable
+	id: pattern-subordinate-document-02
+SUCCESS It is an error to reference a variable in the @path expression of a sch:name element that has not been defined globally
+SUCCESS Rule-variable is scoped to the rule
+FAILURE It is an error for a variable to be multiply defined in the current phase
+	id: let-name-collision-error-04
+SUCCESS Rule context expression uses a schema variable
+SUCCESS When no phase is given, the processor uses the phase given in @defaultPhase
+FAILURE Pattern-variable is scoped to the pattern
+	id: let-scope-pattern-01
+SUCCESS It is an error to reference a variable in a rule context expression that has not been defined globally
+FAILURE It is an error to extend an abstract rule that is defined in a different pattern
+	id: rule-abstract-02
+FAILURE It is an error to reference an undefined variable in the @documents expression of a sch:pattern element
+	id: let-reference-undefined-07
+FAILURE It is an error for a variable to be multiply defined in the current pattern
+	id: let-name-collision-error-02
+FAILURE It is an error for a variable to be multiply defined in the current rule
+	id: let-name-collision-error-01
+SUCCESS A pattern variable has global scope
+SUCCESS A rule variable can use a phase variable
+FAILURE Extends performs base URI fixup
+	id: extends-baseuri-fixup
+
+[Passed/Skipped/Failed/Total] = [27/1/21/49]
+
