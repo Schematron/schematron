@@ -652,7 +652,12 @@ which require a preprocess.
 	<axsl:param name="fileDirParameter" /> 
 	
        
-    <axsl:variable name="document-uri"><axsl:value-of select="document-uri(/)" /></axsl:variable>
+    <axsl:variable name="document-uri">
+		<xsl:if test="@queryBinding and translate(@queryBinding, 'XSLT', 'xslt')!='xslt' 
+			and translate(@queryBinding, 'XSLT', 'xslt')!='xslt1' and @queryBinding!='xpath'">
+			<axsl:value-of select="document-uri(/)" />
+		</xsl:if>
+	</axsl:variable>
     <xsl:text>&#10;&#10;</xsl:text><xsl:comment>PHASES</xsl:comment><xsl:text>&#10;</xsl:text>
 	<xsl:call-template name="handle-phase"/> 
     <xsl:text>&#10;&#10;</xsl:text><xsl:comment>PROLOG</xsl:comment><xsl:text>&#10;</xsl:text>
