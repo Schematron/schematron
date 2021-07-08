@@ -1,15 +1,14 @@
 language: generic
 env:
     global:
-        # XSpec version
-        - XSPEC_VERSION=1.0.0
-        #- XSPEC_HOME=/tmp/schematron/xspec/
         # full path to Saxon jar
         - SAXON_CP=/tmp/schematron/saxon/saxon9he.jar
-        # Ant version used in oXygen
-        - ANT_VERSION=1.9.8
         # full path to XML Resolver jar
         - XML_RESOLVER_CP=/tmp/schematron/xml-resolver/resolver.jar
+        - SCHEMATRON_XSLT_INCLUDE=$PWD/trunk/schematron/code/iso_dsdl_include.xsl
+        - SCHEMATRON_XSLT_EXPAND=$PWD/trunk/schematron/code/iso_abstract_expand.xsl
+        - SCHEMATRON_XSLT_COMPILE=$PWD/trunk/schematron/code/iso_svrl_for_xslt2.xsl
+        - XSPEC_HOME=$PWD/trunk/schematron/test/xspec-dist
     matrix:
         # latest Saxon 9.8 version and full path to Jing jar
         - SAXON_VERSION=9.8.0-7
@@ -19,21 +18,12 @@ before_install:
     - unset _JAVA_OPTIONS
 
 before_script:
-    # install XSpec
-    - curl -fsSL --create-dirs -o /tmp/schematron/xspec/xspec.zip https://github.com/xspec/xspec/archive/v${XSPEC_VERSION}.zip;
-    - unzip /tmp/schematron/xspec/xspec.zip -d /tmp/schematron/xspec;
-    - export XSPEC_HOME=/tmp/schematron/xspec/xspec-${XSPEC_VERSION};
     # install Saxon
     - curl -fsSL --create-dirs -o ${SAXON_CP} http://central.maven.org/maven2/net/sf/saxon/Saxon-HE/${SAXON_VERSION}/Saxon-HE-${SAXON_VERSION}.jar
-    # install Ant
-    - curl -fsSL --create-dirs -o /tmp/schematron/ant/ant.tar.gz http://archive.apache.org/dist/ant/binaries/apache-ant-${ANT_VERSION}-bin.tar.gz
-    - tar xf /tmp/schematron/ant/ant.tar.gz -C /tmp/schematron/ant;
-    - export PATH=/tmp/schematron/ant/apache-ant-${ANT_VERSION}/bin:{$PATH}
     # install XML Resolver
     - curl -fsSL --create-dirs -o ${XML_RESOLVER_CP} http://central.maven.org/maven2/xml-resolver/xml-resolver/1.2/xml-resolver-1.2.jar
 
 script:
-    - ant -version
     - cd trunk/schematron/test
     - echo "execute bats unit tests"
     - bats --tap schematron.bats
