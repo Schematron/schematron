@@ -447,8 +447,8 @@ THE SOFTWARE.
 -->
 <xsl:param name="only-child-elements">
   <xsl:choose>
-    <xsl:when test="//iso:rule[contains(@context,'(')]">true</xsl:when>
-    <xsl:otherwise>false</xsl:otherwise>
+    <xsl:when test="//iso:rule[contains(@context,'(')]">false</xsl:when>
+    <xsl:otherwise>true</xsl:otherwise>
   </xsl:choose>
 </xsl:param>
 
